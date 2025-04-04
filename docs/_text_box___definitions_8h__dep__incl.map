@@ -1,0 +1,32 @@
+<map id="TextBox_Definitions.h" name="TextBox_Definitions.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="229,5,378,32"/>
+<area shape="rect" id="Node000002" href="$_text_box_8h.html" title="Defines TextBox and TextBox which are used to display dynamic text within a canvas." alt="" coords="224,80,305,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,47,274,81,269,78,287,45"/>
+<area shape="rect" id="Node000013" href="$_text_box___config_8h.html" title=" " alt="" coords="539,155,665,181"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="343,37,578,152,575,157,341,41"/>
+<area shape="rect" id="Node000003" href="$_menu_8h.html" title="Defines the menu classes used by the SoloController app." alt="" coords="232,155,297,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="267,122,267,154,262,154,262,122"/>
+<area shape="rect" id="Node000009" href="$_tasks_8cpp.html" title="Implements the Task functions." alt="" coords="5,304,87,331"/>
+<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="242,119,204,157,59,306,56,302,200,153,239,116"/>
+<area shape="rect" id="Node000010" href="$_test_8cpp.html" title="Implements SoloController tests." alt="" coords="110,304,182,331"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="247,121,223,156,181,240,153,304,148,302,176,237,218,153,243,118"/>
+<area shape="rect" id="Node000011" href="$_text_box_8cpp.html" title="Implements TextBox classes." alt="" coords="652,304,746,331"/>
+<area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="304,112,676,301,674,306,301,116"/>
+<area shape="rect" id="Node000004" href="$_err_msg_8h.html" title="Defines a mechism for displaying error and warning messages onto the TFT display." alt="" coords="328,229,402,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="296,189,349,227,346,231,293,193"/>
+<area shape="poly" id="edge12_Node000003_Node000009" title=" " alt="" coords="235,192,66,306,63,301,232,188"/>
+<area shape="rect" id="Node000012" href="$_menu_8cpp.html" title="Implements the Menu classes." alt="" coords="226,229,304,256"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="267,197,267,229,262,229,262,197"/>
+<area shape="rect" id="Node000005" href="$_button_8cpp.html" title="Implementation of Button class." alt="" coords="316,304,400,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="365,272,362,304,356,303,359,272"/>
+<area shape="rect" id="Node000006" href="$_canvas_8cpp.html" title="Implments of Canvas class." alt="" coords="424,304,516,331"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="397,263,453,301,450,306,394,267"/>
+<area shape="rect" id="Node000007" href="$_err_msg_8cpp.html" title="Implements the ErrMsg classes." alt="" coords="539,304,628,331"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="417,259,546,301,544,306,416,264"/>
+<area shape="rect" id="Node000008" href="$_gr_font_8cpp.html" title="Implements GrFont." alt="" coords="206,304,292,331"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="333,267,270,306,268,301,330,262"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="313,259,99,307,87,309,86,304,97,301,312,254"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="314,264,183,307,181,302,312,258"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="418,253,652,303,651,308,417,258"/>
+<area shape="poly" id="edge17_Node000013_Node000011" title=" " alt="" coords="621,193,693,302,689,305,616,196"/>
+</map>

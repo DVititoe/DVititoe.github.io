@@ -1,0 +1,5 @@
+<map id="SetupTempMenu" name="SetupTempMenu">
+<area shape="rect" id="Node000001" title="Setup menu for the SoloController application. Note that the callback functions used by SetupTempMenu..." alt="" coords="5,80,125,107"/>
+<area shape="rect" id="Node000002" href="$class_solo_menu.html" title="Base class used by all menus." alt="" coords="25,5,105,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,48,68,80,62,80,62,48"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="KettleVolSensor" name="KettleVolSensor">
+<area shape="rect" id="Node000001" title="Manages the Kettle Volume sensor." alt="" coords="5,80,120,107"/>
+<area shape="rect" id="Node000002" href="$class_sensor.html" title="Abstract class that acts as an interface for all sensor classes." alt="" coords="31,5,94,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,48,65,80,60,80,60,48"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system." alt="" coords="5,31,72,57"/>
+<area shape="rect" id="Node000001" href="$class_d_r_a_m___canvas.html" title="Variation of the Canvas class that can copy imagery from another canvas." alt="" coords="120,5,233,32"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="87,33,119,27,120,32,88,38"/>
+<area shape="rect" id="Node000002" href="$class_r_o_m___canvas.html" title="A variation of the Canvas class that can load imagery from Flash ROM." alt="" coords="124,56,228,83"/>
+<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="88,50,124,57,123,62,87,55"/>
+</map>

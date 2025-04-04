@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_gr_font.html" title="Base class used by all Graphical Fonts." alt="" coords="5,132,67,159"/>
+<area shape="rect" id="Node000001" href="$struct_monofonto___regular__140.html" title=" " alt="" coords="115,5,277,32"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="49,117,76,78,93,59,113,42,135,30,137,35,116,46,97,63,80,82,54,120"/>
+<area shape="rect" id="Node000002" href="$struct_monofonto___regular__180.html" title=" " alt="" coords="115,56,277,83"/>
+<area shape="poly" id="edge7_Node000000_Node000002" title=" " alt="" coords="66,120,113,92,142,81,144,86,116,97,69,125"/>
+<area shape="rect" id="Node000003" href="$struct_monofonto___regular__20.html" title=" " alt="" coords="118,107,274,133"/>
+<area shape="poly" id="edge8_Node000000_Node000003" title=" " alt="" coords="82,135,117,130,118,135,83,141"/>
+<area shape="rect" id="Node000004" href="$struct_monofonto___regular__32.html" title=" " alt="" coords="118,157,274,184"/>
+<area shape="poly" id="edge9_Node000000_Node000004" title=" " alt="" coords="83,150,118,156,117,161,82,155"/>
+<area shape="rect" id="Node000005" href="$struct_monofonto___regular__64.html" title=" " alt="" coords="118,208,274,235"/>
+<area shape="poly" id="edge10_Node000000_Node000005" title=" " alt="" coords="69,166,116,194,144,205,142,210,113,198,66,170"/>
+<area shape="rect" id="Node000006" href="$struct_monofonto___regular__90.html" title=" " alt="" coords="118,259,274,285"/>
+<area shape="poly" id="edge11_Node000000_Node000006" title=" " alt="" coords="54,171,80,209,97,228,116,244,137,256,135,260,113,249,93,232,76,212,49,174"/>
+</map>

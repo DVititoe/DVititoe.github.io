@@ -1,0 +1,35 @@
+<map id="Menu.h" name="Menu.h">
+<area shape="rect" id="Node000001" title="Defines the menu classes used by the SoloController app." alt="" coords="131,5,195,32"/>
+<area shape="rect" id="Node000002" href="$_canvas_8h.html" title="Defines higher level TFT graphics functionality." alt="" coords="118,304,195,331"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,32,160,289,154,288,160,32"/>
+<area shape="rect" id="Node000008" href="$_button_8h.html" title="Defines the Button classes used by the Menu system." alt="" coords="5,229,76,256"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="145,35,120,55,96,82,78,115,64,151,47,215,42,214,59,149,73,113,92,78,116,51,142,30"/>
+<area shape="rect" id="Node000009" href="$_sensor_8h.html" title="Defines a class for managing Sensor data." alt="" coords="476,155,549,181"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="194,30,470,146,468,151,192,35"/>
+<area shape="rect" id="Node000010" href="$_text_box_8h.html" title="Defines TextBox and TextBox which are used to display dynamic text within a canvas." alt="" coords="174,80,254,107"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="174,31,199,66,194,69,170,34"/>
+<area shape="rect" id="Node000003" href="$_common_8h.html" title="Common definitions used throughout the SoloContoller app." alt="" coords="174,379,259,405"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,330,199,365,195,369,165,333"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="318,528,395,555"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="232,404,282,451,339,515,335,518,279,455,229,408"/>
+<area shape="rect" id="Node000005" href="$_t_f_t_m070_a1_8h.html" title="Low level device driver for the TFT." alt="" coords="164,453,269,480"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="219,406,219,438,214,438,214,406"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="242,478,320,518,317,523,240,483"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="77,528,191,555"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="204,483,161,520,158,516,200,479"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="215,528,269,555"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="223,480,235,512,230,514,218,481"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="62,254,125,293,122,298,59,259"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="513,182,507,240,503,316,503,393,500,421,492,442,458,482,431,505,401,523,399,518,428,501,455,478,487,440,495,420,498,393,498,316,502,240,508,182"/>
+<area shape="poly" id="edge14_Node000010_Node000002" title=" " alt="" coords="213,108,166,290,161,288,208,107"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="255,100,345,121,387,136,414,153,431,173,438,193,440,241,440,394,435,430,420,464,401,494,381,518,377,515,396,491,415,462,430,428,435,393,435,241,433,194,426,176,411,157,384,141,344,126,254,105"/>
+<area shape="rect" id="Node000011" href="$_gr_font_8h.html" title="Defines the base class used by all Graphical Fonts." alt="" coords="214,229,286,256"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="219,107,246,214,241,215,214,108"/>
+<area shape="rect" id="Node000013" href="$_text_box___definitions_8h.html" title=" " alt="" coords="251,155,400,181"/>
+<area shape="poly" id="edge18_Node000010_Node000013" title=" " alt="" coords="235,105,295,144,292,148,232,109"/>
+<area shape="poly" id="edge17_Node000011_Node000002" title=" " alt="" coords="235,259,186,297,183,292,232,254"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="219,304,294,331"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="254,256,257,288,251,289,248,257"/>
+<area shape="poly" id="edge19_Node000013_Node000004" title=" " alt="" coords="333,181,349,239,356,277,359,316,359,393,359,512,354,512,354,393,354,316,351,277,344,240,328,182"/>
+<area shape="poly" id="edge20_Node000013_Node000011" title=" " alt="" coords="314,184,276,221,272,217,311,180"/>
+</map>

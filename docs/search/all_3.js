@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['active_20development_0',['Is this library in active development?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md18',1,'']]],
+  ['active_5fwindow_5fwh_1',['Active_Window_WH',['../namespace_t_f_t_m070_a1.html#a51e1ac2b5c3da4515bfadec232a4c6b0',1,'TFTM070A1']]],
+  ['active_5fwindow_5fxy_2',['Active_Window_XY',['../namespace_t_f_t_m070_a1.html#a6a70519665a19e0042c7a81fc0469811',1,'TFTM070A1']]],
+  ['adddebugborder_3',['addDebugBorder',['../_text_box_8cpp.html#aabe3ee8d86b64d13cffef36317317eab',1,'TextBox.cpp']]],
+  ['address_4',['address',['../struct_r_o_m___image.html#a3e2d56ab7c30ed9e9f929da1ab200f72',1,'ROM_Image::address'],['../class_canvas.html#add0700f4da6206e04fdf90eecd1b8423',1,'Canvas::address()']]],
+  ['alarm_5',['ALARM',['../_common_8h.html#a9e27e49f40e7acbb55bb085f15dabd99',1,'Common.h']]],
+  ['alarmmgr_2ecpp_6',['AlarmMgr.cpp',['../_alarm_mgr_8cpp.html',1,'']]],
+  ['alarmmgr_2eh_7',['AlarmMgr.h',['../_alarm_mgr_8h.html',1,'']]],
+  ['align_8',['align',['../class_dynamic_text.html#adffaa1d1407dc438644857cea8f4a528',1,'DynamicText']]],
+  ['an_20tt_20edge_20cuts_20tt_20outline_9',['Why do the footprints not have an &lt;tt&gt;Edge.Cuts&lt;/tt&gt; outline?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md20',1,'']]],
+  ['an_20tt_20f_20courtyard_20tt_20or_20tt_20b_20courtyard_20tt_20outline_20i_20can_20t_20place_20my_20components_20where_20i_20need_20to_10',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md22',1,'']]],
+  ['and_20documentation_11',['Controller Architecture and Documentation',['../index.html#autotoc_md26',1,'']]],
+  ['and_20nicla_20voice_20tile_20footprints_20have_20cut_20outs_12',['Why do the Nicla Vision and Nicla Voice tile footprints have cut-outs?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md21',1,'']]],
+  ['application_13',['Preparing for use by application',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/data/Fonts/README.md#autotoc_md2',1,'']]],
+  ['architecture_14',['Architecture',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_hardware___architecture.html',1,'Solo Controller Hardware Architecture'],['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_software___architecture.html',1,'Solo Controller Software Architecture']]],
+  ['architecture_20and_20documentation_15',['Controller Architecture and Documentation',['../index.html#autotoc_md26',1,'']]],
+  ['arduino_20banner_20icon_16',['&quot;KiCad Library for Arduino&quot; Banner &amp; Icon',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md14',1,'']]],
+  ['arduino_20modules_17',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md6',1,'']]],
+  ['arduino_20trademark_18',['Arduino Trademark',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md15',1,'']]],
+  ['arduino_5fspi_19',['Arduino_SPI',['../_t_f_t_m070_a1_8h.html#a3f3dd4c46ad2b95cce5f10e0ef0afa12',1,'TFTM070A1.h']]],
+  ['auto_5freload_5fpwm0_20',['Auto_Reload_PWM0',['../namespace_t_f_t_m070_a1.html#adfaf3773080e8111b6a9afcfb4148652',1,'TFTM070A1']]],
+  ['auto_5freload_5fpwm1_21',['Auto_Reload_PWM1',['../namespace_t_f_t_m070_a1.html#a80330148455d8396a7f0596c238f089e',1,'TFTM070A1']]],
+  ['autotune_22',['autoTune',['../namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d.html#a36219e8a8a7fc85b4d348ed05ed51ffa',1,'CB::SETUP::PID']]],
+  ['auxoff_23',['auxOff',['../namespace_c_b_1_1_m_a_i_n.html#acc81f53ab278bce0f8e34a1cc19d4008',1,'CB::MAIN']]],
+  ['auxon_24',['auxOn',['../namespace_c_b_1_1_m_a_i_n.html#a6ef53673488891549fd90673f9895217',1,'CB::MAIN']]]
+];

@@ -1,0 +1,23 @@
+<map id="main.cpp" name="main.cpp">
+<area shape="rect" id="Node000001" title="Primary function for running the Solo Controller Arduino application." alt="" coords="189,5,263,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,304,82,331"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,24,154,28,117,38,81,55,52,82,38,106,29,133,23,190,28,245,38,289,33,290,23,246,18,190,24,132,33,104,48,78,78,51,115,33,153,23,188,18"/>
+<area shape="rect" id="Node000003" href="$_canvas_8h.html" title="Defines higher level TFT graphics functionality." alt="" coords="62,80,140,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,35,137,74,134,70,203,30"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="164,80,288,107"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="229,33,229,64,224,64,224,33"/>
+<area shape="rect" id="Node000009" href="$_tasks_8h.html" title="Defines the tasks used by SoloController." alt="" coords="312,80,380,107"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="248,30,314,69,311,74,246,35"/>
+<area shape="rect" id="Node000010" href="$_test_8h.html" title="Defines tests for the SoloController app." alt="" coords="404,80,462,107"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="263,30,391,74,389,80,261,35"/>
+<area shape="rect" id="Node000004" href="$_common_8h.html" title="Common definitions used throughout the SoloContoller app." alt="" coords="61,155,146,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="104,107,105,139,100,139,99,107"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="101,183,57,290,52,288,96,181"/>
+<area shape="rect" id="Node000005" href="$_t_f_t_m070_a1_8h.html" title="Low level device driver for the TFT." alt="" coords="111,229,216,256"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="116,180,146,216,142,219,112,184"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="144,259,79,298,76,293,141,254"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="106,304,221,331"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="166,257,166,288,161,288,161,257"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="244,304,299,331"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="184,254,241,293,238,297,181,259"/>
+</map>

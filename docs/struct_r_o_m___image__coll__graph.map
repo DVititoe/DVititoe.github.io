@@ -1,0 +1,7 @@
+<map id="ROM_Image" name="ROM_Image">
+<area shape="rect" id="Node000001" title="Structure to define the size and location of an image in Flash." alt="" coords="37,112,132,139"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,73,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,47,47,67,54,87,72,110,67,113,49,89,42,68,38,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="97,5,165,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,47,104,89,93,113,88,110,99,87,117,45"/>
+</map>

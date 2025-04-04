@@ -1,0 +1,9 @@
+<map id="Button" name="Button">
+<area shape="rect" id="Node000001" title="Provides buttons for the menu system." alt="" coords="182,5,242,32"/>
+<area shape="rect" id="Node000002" href="$class_immediate_button.html" title="A single state button that calls the callback function as soon as it is pressed." alt="" coords="5,80,126,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,42,92,82,90,77,172,37"/>
+<area shape="rect" id="Node000003" href="$class_momentary_button.html" title="Momentary buttons have 2 states. Upon release, the button returns to state 0." alt="" coords="150,80,274,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,48,215,80,210,80,210,48"/>
+<area shape="rect" id="Node000004" href="$class_toggle_button.html" title="Defines a button that toggles between two states." alt="" coords="298,80,396,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,37,324,77,322,82,247,42"/>
+</map>
