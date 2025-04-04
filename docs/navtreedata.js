@@ -26,9 +26,9 @@ var NAVTREE =
 [
   [ "Solo Controller", "index.html", [
     [ "Touch Screen Homebrew BIAB Controller", "index.html", "index" ],
-    [ "Getting Started", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_getting___started.html", null ],
-    [ "Solo Controller Hardware Architecture", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_hardware___architecture.html", null ],
-    [ "Solo Controller Software Architecture", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_software___architecture.html", null ],
+    [ "Getting Started", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2doc_2_getting___started.html", null ],
+    [ "Solo Controller Hardware Architecture", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2doc_2_hardware___architecture.html", null ],
+    [ "Solo Controller Software Architecture", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2doc_2_software___architecture.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -67,8 +67,8 @@ var NAVTREEINDEX =
 [
 "_alarm_mgr_8cpp.html",
 "class_canvas.html#a1278c73446069dd02831af31ef1bccff",
-"namespace_f_t5316.html#a95039ca16e2b5fedc3aebbb7aae1df56",
-"namespace_t_f_t_m070_a1.html#aee8ea68c4a162270ee53a9f9553d1714"
+"namespace_f_t5316.html#a7fe421f0362b4eb996c39ebb142bddb9",
+"namespace_t_f_t_m070_a1.html#aee835890df5887de1fb15c47c35a9677"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

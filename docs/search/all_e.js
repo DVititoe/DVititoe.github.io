@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['main_0',['main',['../struct_config_list__t.html#a4b2f6e99c61b62052696daf022e4aa85',1,'ConfigList_t']]],
+  ['main_0',['main',['../struct_config_list__t.html#a95465a25a94f98db4ce96eb5a063a941',1,'ConfigList_t']]],
   ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
   ['main_5fimage_5fstart_5faddress_2',['Main_Image_Start_Address',['../namespace_t_f_t_m070_a1.html#ae22b5fb46dcbab06a373f424f5daae5c',1,'TFTM070A1']]],
   ['main_5fimage_5fwidth_3',['Main_Image_Width',['../namespace_t_f_t_m070_a1.html#a2d68170c36840e22921b755fa31bff53',1,'TFTM070A1']]],
@@ -8,7 +8,7 @@ var searchData=
   ['mainmenu_5',['MainMenu',['../class_main_menu.html',1,'']]],
   ['mashmodeon_6',['mashModeOn',['../namespace_c_b_1_1_m_a_i_n.html#a401ec07c0573cae594d1b58434048916',1,'CB::MAIN']]],
   ['mask_5fspi_5fmaster_5finterrupt_5fflag_7',['Mask_SPI_Master_Interrupt_Flag',['../namespace_t_f_t_m070_a1.html#a800b8ad63a4014ec9f77f6e76e219402',1,'TFTM070A1']]],
-  ['mean_8',['What does the license exception in the License &amp; Legal section mean?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md19',1,'']]],
+  ['mean_8',['What does the license exception in the License &amp; Legal section mean?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md19',1,'']]],
   ['memory_5f16bpp_5fmode_9',['Memory_16bpp_Mode',['../namespace_t_f_t_m070_a1.html#a089af68014279fcec6d6ba47d8f11c19',1,'TFTM070A1']]],
   ['memory_5f24bpp_5fmode_10',['Memory_24bpp_Mode',['../namespace_t_f_t_m070_a1.html#aa8583a8dc439c7382111b2bd5c778cd1',1,'TFTM070A1']]],
   ['memory_5fselect_5fsdram_11',['Memory_Select_SDRAM',['../namespace_t_f_t_m070_a1.html#aecc58fa2ff8dc8c4b30ef340d2e1e033',1,'TFTM070A1']]],
@@ -22,7 +22,7 @@ var searchData=
   ['minchillertemp_19',['minChillerTemp',['../struct_config_list__t.html#ad321cbe26e7f5a2051b05819b8ab22ab',1,'ConfigList_t']]],
   ['minvolume_20',['minVolume',['../struct_config_list__t.html#af121b71ae32a7a3f79a8fc7a7520efbd',1,'ConfigList_t']]],
   ['miso_21',['MISO',['../_common_8h.html#a7334c540878c8c4d801fd75ed9fd8063',1,'Common.h']]],
-  ['modules_22',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md6',1,'']]],
+  ['modules_22',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md6',1,'']]],
   ['momentarybutton_23',['MomentaryButton',['../class_momentary_button.html',1,'MomentaryButton'],['../class_momentary_button.html#a16e8fdaccd4933748a340bbe652d28e8',1,'MomentaryButton::MomentaryButton()']]],
   ['monofonto_2dregular_2d140_2eh_24',['Monofonto-Regular-140.h',['../_monofonto-_regular-140_8h.html',1,'']]],
   ['monofonto_2dregular_2d180_2eh_25',['Monofonto-Regular-180.h',['../_monofonto-_regular-180_8h.html',1,'']]],
@@ -37,5 +37,5 @@ var searchData=
   ['monofonto_5fregular_5f64_34',['Monofonto_Regular_64',['../struct_monofonto___regular__64.html',1,'Monofonto_Regular_64'],['../struct_monofonto___regular__64.html#aed3f06e29e31609e64bc690c1827ab53',1,'Monofonto_Regular_64::Monofonto_Regular_64()']]],
   ['monofonto_5fregular_5f90_35',['Monofonto_Regular_90',['../struct_monofonto___regular__90.html',1,'Monofonto_Regular_90'],['../struct_monofonto___regular__90.html#a040292a760555030d15cdf63adcd7793',1,'Monofonto_Regular_90::Monofonto_Regular_90()']]],
   ['mosi_36',['MOSI',['../_common_8h.html#a5d3f11f2fdf8a7e27b975291e0c2c8cc',1,'Common.h']]],
-  ['my_20components_20where_20i_20need_20to_37',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md22',1,'']]]
+  ['my_20components_20where_20i_20need_20to_37',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md22',1,'']]]
 ];

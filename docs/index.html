@@ -26,7 +26,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
    <div id="projectname">Solo Controller
    </div>
@@ -100,7 +99,7 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Touch Screen Homebrew BIAB Controller </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2_r_e_a_d_m_e"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_r_e_a_d_m_e"></a></p>
 <p>This repository describes the design and specifications for a new touch screen controller, designed to operate an 240V electric Brew in a Bag (BIAB) system. I specifically designed this controller for use with a cutstomized <a href="https://spikebrewing.com/products/spike-solo-system-1?var=43233939259628">Spike Solo Brew System</a>, but this this controller can be used with any compatable 240v Electric Brew Kettle.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -125,22 +124,25 @@ Key Design Features</h1>
 </ul>
 <h1><a class="anchor" id="autotoc_md26"></a>
 Controller Architecture and Documentation</h1>
-<p>Details of the hardware architecture for the Solo Brew Controller can be found <a class="el" href="md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_hardware___architecture.html">here</a>. This includes circuit diagrams and PCB designs for the controller, a description of the microcontroller architecture, and a parts list for building the project. For this project, I use the <a href="https://store.arduino.cc/products/arduino-mega-2560-rev3">Arduino Mega 2560, Rev 3, microcontroller</a>. This is coupled with an <a href="doc/LT7683.pdf">LT7683</a> chip to drive the graphics displayed on a 7" 1024x600 pixel TFT Touch Display.
-
-The overall software architecture can be found @ref "C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/doc/Software_Architecture.md" "here". A collection of UML diagrams describe structure of the C++ software running that runs on the Mega 2560 microcontroller. More detailed information about the software functions and classes within the software baseline can be found in the &lt;a href="doc/Doxygen/html/index.html" &gt;Software Design Document&lt;/a&gt;.
-
-@section autotoc_md27 Use of this Design
-All of the design specifications provided within this repository are freely available for others to use. Please keep in mind, though, that I make no warranties regarding the quality of the electrical design nor the quality of the software provided here. I'm always willing a answer questions, but for the most part, you're on your own should you attempt to build one yourself.
-
-@section autotoc_md28 Getting Started
-Building this Controller requires an understanding of:
-
- - High voltate electrical circuits
- - Construction of Printed Circuit Boards (PCBs)
- - Understanding of Mega 2560 microcontrollers
- - Knowledge of C/C++
-
-If this doesn't scare you away then hop on over to the @ref "C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/doc/Getting_Started.md" "Getting Started" page for more information. </p>
+<p>Details of the hardware architecture for the Solo Brew Controller can be found <a class="el" href="md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2doc_2_hardware___architecture.html">here</a>. This includes circuit diagrams and PCB designs for the controller, a description of the microcontroller architecture, and a parts list for building the project. For this project, I use the <a href="https://store.arduino.cc/products/arduino-mega-2560-rev3">Arduino Mega 2560, Rev 3, microcontroller</a>. This is coupled with an <a href="doc/LT7683.pdf">LT7683</a> chip to drive the graphics displayed on a 7in 1024x600 pixel TFT Touch Display.</p>
+<p>The overall software architecture can be found here. A collection of UML diagrams describe structure of the C++ software that runs on the Mega 2560 microcontroller. More detailed information about the software functions and classes within the software baseline can be found in the design doc</p>
+<h1><a class="anchor" id="autotoc_md27"></a>
+Use of this Design</h1>
+<p>All of the design specifications provided within this repository are freely available for others to use. Please keep in mind, though, that I make no warranties regarding the quality of the electrical design nor the quality of the software provided here. I'm always willing a answer questions, but for the most part, you're on your own should you attempt to build one yourself</p>
+<h1><a class="anchor" id="autotoc_md28"></a>
+Getting Started</h1>
+<p>Building this Controller requires an understanding of:</p>
+<ul>
+<li>High voltate electrical circuits</li>
+<li>Construction of Printed Circuit Boards (PCBs)</li>
+<li>Understanding of Mega 2560 microcontrollers</li>
+<li>Knowledge of C/C++</li>
+</ul>
+<p>If this doesn't scare you away then hop on over to the <a class="el" href="md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2doc_2_getting___started.html">Getting Started</a> page for more information</p>
+<h1><a class="anchor" id="autotoc_md29"></a>
+Other</h1>
+<p><a href="https://dvititoe.github.io/inherits.html">here</a></p>
+<p><a href="doc/Doxygen/html/index.html">Software Design Document</a> </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

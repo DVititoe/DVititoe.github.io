@@ -195,6 +195,7 @@ var NAVTREEINDEX1 =
 "index.html#autotoc_md26":[0,1],
 "index.html#autotoc_md27":[0,2],
 "index.html#autotoc_md28":[0,3],
+"index.html#autotoc_md29":[0,4],
 "main_8cpp.html":[6,0,4,10],
 "main_8cpp.html#a0b33edabd7f1c4e4a0bf32c67269be2f":[6,0,4,10,8],
 "main_8cpp.html#a14dd85b5fe650cfca774770b0ed83107":[6,0,4,10,5],
@@ -206,9 +207,9 @@ var NAVTREEINDEX1 =
 "main_8cpp.html#a92711f2817afd9590e7998633fae08a8":[6,0,4,10,1],
 "main_8cpp.html#ad1ab75e5581d1a9417c6ae05066e857a":[6,0,4,10,6],
 "main_8cpp.html#ad288b770a6467f99b6a4fab45d892a16":[6,0,4,10,4],
-"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_getting___started.html":[1],
-"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_hardware___architecture.html":[2],
-"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_github___repo_2doc_2_software___architecture.html":[3],
+"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2doc_2_getting___started.html":[1],
+"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2doc_2_hardware___architecture.html":[2],
+"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2doc_2_software___architecture.html":[3],
 "namespace_buzzer.html":[4,0,0],
 "namespace_buzzer.html#a1ae277f16fe5970192959a62ae46d9f9":[4,0,0,2],
 "namespace_buzzer.html#aa71b12b497d947710756b9047693708a":[4,0,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l.html":[4,0,1,1,2],
 "namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l.html#a1bce2762cbe991b2c09f821d4ebbbe36":[4,0,1,1,2,0],
 "namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l.html#a84096b33198ff9449b0515c3b31fc7e6":[4,0,1,1,2,1],
-"namespace_f_t5316.html":[4,0,3],
-"namespace_f_t5316.html#a7fe421f0362b4eb996c39ebb142bddb9":[4,0,3,2]
+"namespace_f_t5316.html":[4,0,3]
 };

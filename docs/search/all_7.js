@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['edge_20cuts_20tt_20outline_0',['Why do the footprints not have an &lt;tt&gt;Edge.Cuts&lt;/tt&gt; outline?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md20',1,'']]],
+  ['edge_20cuts_20tt_20outline_0',['Why do the footprints not have an &lt;tt&gt;Edge.Cuts&lt;/tt&gt; outline?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md20',1,'']]],
   ['elementoff_1',['elementOff',['../namespace_c_b_1_1_m_a_i_n.html#aa2964d6ce2eb21dd7d3f5d6e9682e9f9',1,'CB::MAIN']]],
   ['elementon_2',['elementOn',['../namespace_c_b_1_1_m_a_i_n.html#ac77110627d22441004593cd8adb841ed',1,'CB::MAIN']]],
   ['elemout_3',['elemOut',['../struct_config_list__t.html#ab32a80bf64373bee0d55748a7d5dc217',1,'ConfigList_t']]],
@@ -26,8 +26,8 @@ var searchData=
   ['error_5fmsg_23',['ERROR_MSG',['../_err_msg_8cpp.html#ace92548be104966c0591df950ef0ec68',1,'ErrMsg.cpp']]],
   ['errormessage_5floop_24',['errorMessage_loop',['../namespace_test.html#a85365569ac53e849f50ec41442c8bb63',1,'Test']]],
   ['errormessage_5fsetup_25',['errorMessage_setup',['../namespace_test.html#a409d479b04d8bb34cfa3f7d448f4c69d',1,'Test']]],
-  ['errors_20because_20of_20it_26',['Why is this Power Pin set to Power Input/Power Output/Unconnected? I get DRC errors because of it!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md23',1,'']]],
-  ['exception_20in_20the_20license_20legal_20section_20mean_27',['What does the license exception in the License &amp; Legal section mean?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Github_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md19',1,'']]],
+  ['errors_20because_20of_20it_26',['Why is this Power Pin set to Power Input/Power Output/Unconnected? I get DRC errors because of it!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md23',1,'']]],
+  ['exception_20in_20the_20license_20legal_20section_20mean_27',['What does the license exception in the License &amp; Legal section mean?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md19',1,'']]],
   ['extractchardefs_28',['extractCharDefs',['../namespaceparse__font__xml.html#a6b5ad7dca71223e5d57db716ca2f29b6',1,'parse_font_xml']]],
   ['extractkernings_29',['extractKernings',['../namespaceparse__font__xml.html#ab7a4e1b7f2c0ecd95f067fdf8999e590',1,'parse_font_xml']]]
 ];

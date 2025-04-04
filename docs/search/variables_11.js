@@ -7,6 +7,6 @@ var searchData=
   ['shape_4',['shape',['../struct_config_text_box__t.html#a509c9e2d4da41e5080c6bbcfceade98e',1,'ConfigTextBox_t']]],
   ['sm_5fbutton_5fheight_5',['SM_BUTTON_HEIGHT',['../_r_o_m___images_8h.html#a75cede58436081868c12abea2bb66d34',1,'ROM_Images.h']]],
   ['sm_5fbutton_5fwidth_6',['SM_BUTTON_WIDTH',['../_r_o_m___images_8h.html#af5dd89f72ee88d2beb67ab70eb1d2728',1,'ROM_Images.h']]],
-  ['solo_5falarmed_7',['SOLO_ALARMED',['../_r_o_m___images_8h.html#a47246b69e0ad63f01ce579aa3e4e3f3e',1,'ROM_Images.h']]],
-  ['solo_5fmain_8',['SOLO_MAIN',['../_r_o_m___images_8h.html#a5cb4aab53ba4891c4e5307ecd55d01df',1,'ROM_Images.h']]]
+  ['solo_5falarmed_7',['SOLO_ALARMED',['../_r_o_m___images_8h.html#aa431bf1819dca1d3e44343bf0cdd8973',1,'ROM_Images.h']]],
+  ['solo_5fmain_8',['SOLO_MAIN',['../_r_o_m___images_8h.html#a4dc97fbdaa226420bf6a106892b1fe6b',1,'ROM_Images.h']]]
 ];
