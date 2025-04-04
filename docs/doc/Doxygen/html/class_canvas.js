@@ -1,0 +1,28 @@
+var class_canvas =
+[
+    [ "Canvas", "class_canvas.html#a3b3a7c17161f72d4f2332021d6e866e9", null ],
+    [ "Canvas", "class_canvas.html#a3935a33755dde3ea695c06bcec40e5ba", null ],
+    [ "Canvas", "class_canvas.html#aa4da0978f85bce794a7d794bf041cf98", null ],
+    [ "~Canvas", "class_canvas.html#a11136afee83f7bfa3d8f16d51abe9a70", null ],
+    [ "_validate", "class_canvas.html#ac2b95e9a6a3b6a9b468c06343715ace5", null ],
+    [ "address", "class_canvas.html#add0700f4da6206e04fdf90eecd1b8423", null ],
+    [ "BTE_AddImageFrom", "class_canvas.html#a75344e1c4f131b8731f539dbf1446dde", null ],
+    [ "BTE_AddTransparantImageFrom", "class_canvas.html#a753719f9ab04411f55d82e02a67980e7", null ],
+    [ "BTE_CopyFrom", "class_canvas.html#ab30fd9e99385a46d9d22b39407f68265", null ],
+    [ "BTE_CopyFrom", "class_canvas.html#a42cc4c287b1eca4526db4cacc00f2137", null ],
+    [ "BTE_CopyFrom", "class_canvas.html#a8ca049655ab1b5f0626421db9833e405", null ],
+    [ "BTE_ROP", "class_canvas.html#a16cdf83603b2b6cbcba0bc34cb78d808", null ],
+    [ "BTE_SetAsDT", "class_canvas.html#a636cd8199477d4d8875d26092ff25d3e", null ],
+    [ "BTE_SetAsS0", "class_canvas.html#a675e1fc94421dae7abb76ff09f1ef8f3", null ],
+    [ "BTE_SetAsS1", "class_canvas.html#ab25386401851e7135748e0302533b6f2", null ],
+    [ "clear", "class_canvas.html#a1278c73446069dd02831af31ef1bccff", null ],
+    [ "clear", "class_canvas.html#a1c43364b79f580b9b0909c121457cad1", null ],
+    [ "drawSquare", "class_canvas.html#aab06a8c9dd5b8b146077268cf729f2cd", null ],
+    [ "height", "class_canvas.html#a8518cf311272b0d4effe0fe1f89a5091", null ],
+    [ "loadImage", "class_canvas.html#ae60defbed8de286ab7891d56ef9467dc", null ],
+    [ "setActive", "class_canvas.html#a2032800681a54cffc50320c96029fa8c", null ],
+    [ "setMainWindow", "class_canvas.html#a2dec4d913273dbb043f74b75b42e88a7", null ],
+    [ "solidFill", "class_canvas.html#ac53c6ad3166d739861891682a131fc4d", null ],
+    [ "text", "class_canvas.html#aebdea765412fef5c829765f1ac93fb74", null ],
+    [ "width", "class_canvas.html#a70192ede48d06854ca683baee970b809", null ]
+];
