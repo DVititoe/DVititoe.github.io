@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$class_button.html" title="Provides buttons for the menu system." alt="" coords="5,56,65,83"/>
-<area shape="rect" id="Node000001" href="$class_immediate_button.html" title="A single state button that calls the callback function as soon as it is pressed." alt="" coords="115,5,235,32"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="78,51,135,30,137,35,80,56"/>
-<area shape="rect" id="Node000002" href="$class_momentary_button.html" title="Momentary buttons have 2 states. Upon release, the button returns to state 0." alt="" coords="113,56,237,83"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="80,67,112,67,112,72,80,72"/>
-<area shape="rect" id="Node000003" href="$class_toggle_button.html" title="Defines a button that toggles between two states." alt="" coords="126,107,224,133"/>
-<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="80,82,137,104,135,109,78,87"/>
-</map>

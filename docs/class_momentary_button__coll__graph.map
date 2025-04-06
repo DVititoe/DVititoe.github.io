@@ -1,5 +1,0 @@
-<map id="MomentaryButton" name="MomentaryButton">
-<area shape="rect" id="Node000001" title="Momentary buttons have 2 states. Upon release, the button returns to state 0." alt="" coords="5,80,130,107"/>
-<area shape="rect" id="Node000002" href="$class_button.html" title="Provides buttons for the menu system." alt="" coords="38,5,97,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,48,70,80,65,80,65,48"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="ImmediateButton" name="ImmediateButton">
-<area shape="rect" id="Node000001" title="A single state button that calls the callback function as soon as it is pressed." alt="" coords="5,80,126,107"/>
-<area shape="rect" id="Node000002" href="$class_button.html" title="Provides buttons for the menu system." alt="" coords="36,5,95,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,48,68,80,63,80,63,48"/>
-</map>
