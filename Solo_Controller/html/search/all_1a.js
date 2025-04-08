@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['_7ebutton_0',['~Button',['../class_button.html#aec43891dc8ff8f87e0eff95f8315f09f',1,'Button']]],
-  ['_7ecanvas_1',['~Canvas',['../class_canvas.html#a11136afee83f7bfa3d8f16d51abe9a70',1,'Canvas']]],
-  ['_7edram_5fcanvas_2',['~DRAM_Canvas',['../class_d_r_a_m___canvas.html#a8a44d287d9bf8ea0c8268be5a7fc4436',1,'DRAM_Canvas']]],
-  ['_7eimmediatebutton_3',['~ImmediateButton',['../class_immediate_button.html#aa9b3f0e0f1b913650fdf244d1a731044',1,'ImmediateButton']]],
-  ['_7emomentarybutton_4',['~MomentaryButton',['../class_momentary_button.html#a2b6d4300540557b8574639902d7e204f',1,'MomentaryButton']]],
-  ['_7erom_5fcanvas_5',['~ROM_Canvas',['../class_r_o_m___canvas.html#a12f9d19af9b2175a768475b348197e26',1,'ROM_Canvas']]],
-  ['_7esensor_6',['~Sensor',['../class_sensor.html#a2561088ed8350df5d5d53a079b57a113',1,'Sensor']]],
-  ['_7esolomenu_7',['~SoloMenu',['../class_solo_menu.html#a1303f286bd0f1073039c252d3cdbe637',1,'SoloMenu']]],
-  ['_7etogglebutton_8',['~ToggleButton',['../class_toggle_button.html#a3f31eac6d75ced6149139d37a7024170',1,'ToggleButton']]]
+  ['x_0',['X',['../class_dynamic_text.html#a6b8288cfbc78a8cf9dfa5b50f9ce11e1',1,'DynamicText::X'],['../class_text_box.html#a4416c8251089e852449c838d2f54771c',1,'TextBox::X']]],
+  ['x_1',['x',['../struct_block___image.html#a135650607f7dda30546a44b26ebf18df',1,'Block_Image::x'],['../struct_config_text_box__t.html#abf23789044909a086aa683dbf876965e',1,'ConfigTextBox_t::x'],['../struct_char_def__t.html#afd2f52a50f3d3233983d9807d56b1be8',1,'CharDef_t::x'],['../struct_f_t5316_1_1_touch_location.html#abe0e0bbbed025d5f3714cd6690954f36',1,'FT5316::TouchLocation::x'],['../class_solo_menu.html#a77ffbce263cfa3113024311011bc9f1e',1,'SoloMenu::x()']]],
+  ['xadvance_2',['xadvance',['../struct_char_def__t.html#af6ea3f042b264d8676a2cbffd2dae0b7',1,'CharDef_t']]],
+  ['xoffset_3',['xoffset',['../struct_char_def__t.html#ad618a1875363da4b8bc6084c3bb4fddf',1,'CharDef_t']]]
 ];
