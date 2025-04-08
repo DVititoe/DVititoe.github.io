@@ -64,7 +64,7 @@ var searchData=
   ['configlist_5ft_61',['ConfigList_t',['../struct_config_list__t.html',1,'']]],
   ['configtextbox_5ft_62',['ConfigTextBox_t',['../struct_config_text_box__t.html',1,'']]],
   ['contributions_63',['Comments, Requests, Bugs &amp; Contributions',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md8',1,'']]],
-  ['controller_64',['Touch Screen Homebrew BIAB Controller',['../index.html',1,'']]],
+  ['controller_64',['Touch Screen BIAB Controller',['../index.html',1,'']]],
   ['controller_20architecture_20and_20documentation_65',['Controller Architecture and Documentation',['../index.html#autotoc_md26',1,'']]],
   ['controller_20hardware_20architecture_66',['Solo Controller Hardware Architecture',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html',1,'']]],
   ['controller_20software_20architecture_67',['Solo Controller Software Architecture',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html',1,'']]],

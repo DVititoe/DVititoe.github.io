@@ -6,7 +6,7 @@ var searchData=
   ['s1_5fconstant_5fcolor_5f65k_3',['S1_Constant_color_65k',['../namespace_t_f_t_m070_a1.html#a73008355e456848711e8c05ba54733e1',1,'TFTM070A1']]],
   ['scan_5ffreq_4',['SCAN_FREQ',['../_t_f_t_m070_a1_8cpp.html#a8127170b687c1f67a968886c128e76e4',1,'TFTM070A1.cpp']]],
   ['sck_5',['SCK',['../_common_8h.html#a2dd443a4430713d325ab86895a4a45eb',1,'Common.h']]],
-  ['screen_20homebrew_20biab_20controller_6',['Touch Screen Homebrew BIAB Controller',['../index.html',1,'']]],
+  ['screen_20biab_20controller_6',['Touch Screen BIAB Controller',['../index.html',1,'']]],
   ['scripts_2freadme_2emd_7',['README.md',['../scripts_2_r_e_a_d_m_e_8md.html',1,'']]],
   ['sdram_5finitail_8',['SDRAM_initail',['../namespace_t_f_t_m070_a1.html#ab8428149a90d7303bac31b804cb616ff',1,'TFTM070A1']]],
   ['search_5fand_5freplace_5fin_5fdirectory_9',['search_and_replace_in_directory',['../namespacerun_doxygen.html#a758003410960918efa579c9ea5c14652',1,'runDoxygen']]],

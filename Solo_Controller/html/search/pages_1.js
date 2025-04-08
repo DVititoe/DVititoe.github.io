@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['biab_20controller_0',['Touch Screen Homebrew BIAB Controller',['../index.html',1,'']]]
+  ['biab_20controller_0',['Touch Screen BIAB Controller',['../index.html',1,'']]]
 ];

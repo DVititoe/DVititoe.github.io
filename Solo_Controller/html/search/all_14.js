@@ -61,7 +61,7 @@ var searchData=
   ['to_58',['to',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md1',1,'How to'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md22',1,'Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!']]],
   ['to_20power_20input_20power_20output_20unconnected_20i_20get_20drc_20errors_20because_20of_20it_59',['Why is this Power Pin set to Power Input/Power Output/Unconnected? I get DRC errors because of it!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md23',1,'']]],
   ['togglebutton_60',['ToggleButton',['../class_toggle_button.html',1,'ToggleButton'],['../class_toggle_button.html#a7f2e189066794114b9c9707123ac3293',1,'ToggleButton::ToggleButton()']]],
-  ['touch_20screen_20homebrew_20biab_20controller_61',['Touch Screen Homebrew BIAB Controller',['../index.html',1,'']]],
+  ['touch_20screen_20biab_20controller_61',['Touch Screen BIAB Controller',['../index.html',1,'']]],
   ['touch_5floop_62',['touch_loop',['../namespace_test.html#a82bc1b16371bb1fcb6d152514dd69989',1,'Test']]],
   ['touch_5fsetup_63',['touch_setup',['../namespace_test.html#a57c899123132f30d276a35a52f7a4899',1,'Test']]],
   ['touchlocation_64',['TouchLocation',['../struct_f_t5316_1_1_touch_location.html',1,'FT5316']]],
