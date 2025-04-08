@@ -26,8 +26,10 @@ var NAVTREE =
 [
   [ "Solo Controller", "index.html", [
     [ "Touch Screen Homebrew BIAB Controller", "index.html", "index" ],
+    [ "Electronics_Design", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html", null ],
     [ "Getting Started", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html", null ],
     [ "Solo Controller Hardware Architecture", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html", null ],
+    [ "Hardware_Parts_List", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce3fb61242b7bb1a5d1769391465fac5.html", null ],
     [ "Solo Controller Software Architecture", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -67,8 +69,8 @@ var NAVTREEINDEX =
 [
 "_alarm_mgr_8cpp.html",
 "class_canvas.html#a1278c73446069dd02831af31ef1bccff",
-"namespace_f_t5316.html#a95039ca16e2b5fedc3aebbb7aae1df56",
-"namespace_t_f_t_m070_a1.html#aee8ea68c4a162270ee53a9f9553d1714"
+"namespace_f_t5316.html",
+"namespace_t_f_t_m070_a1.html#aecc58fa2ff8dc8c4b30ef340d2e1e033"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
