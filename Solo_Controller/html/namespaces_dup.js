@@ -42,6 +42,7 @@ var namespaces_dup =
     ] ],
     [ "Setup", "namespace_setup.html", [
       [ "menuSystem", "namespace_setup.html#ac52d05a0d4da6955007cb1098828ee40", null ],
+      [ "pinConfig", "namespace_setup.html#a5686fb83fd9eea3e8c16226863de3598", null ],
       [ "tasks", "namespace_setup.html#ad0060655176e56dcd4755c61a2556792", null ],
       [ "TFT", "namespace_setup.html#ad6e12570a013a041d84c999009fe413f", null ]
     ] ],

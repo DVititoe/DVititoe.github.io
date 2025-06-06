@@ -7,9 +7,10 @@ var searchData=
   ['pclk_5frising_4',['PCLK_Rising',['../namespace_t_f_t_m070_a1.html#a542c70f726065e9ac8c21cf400fcfd3f',1,'TFTM070A1']]],
   ['pdata_5fset_5frgb_5',['PDATA_Set_RGB',['../namespace_t_f_t_m070_a1.html#a111ac0e25b614c36b775001a32cbcd7d',1,'TFTM070A1']]],
   ['pid_5fsetup_6',['PID_Setup',['../namespace_c_b_1_1_s_e_t_u_p.html#a37e665b17a24032829b846ef461b8860',1,'CB::SETUP']]],
-  ['placetext_7',['placeText',['../class_gr_font.html#a55a07e7170b193fc56c623ce06e7899d',1,'GrFont::placeText(Canvas &amp;canvas, char cc, uint16_t x, uint16_t y) const'],['../class_gr_font.html#a379bdeb296da78380a840090140c2c96',1,'GrFont::placeText(Canvas &amp;canvas, const char *const text, uint16_t buffSize, uint16_t x, uint16_t y) const']]],
-  ['pll_5finitial_8',['PLL_Initial',['../namespace_t_f_t_m070_a1.html#ac9ee5e4883ac330825de8f2661a87731',1,'TFTM070A1']]],
-  ['press_9',['press',['../class_button.html#a9a4b0bb6bb5745dd9341ae6d49de9bd1',1,'Button::press()'],['../class_toggle_button.html#a2e4cd4d71e704175aa9c92858bddd66b',1,'ToggleButton::press()'],['../class_immediate_button.html#a88520eaf3b60c634a8e752eba0e0c735',1,'ImmediateButton::press()']]],
-  ['pumpoff_10',['pumpOff',['../namespace_c_b_1_1_m_a_i_n.html#ab32d3b918b42443c8984612dbe5b42de',1,'CB::MAIN']]],
-  ['pumpon_11',['pumpOn',['../namespace_c_b_1_1_m_a_i_n.html#a695697f1837a320e37232dd6d4f145f7',1,'CB::MAIN']]]
+  ['pinconfig_7',['pinConfig',['../namespace_setup.html#a5686fb83fd9eea3e8c16226863de3598',1,'Setup']]],
+  ['placetext_8',['placeText',['../class_gr_font.html#a55a07e7170b193fc56c623ce06e7899d',1,'GrFont::placeText(Canvas &amp;canvas, char cc, uint16_t x, uint16_t y) const'],['../class_gr_font.html#a379bdeb296da78380a840090140c2c96',1,'GrFont::placeText(Canvas &amp;canvas, const char *const text, uint16_t buffSize, uint16_t x, uint16_t y) const']]],
+  ['pll_5finitial_9',['PLL_Initial',['../namespace_t_f_t_m070_a1.html#ac9ee5e4883ac330825de8f2661a87731',1,'TFTM070A1']]],
+  ['press_10',['press',['../class_button.html#a9a4b0bb6bb5745dd9341ae6d49de9bd1',1,'Button::press()'],['../class_toggle_button.html#a2e4cd4d71e704175aa9c92858bddd66b',1,'ToggleButton::press()'],['../class_immediate_button.html#a88520eaf3b60c634a8e752eba0e0c735',1,'ImmediateButton::press()']]],
+  ['pumpoff_11',['pumpOff',['../namespace_c_b_1_1_m_a_i_n.html#ab32d3b918b42443c8984612dbe5b42de',1,'CB::MAIN']]],
+  ['pumpon_12',['pumpOn',['../namespace_c_b_1_1_m_a_i_n.html#a695697f1837a320e37232dd6d4f145f7',1,'CB::MAIN']]]
 ];

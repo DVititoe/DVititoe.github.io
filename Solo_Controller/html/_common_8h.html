@@ -148,12 +148,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a5f4d46ae101b77df78010c506601c87c" id="r_a5f4d46ae101b77df78010c506601c87c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f4d46ae101b77df78010c506601c87c">TFT_CS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="memdesc:a5f4d46ae101b77df78010c506601c87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CS pin used by the SPI bus to control the TFT.  <br /></td></tr>
 <tr class="separator:a5f4d46ae101b77df78010c506601c87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ca749a3778fe3dcbcdf17a2236240bd" id="r_a5ca749a3778fe3dcbcdf17a2236240bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ca749a3778fe3dcbcdf17a2236240bd">PRES</a>&#160;&#160;&#160;17</td></tr>
-<tr class="memdesc:a5ca749a3778fe3dcbcdf17a2236240bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analog pressure data.  <br /></td></tr>
-<tr class="separator:a5ca749a3778fe3dcbcdf17a2236240bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e27e49f40e7acbb55bb085f15dabd99" id="r_a9e27e49f40e7acbb55bb085f15dabd99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e27e49f40e7acbb55bb085f15dabd99">ALARM</a>&#160;&#160;&#160;27</td></tr>
-<tr class="memdesc:a9e27e49f40e7acbb55bb085f15dabd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that triggers the alarm.  <br /></td></tr>
-<tr class="separator:a9e27e49f40e7acbb55bb085f15dabd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dd443a4430713d325ab86895a4a45eb" id="r_a2dd443a4430713d325ab86895a4a45eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dd443a4430713d325ab86895a4a45eb">SCK</a>&#160;&#160;&#160;52</td></tr>
 <tr class="memdesc:a2dd443a4430713d325ab86895a4a45eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock for the primary SPI bus.  <br /></td></tr>
 <tr class="separator:a2dd443a4430713d325ab86895a4a45eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +157,42 @@ Macros</h2></td></tr>
 <tr class="memitem:a5d3f11f2fdf8a7e27b975291e0c2c8cc" id="r_a5d3f11f2fdf8a7e27b975291e0c2c8cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d3f11f2fdf8a7e27b975291e0c2c8cc">MOSI</a>&#160;&#160;&#160;51</td></tr>
 <tr class="memdesc:a5d3f11f2fdf8a7e27b975291e0c2c8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">MOSI for the primary SPI bus.  <br /></td></tr>
 <tr class="separator:a5d3f11f2fdf8a7e27b975291e0c2c8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460d13e3e4087292a56b46cf7e49fc9f" id="r_a460d13e3e4087292a56b46cf7e49fc9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a460d13e3e4087292a56b46cf7e49fc9f">MCU_RST_TFT</a>&#160;&#160;&#160;A0</td></tr>
+<tr class="memdesc:a460d13e3e4087292a56b46cf7e49fc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">MCU commands reset of Display.  <br /></td></tr>
+<tr class="separator:a460d13e3e4087292a56b46cf7e49fc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e27e49f40e7acbb55bb085f15dabd99" id="r_a9e27e49f40e7acbb55bb085f15dabd99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e27e49f40e7acbb55bb085f15dabd99">ALARM</a>&#160;&#160;&#160;A1</td></tr>
+<tr class="memdesc:a9e27e49f40e7acbb55bb085f15dabd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that triggers the alarm.  <br /></td></tr>
+<tr class="separator:a9e27e49f40e7acbb55bb085f15dabd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac735ae65b04d7f1745e912d60a576668" id="r_ac735ae65b04d7f1745e912d60a576668"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac735ae65b04d7f1745e912d60a576668">VOL_SENSOR</a>&#160;&#160;&#160;A15</td></tr>
+<tr class="memdesc:ac735ae65b04d7f1745e912d60a576668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analog kettle volume sensor.  <br /></td></tr>
+<tr class="separator:ac735ae65b04d7f1745e912d60a576668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b7cba602225c494917f733fa079cfe" id="r_ab3b7cba602225c494917f733fa079cfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3b7cba602225c494917f733fa079cfe">ELEM_CNTRL</a>&#160;&#160;&#160;23</td></tr>
+<tr class="memdesc:ab3b7cba602225c494917f733fa079cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that controls the kettle element.  <br /></td></tr>
+<tr class="separator:ab3b7cba602225c494917f733fa079cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2bd79a5774ca490eccbdecf5771628" id="r_a5c2bd79a5774ca490eccbdecf5771628"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c2bd79a5774ca490eccbdecf5771628">INTERLOCK_STATUS</a>&#160;&#160;&#160;25</td></tr>
+<tr class="memdesc:a5c2bd79a5774ca490eccbdecf5771628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that indicates the interlock status.  <br /></td></tr>
+<tr class="separator:a5c2bd79a5774ca490eccbdecf5771628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9e3f3ee9e8d7161ef5a895d990fd7b" id="r_a4e9e3f3ee9e8d7161ef5a895d990fd7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e9e3f3ee9e8d7161ef5a895d990fd7b">AUX_OUT</a>&#160;&#160;&#160;31</td></tr>
+<tr class="memdesc:a4e9e3f3ee9e8d7161ef5a895d990fd7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that controls the 120VAC auxiliary output.  <br /></td></tr>
+<tr class="separator:a4e9e3f3ee9e8d7161ef5a895d990fd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09960734adb9d9bfe1a59c1a22f4a75f" id="r_a09960734adb9d9bfe1a59c1a22f4a75f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09960734adb9d9bfe1a59c1a22f4a75f">PUMP_OUT</a>&#160;&#160;&#160;33</td></tr>
+<tr class="memdesc:a09960734adb9d9bfe1a59c1a22f4a75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that controls the 120VAC pump output.  <br /></td></tr>
+<tr class="separator:a09960734adb9d9bfe1a59c1a22f4a75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d35a0dadb53d3217edb683b8376339" id="r_a14d35a0dadb53d3217edb683b8376339"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14d35a0dadb53d3217edb683b8376339">CONTACTOR_STATUS</a>&#160;&#160;&#160;37</td></tr>
+<tr class="memdesc:a14d35a0dadb53d3217edb683b8376339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that indicates the contactor status.  <br /></td></tr>
+<tr class="separator:a14d35a0dadb53d3217edb683b8376339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156875687edb737b52ac4cde4476fe48" id="r_a156875687edb737b52ac4cde4476fe48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a156875687edb737b52ac4cde4476fe48">ELEM_SWITCH_LED</a>&#160;&#160;&#160;39</td></tr>
+<tr class="memdesc:a156875687edb737b52ac4cde4476fe48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that controls the LED for the kettle element switch.  <br /></td></tr>
+<tr class="separator:a156875687edb737b52ac4cde4476fe48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145103118f6d9d1129aa4509cf214a13" id="r_a145103118f6d9d1129aa4509cf214a13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a145103118f6d9d1129aa4509cf214a13">BUZZER</a>&#160;&#160;&#160;41</td></tr>
+<tr class="memdesc:a145103118f6d9d1129aa4509cf214a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that controls the buzzer.  <br /></td></tr>
+<tr class="separator:a145103118f6d9d1129aa4509cf214a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597a7ed44b4056556edc205765a55e70" id="r_a597a7ed44b4056556edc205765a55e70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a597a7ed44b4056556edc205765a55e70">KETTLE_CS</a>&#160;&#160;&#160;47</td></tr>
+<tr class="memdesc:a597a7ed44b4056556edc205765a55e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that controls the kettle RTD temperature sensor.  <br /></td></tr>
+<tr class="separator:a597a7ed44b4056556edc205765a55e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be9f598dafce7335784e0569544fa9c" id="r_a4be9f598dafce7335784e0569544fa9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4be9f598dafce7335784e0569544fa9c">CHILLER_CS</a>&#160;&#160;&#160;49</td></tr>
+<tr class="memdesc:a4be9f598dafce7335784e0569544fa9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin that controls the chiller RTD temperature sensor.  <br /></td></tr>
+<tr class="separator:a4be9f598dafce7335784e0569544fa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Common definitions used throughout the SoloContoller app. </p>
@@ -174,12 +204,76 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ALARM&#160;&#160;&#160;27</td>
+          <td class="memname">#define ALARM&#160;&#160;&#160;A1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Pin that triggers the alarm. </p>
+
+</div>
+</div>
+<a id="a4e9e3f3ee9e8d7161ef5a895d990fd7b" name="a4e9e3f3ee9e8d7161ef5a895d990fd7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9e3f3ee9e8d7161ef5a895d990fd7b">&#9670;&#160;</a></span>AUX_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AUX_OUT&#160;&#160;&#160;31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin that controls the 120VAC auxiliary output. </p>
+
+</div>
+</div>
+<a id="a145103118f6d9d1129aa4509cf214a13" name="a145103118f6d9d1129aa4509cf214a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145103118f6d9d1129aa4509cf214a13">&#9670;&#160;</a></span>BUZZER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUZZER&#160;&#160;&#160;41</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin that controls the buzzer. </p>
+
+</div>
+</div>
+<a id="a4be9f598dafce7335784e0569544fa9c" name="a4be9f598dafce7335784e0569544fa9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be9f598dafce7335784e0569544fa9c">&#9670;&#160;</a></span>CHILLER_CS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHILLER_CS&#160;&#160;&#160;49</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin that controls the chiller RTD temperature sensor. </p>
+
+</div>
+</div>
+<a id="a14d35a0dadb53d3217edb683b8376339" name="a14d35a0dadb53d3217edb683b8376339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d35a0dadb53d3217edb683b8376339">&#9670;&#160;</a></span>CONTACTOR_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONTACTOR_STATUS&#160;&#160;&#160;37</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin that indicates the contactor status. </p>
 
 </div>
 </div>
@@ -231,6 +325,86 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ab3b7cba602225c494917f733fa079cfe" name="ab3b7cba602225c494917f733fa079cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b7cba602225c494917f733fa079cfe">&#9670;&#160;</a></span>ELEM_CNTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ELEM_CNTRL&#160;&#160;&#160;23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin that controls the kettle element. </p>
+
+</div>
+</div>
+<a id="a156875687edb737b52ac4cde4476fe48" name="a156875687edb737b52ac4cde4476fe48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156875687edb737b52ac4cde4476fe48">&#9670;&#160;</a></span>ELEM_SWITCH_LED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ELEM_SWITCH_LED&#160;&#160;&#160;39</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin that controls the LED for the kettle element switch. </p>
+
+</div>
+</div>
+<a id="a5c2bd79a5774ca490eccbdecf5771628" name="a5c2bd79a5774ca490eccbdecf5771628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2bd79a5774ca490eccbdecf5771628">&#9670;&#160;</a></span>INTERLOCK_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INTERLOCK_STATUS&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin that indicates the interlock status. </p>
+
+</div>
+</div>
+<a id="a597a7ed44b4056556edc205765a55e70" name="a597a7ed44b4056556edc205765a55e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a597a7ed44b4056556edc205765a55e70">&#9670;&#160;</a></span>KETTLE_CS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KETTLE_CS&#160;&#160;&#160;47</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin that controls the kettle RTD temperature sensor. </p>
+
+</div>
+</div>
+<a id="a460d13e3e4087292a56b46cf7e49fc9f" name="a460d13e3e4087292a56b46cf7e49fc9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460d13e3e4087292a56b46cf7e49fc9f">&#9670;&#160;</a></span>MCU_RST_TFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MCU_RST_TFT&#160;&#160;&#160;A0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MCU commands reset of Display. </p>
+
+</div>
+</div>
 <a id="a7334c540878c8c4d801fd75ed9fd8063" name="a7334c540878c8c4d801fd75ed9fd8063"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7334c540878c8c4d801fd75ed9fd8063">&#9670;&#160;</a></span>MISO</h2>
 
@@ -263,19 +437,19 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ca749a3778fe3dcbcdf17a2236240bd" name="a5ca749a3778fe3dcbcdf17a2236240bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ca749a3778fe3dcbcdf17a2236240bd">&#9670;&#160;</a></span>PRES</h2>
+<a id="a09960734adb9d9bfe1a59c1a22f4a75f" name="a09960734adb9d9bfe1a59c1a22f4a75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09960734adb9d9bfe1a59c1a22f4a75f">&#9670;&#160;</a></span>PUMP_OUT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PRES&#160;&#160;&#160;17</td>
+          <td class="memname">#define PUMP_OUT&#160;&#160;&#160;33</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Analog pressure data. </p>
+<p>Pin that controls the 120VAC pump output. </p>
 
 </div>
 </div>
@@ -388,6 +562,22 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>TFT wait signal output. </p>
+
+</div>
+</div>
+<a id="ac735ae65b04d7f1745e912d60a576668" name="ac735ae65b04d7f1745e912d60a576668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac735ae65b04d7f1745e912d60a576668">&#9670;&#160;</a></span>VOL_SENSOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VOL_SENSOR&#160;&#160;&#160;A15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Analog kettle volume sensor. </p>
 
 </div>
 </div>
