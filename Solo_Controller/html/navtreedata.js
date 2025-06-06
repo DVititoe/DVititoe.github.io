@@ -32,15 +32,15 @@ var NAVTREE =
     [ "Electronics Design", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html", [
       [ "Electronics Components", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md6", [
         [ "Mega 2560, Rev 3 Microcontroller", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md7", null ],
-        [ "Display Hardware", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8", null ],
-        [ "Controller Interface PCB", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md9", null ]
+        [ "7 inch 1024x600 IPS TFT Touch Display Module", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8", null ],
+        [ "RA8875 Display Interface Card", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md9", null ],
+        [ "Solo Controller Interface PCB***", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md10", null ]
       ] ],
-      [ "Physical Layout of Electronics", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md10", null ],
-      [ "Logical Layout of Electronics", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md11", [
-        [ "Interface considerations", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md12", null ],
-        [ "Where the data is stored and how used", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md13", null ],
-        [ "Maximizing use of graphics chip", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md14", null ],
-        [ "Reference key SW libraries that help with graphics and memory mgt.", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md15", null ]
+      [ "Physical Layout of Electronics", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md11", null ],
+      [ "Design Considerations", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md12", [
+        [ "Interface considerations", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md13", null ],
+        [ "Where the data is stored and how used", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md14", null ],
+        [ "Maximizing use of graphics chip", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md15", null ]
       ] ]
     ] ],
     [ "Getting Started", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html", [

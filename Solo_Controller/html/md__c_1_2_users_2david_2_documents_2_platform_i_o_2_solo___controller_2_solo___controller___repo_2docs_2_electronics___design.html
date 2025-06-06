@@ -100,50 +100,56 @@ $(function(){initNavTree('md__c_1_2_users_2david_2_documents_2_platform_i_o_2_so
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md5"></a></p>
-<p>Coming soon...</p>
-<h1><a class="anchor" id="autotoc_md6"></a>
-Electronics Components</h1>
-<p>Coming soon...</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
-Mega 2560, Rev 3 Microcontroller</h2>
-<p>Coming soon...</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
-Display Hardware</h2>
-<p>Things to describe:</p>
-<ul>
-<li>BuyDisplay 1024/600 CTP (Links to PDFs): Built-in <a href="https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf">LT7683</a> graphics chip, providing: 128Mb RAM and ROM + Capacitance Touch Screen (known bub)</li>
-<li>RA8875 Interface card (Links to PDFs)</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md9"></a>
-Controller Interface PCB</h2>
-<p>Coming soon...</p>
-<ul>
-<li>Circuit Diagram and Discussion</li>
-<li>PCB Design and Discussion</li>
-<li>Link to BOM</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md10"></a>
-Physical Layout of Electronics</h1>
-<p>Coming soon...</p>
-<h1><a class="anchor" id="autotoc_md11"></a>
-Logical Layout of Electronics</h1>
+<p>The control electronics for the <em>Solo Controller</em> are contained within the Display box <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html"><em><b>shown here</b></em></a>. The control electronics manage the collect temperature and volume sensor information, manage output to heating elements, pumps, and auxillary devices, handle user inputs via the touch screen interface, and manage kettle temperatures via PIDs.</p>
+<p><em><b>Need to update the big picture graphic showing how the four pieces work together.</b></em></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone"><img src="Microcontroller_Design.png" alt="Microcontroller Architecture" width="75%" class="inline"/>    </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><em>Stuff here</em>   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Electronics Components</h1>
+<p>The four components that make up the control electronics are as follows:</p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Mega 2560, Rev 3 Microcontroller</h2>
+<p>The "brains" of the electronics modules. The Mega 2560 runs the control sofware provided <a href="https://dvititoe.github.io/Solo_Controller/html/hierarchy.html"><em><b>here</b></em></a>. Documentation of the sofware architecture is provided <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html"><em><b>here</b></em></a>.</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+7 inch 1024x600 IPS TFT Touch Display Module</h2>
+<p>with I2C SPI for Arduino Interface Pin Header Connection-4-Wire SPI Power Supply (Typ.) VDD=5.0V Touch Panel(Attached by default) 7"Capacitive Touch Panel with Controller
+MicroSD Card Interface
+Pin Header Connection
+New WINBOND IC Chip FLASH 128M BIT W25Q128JV SOP8 Package
+
+LT7683 w/ 128M Bit internal RAM
+
+https://www.buydisplay.com/
+
+- BuyDisplay 1024/600 CTP (Links to PDFs): Built-in &lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf">https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf</a>" &gt;LT7683&lt;/a&gt; graphics chip, providing: 128Mb RAM and ROM + Capacitance Touch Screen (known bub)
+
+
+@subsection autotoc_md9 RA8875 Display Interface Card
+
+Coming soon...
+
+
+@subsection autotoc_md10 Solo Controller Interface PCB***
+
+&lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/_controller___interface___p_c_b_8md.html">https://dvititoe.github.io/Solo_Controller/html/_controller___interface___p_c_b_8md.html</a>" &gt;<em><b>Controller Interace PCB</b></em></p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Physical Layout of Electronics</h1>
+<p>Coming soon...</p>
+<h1><a class="anchor" id="autotoc_md12"></a>
+Design Considerations</h1>
+<h2><a class="anchor" id="autotoc_md13"></a>
 Interface considerations</h2>
 <p>Coming soon...</p>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 Where the data is stored and how used</h2>
 <p>Coming soon...</p>
-<h2><a class="anchor" id="autotoc_md14"></a>
-Maximizing use of graphics chip</h2>
-<p>Coming soon...</p>
 <h2><a class="anchor" id="autotoc_md15"></a>
-Reference key SW libraries that help with graphics and memory mgt.</h2>
+Maximizing use of graphics chip</h2>
+<p>Coming soon... </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
