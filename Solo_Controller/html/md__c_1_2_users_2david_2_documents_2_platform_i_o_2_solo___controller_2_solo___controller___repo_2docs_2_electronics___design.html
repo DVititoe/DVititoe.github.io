@@ -100,33 +100,21 @@ $(function(){initNavTree('md__c_1_2_users_2david_2_documents_2_platform_i_o_2_so
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md5"></a></p>
-<p>The control electronics for the <em>Solo Controller</em> are contained within the Display box <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html"><em><b>shown here</b></em></a>. The control electronics manage the collect temperature and volume sensor information, manage output to heating elements, pumps, and auxillary devices, handle user inputs via the touch screen interface, and manage kettle temperatures via PIDs.</p>
-<p><em><b>Need to update the big picture graphic showing how the four pieces work together.</b></em></p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone"><img src="Microcontroller_Design.png" alt="Microcontroller Architecture" width="75%" class="inline"/>    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><em>Stuff here</em>   </td></tr>
-</table>
+<p>The electrical components of the Solo BIAB Controller are split between two enclosures: Display and <a class="el" href="class_sensor.html" title="Abstract class that acts as an interface for all sensor classes.">Sensor</a> Breakout Enclosure. The 1024x600 pixel touch screeen and associated control electronics are all contained within the Display Enclosure. There are four primary components to the control electronics that interface as shown in the following figure.</p>
+<center><img src="Microcontroller_Design.png" alt="Microcontroller Architecture" width="90%" class="inline"/></center><p>This section focuses on the design of the control electronics. Circuit diagrams showing the full wiring of the Display enclosure can be found <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html"><em><b>here</b></em></a>.</p>
 <h1><a class="anchor" id="autotoc_md6"></a>
 Electronics Components</h1>
 <p>The four components that make up the control electronics are as follows:</p>
 <h2><a class="anchor" id="autotoc_md7"></a>
 Mega 2560, Rev 3 Microcontroller</h2>
-<p>The "brains" of the electronics modules. The Mega 2560 runs the control sofware provided <a href="https://dvititoe.github.io/Solo_Controller/html/hierarchy.html"><em><b>here</b></em></a>. Documentation of the sofware architecture is provided <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html"><em><b>here</b></em></a>.</p>
+<p>The Arduino Mega 2560, Rev 3 microcontroller is the "brains" for the control electroncs. The software loaded onto the microcontroller is <a href="https://dvititoe.github.io/Solo_Controller/html/hierarchy.html">here</a>. Documentation describing the sofware architecture is <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html">here</a>.</p>
 <h2><a class="anchor" id="autotoc_md8"></a>
-7 inch 1024x600 IPS TFT Touch Display Module</h2>
-<p>with I2C SPI for Arduino Interface Pin Header Connection-4-Wire SPI Power Supply (Typ.) VDD=5.0V Touch Panel(Attached by default) 7"Capacitive Touch Panel with Controller
-MicroSD Card Interface
-Pin Header Connection
-New WINBOND IC Chip FLASH 128M BIT W25Q128JV SOP8 Package
+7 inch 1024x600 TFT Touch Display Module</h2>
+<p>The Solo Controller uses a 7", 1024x600 pixel TFT display from &lt;a href="<a href="https://www.buydisplay.com/">https://www.buydisplay.com/</a>" &gt;BuyDisplay.com&lt;/a&gt;. Model &lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf">https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf</a>" &gt;ER-TFT070A2-6-5633&lt;/a&gt; was selected. This display has built in Capacitance Touch Panel (CTP) capabability. Information about the CTP capability can be found in the &lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/docs/FT5316.pdf">https://dvititoe.github.io/Solo_Controller/html/docs/FT5316.pdf</a>" &gt;CTP Datasheet&lt;/a&gt; and the &lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/docs/FT5x16_registers.pdf">https://dvititoe.github.io/Solo_Controller/html/docs/FT5x16_registers.pdf</a>" &gt;CTP Data Register&lt;/a&gt; documentation. 
 
-LT7683 w/ 128M Bit internal RAM
+&lt;center&gt;&lt;img src="../images/TFT_Display.png" alt="TFT Display" width="90%"&gt;&lt;/center&gt;
 
-https://www.buydisplay.com/
-
-- BuyDisplay 1024/600 CTP (Links to PDFs): Built-in &lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf">https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf</a>" &gt;LT7683&lt;/a&gt; graphics chip, providing: 128Mb RAM and ROM + Capacitance Touch Screen (known bub)
-
+The display has a built in MicroSD Card Interface, which is not used by the Solo Controller. It can also be upgraded, by soldering a 128M bit (SOP8) ROM chip to the board. This gives more than enoungh non-volitile storage capacity to hold the imagery used by the Solo Controller software. Finally, the display includes a &lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf">https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf</a>" &gt;LT7683&lt;/a&gt; graphics chip. the LT7683 has 128Mb of built in RAM. This chip provides the graphics engine that drives the Solo Controller user interface. 
 
 @subsection autotoc_md9 RA8875 Display Interface Card
 
@@ -135,7 +123,7 @@ Coming soon...
 
 @subsection autotoc_md10 Solo Controller Interface PCB***
 
-&lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/_controller___interface___p_c_b_8md.html">https://dvititoe.github.io/Solo_Controller/html/_controller___interface___p_c_b_8md.html</a>" &gt;<em><b>Controller Interace PCB</b></em></p>
+&lt;a href="<a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoac6bc5e3b05d559666a83ebb001b05a2.html">https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoac6bc5e3b05d559666a83ebb001b05a2.html</a>" &gt;<em><b>Controller Interace PCB</b></em></p>
 <h1><a class="anchor" id="autotoc_md11"></a>
 Physical Layout of Electronics</h1>
 <p>Coming soon...</p>

@@ -24,7 +24,7 @@ var searchData=
   ['disclaimer_21',['Warranty Disclaimer',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md48',1,'']]],
   ['display_20box_20microcontroller_20circuit_22',['Display Box Microcontroller Circuit',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html#autotoc_md28',1,'']]],
   ['display_20interface_20card_23',['RA8875 Display Interface Card',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md9',1,'']]],
-  ['display_20module_24',['7 inch 1024x600 IPS TFT Touch Display Module',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8',1,'']]],
+  ['display_20module_24',['7 inch 1024x600 TFT Touch Display Module',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8',1,'']]],
   ['display_20rom_25',['Updating the Display ROM',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md19',1,'']]],
   ['display_5fon_26',['Display_ON',['../namespace_t_f_t_m070_a1.html#a483c6292776c0abf2e5d948932f9b88e',1,'TFTM070A1']]],
   ['divider_5fmsg_27',['DIVIDER_MSG',['../_err_msg_8cpp.html#ac547215be57cee6935fdc3e2dfcb0b43',1,'ErrMsg.cpp']]],

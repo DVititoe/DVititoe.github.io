@@ -32,7 +32,7 @@ var NAVTREE =
     [ "Electronics Design", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html", [
       [ "Electronics Components", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md6", [
         [ "Mega 2560, Rev 3 Microcontroller", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md7", null ],
-        [ "7 inch 1024x600 IPS TFT Touch Display Module", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8", null ],
+        [ "7 inch 1024x600 TFT Touch Display Module", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8", null ],
         [ "RA8875 Display Interface Card", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md9", null ],
         [ "Solo Controller Interface PCB***", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md10", null ]
       ] ],

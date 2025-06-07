@@ -28,7 +28,7 @@ var searchData=
   ['minimum_20hardware_20needed_20to_20get_20started_25',['Minimum hardware needed to get started',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md17',1,'']]],
   ['minvolume_26',['minVolume',['../struct_config_list__t.html#af121b71ae32a7a3f79a8fc7a7520efbd',1,'ConfigList_t']]],
   ['miso_27',['MISO',['../_common_8h.html#a7334c540878c8c4d801fd75ed9fd8063',1,'Common.h']]],
-  ['module_28',['7 inch 1024x600 IPS TFT Touch Display Module',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8',1,'']]],
+  ['module_28',['7 inch 1024x600 TFT Touch Display Module',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8',1,'']]],
   ['modules_29',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md38',1,'']]],
   ['momentarybutton_30',['MomentaryButton',['../class_momentary_button.html',1,'MomentaryButton'],['../class_momentary_button.html#a16e8fdaccd4933748a340bbe652d28e8',1,'MomentaryButton::MomentaryButton()']]],
   ['monofonto_2dregular_2d140_2eh_31',['Monofonto-Regular-140.h',['../_monofonto-_regular-140_8h.html',1,'']]],
