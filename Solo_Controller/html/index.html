@@ -108,12 +108,19 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_r_e_a_d_m_e"></a></p>
 <h1><a class="anchor" id="autotoc_md57"></a>
+Sub-Pages</h1>
+<ul>
+<li><a class="el" href="_hardware__architecture.html">Hardware Architecture</a></li>
+<li><a class="el" href="_software__architecture.html">Software Architecture</a></li>
+<li><a class="el" href="_getting__started.html">Getting Started</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md58"></a>
 Overview</h1>
 <p>This <a href="https://github.com/DVititoe/Solo_Controller">repository</a> describes the design and specifications for a new touch screen controller, designed to operate an 240V electric Brew in a Bag (BIAB) system. I specifically designed this controller for use with a customized <a href="https://spikebrewing.com/products/spike-solo-system-1?var=43233939259628">Spike Solo Brew System</a>, but this this controller can be used with any compatible 240v Electric Brew Kettle.</p>
 <p><b>Note: This project is not in any way affiliated with Spike Homebrewing.</b></p>
-<h2><a class="anchor" id="autotoc_md58"></a>
+<h2><a class="anchor" id="autotoc_md59"></a>
 User Interface Concept</h2>
-<center><img src="User_Interface_Concept.png" alt="XYZ Controller User Interface" width="75%" class="inline"/></center><h2><a class="anchor" id="autotoc_md59"></a>
+<center><img src="User_Interface_Concept.png" alt="XYZ Controller User Interface" width="75%" class="inline"/></center><h2><a class="anchor" id="autotoc_md60"></a>
 Key Design Features</h2>
 <p><em><b>Why design a new controller?</b></em> After all, there are a number of BIAB controllers already out there, ready to to purchased and used right out of the box. None of these controllers had all of the features that I wanted for my brew system. So, I decided to build my own. Some of the key design features that differentiate this controller from others include:</p>
 <ul>
@@ -124,7 +131,7 @@ Key Design Features</h2>
 <li><em><b>Physical Element Disable Switch</b></em>: Most touch screen controllers rely solely upon signals from it's microcontroller to enable or disable the heating element. I prefer a physical switch, that will electrically disable the element when needed. This guarantees that a microcontroller or software glitch won't prevent you from disabling the element.</li>
 <li><em><b>Loud Ass Alarm</b></em>: Most controllers have fairly weak alarms. This design uses a 12v DC alarm from <a href="https://www.auberins.com/index.php?main_page=product_info&amp;cPath=7_33&amp;products_id=218">Auber Instruments</a> to generate 85 decibels. There is no chance of missing this bad boy!</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md60"></a>
+<h2><a class="anchor" id="autotoc_md61"></a>
 Controller Architecture and Documentation</h2>
 <p>Additional information on the Solo Controller Design can be found here:</p>
 <ul>
@@ -136,10 +143,10 @@ Controller Architecture and Documentation</h2>
 </li>
 <li><a href="https://dvititoe.github.io/Solo_Controller/html/_software__architecture.html">Software Architecture</a> : Diagrams describing the structure and functionality of the Solo Controller software</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md61"></a>
+<h2><a class="anchor" id="autotoc_md62"></a>
 Use of this Design</h2>
 <p>All of the design specifications provided within this repository are freely available for others to use. Please keep in mind, though, that I make no warranties regarding the quality of the electrical design nor the quality of the software provided here. I'm always willing a answer questions, but for the most part, you're on your own should you attempt to build one yourself</p>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md63"></a>
 Getting Started</h2>
 <p>Building this Controller requires an understanding of:</p>
 <ul>

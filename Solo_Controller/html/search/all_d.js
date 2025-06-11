@@ -2,7 +2,7 @@ var searchData=
 [
   ['h_5ffile_0',['h_file',['../namespacecreate___r_o_m__image.html#a4673918c6a1407ec140794f70260459e',1,'create_ROM_image']]],
   ['h_5fout_1',['h_out',['../namespacecreate___r_o_m__image.html#a195b3926d04c3555e36ee5e2bd9708dd',1,'create_ROM_image']]],
-  ['hardware_20architecture_2',['Hardware Architecture',['../_hardware__architecture.html',1,'']]],
+  ['hardware_20architecture_2',['Hardware Architecture',['../_hardware__architecture.html',1,'index']]],
   ['hardware_20needed_20to_20get_20started_3',['Minimum hardware needed to get started',['../_getting__started.html#autotoc_md20',1,'']]],
   ['hardware_20parts_20list_4',['Hardware Parts List',['../_hardware__parts__list.html',1,'Hardware_Architecture']]],
   ['hardware_5farchitecture_2emd_5',['Hardware_Architecture.md',['../_hardware___architecture_8md.html',1,'']]],
