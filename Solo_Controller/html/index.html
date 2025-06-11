@@ -100,18 +100,23 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_r_e_a_d_m_e"></a></p>
-<p>This repository describes the design and specifications for a new touch screen controller, designed to operate an 240V electric Brew in a Bag (BIAB) system. I specifically designed this controller for use with a cutstomized <a href="https://spikebrewing.com/products/spike-solo-system-1?var=43233939259628">Spike Solo Brew System</a>, but this this controller can be used with any compatable 240v Electric Brew Kettle.</p>
-<p><b>Note: This project is not in any way affliated with Spike Homebrewing.</b></p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone"><center><img src="User_Interface_Concept.png" alt="XYZ Controller User Interface" width="75%" class="inline"/></center>    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><center>Concept for the controller's User Interface. This consists of a touch screen to manage the brew system, two physical switches (Element Enable and Power Switch), and an Alarm.</center>   </td></tr>
-</table>
-<p><em><b>Why design a new controller?</b></em> After all, there are a number of BIAB controllers already out there, ready to to purchased and used right out of the box. None of these controllers had all of the features that I wanted for my brew system. So, I decided to build my own.</p>
-<h1><a class="anchor" id="autotoc_md54"></a>
+<p>This <a href="https://github.com/DVititoe/Solo_Controller">repository</a> describes the design and specifications for a new touch screen controller, designed to operate an 240V electric Brew in a Bag (BIAB) system. I specifically designed this controller for use with a customized <a href="https://spikebrewing.com/products/spike-solo-system-1?var=43233939259628">Spike Solo Brew System</a>, but this this controller can be used with any compatible 240v Electric Brew Kettle.</p>
+<ul>
+<li>Touch Screen BIAB Controller<ul>
+<li>User Interface Concept</li>
+<li>Key Design Features</li>
+<li>Controller Architecture and Documentation</li>
+<li>Use of this Design</li>
+<li>Getting Started</li>
+</ul>
+</li>
+</ul>
+<p><b>Note: This project is not in any way affiliated with Spike Homebrewing.</b></p>
+<h1><a class="anchor" id="autotoc_md57"></a>
+User Interface Concept</h1>
+<center><img src="User_Interface_Concept.png" alt="XYZ Controller User Interface" width="75%" class="inline"/></center><h1><a class="anchor" id="autotoc_md58"></a>
 Key Design Features</h1>
-<p>Some of the key design features that differentiate this controller from others include:</p>
+<p><em><b>Why design a new controller?</b></em> After all, there are a number of BIAB controllers already out there, ready to to purchased and used right out of the box. None of these controllers had all of the features that I wanted for my brew system. So, I decided to build my own. Some of the key design features that differentiate this controller from others include:</p>
 <ul>
 <li><em><b>Two Temperature Probes</b></em>: The controller has built in support for two RTD temperature probes. One probe measures Kettle temperature. The other temperature probe can be installed on the output of your wort chiller.</li>
 <li><em><b>Kettle Volume Measurement</b></em>: The controller is designed to work with a tri-clamp mounted <a href="https://brucontrol.com/product/volume-sensor/">pressure sensor</a> installed onto the kettle. The controller uses the pressure values measured by tthis sensor to estimate the amount of wort in the kettle.</li>
@@ -120,7 +125,7 @@ Key Design Features</h1>
 <li><em><b>Physical Element Disable Switch</b></em>: Most touch screen controllers rely soley upon signals from it's microcontroller to enable or disable the heating element. I prefer a physical switch, that will electrically disable the element when needed. This guarantees that a microcontroller or software glitch won't prevent you from disabling the element.</li>
 <li><em><b>Loud Ass Alarm</b></em>: Most conrollers have fairly weak alarms. This design uses a 12v DC alarm from <a href="https://www.auberins.com/index.php?main_page=product_info&amp;cPath=7_33&amp;products_id=218">Auber Instruments</a> to generate 85 decibels. There is no chance of missing this bad boy!</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md55"></a>
+<h1><a class="anchor" id="autotoc_md59"></a>
 Controller Architecture and Documentation</h1>
 <p>The following describes the hardware and software design for the Brew Controller</p>
 <ul>
@@ -130,10 +135,10 @@ Controller Architecture and Documentation</h1>
 <li><a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html"><em><b>Software Architecture</b></em></a>: Collection of diagrams describing the structure and functionality of the software running the touch screen interface.</li>
 <li><a href="https://dvititoe.github.io/Solo_Controller/html/hierarchy.html"><em><b>Software Documentation</b></em></a>: Doxygen generated documentation of the C++ software classes and function used by the controller.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md56"></a>
+<h1><a class="anchor" id="autotoc_md60"></a>
 Use of this Design</h1>
 <p>All of the design specifications provided within this repository are freely available for others to use. Please keep in mind, though, that I make no warranties regarding the quality of the electrical design nor the quality of the software provided here. I'm always willing a answer questions, but for the most part, you're on your own should you attempt to build one yourself</p>
-<h1><a class="anchor" id="autotoc_md57"></a>
+<h1><a class="anchor" id="autotoc_md61"></a>
 Getting Started</h1>
 <p>Building this Controller requires an understanding of:</p>
 <ul>
