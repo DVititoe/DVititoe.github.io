@@ -5,7 +5,7 @@ var searchData=
   ['of_20graphics_20chip_2',['Maximizing use of graphics chip',['../_electronics__design.html#autotoc_md19',1,'']]],
   ['of_20it_3',['Why is this Power Pin set to Power Input/Power Output/Unconnected? I get DRC errors because of it!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md55',1,'']]],
   ['of_20pcb_4',['of PCB',['../_controller__interface__board.html#autotoc_md10',1,'Back of PCB'],['../_controller__interface__board.html#autotoc_md9',1,'Front of PCB']]],
-  ['of_20this_20design_5',['Use of this Design',['../index.html#autotoc_md62',1,'']]],
+  ['of_20this_20design_5',['Use of this Design',['../index.html#autotoc_md61',1,'']]],
   ['old_5fstring_6',['old_string',['../namespacerun_doxygen.html#a51653e3f0281fa5e4299c07d77ddc22a',1,'runDoxygen']]],
   ['one_5fshot_5fpwm0_7',['One_Shot_PWM0',['../namespace_t_f_t_m070_a1.html#af48dc67cb9369a12b0595db3a6f5cd4b',1,'TFTM070A1']]],
   ['one_5fshot_5fpwm1_8',['One_Shot_PWM1',['../namespace_t_f_t_m070_a1.html#acc90b8bd4ff582e93f8fafd6b9a34ebc',1,'TFTM070A1']]],
