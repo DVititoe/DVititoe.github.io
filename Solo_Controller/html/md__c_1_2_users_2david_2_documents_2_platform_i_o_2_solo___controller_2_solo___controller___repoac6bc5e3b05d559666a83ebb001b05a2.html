@@ -131,7 +131,7 @@ Key Features</h1>
 <li><a class="el" href="namespace_buzzer.html">Buzzer</a> to provide audio feedback.</li>
 <li>Output for Brew Pump, Element SSR, and Aux</li>
 </ul>
-<p>Since this card is intended as a prototype card, a number of additional features have been added to help prototype and debub new features. This includes:</p>
+<p>Since this card is intended as a prototype card, a number of additional features have been added to help prototype and debug new features. This includes:</p>
 <ul>
 <li>LEDs to indicate when various components are active</li>
 <li>Prototype board for additional components</li>
@@ -147,7 +147,7 @@ Circuit Diagram</h1>
 <center><img src="Controller_Board_Schematic.png" alt="Controller Interface Circuit" width="90%" class="inline"/></center><h2><a class="anchor" id="autotoc_md7"></a>
 CTP Reset Circuit</h2>
 <p>The <a href="https://dvititoe.github.io/Solo_Controller/html/docs/FT5316.pdf">Capacitance Touch Panel</a> (CTP) circuit provided by the <a href="https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf">ER-TFT070A2-6-5633</a> display, has specific power on requirements. In particular, the TFT reset pin must remain grounded during power up. Once the power is stable, the reset pin can be allowed to float, which returns it to 5v. This enables the TFT, making it ready for successful operation. Failure to do this will can place the CTP module into a bad state.</p>
-<p>The CTP Reset Circuit uses a 555 timing chip to ground the reset pin during system power up. ONce the microcontroller has completed it's startup, it breifly pulses the A0 pin high (5v) before returning it to ground. This triggers the 555 timing chip, latching the CTP in the enabled state.</p>
+<p>The CTP Reset Circuit uses a 555 timing chip to ground the reset pin during system power up. ONce the microcontroller has completed it's startup, it briefly pulses the A0 pin high (5v) before returning it to ground. This triggers the 555 timing chip, latching the CTP in the enabled state.</p>
 <p>The reset pin in this circuit is tied to a momentary button in the Display Enclosure. If this button is pressed, reset is grounded. When this happens, the microcontroller reboots and the CTP Reset Circuit disables (grounds) the CTP reset. As described above, once the microcontroller completes its boot sequence, the TFT is enabled.</p>
 <center><img src="Controller_Board_Reset_Circuit.png" alt="Controller Interface Circuit" width="90%" class="inline"/></center><h2><a class="anchor" id="autotoc_md8"></a>
 Element Interlock Circuit</h2>
@@ -155,7 +155,7 @@ Element Interlock Circuit</h2>
 <p>Placing the Element Enable switch into the 'off' position, forces 'input' to be 0v. This action latches 'Interlock_Status' at 5v, which enables the contactor for the element.</p>
 <center><img src="Controller_Board_Interlock_Circuit.png" alt="Controller Interface Circuit" width="90%" class="inline"/></center><h1><a class="anchor" id="autotoc_md9"></a>
 Circuit Board Layout</h1>
-<p>The circuit board layout is provided here for completeness. For additional information, place refer to the <a href="https://github.com/DVititoe/Solo_Controller/tree/main/Kicad/Controller_Board">Kicad model</a>.</p>
+<p>The circuit board layout is provided here for completeness. For additional information, place refer to the <a href="https://github.com/DVititoe/Solo_Controller/tree/main/Kicad/Controller_Board">KiCad model</a>.</p>
 <h2><a class="anchor" id="autotoc_md10"></a>
 Front of PCB</h2>
 <center><img src="Controller_Board_PCB-Front.png" alt="Controller Interface PCB" width="90%" class="inline"/></center><h2><a class="anchor" id="autotoc_md11"></a>
