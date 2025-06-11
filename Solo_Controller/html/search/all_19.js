@@ -13,10 +13,10 @@ var searchData=
   ['vol_5fsensor_10',['VOL_SENSOR',['../_common_8h.html#ac735ae65b04d7f1745e912d60a576668',1,'Common.h']]],
   ['vol_5fsetup_11',['VOL_SETUP',['../_r_o_m___images_8h.html#aa71a31ae4a84bc3116ad8c482c37605d',1,'ROM_Images.h']]],
   ['volsetup_12',['volSetup',['../namespace_c_b_1_1_s_e_t_u_p.html#a8e0da5e9f4b6752ed7237ce611e3bddb',1,'CB::SETUP']]],
-  ['voltage_20sensor_20breakout_20box_13',['High Voltage Sensor Breakout Box',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html#autotoc_md35',1,'']]],
+  ['voltage_20sensor_20breakout_20box_13',['High Voltage Sensor Breakout Box',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html#autotoc_md26',1,'']]],
   ['volume_14',['volume',['../struct_config_list__t.html#a52d11f2946ec0f209f05587e3ddf3855',1,'ConfigList_t']]],
   ['vscan_5ft_5fto_5fb_15',['VSCAN_T_to_B',['../namespace_t_f_t_m070_a1.html#addf20d50d4ac2e716306a5511cd772de',1,'TFTM070A1']]],
-  ['vscode_20and_20platformio_16',['Installing VSCode and PlatformIO',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md24',1,'']]],
+  ['vscode_20and_20platformio_16',['Installing VSCode and PlatformIO',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md15',1,'']]],
   ['vsync_5fhigh_5factive_17',['VSYNC_High_Active',['../namespace_t_f_t_m070_a1.html#ac25f7a1e3339a9bd54b08ec2cd1bebdc',1,'TFTM070A1']]],
   ['vsync_5flow_5factive_18',['VSYNC_Low_Active',['../namespace_t_f_t_m070_a1.html#a3cbfccff6856bfbc865b7afce4a7e307',1,'TFTM070A1']]]
 ];

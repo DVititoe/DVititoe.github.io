@@ -1,13 +1,13 @@
 var searchData=
 [
   ['edge_20cuts_20tt_20outline_0',['Why do the footprints not have an &lt;tt&gt;Edge.Cuts&lt;/tt&gt; outline?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md56',1,'']]],
-  ['electronics_1',['Physical Layout of Electronics',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md18',1,'']]],
-  ['electronics_20components_2',['Electronics Components',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md13',1,'']]],
+  ['electronics_1',['Physical Layout of Electronics',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md9',1,'']]],
+  ['electronics_20components_2',['Electronics Components',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md4',1,'']]],
   ['electronics_20design_3',['Electronics Design',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html',1,'']]],
   ['electronics_5fdesign_2emd_4',['Electronics_Design.md',['../_electronics___design_8md.html',1,'']]],
   ['elem_5fcntrl_5',['ELEM_CNTRL',['../_common_8h.html#ab3b7cba602225c494917f733fa079cfe',1,'Common.h']]],
   ['elem_5fswitch_5fled_6',['ELEM_SWITCH_LED',['../_common_8h.html#a156875687edb737b52ac4cde4476fe48',1,'Common.h']]],
-  ['element_20interlock_20circuit_7',['Element Interlock Circuit',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoac6bc5e3b05d559666a83ebb001b05a2.html#autotoc_md8',1,'']]],
+  ['element_20interlock_20circuit_7',['Element Interlock Circuit',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md38',1,'']]],
   ['elementoff_8',['elementOff',['../namespace_c_b_1_1_m_a_i_n.html#aa2964d6ce2eb21dd7d3f5d6e9682e9f9',1,'CB::MAIN']]],
   ['elementon_9',['elementOn',['../namespace_c_b_1_1_m_a_i_n.html#ac77110627d22441004593cd8adb841ed',1,'CB::MAIN']]],
   ['elemout_10',['elemOut',['../struct_config_list__t.html#ab32a80bf64373bee0d55748a7d5dc217',1,'ConfigList_t']]],

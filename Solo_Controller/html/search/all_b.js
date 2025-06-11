@@ -1,12 +1,12 @@
 var searchData=
 [
   ['f_20courtyard_20tt_20or_20tt_20b_20courtyard_20tt_20outline_20i_20can_20t_20place_20my_20components_20where_20i_20need_20to_0',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md58',1,'']]],
-  ['f_20pcb_1',['Creation of Control I/F PCB',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md29',1,'']]],
+  ['f_20pcb_1',['Creation of Control I/F PCB',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md20',1,'']]],
   ['faq_2',['FAQ',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md53',1,'']]],
-  ['features_3',['Features',['../index.html#autotoc_md62',1,'Key Design Features'],['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoac6bc5e3b05d559666a83ebb001b05a2.html#autotoc_md4',1,'Key Features']]],
-  ['final_20software_20configuration_4',['Final Software Configuration',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md31',1,'']]],
+  ['features_3',['Features',['../index.html#autotoc_md62',1,'Key Design Features'],['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md34',1,'Key Features']]],
+  ['final_20software_20configuration_4',['Final Software Configuration',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md22',1,'']]],
   ['finishedwitherrmsg_5',['finishedWithErrMsg',['../namespace_task_1_1_error.html#adc4ee077b4fa2f212df9cf2dd310ba23',1,'Task::Error']]],
-  ['font_20classes_6',['Font Classes',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html#autotoc_md40',1,'']]],
+  ['font_20classes_6',['Font Classes',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html#autotoc_md31',1,'']]],
   ['font_5f0_5fdegree_7',['Font_0_degree',['../namespace_t_f_t_m070_a1.html#a01705098c7d930bc443c8c4f2cd54e38',1,'TFTM070A1']]],
   ['font_5f90_5fdegree_8',['Font_90_degree',['../namespace_t_f_t_m070_a1.html#a6a4737b21449462c9a1a47b10dbed6c9',1,'TFTM070A1']]],
   ['font_5fbackground_5fselect_5fcolor_9',['Font_Background_select_Color',['../namespace_t_f_t_m070_a1.html#a272c6af1dcafe2267712390f7fc16f10',1,'TFTM070A1']]],
@@ -35,8 +35,8 @@ var searchData=
   ['for_20arduino_20modules_32',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md42',1,'']]],
   ['for_20use_20by_20application_33',['Preparing for use by application',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md2',1,'']]],
   ['foreground_5fcolor_5f65k_34',['Foreground_color_65k',['../namespace_t_f_t_m070_a1.html#a8ca651e65d7a8ffc1494df8934db4c05',1,'TFTM070A1']]],
-  ['front_20of_20pcb_35',['Front of PCB',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoac6bc5e3b05d559666a83ebb001b05a2.html#autotoc_md10',1,'']]],
+  ['front_20of_20pcb_35',['Front of PCB',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md40',1,'']]],
   ['ft5316_36',['FT5316',['../namespace_f_t5316.html',1,'']]],
   ['ft5316_5faddr_37',['FT5316_ADDR',['../_t_f_t_m070_a1_8cpp.html#a74813198926c5869a92bb0a968afdb2f',1,'TFTM070A1.cpp']]],
-  ['functionality_38',['Compiling and Testing basic Functionality',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md27',1,'']]]
+  ['functionality_38',['Compiling and Testing basic Functionality',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md18',1,'']]]
 ];

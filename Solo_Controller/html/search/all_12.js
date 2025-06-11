@@ -1,9 +1,9 @@
 var searchData=
 [
   ['need_20to_0',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md58',1,'']]],
-  ['needed_20to_20get_20started_1',['Minimum hardware needed to get started',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md23',1,'']]],
+  ['needed_20to_20get_20started_1',['Minimum hardware needed to get started',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md14',1,'']]],
   ['new_5fstring_2',['new_string',['../namespacerun_doxygen.html#a95db0383b88f56d45afa2ed79ed80b04',1,'runDoxygen']]],
-  ['next_20steps_3',['Next Steps',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md28',1,'']]],
+  ['next_20steps_3',['Next Steps',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md19',1,'']]],
   ['nextaddress_4',['nextAddress',['../class_canvas.html#a6db455aef96b2f06acddc9ef19a18572',1,'Canvas']]],
   ['nicla_20vision_20and_20nicla_20voice_20tile_20footprints_20have_20cut_20outs_5',['Why do the Nicla Vision and Nicla Voice tile footprints have cut-outs?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md57',1,'']]],
   ['nicla_20voice_20tile_20footprints_20have_20cut_20outs_6',['Why do the Nicla Vision and Nicla Voice tile footprints have cut-outs?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md57',1,'']]],
