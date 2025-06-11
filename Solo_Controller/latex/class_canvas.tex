@@ -1,0 +1,633 @@
+\doxysection{Canvas Class Reference}
+\hypertarget{class_canvas}{}\label{class_canvas}\index{Canvas@{Canvas}}
+
+
+{\ttfamily \#include $<$Canvas.\+h$>$}
+
+Inheritance diagram for Canvas\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_canvas}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}} (void)
+\begin{DoxyCompactList}\small\item\em Default constructor sets canvass to the full size of the display. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_canvas_a3935a33755dde3ea695c06bcec40e5ba}{Canvas}} (bool temporary)
+\begin{DoxyCompactList}\small\item\em Constructor sets canvass to the full size of the display. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_canvas_aa4da0978f85bce794a7d794bf041cf98}{Canvas}} (uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}, bool temporary=false)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_canvas_a11136afee83f7bfa3d8f16d51abe9a70}{\texorpdfstring{$\sim$}{\string~}\+Canvas}} (void)=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ General Methods}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_canvas_ae60defbed8de286ab7891d56ef9467dc}{load\+Image}} (void) const
+\begin{DoxyCompactList}\small\item\em Loads imagery onto the canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a2032800681a54cffc50320c96029fa8c}{set\+Active}} (void) const
+\begin{DoxyCompactList}\small\item\em Sets this canvas as both the active canvas and active window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a2dec4d913273dbb043f74b75b42e88a7}{set\+Main\+Window}} (void) const
+\begin{DoxyCompactList}\small\item\em Sets this canvas as the Main Window, displaying it in the TFT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Accessor Methods}\par
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}} (void) const
+\begin{DoxyCompactList}\small\item\em Accessor method providing the canvas width. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}} (void) const
+\begin{DoxyCompactList}\small\item\em Accessor method providing the canvas height. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_canvas_add0700f4da6206e04fdf90eecd1b8423}{address}} (void) const
+\begin{DoxyCompactList}\small\item\em Accessor method providing the canvas\textquotesingle{} starting address in DRAM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Bit Transfer Engine (BTE) Operations}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_ab30fd9e99385a46d9d22b39407f68265}{BTE\+\_\+\+Copy\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source) const
+\begin{DoxyCompactList}\small\item\em Uses BTE engine to copy entire image from {\ttfamily source} canvas to this one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a42cc4c287b1eca4526db4cacc00f2137}{BTE\+\_\+\+Copy\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0) const
+\begin{DoxyCompactList}\small\item\em Uses BTE engine to copy imagery from {\ttfamily source} canvas to this one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a16cdf83603b2b6cbcba0bc34cb78d808}{BTE\+\_\+\+ROP}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&S0, uint16\+\_\+t S0\+\_\+x0, uint16\+\_\+t S0\+\_\+y0, const \mbox{\hyperlink{class_canvas}{Canvas}} \&S1, uint16\+\_\+t S1\+\_\+x0, uint16\+\_\+t S1\+\_\+y0, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0, uint16\+\_\+t DT\+\_\+width, uint16\+\_\+t DT\+\_\+height, uint8\+\_\+t ROP, bool S1\+\_\+\+Opacity\+On=false) const
+\begin{DoxyCompactList}\small\item\em Gneralized ROP operation. This assumes that object calling this method is the destimation DT canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a8ca049655ab1b5f0626421db9833e405}{BTE\+\_\+\+Copy\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source, uint16\+\_\+t Src\+\_\+x0, uint16\+\_\+t Src\+\_\+y0, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}) const
+\begin{DoxyCompactList}\small\item\em Uses BTE engine to copy imagery from {\ttfamily source} canvas to this one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a75344e1c4f131b8731f539dbf1446dde}{BTE\+\_\+\+Add\+Image\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source, uint16\+\_\+t Src\+\_\+x0, uint16\+\_\+t Src\+\_\+y0, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}) const
+\begin{DoxyCompactList}\small\item\em Adds an opacity encoded image from {\ttfamily source} to the image on this canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a753719f9ab04411f55d82e02a67980e7}{BTE\+\_\+\+Add\+Transparant\+Image\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source, uint16\+\_\+t Src\+\_\+x0, uint16\+\_\+t Src\+\_\+y0, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}) const
+\begin{DoxyCompactList}\small\item\em Adds an opacity encoded image from {\ttfamily source} to the image on this canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_canvas_aebf18fd93df0ab969325943a765366f3}{BL\+\_\+\+ON}} (void)
+\begin{DoxyCompactList}\small\item\em Turns the TFT backlight on. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_canvas_a2edb82c8c8a1a129182c68a8360616b3}{BL\+\_\+\+OFF}} (void)
+\begin{DoxyCompactList}\small\item\em Turns the TFT backlight off. \end{DoxyCompactList}\item 
+static uint32\+\_\+t \mbox{\hyperlink{class_canvas_a6db455aef96b2f06acddc9ef19a18572}{next\+Address}} (void)
+\begin{DoxyCompactList}\small\item\em Location in DRAM whether the next image \doxylink{class_canvas}{Canvas} will be placed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_ac2b95e9a6a3b6a9b468c06343715ace5}{\+\_\+validate}} (void) const
+\begin{DoxyCompactList}\small\item\em Protected method used to validate that the images used to create this canvas are appropriately size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a675e1fc94421dae7abb76ff09f1ef8f3}{BTE\+\_\+\+Set\+As\+S0}} (uint16\+\_\+t x0, uint16\+\_\+t y0) const
+\begin{DoxyCompactList}\small\item\em Sets the location of the S0 source image for the BTE engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_ab25386401851e7135748e0302533b6f2}{BTE\+\_\+\+Set\+As\+S1}} (uint16\+\_\+t x0, uint16\+\_\+t y0) const
+\begin{DoxyCompactList}\small\item\em Sets the location of the S1 source image for the BTE engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a636cd8199477d4d8875d26092ff25d3e}{BTE\+\_\+\+Set\+As\+DT}} (uint16\+\_\+t x0, uint16\+\_\+t y0) const
+\begin{DoxyCompactList}\small\item\em Sets the location of the destination (DT) image for the BTE engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Graphics primatives}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_a1c43364b79f580b9b0909c121457cad1}{clear}} (void)
+\begin{DoxyCompactList}\small\item\em Erases the canvas, setting all pixels to Black. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a1278c73446069dd02831af31ef1bccff}{clear}} (uint16\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Erases the canvas, setting all pixels to the specified color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_ac53c6ad3166d739861891682a131fc4d}{solid\+Fill}} (uint16\+\_\+t x0, uint16\+\_\+t y0, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}, uint16\+\_\+t color) const
+\begin{DoxyCompactList}\small\item\em Draws a filled square onto the canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_aebdea765412fef5c829765f1ac93fb74}{text}} (uint16\+\_\+t x0, uint16\+\_\+t y0, uint16\+\_\+t f\+Color, uint16\+\_\+t b\+Color, const char \texorpdfstring{$\ast$}{*}text, bool small=false) const
+\begin{DoxyCompactList}\small\item\em Draws text onto the canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_aab06a8c9dd5b8b146077268cf729f2cd}{draw\+Square}} (unsigned short x0, unsigned short y0, unsigned short x1, unsigned short y1, unsigned short color) const
+\begin{DoxyCompactList}\small\item\em Draws an unfilled square. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_canvas_a10f6299f7633b793fe345840b3600678}{draw\+Line}} (uint16\+\_\+t x0, uint16\+\_\+t y0, uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a line onto the display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{Canvas()}{Canvas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9} 
+Canvas\+::\+Canvas (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor sets canvass to the full size of the display. 
+
+\Hypertarget{class_canvas_a3935a33755dde3ea695c06bcec40e5ba}\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{Canvas()}{Canvas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_canvas_a3935a33755dde3ea695c06bcec40e5ba} 
+Canvas\+::\+Canvas (\begin{DoxyParamCaption}\item[{bool}]{temporary}{}\end{DoxyParamCaption})}
+
+
+
+Constructor sets canvass to the full size of the display. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em temporary} & (Optional) If true, the canvas is temporary. Future canvasses will overwrite the DRAM used by this canvas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_aa4da0978f85bce794a7d794bf041cf98}\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{Canvas()}{Canvas()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_canvas_aa4da0978f85bce794a7d794bf041cf98} 
+Canvas\+::\+Canvas (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{, }\item[{bool}]{temporary}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em width} & Width of the constructed canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & Height of the constructed canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em temporary} & (Optional) If true, the canvas is temporary. Future canvasses will overwrite the DRAM used by this canvas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a11136afee83f7bfa3d8f16d51abe9a70}\index{Canvas@{Canvas}!````~Canvas@{\texorpdfstring{$\sim$}{\string~}Canvas}}
+\index{````~Canvas@{\texorpdfstring{$\sim$}{\string~}Canvas}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Canvas()}{\string~Canvas()}}
+{\footnotesize\ttfamily \label{class_canvas_a11136afee83f7bfa3d8f16d51abe9a70} 
+Canvas\+::\texorpdfstring{$\sim$}{\string~}\+Canvas (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_canvas_ac2b95e9a6a3b6a9b468c06343715ace5}\index{Canvas@{Canvas}!\_validate@{\_validate}}
+\index{\_validate@{\_validate}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{\_validate()}{\_validate()}}
+{\footnotesize\ttfamily \label{class_canvas_ac2b95e9a6a3b6a9b468c06343715ace5} 
+void Canvas\+::\+\_\+validate (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Protected method used to validate that the images used to create this canvas are appropriately size. 
+
+\begin{DoxyParagraph}{Parameters}
+None.
+\end{DoxyParagraph}
+Verify that the width of any images used by this object has a width that is a multiple of 4. This is required by the LT7683 graphics chip. \Hypertarget{class_canvas_add0700f4da6206e04fdf90eecd1b8423}\index{Canvas@{Canvas}!address@{address}}
+\index{address@{address}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily \label{class_canvas_add0700f4da6206e04fdf90eecd1b8423} 
+uint32\+\_\+t Canvas\+::address (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accessor method providing the canvas\textquotesingle{} starting address in DRAM. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Starting address of the canvas in DRAM 
+\end{DoxyReturn}
+\Hypertarget{class_canvas_a2edb82c8c8a1a129182c68a8360616b3}\index{Canvas@{Canvas}!BL\_OFF@{BL\_OFF}}
+\index{BL\_OFF@{BL\_OFF}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BL\_OFF()}{BL\_OFF()}}
+{\footnotesize\ttfamily \label{class_canvas_a2edb82c8c8a1a129182c68a8360616b3} 
+static void Canvas\+::\+BL\+\_\+\+OFF (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Turns the TFT backlight off. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_canvas_aebf18fd93df0ab969325943a765366f3}\index{Canvas@{Canvas}!BL\_ON@{BL\_ON}}
+\index{BL\_ON@{BL\_ON}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BL\_ON()}{BL\_ON()}}
+{\footnotesize\ttfamily \label{class_canvas_aebf18fd93df0ab969325943a765366f3} 
+static void Canvas\+::\+BL\+\_\+\+ON (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Turns the TFT backlight on. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_canvas_a75344e1c4f131b8731f539dbf1446dde}\index{Canvas@{Canvas}!BTE\_AddImageFrom@{BTE\_AddImageFrom}}
+\index{BTE\_AddImageFrom@{BTE\_AddImageFrom}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_AddImageFrom()}{BTE\_AddImageFrom()}}
+{\footnotesize\ttfamily \label{class_canvas_a75344e1c4f131b8731f539dbf1446dde} 
+void Canvas\+::\+BTE\+\_\+\+Add\+Image\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_canvas}{Canvas}} \&}]{source}{, }\item[{uint16\+\_\+t}]{Src\+\_\+x0}{, }\item[{uint16\+\_\+t}]{Src\+\_\+y0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+x0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+y0}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an opacity encoded image from {\ttfamily source} to the image on this canvas. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em source} & canvas containg the source imagery \\
+\hline
+\mbox{\texttt{ in}}  & {\em Src\+\_\+x0} & Upper left x-\/coordinate of image block within {\ttfamily source} \\
+\hline
+\mbox{\texttt{ in}}  & {\em Src\+\_\+y0} & Upper left y-\/coodrinate of image block within {\ttfamily source} \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+x0} & Upper left x-\/coordinate in this canvas where image block is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+y0} & Upper left y-\/coordinate in this canvas where image block is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & Width of the image block to be transferred \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & Height of the image block to be transferred \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a753719f9ab04411f55d82e02a67980e7}\index{Canvas@{Canvas}!BTE\_AddTransparantImageFrom@{BTE\_AddTransparantImageFrom}}
+\index{BTE\_AddTransparantImageFrom@{BTE\_AddTransparantImageFrom}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_AddTransparantImageFrom()}{BTE\_AddTransparantImageFrom()}}
+{\footnotesize\ttfamily \label{class_canvas_a753719f9ab04411f55d82e02a67980e7} 
+void Canvas\+::\+BTE\+\_\+\+Add\+Transparant\+Image\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_canvas}{Canvas}} \&}]{source}{, }\item[{uint16\+\_\+t}]{Src\+\_\+x0}{, }\item[{uint16\+\_\+t}]{Src\+\_\+y0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+x0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+y0}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an opacity encoded image from {\ttfamily source} to the image on this canvas. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em source} & canvas containg the source imagery \\
+\hline
+\mbox{\texttt{ in}}  & {\em Src\+\_\+x0} & Upper left x-\/coordinate of image block within {\ttfamily source} \\
+\hline
+\mbox{\texttt{ in}}  & {\em Src\+\_\+y0} & Upper left y-\/coodrinate of image block within {\ttfamily source} \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+x0} & Upper left x-\/coordinate in this canvas where image block is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+y0} & Upper left y-\/coordinate in this canvas where image block is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & Width of the image block to be transferred \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & Height of the image block to be transferred \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_ab30fd9e99385a46d9d22b39407f68265}\index{Canvas@{Canvas}!BTE\_CopyFrom@{BTE\_CopyFrom}}
+\index{BTE\_CopyFrom@{BTE\_CopyFrom}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_CopyFrom()}{BTE\_CopyFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_canvas_ab30fd9e99385a46d9d22b39407f68265} 
+void Canvas\+::\+BTE\+\_\+\+Copy\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_canvas}{Canvas}} \&}]{source}{}\end{DoxyParamCaption}) const}
+
+
+
+Uses BTE engine to copy entire image from {\ttfamily source} canvas to this one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em source} & canvas containg the source imagery \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a42cc4c287b1eca4526db4cacc00f2137}\index{Canvas@{Canvas}!BTE\_CopyFrom@{BTE\_CopyFrom}}
+\index{BTE\_CopyFrom@{BTE\_CopyFrom}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_CopyFrom()}{BTE\_CopyFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_canvas_a42cc4c287b1eca4526db4cacc00f2137} 
+void Canvas\+::\+BTE\+\_\+\+Copy\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_canvas}{Canvas}} \&}]{source}{, }\item[{uint16\+\_\+t}]{DT\+\_\+x0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+y0}{}\end{DoxyParamCaption}) const}
+
+
+
+Uses BTE engine to copy imagery from {\ttfamily source} canvas to this one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em source} & canvas containg the source imagery \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+x0} & Upper left x-\/coordinate in this canvas where image block is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+y0} & Upper left y-\/coordinate in this canvas where image block is to be copied \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a8ca049655ab1b5f0626421db9833e405}\index{Canvas@{Canvas}!BTE\_CopyFrom@{BTE\_CopyFrom}}
+\index{BTE\_CopyFrom@{BTE\_CopyFrom}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_CopyFrom()}{BTE\_CopyFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_canvas_a8ca049655ab1b5f0626421db9833e405} 
+void Canvas\+::\+BTE\+\_\+\+Copy\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_canvas}{Canvas}} \&}]{source}{, }\item[{uint16\+\_\+t}]{Src\+\_\+x0}{, }\item[{uint16\+\_\+t}]{Src\+\_\+y0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+x0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+y0}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Uses BTE engine to copy imagery from {\ttfamily source} canvas to this one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em source} & canvas containg the source imagery \\
+\hline
+\mbox{\texttt{ in}}  & {\em Src\+\_\+x0} & Upper left x-\/coordinate of image block within {\ttfamily source} \\
+\hline
+\mbox{\texttt{ in}}  & {\em Src\+\_\+y0} & Upper left y-\/coodrinate of image block within {\ttfamily source} \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+x0} & Upper left x-\/coordinate in this canvas where image block is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+y0} & Upper left y-\/coordinate in this canvas where image block is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & Width of the image block to be transferred \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & Height of the image block to be transferred \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a16cdf83603b2b6cbcba0bc34cb78d808}\index{Canvas@{Canvas}!BTE\_ROP@{BTE\_ROP}}
+\index{BTE\_ROP@{BTE\_ROP}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_ROP()}{BTE\_ROP()}}
+{\footnotesize\ttfamily \label{class_canvas_a16cdf83603b2b6cbcba0bc34cb78d808} 
+void Canvas\+::\+BTE\+\_\+\+ROP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_canvas}{Canvas}} \&}]{S0}{, }\item[{uint16\+\_\+t}]{S0\+\_\+x0}{, }\item[{uint16\+\_\+t}]{S0\+\_\+y0}{, }\item[{const \mbox{\hyperlink{class_canvas}{Canvas}} \&}]{S1}{, }\item[{uint16\+\_\+t}]{S1\+\_\+x0}{, }\item[{uint16\+\_\+t}]{S1\+\_\+y0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+x0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+y0}{, }\item[{uint16\+\_\+t}]{DT\+\_\+width}{, }\item[{uint16\+\_\+t}]{DT\+\_\+height}{, }\item[{uint8\+\_\+t}]{ROP}{, }\item[{bool}]{S1\+\_\+\+Opacity\+On}{ = {\ttfamily false}}\end{DoxyParamCaption}) const}
+
+
+
+Gneralized ROP operation. This assumes that object calling this method is the destimation DT canvas. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em S0} & \doxylink{class_canvas}{Canvas} containg the S0 source imagery \\
+\hline
+\mbox{\texttt{ in}}  & {\em S0\+\_\+x0} & Upper left x-\/coordinate of image block within {\ttfamily S0} to be processed by BTE \\
+\hline
+\mbox{\texttt{ in}}  & {\em S0\+\_\+y0} & Upper left y-\/coodrinate of image block within {\ttfamily S0} to be processed by BTE \\
+\hline
+\mbox{\texttt{ in}}  & {\em S1} & \doxylink{class_canvas}{Canvas} containg the S1 source imagery \\
+\hline
+\mbox{\texttt{ in}}  & {\em S1\+\_\+x0} & Upper left x-\/coordinate of image block within {\ttfamily S1} to be processed by BTE \\
+\hline
+\mbox{\texttt{ in}}  & {\em S1\+\_\+y0} & Upper left y-\/coodrinate of image block within {\ttfamily S1} to be processed by BTE \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+x0} & Upper left x-\/coordinate where the final image is to placed within this canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+y0} & Upper left y-\/coordinate where the final image is to placed within this canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+width} & Width of the image block to be processed by the BTE \\
+\hline
+\mbox{\texttt{ in}}  & {\em DT\+\_\+height} & Height of the image block to be processed by the BTE \\
+\hline
+\mbox{\texttt{ in}}  & {\em ROP} & Code define the raster operation\+: S0 (ROP) S1 = DT \\
+\hline
+\mbox{\texttt{ in}}  & {\em S1\+\_\+\+Opacity\+On} & If true, S1 image is treated as a 16bpp image with encoded opacity. If false, S1 is a standard 16bpp image \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a636cd8199477d4d8875d26092ff25d3e}\index{Canvas@{Canvas}!BTE\_SetAsDT@{BTE\_SetAsDT}}
+\index{BTE\_SetAsDT@{BTE\_SetAsDT}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_SetAsDT()}{BTE\_SetAsDT()}}
+{\footnotesize\ttfamily \label{class_canvas_a636cd8199477d4d8875d26092ff25d3e} 
+void Canvas\+::\+BTE\+\_\+\+Set\+As\+DT (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x0}{, }\item[{uint16\+\_\+t}]{y0}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sets the location of the destination (DT) image for the BTE engine. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x0} & Upper left x-\/coordinate of the DT image in this canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em y0} & Upper left y-\/coordinate of the DT image in this canvas \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a675e1fc94421dae7abb76ff09f1ef8f3}\index{Canvas@{Canvas}!BTE\_SetAsS0@{BTE\_SetAsS0}}
+\index{BTE\_SetAsS0@{BTE\_SetAsS0}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_SetAsS0()}{BTE\_SetAsS0()}}
+{\footnotesize\ttfamily \label{class_canvas_a675e1fc94421dae7abb76ff09f1ef8f3} 
+void Canvas\+::\+BTE\+\_\+\+Set\+As\+S0 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x0}{, }\item[{uint16\+\_\+t}]{y0}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sets the location of the S0 source image for the BTE engine. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x0} & Upper left x-\/coordinate of the S0 image in this canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em y0} & Upper left y-\/coordinate of the S0 image in this canvas \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_ab25386401851e7135748e0302533b6f2}\index{Canvas@{Canvas}!BTE\_SetAsS1@{BTE\_SetAsS1}}
+\index{BTE\_SetAsS1@{BTE\_SetAsS1}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{BTE\_SetAsS1()}{BTE\_SetAsS1()}}
+{\footnotesize\ttfamily \label{class_canvas_ab25386401851e7135748e0302533b6f2} 
+void Canvas\+::\+BTE\+\_\+\+Set\+As\+S1 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x0}{, }\item[{uint16\+\_\+t}]{y0}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sets the location of the S1 source image for the BTE engine. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x0} & Upper left x-\/coordinate of the S1 image in this canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em y0} & Upper left y-\/coordinate of the S1 image in this canvas \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a1278c73446069dd02831af31ef1bccff}\index{Canvas@{Canvas}!clear@{clear}}
+\index{clear@{clear}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_canvas_a1278c73446069dd02831af31ef1bccff} 
+void Canvas\+::clear (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Erases the canvas, setting all pixels to the specified color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em color} & 16 bit color value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a1c43364b79f580b9b0909c121457cad1}\index{Canvas@{Canvas}!clear@{clear}}
+\index{clear@{clear}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_canvas_a1c43364b79f580b9b0909c121457cad1} 
+void Canvas\+::clear (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Erases the canvas, setting all pixels to Black. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_canvas_a10f6299f7633b793fe345840b3600678}\index{Canvas@{Canvas}!drawLine@{drawLine}}
+\index{drawLine@{drawLine}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{drawLine()}{drawLine()}}
+{\footnotesize\ttfamily \label{class_canvas_a10f6299f7633b793fe345840b3600678} 
+void Canvas\+::draw\+Line (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x0}{, }\item[{uint16\+\_\+t}]{y0}{, }\item[{uint16\+\_\+t}]{x1}{, }\item[{uint16\+\_\+t}]{y1}{, }\item[{uint16\+\_\+t}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draws a line onto the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & \mbox{[}in\mbox{]} Starting x-\/pos \\
+\hline
+{\em y0} & \mbox{[}in\mbox{]} Starting y-\/pos \\
+\hline
+{\em x1} & \mbox{[}in\mbox{]} Ending x-\/pos \\
+\hline
+{\em y1} & \mbox{[}in\mbox{]} Ending y-\/pos \\
+\hline
+{\em color} & \mbox{[}in\mbox{]} 16-\/bit color of the line \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_aab06a8c9dd5b8b146077268cf729f2cd}\index{Canvas@{Canvas}!drawSquare@{drawSquare}}
+\index{drawSquare@{drawSquare}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{drawSquare()}{drawSquare()}}
+{\footnotesize\ttfamily \label{class_canvas_aab06a8c9dd5b8b146077268cf729f2cd} 
+void Canvas\+::draw\+Square (\begin{DoxyParamCaption}\item[{unsigned short}]{x0}{, }\item[{unsigned short}]{y0}{, }\item[{unsigned short}]{x1}{, }\item[{unsigned short}]{y1}{, }\item[{unsigned short}]{color}{}\end{DoxyParamCaption}) const}
+
+
+
+Draws an unfilled square. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x0} & UL x-\/coordinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em y0} & UL y-\/coordinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1} & LR x-\/coordinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em y1} & LR y-\/coordinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em color} & 16-\/bit color \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}\index{Canvas@{Canvas}!height@{height}}
+\index{height@{height}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \label{class_canvas_a8518cf311272b0d4effe0fe1f89a5091} 
+uint16\+\_\+t Canvas\+::height (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accessor method providing the canvas height. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Height of the canvas. 
+\end{DoxyReturn}
+\Hypertarget{class_canvas_ae60defbed8de286ab7891d56ef9467dc}\index{Canvas@{Canvas}!loadImage@{loadImage}}
+\index{loadImage@{loadImage}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{loadImage()}{loadImage()}}
+{\footnotesize\ttfamily \label{class_canvas_ae60defbed8de286ab7891d56ef9467dc} 
+virtual void Canvas\+::load\+Image (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Loads imagery onto the canvas. 
+
+\begin{DoxyParagraph}{Parameters}
+None.
+\end{DoxyParagraph}
+This method doesn\textquotesingle{}t do anything for this class. However, it is expected that derived classes will override this method, providing functionality appropriate for that class. 
+
+Reimplemented in \mbox{\hyperlink{class_d_r_a_m___canvas_a0644b01f2cf598d1c6c527e543d9a0cf}{DRAM\+\_\+\+Canvas}}, and \mbox{\hyperlink{class_r_o_m___canvas_a1f1ae96e9079bbf9764be06d27b02468}{ROM\+\_\+\+Canvas}}.
+
+\Hypertarget{class_canvas_a6db455aef96b2f06acddc9ef19a18572}\index{Canvas@{Canvas}!nextAddress@{nextAddress}}
+\index{nextAddress@{nextAddress}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{nextAddress()}{nextAddress()}}
+{\footnotesize\ttfamily \label{class_canvas_a6db455aef96b2f06acddc9ef19a18572} 
+static uint32\+\_\+t Canvas\+::next\+Address (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Location in DRAM whether the next image \doxylink{class_canvas}{Canvas} will be placed. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_canvas_a2032800681a54cffc50320c96029fa8c}\index{Canvas@{Canvas}!setActive@{setActive}}
+\index{setActive@{setActive}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily \label{class_canvas_a2032800681a54cffc50320c96029fa8c} 
+void Canvas\+::set\+Active (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sets this canvas as both the active canvas and active window. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_canvas_a2dec4d913273dbb043f74b75b42e88a7}\index{Canvas@{Canvas}!setMainWindow@{setMainWindow}}
+\index{setMainWindow@{setMainWindow}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{setMainWindow()}{setMainWindow()}}
+{\footnotesize\ttfamily \label{class_canvas_a2dec4d913273dbb043f74b75b42e88a7} 
+void Canvas\+::set\+Main\+Window (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sets this canvas as the Main Window, displaying it in the TFT. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_canvas_ac53c6ad3166d739861891682a131fc4d}\index{Canvas@{Canvas}!solidFill@{solidFill}}
+\index{solidFill@{solidFill}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{solidFill()}{solidFill()}}
+{\footnotesize\ttfamily \label{class_canvas_ac53c6ad3166d739861891682a131fc4d} 
+void Canvas\+::solid\+Fill (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x0}{, }\item[{uint16\+\_\+t}]{y0}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{, }\item[{uint16\+\_\+t}]{color}{}\end{DoxyParamCaption}) const}
+
+
+
+Draws a filled square onto the canvas. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x0} & Upper left x-\/coordinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em y0} & Upper left y-\/coodrinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & width of square \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & height of square \\
+\hline
+\mbox{\texttt{ in}}  & {\em color} & 16 bit color of the square \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_aebdea765412fef5c829765f1ac93fb74}\index{Canvas@{Canvas}!text@{text}}
+\index{text@{text}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{class_canvas_aebdea765412fef5c829765f1ac93fb74} 
+void Canvas\+::text (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x0}{, }\item[{uint16\+\_\+t}]{y0}{, }\item[{uint16\+\_\+t}]{f\+Color}{, }\item[{uint16\+\_\+t}]{b\+Color}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{, }\item[{bool}]{small}{ = {\ttfamily false}}\end{DoxyParamCaption}) const}
+
+
+
+Draws text onto the canvas. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x0} & Upper left x-\/coordinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em y0} & Upper left y-\/coodrinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Color} & 16 bit foreground color of the text \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Color} & 16 bit background color of the text \\
+\hline
+\mbox{\texttt{ in}}  & {\em text} & Text to be displayed \\
+\hline
+\mbox{\texttt{ in}}  & {\em small} & (Optional) If true, a smaller font is used \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_canvas_a70192ede48d06854ca683baee970b809}\index{Canvas@{Canvas}!width@{width}}
+\index{width@{width}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily \label{class_canvas_a70192ede48d06854ca683baee970b809} 
+uint16\+\_\+t Canvas\+::width (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accessor method providing the canvas width. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Width of the canvas. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_canvas_8h}{Canvas.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_canvas_8cpp}{Canvas.\+cpp}}\end{DoxyCompactItemize}

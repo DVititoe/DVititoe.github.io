@@ -1,0 +1,329 @@
+\doxysection{Solo\+Menu Class Reference}
+\hypertarget{class_solo_menu}{}\label{class_solo_menu}\index{SoloMenu@{SoloMenu}}
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+Inheritance diagram for Solo\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_solo_menu}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Accessor Methods}\par
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a77ffbce263cfa3113024311011bc9f1e}{x}} (void) const
+\begin{DoxyCompactList}\small\item\em Upper-\/left x-\/coordinate for menu. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_ac3b845da79d124db51bd189273947d92}{y}} (void) const
+\begin{DoxyCompactList}\small\item\em Upper-\/left y-\/coordinate for menu. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa}{width}} (void) const
+\begin{DoxyCompactList}\small\item\em Width of the menu. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687}{height}} (void) const
+\begin{DoxyCompactList}\small\item\em Height of the menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Protected Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{Solo\+Menu}} (void)
+\begin{DoxyCompactList}\small\item\em Creates a full size menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_solo_menu_ae3a68d205add4e7be8936ea0a4ebff73}{Solo\+Menu}} (uint16\+\_\+t x0, uint16\+\_\+t y0, uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687}{height}})
+\begin{DoxyCompactList}\small\item\em Creates a menu of the specified size and location. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_solo_menu_a1303f286bd0f1073039c252d3cdbe637}{\texorpdfstring{$\sim$}{\string~}\+Solo\+Menu}} (void)=default
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Button Management}\par
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \mbox{\hyperlink{class_solo_menu_a4d9576f9fd58454b343ee96bda45662f}{\+\_\+press\+Button\+If\+Touched}} (void)
+\begin{DoxyCompactList}\small\item\em Protected method checks to see if one of the buttons has been "{}touched."{} If so, this method "{}presses"{} the button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_solo_menu_a76b36ab71a84accab83e949bf64dc1c9}{\+\_\+register}} (\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}button\+Ptr\+Array, uint8\+\_\+t n\+Buttons)
+\begin{DoxyCompactList}\small\item\em Registers an array of buttons with this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{General Methods}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_solo_menu_a97a20d95646751b87a09cf61e38fb2c4}{begin}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the Menu object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_solo_menu_a050ae3a9e42c1b647b0a699acc18c428}{update}} (void)
+\begin{DoxyCompactList}\small\item\em Updates the {\ttfamily \doxylink{class_button}{Button}}, {\ttfamily Menu}, and {\ttfamily Label} objects managed by this class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_solo_menu_a0765e6a7168259e2b37856c71399a670}{show}} (void)=0
+\begin{DoxyCompactList}\small\item\em Shows the menu in the TFT. Derived classes will provide specific functionality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_solo_menu_a4b2fd78342c643a0093b25aba291d334}{load\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em Loads configuration data from EEPROM, placing it into RAM. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_solo_menu_ac3deac55637ec34313c073fec8b11f5d}{check\+Buttons}} (void)
+\begin{DoxyCompactList}\small\item\em Check to see if one of the menu\textquotesingle{}s buttons has been pressed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_solo_menu_a6226da8342c00ac614eeb79455e40091}{release\+Button}} (void)
+\begin{DoxyCompactList}\small\item\em Releases the currently pressed button. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_solo_menu_a5854d5e873fdcdcdb94b89fdd55f6985}{has\+Screen\+Been\+Touched}} (void)
+\begin{DoxyCompactList}\small\item\em Determines if the TFT screen has been touched. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}\index{SoloMenu@{SoloMenu}!SoloMenu@{SoloMenu}}
+\index{SoloMenu@{SoloMenu}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{SoloMenu()}{SoloMenu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2} 
+Solo\+Menu\+::\+Solo\+Menu (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Creates a full size menu. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_solo_menu_ae3a68d205add4e7be8936ea0a4ebff73}\index{SoloMenu@{SoloMenu}!SoloMenu@{SoloMenu}}
+\index{SoloMenu@{SoloMenu}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{SoloMenu()}{SoloMenu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_solo_menu_ae3a68d205add4e7be8936ea0a4ebff73} 
+Solo\+Menu\+::\+Solo\+Menu (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x0}{, }\item[{uint16\+\_\+t}]{y0}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Creates a menu of the specified size and location. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x0} & Upper left x-\/coordinate for the menu in the TFT display \\
+\hline
+\mbox{\texttt{ in}}  & {\em y0} & Upper left y-\/coordinate for the menu in the TFT display \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & Width of this menu in pixels \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & Height of this menu in pixels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The parameters {\ttfamily x0} and {\ttfamily y0} currently don\textquotesingle{}t do anything. 
+\end{DoxyNote}
+\Hypertarget{class_solo_menu_a1303f286bd0f1073039c252d3cdbe637}\index{SoloMenu@{SoloMenu}!````~SoloMenu@{\texorpdfstring{$\sim$}{\string~}SoloMenu}}
+\index{````~SoloMenu@{\texorpdfstring{$\sim$}{\string~}SoloMenu}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SoloMenu()}{\string~SoloMenu()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a1303f286bd0f1073039c252d3cdbe637} 
+Solo\+Menu\+::\texorpdfstring{$\sim$}{\string~}\+Solo\+Menu (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Default Destructor. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_solo_menu_a4d9576f9fd58454b343ee96bda45662f}\index{SoloMenu@{SoloMenu}!\_pressButtonIfTouched@{\_pressButtonIfTouched}}
+\index{\_pressButtonIfTouched@{\_pressButtonIfTouched}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{\_pressButtonIfTouched()}{\_pressButtonIfTouched()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a4d9576f9fd58454b343ee96bda45662f} 
+int8\+\_\+t Solo\+Menu\+::\+\_\+press\+Button\+If\+Touched (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Protected method checks to see if one of the buttons has been "{}touched."{} If so, this method "{}presses"{} the button. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+{\ttfamily ID} of the button that was touched. Return value is -\/1 if no buttons were touched 
+\end{DoxyReturn}
+\Hypertarget{class_solo_menu_a76b36ab71a84accab83e949bf64dc1c9}\index{SoloMenu@{SoloMenu}!\_register@{\_register}}
+\index{\_register@{\_register}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{\_register()}{\_register()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a76b36ab71a84accab83e949bf64dc1c9} 
+void Solo\+Menu\+::\+\_\+register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{button\+Ptr\+Array}{, }\item[{uint8\+\_\+t}]{n\+Buttons}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Registers an array of buttons with this class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em button\+Ptr\+Array} & An array of pointers to \doxylink{class_button}{Button} objects \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+Buttons} & Number of buttons in {\ttfamily button\+Ptr\+Array} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Parameters}
+None.
+\end{DoxyParagraph}
+\doxylink{class_solo_menu}{Solo\+Menu} will "{}manage"{} buttons that have been registered via this method. Specifically, whenever the {\ttfamily \doxylink{class_solo_menu_ac3deac55637ec34313c073fec8b11f5d}{Solo\+Menu\+::check\+Buttons}} method is called, \doxylink{class_solo_menu}{Solo\+Menu} will check to see if a touch on the TFT screen hits one of the registered buttons. If it does, the button will be pressed and/or released as required. \Hypertarget{class_solo_menu_a97a20d95646751b87a09cf61e38fb2c4}\index{SoloMenu@{SoloMenu}!begin@{begin}}
+\index{begin@{begin}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a97a20d95646751b87a09cf61e38fb2c4} 
+void Solo\+Menu\+::begin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initializes the Menu object. 
+
+\begin{DoxyParagraph}{Parameters}
+None.
+\end{DoxyParagraph}
+This method calls the {\ttfamily \doxylink{class_solo_menu_a97a20d95646751b87a09cf61e38fb2c4}{begin()}} methods for all objects managed by this class 
+
+Reimplemented in \mbox{\hyperlink{class_main_menu_a77f8a17fbc57720ea448a6873db36d54}{Main\+Menu}}, \mbox{\hyperlink{class_setup_p_i_d___menu_a3d82e4ac92edf893ef9231ad3b682d87}{Setup\+PID\+\_\+\+Menu}}, \mbox{\hyperlink{class_setup_temp_menu_a9646eed23962010e17c660efef7b468f}{Setup\+Temp\+Menu}}, and \mbox{\hyperlink{class_setup_vol_menu_aeae51946124120c28083d1b44e2168a9}{Setup\+Vol\+Menu}}.
+
+\Hypertarget{class_solo_menu_ac3deac55637ec34313c073fec8b11f5d}\index{SoloMenu@{SoloMenu}!checkButtons@{checkButtons}}
+\index{checkButtons@{checkButtons}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{checkButtons()}{checkButtons()}}
+{\footnotesize\ttfamily \label{class_solo_menu_ac3deac55637ec34313c073fec8b11f5d} 
+void Solo\+Menu\+::check\+Buttons (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check to see if one of the menu\textquotesingle{}s buttons has been pressed. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_solo_menu_a5854d5e873fdcdcdb94b89fdd55f6985}\index{SoloMenu@{SoloMenu}!hasScreenBeenTouched@{hasScreenBeenTouched}}
+\index{hasScreenBeenTouched@{hasScreenBeenTouched}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{hasScreenBeenTouched()}{hasScreenBeenTouched()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a5854d5e873fdcdcdb94b89fdd55f6985} 
+bool Solo\+Menu\+::has\+Screen\+Been\+Touched (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determines if the TFT screen has been touched. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+true if the screen has been touched, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687}\index{SoloMenu@{SoloMenu}!height@{height}}
+\index{height@{height}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687} 
+uint16\+\_\+t Solo\+Menu\+::height (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Height of the menu. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Height of the menu 
+\end{DoxyReturn}
+\Hypertarget{class_solo_menu_a4b2fd78342c643a0093b25aba291d334}\index{SoloMenu@{SoloMenu}!loadConfig@{loadConfig}}
+\index{loadConfig@{loadConfig}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{loadConfig()}{loadConfig()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a4b2fd78342c643a0093b25aba291d334} 
+void Solo\+Menu\+::load\+Config (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads configuration data from EEPROM, placing it into RAM. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_solo_menu_a6226da8342c00ac614eeb79455e40091}\index{SoloMenu@{SoloMenu}!releaseButton@{releaseButton}}
+\index{releaseButton@{releaseButton}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{releaseButton()}{releaseButton()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a6226da8342c00ac614eeb79455e40091} 
+void Solo\+Menu\+::release\+Button (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Releases the currently pressed button. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_solo_menu_a0765e6a7168259e2b37856c71399a670}\index{SoloMenu@{SoloMenu}!show@{show}}
+\index{show@{show}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a0765e6a7168259e2b37856c71399a670} 
+virtual void Solo\+Menu\+::show (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Shows the menu in the TFT. Derived classes will provide specific functionality. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Implemented in \mbox{\hyperlink{class_main_menu_ab045cc677286506297e51b6cf3f20cdd}{Main\+Menu}}, \mbox{\hyperlink{class_setup_p_i_d___menu_aefdfc08a80449d08018d6dfdce66962e}{Setup\+PID\+\_\+\+Menu}}, \mbox{\hyperlink{class_setup_temp_menu_ab9b7ab05d283af441351f6ac5e0f41ab}{Setup\+Temp\+Menu}}, and \mbox{\hyperlink{class_setup_vol_menu_a52af601cd1a1120689f06d16261126cf}{Setup\+Vol\+Menu}}.
+
+\Hypertarget{class_solo_menu_a050ae3a9e42c1b647b0a699acc18c428}\index{SoloMenu@{SoloMenu}!update@{update}}
+\index{update@{update}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a050ae3a9e42c1b647b0a699acc18c428} 
+void Solo\+Menu\+::update (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the {\ttfamily \doxylink{class_button}{Button}}, {\ttfamily Menu}, and {\ttfamily Label} objects managed by this class. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Reimplemented in \mbox{\hyperlink{class_main_menu_afc6427a223d2915f240700994b7b7518}{Main\+Menu}}, \mbox{\hyperlink{class_setup_p_i_d___menu_a117c3fb652ba71de81c650a7176dd0a3}{Setup\+PID\+\_\+\+Menu}}, \mbox{\hyperlink{class_setup_temp_menu_aa07a500bd60d980cf89bad76b040aa7f}{Setup\+Temp\+Menu}}, and \mbox{\hyperlink{class_setup_vol_menu_a7e3a4c0d1a74ca5147b816a17a85228e}{Setup\+Vol\+Menu}}.
+
+\Hypertarget{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa}\index{SoloMenu@{SoloMenu}!width@{width}}
+\index{width@{width}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa} 
+uint16\+\_\+t Solo\+Menu\+::width (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Width of the menu. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Width of the menu 
+\end{DoxyReturn}
+\Hypertarget{class_solo_menu_a77ffbce263cfa3113024311011bc9f1e}\index{SoloMenu@{SoloMenu}!x@{x}}
+\index{x@{x}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{x()}{x()}}
+{\footnotesize\ttfamily \label{class_solo_menu_a77ffbce263cfa3113024311011bc9f1e} 
+uint16\+\_\+t Solo\+Menu\+::x (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Upper-\/left x-\/coordinate for menu. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+UL x-\/coordinate for the menu in the TFT display 
+\end{DoxyReturn}
+\Hypertarget{class_solo_menu_ac3b845da79d124db51bd189273947d92}\index{SoloMenu@{SoloMenu}!y@{y}}
+\index{y@{y}!SoloMenu@{SoloMenu}}
+\doxysubsubsection{\texorpdfstring{y()}{y()}}
+{\footnotesize\ttfamily \label{class_solo_menu_ac3b845da79d124db51bd189273947d92} 
+uint16\+\_\+t Solo\+Menu\+::y (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Upper-\/left y-\/coordinate for menu. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+UL y-\/coordinate for the menu in the TFT display 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\end{DoxyCompactItemize}

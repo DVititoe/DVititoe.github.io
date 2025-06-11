@@ -1,0 +1,74 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Err\+Msg.cpp File Reference}
+\hypertarget{_err_msg_8cpp}{}\label{_err_msg_8cpp}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/ErrMsg.cpp@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/ErrMsg.cpp}}
+{\ttfamily \#include "{}Err\+Msg.\+h"{}}\newline
+{\ttfamily \#include "{}Task\+Manager\+IO.\+h"{}}\newline
+{\ttfamily \#include "{}Tasks.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+template$<$$>$ \mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{_err_msg_8cpp_ab3b76bc3a85b50c66cc734f6736e33e7}{Err\+Msg\+::operator$<$$<$$<$ Err\+Msg\+::\+Endl\+Token $>$}} (const \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Err\+Msg\+::\+Endl\+Token}} value)
+\begin{DoxyCompactList}\small\item\em Specialization of the operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} method for adding a newline to the error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \mbox{\hyperlink{_err_msg_8cpp_ace92548be104966c0591df950ef0ec68}{ERROR\+\_\+\+MSG}} \mbox{[}$\,$\mbox{]} = "{}FATAL ERROR .... FATAL ERROR .... FATAL ERROR ..... FATAL ERROR"{}
+\item 
+const char \mbox{\hyperlink{_err_msg_8cpp_a8a701b6f98f3f9b1ec64888c4b10e08e}{WARNING\+\_\+\+MSG}} \mbox{[}$\,$\mbox{]} = "{}WARNING ..... (Press Screen to Continue) ..... WARNING"{}
+\item 
+const char \mbox{\hyperlink{_err_msg_8cpp_ac547215be57cee6935fdc3e2dfcb0b43}{DIVIDER\+\_\+\+MSG}} \mbox{[}$\,$\mbox{]} = "{}==============================================================="{}
+\item 
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{_err_msg_8cpp_aba17f9ec5e9b5441ed60d8bb1dfe3889}{err\+Msg}} = \mbox{\hyperlink{class_err_msg_a6e3c7d68a9335359558c3af720cb28d8}{Err\+Msg\+::get\+Instance}}()
+\begin{DoxyCompactList}\small\item\em Global instance of \doxylink{class_err_msg}{Err\+Msg}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_err_msg_8cpp_ab3b76bc3a85b50c66cc734f6736e33e7}\index{ErrMsg.cpp@{ErrMsg.cpp}!ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$@{ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$}}
+\index{ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$@{ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$}!ErrMsg.cpp@{ErrMsg.cpp}}
+\doxysubsubsection{\texorpdfstring{ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$()}{ErrMsg::operator<<< ErrMsg::EndlToken >()}}
+{\footnotesize\ttfamily \label{_err_msg_8cpp_ab3b76bc3a85b50c66cc734f6736e33e7} 
+template$<$$>$ \\
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& Err\+Msg\+::operator$<$$<$$<$ \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Err\+Msg\+::\+Endl\+Token}} $>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Err\+Msg\+::\+Endl\+Token}}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Specialization of the operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} method for adding a newline to the error message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & The value to be added to the error message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_err_msg_8cpp_ac547215be57cee6935fdc3e2dfcb0b43}\index{ErrMsg.cpp@{ErrMsg.cpp}!DIVIDER\_MSG@{DIVIDER\_MSG}}
+\index{DIVIDER\_MSG@{DIVIDER\_MSG}!ErrMsg.cpp@{ErrMsg.cpp}}
+\doxysubsubsection{\texorpdfstring{DIVIDER\_MSG}{DIVIDER\_MSG}}
+{\footnotesize\ttfamily \label{_err_msg_8cpp_ac547215be57cee6935fdc3e2dfcb0b43} 
+const char DIVIDER\+\_\+\+MSG\mbox{[}$\,$\mbox{]} = "{}==============================================================="{}}
+
+\Hypertarget{_err_msg_8cpp_aba17f9ec5e9b5441ed60d8bb1dfe3889}\index{ErrMsg.cpp@{ErrMsg.cpp}!errMsg@{errMsg}}
+\index{errMsg@{errMsg}!ErrMsg.cpp@{ErrMsg.cpp}}
+\doxysubsubsection{\texorpdfstring{errMsg}{errMsg}}
+{\footnotesize\ttfamily \label{_err_msg_8cpp_aba17f9ec5e9b5441ed60d8bb1dfe3889} 
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}}\& err\+Msg = \mbox{\hyperlink{class_err_msg_a6e3c7d68a9335359558c3af720cb28d8}{Err\+Msg\+::get\+Instance}}()}
+
+
+
+Global instance of \doxylink{class_err_msg}{Err\+Msg}. 
+
+\Hypertarget{_err_msg_8cpp_ace92548be104966c0591df950ef0ec68}\index{ErrMsg.cpp@{ErrMsg.cpp}!ERROR\_MSG@{ERROR\_MSG}}
+\index{ERROR\_MSG@{ERROR\_MSG}!ErrMsg.cpp@{ErrMsg.cpp}}
+\doxysubsubsection{\texorpdfstring{ERROR\_MSG}{ERROR\_MSG}}
+{\footnotesize\ttfamily \label{_err_msg_8cpp_ace92548be104966c0591df950ef0ec68} 
+const char ERROR\+\_\+\+MSG\mbox{[}$\,$\mbox{]} = "{}FATAL ERROR .... FATAL ERROR .... FATAL ERROR ..... FATAL ERROR"{}}
+
+\Hypertarget{_err_msg_8cpp_a8a701b6f98f3f9b1ec64888c4b10e08e}\index{ErrMsg.cpp@{ErrMsg.cpp}!WARNING\_MSG@{WARNING\_MSG}}
+\index{WARNING\_MSG@{WARNING\_MSG}!ErrMsg.cpp@{ErrMsg.cpp}}
+\doxysubsubsection{\texorpdfstring{WARNING\_MSG}{WARNING\_MSG}}
+{\footnotesize\ttfamily \label{_err_msg_8cpp_a8a701b6f98f3f9b1ec64888c4b10e08e} 
+const char WARNING\+\_\+\+MSG\mbox{[}$\,$\mbox{]} = "{}WARNING ..... (Press Screen to Continue) ..... WARNING"{}}
+

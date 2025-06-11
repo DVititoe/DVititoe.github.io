@@ -1,0 +1,67 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Menu.cpp File Reference}
+\hypertarget{_menu_8cpp}{}\label{_menu_8cpp}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Menu.cpp@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Menu.cpp}}
+{\ttfamily \#include "{}Menu.\+h"{}}\newline
+{\ttfamily \#include "{}ROM\+\_\+\+Images.\+h"{}}\newline
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+auto \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_menu_8cpp_a5c2cfe88c0a9f0f758a2c3c0d5bf30cd}{\+\_\+main\+Menu}} = \&\mbox{\hyperlink{class_main_menu_afea55aadf44178178df52efbcef382c1}{Main\+Menu\+::get\+Instance}}()
+\item 
+auto \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_menu_8cpp_a868d1c59f115abd7a1deeac12853c728}{\+\_\+setup\+Vol\+Menu}} = \&\mbox{\hyperlink{class_setup_vol_menu_aef01ad592f2d8228a2a0f83ec9b006b4}{Setup\+Vol\+Menu\+::get\+Instance}}()
+\item 
+auto \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_menu_8cpp_abea6e3ded09f0b74dec916f763722b2e}{\+\_\+setup\+Temp\+Menu}} = \&\mbox{\hyperlink{class_setup_temp_menu_aac15e432add818b69d3075081080df82}{Setup\+Temp\+Menu\+::get\+Instance}}()
+\item 
+auto \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_menu_8cpp_a041b2d1de854a195c5f280ab967c1797}{\+\_\+setup\+PID\+\_\+\+Menu}} = \&\mbox{\hyperlink{class_setup_p_i_d___menu_ae32ff32ba75d428e7ac8f66630dd0fb7}{Setup\+PID\+\_\+\+Menu\+::get\+Instance}}()
+\item 
+\mbox{\hyperlink{class_solo_menu}{Solo\+Menu}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_menu_8cpp_a5c4bbb8c5b4a3a9589b95285395756d8}{menu}} = \mbox{\hyperlink{_menu_8cpp_a5c2cfe88c0a9f0f758a2c3c0d5bf30cd}{\+\_\+main\+Menu}}
+\begin{DoxyCompactList}\small\item\em Pointer to the current, active menu used by the application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_solo_menu}{Solo\+Menu}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_menu_8cpp_a8fae6703f1c71627af514109c9119e1e}{setup\+Menu}} = \mbox{\hyperlink{_menu_8cpp_a868d1c59f115abd7a1deeac12853c728}{\+\_\+setup\+Vol\+Menu}}
+\begin{DoxyCompactList}\small\item\em Pointer to the current setup menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_menu_8cpp_a5c2cfe88c0a9f0f758a2c3c0d5bf30cd}\index{Menu.cpp@{Menu.cpp}!\_mainMenu@{\_mainMenu}}
+\index{\_mainMenu@{\_mainMenu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{\_mainMenu}{\_mainMenu}}
+{\footnotesize\ttfamily \label{_menu_8cpp_a5c2cfe88c0a9f0f758a2c3c0d5bf30cd} 
+auto\texorpdfstring{$\ast$}{*} \+\_\+main\+Menu = \&\mbox{\hyperlink{class_main_menu_afea55aadf44178178df52efbcef382c1}{Main\+Menu\+::get\+Instance}}()}
+
+\Hypertarget{_menu_8cpp_a041b2d1de854a195c5f280ab967c1797}\index{Menu.cpp@{Menu.cpp}!\_setupPID\_Menu@{\_setupPID\_Menu}}
+\index{\_setupPID\_Menu@{\_setupPID\_Menu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{\_setupPID\_Menu}{\_setupPID\_Menu}}
+{\footnotesize\ttfamily \label{_menu_8cpp_a041b2d1de854a195c5f280ab967c1797} 
+auto\texorpdfstring{$\ast$}{*} \+\_\+setup\+PID\+\_\+\+Menu = \&\mbox{\hyperlink{class_setup_p_i_d___menu_ae32ff32ba75d428e7ac8f66630dd0fb7}{Setup\+PID\+\_\+\+Menu\+::get\+Instance}}()}
+
+\Hypertarget{_menu_8cpp_abea6e3ded09f0b74dec916f763722b2e}\index{Menu.cpp@{Menu.cpp}!\_setupTempMenu@{\_setupTempMenu}}
+\index{\_setupTempMenu@{\_setupTempMenu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{\_setupTempMenu}{\_setupTempMenu}}
+{\footnotesize\ttfamily \label{_menu_8cpp_abea6e3ded09f0b74dec916f763722b2e} 
+auto\texorpdfstring{$\ast$}{*} \+\_\+setup\+Temp\+Menu = \&\mbox{\hyperlink{class_setup_temp_menu_aac15e432add818b69d3075081080df82}{Setup\+Temp\+Menu\+::get\+Instance}}()}
+
+\Hypertarget{_menu_8cpp_a868d1c59f115abd7a1deeac12853c728}\index{Menu.cpp@{Menu.cpp}!\_setupVolMenu@{\_setupVolMenu}}
+\index{\_setupVolMenu@{\_setupVolMenu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{\_setupVolMenu}{\_setupVolMenu}}
+{\footnotesize\ttfamily \label{_menu_8cpp_a868d1c59f115abd7a1deeac12853c728} 
+auto\texorpdfstring{$\ast$}{*} \+\_\+setup\+Vol\+Menu = \&\mbox{\hyperlink{class_setup_vol_menu_aef01ad592f2d8228a2a0f83ec9b006b4}{Setup\+Vol\+Menu\+::get\+Instance}}()}
+
+\Hypertarget{_menu_8cpp_a5c4bbb8c5b4a3a9589b95285395756d8}\index{Menu.cpp@{Menu.cpp}!menu@{menu}}
+\index{menu@{menu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \label{_menu_8cpp_a5c4bbb8c5b4a3a9589b95285395756d8} 
+\mbox{\hyperlink{class_solo_menu}{Solo\+Menu}}\texorpdfstring{$\ast$}{*} menu = \mbox{\hyperlink{_menu_8cpp_a5c2cfe88c0a9f0f758a2c3c0d5bf30cd}{\+\_\+main\+Menu}}}
+
+
+
+Pointer to the current, active menu used by the application. 
+
+Initially, {\ttfamily menu} points to a \doxylink{class_main_menu}{Main\+Menu} object. Later, the application may elect to point {\ttfamily menu} at another menu, such as a Setup\+Menu object. \Hypertarget{_menu_8cpp_a8fae6703f1c71627af514109c9119e1e}\index{Menu.cpp@{Menu.cpp}!setupMenu@{setupMenu}}
+\index{setupMenu@{setupMenu}!Menu.cpp@{Menu.cpp}}
+\doxysubsubsection{\texorpdfstring{setupMenu}{setupMenu}}
+{\footnotesize\ttfamily \label{_menu_8cpp_a8fae6703f1c71627af514109c9119e1e} 
+\mbox{\hyperlink{class_solo_menu}{Solo\+Menu}}\texorpdfstring{$\ast$}{*} setup\+Menu = \mbox{\hyperlink{_menu_8cpp_a868d1c59f115abd7a1deeac12853c728}{\+\_\+setup\+Vol\+Menu}}}
+
+
+
+Pointer to the current setup menu. 
+
+Initially, {\ttfamily setup\+Menu} points to the volume setup menu. Later on, this will be updated to keep track of which setup menu has been last selected by the user. 

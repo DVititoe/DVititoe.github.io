@@ -1,0 +1,900 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+TFTM070\+A1.h File Reference}
+\hypertarget{_t_f_t_m070_a1_8h}{}\label{_t_f_t_m070_a1_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TFTM070A1.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TFTM070A1.h}}
+{\ttfamily \#include "{}Arduino.\+h"{}}\newline
+{\ttfamily \#include $<$avr/pgmspace.\+h$>$}\newline
+{\ttfamily \#include $<$SPI.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t5316_1_1_touch_location}{FT5316\+::\+Touch\+Location}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_t_f_t_m070_a1}{TFTM070\+A1}}
+\item 
+namespace \mbox{\hyperlink{namespace_f_t5316}{FT5316}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a3f3dd4c46ad2b95cce5f10e0ef0afa12}{Arduino\+\_\+\+SPI}}~1
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_af471e5339da1631fe46d05cb1c465628}{layer1\+\_\+start\+\_\+addr}}~0
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a32c8d162c4ddca5d7a05f883afd4f503}{layer2\+\_\+start\+\_\+addr}}~1228800
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_ad310b61444b58af1db3ab99866234119}{layer3\+\_\+start\+\_\+addr}}~2457600
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a0f57bf3fb1221d0d9d6469643912b0e5}{layer4\+\_\+start\+\_\+addr}}~3686400
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a7ccea3ba98277968ce9249cc4b388ca7}{layer5\+\_\+start\+\_\+addr}}~4915200
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_ab507a3124752c224602e17749cf4cbcc}{layer6\+\_\+start\+\_\+addr}}~6144000
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_aca997fe22ad5e98dad56aaed32118c20}{LCD\+\_\+\+XSIZE\+\_\+\+TFT}}~1024
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_abb4ac17205068db1ba4713e440634256}{LCD\+\_\+\+YSIZE\+\_\+\+TFT}}~600
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_af0948f3344dd9c98b3e6d4e7d804472d}{LCD\+\_\+\+VBPD}}~20
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_aef403083757bfddf97a0772c00e673ee}{LCD\+\_\+\+VFPD}}~12
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a1c5cb83a607ef3bb8e553c235b67c93d}{LCD\+\_\+\+VSPW}}~3
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_abc53554ca000cc5f186f087ac7b2b00d}{LCD\+\_\+\+HBPD}}~144
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a37b109afa06403579ffea9bb80825725}{LCD\+\_\+\+HFPD}}~160
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a7d4edd5889021fba50ca3b207723b84a}{LCD\+\_\+\+HSPW}}~20
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_afb9025c26eaadc7259aac2c2816a4d9e}{LCD\+\_\+\+PCLK\+\_\+\+Falling\+\_\+\+Rising}}~1
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_aff12204f068c13b3ca6849585b4b39b3}{LCD\+\_\+\+HSYNC\+\_\+\+Active\+\_\+\+Polarity}}~0
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a4675760973ece62a1f30824175ebc363}{LCD\+\_\+\+VSYNC\+\_\+\+Active\+\_\+\+Polarity}}~0
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a43ce4ab51eba364e8f27653a27e76dc6}{LCD\+\_\+\+DE\+\_\+\+Active\+\_\+\+Polarity}}~1
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a9ddbdaa79fd7bb50a3a61389f8414898}{c\+Setb0}}~0x01
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a15cca45f9916203715a8b90cf54d9e2c}{c\+Setb1}}~0x02
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_aa73bd29a1411be844cb615e85d82c172}{c\+Setb2}}~0x04
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_ad2e544577fbe5b51f7f589121cab85da}{c\+Setb3}}~0x08
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a36ab1ce019a49179c8ce7883257bea08}{c\+Setb4}}~0x10
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_aa330df289ac713bf8ac6e805b5be4fee}{c\+Setb5}}~0x20
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a3a531ad28b7529d6f8c8638d13361f6a}{c\+Setb6}}~0x40
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_ac0ba049460582d2e87436e2c38b4a493}{c\+Setb7}}~0x80
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_aed61567ff0c40a7475f0bf99af4bab88}{c\+Clrb0}}~0xfe
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a3cb1dfbdf50348eb6126c07810d4036e}{c\+Clrb1}}~0xfd
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a7df8b1a15b1f5a45a5b83303f7bde48a}{c\+Clrb2}}~0xfb
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8636b56a3b5bd759222ae0bd7972a98}{c\+Clrb3}}~0xf7
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a62e5e08b83709c45bed9099fcc40cc1a}{c\+Clrb4}}~0xef
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a257fbfb61be26ca770cfd13c7edf3c71}{c\+Clrb5}}~0xdf
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a0626bd6eda85e855f3806b657ab61020}{c\+Clrb6}}~0xbf
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_ae1d3ff36405af29d9bf161f40687eb31}{c\+Clrb7}}~0x7f
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a68eb1f80b4df2818e5a0774106748141}{Black}}~0x0000
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a298a3b7c7f2ea427a7cd21cdc9a4f054}{White}}~0xffff
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}{Red}}~0xf800
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_aa429cd977709122166b6e31fa10903d1}{Green}}~0x07e0
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a6208a194d702872fdbe1d3c7d7a7c879}{Blue}}~0x001f
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a239cc4651865ee2ac90ac5c1e6d2d8b5}{Yellow}}~\mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}{Red}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{_t_f_t_m070_a1_8h_aa429cd977709122166b6e31fa10903d1}{Green}}
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a82a8a689788551a1b4e4552e5ddeae40}{Cyan}}~\mbox{\hyperlink{_t_f_t_m070_a1_8h_aa429cd977709122166b6e31fa10903d1}{Green}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{_t_f_t_m070_a1_8h_a6208a194d702872fdbe1d3c7d7a7c879}{Blue}}
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8h_a5168ce33eb581e85fbfa454e89012bfb}{Purple}}~\mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}{Red}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{_t_f_t_m070_a1_8h_a6208a194d702872fdbe1d3c7d7a7c879}{Blue}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a30016711754fac5016888a5e235c4ffb}{TFTM070\+A1\+::\+SPIInit}} ()
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a64ab017f296f3f2c8aaa4e13582e812d}{TFTM070\+A1\+::\+SPISet\+Cs}} (int cs)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_af2a978cfba5fac5b737dbc8505ab9cf0}{TFTM070\+A1\+::\+SPIRw\+Byte}} (unsigned char value)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac10919185b93f49423ae32964f6022b1}{TFTM070\+A1\+::\+SPI\+\_\+\+Cmd\+Write}} (int cmd)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8004b7281d9ad0cf4db6e6c4cf548563}{TFTM070\+A1\+::\+SPI\+\_\+\+Data\+Write}} (int data)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5148a924011ce0f97153f8bab04dc881}{TFTM070\+A1\+::\+SPI\+\_\+\+Data\+Write\+\_\+\+Pixel}} (int data)
+\item 
+int \mbox{\hyperlink{namespace_t_f_t_m070_a1_a12be09d5921b3baa77049553e76a933e}{TFTM070\+A1\+::\+SPI\+\_\+\+Status\+Read}} (void)
+\item 
+int \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9a845ddcb8fd8ba5dcdc626610bce6a2}{TFTM070\+A1\+::\+SPI\+\_\+\+Data\+Read}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a138b1878dfcf8222b6a4adfb87af1874}{TFTM070\+A1\+::\+SPI\+\_\+\+Register\+Write}} (unsigned char Cmd, unsigned char Data)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_a11e5e40499af1d52e4bf01365edb2e3b}{TFTM070\+A1\+::\+SPI\+\_\+\+Register\+Read}} (unsigned char Cmd)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_abd78c7549b18840fa31f5b6db5a65ef5}{TFTM070\+A1\+::\+IICInit}} ()
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae27cb75c6a4f0438330639dff0a2ae33}{TFTM070\+A1\+::\+IIC\+\_\+\+Cmd\+Write}} (int cmd)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5c7524316f478803390850eb26709951}{TFTM070\+A1\+::\+IIC\+\_\+\+Data\+Write}} (int data)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a833426ee25763e3483fb38074fc7e088}{TFTM070\+A1\+::\+IIC\+\_\+\+Data\+Write\+\_\+\+Pixel}} (int data)
+\item 
+int \mbox{\hyperlink{namespace_t_f_t_m070_a1_af355e885fe3286ff545bf4783999713c}{TFTM070\+A1\+::\+IIC\+\_\+\+Status\+Read}} (void)
+\item 
+int \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2dea7775b708fc8198f10fc0d66a955f}{TFTM070\+A1\+::\+IIC\+\_\+\+Data\+Read}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_afa1222c9fce683e4d64dec7591dde74c}{TFTM070\+A1\+::\+IIC\+\_\+\+Register\+Write}} (unsigned char Cmd, unsigned char Data)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_afcf60e299d0eb2154ea0cb75229f5617}{TFTM070\+A1\+::\+IIC\+\_\+\+Register\+Read}} (unsigned char Cmd)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a6c1e8c08298b8ecc85c2acaed8be64bf}{TFTM070\+A1\+::\+Parallel\+\_\+\+Init}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a4bfa0bee1859582728421b9f7e4de2a6}{TFTM070\+A1\+::\+LCD\+\_\+\+Cmd\+Write}} (unsigned char cmd)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac46b371c6b1235e5a2ad1652d07f476f}{TFTM070\+A1\+::\+LCD\+\_\+\+Data\+Write}} (unsigned char data)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_abb3cc8d9f395a9d40a93d4b346214413}{TFTM070\+A1\+::\+LCD\+\_\+\+Data\+Write\+\_\+\+Pixel}} (unsigned int data)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_a527048c16692bb54de4836dda74bd84b}{TFTM070\+A1\+::\+LCD\+\_\+\+Status\+Read}} (void)
+\item 
+unsigned int \mbox{\hyperlink{namespace_t_f_t_m070_a1_ade0f4a3e356e0ecf85e3372a09915301}{TFTM070\+A1\+::\+LCD\+\_\+\+Data\+Read}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a507096a77a79c91632b4a83d1c500c8d}{TFTM070\+A1\+::\+LCD\+\_\+\+Register\+Write}} (unsigned char Cmd, unsigned char Data)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_a01c52fec4bac6019250127955bc25cf2}{TFTM070\+A1\+::\+LCD\+\_\+\+Register\+Read}} (unsigned char Cmd)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af06fbecfb8a54c6d49a1c1f5eb09db7c}{TFTM070\+A1\+::\+TFT\+\_\+16bit}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a0d6a7640fec06a92a2e9a49e6e960e6f}{TFTM070\+A1\+::\+Host\+\_\+\+Bus\+\_\+16bit}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a22ebc143f5ddbf4cd57629bbaed1616b}{TFTM070\+A1\+::\+RGB\+\_\+16b\+\_\+16bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a76855038a5759ed0c87592eb6bf86810}{TFTM070\+A1\+::\+Mem\+Read\+\_\+\+Left\+\_\+\+Right\+\_\+\+Top\+\_\+\+Down}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac5ad4b0555ce200130cb183e6d1ab64d}{TFTM070\+A1\+::\+Graphic\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad81b177546b6d208a0454ab7ca91a74c}{TFTM070\+A1\+::\+Text\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aecc58fa2ff8dc8c4b30ef340d2e1e033}{TFTM070\+A1\+::\+Memory\+\_\+\+Select\+\_\+\+SDRAM}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5fc799527e0ca30411b31d21dfca97bb}{TFTM070\+A1\+::\+HSCAN\+\_\+\+L\+\_\+to\+\_\+R}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_addf20d50d4ac2e716306a5511cd772de}{TFTM070\+A1\+::\+VSCAN\+\_\+\+T\+\_\+to\+\_\+B}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a111ac0e25b614c36b775001a32cbcd7d}{TFTM070\+A1\+::\+PDATA\+\_\+\+Set\+\_\+\+RGB}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a542c70f726065e9ac8c21cf400fcfd3f}{TFTM070\+A1\+::\+PCLK\+\_\+\+Rising}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a912da88e9b4a5830079f96d1b487a3c3}{TFTM070\+A1\+::\+PCLK\+\_\+\+Falling}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a6a8f73b8c01e21d2008db8f9e3088420}{TFTM070\+A1\+::\+HSYNC\+\_\+\+Low\+\_\+\+Active}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a265597e483baed2ee16f2b6cd1710f0b}{TFTM070\+A1\+::\+HSYNC\+\_\+\+High\+\_\+\+Active}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a3cbfccff6856bfbc865b7afce4a7e307}{TFTM070\+A1\+::\+VSYNC\+\_\+\+Low\+\_\+\+Active}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac25f7a1e3339a9bd54b08ec2cd1bebdc}{TFTM070\+A1\+::\+VSYNC\+\_\+\+High\+\_\+\+Active}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa7cfdf992e74b90d7f2972c1cd0bc885}{TFTM070\+A1\+::\+DE\+\_\+\+Low\+\_\+\+Active}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a202b71c6e739069f97088ef6588ce763}{TFTM070\+A1\+::\+DE\+\_\+\+High\+\_\+\+Active}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_adb72b01962609517037eff9ec36c4c1c}{TFTM070\+A1\+::\+Set\+\_\+\+PCLK}} (unsigned char val)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae8b20ebf2e8417de7e5f4ccb90800d9f}{TFTM070\+A1\+::\+Set\+\_\+\+HSYNC\+\_\+\+Active}} (unsigned char val)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_afb6c970eed10efa2261d93eaae0a02b3}{TFTM070\+A1\+::\+Set\+\_\+\+VSYNC\+\_\+\+Active}} (unsigned char val)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae5dfd067c385cf5ab39d0ab0acfe641a}{TFTM070\+A1\+::\+Set\+\_\+\+DE\+\_\+\+Active}} (unsigned char val)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a53ff4fbec68ede60c4888592844c0036}{TFTM070\+A1\+::\+LCD\+\_\+\+Horizontal\+Width\+\_\+\+Vertical\+Height}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_acc8eac5156dd50c2e23562bec6f714b4}{TFTM070\+A1\+::\+LCD\+\_\+\+Horizontal\+\_\+\+Non\+\_\+\+Display}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ade35179020b7acfd8359e40be1898d10}{TFTM070\+A1\+::\+LCD\+\_\+\+HSYNC\+\_\+\+Start\+\_\+\+Position}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab49d34b31ebe57df5b74f4a8ffa0b47a}{TFTM070\+A1\+::\+LCD\+\_\+\+HSYNC\+\_\+\+Pulse\+\_\+\+Width}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5c929e9b67378b1905f0a1838133ee70}{TFTM070\+A1\+::\+LCD\+\_\+\+Vertical\+\_\+\+Non\+\_\+\+Display}} (unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2d6b9edfcca93b8196e0e3fe6e98738f}{TFTM070\+A1\+::\+LCD\+\_\+\+VSYNC\+\_\+\+Start\+\_\+\+Position}} (unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9691b20cc847fc9630b0ba85b7343cd2}{TFTM070\+A1\+::\+LCD\+\_\+\+VSYNC\+\_\+\+Pulse\+\_\+\+Width}} (unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8ddf8ec69fdb5c15ebc7e6bd438d24fd}{TFTM070\+A1\+::\+Select\+\_\+\+Main\+\_\+\+Window\+\_\+16bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a31d10a3cd66d403960cf1b3b71b0b4db}{TFTM070\+A1\+::\+Select\+\_\+\+Main\+\_\+\+Window\+\_\+24bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad6a89218e9906f115a56a032ae49a3ea}{TFTM070\+A1\+::\+Memory\+\_\+\+XY\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a089af68014279fcec6d6ba47d8f11c19}{TFTM070\+A1\+::\+Memory\+\_\+16bpp\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa8583a8dc439c7382111b2bd5c778cd1}{TFTM070\+A1\+::\+Memory\+\_\+24bpp\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac84170c3a9dadb14fe345325888b87be}{TFTM070\+A1\+::\+Mem\+Write\+\_\+\+Left\+\_\+\+Right\+\_\+\+Top\+\_\+\+Down}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab5bfff252e90a8bf0401f853744ace00}{TFTM070\+A1\+::\+HW\+\_\+\+Reset}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a69c9b7a831d1871d910df65c639c8da0}{TFTM070\+A1\+::\+System\+\_\+\+Check\+\_\+\+Temp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac9ee5e4883ac330825de8f2661a87731}{TFTM070\+A1\+::\+PLL\+\_\+\+Initial}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab8428149a90d7303bac31b804cb616ff}{TFTM070\+A1\+::\+SDRAM\+\_\+initail}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa35e084b4bb9679e6b7c0baa8dddafdc}{TFTM070\+A1\+::initial}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a483c6292776c0abf2e5d948932f9b88e}{TFTM070\+A1\+::\+Display\+\_\+\+ON}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae22b5fb46dcbab06a373f424f5daae5c}{TFTM070\+A1\+::\+Main\+\_\+\+Image\+\_\+\+Start\+\_\+\+Address}} (unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2d68170c36840e22921b755fa31bff53}{TFTM070\+A1\+::\+Main\+\_\+\+Image\+\_\+\+Width}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae484e2e6656abed91540387aefdd3548}{TFTM070\+A1\+::\+Main\+\_\+\+Window\+\_\+\+Start\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5846de5f6923188274a87e99c657b686}{TFTM070\+A1\+::\+Canvas\+\_\+\+Image\+\_\+\+Start\+\_\+address}} (unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9561ceb081a7dc2ae05b262e936c1083}{TFTM070\+A1\+::\+Canvas\+\_\+image\+\_\+width}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a6a70519665a19e0042c7a81fc0469811}{TFTM070\+A1\+::\+Active\+\_\+\+Window\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a51e1ac2b5c3da4515bfadec232a4c6b0}{TFTM070\+A1\+::\+Active\+\_\+\+Window\+\_\+\+WH}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8ca651e65d7a8ffc1494df8934db4c05}{TFTM070\+A1\+::\+Foreground\+\_\+color\+\_\+65k}} (unsigned short temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_adda84416a71b1bb4c6ffba134d1f2884}{TFTM070\+A1\+::\+Background\+\_\+color\+\_\+65k}} (unsigned short temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a11bd247cdad12fffe680465fe08c29b6}{TFTM070\+A1\+::\+Check\+\_\+\+SDRAM\+\_\+\+Ready}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a22e94bb722b9afc4103bfcc0a68c1348}{TFTM070\+A1\+::\+Check\+\_\+\+Busy\+\_\+\+Draw}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_adab385ceff4eda1a002f8fa9121e2547}{TFTM070\+A1\+::\+Check\+\_\+2\+D\+\_\+\+Busy}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8d2a883c2dfcc2ce69a52cf29b6e9578}{TFTM070\+A1\+::\+Check\+\_\+\+Mem\+\_\+\+WR\+\_\+\+FIFO\+\_\+not\+\_\+\+Full}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a36b59577d264b30b1e28de00788fd077}{TFTM070\+A1\+::\+Check\+\_\+\+Mem\+\_\+\+WR\+\_\+\+FIFO\+\_\+\+Empty}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2b076b44df2b73dc5874494b7d4c4b9f}{TFTM070\+A1\+::\+Check\+\_\+\+Mem\+\_\+\+RD\+\_\+\+FIFO\+\_\+not\+\_\+\+Full}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a47200d1ed02b1f70a1a87692eb5fdb79}{TFTM070\+A1\+::\+Check\+\_\+\+Mem\+\_\+\+RD\+\_\+\+FIFO\+\_\+not\+\_\+\+Empty}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5e2098f9cb2e3c5b0ea20b77b13a8fbd}{TFTM070\+A1\+::\+Draw\+Square\+\_\+\+Fill}} (unsigned short X1, unsigned short Y1, unsigned short X2, unsigned short Y2, unsigned long Foreground\+Color)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a83d5425930b1bfd19b1f80bf58e79c01}{TFTM070\+A1\+::\+Draw\+Circle\+\_\+\+Fill}} (unsigned short X1, unsigned short Y1, unsigned short R, unsigned long Foreground\+Color)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aea231b6700c1a3ef8377c8ed366ef5f1}{TFTM070\+A1\+::\+Enable\+\_\+\+SFlash\+\_\+\+SPI}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a61259180365a9d68f1d9eb7dcf7ceda9}{TFTM070\+A1\+::\+Goto\+\_\+\+Pixel\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a65d3ec9af51e515c96e4baac5db49561}{TFTM070\+A1\+::\+Goto\+\_\+\+Text\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a99e6908f680d91de8b31dde9b798fff0}{TFTM070\+A1\+::\+DMA\+\_\+24bit\+\_\+\+Block}} (unsigned char SCS, unsigned char Clk, unsigned short X1, unsigned short Y1, unsigned short X\+\_\+W, unsigned short Y\+\_\+H, unsigned short P\+\_\+W, unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a53bea86b2c9868065c4698046fdbe644}{TFTM070\+A1\+::\+DMA\+\_\+\+Transfer\+\_\+\+Image\+\_\+\+Block}} (unsigned char SCS, unsigned char Clk, unsigned long ROM\+\_\+\+Addr, unsigned short ROM\+\_\+W, unsigned short Src\+\_\+X, unsigned short Src\+\_\+Y, unsigned long CVS\+\_\+\+Addr, unsigned short CVS\+\_\+W, unsigned short DX, unsigned short DY, unsigned short Img\+\_\+W, unsigned short Img\+\_\+H)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a91df555c2ae3b837c68dc87f6b2639a5}{TFTM070\+A1\+::\+Draw\+Pixel}} (unsigned short x, unsigned short y, unsigned short color)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_afe2a14b7cb8b389fd863df8218d4d4c6}{TFTM070\+A1\+::\+Show\+\_\+\+String}} (const char \texorpdfstring{$\ast$}{*}str)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9cdfd1a059e618ae35fbdcdc2ece2e53}{TFTM070\+A1\+::\+Show\+\_\+picture}} (unsigned long numbers, const unsigned char \texorpdfstring{$\ast$}{*}data)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a94772d8ee931e55212124d53f56261c1}{TFTM070\+A1\+::\+Start\+\_\+\+Line}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aba2c58f334ffb2463fc9011e68a18964}{TFTM070\+A1\+::\+Start\+\_\+\+Triangle}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a80cdd482f45f4619119e473f68c03da5}{TFTM070\+A1\+::\+Start\+\_\+\+Triangle\+\_\+\+Fill}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae90328bc946b4a90ddbe0e022abfddc5}{TFTM070\+A1\+::\+Line\+\_\+\+Start\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a70df7eec0727276e2d9566bf344c47a7}{TFTM070\+A1\+::\+Line\+\_\+\+End\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_acdd45655a44b7b8fb8155c861b78ee60}{TFTM070\+A1\+::\+Triangle\+\_\+\+Point1\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a3a45d32d4c1ca163948030ca25461ead}{TFTM070\+A1\+::\+Triangle\+\_\+\+Point2\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a20db9061784ab5f02b43ad25b8547521}{TFTM070\+A1\+::\+Triangle\+\_\+\+Point3\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae0fa3342f87f6642777cce13f8abbfdc}{TFTM070\+A1\+::\+Square\+\_\+\+Start\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a0dfd475d4e6944f7ce0f1e977a709539}{TFTM070\+A1\+::\+Square\+\_\+\+End\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a01a2fed70da315186443b791d2964e81}{TFTM070\+A1\+::\+Start\+\_\+\+Circle\+\_\+or\+\_\+\+Ellipse}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2beb325d2c12d4d1658f8e9c044dba2f}{TFTM070\+A1\+::\+Start\+\_\+\+Circle\+\_\+or\+\_\+\+Ellipse\+\_\+\+Fill}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9626c3a5b152bff58263890fcb97aa48}{TFTM070\+A1\+::\+Start\+\_\+\+Left\+\_\+\+Down\+\_\+\+Curve}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_acab3af6aa04e95784df68766eaa485b9}{TFTM070\+A1\+::\+Start\+\_\+\+Left\+\_\+\+Up\+\_\+\+Curve}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a12d657d95f8cbb2361b90ef32bb90706}{TFTM070\+A1\+::\+Start\+\_\+\+Right\+\_\+\+Up\+\_\+\+Curve}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a52c6756438388bbb36df1a2720868454}{TFTM070\+A1\+::\+Start\+\_\+\+Right\+\_\+\+Down\+\_\+\+Curve}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af84a3b22316f0c367c42cb36c3a93f74}{TFTM070\+A1\+::\+Start\+\_\+\+Left\+\_\+\+Down\+\_\+\+Curve\+\_\+\+Fill}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae2de980a848a5ac09c9a8a02012789e9}{TFTM070\+A1\+::\+Start\+\_\+\+Left\+\_\+\+Up\+\_\+\+Curve\+\_\+\+Fill}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac9912ce046437950705dae00970c009a}{TFTM070\+A1\+::\+Start\+\_\+\+Right\+\_\+\+Up\+\_\+\+Curve\+\_\+\+Fill}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a13ceb73a7ff19943c87a903bf41a5396}{TFTM070\+A1\+::\+Start\+\_\+\+Right\+\_\+\+Down\+\_\+\+Curve\+\_\+\+Fill}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a17efa0c7d6c404271047ee026569e7c5}{TFTM070\+A1\+::\+Start\+\_\+\+Square}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a038a0ebc16b6038f46559b59c0f260c6}{TFTM070\+A1\+::\+Start\+\_\+\+Square\+\_\+\+Fill}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab070937edc6d00f2690260c738722a06}{TFTM070\+A1\+::\+Start\+\_\+\+Circle\+\_\+\+Square}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a4d0c30fe06e1772806b5dda362bbfa42}{TFTM070\+A1\+::\+Start\+\_\+\+Circle\+\_\+\+Square\+\_\+\+Fill}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_adcde0f64e4e43bb041cbb2577d457b77}{TFTM070\+A1\+::\+Circle\+\_\+\+Center\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_afd7fca245020ab04505c454bcca3f1d2}{TFTM070\+A1\+::\+Ellipse\+\_\+\+Center\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7185eed2e39eb5b3d4e9989ac0636402}{TFTM070\+A1\+::\+Circle\+\_\+\+Radius\+\_\+R}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_abf00f26479acf8045c25caa8b1606a76}{TFTM070\+A1\+::\+Ellipse\+\_\+\+Radius\+\_\+\+Rx\+Ry}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac55c52323d9a0c179b0bc3edd1a1a57e}{TFTM070\+A1\+::\+Circle\+\_\+\+Square\+\_\+\+Radius\+\_\+\+Rx\+Ry}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5860ded3235f187fe527f33df19dfe9b}{TFTM070\+A1\+::\+Set\+\_\+\+PWM\+\_\+\+Prescaler\+\_\+1\+\_\+to\+\_\+256}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2417af27eb322e4fa688bfad645e6a21}{TFTM070\+A1\+::\+Select\+\_\+\+PWM1\+\_\+\+Clock\+\_\+\+Divided\+\_\+\+By\+\_\+1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab34d91a891add00923a3cded26d32c93}{TFTM070\+A1\+::\+Select\+\_\+\+PWM1\+\_\+\+Clock\+\_\+\+Divided\+\_\+\+By\+\_\+2}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5bb5e28ddcd1cffd6a36ad7ab65cc71c}{TFTM070\+A1\+::\+Select\+\_\+\+PWM1\+\_\+\+Clock\+\_\+\+Divided\+\_\+\+By\+\_\+4}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab1b721b31b52fd4feb2ff4f09a1567f7}{TFTM070\+A1\+::\+Select\+\_\+\+PWM1\+\_\+\+Clock\+\_\+\+Divided\+\_\+\+By\+\_\+8}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac97496c85e4c45f5b23a4645b12217a2}{TFTM070\+A1\+::\+Select\+\_\+\+PWM0\+\_\+\+Clock\+\_\+\+Divided\+\_\+\+By\+\_\+1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_add48fa69d839eb4df5a8ee8a7ed21a91}{TFTM070\+A1\+::\+Select\+\_\+\+PWM0\+\_\+\+Clock\+\_\+\+Divided\+\_\+\+By\+\_\+2}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af805a6a9720a54d3db8f18031c001ce1}{TFTM070\+A1\+::\+Select\+\_\+\+PWM0\+\_\+\+Clock\+\_\+\+Divided\+\_\+\+By\+\_\+4}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5f823fd0760f2cd1f702699616195302}{TFTM070\+A1\+::\+Select\+\_\+\+PWM0\+\_\+\+Clock\+\_\+\+Divided\+\_\+\+By\+\_\+8}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad6cadb4bcf60b070ba9b0e984ef496b5}{TFTM070\+A1\+::\+Select\+\_\+\+PWM1\+\_\+is\+\_\+\+Error\+Flag}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a63c2e66b69bb1cf1f1687403e4c6d64b}{TFTM070\+A1\+::\+Select\+\_\+\+PWM1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aab185e35aceb2c7508b7c5ab84de5fa5}{TFTM070\+A1\+::\+Select\+\_\+\+PWM1\+\_\+is\+\_\+\+Osc\+\_\+\+Clock}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a3786116a9a826fae396a843f0402a2d5}{TFTM070\+A1\+::\+Select\+\_\+\+PWM0\+\_\+is\+\_\+\+GPIO\+\_\+\+C7}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9cb41ab548f5b314e03783ba3faf8251}{TFTM070\+A1\+::\+Select\+\_\+\+PWM0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a4f3361d0cbf44411b0d0edf076d26f69}{TFTM070\+A1\+::\+Select\+\_\+\+PWM0\+\_\+is\+\_\+\+Core\+\_\+\+Clock}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a148f1310c30a928b175557eeead1e3c7}{TFTM070\+A1\+::\+Enable\+\_\+\+PWM1\+\_\+\+Inverter}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a611cca6fb122a8d2d47abba68eb29d5d}{TFTM070\+A1\+::\+Disable\+\_\+\+PWM1\+\_\+\+Inverter}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a80330148455d8396a7f0596c238f089e}{TFTM070\+A1\+::\+Auto\+\_\+\+Reload\+\_\+\+PWM1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_acc90b8bd4ff582e93f8fafd6b9a34ebc}{TFTM070\+A1\+::\+One\+\_\+\+Shot\+\_\+\+PWM1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a3d1c6515e3ac2fc1fd31379b7bf19b8b}{TFTM070\+A1\+::\+Start\+\_\+\+PWM1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af463fd0de5657a76e38863281627d686}{TFTM070\+A1\+::\+Stop\+\_\+\+PWM1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a44dcca91eac176041eb06be220c0a95a}{TFTM070\+A1\+::\+Enable\+\_\+\+PWM0\+\_\+\+Dead\+\_\+\+Zone}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa2ce70c36bd90ba16c1bd805950cb2f1}{TFTM070\+A1\+::\+Disable\+\_\+\+PWM0\+\_\+\+Dead\+\_\+\+Zone}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_abd930dad65339ce3ca44b2de46f8d84a}{TFTM070\+A1\+::\+Enable\+\_\+\+PWM0\+\_\+\+Inverter}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a704bc65576c80edecd245910dec3f378}{TFTM070\+A1\+::\+Disable\+\_\+\+PWM0\+\_\+\+Inverter}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_adfaf3773080e8111b6a9afcfb4148652}{TFTM070\+A1\+::\+Auto\+\_\+\+Reload\+\_\+\+PWM0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af48dc67cb9369a12b0595db3a6f5cd4b}{TFTM070\+A1\+::\+One\+\_\+\+Shot\+\_\+\+PWM0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a4202d63d0c438b95b47ddd23a10d8d75}{TFTM070\+A1\+::\+Start\+\_\+\+PWM0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a97c3e790545fa2a55beba79dac105e08}{TFTM070\+A1\+::\+Stop\+\_\+\+PWM0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a58e2d899c076ccae4fada191ca95281e}{TFTM070\+A1\+::\+Set\+\_\+\+Timer0\+\_\+\+Dead\+\_\+\+Zone\+\_\+\+Length}} (unsigned char temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa282f4c9a31147b8384d4001079b3b28}{TFTM070\+A1\+::\+Set\+\_\+\+Timer0\+\_\+\+Compare\+\_\+\+Buffer}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af12757d5843fdc254c02e7e26bb90b62}{TFTM070\+A1\+::\+Set\+\_\+\+Timer0\+\_\+\+Count\+\_\+\+Buffer}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a323f2ac497246719bedc73c99363cfb7}{TFTM070\+A1\+::\+Set\+\_\+\+Timer1\+\_\+\+Compare\+\_\+\+Buffer}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5ebbe0ceb4edee0127c1b01d31ec4624}{TFTM070\+A1\+::\+Set\+\_\+\+Timer1\+\_\+\+Count\+\_\+\+Buffer}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae111b8a90f83a4cb8a7019503f5c7b01}{TFTM070\+A1\+::\+BTE\+\_\+\+Enable}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a3f9439df1e5abd3e738b9bec5b8e27e9}{TFTM070\+A1\+::\+BTE\+\_\+\+Disable}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a903b1c493e63b417c33d8482eed927aa}{TFTM070\+A1\+::\+Check\+\_\+\+BTE\+\_\+\+Busy}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_adacad36d0a391a00dc9f9d8ab4fecaac}{TFTM070\+A1\+::\+Pattern\+\_\+\+Format\+\_\+8\+X8}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab22b36ac33c7884bc5ceac0634c2f3fc}{TFTM070\+A1\+::\+Pattern\+\_\+\+Format\+\_\+16\+X16}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_afe7bab6b61405565379a77e14eb6bd35}{TFTM070\+A1\+::\+BTE\+\_\+\+ROP\+\_\+\+Code}} (unsigned char setx)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a40de0f4c38de48cee8088f60a1a97b6a}{TFTM070\+A1\+::\+BTE\+\_\+\+Operation\+\_\+\+Code}} (unsigned char setx)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a80c45e203bf7609e8122da9b18decf87}{TFTM070\+A1\+::\+BTE\+\_\+\+S0\+\_\+\+Color\+\_\+8bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a4836fb70d651b3415820452bd30af98b}{TFTM070\+A1\+::\+BTE\+\_\+\+S0\+\_\+\+Color\+\_\+16bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa455400a6c57f9f57d3e57bf2a9830c9}{TFTM070\+A1\+::\+BTE\+\_\+\+S0\+\_\+\+Color\+\_\+24bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aceed058ecc7bba7f839851025753701c}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Color\+\_\+8bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a1a2e735e4f6255988adc61b0c5b978f8}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Color\+\_\+16bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a00484e6f789e6511c63c0e9bb0c08838}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Color\+\_\+24bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a50c4cbfbe98d5a56d783cc53376a80a9}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Color\+\_\+\+Constant}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a96f01ecb5986aa330fe87e7db4d8c698}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Color\+\_\+8bit\+\_\+\+Alpha}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a205b22ae540d90216aa959356f0f7bcb}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Color\+\_\+16bit\+\_\+\+Alpha}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_afface3c7e13b7df6b7e49ae77f86723a}{TFTM070\+A1\+::\+BTE\+\_\+\+Destination\+\_\+\+Color\+\_\+8bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a33f2d35c121532ea171d60c68bacda54}{TFTM070\+A1\+::\+BTE\+\_\+\+Destination\+\_\+\+Color\+\_\+16bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a901e54a9b407752e3383c915ad1dc773}{TFTM070\+A1\+::\+BTE\+\_\+\+Destination\+\_\+\+Color\+\_\+24bpp}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab9eba423fe31ce8c9e27b9dcdb553986}{TFTM070\+A1\+::\+BTE\+\_\+\+S0\+\_\+\+Memory\+\_\+\+Start\+\_\+\+Address}} (unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a993f1f2bf87e252242cf2b730c7af819}{TFTM070\+A1\+::\+BTE\+\_\+\+S0\+\_\+\+Image\+\_\+\+Width}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a404587e28ca11ceede730e41fdbf46ed}{TFTM070\+A1\+::\+BTE\+\_\+\+S0\+\_\+\+Window\+\_\+\+Start\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_acd476d69245f34e5cbec8d901417828e}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Memory\+\_\+\+Start\+\_\+\+Address}} (unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7522b2a7b7842cad82b36ae7001b3a94}{TFTM070\+A1\+::\+S1\+\_\+\+Constant\+\_\+color\+\_\+256}} (unsigned char temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a73008355e456848711e8c05ba54733e1}{TFTM070\+A1\+::\+S1\+\_\+\+Constant\+\_\+color\+\_\+65k}} (unsigned short temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a843caf9ba2f68d985f108b12cb4299e2}{TFTM070\+A1\+::\+S1\+\_\+\+Constant\+\_\+color\+\_\+16M}} (unsigned long temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7e5a9bc0298d08f3166ea9265a42ad45}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Image\+\_\+\+Width}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a1dcfe3c133ec5b5c7bcba1ee70165666}{TFTM070\+A1\+::\+BTE\+\_\+\+S1\+\_\+\+Window\+\_\+\+Start\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab48c1b01b0f071e1a3b6938b0b904fa8}{TFTM070\+A1\+::\+BTE\+\_\+\+Destination\+\_\+\+Memory\+\_\+\+Start\+\_\+\+Address}} (unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9b34da6aa00c2a0f804a1ba9c10e5724}{TFTM070\+A1\+::\+BTE\+\_\+\+Destination\+\_\+\+Image\+\_\+\+Width}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a6d4228b5c24c1a9bcc41600057654941}{TFTM070\+A1\+::\+BTE\+\_\+\+Destination\+\_\+\+Window\+\_\+\+Start\+\_\+\+XY}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a4461fa02fcc513252f47d9acc8630533}{TFTM070\+A1\+::\+BTE\+\_\+\+Window\+\_\+\+Size}} (unsigned short WX, unsigned short WY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a77df052e2a82f651460dd8f521b11947}{TFTM070\+A1\+::\+BTE\+\_\+\+Alpha\+\_\+\+Blending\+\_\+\+Effect}} (unsigned char temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9a07f11064840cedf9db892270807d5a}{TFTM070\+A1\+::\+Start\+\_\+\+SFI\+\_\+\+DMA}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab0c03ccaed2b133dd1dde58ce264d104}{TFTM070\+A1\+::\+Check\+\_\+\+Busy\+\_\+\+SFI\+\_\+\+DMA}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9dfad0e3d1c5c45a760beffc300bc27e}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7811c1b5c3d567bfd721490aa8b33f74}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5f0cfe2c6e2e60287a8255699ad944ac}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+\+Font\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad5570aa7b499cc7d7e5cb19a5da1cc6b}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+\+DMA\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a98f196f27ea2df336da80406eec9a229}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+24bit\+\_\+\+Address}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a0da92509376a7d6b1439e65cbe5be3b6}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+32bit\+\_\+\+Address}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a1f96ebf685031fb94e024db338d4701d}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+\+Waveform\+\_\+\+Mode\+\_\+0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a574c2b94e6a291def7c97ef84b68c60c}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+\+Waveform\+\_\+\+Mode\+\_\+3}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_abddfb1337dbe34f9eeb1c9918da8d668}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+0\+\_\+\+Dummy\+Read}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a281d74558a9e2eea878ed3e123da5e71}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+8\+\_\+\+Dummy\+Read}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a396cd65fb82a34177fd10ee54495213b}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+16\+\_\+\+Dummy\+Read}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a834d30e042e3bf34692e70a9bb130730}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+24\+\_\+\+Dummy\+Read}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad879a54a870e6febf1168dc7cb0ddf3f}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+\+Single\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9de1a9ed50ad4d93122f49dd8f5ddaf1}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+\+Dual\+\_\+\+Mode0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a03a57ec64bc4a1c6e02491ed8a5419e5}{TFTM070\+A1\+::\+Select\+\_\+\+SFI\+\_\+\+Dual\+\_\+\+Mode1}} (void)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_ae57181d5d798025a10dbb1ec27b51324}{TFTM070\+A1\+::\+SPI\+\_\+\+Master\+\_\+\+FIFO\+\_\+\+Data\+\_\+\+Put}} (unsigned char Data)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8085daa0d8f9ef1a5a044b8d5e425041}{TFTM070\+A1\+::\+SPI\+\_\+\+Master\+\_\+\+FIFO\+\_\+\+Data\+\_\+\+Get}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a800b8ad63a4014ec9f77f6e76e219402}{TFTM070\+A1\+::\+Mask\+\_\+\+SPI\+\_\+\+Master\+\_\+\+Interrupt\+\_\+\+Flag}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7d8bbee9f74fa8a33bf2eca93be2904d}{TFTM070\+A1\+::\+Select\+\_\+n\+SS\+\_\+drive\+\_\+on\+\_\+xnsfcs0}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aebecea269737c273474ed6ad1a82e753}{TFTM070\+A1\+::\+Select\+\_\+n\+SS\+\_\+drive\+\_\+on\+\_\+xnsfcs1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a1ed77f78fdcefdfc908aac30f76a57b1}{TFTM070\+A1\+::n\+SS\+\_\+\+Inactive}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab36e716edfaa53381ca16c3844fa1056}{TFTM070\+A1\+::n\+SS\+\_\+\+Active}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aee8ea68c4a162270ee53a9f9553d1714}{TFTM070\+A1\+::\+OVFIRQEN\+\_\+\+Enable}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af232db45694a5381b589d6abef0c90d2}{TFTM070\+A1\+::\+EMTIRQEN\+\_\+\+Enable}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac2f95a10dada62d0503f9f52af501028}{TFTM070\+A1\+::\+Reset\+\_\+\+CPOL}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aee835890df5887de1fb15c47c35a9677}{TFTM070\+A1\+::\+Set\+\_\+\+CPOL}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aaaf1bec8f9c4df4fbe438649c94ec9a3}{TFTM070\+A1\+::\+Reset\+\_\+\+CPHA}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af8ab4b125fa3ccf1d01adaeb501f0b80}{TFTM070\+A1\+::\+Set\+\_\+\+CPHA}} (void)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab55b364457fe12ef795a0a6d412ca1ac}{TFTM070\+A1\+::\+Tx\+\_\+\+FIFO\+\_\+\+Empty\+\_\+\+Flag}} (void)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7cc4ca5b145e62b0792f610ecdf50435}{TFTM070\+A1\+::\+Tx\+\_\+\+FIFO\+\_\+\+Full\+\_\+\+Flag}} (void)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_a6e30011fce62df99d1aaf07f15fc5c6d}{TFTM070\+A1\+::\+Rx\+\_\+\+FIFO\+\_\+\+Empty\+\_\+\+Flag}} (void)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_abeabc372003cd8bcead3867b93282888}{TFTM070\+A1\+::\+Rx\+\_\+\+FIFO\+\_\+full\+\_\+flag}} (void)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_a63f9677912209a332f87a54791cd8694}{TFTM070\+A1\+::\+OVFI\+\_\+\+Flag}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a21cd601e1efbc1bba31e04cc203338e7}{TFTM070\+A1\+::\+Clear\+\_\+\+OVFI\+\_\+\+Flag}} (void)
+\item 
+unsigned char \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa024ccf27b4dde38b64a391a7860926b}{TFTM070\+A1\+::\+EMTI\+\_\+\+Flag}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a0fd485b412841887254884c9d8e8a5cc}{TFTM070\+A1\+::\+Clear\+\_\+\+EMTI\+\_\+\+Flag}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa59433051b8c7974ade5df041d8f9ada}{TFTM070\+A1\+::\+SPI\+\_\+\+Clock\+\_\+\+Period}} (unsigned char temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a3043a0950cec42db4d225eea0cd1a5ef}{TFTM070\+A1\+::\+SFI\+\_\+\+DMA\+\_\+\+Source\+\_\+\+Start\+\_\+\+Address}} (unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7561a2d29f21401ac796c831eda3a2c8}{TFTM070\+A1\+::\+SFI\+\_\+\+DMA\+\_\+\+Destination\+\_\+\+Start\+\_\+\+Address}} (unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8aae137f3e27ac57f1523b4cbd84cac3}{TFTM070\+A1\+::\+SFI\+\_\+\+DMA\+\_\+\+Destination\+\_\+\+Upper\+\_\+\+Left\+\_\+\+Corner}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad53a56602f8b4d4dbb6e2a792842367b}{TFTM070\+A1\+::\+SFI\+\_\+\+DMA\+\_\+\+Destination\+\_\+\+Width}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a0f5840c9c163df052fd6a66480eca1e1}{TFTM070\+A1\+::\+SFI\+\_\+\+DMA\+\_\+\+Transfer\+\_\+\+Number}} (unsigned long Addr)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_af6f91dbe63c6184f98f3e92a27078ba0}{TFTM070\+A1\+::\+SFI\+\_\+\+DMA\+\_\+\+Transfer\+\_\+\+Width\+\_\+\+Height}} (unsigned short WX, unsigned short HY)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a0e2aa1ff81acecbce71f26c7ac1ac3c1}{TFTM070\+A1\+::\+SFI\+\_\+\+DMA\+\_\+\+Source\+\_\+\+Width}} (unsigned short WX)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8de6b2b1a24cfaf7a0055fba49848397}{TFTM070\+A1\+::\+Font\+\_\+\+Select\+\_\+\+User\+Define\+\_\+\+Mode}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_abbb83dfdefd905b8395e9b42dd610bce}{TFTM070\+A1\+::\+CGROM\+\_\+\+Select\+\_\+\+Internal\+\_\+\+CGROM}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9a6eb862edc9f329d4367be56ca8e0b3}{TFTM070\+A1\+::\+CGROM\+\_\+\+Select\+\_\+\+Genitop\+\_\+\+Font\+ROM}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_acb900e0aca425f3416ab9a6847cc8453}{TFTM070\+A1\+::\+Font\+\_\+\+Select\+\_\+8x16\+\_\+16x16}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad1800010a0081f44d4bb93306570dd6e}{TFTM070\+A1\+::\+Font\+\_\+\+Select\+\_\+12x24\+\_\+24x24}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a0bbf8412d22ba61c0e4f5fc84b92f79f}{TFTM070\+A1\+::\+Font\+\_\+\+Select\+\_\+16x32\+\_\+32x32}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8bdebfd6daae642371a4a589c95d9058}{TFTM070\+A1\+::\+Internal\+\_\+\+CGROM\+\_\+\+Select\+\_\+\+ISOIEC8859\+\_\+1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7c9a2ca14858fd6e4f12e554c374c254}{TFTM070\+A1\+::\+Internal\+\_\+\+CGROM\+\_\+\+Select\+\_\+\+ISOIEC8859\+\_\+2}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a11052d0e75aafb57fadd99c906fc5c52}{TFTM070\+A1\+::\+Internal\+\_\+\+CGROM\+\_\+\+Select\+\_\+\+ISOIEC8859\+\_\+3}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a86f8b317512fc6b4019a6e5ce5c92d53}{TFTM070\+A1\+::\+Internal\+\_\+\+CGROM\+\_\+\+Select\+\_\+\+ISOIEC8859\+\_\+4}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a8adf6d646815e9652359281834a12cad}{TFTM070\+A1\+::\+Enable\+\_\+\+Font\+\_\+\+Alignment}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad2ca549520216e2d451fea1c130a8238}{TFTM070\+A1\+::\+Disable\+\_\+\+Font\+\_\+\+Alignment}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a24a96c93720adf30ca13ada83e00f7e8}{TFTM070\+A1\+::\+Font\+\_\+\+Background\+\_\+select\+\_\+\+Transparency}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a272c6af1dcafe2267712390f7fc16f10}{TFTM070\+A1\+::\+Font\+\_\+\+Background\+\_\+select\+\_\+\+Color}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a01705098c7d930bc443c8c4f2cd54e38}{TFTM070\+A1\+::\+Font\+\_\+0\+\_\+degree}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a6a4737b21449462c9a1a47b10dbed6c9}{TFTM070\+A1\+::\+Font\+\_\+90\+\_\+degree}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a4cb1c8442d9caa25de2921120cef3142}{TFTM070\+A1\+::\+Font\+\_\+\+Width\+\_\+\+X1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac5678507d69f6375e8ba0ff861bcd052}{TFTM070\+A1\+::\+Font\+\_\+\+Width\+\_\+\+X2}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a977b15d9d4679989adfe093091aec9d5}{TFTM070\+A1\+::\+Font\+\_\+\+Width\+\_\+\+X3}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a1dae0c6fb7e117de619d171b17c62555}{TFTM070\+A1\+::\+Font\+\_\+\+Width\+\_\+\+X4}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ad4adb6ac19d199869ca374d7c4af9cc6}{TFTM070\+A1\+::\+Font\+\_\+\+Height\+\_\+\+X1}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a19a0c6cba3a2526305a29f356c413518}{TFTM070\+A1\+::\+Font\+\_\+\+Height\+\_\+\+X2}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a7920dfd34453ece06040114506614c87}{TFTM070\+A1\+::\+Font\+\_\+\+Height\+\_\+\+X3}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2ee4c0e6872d8e3b07a8d1af70a79ce8}{TFTM070\+A1\+::\+Font\+\_\+\+Height\+\_\+\+X4}} (void)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a98faf252ad474efd5f28299555e7974b}{TFTM070\+A1\+::\+Set\+\_\+\+GTFont\+\_\+\+Decoder}} (unsigned char temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_abef37d85f437efc18da5b7e204950e0e}{TFTM070\+A1\+::\+Font\+\_\+\+Line\+\_\+\+Distance}} (unsigned char temp)
+\item 
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a0b35ac94cb32db26d7b9ddd7717036fd}{TFTM070\+A1\+::\+Set\+\_\+\+Font\+\_\+to\+\_\+\+Font\+\_\+\+Width}} (unsigned char temp)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespace_f_t5316_a7fe421f0362b4eb996c39ebb142bddb9}{FT5316\+::read\+Touch\+Location}} (\mbox{\hyperlink{struct_f_t5316_1_1_touch_location}{Touch\+Location}} \texorpdfstring{$\ast$}{*}p\+Loc, uint8\+\_\+t num)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespace_f_t5316_a95039ca16e2b5fedc3aebbb7aae1df56}{FT5316\+::read\+Touch\+Addr}} (uint8\+\_\+t reg\+Addr, uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+Buf, uint8\+\_\+t len)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespace_f_t5316_add235c5e13dbaecf8f18ec4d2aafd589}{FT5316\+::read\+Touch\+Register}} (uint8\+\_\+t reg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_t_f_t_m070_a1_8h_a3f3dd4c46ad2b95cce5f10e0ef0afa12}\index{TFTM070A1.h@{TFTM070A1.h}!Arduino\_SPI@{Arduino\_SPI}}
+\index{Arduino\_SPI@{Arduino\_SPI}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{Arduino\_SPI}{Arduino\_SPI}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a3f3dd4c46ad2b95cce5f10e0ef0afa12} 
+\#define Arduino\+\_\+\+SPI~1}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a68eb1f80b4df2818e5a0774106748141}\index{TFTM070A1.h@{TFTM070A1.h}!Black@{Black}}
+\index{Black@{Black}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{Black}{Black}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a68eb1f80b4df2818e5a0774106748141} 
+\#define Black~0x0000}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a6208a194d702872fdbe1d3c7d7a7c879}\index{TFTM070A1.h@{TFTM070A1.h}!Blue@{Blue}}
+\index{Blue@{Blue}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{Blue}{Blue}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a6208a194d702872fdbe1d3c7d7a7c879} 
+\#define Blue~0x001f}
+
+\Hypertarget{_t_f_t_m070_a1_8h_aed61567ff0c40a7475f0bf99af4bab88}\index{TFTM070A1.h@{TFTM070A1.h}!cClrb0@{cClrb0}}
+\index{cClrb0@{cClrb0}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cClrb0}{cClrb0}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_aed61567ff0c40a7475f0bf99af4bab88} 
+\#define c\+Clrb0~0xfe}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a3cb1dfbdf50348eb6126c07810d4036e}\index{TFTM070A1.h@{TFTM070A1.h}!cClrb1@{cClrb1}}
+\index{cClrb1@{cClrb1}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cClrb1}{cClrb1}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a3cb1dfbdf50348eb6126c07810d4036e} 
+\#define c\+Clrb1~0xfd}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a7df8b1a15b1f5a45a5b83303f7bde48a}\index{TFTM070A1.h@{TFTM070A1.h}!cClrb2@{cClrb2}}
+\index{cClrb2@{cClrb2}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cClrb2}{cClrb2}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a7df8b1a15b1f5a45a5b83303f7bde48a} 
+\#define c\+Clrb2~0xfb}
+
+\Hypertarget{_t_f_t_m070_a1_8h_ae8636b56a3b5bd759222ae0bd7972a98}\index{TFTM070A1.h@{TFTM070A1.h}!cClrb3@{cClrb3}}
+\index{cClrb3@{cClrb3}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cClrb3}{cClrb3}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_ae8636b56a3b5bd759222ae0bd7972a98} 
+\#define c\+Clrb3~0xf7}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a62e5e08b83709c45bed9099fcc40cc1a}\index{TFTM070A1.h@{TFTM070A1.h}!cClrb4@{cClrb4}}
+\index{cClrb4@{cClrb4}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cClrb4}{cClrb4}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a62e5e08b83709c45bed9099fcc40cc1a} 
+\#define c\+Clrb4~0xef}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a257fbfb61be26ca770cfd13c7edf3c71}\index{TFTM070A1.h@{TFTM070A1.h}!cClrb5@{cClrb5}}
+\index{cClrb5@{cClrb5}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cClrb5}{cClrb5}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a257fbfb61be26ca770cfd13c7edf3c71} 
+\#define c\+Clrb5~0xdf}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a0626bd6eda85e855f3806b657ab61020}\index{TFTM070A1.h@{TFTM070A1.h}!cClrb6@{cClrb6}}
+\index{cClrb6@{cClrb6}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cClrb6}{cClrb6}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a0626bd6eda85e855f3806b657ab61020} 
+\#define c\+Clrb6~0xbf}
+
+\Hypertarget{_t_f_t_m070_a1_8h_ae1d3ff36405af29d9bf161f40687eb31}\index{TFTM070A1.h@{TFTM070A1.h}!cClrb7@{cClrb7}}
+\index{cClrb7@{cClrb7}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cClrb7}{cClrb7}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_ae1d3ff36405af29d9bf161f40687eb31} 
+\#define c\+Clrb7~0x7f}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a9ddbdaa79fd7bb50a3a61389f8414898}\index{TFTM070A1.h@{TFTM070A1.h}!cSetb0@{cSetb0}}
+\index{cSetb0@{cSetb0}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cSetb0}{cSetb0}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a9ddbdaa79fd7bb50a3a61389f8414898} 
+\#define c\+Setb0~0x01}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a15cca45f9916203715a8b90cf54d9e2c}\index{TFTM070A1.h@{TFTM070A1.h}!cSetb1@{cSetb1}}
+\index{cSetb1@{cSetb1}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cSetb1}{cSetb1}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a15cca45f9916203715a8b90cf54d9e2c} 
+\#define c\+Setb1~0x02}
+
+\Hypertarget{_t_f_t_m070_a1_8h_aa73bd29a1411be844cb615e85d82c172}\index{TFTM070A1.h@{TFTM070A1.h}!cSetb2@{cSetb2}}
+\index{cSetb2@{cSetb2}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cSetb2}{cSetb2}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_aa73bd29a1411be844cb615e85d82c172} 
+\#define c\+Setb2~0x04}
+
+\Hypertarget{_t_f_t_m070_a1_8h_ad2e544577fbe5b51f7f589121cab85da}\index{TFTM070A1.h@{TFTM070A1.h}!cSetb3@{cSetb3}}
+\index{cSetb3@{cSetb3}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cSetb3}{cSetb3}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_ad2e544577fbe5b51f7f589121cab85da} 
+\#define c\+Setb3~0x08}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a36ab1ce019a49179c8ce7883257bea08}\index{TFTM070A1.h@{TFTM070A1.h}!cSetb4@{cSetb4}}
+\index{cSetb4@{cSetb4}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cSetb4}{cSetb4}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a36ab1ce019a49179c8ce7883257bea08} 
+\#define c\+Setb4~0x10}
+
+\Hypertarget{_t_f_t_m070_a1_8h_aa330df289ac713bf8ac6e805b5be4fee}\index{TFTM070A1.h@{TFTM070A1.h}!cSetb5@{cSetb5}}
+\index{cSetb5@{cSetb5}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cSetb5}{cSetb5}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_aa330df289ac713bf8ac6e805b5be4fee} 
+\#define c\+Setb5~0x20}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a3a531ad28b7529d6f8c8638d13361f6a}\index{TFTM070A1.h@{TFTM070A1.h}!cSetb6@{cSetb6}}
+\index{cSetb6@{cSetb6}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cSetb6}{cSetb6}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a3a531ad28b7529d6f8c8638d13361f6a} 
+\#define c\+Setb6~0x40}
+
+\Hypertarget{_t_f_t_m070_a1_8h_ac0ba049460582d2e87436e2c38b4a493}\index{TFTM070A1.h@{TFTM070A1.h}!cSetb7@{cSetb7}}
+\index{cSetb7@{cSetb7}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{cSetb7}{cSetb7}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_ac0ba049460582d2e87436e2c38b4a493} 
+\#define c\+Setb7~0x80}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a82a8a689788551a1b4e4552e5ddeae40}\index{TFTM070A1.h@{TFTM070A1.h}!Cyan@{Cyan}}
+\index{Cyan@{Cyan}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{Cyan}{Cyan}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a82a8a689788551a1b4e4552e5ddeae40} 
+\#define Cyan~\mbox{\hyperlink{_t_f_t_m070_a1_8h_aa429cd977709122166b6e31fa10903d1}{Green}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{_t_f_t_m070_a1_8h_a6208a194d702872fdbe1d3c7d7a7c879}{Blue}}}
+
+\Hypertarget{_t_f_t_m070_a1_8h_aa429cd977709122166b6e31fa10903d1}\index{TFTM070A1.h@{TFTM070A1.h}!Green@{Green}}
+\index{Green@{Green}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{Green}{Green}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_aa429cd977709122166b6e31fa10903d1} 
+\#define Green~0x07e0}
+
+\Hypertarget{_t_f_t_m070_a1_8h_af471e5339da1631fe46d05cb1c465628}\index{TFTM070A1.h@{TFTM070A1.h}!layer1\_start\_addr@{layer1\_start\_addr}}
+\index{layer1\_start\_addr@{layer1\_start\_addr}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{layer1\_start\_addr}{layer1\_start\_addr}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_af471e5339da1631fe46d05cb1c465628} 
+\#define layer1\+\_\+start\+\_\+addr~0}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a32c8d162c4ddca5d7a05f883afd4f503}\index{TFTM070A1.h@{TFTM070A1.h}!layer2\_start\_addr@{layer2\_start\_addr}}
+\index{layer2\_start\_addr@{layer2\_start\_addr}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{layer2\_start\_addr}{layer2\_start\_addr}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a32c8d162c4ddca5d7a05f883afd4f503} 
+\#define layer2\+\_\+start\+\_\+addr~1228800}
+
+\Hypertarget{_t_f_t_m070_a1_8h_ad310b61444b58af1db3ab99866234119}\index{TFTM070A1.h@{TFTM070A1.h}!layer3\_start\_addr@{layer3\_start\_addr}}
+\index{layer3\_start\_addr@{layer3\_start\_addr}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{layer3\_start\_addr}{layer3\_start\_addr}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_ad310b61444b58af1db3ab99866234119} 
+\#define layer3\+\_\+start\+\_\+addr~2457600}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a0f57bf3fb1221d0d9d6469643912b0e5}\index{TFTM070A1.h@{TFTM070A1.h}!layer4\_start\_addr@{layer4\_start\_addr}}
+\index{layer4\_start\_addr@{layer4\_start\_addr}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{layer4\_start\_addr}{layer4\_start\_addr}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a0f57bf3fb1221d0d9d6469643912b0e5} 
+\#define layer4\+\_\+start\+\_\+addr~3686400}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a7ccea3ba98277968ce9249cc4b388ca7}\index{TFTM070A1.h@{TFTM070A1.h}!layer5\_start\_addr@{layer5\_start\_addr}}
+\index{layer5\_start\_addr@{layer5\_start\_addr}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{layer5\_start\_addr}{layer5\_start\_addr}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a7ccea3ba98277968ce9249cc4b388ca7} 
+\#define layer5\+\_\+start\+\_\+addr~4915200}
+
+\Hypertarget{_t_f_t_m070_a1_8h_ab507a3124752c224602e17749cf4cbcc}\index{TFTM070A1.h@{TFTM070A1.h}!layer6\_start\_addr@{layer6\_start\_addr}}
+\index{layer6\_start\_addr@{layer6\_start\_addr}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{layer6\_start\_addr}{layer6\_start\_addr}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_ab507a3124752c224602e17749cf4cbcc} 
+\#define layer6\+\_\+start\+\_\+addr~6144000}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a43ce4ab51eba364e8f27653a27e76dc6}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_DE\_Active\_Polarity@{LCD\_DE\_Active\_Polarity}}
+\index{LCD\_DE\_Active\_Polarity@{LCD\_DE\_Active\_Polarity}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_DE\_Active\_Polarity}{LCD\_DE\_Active\_Polarity}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a43ce4ab51eba364e8f27653a27e76dc6} 
+\#define LCD\+\_\+\+DE\+\_\+\+Active\+\_\+\+Polarity~1}
+
+\Hypertarget{_t_f_t_m070_a1_8h_abc53554ca000cc5f186f087ac7b2b00d}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_HBPD@{LCD\_HBPD}}
+\index{LCD\_HBPD@{LCD\_HBPD}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_HBPD}{LCD\_HBPD}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_abc53554ca000cc5f186f087ac7b2b00d} 
+\#define LCD\+\_\+\+HBPD~144}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a37b109afa06403579ffea9bb80825725}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_HFPD@{LCD\_HFPD}}
+\index{LCD\_HFPD@{LCD\_HFPD}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_HFPD}{LCD\_HFPD}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a37b109afa06403579ffea9bb80825725} 
+\#define LCD\+\_\+\+HFPD~160}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a7d4edd5889021fba50ca3b207723b84a}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_HSPW@{LCD\_HSPW}}
+\index{LCD\_HSPW@{LCD\_HSPW}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_HSPW}{LCD\_HSPW}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a7d4edd5889021fba50ca3b207723b84a} 
+\#define LCD\+\_\+\+HSPW~20}
+
+\Hypertarget{_t_f_t_m070_a1_8h_aff12204f068c13b3ca6849585b4b39b3}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_HSYNC\_Active\_Polarity@{LCD\_HSYNC\_Active\_Polarity}}
+\index{LCD\_HSYNC\_Active\_Polarity@{LCD\_HSYNC\_Active\_Polarity}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_HSYNC\_Active\_Polarity}{LCD\_HSYNC\_Active\_Polarity}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_aff12204f068c13b3ca6849585b4b39b3} 
+\#define LCD\+\_\+\+HSYNC\+\_\+\+Active\+\_\+\+Polarity~0}
+
+\Hypertarget{_t_f_t_m070_a1_8h_afb9025c26eaadc7259aac2c2816a4d9e}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_PCLK\_Falling\_Rising@{LCD\_PCLK\_Falling\_Rising}}
+\index{LCD\_PCLK\_Falling\_Rising@{LCD\_PCLK\_Falling\_Rising}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_PCLK\_Falling\_Rising}{LCD\_PCLK\_Falling\_Rising}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_afb9025c26eaadc7259aac2c2816a4d9e} 
+\#define LCD\+\_\+\+PCLK\+\_\+\+Falling\+\_\+\+Rising~1}
+
+\Hypertarget{_t_f_t_m070_a1_8h_af0948f3344dd9c98b3e6d4e7d804472d}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_VBPD@{LCD\_VBPD}}
+\index{LCD\_VBPD@{LCD\_VBPD}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_VBPD}{LCD\_VBPD}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_af0948f3344dd9c98b3e6d4e7d804472d} 
+\#define LCD\+\_\+\+VBPD~20}
+
+\Hypertarget{_t_f_t_m070_a1_8h_aef403083757bfddf97a0772c00e673ee}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_VFPD@{LCD\_VFPD}}
+\index{LCD\_VFPD@{LCD\_VFPD}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_VFPD}{LCD\_VFPD}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_aef403083757bfddf97a0772c00e673ee} 
+\#define LCD\+\_\+\+VFPD~12}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a1c5cb83a607ef3bb8e553c235b67c93d}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_VSPW@{LCD\_VSPW}}
+\index{LCD\_VSPW@{LCD\_VSPW}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_VSPW}{LCD\_VSPW}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a1c5cb83a607ef3bb8e553c235b67c93d} 
+\#define LCD\+\_\+\+VSPW~3}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a4675760973ece62a1f30824175ebc363}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_VSYNC\_Active\_Polarity@{LCD\_VSYNC\_Active\_Polarity}}
+\index{LCD\_VSYNC\_Active\_Polarity@{LCD\_VSYNC\_Active\_Polarity}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_VSYNC\_Active\_Polarity}{LCD\_VSYNC\_Active\_Polarity}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a4675760973ece62a1f30824175ebc363} 
+\#define LCD\+\_\+\+VSYNC\+\_\+\+Active\+\_\+\+Polarity~0}
+
+\Hypertarget{_t_f_t_m070_a1_8h_aca997fe22ad5e98dad56aaed32118c20}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_XSIZE\_TFT@{LCD\_XSIZE\_TFT}}
+\index{LCD\_XSIZE\_TFT@{LCD\_XSIZE\_TFT}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_XSIZE\_TFT}{LCD\_XSIZE\_TFT}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_aca997fe22ad5e98dad56aaed32118c20} 
+\#define LCD\+\_\+\+XSIZE\+\_\+\+TFT~1024}
+
+\Hypertarget{_t_f_t_m070_a1_8h_abb4ac17205068db1ba4713e440634256}\index{TFTM070A1.h@{TFTM070A1.h}!LCD\_YSIZE\_TFT@{LCD\_YSIZE\_TFT}}
+\index{LCD\_YSIZE\_TFT@{LCD\_YSIZE\_TFT}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_YSIZE\_TFT}{LCD\_YSIZE\_TFT}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_abb4ac17205068db1ba4713e440634256} 
+\#define LCD\+\_\+\+YSIZE\+\_\+\+TFT~600}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a5168ce33eb581e85fbfa454e89012bfb}\index{TFTM070A1.h@{TFTM070A1.h}!Purple@{Purple}}
+\index{Purple@{Purple}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{Purple}{Purple}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a5168ce33eb581e85fbfa454e89012bfb} 
+\#define Purple~\mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}{Red}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{_t_f_t_m070_a1_8h_a6208a194d702872fdbe1d3c7d7a7c879}{Blue}}}
+
+\Hypertarget{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}\index{TFTM070A1.h@{TFTM070A1.h}!Red@{Red}}
+\index{Red@{Red}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{Red}{Red}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba} 
+\#define Red~0xf800}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a298a3b7c7f2ea427a7cd21cdc9a4f054}\index{TFTM070A1.h@{TFTM070A1.h}!White@{White}}
+\index{White@{White}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{White}{White}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a298a3b7c7f2ea427a7cd21cdc9a4f054} 
+\#define White~0xffff}
+
+\Hypertarget{_t_f_t_m070_a1_8h_a239cc4651865ee2ac90ac5c1e6d2d8b5}\index{TFTM070A1.h@{TFTM070A1.h}!Yellow@{Yellow}}
+\index{Yellow@{Yellow}!TFTM070A1.h@{TFTM070A1.h}}
+\doxysubsubsection{\texorpdfstring{Yellow}{Yellow}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8h_a239cc4651865ee2ac90ac5c1e6d2d8b5} 
+\#define Yellow~\mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}{Red}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{_t_f_t_m070_a1_8h_aa429cd977709122166b6e31fa10903d1}{Green}}}
+

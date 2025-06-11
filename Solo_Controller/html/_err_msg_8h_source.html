@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solo Controller: ErrMsg.h Source File</title>
+<title>Solo Controller: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/ErrMsg.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,6 +18,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -27,9 +32,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Solo Controller
+   <div id="projectname">Solo Controller<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Documentation for the Solo Controller</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -46,17 +64,6 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search',true);
-  $(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -99,7 +106,11 @@ $(function(){initNavTree('_err_msg_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">ErrMsg.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_err_msg_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<a href="_err_msg_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*******************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file ErrMsg.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief Defines a mechism for displaying error and warning messages onto the TFT display.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef ERRMSG_HEADER</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define ERRMSG_HEADER</span></div>
@@ -109,11 +120,30 @@ $(function(){initNavTree('_err_msg_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_err_msg_8h.html#a7c649c9dfa8267f55c87f7d5ff89bdb1">   17</a></span><span class="preprocessor">#define _MAXCHARS 85</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/***                      Class Definition: ErrMsg                          ***/</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * @brief Provides a mechnism for displaying error and warning messages on the TFT display.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * This is a Singleton class. Use ErrMsg::getInstance() to obtain a reference</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * to the ErrMsg instance. Warning messages give users the abiliy to acknowledge</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * the message and continue. Error messages halt the program altogether. The</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * following is an example of how to use the ErrMsg class:</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * @code {.cpp}</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> *   errMsg.warning()</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> *     &lt;&lt; &quot;This is a test warning message.&quot; &lt;&lt; ErrMsg::endl</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> *     &lt;&lt; &quot;Value too high: &quot; &lt;&lt; value &lt;&lt; ErrMsg::endl;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> *   errMsg.send();</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * @endcode</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * @note It is recommended that their only be one instance of ErrMsg for a</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> * given application.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_err_msg.html">   43</a></span><span class="keyword">class </span>ErrMsg</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
@@ -225,12 +255,12 @@ $(function(){initNavTree('_err_msg_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keyword">extern</span> <a class="code hl_class" href="class_err_msg.html">ErrMsg</a> &amp;<a class="code hl_variable" href="_err_msg_8cpp.html#aba17f9ec5e9b5441ed60d8bb1dfe3889">errMsg</a>;</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif </span><span class="comment">// ERRMSG_HEADER</span></div>
-<div class="ttc" id="a_canvas_8h_html"><div class="ttname"><a href="_canvas_8h.html">Canvas.h</a></div><div class="ttdoc">Defines higher level TFT graphics functionality.</div></div>
+<div class="ttc" id="a_canvas_8h_html"><div class="ttname"><a href="_canvas_8h.html">Canvas.h</a></div></div>
 <div class="ttc" id="a_err_msg_8cpp_html_aba17f9ec5e9b5441ed60d8bb1dfe3889"><div class="ttname"><a href="_err_msg_8cpp.html#aba17f9ec5e9b5441ed60d8bb1dfe3889">errMsg</a></div><div class="ttdeci">ErrMsg &amp; errMsg</div><div class="ttdoc">Global instance of ErrMsg.</div><div class="ttdef"><b>Definition</b> ErrMsg.cpp:185</div></div>
 <div class="ttc" id="a_err_msg_8h_html_a7c649c9dfa8267f55c87f7d5ff89bdb1"><div class="ttname"><a href="_err_msg_8h.html#a7c649c9dfa8267f55c87f7d5ff89bdb1">_MAXCHARS</a></div><div class="ttdeci">#define _MAXCHARS</div><div class="ttdoc">Maximum number of characters that can be displayed in each line.</div><div class="ttdef"><b>Definition</b> ErrMsg.h:17</div></div>
-<div class="ttc" id="a_menu_8h_html"><div class="ttname"><a href="_menu_8h.html">Menu.h</a></div><div class="ttdoc">Defines the menu classes used by the SoloController app.</div></div>
-<div class="ttc" id="aclass_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdoc">Provides higher level TFT graphic functionality used by the menu system.</div><div class="ttdef"><b>Definition</b> Canvas.h:33</div></div>
-<div class="ttc" id="aclass_err_msg_html"><div class="ttname"><a href="class_err_msg.html">ErrMsg</a></div><div class="ttdoc">Provides a mechnism for displaying error and warning messages on the TFT display.</div><div class="ttdef"><b>Definition</b> ErrMsg.h:44</div></div>
+<div class="ttc" id="a_menu_8h_html"><div class="ttname"><a href="_menu_8h.html">Menu.h</a></div></div>
+<div class="ttc" id="aclass_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition</b> Canvas.h:33</div></div>
+<div class="ttc" id="aclass_err_msg_html"><div class="ttname"><a href="class_err_msg.html">ErrMsg</a></div><div class="ttdef"><b>Definition</b> ErrMsg.h:44</div></div>
 <div class="ttc" id="aclass_err_msg_html_a2aedd0a05d94766914cfba46ee909879"><div class="ttname"><a href="class_err_msg.html#a2aedd0a05d94766914cfba46ee909879">ErrMsg::warning</a></div><div class="ttdeci">ErrMsg &amp; warning(void)</div><div class="ttdoc">Sets up the display to shown a warning message.</div><div class="ttdef"><b>Definition</b> ErrMsg.cpp:40</div></div>
 <div class="ttc" id="aclass_err_msg_html_a478acd57879924ba9357c9d1daec1220"><div class="ttname"><a href="class_err_msg.html#a478acd57879924ba9357c9d1daec1220">ErrMsg::send</a></div><div class="ttdeci">void send(void)</div><div class="ttdoc">Displays the error message on the screen.</div><div class="ttdef"><b>Definition</b> ErrMsg.cpp:66</div></div>
 <div class="ttc" id="aclass_err_msg_html_a6e3c7d68a9335359558c3af720cb28d8"><div class="ttname"><a href="class_err_msg.html#a6e3c7d68a9335359558c3af720cb28d8">ErrMsg::getInstance</a></div><div class="ttdeci">static ErrMsg &amp; getInstance(void)</div><div class="ttdoc">Returns reference to the ErrMsg object.</div><div class="ttdef"><b>Definition</b> ErrMsg.h:90</div></div>
@@ -238,7 +268,7 @@ $(function(){initNavTree('_err_msg_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="aclass_err_msg_html_aada2535b49111bce5c4302cd18da0edf"><div class="ttname"><a href="class_err_msg.html#aada2535b49111bce5c4302cd18da0edf">ErrMsg::error</a></div><div class="ttdeci">ErrMsg &amp; error(void)</div><div class="ttdoc">Sets up the display to show an error message.</div><div class="ttdef"><b>Definition</b> ErrMsg.cpp:17</div></div>
 <div class="ttc" id="aclass_err_msg_html_acfb3e1fbe51558ce82d5fa5b34f021fd"><div class="ttname"><a href="class_err_msg.html#acfb3e1fbe51558ce82d5fa5b34f021fd">ErrMsg::checkForUserInput</a></div><div class="ttdeci">void checkForUserInput(void)</div><div class="ttdoc">Method used by TaskManager. Asks ErrMsg check to see if the screen has been touched.</div><div class="ttdef"><b>Definition</b> ErrMsg.cpp:98</div></div>
 <div class="ttc" id="aclass_err_msg_html_ad5010302edc4ff8ef3b6efa0e1283d34"><div class="ttname"><a href="class_err_msg.html#ad5010302edc4ff8ef3b6efa0e1283d34">ErrMsg::operator&lt;&lt;</a></div><div class="ttdeci">ErrMsg &amp; operator&lt;&lt;(const T value)</div><div class="ttdoc">Adds information to the error message.</div><div class="ttdef"><b>Definition</b> ErrMsg.h:136</div></div>
-<div class="ttc" id="aclass_solo_menu_html"><div class="ttname"><a href="class_solo_menu.html">SoloMenu</a></div><div class="ttdoc">Base class used by all menus.</div><div class="ttdef"><b>Definition</b> Menu.h:33</div></div>
+<div class="ttc" id="aclass_solo_menu_html"><div class="ttname"><a href="class_solo_menu.html">SoloMenu</a></div><div class="ttdef"><b>Definition</b> Menu.h:33</div></div>
 <div class="ttc" id="astruct_err_msg_1_1_endl_token_html"><div class="ttname"><a href="struct_err_msg_1_1_endl_token.html">ErrMsg::EndlToken</a></div><div class="ttdoc">Token that indicates the end of a line in the error message.</div><div class="ttdef"><b>Definition</b> ErrMsg.h:81</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

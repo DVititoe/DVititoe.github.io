@@ -1,0 +1,226 @@
+\doxysection{Canvas.\+h}
+\hypertarget{_canvas_8h_source}{}\label{_canvas_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Canvas.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Canvas.h}}
+\mbox{\hyperlink{_canvas_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Canvas.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @brief\ Defines\ higher\ level\ TFT\ graphics\ functionality}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @details}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ The\ LT7683\ chip\ can\ create\ multiple\ canvass\ for\ holding\ graphics.\ Callers}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ can\ place\ graphics\ onto\ the\ canvass\ and\ they\ can\ use\ the\ graphics\ engine}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ of\ the\ LT7683\ chip\ to\ draw\ geometric\ shape.\ When\ ready,\ the\ caller\ can}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ then\ signify\ which\ canvas\ is\ to\ be\ diplayed\ within\ the\ TFT\ window.\ The}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Canvas\ class\ provides\ a\ higher\ level\ interface\ to\ the\ LT7683\ chip,}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ provides\ methods\ for\ creating,\ managing,\ and\ using\ canvass.}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ Canvas\_DEFINED}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ Canvas\_DEFINED}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{Common.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00019\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00020\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ Canvas\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00021\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00022\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ @brief\ Provides\ higher\ level\ TFT\ graphic\ functionality\ used\ by\ the\ menu\ system}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ @details}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ The\ LT7683\ chip\ can\ create\ multiple\ canvass\ for\ holding\ graphics.\ Callers}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ can\ place\ graphics\ onto\ the\ canvass\ and\ they\ can\ use\ the\ graphics\ engine}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ of\ the\ LT7683\ chip\ to\ draw\ geometric\ shapes.\ When\ ready,\ the\ caller\ can}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ then\ signify\ which\ canvas\ is\ to\ be\ diplayed\ within\ the\ TFT\ window.\ The}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ Canvas\ class\ provides\ a\ higher\ level\ interface\ to\ the\ LT7683\ chip,}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ providing\ methods\ for\ creating,\ managing,\ and\ using\ these\ canvass.}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_width;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Width\ of\ the\ canvas}}
+\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_height;\ \ \ \ \ \ \ \textcolor{comment}{//\ Height\ of\ the\ canvas}}
+\DoxyCodeLine{00037\ \ \ \textcolor{keyword}{const}\ uint32\_t\ \_DRAM\_address;\ \textcolor{comment}{//\ Starting\ address\ for\ the\ canvas\ in\ Display\ RAM}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keyword}{static}\ uint32\_t\ \_nextDRAM\_Address;\ \textcolor{comment}{//\ Keeps\ track\ of\ the\ next\ available\ location\ in\ DRAM}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00047\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_ac2b95e9a6a3b6a9b468c06343715ace5}{\_validate}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \ \ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}(\textcolor{keywordtype}{void})\ :\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}(false)\ \{\};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}(\textcolor{keywordtype}{bool}\ temporary);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \ \ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}(uint16\_t\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}},\ uint16\_t\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}},\ \textcolor{keywordtype}{bool}\ temporary\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \ \ \mbox{\hyperlink{class_canvas_a11136afee83f7bfa3d8f16d51abe9a70}{\string~Canvas}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00093\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_ae60defbed8de286ab7891d56ef9467dc}{loadImage}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00094\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ validate\ that\ the\ width\ of\ the\ image\ is\ a\ multiple\ of\ 4.}}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{class_canvas_ac2b95e9a6a3b6a9b468c06343715ace5}{\_validate}}();}
+\DoxyCodeLine{00097\ \ \ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00104\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a2032800681a54cffc50320c96029fa8c}{setActive}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00111\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a2dec4d913273dbb043f74b75b42e88a7}{setMainWindow}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00124\ \ \ \textcolor{keyword}{inline}\ uint16\_t\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00125\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordflow}{return}\ \_width;}
+\DoxyCodeLine{00127\ \ \ \};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00135\ \ \ \textcolor{keyword}{inline}\ uint16\_t\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00136\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordflow}{return}\ \_height;}
+\DoxyCodeLine{00138\ \ \ \};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00146\ \ \ \textcolor{keyword}{inline}\ uint32\_t\ \mbox{\hyperlink{class_canvas_add0700f4da6206e04fdf90eecd1b8423}{address}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00147\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordflow}{return}\ \_DRAM\_address;}
+\DoxyCodeLine{00149\ \ \ \}}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00164\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a10f6299f7633b793fe345840b3600678}{drawLine}}(uint16\_t\ x0,\ uint16\_t\ y0,\ uint16\_t\ x1,\ uint16\_t\ y1,\ uint16\_t\ color);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00171\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a1c43364b79f580b9b0909c121457cad1}{clear}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00172\ \ \ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \mbox{\hyperlink{class_canvas_a1c43364b79f580b9b0909c121457cad1}{clear}}(\mbox{\hyperlink{_t_f_t_m070_a1_8h_a68eb1f80b4df2818e5a0774106748141}{Black}});}
+\DoxyCodeLine{00174\ \ \ \}}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00180\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a1278c73446069dd02831af31ef1bccff}{clear}}(uint16\_t\ color)}
+\DoxyCodeLine{00181\ \ \ \{}
+\DoxyCodeLine{00182\ \ \ \ \ \mbox{\hyperlink{class_canvas_a2032800681a54cffc50320c96029fa8c}{setActive}}();}
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{class_canvas_ac53c6ad3166d739861891682a131fc4d}{solidFill}}(0,\ 0,\ \mbox{\hyperlink{_t_f_t_m070_a1_8h_aca997fe22ad5e98dad56aaed32118c20}{LCD\_XSIZE\_TFT}},\ \mbox{\hyperlink{_t_f_t_m070_a1_8h_abb4ac17205068db1ba4713e440634256}{LCD\_YSIZE\_TFT}},\ color);}
+\DoxyCodeLine{00184\ \ \ \}}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00194\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_ac53c6ad3166d739861891682a131fc4d}{solidFill}}(uint16\_t\ x0,\ uint16\_t\ y0,\ uint16\_t\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}},\ uint16\_t\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}},\ uint16\_t\ color)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00205\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_aebdea765412fef5c829765f1ac93fb74}{text}}(uint16\_t\ x0,\ uint16\_t\ y0,\ uint16\_t\ fColor,\ uint16\_t\ bColor,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{class_canvas_aebdea765412fef5c829765f1ac93fb74}{text}},\ \textcolor{keywordtype}{bool}\ small\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00215\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_aab06a8c9dd5b8b146077268cf729f2cd}{drawSquare}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ x0,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ y0,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ x1,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ y1,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ color)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00226\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_ab30fd9e99385a46d9d22b39407f68265}{BTE\_CopyFrom}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas}{Canvas}}\ \&source)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00234\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_ab30fd9e99385a46d9d22b39407f68265}{BTE\_CopyFrom}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas}{Canvas}}\ \&source,\ uint16\_t\ DT\_x0,\ uint16\_t\ DT\_y0)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00251\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a16cdf83603b2b6cbcba0bc34cb78d808}{BTE\_ROP}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas}{Canvas}}\ \&S0,\ uint16\_t\ S0\_x0,\ uint16\_t\ S0\_y0,}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas}{Canvas}}\ \&S1,\ uint16\_t\ S1\_x0,\ uint16\_t\ S1\_y0,}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint16\_t\ DT\_x0,\ uint16\_t\ DT\_y0,\ uint16\_t\ DT\_width,\ uint16\_t\ DT\_height,}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ ROP,\ \textcolor{keywordtype}{bool}\ S1\_OpacityOn\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00266\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a8ca049655ab1b5f0626421db9833e405}{BTE\_CopyFrom}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}\ \&source,\ uint16\_t\ Src\_x0,\ uint16\_t\ Src\_y0,\ uint16\_t\ DT\_x0,\ uint16\_t\ DT\_y0,\ uint16\_t\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}},\ uint16\_t\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00267\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00268\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ ROP\ =\ 0x0C;\ \textcolor{comment}{//\ DT\ =\ S0\ (source)}}
+\DoxyCodeLine{00269\ \ \ \ \ \mbox{\hyperlink{class_canvas_a16cdf83603b2b6cbcba0bc34cb78d808}{BTE\_ROP}}(source,\ Src\_x0,\ Src\_y0,\ source,\ Src\_x0,\ Src\_y0,\ DT\_x0,\ DT\_y0,\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}},\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}},\ ROP);}
+\DoxyCodeLine{00270\ \ \ \};}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00282\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a75344e1c4f131b8731f539dbf1446dde}{BTE\_AddImageFrom}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}\ \&source,\ uint16\_t\ Src\_x0,\ uint16\_t\ Src\_y0,}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint16\_t\ DT\_x0,\ uint16\_t\ DT\_y0,\ uint16\_t\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}},\ uint16\_t\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00284\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ ROP\ =\ 0x0E;\ \textcolor{comment}{//\ DT\ =\ S0\ +\ S1\ (source)}}
+\DoxyCodeLine{00286\ \ \ \ \ \textcolor{comment}{//\ Assumes\ that\ this\ object\ is\ both\ S0\ and\ DT}}
+\DoxyCodeLine{00287\ \ \ \ \ \mbox{\hyperlink{class_canvas_a16cdf83603b2b6cbcba0bc34cb78d808}{BTE\_ROP}}(*\textcolor{keyword}{this},\ DT\_x0,\ DT\_y0,\ source,\ Src\_x0,\ Src\_y0,\ DT\_x0,\ DT\_y0,\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}},\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}},\ ROP,\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00288\ \ \ \};}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00300\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a753719f9ab04411f55d82e02a67980e7}{BTE\_AddTransparantImageFrom}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}\ \&source,\ uint16\_t\ Src\_x0,\ uint16\_t\ Src\_y0,\ uint16\_t\ DT\_x0,\ uint16\_t\ DT\_y0,\ uint16\_t\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}},\ uint16\_t\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00301\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00302\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ ROP\ =\ 0x0E;\ \textcolor{comment}{//\ DT\ =\ S0\ +\ S1\ (source)}}
+\DoxyCodeLine{00303\ \ \ \ \ \textcolor{comment}{//\ Assumes\ that\ this\ object\ is\ both\ S0\ and\ DT}}
+\DoxyCodeLine{00304\ \ \ \ \ \mbox{\hyperlink{class_canvas_a16cdf83603b2b6cbcba0bc34cb78d808}{BTE\_ROP}}(*\textcolor{keyword}{this},\ DT\_x0,\ DT\_y0,\ source,\ Src\_x0,\ Src\_y0,\ DT\_x0,\ DT\_y0,\ \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}},\ \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}},\ ROP,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00305\ \ \ \};}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00308\ }
+\DoxyCodeLine{00314\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_aebf18fd93df0ab969325943a765366f3}{BL\_ON}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00315\ \ \ \{}
+\DoxyCodeLine{00316\ \ \ \ \ digitalWrite(\mbox{\hyperlink{_common_8h_a541b5fc642dbcc81f373d4b866c88f80}{TFT\_BL}},\ HIGH);}
+\DoxyCodeLine{00317\ \ \ \};}
+\DoxyCodeLine{00318\ }
+\DoxyCodeLine{00324\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a2edb82c8c8a1a129182c68a8360616b3}{BL\_OFF}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00325\ \ \ \{}
+\DoxyCodeLine{00326\ \ \ \ \ digitalWrite(\mbox{\hyperlink{_common_8h_a541b5fc642dbcc81f373d4b866c88f80}{TFT\_BL}},\ LOW);}
+\DoxyCodeLine{00327\ \ \ \};}
+\DoxyCodeLine{00328\ }
+\DoxyCodeLine{00334\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ uint32\_t\ \mbox{\hyperlink{class_canvas_a6db455aef96b2f06acddc9ef19a18572}{nextAddress}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00335\ \ \ \{}
+\DoxyCodeLine{00336\ \ \ \ \ \textcolor{keywordflow}{return}\ \_nextDRAM\_Address;}
+\DoxyCodeLine{00337\ \ \ \}}
+\DoxyCodeLine{00338\ }
+\DoxyCodeLine{00339\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00345\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a675e1fc94421dae7abb76ff09f1ef8f3}{BTE\_SetAsS0}}(uint16\_t\ x0,\ uint16\_t\ y0)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00352\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_ab25386401851e7135748e0302533b6f2}{BTE\_SetAsS1}}(uint16\_t\ x0,\ uint16\_t\ y0)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00353\ }
+\DoxyCodeLine{00359\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_canvas_a636cd8199477d4d8875d26092ff25d3e}{BTE\_SetAsDT}}(uint16\_t\ x0,\ uint16\_t\ y0)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00360\ \};}
+\DoxyCodeLine{00361\ }
+\DoxyCodeLine{00362\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00363\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00364\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ ROM\_Canvas\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00365\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00366\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00367\ \textcolor{comment}{\ *\ @brief\ A\ variation\ of\ the\ Canvas\ class\ that\ can\ load\ imagery\ from\ Flash\ ROM}}
+\DoxyCodeLine{00368\ \textcolor{comment}{\ *\ @details}}
+\DoxyCodeLine{00369\ \textcolor{comment}{\ *\ \ \ Note\ that\ this\ class\ assumes\ that\ the\ imagery\ in\ Flash\ ROM\ is\ in}}
+\DoxyCodeLine{00370\ \textcolor{comment}{\ *\ \ \ 16\ bpp\ color\ format.}}
+\DoxyCodeLine{00371\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00372\ \textcolor{keyword}{class\ }ROM\_Canvas\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}}
+\DoxyCodeLine{00373\ \{}
+\DoxyCodeLine{00374\ }
+\DoxyCodeLine{00375\ \ \ uint32\_t\ \_ROM\_Address;\ \textcolor{comment}{//\ Starting\ address\ of\ the\ image\ in\ Flash\ ROM}}
+\DoxyCodeLine{00376\ }
+\DoxyCodeLine{00377\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00379\ \ \ ROM\_Canvas(\textcolor{keywordtype}{void})\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00380\ }
+\DoxyCodeLine{00385\ \ \ ROM\_Canvas(\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ image);}
+\DoxyCodeLine{00386\ }
+\DoxyCodeLine{00392\ \ \ \mbox{\hyperlink{class_r_o_m___canvas_a12f9d19af9b2175a768475b348197e26}{\string~ROM\_Canvas}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00393\ }
+\DoxyCodeLine{00399\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_r_o_m___canvas_a1f1ae96e9079bbf9764be06d27b02468}{loadImage}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00400\ \};}
+\DoxyCodeLine{00401\ }
+\DoxyCodeLine{00402\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00403\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00404\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ DRAM\_Canvas\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00405\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00406\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00407\ \textcolor{comment}{\ *\ @brief\ Variation\ of\ the\ Canvas\ class\ that\ can\ copy\ imagery\ from}}
+\DoxyCodeLine{00408\ \textcolor{comment}{\ *\ another\ canvas}}
+\DoxyCodeLine{00409\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00410\ \textcolor{keyword}{class\ }DRAM\_Canvas\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}}
+\DoxyCodeLine{00411\ \{}
+\DoxyCodeLine{00412\ }
+\DoxyCodeLine{00413\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}\ \&\_srcCanvas;\ \ \ \ \textcolor{comment}{//\ Canvas\ containing\ the\ source\ imagery}}
+\DoxyCodeLine{00414\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \_imgBlock;\ \textcolor{comment}{//\ The\ image\ block\ within\ \_srcCanvas\ that\ is}}
+\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ to\ be\ copied\ over}}
+\DoxyCodeLine{00416\ }
+\DoxyCodeLine{00417\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00419\ \ \ DRAM\_Canvas(\textcolor{keywordtype}{void})\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00420\ }
+\DoxyCodeLine{00425\ \ \ DRAM\_Canvas(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}\ \&srcCanvas);}
+\DoxyCodeLine{00426\ }
+\DoxyCodeLine{00432\ \ \ DRAM\_Canvas(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}}\ \&srcCanvas,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ imgBlock);}
+\DoxyCodeLine{00433\ }
+\DoxyCodeLine{00439\ \ \ \mbox{\hyperlink{class_d_r_a_m___canvas_a8a44d287d9bf8ea0c8268be5a7fc4436}{\string~DRAM\_Canvas}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00440\ }
+\DoxyCodeLine{00446\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_d_r_a_m___canvas_a0644b01f2cf598d1c6c527e543d9a0cf}{loadImage}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00447\ \};}
+\DoxyCodeLine{00448\ }
+\DoxyCodeLine{00449\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00450\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00451\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Support\ Functions\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00452\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00453\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00454\ }
+\DoxyCodeLine{00458\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00459\ \textcolor{keyword}{inline}\ T\ nearest4(T\ num)}
+\DoxyCodeLine{00460\ \{}
+\DoxyCodeLine{00461\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}T\textcolor{keyword}{>}(ceil(num\ /\ 4.0)\ *\ 4);}
+\DoxyCodeLine{00462\ \};}
+\DoxyCodeLine{00463\ }
+\DoxyCodeLine{00464\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solo Controller: Canvas.h Source File</title>
+<title>Solo Controller: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Canvas.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,6 +18,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -27,9 +32,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Solo Controller
+   <div id="projectname">Solo Controller<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Documentation for the Solo Controller</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -46,17 +64,6 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search',true);
-  $(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -99,18 +106,37 @@ $(function(){initNavTree('_canvas_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Canvas.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_canvas_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<a href="_canvas_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*******************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file Canvas.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @brief Defines higher level TFT graphics functionality</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * The LT7683 chip can create multiple canvass for holding graphics. Callers</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * can place graphics onto the canvass and they can use the graphics engine</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * of the LT7683 chip to draw geometric shape. When ready, the caller can</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * then signify which canvas is to be diplayed within the TFT window. The</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * Canvas class provides a higher level interface to the LT7683 chip,</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * provides methods for creating, managing, and using canvass.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef Canvas_DEFINED</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define Canvas_DEFINED</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_common_8h.html">Common.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/***                     Class Definition: Canvas                           ***/</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * @brief Provides higher level TFT graphic functionality used by the menu system</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * The LT7683 chip can create multiple canvass for holding graphics. Callers</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * can place graphics onto the canvass and they can use the graphics engine</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * of the LT7683 chip to draw geometric shapes. When ready, the caller can</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * then signify which canvas is to be diplayed within the TFT window. The</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * Canvas class provides a higher level interface to the LT7683 chip,</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * providing methods for creating, managing, and using these canvass.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_canvas.html">   32</a></span><span class="keyword">class </span><a class="code hl_function" href="class_canvas.html#a3b3a7c17161f72d4f2332021d6e866e9">Canvas</a></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
@@ -261,11 +287,16 @@ $(function(){initNavTree('_canvas_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>};</div>
 </div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span></div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span></div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span></div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span></div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="comment">/***                     Class Definition: ROM_Canvas                       ***/</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment"> * @brief A variation of the Canvas class that can load imagery from Flash ROM</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment"> *   Note that this class assumes that the imagery in Flash ROM is in</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment"> *   16 bpp color format.</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00372" data-start="{" data-end="};">
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="class_r_o_m___canvas.html">  372</a></span><span class="keyword">class </span>ROM_Canvas : <span class="keyword">public</span> <a class="code hl_function" href="class_canvas.html#a3b3a7c17161f72d4f2332021d6e866e9">Canvas</a></div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>{</div>
@@ -283,11 +314,14 @@ $(function(){initNavTree('_canvas_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>};</div>
 </div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span></div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span></div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span></div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span></div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="comment">/***                 Class Definition: DRAM_Canvas                          ***/</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="comment"> * @brief Variation of the Canvas class that can copy imagery from</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="comment"> * another canvas</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00410" data-start="{" data-end="};">
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno"><a class="line" href="class_d_r_a_m___canvas.html">  410</a></span><span class="keyword">class </span>DRAM_Canvas : <span class="keyword">public</span> <a class="code hl_function" href="class_canvas.html#a3b3a7c17161f72d4f2332021d6e866e9">Canvas</a></div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>{</div>
@@ -309,11 +343,11 @@ $(function(){initNavTree('_canvas_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>};</div>
 </div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span></div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span></div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span></div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span></div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span></div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span><span class="comment">/***                           Support Functions                            ***/</span></div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span><span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span></div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span><span class="keyword">inline</span> T nearest4(T num)</div>
@@ -322,12 +356,12 @@ $(function(){initNavTree('_canvas_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>};</div>
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_common_8h_html"><div class="ttname"><a href="_common_8h.html">Common.h</a></div><div class="ttdoc">Common definitions used throughout the SoloContoller app.</div></div>
+<div class="ttc" id="a_common_8h_html"><div class="ttname"><a href="_common_8h.html">Common.h</a></div></div>
 <div class="ttc" id="a_common_8h_html_a541b5fc642dbcc81f373d4b866c88f80"><div class="ttname"><a href="_common_8h.html#a541b5fc642dbcc81f373d4b866c88f80">TFT_BL</a></div><div class="ttdeci">#define TFT_BL</div><div class="ttdoc">Backlight pin used by the TFT.</div><div class="ttdef"><b>Definition</b> Common.h:19</div></div>
 <div class="ttc" id="a_t_f_t_m070_a1_8h_html_a68eb1f80b4df2818e5a0774106748141"><div class="ttname"><a href="_t_f_t_m070_a1_8h.html#a68eb1f80b4df2818e5a0774106748141">Black</a></div><div class="ttdeci">#define Black</div><div class="ttdef"><b>Definition</b> TFTM070A1.h:56</div></div>
 <div class="ttc" id="a_t_f_t_m070_a1_8h_html_abb4ac17205068db1ba4713e440634256"><div class="ttname"><a href="_t_f_t_m070_a1_8h.html#abb4ac17205068db1ba4713e440634256">LCD_YSIZE_TFT</a></div><div class="ttdeci">#define LCD_YSIZE_TFT</div><div class="ttdef"><b>Definition</b> TFTM070A1.h:25</div></div>
 <div class="ttc" id="a_t_f_t_m070_a1_8h_html_aca997fe22ad5e98dad56aaed32118c20"><div class="ttname"><a href="_t_f_t_m070_a1_8h.html#aca997fe22ad5e98dad56aaed32118c20">LCD_XSIZE_TFT</a></div><div class="ttdeci">#define LCD_XSIZE_TFT</div><div class="ttdef"><b>Definition</b> TFTM070A1.h:24</div></div>
-<div class="ttc" id="aclass_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdoc">Provides higher level TFT graphic functionality used by the menu system.</div><div class="ttdef"><b>Definition</b> Canvas.h:33</div></div>
+<div class="ttc" id="aclass_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition</b> Canvas.h:33</div></div>
 <div class="ttc" id="aclass_canvas_html_a10f6299f7633b793fe345840b3600678"><div class="ttname"><a href="class_canvas.html#a10f6299f7633b793fe345840b3600678">Canvas::drawLine</a></div><div class="ttdeci">static void drawLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color)</div><div class="ttdoc">Draws a line onto the display.</div><div class="ttdef"><b>Definition</b> Canvas.cpp:132</div></div>
 <div class="ttc" id="aclass_canvas_html_a11136afee83f7bfa3d8f16d51abe9a70"><div class="ttname"><a href="class_canvas.html#a11136afee83f7bfa3d8f16d51abe9a70">Canvas::~Canvas</a></div><div class="ttdeci">~Canvas(void)=default</div><div class="ttdoc">Default destructor.</div></div>
 <div class="ttc" id="aclass_canvas_html_a1278c73446069dd02831af31ef1bccff"><div class="ttname"><a href="class_canvas.html#a1278c73446069dd02831af31ef1bccff">Canvas::clear</a></div><div class="ttdeci">void clear(uint16_t color)</div><div class="ttdoc">Erases the canvas, setting all pixels to the specified color.</div><div class="ttdef"><b>Definition</b> Canvas.h:180</div></div>

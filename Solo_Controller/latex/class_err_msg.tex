@@ -1,0 +1,151 @@
+\doxysection{Err\+Msg Class Reference}
+\hypertarget{class_err_msg}{}\label{class_err_msg}\index{ErrMsg@{ErrMsg}}
+
+
+{\ttfamily \#include $<$Err\+Msg.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Endl\+Token}}
+\begin{DoxyCompactList}\small\item\em Token that indicates the end of a line in the error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{class_err_msg_aada2535b49111bce5c4302cd18da0edf}{error}} (void)
+\begin{DoxyCompactList}\small\item\em Sets up the display to show an error message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{class_err_msg_a2aedd0a05d94766914cfba46ee909879}{warning}} (void)
+\begin{DoxyCompactList}\small\item\em Sets up the display to shown a warning message. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T$>$ }\\\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{class_err_msg_ad5010302edc4ff8ef3b6efa0e1283d34}{operator$<$$<$}} (const T value)
+\begin{DoxyCompactList}\small\item\em Adds information to the error message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_err_msg_a478acd57879924ba9357c9d1daec1220}{send}} (void)
+\begin{DoxyCompactList}\small\item\em Displays the error message on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_err_msg_acfb3e1fbe51558ce82d5fa5b34f021fd}{check\+For\+User\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em Method used by Task\+Manager. Asks \doxylink{class_err_msg}{Err\+Msg} check to see if the screen has been touched. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{class_err_msg_a6e3c7d68a9335359558c3af720cb28d8}{get\+Instance}} (void)
+\begin{DoxyCompactList}\small\item\em Returns reference to the \doxylink{class_err_msg}{Err\+Msg} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Endl\+Token}} \mbox{\hyperlink{class_err_msg_a78afc654669bd47ac90612fa9838b59b}{endl}}
+\begin{DoxyCompactList}\small\item\em End of line token used by the operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_err_msg_acfb3e1fbe51558ce82d5fa5b34f021fd}\index{ErrMsg@{ErrMsg}!checkForUserInput@{checkForUserInput}}
+\index{checkForUserInput@{checkForUserInput}!ErrMsg@{ErrMsg}}
+\doxysubsubsection{\texorpdfstring{checkForUserInput()}{checkForUserInput()}}
+{\footnotesize\ttfamily \label{class_err_msg_acfb3e1fbe51558ce82d5fa5b34f021fd} 
+void Err\+Msg\+::check\+For\+User\+Input (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Method used by Task\+Manager. Asks \doxylink{class_err_msg}{Err\+Msg} check to see if the screen has been touched. 
+
+\begin{DoxyParagraph}{Parameters}
+None.
+\end{DoxyParagraph}
+This method is only used when a warning message is displayed. Task\+Manager will call this method periodically to check if the user has acknowledged the warning message. If the user has acknowledged the warning message, the warning message is removed from the screen and control is returned to the original menu. \Hypertarget{class_err_msg_aada2535b49111bce5c4302cd18da0edf}\index{ErrMsg@{ErrMsg}!error@{error}}
+\index{error@{error}!ErrMsg@{ErrMsg}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_err_msg_aada2535b49111bce5c4302cd18da0edf} 
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& Err\+Msg\+::error (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Sets up the display to show an error message. 
+
+Error messages halt the program and display the error message on the screen. \begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Reference to this object 
+\end{DoxyReturn}
+\Hypertarget{class_err_msg_a6e3c7d68a9335359558c3af720cb28d8}\index{ErrMsg@{ErrMsg}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ErrMsg@{ErrMsg}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_err_msg_a6e3c7d68a9335359558c3af720cb28d8} 
+static \mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& Err\+Msg\+::get\+Instance (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns reference to the \doxylink{class_err_msg}{Err\+Msg} object. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the \doxylink{class_err_msg}{Err\+Msg} object 
+\end{DoxyReturn}
+\Hypertarget{class_err_msg_ad5010302edc4ff8ef3b6efa0e1283d34}\index{ErrMsg@{ErrMsg}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ErrMsg@{ErrMsg}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{class_err_msg_ad5010302edc4ff8ef3b6efa0e1283d34} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& Err\+Msg\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{const T}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds information to the error message. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the value to be added to the error message. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & The value to be added to the error message.\\
+\hline
+\end{DoxyParams}
+This method adds information (char \mbox{[}\mbox{]}, integers, booleans, etc.) to the error message. The information is displayed on the screen when the \doxylink{class_err_msg_a478acd57879924ba9357c9d1daec1220}{send()} method is used. There is also a specialization of this method that accepts the \doxylink{class_err_msg_a78afc654669bd47ac90612fa9838b59b}{Err\+Msg\+::endl} token as a parameter. This token is used to indicate the end of a line in the error message. Doxygen does a poor job of documenting templated methods. The best way to understand how this method works is to look at the specializations in the source files. \begin{DoxyReturn}{Returns}
+Reference to this object 
+\end{DoxyReturn}
+\Hypertarget{class_err_msg_a478acd57879924ba9357c9d1daec1220}\index{ErrMsg@{ErrMsg}!send@{send}}
+\index{send@{send}!ErrMsg@{ErrMsg}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_err_msg_a478acd57879924ba9357c9d1daec1220} 
+void Err\+Msg\+::send (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the error message on the screen. 
+
+\begin{DoxyParagraph}{Parameters}
+None.
+\end{DoxyParagraph}
+This method is called after the error message has been built up using the \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator. \Hypertarget{class_err_msg_a2aedd0a05d94766914cfba46ee909879}\index{ErrMsg@{ErrMsg}!warning@{warning}}
+\index{warning@{warning}!ErrMsg@{ErrMsg}}
+\doxysubsubsection{\texorpdfstring{warning()}{warning()}}
+{\footnotesize\ttfamily \label{class_err_msg_a2aedd0a05d94766914cfba46ee909879} 
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& Err\+Msg\+::warning (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Sets up the display to shown a warning message. 
+
+Warning messages do not halt the program. It displays the warning message on the screen. When the user touches the screen, the warning message is removed. \begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Reference to this object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_err_msg_a78afc654669bd47ac90612fa9838b59b}\index{ErrMsg@{ErrMsg}!endl@{endl}}
+\index{endl@{endl}!ErrMsg@{ErrMsg}}
+\doxysubsubsection{\texorpdfstring{endl}{endl}}
+{\footnotesize\ttfamily \label{class_err_msg_a78afc654669bd47ac90612fa9838b59b} 
+\mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Endl\+Token}} Err\+Msg\+::endl\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+End of line token used by the operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} method. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_err_msg_8h}{Err\+Msg.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_err_msg_8cpp}{Err\+Msg.\+cpp}}\end{DoxyCompactItemize}

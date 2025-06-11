@@ -1,0 +1,128 @@
+\doxysection{Immediate\+Button Class Reference}
+\hypertarget{class_immediate_button}{}\label{class_immediate_button}\index{ImmediateButton@{ImmediateButton}}
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+Inheritance diagram for Immediate\+Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_immediate_button}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_immediate_button_a09c557339754b3fd5813ff0fb51c1c06}{Immediate\+Button}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&Dest\+Canvas, const \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} \&Dest\+Loc, \mbox{\hyperlink{class_button_a089d424b1d16508c8d77b9c552699522}{callback\+\_\+function}} callback)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_immediate_button}{Immediate\+Button} Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_immediate_button_aa9b3f0e0f1b913650fdf244d1a731044}{\texorpdfstring{$\sim$}{\string~}\+Immediate\+Button}} (void)=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ General Methods}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_immediate_button_a88520eaf3b60c634a8e752eba0e0c735}{press}} (\mbox{\hyperlink{struct_f_t5316_1_1_touch_location}{FT5316\+::\+Touch\+Location}} loc) override
+\begin{DoxyCompactList}\small\item\em Presses the button if {\ttfamily loc} is within the bounds of the button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_button}{Button}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_a1f9384894fcc23ebf34b86de8b0eac1f}{Button}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&Dest\+Canvas, const \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} \&Dest\+Loc, const \mbox{\hyperlink{class_d_r_a_m___canvas}{DRAM\+\_\+\+Canvas}} \texorpdfstring{$\ast$}{*}Imgs, uint8\+\_\+t max\+Num\+States)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \doxylink{class_button}{Button}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_button_aec43891dc8ff8f87e0eff95f8315f09f}{\texorpdfstring{$\sim$}{\string~}\+Button}} (void)=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_button_a073c0529b7bfdff34981366d5895fed2}{begin}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the button. This method should be called before first use. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_aaffb603c435d21a9477154f18ac70986}{release}} (void)
+\begin{DoxyCompactList}\small\item\em Releases the button if it has been pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_a8d0bdd0a384deeba962e237315bcd94e}{enable}} (void)
+\begin{DoxyCompactList}\small\item\em Enables the button, makking it accept button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_a5bfcdefa670e1d723da7007b447d349b}{disable}} (void)
+\begin{DoxyCompactList}\small\item\em Disables the button, so that it ignores button presses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_button_ad754e299e21b35c04f58ea3ed192fd70}{is\+Enabled}} (void) const
+\begin{DoxyCompactList}\small\item\em Indicates whether the \doxylink{class_button}{Button} is enabled. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_a474cae0b010fff9730e9193f5c7084bb}{width}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the width of the button in pixels. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_a236ad6351d483848fb0d17c5cdc48471}{height}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the height of the button in pixels. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_button_a0afeb14dffa44f7e9e50151fbb6218e4}{state}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the current state of the button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_button}{Button}}}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_button_a089d424b1d16508c8d77b9c552699522}{callback\+\_\+function}}) (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_button}{Button}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_button_a36fef3a46a7334d7a889b55db90fe560}{\+\_\+reset\+To\+State0}} (void)
+\begin{DoxyCompactList}\small\item\em Internal method for resetting the button to state 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_immediate_button_a09c557339754b3fd5813ff0fb51c1c06}\index{ImmediateButton@{ImmediateButton}!ImmediateButton@{ImmediateButton}}
+\index{ImmediateButton@{ImmediateButton}!ImmediateButton@{ImmediateButton}}
+\doxysubsubsection{\texorpdfstring{ImmediateButton()}{ImmediateButton()}}
+{\footnotesize\ttfamily \label{class_immediate_button_a09c557339754b3fd5813ff0fb51c1c06} 
+Immediate\+Button\+::\+Immediate\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{Dest\+Canvas}{, }\item[{const \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} \&}]{Dest\+Loc}{, }\item[{\mbox{\hyperlink{class_button_a089d424b1d16508c8d77b9c552699522}{callback\+\_\+function}}}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{class_immediate_button}{Immediate\+Button} Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Dest\+Canvas} & Destination canvas to where the current button image is copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em Dest\+Loc} & UL x-\/y coordinate within {\ttfamily Dest\+Canvas} where the button is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em callback} & Callback function when the button transitions to state 0 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_immediate_button_aa9b3f0e0f1b913650fdf244d1a731044}\index{ImmediateButton@{ImmediateButton}!````~ImmediateButton@{\texorpdfstring{$\sim$}{\string~}ImmediateButton}}
+\index{````~ImmediateButton@{\texorpdfstring{$\sim$}{\string~}ImmediateButton}!ImmediateButton@{ImmediateButton}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ImmediateButton()}{\string~ImmediateButton()}}
+{\footnotesize\ttfamily \label{class_immediate_button_aa9b3f0e0f1b913650fdf244d1a731044} 
+Immediate\+Button\+::\texorpdfstring{$\sim$}{\string~}\+Immediate\+Button (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_immediate_button_a88520eaf3b60c634a8e752eba0e0c735}\index{ImmediateButton@{ImmediateButton}!press@{press}}
+\index{press@{press}!ImmediateButton@{ImmediateButton}}
+\doxysubsubsection{\texorpdfstring{press()}{press()}}
+{\footnotesize\ttfamily \label{class_immediate_button_a88520eaf3b60c634a8e752eba0e0c735} 
+bool Immediate\+Button\+::press (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_f_t5316_1_1_touch_location}{FT5316\+::\+Touch\+Location}}}]{loc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Presses the button if {\ttfamily loc} is within the bounds of the button. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loc} & x-\/y coordinate where the TFT screen has been touched \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_button_a9a4b0bb6bb5745dd9341ae6d49de9bd1}{Button}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_button_8h}{Button.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_button_8cpp}{Button.\+cpp}}\end{DoxyCompactItemize}

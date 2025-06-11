@@ -1,0 +1,496 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/\+ROM\+\_\+\+Images.h File Reference}
+\hypertarget{_r_o_m___images_8h}{}\label{_r_o_m___images_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/ROM\_Images.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/ROM\_Images.h}}
+{\ttfamily \#include "{}ROM\+\_\+\+Config.\+h"{}}\newline
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} \mbox{\hyperlink{_r_o_m___images_8h_a5b57ad2b318fe430e31807a2a1f04f95}{LOAD\+\_\+\+SCREEN}} = \{\mbox{\hyperlink{_r_o_m___config_8h_a5e9683498ec30e0772c91c8ef9ccf976}{LOADSCREEN\+\_\+\+ADDRESS}}, \mbox{\hyperlink{_r_o_m___config_8h_aa1bcc579473a84de0a742e2b325985e2}{LOADSCREEN\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___config_8h_ac40df0d7d7b35aa93bf9c203c102da3d}{LOADSCREEN\+\_\+\+HEIGHT}}\}
+\begin{DoxyCompactList}\small\item\em "{}\+Loading"{} screen to use during startup \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\+\_\+\+BUTTON\+\_\+\+WIDTH}} = 164
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\+\_\+\+BUTTON\+\_\+\+HEIGHT}} = 114
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\+\_\+\+BUTTON\+\_\+\+WIDTH}} = 80
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\+\_\+\+BUTTON\+\_\+\+HEIGHT}} = 73
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_a27c91509479bc1f0bba77e1dbae1dbf5}{SETUP\+\_\+\+BUTTON\+\_\+\+WIDTH}} = 140
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_a2d61c53a4212c59f0a8e31d6d390c29c}{SETUP\+\_\+\+BUTTON\+\_\+\+HEIGHT}} = 114
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}} = \{\mbox{\hyperlink{_r_o_m___config_8h_a2f86dd0bf65954567a712cc4cb527998}{SOLOMAIN\_ADDRESS}}, \mbox{\hyperlink{_r_o_m___config_8h_a8f3e27a57ed27121b7b6a81ad9c6b912}{SOLOMAIN\_WIDTH}}, \mbox{\hyperlink{_r_o_m___config_8h_a9a940e54ea2be9280123eb06dd9b892c}{SOLOMAIN\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ae8238ea80d803368bb4844bb8e680ff1}{temp\_panel}} = \{0, 0, 512, 400\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ad922560d1eff2e9cd3e343185fc00c9a}{temp\_alarm\_button}} = \{390, 259, \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a31ea7ea60be54d5fb6ae77a7d9bb181c}{vol\_panel}} = \{512, 0, 512, 202\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a16d8bd4b401bb2f42cc0852d4ed22c8a}{vol\_alarm\_button}} = \{922, 59, \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_af2eb87f0d30067ec19313a011124ebe2}{chiller\_panel}} = \{512, 201, 512, 200\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a3e4943a2886cf0625aa6de28724564fc}{chiller\_alarm\_button}} = \{921, 259, \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a11a90f4d255b59b0ee1f3ca4fdf1962c}{Button\_panel}} = \{0, 400, 1024, 200\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a7ac4237826f895066fba2aeeedec0539}{Button\_Mode}} = \{58, 466, \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a98933c5a9a88ea67c42c70c8840236dc}{Button\_Pump}} = \{313, 466, \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a1a20bf6ff88d9758c8035fcdcd082c5b}{Button\_Aux}} = \{569, 466, \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a48a075f0c24fa994c96cab0a0edf3e17}{Button\_Setup}} = \{826, 465, \mbox{\hyperlink{_r_o_m___images_8h_a27c91509479bc1f0bba77e1dbae1dbf5}{SETUP\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a2d61c53a4212c59f0a8e31d6d390c29c}{SETUP\_BUTTON\_HEIGHT}}\}\\
+\} \mbox{\hyperlink{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}{SOLO\_MAIN}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}} = \{\mbox{\hyperlink{_r_o_m___config_8h_a69ab8b03ece2115516f90bc50b395443}{SOLOALARM\_ADDRESS}}, \mbox{\hyperlink{_r_o_m___config_8h_a2f1fdf9878195b231af1a6539951e3db}{SOLOALARM\_WIDTH}}, \mbox{\hyperlink{_r_o_m___config_8h_ac18713af7b4888ba885fff902a97acb7}{SOLOALARM\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ae8238ea80d803368bb4844bb8e680ff1}{temp\_panel}} = SOLO\_MAIN.temp\_panel\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ad922560d1eff2e9cd3e343185fc00c9a}{temp\_alarm\_button}} = SOLO\_MAIN.temp\_alarm\_button\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a31ea7ea60be54d5fb6ae77a7d9bb181c}{vol\_panel}} = SOLO\_MAIN.vol\_panel\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a16d8bd4b401bb2f42cc0852d4ed22c8a}{vol\_alarm\_button}} = SOLO\_MAIN.vol\_alarm\_button\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_af2eb87f0d30067ec19313a011124ebe2}{chiller\_panel}} = SOLO\_MAIN.chiller\_panel\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a3e4943a2886cf0625aa6de28724564fc}{chiller\_alarm\_button}} = SOLO\_MAIN.chiller\_alarm\_button\\
+\} \mbox{\hyperlink{_r_o_m___images_8h_aa431bf1819dca1d3e44343bf0cdd8973}{SOLO\_ALARMED}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Solo Controller main menu under alarm conditions. \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\+\_\+\+BUTTON\+\_\+\+WIDTH}} = 232
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} Sub-\/menu\+: Volume calibration. \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\+\_\+\+BUTTON\+\_\+\+HEIGHT}} = 66
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}} = \{\mbox{\hyperlink{_r_o_m___config_8h_adb4110c434ff9f172e1c1528eeae934f}{SETUPVOLUME\_ADDRESS}}, \mbox{\hyperlink{_r_o_m___config_8h_a84b3400e8faabd6ff5d1b169f8003540}{SETUPVOLUME\_WIDTH}}, \mbox{\hyperlink{_r_o_m___config_8h_a0821dbd9bb85e7b2558400846467b02d}{SETUPVOLUME\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_aabdecbf3b4d651eab2764063b2a7281e}{gray\_cal1\_button}} = \{411, 106, \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a0fa0b28f1027a22e6250d7e18afc5795}{gray\_cal2\_button}} = \{718, 106, \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a81cb3494cd481f39101f8ab34fec5503}{blue\_cal1\_button}} = \{0, 601, \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a0264ad954653b4eb7f1aa663116be147}{blue\_cal2\_button}} = \{420, 601, \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a53a2b072b7750bcded9e06fc9231af9b}{cal1\_label}} = \{814, 322, 144, 32\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a20dda0e58c763fde48a09e0de9eeee71}{cal2\_label}} = \{239, 608, 144, 32\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_abd1ca649cfae0a30d841cb3133d183a3}{gray\_done\_button}} = \{27, 488, 280, 69\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ab8339a109f3794029fa6170dc51f3d64}{blue\_done\_button}} = \{653, 601, 280, 69\}\\
+\} \mbox{\hyperlink{_r_o_m___images_8h_aa71a31ae4a84bc3116ad8c482c37605d}{VOL\_SETUP}}\\
+
+\end{tabbing}\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\+\_\+\+BUTTON\+\_\+\+WIDTH}} = 252
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} Sub-\/menu\+: Temperature probe calibration. \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\+\_\+\+BUTTON\+\_\+\+HEIGHT}} = 68
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}} = \{\mbox{\hyperlink{_r_o_m___config_8h_ab426c1403dda0475e6b7364bc21ff2ac}{SETUPTEMP\_ADDRESS}}, \mbox{\hyperlink{_r_o_m___config_8h_a4d12a0df525720b97cd8a87167a9d097}{SETUPTEMP\_WIDTH}}, \mbox{\hyperlink{_r_o_m___config_8h_ac1309ecc0b5e3e70c827d31dbae5f880}{SETUPTEMP\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a87c0c213ed1b3fe67d609f034e8845aa}{gray\_kettle\_button}} = \{406, 117, \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a451731fd78c3aab8acb83af292e7072a}{gray\_chiller\_button}} = \{684, 117, \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_aa7d64fd0b41f92b7013caa4863fdbc13}{blue\_kettle\_button}} = \{0, 601, \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_af348c7b1efee29139525d8f695dc2416}{blue\_chiller\_button}} = \{253, 601, \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_abd1ca649cfae0a30d841cb3133d183a3}{gray\_done\_button}} = \{27, 488, 280, 69\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ab8339a109f3794029fa6170dc51f3d64}{blue\_done\_button}} = \{506, 601, 280, 69\}\\
+\} \mbox{\hyperlink{_r_o_m___images_8h_a0d649676b42ea84596a14709f240a92e}{TEMP\_SETUP}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}} = \{\mbox{\hyperlink{_r_o_m___config_8h_a6fca12694638bdde2c191c90c001769d}{SETUPPID\_ADDRESS}}, \mbox{\hyperlink{_r_o_m___config_8h_a445cb9de5b9a12419e74604dc5dcb289}{SETUPPID\_WIDTH}}, \mbox{\hyperlink{_r_o_m___config_8h_afcafb5d1b85217a86f189146776c55db}{SETUPPID\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a0d6b812dec75b4f6e3acd28dca58d158}{gray\_button}} = \{527, 101, 308, 75\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ad9091f6dc0477242f15d1d414a5307df}{blue\_button}} = \{0, 601, 308, 75\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_abd1ca649cfae0a30d841cb3133d183a3}{gray\_done\_button}} = \{27, 488, 280, 69\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ab8339a109f3794029fa6170dc51f3d64}{blue\_done\_button}} = \{309, 601, 280, 69\}\\
+\} \mbox{\hyperlink{_r_o_m___images_8h_a5bfdb5966a0596bbfd7fbacdc0f28d9c}{PID\_SETUP}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} Sub-\/menu\+: PID setup. \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}} = 80
+\begin{DoxyCompactList}\small\item\em Data Entry screen. \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}} = 80
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a90c27ec059b58bab8255e0261d340f65}{button1}} = \{19, 91, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_af5c8df36370c2091fc7389736e9221b7}{button2}} = \{102, 91, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_ac1994931cba8626ed7e2c172417b3d94}{button3}} = \{185, 91, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a74d4286c4076ac23c37ff8fbd0aed7de}{button4}} = \{19, 174, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a26d655629da2312e6108cb4a730e3fa4}{button5}} = \{102, 174, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a02f21a22f21b1565160c6aca91415381}{button6}} = \{185, 174, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a5de8d6963388d1bc0b7aa97832d38e5a}{button7}} = \{19, 257, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a98d55932569d061bf73b52355e840937}{button8}} = \{102, 257, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a8f5a101d1e8e30967fe85b3df179fc73}{button9}} = \{185, 257, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a3a67e04c38f996756f1f69b70054e788}{buttonDel}} = \{19, 340, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a87a6a4473d71ad0ec621c768ca4807a3}{button0}} = \{102, 340, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a09c32243aa89795f94b250a03ef5e1a4}{buttonOK}} = \{185, 340, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\}\\
+\>\mbox{\hyperlink{struct_block___image}{Block\_Image}} \mbox{\hyperlink{_r_o_m___images_8h_a403dd564a4c846f6b6dc8a796fc18c52}{values}} = \{18, 15, 248, 70\}\\
+\} \mbox{\hyperlink{_r_o_m___images_8h_acfd281848ae87e45fb244b4b2aea5fb1}{DATA\_ENTRY}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}\index{ROM\_Images.h@{ROM\_Images.h}!base@{base}}
+\index{base@{base}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284} 
+\mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} base = \{\mbox{\hyperlink{_r_o_m___config_8h_a2f86dd0bf65954567a712cc4cb527998}{SOLOMAIN\+\_\+\+ADDRESS}}, \mbox{\hyperlink{_r_o_m___config_8h_a8f3e27a57ed27121b7b6a81ad9c6b912}{SOLOMAIN\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___config_8h_a9a940e54ea2be9280123eb06dd9b892c}{SOLOMAIN\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_ad9091f6dc0477242f15d1d414a5307df}\index{ROM\_Images.h@{ROM\_Images.h}!blue\_button@{blue\_button}}
+\index{blue\_button@{blue\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{blue\_button}{blue\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_ad9091f6dc0477242f15d1d414a5307df} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} blue\+\_\+button = \{0, 601, 308, 75\}}
+
+\Hypertarget{_r_o_m___images_8h_a81cb3494cd481f39101f8ab34fec5503}\index{ROM\_Images.h@{ROM\_Images.h}!blue\_cal1\_button@{blue\_cal1\_button}}
+\index{blue\_cal1\_button@{blue\_cal1\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{blue\_cal1\_button}{blue\_cal1\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a81cb3494cd481f39101f8ab34fec5503} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} blue\+\_\+cal1\+\_\+button = \{0, 601, \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a0264ad954653b4eb7f1aa663116be147}\index{ROM\_Images.h@{ROM\_Images.h}!blue\_cal2\_button@{blue\_cal2\_button}}
+\index{blue\_cal2\_button@{blue\_cal2\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{blue\_cal2\_button}{blue\_cal2\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a0264ad954653b4eb7f1aa663116be147} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} blue\+\_\+cal2\+\_\+button = \{420, 601, \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_af348c7b1efee29139525d8f695dc2416}\index{ROM\_Images.h@{ROM\_Images.h}!blue\_chiller\_button@{blue\_chiller\_button}}
+\index{blue\_chiller\_button@{blue\_chiller\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{blue\_chiller\_button}{blue\_chiller\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_af348c7b1efee29139525d8f695dc2416} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} blue\+\_\+chiller\+\_\+button = \{253, 601, \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_ab8339a109f3794029fa6170dc51f3d64}\index{ROM\_Images.h@{ROM\_Images.h}!blue\_done\_button@{blue\_done\_button}}
+\index{blue\_done\_button@{blue\_done\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{blue\_done\_button}{blue\_done\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_ab8339a109f3794029fa6170dc51f3d64} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} blue\+\_\+done\+\_\+button = \{653, 601, 280, 69\}}
+
+\Hypertarget{_r_o_m___images_8h_aa7d64fd0b41f92b7013caa4863fdbc13}\index{ROM\_Images.h@{ROM\_Images.h}!blue\_kettle\_button@{blue\_kettle\_button}}
+\index{blue\_kettle\_button@{blue\_kettle\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{blue\_kettle\_button}{blue\_kettle\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_aa7d64fd0b41f92b7013caa4863fdbc13} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} blue\+\_\+kettle\+\_\+button = \{0, 601, \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a87a6a4473d71ad0ec621c768ca4807a3}\index{ROM\_Images.h@{ROM\_Images.h}!button0@{button0}}
+\index{button0@{button0}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button0}{button0}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a87a6a4473d71ad0ec621c768ca4807a3} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button0 = \{102, 340, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a90c27ec059b58bab8255e0261d340f65}\index{ROM\_Images.h@{ROM\_Images.h}!button1@{button1}}
+\index{button1@{button1}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button1}{button1}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a90c27ec059b58bab8255e0261d340f65} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button1 = \{19, 91, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_af5c8df36370c2091fc7389736e9221b7}\index{ROM\_Images.h@{ROM\_Images.h}!button2@{button2}}
+\index{button2@{button2}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button2}{button2}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_af5c8df36370c2091fc7389736e9221b7} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button2 = \{102, 91, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_ac1994931cba8626ed7e2c172417b3d94}\index{ROM\_Images.h@{ROM\_Images.h}!button3@{button3}}
+\index{button3@{button3}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button3}{button3}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_ac1994931cba8626ed7e2c172417b3d94} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button3 = \{185, 91, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a74d4286c4076ac23c37ff8fbd0aed7de}\index{ROM\_Images.h@{ROM\_Images.h}!button4@{button4}}
+\index{button4@{button4}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button4}{button4}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a74d4286c4076ac23c37ff8fbd0aed7de} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button4 = \{19, 174, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a26d655629da2312e6108cb4a730e3fa4}\index{ROM\_Images.h@{ROM\_Images.h}!button5@{button5}}
+\index{button5@{button5}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button5}{button5}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a26d655629da2312e6108cb4a730e3fa4} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button5 = \{102, 174, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a02f21a22f21b1565160c6aca91415381}\index{ROM\_Images.h@{ROM\_Images.h}!button6@{button6}}
+\index{button6@{button6}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button6}{button6}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a02f21a22f21b1565160c6aca91415381} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button6 = \{185, 174, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a5de8d6963388d1bc0b7aa97832d38e5a}\index{ROM\_Images.h@{ROM\_Images.h}!button7@{button7}}
+\index{button7@{button7}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button7}{button7}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a5de8d6963388d1bc0b7aa97832d38e5a} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button7 = \{19, 257, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a98d55932569d061bf73b52355e840937}\index{ROM\_Images.h@{ROM\_Images.h}!button8@{button8}}
+\index{button8@{button8}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button8}{button8}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a98d55932569d061bf73b52355e840937} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button8 = \{102, 257, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a8f5a101d1e8e30967fe85b3df179fc73}\index{ROM\_Images.h@{ROM\_Images.h}!button9@{button9}}
+\index{button9@{button9}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{button9}{button9}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a8f5a101d1e8e30967fe85b3df179fc73} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button9 = \{185, 257, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a1a20bf6ff88d9758c8035fcdcd082c5b}\index{ROM\_Images.h@{ROM\_Images.h}!Button\_Aux@{Button\_Aux}}
+\index{Button\_Aux@{Button\_Aux}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{Button\_Aux}{Button\_Aux}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a1a20bf6ff88d9758c8035fcdcd082c5b} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} Button\+\_\+\+Aux = \{569, 466, \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a7ac4237826f895066fba2aeeedec0539}\index{ROM\_Images.h@{ROM\_Images.h}!Button\_Mode@{Button\_Mode}}
+\index{Button\_Mode@{Button\_Mode}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{Button\_Mode}{Button\_Mode}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a7ac4237826f895066fba2aeeedec0539} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} Button\+\_\+\+Mode = \{58, 466, \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a11a90f4d255b59b0ee1f3ca4fdf1962c}\index{ROM\_Images.h@{ROM\_Images.h}!Button\_panel@{Button\_panel}}
+\index{Button\_panel@{Button\_panel}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{Button\_panel}{Button\_panel}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a11a90f4d255b59b0ee1f3ca4fdf1962c} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} Button\+\_\+panel = \{0, 400, 1024, 200\}}
+
+\Hypertarget{_r_o_m___images_8h_a98933c5a9a88ea67c42c70c8840236dc}\index{ROM\_Images.h@{ROM\_Images.h}!Button\_Pump@{Button\_Pump}}
+\index{Button\_Pump@{Button\_Pump}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{Button\_Pump}{Button\_Pump}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a98933c5a9a88ea67c42c70c8840236dc} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} Button\+\_\+\+Pump = \{313, 466, \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a48a075f0c24fa994c96cab0a0edf3e17}\index{ROM\_Images.h@{ROM\_Images.h}!Button\_Setup@{Button\_Setup}}
+\index{Button\_Setup@{Button\_Setup}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{Button\_Setup}{Button\_Setup}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a48a075f0c24fa994c96cab0a0edf3e17} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} Button\+\_\+\+Setup = \{826, 465, \mbox{\hyperlink{_r_o_m___images_8h_a27c91509479bc1f0bba77e1dbae1dbf5}{SETUP\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a2d61c53a4212c59f0a8e31d6d390c29c}{SETUP\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a3a67e04c38f996756f1f69b70054e788}\index{ROM\_Images.h@{ROM\_Images.h}!buttonDel@{buttonDel}}
+\index{buttonDel@{buttonDel}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{buttonDel}{buttonDel}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a3a67e04c38f996756f1f69b70054e788} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button\+Del = \{19, 340, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a09c32243aa89795f94b250a03ef5e1a4}\index{ROM\_Images.h@{ROM\_Images.h}!buttonOK@{buttonOK}}
+\index{buttonOK@{buttonOK}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{buttonOK}{buttonOK}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a09c32243aa89795f94b250a03ef5e1a4} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} button\+OK = \{185, 340, \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a53a2b072b7750bcded9e06fc9231af9b}\index{ROM\_Images.h@{ROM\_Images.h}!cal1\_label@{cal1\_label}}
+\index{cal1\_label@{cal1\_label}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{cal1\_label}{cal1\_label}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a53a2b072b7750bcded9e06fc9231af9b} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} cal1\+\_\+label = \{814, 322, 144, 32\}}
+
+\Hypertarget{_r_o_m___images_8h_a20dda0e58c763fde48a09e0de9eeee71}\index{ROM\_Images.h@{ROM\_Images.h}!cal2\_label@{cal2\_label}}
+\index{cal2\_label@{cal2\_label}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{cal2\_label}{cal2\_label}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a20dda0e58c763fde48a09e0de9eeee71} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} cal2\+\_\+label = \{239, 608, 144, 32\}}
+
+\Hypertarget{_r_o_m___images_8h_a3e4943a2886cf0625aa6de28724564fc}\index{ROM\_Images.h@{ROM\_Images.h}!chiller\_alarm\_button@{chiller\_alarm\_button}}
+\index{chiller\_alarm\_button@{chiller\_alarm\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{chiller\_alarm\_button}{chiller\_alarm\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a3e4943a2886cf0625aa6de28724564fc} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} chiller\+\_\+alarm\+\_\+button = \{921, 259, \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_af2eb87f0d30067ec19313a011124ebe2}\index{ROM\_Images.h@{ROM\_Images.h}!chiller\_panel@{chiller\_panel}}
+\index{chiller\_panel@{chiller\_panel}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{chiller\_panel}{chiller\_panel}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_af2eb87f0d30067ec19313a011124ebe2} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} chiller\+\_\+panel = \{512, 201, 512, 200\}}
+
+\Hypertarget{_r_o_m___images_8h_acfd281848ae87e45fb244b4b2aea5fb1}\index{ROM\_Images.h@{ROM\_Images.h}!DATA\_ENTRY@{DATA\_ENTRY}}
+\index{DATA\_ENTRY@{DATA\_ENTRY}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_acfd281848ae87e45fb244b4b2aea5fb1} 
+const struct  \{ ... \}  DATA\+\_\+\+ENTRY}
+
+\Hypertarget{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}\index{ROM\_Images.h@{ROM\_Images.h}!DATA\_ENTRY\_BUTTON\_HEIGHT@{DATA\_ENTRY\_BUTTON\_HEIGHT}}
+\index{DATA\_ENTRY\_BUTTON\_HEIGHT@{DATA\_ENTRY\_BUTTON\_HEIGHT}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{DATA\_ENTRY\_BUTTON\_HEIGHT}{DATA\_ENTRY\_BUTTON\_HEIGHT}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f} 
+const uint16\+\_\+t DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+HEIGHT = 80}
+
+\Hypertarget{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}\index{ROM\_Images.h@{ROM\_Images.h}!DATA\_ENTRY\_BUTTON\_WIDTH@{DATA\_ENTRY\_BUTTON\_WIDTH}}
+\index{DATA\_ENTRY\_BUTTON\_WIDTH@{DATA\_ENTRY\_BUTTON\_WIDTH}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{DATA\_ENTRY\_BUTTON\_WIDTH}{DATA\_ENTRY\_BUTTON\_WIDTH}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1} 
+const uint16\+\_\+t DATA\+\_\+\+ENTRY\+\_\+\+BUTTON\+\_\+\+WIDTH = 80}
+
+
+
+Data Entry screen. 
+
+\Hypertarget{_r_o_m___images_8h_a0d6b812dec75b4f6e3acd28dca58d158}\index{ROM\_Images.h@{ROM\_Images.h}!gray\_button@{gray\_button}}
+\index{gray\_button@{gray\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{gray\_button}{gray\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a0d6b812dec75b4f6e3acd28dca58d158} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} gray\+\_\+button = \{527, 101, 308, 75\}}
+
+\Hypertarget{_r_o_m___images_8h_aabdecbf3b4d651eab2764063b2a7281e}\index{ROM\_Images.h@{ROM\_Images.h}!gray\_cal1\_button@{gray\_cal1\_button}}
+\index{gray\_cal1\_button@{gray\_cal1\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{gray\_cal1\_button}{gray\_cal1\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_aabdecbf3b4d651eab2764063b2a7281e} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} gray\+\_\+cal1\+\_\+button = \{411, 106, \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a0fa0b28f1027a22e6250d7e18afc5795}\index{ROM\_Images.h@{ROM\_Images.h}!gray\_cal2\_button@{gray\_cal2\_button}}
+\index{gray\_cal2\_button@{gray\_cal2\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{gray\_cal2\_button}{gray\_cal2\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a0fa0b28f1027a22e6250d7e18afc5795} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} gray\+\_\+cal2\+\_\+button = \{718, 106, \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a451731fd78c3aab8acb83af292e7072a}\index{ROM\_Images.h@{ROM\_Images.h}!gray\_chiller\_button@{gray\_chiller\_button}}
+\index{gray\_chiller\_button@{gray\_chiller\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{gray\_chiller\_button}{gray\_chiller\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a451731fd78c3aab8acb83af292e7072a} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} gray\+\_\+chiller\+\_\+button = \{684, 117, \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_abd1ca649cfae0a30d841cb3133d183a3}\index{ROM\_Images.h@{ROM\_Images.h}!gray\_done\_button@{gray\_done\_button}}
+\index{gray\_done\_button@{gray\_done\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{gray\_done\_button}{gray\_done\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_abd1ca649cfae0a30d841cb3133d183a3} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} gray\+\_\+done\+\_\+button = \{27, 488, 280, 69\}}
+
+\Hypertarget{_r_o_m___images_8h_a87c0c213ed1b3fe67d609f034e8845aa}\index{ROM\_Images.h@{ROM\_Images.h}!gray\_kettle\_button@{gray\_kettle\_button}}
+\index{gray\_kettle\_button@{gray\_kettle\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{gray\_kettle\_button}{gray\_kettle\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a87c0c213ed1b3fe67d609f034e8845aa} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} gray\+\_\+kettle\+\_\+button = \{406, 117, \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}\index{ROM\_Images.h@{ROM\_Images.h}!LG\_BUTTON\_HEIGHT@{LG\_BUTTON\_HEIGHT}}
+\index{LG\_BUTTON\_HEIGHT@{LG\_BUTTON\_HEIGHT}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{LG\_BUTTON\_HEIGHT}{LG\_BUTTON\_HEIGHT}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c} 
+const uint16\+\_\+t LG\+\_\+\+BUTTON\+\_\+\+HEIGHT = 114}
+
+\Hypertarget{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}\index{ROM\_Images.h@{ROM\_Images.h}!LG\_BUTTON\_WIDTH@{LG\_BUTTON\_WIDTH}}
+\index{LG\_BUTTON\_WIDTH@{LG\_BUTTON\_WIDTH}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{LG\_BUTTON\_WIDTH}{LG\_BUTTON\_WIDTH}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26} 
+const uint16\+\_\+t LG\+\_\+\+BUTTON\+\_\+\+WIDTH = 164}
+
+\Hypertarget{_r_o_m___images_8h_a5b57ad2b318fe430e31807a2a1f04f95}\index{ROM\_Images.h@{ROM\_Images.h}!LOAD\_SCREEN@{LOAD\_SCREEN}}
+\index{LOAD\_SCREEN@{LOAD\_SCREEN}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{LOAD\_SCREEN}{LOAD\_SCREEN}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a5b57ad2b318fe430e31807a2a1f04f95} 
+const \mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} LOAD\+\_\+\+SCREEN = \{\mbox{\hyperlink{_r_o_m___config_8h_a5e9683498ec30e0772c91c8ef9ccf976}{LOADSCREEN\+\_\+\+ADDRESS}}, \mbox{\hyperlink{_r_o_m___config_8h_aa1bcc579473a84de0a742e2b325985e2}{LOADSCREEN\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___config_8h_ac40df0d7d7b35aa93bf9c203c102da3d}{LOADSCREEN\+\_\+\+HEIGHT}}\}}
+
+
+
+"{}\+Loading"{} screen to use during startup 
+
+\Hypertarget{_r_o_m___images_8h_a5bfdb5966a0596bbfd7fbacdc0f28d9c}\index{ROM\_Images.h@{ROM\_Images.h}!PID\_SETUP@{PID\_SETUP}}
+\index{PID\_SETUP@{PID\_SETUP}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a5bfdb5966a0596bbfd7fbacdc0f28d9c} 
+const struct  \{ ... \}  PID\+\_\+\+SETUP}
+
+
+
+\doxylink{namespace_setup}{Setup} Sub-\/menu\+: PID setup. 
+
+\Hypertarget{_r_o_m___images_8h_a2d61c53a4212c59f0a8e31d6d390c29c}\index{ROM\_Images.h@{ROM\_Images.h}!SETUP\_BUTTON\_HEIGHT@{SETUP\_BUTTON\_HEIGHT}}
+\index{SETUP\_BUTTON\_HEIGHT@{SETUP\_BUTTON\_HEIGHT}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{SETUP\_BUTTON\_HEIGHT}{SETUP\_BUTTON\_HEIGHT}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a2d61c53a4212c59f0a8e31d6d390c29c} 
+const uint16\+\_\+t SETUP\+\_\+\+BUTTON\+\_\+\+HEIGHT = 114}
+
+\Hypertarget{_r_o_m___images_8h_a27c91509479bc1f0bba77e1dbae1dbf5}\index{ROM\_Images.h@{ROM\_Images.h}!SETUP\_BUTTON\_WIDTH@{SETUP\_BUTTON\_WIDTH}}
+\index{SETUP\_BUTTON\_WIDTH@{SETUP\_BUTTON\_WIDTH}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{SETUP\_BUTTON\_WIDTH}{SETUP\_BUTTON\_WIDTH}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a27c91509479bc1f0bba77e1dbae1dbf5} 
+const uint16\+\_\+t SETUP\+\_\+\+BUTTON\+\_\+\+WIDTH = 140}
+
+\Hypertarget{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}\index{ROM\_Images.h@{ROM\_Images.h}!SM\_BUTTON\_HEIGHT@{SM\_BUTTON\_HEIGHT}}
+\index{SM\_BUTTON\_HEIGHT@{SM\_BUTTON\_HEIGHT}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{SM\_BUTTON\_HEIGHT}{SM\_BUTTON\_HEIGHT}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34} 
+const uint16\+\_\+t SM\+\_\+\+BUTTON\+\_\+\+HEIGHT = 73}
+
+\Hypertarget{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}\index{ROM\_Images.h@{ROM\_Images.h}!SM\_BUTTON\_WIDTH@{SM\_BUTTON\_WIDTH}}
+\index{SM\_BUTTON\_WIDTH@{SM\_BUTTON\_WIDTH}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{SM\_BUTTON\_WIDTH}{SM\_BUTTON\_WIDTH}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728} 
+const uint16\+\_\+t SM\+\_\+\+BUTTON\+\_\+\+WIDTH = 80}
+
+\Hypertarget{_r_o_m___images_8h_aa431bf1819dca1d3e44343bf0cdd8973}\index{ROM\_Images.h@{ROM\_Images.h}!SOLO\_ALARMED@{SOLO\_ALARMED}}
+\index{SOLO\_ALARMED@{SOLO\_ALARMED}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_aa431bf1819dca1d3e44343bf0cdd8973} 
+const struct  \{ ... \}  SOLO\+\_\+\+ALARMED}
+
+
+
+Solo Controller main menu under alarm conditions. 
+
+\Hypertarget{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}\index{ROM\_Images.h@{ROM\_Images.h}!SOLO\_MAIN@{SOLO\_MAIN}}
+\index{SOLO\_MAIN@{SOLO\_MAIN}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b} 
+const struct  \{ ... \}  SOLO\+\_\+\+MAIN}
+
+\Hypertarget{_r_o_m___images_8h_ad922560d1eff2e9cd3e343185fc00c9a}\index{ROM\_Images.h@{ROM\_Images.h}!temp\_alarm\_button@{temp\_alarm\_button}}
+\index{temp\_alarm\_button@{temp\_alarm\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{temp\_alarm\_button}{temp\_alarm\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_ad922560d1eff2e9cd3e343185fc00c9a} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} temp\+\_\+alarm\+\_\+button = \{390, 259, \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}\index{ROM\_Images.h@{ROM\_Images.h}!TEMP\_BUTTON\_HEIGHT@{TEMP\_BUTTON\_HEIGHT}}
+\index{TEMP\_BUTTON\_HEIGHT@{TEMP\_BUTTON\_HEIGHT}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{TEMP\_BUTTON\_HEIGHT}{TEMP\_BUTTON\_HEIGHT}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b} 
+const uint16\+\_\+t TEMP\+\_\+\+BUTTON\+\_\+\+HEIGHT = 68}
+
+\Hypertarget{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}\index{ROM\_Images.h@{ROM\_Images.h}!TEMP\_BUTTON\_WIDTH@{TEMP\_BUTTON\_WIDTH}}
+\index{TEMP\_BUTTON\_WIDTH@{TEMP\_BUTTON\_WIDTH}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{TEMP\_BUTTON\_WIDTH}{TEMP\_BUTTON\_WIDTH}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be} 
+const uint16\+\_\+t TEMP\+\_\+\+BUTTON\+\_\+\+WIDTH = 252}
+
+
+
+\doxylink{namespace_setup}{Setup} Sub-\/menu\+: Temperature probe calibration. 
+
+\Hypertarget{_r_o_m___images_8h_ae8238ea80d803368bb4844bb8e680ff1}\index{ROM\_Images.h@{ROM\_Images.h}!temp\_panel@{temp\_panel}}
+\index{temp\_panel@{temp\_panel}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{temp\_panel}{temp\_panel}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_ae8238ea80d803368bb4844bb8e680ff1} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} temp\+\_\+panel = \{0, 0, 512, 400\}}
+
+\Hypertarget{_r_o_m___images_8h_a0d649676b42ea84596a14709f240a92e}\index{ROM\_Images.h@{ROM\_Images.h}!TEMP\_SETUP@{TEMP\_SETUP}}
+\index{TEMP\_SETUP@{TEMP\_SETUP}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a0d649676b42ea84596a14709f240a92e} 
+const struct  \{ ... \}  TEMP\+\_\+\+SETUP}
+
+\Hypertarget{_r_o_m___images_8h_a403dd564a4c846f6b6dc8a796fc18c52}\index{ROM\_Images.h@{ROM\_Images.h}!values@{values}}
+\index{values@{values}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a403dd564a4c846f6b6dc8a796fc18c52} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} values = \{18, 15, 248, 70\}}
+
+\Hypertarget{_r_o_m___images_8h_a16d8bd4b401bb2f42cc0852d4ed22c8a}\index{ROM\_Images.h@{ROM\_Images.h}!vol\_alarm\_button@{vol\_alarm\_button}}
+\index{vol\_alarm\_button@{vol\_alarm\_button}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{vol\_alarm\_button}{vol\_alarm\_button}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a16d8bd4b401bb2f42cc0852d4ed22c8a} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} vol\+\_\+alarm\+\_\+button = \{922, 59, \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\+\_\+\+BUTTON\+\_\+\+WIDTH}}, \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\+\_\+\+BUTTON\+\_\+\+HEIGHT}}\}}
+
+\Hypertarget{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}\index{ROM\_Images.h@{ROM\_Images.h}!VOL\_BUTTON\_HEIGHT@{VOL\_BUTTON\_HEIGHT}}
+\index{VOL\_BUTTON\_HEIGHT@{VOL\_BUTTON\_HEIGHT}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{VOL\_BUTTON\_HEIGHT}{VOL\_BUTTON\_HEIGHT}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99} 
+const uint16\+\_\+t VOL\+\_\+\+BUTTON\+\_\+\+HEIGHT = 66}
+
+\Hypertarget{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}\index{ROM\_Images.h@{ROM\_Images.h}!VOL\_BUTTON\_WIDTH@{VOL\_BUTTON\_WIDTH}}
+\index{VOL\_BUTTON\_WIDTH@{VOL\_BUTTON\_WIDTH}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{VOL\_BUTTON\_WIDTH}{VOL\_BUTTON\_WIDTH}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15} 
+const uint16\+\_\+t VOL\+\_\+\+BUTTON\+\_\+\+WIDTH = 232}
+
+
+
+\doxylink{namespace_setup}{Setup} Sub-\/menu\+: Volume calibration. 
+
+\Hypertarget{_r_o_m___images_8h_a31ea7ea60be54d5fb6ae77a7d9bb181c}\index{ROM\_Images.h@{ROM\_Images.h}!vol\_panel@{vol\_panel}}
+\index{vol\_panel@{vol\_panel}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{vol\_panel}{vol\_panel}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_a31ea7ea60be54d5fb6ae77a7d9bb181c} 
+\mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} vol\+\_\+panel = \{512, 0, 512, 202\}}
+
+\Hypertarget{_r_o_m___images_8h_aa71a31ae4a84bc3116ad8c482c37605d}\index{ROM\_Images.h@{ROM\_Images.h}!VOL\_SETUP@{VOL\_SETUP}}
+\index{VOL\_SETUP@{VOL\_SETUP}!ROM\_Images.h@{ROM\_Images.h}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{_r_o_m___images_8h_aa71a31ae4a84bc3116ad8c482c37605d} 
+const struct  \{ ... \}  VOL\+\_\+\+SETUP}
+

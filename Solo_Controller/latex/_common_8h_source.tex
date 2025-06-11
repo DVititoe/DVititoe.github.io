@@ -1,0 +1,62 @@
+\doxysection{Common.\+h}
+\hypertarget{_common_8h_source}{}\label{_common_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/Common.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/Common.h}}
+\mbox{\hyperlink{_common_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Common.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @brief\ Common\ definitions\ used\ throughout\ the\ SoloContoller\ app.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ COMMON\_HEADER}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ COMMON\_HEADER}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_f_t_m070_a1_8h}{TFTM070A1.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Display\ and\ Touch\ Controller}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ CTP\_INT\ 2\ \ \ }}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ TFT\_WAIT\ 3\ \ }}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ TFT\_INT\ 4\ \ \ }}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ TFT\_SD\_CS\ 5\ }}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ CTP\_WAKE\ 6\ \ }}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ CTP\_NOTIF\ 7\ }}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ TFT\_BL\ 8\ \ \ \ }}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ TFT\_RESET\ 9\ }}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ TFT\_CS\ 10\ \ \ }}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ Arduino\ pins}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ SCK\ 52\ \ }}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ MISO\ 50\ }}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ MOSI\ 51\ }}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ Controller\ pins}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ MCU\_RST\_TFT\ A0\ }}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ ALARM\ A1\ \ \ \ \ \ \ }}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ VOL\_SENSOR\ A15\ }}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ ELEM\_CNTRL\ 23\ }}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ INTERLOCK\_STATUS\ 25\ }}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ AUX\_OUT\ 31\ }}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ PUMP\_OUT\ 33\ }}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ CONTACTOR\_STATUS\ 37\ }}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ELEM\_SWITCH\_LED\ 39\ }}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ BUZZER\ 41\ }}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ KETTLE\_CS\ 47\ }}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ CHILLER\_CS\ 49\ }}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_o_m___image_a3e2d56ab7c30ed9e9f929da1ab200f72}{address}};}
+\DoxyCodeLine{00046\ \ \ uint16\_t\ \mbox{\hyperlink{struct_r_o_m___image_a2abf17e4c0362f2488ffa5ee0749791b}{width}};}
+\DoxyCodeLine{00047\ \ \ uint16\_t\ \mbox{\hyperlink{struct_r_o_m___image_a537025ded8b244a33250bcc71806fe15}{height}};}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_block___image}{Block\_Image}}}
+\DoxyCodeLine{00052\ \{}
+\DoxyCodeLine{00053\ \ \ uint16\_t\ \mbox{\hyperlink{struct_block___image_a135650607f7dda30546a44b26ebf18df}{x}};}
+\DoxyCodeLine{00054\ \ \ uint16\_t\ \mbox{\hyperlink{struct_block___image_a66541f503644aac5586a3b01fb1675c5}{y}};}
+\DoxyCodeLine{00055\ \ \ uint16\_t\ \mbox{\hyperlink{struct_block___image_a9005baa7a8eb752cacfbff8209a627d5}{width}};}
+\DoxyCodeLine{00056\ \ \ uint16\_t\ \mbox{\hyperlink{struct_block___image_a99408a133b4e40af0b4a46058f113b68}{height}};}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solo Controller: Button.h Source File</title>
+<title>Solo Controller: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Button.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,6 +18,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -27,9 +32,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Solo Controller
+   <div id="projectname">Solo Controller<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Documentation for the Solo Controller</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -46,17 +64,6 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search',true);
-  $(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -99,18 +106,28 @@ $(function(){initNavTree('_button_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Button.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_button_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<a href="_button_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*******************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file Button.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @brief Defines the Button classes used by the Menu system</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef BUTTON_INCLUDED</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define BUTTON_INCLUDED</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_canvas_8h.html">Canvas.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/***                 Class Definition: Button                               ***/</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * @brief Provides buttons for the menu system</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *    This is the base class for all buttons. Derived classes are expected to</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *    provide the images for the button states. This class manages the button</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *    state and the copying of the button imagery onto the destination canvas.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *    The derived classes are responsible for providing callback functions.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_button.html">   23</a></span><span class="keyword">class </span>Button</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
@@ -219,11 +236,16 @@ $(function(){initNavTree('_button_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>};</div>
 </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">/***                 Class Definition: ToggleButton                         ***/</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"> * @brief Defines a button that toggles between two states.</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"> *    Each state has its own image and callback function. The callback function</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"> *    is called when when the users releases the button.</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00207" data-start="{" data-end="};">
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="class_toggle_button.html">  207</a></span><span class="keyword">class </span>ToggleButton : <span class="keyword">public</span> Button</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>{</div>
@@ -258,11 +280,16 @@ $(function(){initNavTree('_button_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>};</div>
 </div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">/***                Class Definition: MomentaryButton                       ***/</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment"> * @brief Momentary buttons have 2 states. Upon release, the button returns to state 0.</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment"> *    This button has two images (pressed and unpressed). The button&#39;s single</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment"> *    callback function is called when the button is released.</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00278" data-start="{" data-end="};">
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="class_momentary_button.html">  278</a></span><span class="keyword">class </span>MomentaryButton : <span class="keyword">public</span> Button</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>{</div>
@@ -305,11 +332,17 @@ $(function(){initNavTree('_button_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>};</div>
 </div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span></div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span></div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="comment">/***                Class Definition: ImmediateButton                       ***/</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment"> * @brief A single state button that calls the callback function as soon as it is pressed</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment"> * @note</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment"> *    There is no imagery associated with an immediate button. It is assumed that</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment"> *    the desitination canvas already has appropriate imagery in place to indicate</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="comment"> *    to the user where the button is located.</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00356" data-start="{" data-end="};">
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno"><a class="line" href="class_immediate_button.html">  356</a></span><span class="keyword">class </span>ImmediateButton : <span class="keyword">public</span> Button</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>{</div>
@@ -341,7 +374,7 @@ $(function(){initNavTree('_button_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_canvas_8h_html"><div class="ttname"><a href="_canvas_8h.html">Canvas.h</a></div><div class="ttdoc">Defines higher level TFT graphics functionality.</div></div>
+<div class="ttc" id="a_canvas_8h_html"><div class="ttname"><a href="_canvas_8h.html">Canvas.h</a></div></div>
 <div class="ttc" id="aclass_button_html_a073c0529b7bfdff34981366d5895fed2"><div class="ttname"><a href="class_button.html#a073c0529b7bfdff34981366d5895fed2">Button::begin</a></div><div class="ttdeci">void begin(void)</div><div class="ttdoc">Initializes the button. This method should be called before first use.</div><div class="ttdef"><b>Definition</b> Button.cpp:20</div></div>
 <div class="ttc" id="aclass_button_html_a089d424b1d16508c8d77b9c552699522"><div class="ttname"><a href="class_button.html#a089d424b1d16508c8d77b9c552699522">Button::callback_function</a></div><div class="ttdeci">void(* callback_function)(void)</div><div class="ttdef"><b>Definition</b> Button.h:86</div></div>
 <div class="ttc" id="aclass_button_html_a0afeb14dffa44f7e9e50151fbb6218e4"><div class="ttname"><a href="class_button.html#a0afeb14dffa44f7e9e50151fbb6218e4">Button::state</a></div><div class="ttdeci">uint8_t state(void) const</div><div class="ttdoc">Returns the current state of the button.</div><div class="ttdef"><b>Definition</b> Button.h:177</div></div>
@@ -355,9 +388,9 @@ $(function(){initNavTree('_button_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="aclass_button_html_aaffb603c435d21a9477154f18ac70986"><div class="ttname"><a href="class_button.html#aaffb603c435d21a9477154f18ac70986">Button::release</a></div><div class="ttdeci">virtual void release(void)</div><div class="ttdoc">Releases the button if it has been pressed.</div><div class="ttdef"><b>Definition</b> Button.h:110</div></div>
 <div class="ttc" id="aclass_button_html_ad754e299e21b35c04f58ea3ed192fd70"><div class="ttname"><a href="class_button.html#ad754e299e21b35c04f58ea3ed192fd70">Button::isEnabled</a></div><div class="ttdeci">bool isEnabled(void) const</div><div class="ttdoc">Indicates whether the Button is enabled.</div><div class="ttdef"><b>Definition</b> Button.h:144</div></div>
 <div class="ttc" id="aclass_button_html_aec43891dc8ff8f87e0eff95f8315f09f"><div class="ttname"><a href="class_button.html#aec43891dc8ff8f87e0eff95f8315f09f">Button::~Button</a></div><div class="ttdeci">~Button(void)=default</div><div class="ttdoc">Default destructor.</div></div>
-<div class="ttc" id="aclass_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdoc">Provides higher level TFT graphic functionality used by the menu system.</div><div class="ttdef"><b>Definition</b> Canvas.h:33</div></div>
+<div class="ttc" id="aclass_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition</b> Canvas.h:33</div></div>
 <div class="ttc" id="aclass_canvas_html_ab30fd9e99385a46d9d22b39407f68265"><div class="ttname"><a href="class_canvas.html#ab30fd9e99385a46d9d22b39407f68265">Canvas::BTE_CopyFrom</a></div><div class="ttdeci">void BTE_CopyFrom(const Canvas &amp;source) const</div><div class="ttdoc">Uses BTE engine to copy entire image from source canvas to this one.</div><div class="ttdef"><b>Definition</b> Canvas.cpp:75</div></div>
-<div class="ttc" id="aclass_d_r_a_m___canvas_html"><div class="ttname"><a href="class_d_r_a_m___canvas.html">DRAM_Canvas</a></div><div class="ttdoc">Variation of the Canvas class that can copy imagery from another canvas.</div><div class="ttdef"><b>Definition</b> Canvas.h:411</div></div>
+<div class="ttc" id="aclass_d_r_a_m___canvas_html"><div class="ttname"><a href="class_d_r_a_m___canvas.html">DRAM_Canvas</a></div><div class="ttdef"><b>Definition</b> Canvas.h:411</div></div>
 <div class="ttc" id="aclass_immediate_button_html_a09c557339754b3fd5813ff0fb51c1c06"><div class="ttname"><a href="class_immediate_button.html#a09c557339754b3fd5813ff0fb51c1c06">ImmediateButton::ImmediateButton</a></div><div class="ttdeci">ImmediateButton(Canvas &amp;DestCanvas, const Block_Image &amp;DestLoc, callback_function callback)</div><div class="ttdoc">ImmediateButton Constructor.</div><div class="ttdef"><b>Definition</b> Button.h:381</div></div>
 <div class="ttc" id="aclass_immediate_button_html_a88520eaf3b60c634a8e752eba0e0c735"><div class="ttname"><a href="class_immediate_button.html#a88520eaf3b60c634a8e752eba0e0c735">ImmediateButton::press</a></div><div class="ttdeci">bool press(FT5316::TouchLocation loc) override</div><div class="ttdoc">Presses the button if loc is within the bounds of the button.</div><div class="ttdef"><b>Definition</b> Button.cpp:125</div></div>
 <div class="ttc" id="aclass_immediate_button_html_aa9b3f0e0f1b913650fdf244d1a731044"><div class="ttname"><a href="class_immediate_button.html#aa9b3f0e0f1b913650fdf244d1a731044">ImmediateButton::~ImmediateButton</a></div><div class="ttdeci">~ImmediateButton(void)=default</div><div class="ttdoc">Default destructor.</div></div>

@@ -1,0 +1,166 @@
+\doxysection{Sensor Class Reference}
+\hypertarget{class_sensor}{}\label{class_sensor}\index{Sensor@{Sensor}}
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+Inheritance diagram for Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sensor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} = float
+\begin{DoxyCompactList}\small\item\em Type definition used by \doxylink{class_sensor}{Sensor} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_sensor_a9b1b27cb1d329785e97615375c1ddd10}{begin}} (void)=0
+\begin{DoxyCompactList}\small\item\em Initializes the sensors used by this object. Not needed if only using simulated sensor values. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sensor_ada1cfc26f4598d27bdfd50664a0e56c1}{read}} (void)=0
+\begin{DoxyCompactList}\small\item\em Reads the sensor and updates the value stored within this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensor_a9414cf75cbc6f4810d254cfba2b14110}{simulate}} (void)
+\begin{DoxyCompactList}\small\item\em Simulates a new sensor value, storing the results in this object. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} \mbox{\hyperlink{class_sensor_a7dd38d6781f8ccc6da81b76dd4b9422d}{value}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the sensor value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}} (\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} initial\+Value, \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} max\+Val, \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} min\+Val, \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} sim\+Delta)
+\begin{DoxyCompactList}\small\item\em Protected constructor for \doxylink{class_sensor}{Sensor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sensor_a2561088ed8350df5d5d53a079b57a113}{\texorpdfstring{$\sim$}{\string~}\+Sensor}} (void)=default
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_sensor}{Sensor} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} \mbox{\hyperlink{class_sensor_a199a36e84706b7183a00683d19a8f4d4}{\+\_\+value}}
+\begin{DoxyCompactList}\small\item\em Most recent sensor reading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}\index{Sensor@{Sensor}!sensorVal\_t@{sensorVal\_t}}
+\index{sensorVal\_t@{sensorVal\_t}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{sensorVal\_t}{sensorVal\_t}}
+{\footnotesize\ttfamily \label{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef} 
+using \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{Sensor\+::sensor\+Val\+\_\+t}} = float}
+
+
+
+Type definition used by \doxylink{class_sensor}{Sensor} class. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sensor_ade0a79b60a2ec6820c7114448b062b67}\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}}
+{\footnotesize\ttfamily \label{class_sensor_ade0a79b60a2ec6820c7114448b062b67} 
+Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}}}]{initial\+Value}{, }\item[{\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}}}]{max\+Val}{, }\item[{\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}}}]{min\+Val}{, }\item[{\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}}}]{sim\+Delta}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Protected constructor for \doxylink{class_sensor}{Sensor}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em initial\+Value} & Initial simulation value \\
+\hline
+\mbox{\texttt{ in}}  & {\em max\+Val} & Max simulated value \\
+\hline
+\mbox{\texttt{ in}}  & {\em min\+Val} & Min simulated value \\
+\hline
+\mbox{\texttt{ in}}  & {\em sim\+Delta} & Change in value for each simulation step \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sensor_a2561088ed8350df5d5d53a079b57a113}\index{Sensor@{Sensor}!````~Sensor@{\texorpdfstring{$\sim$}{\string~}Sensor}}
+\index{````~Sensor@{\texorpdfstring{$\sim$}{\string~}Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sensor()}{\string~Sensor()}}
+{\footnotesize\ttfamily \label{class_sensor_a2561088ed8350df5d5d53a079b57a113} 
+Sensor\+::\texorpdfstring{$\sim$}{\string~}\+Sensor (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Destroy the \doxylink{class_sensor}{Sensor} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sensor_a9b1b27cb1d329785e97615375c1ddd10}\index{Sensor@{Sensor}!begin@{begin}}
+\index{begin@{begin}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_sensor_a9b1b27cb1d329785e97615375c1ddd10} 
+virtual void Sensor\+::begin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes the sensors used by this object. Not needed if only using simulated sensor values. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Implemented in \mbox{\hyperlink{class_chiller_temp_sensor_a07be0830956e221cf7ee5b69306953be}{Chiller\+Temp\+Sensor}}, \mbox{\hyperlink{class_kettle_temp_sensor_a272a1c6a853a8e547d9d26002f591fde}{Kettle\+Temp\+Sensor}}, and \mbox{\hyperlink{class_kettle_vol_sensor_aba55f4fb05eb7c72b9e50ee16fc6f10f}{Kettle\+Vol\+Sensor}}.
+
+\Hypertarget{class_sensor_ada1cfc26f4598d27bdfd50664a0e56c1}\index{Sensor@{Sensor}!read@{read}}
+\index{read@{read}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_sensor_ada1cfc26f4598d27bdfd50664a0e56c1} 
+virtual void Sensor\+::read (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads the sensor and updates the value stored within this object. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Implemented in \mbox{\hyperlink{class_chiller_temp_sensor_abf30349d02251cec56e7eb0fd568a60d}{Chiller\+Temp\+Sensor}}, \mbox{\hyperlink{class_kettle_temp_sensor_aa170d48687f39327c048e40d67b54b9b}{Kettle\+Temp\+Sensor}}, and \mbox{\hyperlink{class_kettle_vol_sensor_a8838fb9771f407777fce08f7542ff438}{Kettle\+Vol\+Sensor}}.
+
+\Hypertarget{class_sensor_a9414cf75cbc6f4810d254cfba2b14110}\index{Sensor@{Sensor}!simulate@{simulate}}
+\index{simulate@{simulate}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily \label{class_sensor_a9414cf75cbc6f4810d254cfba2b14110} 
+void Sensor\+::simulate (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Simulates a new sensor value, storing the results in this object. 
+
+\Hypertarget{class_sensor_a7dd38d6781f8ccc6da81b76dd4b9422d}\index{Sensor@{Sensor}!value@{value}}
+\index{value@{value}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily \label{class_sensor_a7dd38d6781f8ccc6da81b76dd4b9422d} 
+const \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} Sensor\+::value (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the sensor value. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_sensor_a199a36e84706b7183a00683d19a8f4d4}\index{Sensor@{Sensor}!\_value@{\_value}}
+\index{\_value@{\_value}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{\_value}{\_value}}
+{\footnotesize\ttfamily \label{class_sensor_a199a36e84706b7183a00683d19a8f4d4} 
+\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} Sensor\+::\+\_\+value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Most recent sensor reading. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_sensor_8h}{Sensor.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_sensor_8cpp}{Sensor.\+cpp}}\end{DoxyCompactItemize}

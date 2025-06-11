@@ -1,0 +1,76 @@
+\doxysection{Setup Namespace Reference}
+\hypertarget{namespace_setup}{}\label{namespace_setup}\index{Setup@{Setup}}
+
+
+Contains setup functions for the Solo Controller application.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_setup_a5686fb83fd9eea3e8c16226863de3598}{pin\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em Sets up the Arduino pins for the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_setup_ad6e12570a013a041d84c999009fe413f}{TFT}} (void)
+\begin{DoxyCompactList}\small\item\em Initilizes the TFT display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_setup_ac52d05a0d4da6955007cb1098828ee40}{menu\+System}} (void)
+\begin{DoxyCompactList}\small\item\em Initilizes the menu system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_setup_ad0060655176e56dcd4755c61a2556792}{tasks}} (void)
+\begin{DoxyCompactList}\small\item\em Initilizes baseline set of tasks that operate the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains setup functions for the Solo Controller application. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_setup_ac52d05a0d4da6955007cb1098828ee40}\index{Setup@{Setup}!menuSystem@{menuSystem}}
+\index{menuSystem@{menuSystem}!Setup@{Setup}}
+\doxysubsubsection{\texorpdfstring{menuSystem()}{menuSystem()}}
+{\footnotesize\ttfamily \label{namespace_setup_ac52d05a0d4da6955007cb1098828ee40} 
+void Setup\+::menu\+System (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initilizes the menu system. 
+
+Assumes that the TFT has already been initialized. \begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{namespace_setup_a5686fb83fd9eea3e8c16226863de3598}\index{Setup@{Setup}!pinConfig@{pinConfig}}
+\index{pinConfig@{pinConfig}!Setup@{Setup}}
+\doxysubsubsection{\texorpdfstring{pinConfig()}{pinConfig()}}
+{\footnotesize\ttfamily \label{namespace_setup_a5686fb83fd9eea3e8c16226863de3598} 
+void Setup\+::pin\+Config (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Sets up the Arduino pins for the application. 
+
+Sets up the Arduino pins for the application. This includes setting the pin modes and initializing devices. \begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{namespace_setup_ad0060655176e56dcd4755c61a2556792}\index{Setup@{Setup}!tasks@{tasks}}
+\index{tasks@{tasks}!Setup@{Setup}}
+\doxysubsubsection{\texorpdfstring{tasks()}{tasks()}}
+{\footnotesize\ttfamily \label{namespace_setup_ad0060655176e56dcd4755c61a2556792} 
+void Setup\+::tasks (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initilizes baseline set of tasks that operate the application. 
+
+Assumes that the menu system has already been initialized. \begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{namespace_setup_ad6e12570a013a041d84c999009fe413f}\index{Setup@{Setup}!TFT@{TFT}}
+\index{TFT@{TFT}!Setup@{Setup}}
+\doxysubsubsection{\texorpdfstring{TFT()}{TFT()}}
+{\footnotesize\ttfamily \label{namespace_setup_ad6e12570a013a041d84c999009fe413f} 
+void Setup\+::\+TFT (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initilizes the TFT display. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}

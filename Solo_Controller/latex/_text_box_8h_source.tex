@@ -1,0 +1,160 @@
+\doxysection{Text\+Box.\+h}
+\hypertarget{_text_box_8h_source}{}\label{_text_box_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TextBox.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TextBox.h}}
+\mbox{\hyperlink{_text_box_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ TextBox.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ Defines\ TextBox\ and\ TextBox\ which\ are\ used\ to\ display\ dynamic}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ \ \ \ \ text\ within\ a\ canvas}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ @details\ This\ file\ contains\ a\ number\ of\ of\ type\ definitions\ that\ are\ used\ by}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ TextBox\ and\ TextBox\ constructors.\ The\ intent\ here\ is\ to\ greatly}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ simplify\ the\ use\ of\ TextBox\ by\ providing\ users\ with\ a\ collection\ of}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ pre-\/set\ configurations\ to\ choose\ from.}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ TEXTBOX\_HEADER}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ TEXTBOX\_HEADER}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_canvas_8h}{Canvas.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gr_font_8h}{GrFont.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_text_box___definitions_8h}{TextBox\_Definitions.h}}"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00022\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00023\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ DynamicText\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00024\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00025\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ @brief\ Defines\ a\ simple\ text\ box\ for\ displaying\ dynamic\ text\ onto\ a\ Canvas}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ @details\ Before\ attempting\ to\ use\ this\ class,\ the\ caller\ must\ do\ two\ things.}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ First\ the\ caller\ must\ fully\ initialize\ the\ font\ object\ provided\ to\ the}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ DynamicText\ constructor.\ This\ means\ instantiating\ the\ GrFont\ object\ followed}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ by\ a\ call\ to\ the\ GrFont::begin(),\ which\ loads\ and\ colorizes\ the\ fonts.\ Second,}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ the\ caller\ must\ call\ the\ DynamicText::begin()\ method\ after\ object\ instantiation.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ @code\ \{.cpp\}}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ *\ //\ Create\ Font}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ *\ \#include\ "{}fonts/Monofonto-\/Regular-\/180.h"{}}}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ *\ auto\ font\ =\ WorkSans\_SemiBold\_180();}}
+\DoxyCodeLine{00038\ \textcolor{comment}{\ *\ font.begin(Red);}}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00040\ \textcolor{comment}{\ *\ //Create\ and\ use\ DynamicText}}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ *\ auto\ myDynamicText\ =\ DynamicText(myCanvas,\ x0,\ y0,\ width,\ height,\ baseline,\ font);}}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ *\ myDynamicText.begin();}}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ *\ myDynamicText.update(value);}}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ *\ @endcode}}
+\DoxyCodeLine{00045\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dynamic_text_aa9da32ab4596565234074d938c71cb25}{DynamicText}}}
+\DoxyCodeLine{00047\ \{}
+\DoxyCodeLine{00048\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{TextAlign}}}
+\DoxyCodeLine{00053\ \ \ \ \ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548ad728e67e2b1809da51f1e9b1e40262e2}{LEFT}},}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63}{CENTER}},}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548a063df17be72e91275b484b474914393e}{RIGHT}}}
+\DoxyCodeLine{00057\ \ \ \ \ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_canvas}{Canvas}}\ \&\_DestCanvas;\ \ \ \ \ \textcolor{comment}{//\ Reference\ to\ the\ canvas\ where\ the\ text\ box\ will\ be\ displayed}}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_canvas}{Canvas}}\ \_BckgCanvas;\ \ \ \ \ \ \textcolor{comment}{//\ Canvas\ containing\ the\ background\ image\ upon\ which\ the\ text\ will\ be\ drawn}}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_canvas}{Canvas}}\ \_DraftCanvas;\ \ \ \ \ \textcolor{comment}{//\ Canvas\ used\ to\ build\ up\ the\ text\ box}}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{TextAlign}}\ \_align;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Text\ alignment\ within\ the\ text\ box}}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *\_Font\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Primary\ font\ to\ be\ used}}
+\DoxyCodeLine{00065\ \ \ \ \ uint16\_t\ \_baseline;\ \ \ \ \ \ \textcolor{comment}{//\ Vertical\ position\ for\ the\ baseline\ of\ the\ text\ within\ DynamicText}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_dynamic_text_a6b8288cfbc78a8cf9dfa5b50f9ce11e1}{X}};\ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_dynamic_text_a0dc1d506cdf6572dd285e2493855007c}{Y}};\ \ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_dynamic_text_a1531e1131707c5d0d55d29ad9dc46ff9}{WIDTH}};\ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_dynamic_text_a6848f73ca2a1f52ba3c4e4e76b152720}{HEIGHT}};\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_dynamic_text_aa9da32ab4596565234074d938c71cb25}{DynamicText}}(\mbox{\hyperlink{class_canvas}{Canvas}}\ \&DestCanvas,\ uint16\_t\ x,\ uint16\_t\ y,\ uint16\_t\ width,\ uint16\_t\ height,\ uint16\_t\ baseline,}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *Font,\ \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{TextAlign}}\ \mbox{\hyperlink{class_dynamic_text_adffaa1d1407dc438644857cea8f4a528}{align}}\ =\ \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63}{CENTER}})}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ :\ \_DestCanvas\{DestCanvas\},\ \_BckgCanvas\{width,\ height\},\ \_DraftCanvas\{width,\ height\},}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \_align\{\mbox{\hyperlink{class_dynamic_text_adffaa1d1407dc438644857cea8f4a528}{align}}\},\ \_Font\{Font\},\ \_baseline\{baseline\},\ \mbox{\hyperlink{class_dynamic_text_a6b8288cfbc78a8cf9dfa5b50f9ce11e1}{X}}\{x\},\ \mbox{\hyperlink{class_dynamic_text_a0dc1d506cdf6572dd285e2493855007c}{Y}}\{y\},\ \mbox{\hyperlink{class_dynamic_text_a1531e1131707c5d0d55d29ad9dc46ff9}{WIDTH}}\{width\},\ \mbox{\hyperlink{class_dynamic_text_a6848f73ca2a1f52ba3c4e4e76b152720}{HEIGHT}}\{height\}\ \{\};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_dynamic_text}{DynamicText}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dynamic_text_a6640a88db553f0c519522c84d2159e29}{begin}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dynamic_text_adffaa1d1407dc438644857cea8f4a528}{align}}(\mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{TextAlign}}\ \mbox{\hyperlink{class_dynamic_text_adffaa1d1407dc438644857cea8f4a528}{align}})}
+\DoxyCodeLine{00107\ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \_align\ =\ \mbox{\hyperlink{class_dynamic_text_adffaa1d1407dc438644857cea8f4a528}{align}};}
+\DoxyCodeLine{00109\ \ \ \ \ \};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dynamic_text_a8c39c7c6701a91b144a6d532e0a7ddcf}{update}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *text,\ uint16\_t\ textBuffSize);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dynamic_text_a8c39c7c6701a91b144a6d532e0a7ddcf}{update}}(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dynamic_text_aebf272bd8cd47b9870574ecfc4004720}{initializeFonts}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{//\ Verifies\ that\ \_Font\ has\ been\ initilized.\ If\ not,\ the\ applications\ is}}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{comment}{//\ halted.}}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \_validateFont(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00132\ \};}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00135\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00136\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ TextBox\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00137\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00138\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00139\ \textcolor{comment}{\ *\ @brief\ Composite\ object\ containing\ a\ "{}Value"{}\ and\ "{}Units"{}\ Text\ Box}}
+\DoxyCodeLine{00140\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00141\ \textcolor{comment}{\ *\ @details\ Before\ attempting\ to\ use\ this\ class,\ the\ caller\ must\ do\ two\ things.}}
+\DoxyCodeLine{00142\ \textcolor{comment}{\ *\ First\ the\ caller\ must\ fully\ initialize\ the\ fonts\ used\ by\ this\ class.\ This\ is}}
+\DoxyCodeLine{00143\ \textcolor{comment}{\ *\ accomplished\ by\ making\ a\ call\ to\ TextBox::initializeFonts().\ Second,}}
+\DoxyCodeLine{00144\ \textcolor{comment}{\ *\ the\ caller\ must\ call\ the\ TextBox::begin()\ method\ after\ object\ instantiation.}}
+\DoxyCodeLine{00145\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00146\ \textcolor{comment}{\ *\ @code\ \{.cpp\}}}
+\DoxyCodeLine{00147\ \textcolor{comment}{\ *\ TextBox::initializeFonts();}}
+\DoxyCodeLine{00148\ \textcolor{comment}{\ *\ auto\ myTextBox\ =\ TextBox(myCanvas,\ TextBox::config.main.kettleTemp);}}
+\DoxyCodeLine{00149\ \textcolor{comment}{\ *\ myTextBox.begin();}}
+\DoxyCodeLine{00150\ \textcolor{comment}{\ *\ myTextBox.Units.update("{}F"{},\ 2);}}
+\DoxyCodeLine{00151\ \textcolor{comment}{\ *\ myTextBox.Value.update(value);}}
+\DoxyCodeLine{00152\ \textcolor{comment}{\ *\ @endcode}}
+\DoxyCodeLine{00153\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00154\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_text_box_a8d6b22749bfd375277972729b7ddb550}{TextBox}}}
+\DoxyCodeLine{00155\ \{}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_font___list__t}{Font\_List\_t}}\ font;\ \ \textcolor{comment}{//\ List\ of\ fonts\ used\ by\ TextBox}}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_shape_list__t}{ShapeList\_t}}\ shape;\ \textcolor{comment}{//\ Geometric\ shape\ configuration\ for\ the\ expected\ fonts}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_config_list__t}{ConfigList\_t}}\ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}};}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{class_dynamic_text}{DynamicText}}\ \mbox{\hyperlink{class_text_box_a5241024ca7ac8d7d34876586ccaf149e}{Value}};\ }
+\DoxyCodeLine{00168\ \ \ \ \ \mbox{\hyperlink{class_dynamic_text}{DynamicText}}\ \mbox{\hyperlink{class_text_box_a46428da36035957950e6d93a242c2929}{Units}};\ }
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_text_box_a4416c8251089e852449c838d2f54771c}{X}};\ \ \ \ \ \ \textcolor{comment}{//\ UL\ x\ position\ of\ the\ text\ box\ within\ \_DestCanvas}}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_text_box_a1e9f67853cf1a1dcec36f4663fa4c025}{Y}};\ \ \ \ \ \ \textcolor{comment}{//\ UL\ y\ position\ of\ the\ text\ box\ within\ \_DestCanvas}}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_text_box_acbb5c398144ee830c6f88772a00f2538}{WIDTH}};\ \ \textcolor{comment}{//\ Full\ width\ of\ the\ text\ box\ and\ units}}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_text_box_addeeda7443449833bd224fe0977dab59}{HEIGHT}};\ \textcolor{comment}{//\ Height\ of\ the\ text\ box\ within\ \_DestCanvas}}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00189\ \ \ \ \ \mbox{\hyperlink{class_text_box_a8d6b22749bfd375277972729b7ddb550}{TextBox}}(\mbox{\hyperlink{class_canvas}{Canvas}}\ \&DestCanvas,\ uint16\_t\ x,\ uint16\_t\ y,}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ uint16\_t\ textWidth,\ uint16\_t\ unitsWidth,\ uint16\_t\ height,\ uint16\_t\ baseline,}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *TextFont,\ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *UnitsFont)}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_text_box_a5241024ca7ac8d7d34876586ccaf149e}{Value}}\{DestCanvas,\ x,\ y,\ textWidth,\ height,\ baseline,\ TextFont,\ \mbox{\hyperlink{class_dynamic_text}{DynamicText}}::TextAlign::RIGHT\},}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_box_a46428da36035957950e6d93a242c2929}{Units}}\{DestCanvas,\ x\ +\ textWidth,\ y,\ unitsWidth,\ height,\ baseline,\ UnitsFont,\ \mbox{\hyperlink{class_dynamic_text}{DynamicText}}::TextAlign::LEFT\},}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_box_a4416c8251089e852449c838d2f54771c}{X}}\{x\},\ \mbox{\hyperlink{class_text_box_a1e9f67853cf1a1dcec36f4663fa4c025}{Y}}\{y\},\ \mbox{\hyperlink{class_text_box_acbb5c398144ee830c6f88772a00f2538}{WIDTH}}\{textWidth\ +\ unitsWidth\},\ \mbox{\hyperlink{class_text_box_addeeda7443449833bd224fe0977dab59}{HEIGHT}}\{height\}\ \{\}}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00203\ \ \ \ \ \mbox{\hyperlink{class_text_box_a25e3440017d0af69630be6f941e52ad3}{TextBox}}(\mbox{\hyperlink{class_canvas}{Canvas}}\ \&DestCanvas,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}})}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_text_box_a8d6b22749bfd375277972729b7ddb550}{TextBox}}\{DestCanvas,\ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}-\/>x,\ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}-\/>y,\ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}-\/>textWidth,}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}-\/>shape-\/>unitsWidth,\ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}-\/>shape-\/>height,\ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}-\/>shape-\/>baseline,}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}-\/>TextFont,\ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}-\/>UnitsFont\}\ \{\}}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_box_a1c8508a8728df6881dc46c8406e01c0b}{initializeFonts}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_box_ae0783ad0165ef96277643025449b09b7}{begin}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00226\ \ \ \ \ \{}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_box_a5241024ca7ac8d7d34876586ccaf149e}{Value}}.begin();}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_text_box_a46428da36035957950e6d93a242c2929}{Units}}.begin();}
+\DoxyCodeLine{00229\ \ \ \ \ \}}
+\DoxyCodeLine{00230\ \};}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

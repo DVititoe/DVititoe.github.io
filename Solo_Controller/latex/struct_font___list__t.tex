@@ -1,0 +1,59 @@
+\doxysection{Font\+\_\+\+List\+\_\+t Struct Reference}
+\hypertarget{struct_font___list__t}{}\label{struct_font___list__t}\index{Font\_List\_t@{Font\_List\_t}}
+
+
+List of pointers the fonts to be used by the application.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Box\+\_\+\+Definitions.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_font___list__t_ab652261933e7b7789d0216f802025552}{Red180}}
+\item 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_font___list__t_afed733782e5646ce027aaa6be8610d0f}{Blue64}}
+\item 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_font___list__t_a88183a3fa4734122e97ead8fd39eb812}{Red64}}
+\item 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_font___list__t_a84e434adb8ccd2b80fab661cbc98580e}{Green20}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+List of pointers the fonts to be used by the application. 
+
+Each instantiated font stores its glyphs as a 16-\/bit image in a \doxylink{class_canvas}{Canvas} (DRAM). Therefore, we need to avoid creating unnecessary copies of each font. This structure defines the list of fonts that any \doxylink{class_dynamic_text}{Dynamic\+Text} instance can use. These fonts are initiatized via a call to the static function \doxylink{class_dynamic_text_aebf272bd8cd47b9870574ecfc4004720}{Dynamic\+Text\+::initialize\+Fonts()}. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_font___list__t_afed733782e5646ce027aaa6be8610d0f}\index{Font\_List\_t@{Font\_List\_t}!Blue64@{Blue64}}
+\index{Blue64@{Blue64}!Font\_List\_t@{Font\_List\_t}}
+\doxysubsubsection{\texorpdfstring{Blue64}{Blue64}}
+{\footnotesize\ttfamily \label{struct_font___list__t_afed733782e5646ce027aaa6be8610d0f} 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}}\texorpdfstring{$\ast$}{*} Font\+\_\+\+List\+\_\+t\+::\+Blue64}
+
+\Hypertarget{struct_font___list__t_a84e434adb8ccd2b80fab661cbc98580e}\index{Font\_List\_t@{Font\_List\_t}!Green20@{Green20}}
+\index{Green20@{Green20}!Font\_List\_t@{Font\_List\_t}}
+\doxysubsubsection{\texorpdfstring{Green20}{Green20}}
+{\footnotesize\ttfamily \label{struct_font___list__t_a84e434adb8ccd2b80fab661cbc98580e} 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}}\texorpdfstring{$\ast$}{*} Font\+\_\+\+List\+\_\+t\+::\+Green20}
+
+\Hypertarget{struct_font___list__t_ab652261933e7b7789d0216f802025552}\index{Font\_List\_t@{Font\_List\_t}!Red180@{Red180}}
+\index{Red180@{Red180}!Font\_List\_t@{Font\_List\_t}}
+\doxysubsubsection{\texorpdfstring{Red180}{Red180}}
+{\footnotesize\ttfamily \label{struct_font___list__t_ab652261933e7b7789d0216f802025552} 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}}\texorpdfstring{$\ast$}{*} Font\+\_\+\+List\+\_\+t\+::\+Red180}
+
+\Hypertarget{struct_font___list__t_a88183a3fa4734122e97ead8fd39eb812}\index{Font\_List\_t@{Font\_List\_t}!Red64@{Red64}}
+\index{Red64@{Red64}!Font\_List\_t@{Font\_List\_t}}
+\doxysubsubsection{\texorpdfstring{Red64}{Red64}}
+{\footnotesize\ttfamily \label{struct_font___list__t_a88183a3fa4734122e97ead8fd39eb812} 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}}\texorpdfstring{$\ast$}{*} Font\+\_\+\+List\+\_\+t\+::\+Red64}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/\mbox{\hyperlink{_text_box___definitions_8h}{Text\+Box\+\_\+\+Definitions.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Tasks.h File Reference}
+\hypertarget{_tasks_8h}{}\label{_tasks_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Tasks.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Tasks.h}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_setup}{Setup}}
+\begin{DoxyCompactList}\small\item\em Contains setup functions for the Solo Controller application. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_task}{Task}}
+\begin{DoxyCompactList}\small\item\em Namespace containing functions that initiate Task\+Manager\+IO tasks. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_task_1_1_menu}{Task\+::\+Menu}}
+\begin{DoxyCompactList}\small\item\em Tasks relating to \doxylink{class_solo_menu}{Solo\+Menu} classes. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_task_1_1_error}{Task\+::\+Error}}
+\begin{DoxyCompactList}\small\item\em Tasks relating to the \doxylink{class_err_msg}{Err\+Msg} class. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_task_1_1_sensor}{Task\+::\+Sensor}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_task_1_1_sensor}{Sensor} specific tasks. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_task_1_1_alarm}{Task\+::\+Alarm}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_task_1_1_alarm}{Alarm} specific tasks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_setup_a5686fb83fd9eea3e8c16226863de3598}{Setup\+::pin\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em Sets up the Arduino pins for the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_setup_ad6e12570a013a041d84c999009fe413f}{Setup\+::\+TFT}} (void)
+\begin{DoxyCompactList}\small\item\em Initilizes the TFT display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_setup_ac52d05a0d4da6955007cb1098828ee40}{Setup\+::menu\+System}} (void)
+\begin{DoxyCompactList}\small\item\em Initilizes the menu system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_setup_ad0060655176e56dcd4755c61a2556792}{Setup\+::tasks}} (void)
+\begin{DoxyCompactList}\small\item\em Initilizes baseline set of tasks that operate the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_task_1_1_error_aaecf6f7bda594cf871665ec8907efd18}{Task\+::\+Error\+::test\+If\+User\+Finished\+With\+Err\+Msg}} (void)
+\begin{DoxyCompactList}\small\item\em Creates a task to check for user input to a displayed error message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_task_1_1_error_adc4ee077b4fa2f212df9cf2dd310ba23}{Task\+::\+Error\+::finished\+With\+Err\+Msg}} (void)
+\begin{DoxyCompactList}\small\item\em Deletes the task that checks for user input to a displayed error message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_task_1_1_sensor_a37d7818bc85f3438c920e2dafd13c463}{Task\+::\+Sensor\+::setup\+\_\+simulate\+Sensor\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em Generates simulated temperature and volume data. \end{DoxyCompactList}\end{DoxyCompactItemize}

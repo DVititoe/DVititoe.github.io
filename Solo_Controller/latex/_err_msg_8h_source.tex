@@ -1,0 +1,147 @@
+\doxysection{Err\+Msg.\+h}
+\hypertarget{_err_msg_8h_source}{}\label{_err_msg_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/ErrMsg.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/ErrMsg.h}}
+\mbox{\hyperlink{_err_msg_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ ErrMsg.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ Defines\ a\ mechism\ for\ displaying\ error\ and\ warning\ messages\ onto\ the\ TFT\ display.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ ERRMSG\_HEADER}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ ERRMSG\_HEADER}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_canvas_8h}{Canvas.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menu_8h}{Menu.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ \_MAXCHARS\ 85}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00020\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00021\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ ErrMsg\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00022\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00023\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ @brief\ Provides\ a\ mechnism\ for\ displaying\ error\ and\ warning\ messages\ on\ the\ TFT\ display.}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ @details}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ This\ is\ a\ Singleton\ class.\ Use\ ErrMsg::getInstance()\ to\ obtain\ a\ reference}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ to\ the\ ErrMsg\ instance.\ Warning\ messages\ give\ users\ the\ abiliy\ to\ acknowledge}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ the\ message\ and\ continue.\ Error\ messages\ halt\ the\ program\ altogether.\ The}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ following\ is\ an\ example\ of\ how\ to\ use\ the\ ErrMsg\ class:}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ @code\ \{.cpp\}}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *\ \ \ errMsg.warning()}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ \ \ \ <<\ "{}This\ is\ a\ test\ warning\ message."{}\ <<\ ErrMsg::endl}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ *\ \ \ \ \ <<\ "{}Value\ too\ high:\ "{}\ <<\ value\ <<\ ErrMsg::endl;}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ *\ \ \ errMsg.send();}}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ *\ @endcode}}
+\DoxyCodeLine{00038\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ *\ @note\ It\ is\ recommended\ that\ their\ only\ be\ one\ instance\ of\ ErrMsg\ for\ a}}
+\DoxyCodeLine{00040\ \textcolor{comment}{\ *\ given\ application.}}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }ErrMsg}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_canvas}{Canvas}}\ \_canvas;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Canvas\ for\ displaying\ the\ error\ message}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_x\ =\ 10;\ \ \ \ \ \ \textcolor{comment}{//\ x\ position\ of\ the\ error\ message\ within\ \_canvas}}
+\DoxyCodeLine{00048\ \ \ \ \ uint16\_t\ \_y;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ y\ position\ of\ the\ error\ message\ within\ \_canvas}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_yStart\ =\ 10;\ \textcolor{comment}{//\ Starting\ position\ for\ the\ y\ cursor\ for\ a\ new\ error\ message\ within\ \_canvas}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_yMax\ =\ 480;\ \ \textcolor{comment}{//\ Maximum\ y\ position\ of\ the\ error\ message\ within\ \_canvas}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_deltaY\ =\ 25;\ \textcolor{comment}{//\ Spacing\ between\ lines\ of\ each\ error\ message}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{char}\ \_line[\mbox{\hyperlink{_err_msg_8h_a7c649c9dfa8267f55c87f7d5ff89bdb1}{\_MAXCHARS}}];\ \textcolor{comment}{//\ Buffer\ used\ to\ build\ up\ each\ line\ of\ the\ error\ message}}
+\DoxyCodeLine{00054\ \ \ \ \ uint8\_t\ pos;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ position\ within\ the\ line\ buffer}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ uint16\_t\ \_fontFG\ =\ 0xFFFF;\ \textcolor{comment}{//\ Foreground\ color\ of\ the\ font}}
+\DoxyCodeLine{00057\ \ \ \ \ uint16\_t\ \_fontBG\ =\ 0x0000;\ \textcolor{comment}{//\ Background\ color\ of\ the\ font}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{static}\ ErrMsg\ *\_instance;\ \textcolor{comment}{//\ The\ Singleton\ instance\ of\ ErrMsg}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{enum}\ ErrorType}
+\DoxyCodeLine{00062\ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ WARNING,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ ERROR}
+\DoxyCodeLine{00065\ \ \ \ \ \};}
+\DoxyCodeLine{00066\ \ \ \ \ ErrorType\ \_type;\ \textcolor{comment}{//\ Tracks\ whether\ this\ is\ a\ warning\ or\ error\ message}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_solo_menu}{SoloMenu}}\ *\_origMenu\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ The\ menu\ that\ was\ displayed\ before\ the\ error\ message\ was\ displayed}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{comment}{//\ Private\ Constructor}}
+\DoxyCodeLine{00071\ \ \ \ \ ErrMsg(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ :\ \_canvas\{\},\ \_y\{\_yStart\},\ \_line\{\textcolor{stringliteral}{"{}"{}}\},\ pos\{0\},\ \_type\{ErrorType::WARNING\}}
+\DoxyCodeLine{00073\ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{//\ Private\ Destructor}}
+\DoxyCodeLine{00077\ \ \ \ \ \string~ErrMsg(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_err_msg_1_1_endl_token}{EndlToken}}}
+\DoxyCodeLine{00081\ \ \ \ \ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \};\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{EndlToken}}\ \mbox{\hyperlink{class_err_msg_a78afc654669bd47ac90612fa9838b59b}{endl}};\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{static}\ ErrMsg\ \&\mbox{\hyperlink{class_err_msg_a6e3c7d68a9335359558c3af720cb28d8}{getInstance}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00091\ \ \ \ \ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_instance)}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \_instance\ =\ \textcolor{keyword}{new}\ ErrMsg();}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00095\ \ \ \ \ \};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{class_err_msg}{ErrMsg}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_err_msg}{ErrMsg}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{class_err_msg}{ErrMsg}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_err_msg}{ErrMsg}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{class_err_msg}{ErrMsg}}\ \&\mbox{\hyperlink{class_err_msg_aada2535b49111bce5c4302cd18da0edf}{error}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{class_err_msg}{ErrMsg}}\ \&\mbox{\hyperlink{class_err_msg_a2aedd0a05d94766914cfba46ee909879}{warning}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00136\ \ \ \ \ ErrMsg\ \&\mbox{\hyperlink{class_err_msg_ad5010302edc4ff8ef3b6efa0e1283d34}{operator<<}}(\textcolor{keyword}{const}\ T\ value)}
+\DoxyCodeLine{00137\ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Ignore\ if\ this\ line\ extends\ past\ \_yMax}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_y\ >=\ \_yMax)}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Ignore\ if\ we've\ run\ out\ of\ ro}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ int16\_t\ buffSize\ =\ \mbox{\hyperlink{_err_msg_8h_a7c649c9dfa8267f55c87f7d5ff89bdb1}{\_MAXCHARS}}\ -\/\ pos;}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (buffSize\ <=\ 0)}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Add\ the\ value\ to\ the\ line\ buffer}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \_addToLine(value,\ buffSize);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Finished}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00152\ \ \ \ \ \}}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_err_msg_a478acd57879924ba9357c9d1daec1220}{send}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_err_msg_acfb3e1fbe51558ce82d5fa5b34f021fd}{checkForUserInput}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{comment}{//\ Clears\ the\ canvas\ and\ sets\ the\ background\ color}}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ \_resetCanvas(uint16\_t\ color);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{comment}{//\ Internal\ message\ used\ to\ send\ an\ error\ message\ to\ the\ screen}}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{void}\ \_sendError(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{comment}{//\ Internal\ message\ used\ to\ send\ a\ warning\ message\ to\ the\ screen}}
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{void}\ \_sendWarning(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{comment}{//\ Adds\ a\ value\ to\ the\ current\ line.\ These\ methods\ provide\ functionality\ for\ the\ operator<<()\ method.}}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{void}\ \_addToLine(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keyword}{const}\ value,\ int16\_t\ buffSize);}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{void}\ \_addToLine(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ value,\ int16\_t\ buffSize);}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{void}\ \_addToLine(\textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ value,\ int16\_t\ buffSize);}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{void}\ \_addToLine(\textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ value,\ int16\_t\ buffSize);}
+\DoxyCodeLine{00183\ \};}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00190\ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00191\ \mbox{\hyperlink{class_err_msg}{ErrMsg}}\ \&ErrMsg::operator<<\ <ErrMsg::EndlToken>(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{ErrMsg::EndlToken}}\ value);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00196\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_err_msg}{ErrMsg}}\ \&\mbox{\hyperlink{_err_msg_8cpp_aba17f9ec5e9b5441ed60d8bb1dfe3889}{errMsg}};}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ERRMSG\_HEADER}}
+
+\end{DoxyCode}

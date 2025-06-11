@@ -25,56 +25,7 @@
 var NAVTREE =
 [
   [ "Solo Controller", "index.html", [
-    [ "Touch Screen BIAB Controller", "index.html", "index" ],
-    [ "Electronics Design", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html", [
-      [ "Electronics Components", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md4", [
-        [ "Mega 2560, Rev 3 Microcontroller", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md5", null ],
-        [ "7 inch 1024x600 TFT Touch Display Module", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md6", null ],
-        [ "RA8875 Display Interface Card", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md7", null ],
-        [ "Solo Controller Interface Board", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md8", null ]
-      ] ],
-      [ "Physical Layout of Electronics", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md9", null ],
-      [ "Design Considerations", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md10", [
-        [ "Where the data is stored and how used", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md11", null ],
-        [ "Maximizing use of graphics chip", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_electronics___design.html#autotoc_md12", null ]
-      ] ]
-    ] ],
-    [ "Getting Started", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html", [
-      [ "Minimum hardware needed to get started", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md14", null ],
-      [ "Installing VSCode and PlatformIO", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md15", null ],
-      [ "Updating the Display ROM", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md16", null ],
-      [ "Software Configuration", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md17", null ],
-      [ "Compiling and Testing basic Functionality", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md18", null ],
-      [ "Next Steps", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md19", [
-        [ "Creation of Control I/F PCB", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md20", null ],
-        [ "Build out the HW", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md21", null ],
-        [ "Final Software Configuration", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_getting___started.html#autotoc_md22", null ]
-      ] ]
-    ] ],
-    [ "Hardware Architecture", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html", [
-      [ "Controller Layout", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html#autotoc_md24", null ],
-      [ "Display Box Microcontroller Circuit", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html#autotoc_md25", null ],
-      [ "High Voltage Sensor Breakout Box", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html#autotoc_md26", null ]
-    ] ],
-    [ "Hardware Parts List", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce3fb61242b7bb1a5d1769391465fac5.html", null ],
-    [ "Solo Controller Software Architecture", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html", [
-      [ "Key Software Components", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html#autotoc_md29", null ],
-      [ "User Interface Classes", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html#autotoc_md30", null ],
-      [ "Font Classes", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html#autotoc_md31", null ],
-      [ "Software Dependencies", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html#autotoc_md32", null ]
-    ] ],
-    [ "Solo Controller Interface Board", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html", [
-      [ "Key Features", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md34", null ],
-      [ "Board Pinout", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md35", null ],
-      [ "Circuit Diagram", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md36", [
-        [ "CTP Reset Circuit", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md37", null ],
-        [ "Element Interlock Circuit", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md38", null ]
-      ] ],
-      [ "Circuit Board Layout", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md39", [
-        [ "Front of PCB", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md40", null ],
-        [ "Back of PCB", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md41", null ]
-      ] ]
-    ] ],
+    [ "Solo Controller Documentation", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -112,9 +63,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alarm_mgr_8cpp.html",
-"class_button.html#a36fef3a46a7334d7a889b55db90fe560",
-"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html#autotoc_md36",
-"namespace_t_f_t_m070_a1.html#ac46b371c6b1235e5a2ad1652d07f476f"
+"_t_f_t_m070_a1_8h.html#ac0ba049460582d2e87436e2c38b4a493",
+"main_8cpp.html#a14dd85b5fe650cfca774770b0ed83107",
+"namespace_t_f_t_m070_a1.html#ac10919185b93f49423ae32964f6022b1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,0 +1,84 @@
+\doxysection{Gr\+Font.\+h}
+\hypertarget{_gr_font_8h_source}{}\label{_gr_font_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/GrFont.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/GrFont.h}}
+\mbox{\hyperlink{_gr_font_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ GrFont.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @brief\ Defines\ the\ base\ class\ used\ by\ all\ Graphical\ Fonts}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ GRFONT\_DEFINED}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ GRFONT\_DEFINED}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <arduino.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_canvas_8h}{Canvas.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_char_def__t}{CharDef\_t}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ uint16\_t\ \mbox{\hyperlink{struct_char_def__t_afd2f52a50f3d3233983d9807d56b1be8}{x}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ uint16\_t\ \mbox{\hyperlink{struct_char_def__t_a52bba2a5621bb4d25b92c66d8eb223c3}{y}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ uint16\_t\ \mbox{\hyperlink{struct_char_def__t_a5c9a76806ccba98dfe9aa085cb65193c}{width}};\ \ \ \ }
+\DoxyCodeLine{00022\ \ \ uint16\_t\ \mbox{\hyperlink{struct_char_def__t_a55cc7ec4a21694a85cacd179e125ccff}{height}};\ \ \ }
+\DoxyCodeLine{00023\ \ \ int16\_t\ \mbox{\hyperlink{struct_char_def__t_ad618a1875363da4b8bc6084c3bb4fddf}{xoffset}};\ \ \ }
+\DoxyCodeLine{00024\ \ \ int16\_t\ \mbox{\hyperlink{struct_char_def__t_a48121f073c14880cedb2e15d8d88ac6e}{yoffset}};\ \ \ }
+\DoxyCodeLine{00025\ \ \ uint16\_t\ \mbox{\hyperlink{struct_char_def__t_af6ea3f042b264d8676a2cbffd2dae0b7}{xadvance}};\ }
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00029\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00030\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ GrFont\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00031\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00032\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *\ @brief\ Base\ class\ used\ by\ all\ Graphical\ Fonts}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }GrFont}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ \mbox{\hyperlink{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}{imgLoc}};\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_gr_font_a7414adc97893dfadc75180ae9b3fbc74}{LINE\_HEIGHT}};\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{class_gr_font_a9fbba36d28aa54bde93ceb716236d5e7}{BASE}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \mbox{\hyperlink{class_r_o_m___canvas}{ROM\_Canvas}}\ \_FontCanvas;\ \textcolor{comment}{//\ Canvas\ containing\ the\ font\ imagery}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \textcolor{comment}{//\ Tracks\ whether\ this\ instance\ has\ been\ initialized\ via\ the\ begin(...)\ method.}}
+\DoxyCodeLine{00047\ \ \ \textcolor{keywordtype}{bool}\ \_isInitialized\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{comment}{//\ Private\ method\ for\ initializing\ the\ font\ with\ a\ 12-\/bit\ color.\ This\ encoding}}
+\DoxyCodeLine{00050\ \ \ \textcolor{comment}{//\ scheme\ uses\ bits\ 12:0\ to\ encode\ RGB\ respectively.}}
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ \_begin12Bit(uint16\_t\ color12Bit);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ GrFont(\textcolor{keywordtype}{void})\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{class_gr_font_a3b3ad83ff8c19d708804f962c86f618a}{GrFont}}(\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ \mbox{\hyperlink{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}{imgLoc}},\ uint16\_t\ lineHeight,\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}})}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}{imgLoc}}\{\mbox{\hyperlink{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}{imgLoc}}\},\ \mbox{\hyperlink{class_gr_font_a7414adc97893dfadc75180ae9b3fbc74}{LINE\_HEIGHT}}\{lineHeight\},\ \mbox{\hyperlink{class_gr_font_a9fbba36d28aa54bde93ceb716236d5e7}{BASE}}\{\mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}}\},\ \_FontCanvas\{\mbox{\hyperlink{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}{imgLoc}}\}\ \{\};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gr_font_afafca44ad2132b9a4ef6d6024940f28e}{begin}}(uint16\_t\ color16Bit);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gr_font_afafca44ad2132b9a4ef6d6024940f28e}{begin}}(uint8\_t\ red,\ uint8\_t\ green,\ uint8\_t\ blue);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00086\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_gr_font_a60718c0e9030b3ca20acb3f123b10284}{charDef}}(\textcolor{keywordtype}{char}\ cc,\ \mbox{\hyperlink{struct_char_def__t}{CharDef\_t}}\ \&results)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00094\ \ \ \textcolor{keyword}{inline}\ int8\_t\ \mbox{\hyperlink{class_gr_font_a2fb854b4db5acd71b78df4ca4824fcfb}{kerning}}(uint8\_t\ first,\ uint8\_t\ second)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00095\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00096\ \ \ \ \ uint16\_t\ ID\ =\ (\textcolor{keyword}{static\_cast<}uint16\_t\textcolor{keyword}{>}(first)\ <<\ 8)\ |\ second;}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_gr_font_a2fb854b4db5acd71b78df4ca4824fcfb}{kerning}}(ID);}
+\DoxyCodeLine{00098\ \ \ \};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00108\ \ \ uint8\_t\ \mbox{\hyperlink{class_gr_font_a55a07e7170b193fc56c623ce06e7899d}{placeText}}(\mbox{\hyperlink{class_canvas}{Canvas}}\ \&canvas,\ \textcolor{keywordtype}{char}\ cc,\ uint16\_t\ x,\ uint16\_t\ y)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00119\ \ \ uint8\_t\ \mbox{\hyperlink{class_gr_font_a55a07e7170b193fc56c623ce06e7899d}{placeText}}(\mbox{\hyperlink{class_canvas}{Canvas}}\ \&canvas,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keyword}{const}\ text,\ uint16\_t\ buffSize,\ uint16\_t\ x,\ uint16\_t\ y)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ \ \ uint16\_t\ \mbox{\hyperlink{class_gr_font_a2c5119c7540a24ee77db21bd7a516d32}{textWidth}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ cc)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00134\ \ \ uint16\_t\ \mbox{\hyperlink{class_gr_font_a2c5119c7540a24ee77db21bd7a516d32}{textWidth}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keyword}{const}\ text,\ uint16\_t\ buffSize)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00142\ \ \ \textcolor{keyword}{virtual}\ int8\_t\ \mbox{\hyperlink{class_gr_font_a4f09eb5d3beb8bb3942903cc1191f60d}{kerning}}(uint16\_t\ ID)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00143\ \};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,305 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/\+Common.h File Reference}
+\hypertarget{_common_8h}{}\label{_common_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/Common.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/Common.h}}
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+{\ttfamily \#include "{}TFTM070\+A1.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}}
+\begin{DoxyCompactList}\small\item\em Structure to define the size and location of an image in Flash. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}}
+\begin{DoxyCompactList}\small\item\em Structure to define sub-\/images. Generally associated with a \doxylink{struct_r_o_m___image}{ROM\+\_\+\+Image}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_common_8h_a531d877f78fd6947e54d244a0ec654e5}{CTP\+\_\+\+INT}}~2
+\begin{DoxyCompactList}\small\item\em Interrupt signal notifying host of TFT has been touched. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a74cce026420775a3190fbf1ecb783b35}{TFT\+\_\+\+WAIT}}~3
+\begin{DoxyCompactList}\small\item\em TFT wait signal output. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a7ec13fe8f1170d5c91812abb0ab7b3e6}{TFT\+\_\+\+INT}}~4
+\begin{DoxyCompactList}\small\item\em TFT interrupt signal output. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a0c02554e768e3ca4b84fbd07f1f1097b}{TFT\+\_\+\+SD\+\_\+\+CS}}~5
+\begin{DoxyCompactList}\small\item\em CS pin for SD card reader on display. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a31b88f12495dde0561e26d07adc1b2c9}{CTP\+\_\+\+WAKE}}~6
+\begin{DoxyCompactList}\small\item\em Interrupt signal for the host to change CTP from hibernate to active mocde. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_ad71165520316c6da57812d688e62dede}{CTP\+\_\+\+NOTIF}}~7
+\begin{DoxyCompactList}\small\item\em Notifies host processor that CTP data is ready to read. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a541b5fc642dbcc81f373d4b866c88f80}{TFT\+\_\+\+BL}}~8
+\begin{DoxyCompactList}\small\item\em Backlight pin used by the TFT. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_af81ec4b4eb708da6c9c39a6c5aa1aa4b}{TFT\+\_\+\+RESET}}~9
+\begin{DoxyCompactList}\small\item\em LCD reset. Active low. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a5f4d46ae101b77df78010c506601c87c}{TFT\+\_\+\+CS}}~10
+\begin{DoxyCompactList}\small\item\em CS pin used by the SPI bus to control the TFT. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a2dd443a4430713d325ab86895a4a45eb}{SCK}}~52
+\begin{DoxyCompactList}\small\item\em Clock for the primary SPI bus. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a7334c540878c8c4d801fd75ed9fd8063}{MISO}}~50
+\begin{DoxyCompactList}\small\item\em MISO for the primary SPI bus. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a5d3f11f2fdf8a7e27b975291e0c2c8cc}{MOSI}}~51
+\begin{DoxyCompactList}\small\item\em MOSI for the primary SPI bus. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a460d13e3e4087292a56b46cf7e49fc9f}{MCU\+\_\+\+RST\+\_\+\+TFT}}~A0
+\begin{DoxyCompactList}\small\item\em MCU commands reset of Display. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a9e27e49f40e7acbb55bb085f15dabd99}{ALARM}}~A1
+\begin{DoxyCompactList}\small\item\em Pin that triggers the alarm. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_ac735ae65b04d7f1745e912d60a576668}{VOL\+\_\+\+SENSOR}}~A15
+\begin{DoxyCompactList}\small\item\em Analog kettle volume sensor. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_ab3b7cba602225c494917f733fa079cfe}{ELEM\+\_\+\+CNTRL}}~23
+\begin{DoxyCompactList}\small\item\em Pin that controls the kettle element. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a5c2bd79a5774ca490eccbdecf5771628}{INTERLOCK\+\_\+\+STATUS}}~25
+\begin{DoxyCompactList}\small\item\em Pin that indicates the interlock status. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a4e9e3f3ee9e8d7161ef5a895d990fd7b}{AUX\+\_\+\+OUT}}~31
+\begin{DoxyCompactList}\small\item\em Pin that controls the 120VAC auxiliary output. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a09960734adb9d9bfe1a59c1a22f4a75f}{PUMP\+\_\+\+OUT}}~33
+\begin{DoxyCompactList}\small\item\em Pin that controls the 120VAC pump output. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a14d35a0dadb53d3217edb683b8376339}{CONTACTOR\+\_\+\+STATUS}}~37
+\begin{DoxyCompactList}\small\item\em Pin that indicates the contactor status. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a156875687edb737b52ac4cde4476fe48}{ELEM\+\_\+\+SWITCH\+\_\+\+LED}}~39
+\begin{DoxyCompactList}\small\item\em Pin that controls the LED for the kettle element switch. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a145103118f6d9d1129aa4509cf214a13}{BUZZER}}~41
+\begin{DoxyCompactList}\small\item\em Pin that controls the buzzer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a597a7ed44b4056556edc205765a55e70}{KETTLE\+\_\+\+CS}}~47
+\begin{DoxyCompactList}\small\item\em Pin that controls the kettle RTD temperature sensor. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_common_8h_a4be9f598dafce7335784e0569544fa9c}{CHILLER\+\_\+\+CS}}~49
+\begin{DoxyCompactList}\small\item\em Pin that controls the chiller RTD temperature sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_common_8h_a9e27e49f40e7acbb55bb085f15dabd99}\index{Common.h@{Common.h}!ALARM@{ALARM}}
+\index{ALARM@{ALARM}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{ALARM}{ALARM}}
+{\footnotesize\ttfamily \label{_common_8h_a9e27e49f40e7acbb55bb085f15dabd99} 
+\#define ALARM~A1}
+
+
+
+Pin that triggers the alarm. 
+
+\Hypertarget{_common_8h_a4e9e3f3ee9e8d7161ef5a895d990fd7b}\index{Common.h@{Common.h}!AUX\_OUT@{AUX\_OUT}}
+\index{AUX\_OUT@{AUX\_OUT}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{AUX\_OUT}{AUX\_OUT}}
+{\footnotesize\ttfamily \label{_common_8h_a4e9e3f3ee9e8d7161ef5a895d990fd7b} 
+\#define AUX\+\_\+\+OUT~31}
+
+
+
+Pin that controls the 120VAC auxiliary output. 
+
+\Hypertarget{_common_8h_a145103118f6d9d1129aa4509cf214a13}\index{Common.h@{Common.h}!BUZZER@{BUZZER}}
+\index{BUZZER@{BUZZER}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{BUZZER}{BUZZER}}
+{\footnotesize\ttfamily \label{_common_8h_a145103118f6d9d1129aa4509cf214a13} 
+\#define BUZZER~41}
+
+
+
+Pin that controls the buzzer. 
+
+\Hypertarget{_common_8h_a4be9f598dafce7335784e0569544fa9c}\index{Common.h@{Common.h}!CHILLER\_CS@{CHILLER\_CS}}
+\index{CHILLER\_CS@{CHILLER\_CS}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{CHILLER\_CS}{CHILLER\_CS}}
+{\footnotesize\ttfamily \label{_common_8h_a4be9f598dafce7335784e0569544fa9c} 
+\#define CHILLER\+\_\+\+CS~49}
+
+
+
+Pin that controls the chiller RTD temperature sensor. 
+
+\Hypertarget{_common_8h_a14d35a0dadb53d3217edb683b8376339}\index{Common.h@{Common.h}!CONTACTOR\_STATUS@{CONTACTOR\_STATUS}}
+\index{CONTACTOR\_STATUS@{CONTACTOR\_STATUS}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{CONTACTOR\_STATUS}{CONTACTOR\_STATUS}}
+{\footnotesize\ttfamily \label{_common_8h_a14d35a0dadb53d3217edb683b8376339} 
+\#define CONTACTOR\+\_\+\+STATUS~37}
+
+
+
+Pin that indicates the contactor status. 
+
+\Hypertarget{_common_8h_a531d877f78fd6947e54d244a0ec654e5}\index{Common.h@{Common.h}!CTP\_INT@{CTP\_INT}}
+\index{CTP\_INT@{CTP\_INT}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{CTP\_INT}{CTP\_INT}}
+{\footnotesize\ttfamily \label{_common_8h_a531d877f78fd6947e54d244a0ec654e5} 
+\#define CTP\+\_\+\+INT~2}
+
+
+
+Interrupt signal notifying host of TFT has been touched. 
+
+\Hypertarget{_common_8h_ad71165520316c6da57812d688e62dede}\index{Common.h@{Common.h}!CTP\_NOTIF@{CTP\_NOTIF}}
+\index{CTP\_NOTIF@{CTP\_NOTIF}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{CTP\_NOTIF}{CTP\_NOTIF}}
+{\footnotesize\ttfamily \label{_common_8h_ad71165520316c6da57812d688e62dede} 
+\#define CTP\+\_\+\+NOTIF~7}
+
+
+
+Notifies host processor that CTP data is ready to read. 
+
+\Hypertarget{_common_8h_a31b88f12495dde0561e26d07adc1b2c9}\index{Common.h@{Common.h}!CTP\_WAKE@{CTP\_WAKE}}
+\index{CTP\_WAKE@{CTP\_WAKE}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{CTP\_WAKE}{CTP\_WAKE}}
+{\footnotesize\ttfamily \label{_common_8h_a31b88f12495dde0561e26d07adc1b2c9} 
+\#define CTP\+\_\+\+WAKE~6}
+
+
+
+Interrupt signal for the host to change CTP from hibernate to active mocde. 
+
+\Hypertarget{_common_8h_ab3b7cba602225c494917f733fa079cfe}\index{Common.h@{Common.h}!ELEM\_CNTRL@{ELEM\_CNTRL}}
+\index{ELEM\_CNTRL@{ELEM\_CNTRL}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{ELEM\_CNTRL}{ELEM\_CNTRL}}
+{\footnotesize\ttfamily \label{_common_8h_ab3b7cba602225c494917f733fa079cfe} 
+\#define ELEM\+\_\+\+CNTRL~23}
+
+
+
+Pin that controls the kettle element. 
+
+\Hypertarget{_common_8h_a156875687edb737b52ac4cde4476fe48}\index{Common.h@{Common.h}!ELEM\_SWITCH\_LED@{ELEM\_SWITCH\_LED}}
+\index{ELEM\_SWITCH\_LED@{ELEM\_SWITCH\_LED}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{ELEM\_SWITCH\_LED}{ELEM\_SWITCH\_LED}}
+{\footnotesize\ttfamily \label{_common_8h_a156875687edb737b52ac4cde4476fe48} 
+\#define ELEM\+\_\+\+SWITCH\+\_\+\+LED~39}
+
+
+
+Pin that controls the LED for the kettle element switch. 
+
+\Hypertarget{_common_8h_a5c2bd79a5774ca490eccbdecf5771628}\index{Common.h@{Common.h}!INTERLOCK\_STATUS@{INTERLOCK\_STATUS}}
+\index{INTERLOCK\_STATUS@{INTERLOCK\_STATUS}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{INTERLOCK\_STATUS}{INTERLOCK\_STATUS}}
+{\footnotesize\ttfamily \label{_common_8h_a5c2bd79a5774ca490eccbdecf5771628} 
+\#define INTERLOCK\+\_\+\+STATUS~25}
+
+
+
+Pin that indicates the interlock status. 
+
+\Hypertarget{_common_8h_a597a7ed44b4056556edc205765a55e70}\index{Common.h@{Common.h}!KETTLE\_CS@{KETTLE\_CS}}
+\index{KETTLE\_CS@{KETTLE\_CS}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{KETTLE\_CS}{KETTLE\_CS}}
+{\footnotesize\ttfamily \label{_common_8h_a597a7ed44b4056556edc205765a55e70} 
+\#define KETTLE\+\_\+\+CS~47}
+
+
+
+Pin that controls the kettle RTD temperature sensor. 
+
+\Hypertarget{_common_8h_a460d13e3e4087292a56b46cf7e49fc9f}\index{Common.h@{Common.h}!MCU\_RST\_TFT@{MCU\_RST\_TFT}}
+\index{MCU\_RST\_TFT@{MCU\_RST\_TFT}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{MCU\_RST\_TFT}{MCU\_RST\_TFT}}
+{\footnotesize\ttfamily \label{_common_8h_a460d13e3e4087292a56b46cf7e49fc9f} 
+\#define MCU\+\_\+\+RST\+\_\+\+TFT~A0}
+
+
+
+MCU commands reset of Display. 
+
+\Hypertarget{_common_8h_a7334c540878c8c4d801fd75ed9fd8063}\index{Common.h@{Common.h}!MISO@{MISO}}
+\index{MISO@{MISO}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{MISO}{MISO}}
+{\footnotesize\ttfamily \label{_common_8h_a7334c540878c8c4d801fd75ed9fd8063} 
+\#define MISO~50}
+
+
+
+MISO for the primary SPI bus. 
+
+\Hypertarget{_common_8h_a5d3f11f2fdf8a7e27b975291e0c2c8cc}\index{Common.h@{Common.h}!MOSI@{MOSI}}
+\index{MOSI@{MOSI}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{MOSI}{MOSI}}
+{\footnotesize\ttfamily \label{_common_8h_a5d3f11f2fdf8a7e27b975291e0c2c8cc} 
+\#define MOSI~51}
+
+
+
+MOSI for the primary SPI bus. 
+
+\Hypertarget{_common_8h_a09960734adb9d9bfe1a59c1a22f4a75f}\index{Common.h@{Common.h}!PUMP\_OUT@{PUMP\_OUT}}
+\index{PUMP\_OUT@{PUMP\_OUT}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{PUMP\_OUT}{PUMP\_OUT}}
+{\footnotesize\ttfamily \label{_common_8h_a09960734adb9d9bfe1a59c1a22f4a75f} 
+\#define PUMP\+\_\+\+OUT~33}
+
+
+
+Pin that controls the 120VAC pump output. 
+
+\Hypertarget{_common_8h_a2dd443a4430713d325ab86895a4a45eb}\index{Common.h@{Common.h}!SCK@{SCK}}
+\index{SCK@{SCK}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{SCK}{SCK}}
+{\footnotesize\ttfamily \label{_common_8h_a2dd443a4430713d325ab86895a4a45eb} 
+\#define SCK~52}
+
+
+
+Clock for the primary SPI bus. 
+
+\Hypertarget{_common_8h_a541b5fc642dbcc81f373d4b866c88f80}\index{Common.h@{Common.h}!TFT\_BL@{TFT\_BL}}
+\index{TFT\_BL@{TFT\_BL}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{TFT\_BL}{TFT\_BL}}
+{\footnotesize\ttfamily \label{_common_8h_a541b5fc642dbcc81f373d4b866c88f80} 
+\#define TFT\+\_\+\+BL~8}
+
+
+
+Backlight pin used by the TFT. 
+
+\Hypertarget{_common_8h_a5f4d46ae101b77df78010c506601c87c}\index{Common.h@{Common.h}!TFT\_CS@{TFT\_CS}}
+\index{TFT\_CS@{TFT\_CS}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{TFT\_CS}{TFT\_CS}}
+{\footnotesize\ttfamily \label{_common_8h_a5f4d46ae101b77df78010c506601c87c} 
+\#define TFT\+\_\+\+CS~10}
+
+
+
+CS pin used by the SPI bus to control the TFT. 
+
+\Hypertarget{_common_8h_a7ec13fe8f1170d5c91812abb0ab7b3e6}\index{Common.h@{Common.h}!TFT\_INT@{TFT\_INT}}
+\index{TFT\_INT@{TFT\_INT}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{TFT\_INT}{TFT\_INT}}
+{\footnotesize\ttfamily \label{_common_8h_a7ec13fe8f1170d5c91812abb0ab7b3e6} 
+\#define TFT\+\_\+\+INT~4}
+
+
+
+TFT interrupt signal output. 
+
+\Hypertarget{_common_8h_af81ec4b4eb708da6c9c39a6c5aa1aa4b}\index{Common.h@{Common.h}!TFT\_RESET@{TFT\_RESET}}
+\index{TFT\_RESET@{TFT\_RESET}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{TFT\_RESET}{TFT\_RESET}}
+{\footnotesize\ttfamily \label{_common_8h_af81ec4b4eb708da6c9c39a6c5aa1aa4b} 
+\#define TFT\+\_\+\+RESET~9}
+
+
+
+LCD reset. Active low. 
+
+\Hypertarget{_common_8h_a0c02554e768e3ca4b84fbd07f1f1097b}\index{Common.h@{Common.h}!TFT\_SD\_CS@{TFT\_SD\_CS}}
+\index{TFT\_SD\_CS@{TFT\_SD\_CS}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{TFT\_SD\_CS}{TFT\_SD\_CS}}
+{\footnotesize\ttfamily \label{_common_8h_a0c02554e768e3ca4b84fbd07f1f1097b} 
+\#define TFT\+\_\+\+SD\+\_\+\+CS~5}
+
+
+
+CS pin for SD card reader on display. 
+
+\Hypertarget{_common_8h_a74cce026420775a3190fbf1ecb783b35}\index{Common.h@{Common.h}!TFT\_WAIT@{TFT\_WAIT}}
+\index{TFT\_WAIT@{TFT\_WAIT}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{TFT\_WAIT}{TFT\_WAIT}}
+{\footnotesize\ttfamily \label{_common_8h_a74cce026420775a3190fbf1ecb783b35} 
+\#define TFT\+\_\+\+WAIT~3}
+
+
+
+TFT wait signal output. 
+
+\Hypertarget{_common_8h_ac735ae65b04d7f1745e912d60a576668}\index{Common.h@{Common.h}!VOL\_SENSOR@{VOL\_SENSOR}}
+\index{VOL\_SENSOR@{VOL\_SENSOR}!Common.h@{Common.h}}
+\doxysubsubsection{\texorpdfstring{VOL\_SENSOR}{VOL\_SENSOR}}
+{\footnotesize\ttfamily \label{_common_8h_ac735ae65b04d7f1745e912d60a576668} 
+\#define VOL\+\_\+\+SENSOR~A15}
+
+
+
+Analog kettle volume sensor. 
+

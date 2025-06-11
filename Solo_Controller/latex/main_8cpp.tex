@@ -1,0 +1,147 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/main.cpp@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/main.cpp}}
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+{\ttfamily \#include $<$Task\+Manager\+IO.\+h$>$}\newline
+{\ttfamily \#include "{}Tasks.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{Indent}\textbf{ Configuration parameters}\par
+{\em Gives user the ability to configure the Solo\+Controller application to run in test mode. }\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a8b2f85cb5b8343cb682b4f27808434d6}{OPERATIONAL}}~1
+\begin{DoxyCompactList}\small\item\em Setting this to 0 places the application into test mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_a92711f2817afd9590e7998633fae08a8}{SIMULATE\+\_\+\+SENSORS}}~0
+\begin{DoxyCompactList}\small\item\em Set to 1 to turn on sensor simulation. Set to 0 to turn off. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_a1b0a3e05aece8334bc9966b2cf30bd92}{TEST\+\_\+\+DMA}}~0
+\begin{DoxyCompactList}\small\item\em Set to 1 to turn on DMA tests. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_a7f8584869647e56856380aac8ee6bd95}{TEST\+\_\+\+CANVAS}}~0
+\begin{DoxyCompactList}\small\item\em Set to 1 to turn on \doxylink{class_canvas}{Canvas} tests. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_a19e5884991c92aa540b46e7f52a6bcad}{TEST\+\_\+\+TFT\+\_\+\+TOUCH}}~1
+\begin{DoxyCompactList}\small\item\em Set to 1 to turn on Menu tests. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_a14dd85b5fe650cfca774770b0ed83107}{TEST\+\_\+\+FONTS}}~0
+\begin{DoxyCompactList}\small\item\em Set to 1 to turn on Font tests. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_ad288b770a6467f99b6a4fab45d892a16}{TEST\+\_\+\+ERRMSG}}~0
+\begin{DoxyCompactList}\small\item\em Set to 1 to turn on Error Message tests. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{main_8cpp_ad1ab75e5581d1a9417c6ae05066e857a}{TEST\+\_\+\+TEXTBOX}}~0
+\begin{DoxyCompactList}\small\item\em Set to 1 to turn on \doxylink{class_text_box}{Text\+Box} tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Functions}
+\begin{Indent}\textbf{ Arduino function}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a7dfd9b79bc5a37d7df40207afbc5431f}{setup}} (void)
+\begin{DoxyCompactList}\small\item\em Arduino setup function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a0b33edabd7f1c4e4a0bf32c67269be2f}{loop}} (void)
+\begin{DoxyCompactList}\small\item\em Primary loop for the Arduino application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{main_8cpp_a8b2f85cb5b8343cb682b4f27808434d6}\index{main.cpp@{main.cpp}!OPERATIONAL@{OPERATIONAL}}
+\index{OPERATIONAL@{OPERATIONAL}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{OPERATIONAL}{OPERATIONAL}}
+{\footnotesize\ttfamily \label{main_8cpp_a8b2f85cb5b8343cb682b4f27808434d6} 
+\#define OPERATIONAL~1}
+
+
+
+Setting this to 0 places the application into test mode. 
+
+\Hypertarget{main_8cpp_a92711f2817afd9590e7998633fae08a8}\index{main.cpp@{main.cpp}!SIMULATE\_SENSORS@{SIMULATE\_SENSORS}}
+\index{SIMULATE\_SENSORS@{SIMULATE\_SENSORS}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SIMULATE\_SENSORS}{SIMULATE\_SENSORS}}
+{\footnotesize\ttfamily \label{main_8cpp_a92711f2817afd9590e7998633fae08a8} 
+\#define SIMULATE\+\_\+\+SENSORS~0}
+
+
+
+Set to 1 to turn on sensor simulation. Set to 0 to turn off. 
+
+\Hypertarget{main_8cpp_a7f8584869647e56856380aac8ee6bd95}\index{main.cpp@{main.cpp}!TEST\_CANVAS@{TEST\_CANVAS}}
+\index{TEST\_CANVAS@{TEST\_CANVAS}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CANVAS}{TEST\_CANVAS}}
+{\footnotesize\ttfamily \label{main_8cpp_a7f8584869647e56856380aac8ee6bd95} 
+\#define TEST\+\_\+\+CANVAS~0}
+
+
+
+Set to 1 to turn on \doxylink{class_canvas}{Canvas} tests. 
+
+\Hypertarget{main_8cpp_a1b0a3e05aece8334bc9966b2cf30bd92}\index{main.cpp@{main.cpp}!TEST\_DMA@{TEST\_DMA}}
+\index{TEST\_DMA@{TEST\_DMA}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_DMA}{TEST\_DMA}}
+{\footnotesize\ttfamily \label{main_8cpp_a1b0a3e05aece8334bc9966b2cf30bd92} 
+\#define TEST\+\_\+\+DMA~0}
+
+
+
+Set to 1 to turn on DMA tests. 
+
+\Hypertarget{main_8cpp_ad288b770a6467f99b6a4fab45d892a16}\index{main.cpp@{main.cpp}!TEST\_ERRMSG@{TEST\_ERRMSG}}
+\index{TEST\_ERRMSG@{TEST\_ERRMSG}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_ERRMSG}{TEST\_ERRMSG}}
+{\footnotesize\ttfamily \label{main_8cpp_ad288b770a6467f99b6a4fab45d892a16} 
+\#define TEST\+\_\+\+ERRMSG~0}
+
+
+
+Set to 1 to turn on Error Message tests. 
+
+\Hypertarget{main_8cpp_a14dd85b5fe650cfca774770b0ed83107}\index{main.cpp@{main.cpp}!TEST\_FONTS@{TEST\_FONTS}}
+\index{TEST\_FONTS@{TEST\_FONTS}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_FONTS}{TEST\_FONTS}}
+{\footnotesize\ttfamily \label{main_8cpp_a14dd85b5fe650cfca774770b0ed83107} 
+\#define TEST\+\_\+\+FONTS~0}
+
+
+
+Set to 1 to turn on Font tests. 
+
+\Hypertarget{main_8cpp_ad1ab75e5581d1a9417c6ae05066e857a}\index{main.cpp@{main.cpp}!TEST\_TEXTBOX@{TEST\_TEXTBOX}}
+\index{TEST\_TEXTBOX@{TEST\_TEXTBOX}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_TEXTBOX}{TEST\_TEXTBOX}}
+{\footnotesize\ttfamily \label{main_8cpp_ad1ab75e5581d1a9417c6ae05066e857a} 
+\#define TEST\+\_\+\+TEXTBOX~0}
+
+
+
+Set to 1 to turn on \doxylink{class_text_box}{Text\+Box} tests. 
+
+\Hypertarget{main_8cpp_a19e5884991c92aa540b46e7f52a6bcad}\index{main.cpp@{main.cpp}!TEST\_TFT\_TOUCH@{TEST\_TFT\_TOUCH}}
+\index{TEST\_TFT\_TOUCH@{TEST\_TFT\_TOUCH}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_TFT\_TOUCH}{TEST\_TFT\_TOUCH}}
+{\footnotesize\ttfamily \label{main_8cpp_a19e5884991c92aa540b46e7f52a6bcad} 
+\#define TEST\+\_\+\+TFT\+\_\+\+TOUCH~1}
+
+
+
+Set to 1 to turn on Menu tests. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a0b33edabd7f1c4e4a0bf32c67269be2f}\index{main.cpp@{main.cpp}!loop@{loop}}
+\index{loop@{loop}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \label{main_8cpp_a0b33edabd7f1c4e4a0bf32c67269be2f} 
+void loop (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Primary loop for the Arduino application. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{main_8cpp_a7dfd9b79bc5a37d7df40207afbc5431f}\index{main.cpp@{main.cpp}!setup@{setup}}
+\index{setup@{setup}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{main_8cpp_a7dfd9b79bc5a37d7df40207afbc5431f} 
+void setup (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Arduino setup function. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}

@@ -1,0 +1,47 @@
+\doxysection{Text\+Box\+\_\+\+Config.\+h}
+\hypertarget{_text_box___config_8h_source}{}\label{_text_box___config_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/TextBox\_Config.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/TextBox\_Config.h}}
+\mbox{\hyperlink{_text_box___config_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_text_box___definitions_8h}{TextBox\_Definitions.h}}"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Defines\ static\ data\ used\ by\ the\ TextBox\ class}}
+\DoxyCodeLine{00004\ \mbox{\hyperlink{struct_font___list__t}{Font\_List\_t}}\ TextBox::font;}
+\DoxyCodeLine{00005\ \mbox{\hyperlink{struct_shape_list__t}{ShapeList\_t}}\ TextBox::shape;}
+\DoxyCodeLine{00006\ \mbox{\hyperlink{struct_config_list__t}{ConfigList\_t}}\ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{TextBox::config}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_box_a1c8508a8728df6881dc46c8406e01c0b}{TextBox::initializeFonts}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ See\ if\ things\ have\ already\ been\ initialized}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{if}\ (font.Red180\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Initialize\ all\ the\ fonts}}
+\DoxyCodeLine{00015\ \ \ \ \ font.Red180\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_monofonto___regular__180}{Monofonto\_Regular\_180}}();}
+\DoxyCodeLine{00016\ \ \ \ \ font.Red180-\/>begin(\mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}{Red}});}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ font.Blue64\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_monofonto___regular__64}{Monofonto\_Regular\_64}}();}
+\DoxyCodeLine{00019\ \ \ \ \ font.Blue64-\/>begin(\mbox{\hyperlink{_t_f_t_m070_a1_8h_a6208a194d702872fdbe1d3c7d7a7c879}{Blue}});}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ font.Red64\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_monofonto___regular__64}{Monofonto\_Regular\_64}}();}
+\DoxyCodeLine{00022\ \ \ \ \ font.Red64-\/>begin(\mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}{Red}});}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ font.Green20\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_monofonto___regular__20}{Monofonto\_Regular\_20}}();}
+\DoxyCodeLine{00025\ \ \ \ \ font.Green20-\/>begin(\mbox{\hyperlink{_t_f_t_m070_a1_8h_aa429cd977709122166b6e31fa10903d1}{Green}});}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Define\ font\ shape\ information\ used\ to\ configure\ the\ DynamicTextes}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unitsWidth,\ height,\ baseline}}
+\DoxyCodeLine{00029\ \ \ \ \ shape.WorkSan\_180\_64\_Config\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\{95,\ 120,\ 105\};}
+\DoxyCodeLine{00030\ \ \ \ \ shape.WorkSan\_90\_32\_Config\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\{53,\ 75,\ 68\};}
+\DoxyCodeLine{00031\ \ \ \ \ shape.WorkSan\_64\_20\_Config\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\{37,\ 55,\ 48\};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Create\ DynamicText\ configuration\ information:\ \ \ x,\ \ y,\ textWidth,\ shape,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TextFont,\ \ \ \ UnitsFont}}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}.main.kettleTemp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\{52,\ 87,\ 319,\ shape.WorkSan\_180\_64\_Config,\ font.Red180,\ font.Blue64\};}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}.main.setTemp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\{198,\ 251,\ 156,\ shape.WorkSan\_64\_20\_Config,\ font.Red64,\ font.Green20\};}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}.main.elemOut\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\{198,\ 317,\ 156,\ shape.WorkSan\_64\_20\_Config,\ font.Red64,\ font.Green20\};}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}.main.volume\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\{685,\ 53,\ 156,\ shape.WorkSan\_64\_20\_Config,\ font.Red64,\ font.Green20\};}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}.main.minVolume\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\{685,\ 123,\ 156,\ shape.WorkSan\_64\_20\_Config,\ font.Red64,\ font.Green20\};}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}.main.chillerTemp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\{685,\ 253,\ 156,\ shape.WorkSan\_64\_20\_Config,\ font.Red64,\ font.Green20\};}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}.main.minChillerTemp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\{685,\ 323,\ 156,\ shape.WorkSan\_64\_20\_Config,\ font.Red64,\ font.Green20\};}
+\DoxyCodeLine{00041\ \}}
+
+\end{DoxyCode}

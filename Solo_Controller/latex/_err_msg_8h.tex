@@ -1,0 +1,74 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Err\+Msg.h File Reference}
+\hypertarget{_err_msg_8h}{}\label{_err_msg_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/ErrMsg.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/ErrMsg.h}}
+{\ttfamily \#include "{}Canvas.\+h"{}}\newline
+{\ttfamily \#include "{}Menu.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_err_msg}{Err\+Msg}}
+\item 
+struct \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Err\+Msg\+::\+Endl\+Token}}
+\begin{DoxyCompactList}\small\item\em Token that indicates the end of a line in the error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_err_msg_8h_a7c649c9dfa8267f55c87f7d5ff89bdb1}{\+\_\+\+MAXCHARS}}~85
+\begin{DoxyCompactList}\small\item\em Maximum number of characters that can be displayed in each line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+template$<$$>$ \mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{_err_msg_8h_ab3b76bc3a85b50c66cc734f6736e33e7}{Err\+Msg\+::operator$<$$<$$<$ Err\+Msg\+::\+Endl\+Token $>$}} (const \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Err\+Msg\+::\+Endl\+Token}} value)
+\begin{DoxyCompactList}\small\item\em Specialization of the operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} method for adding a newline to the error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{_err_msg_8h_aba17f9ec5e9b5441ed60d8bb1dfe3889}{err\+Msg}}
+\begin{DoxyCompactList}\small\item\em Global instance of \doxylink{class_err_msg}{Err\+Msg}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_err_msg_8h_a7c649c9dfa8267f55c87f7d5ff89bdb1}\index{ErrMsg.h@{ErrMsg.h}!\_MAXCHARS@{\_MAXCHARS}}
+\index{\_MAXCHARS@{\_MAXCHARS}!ErrMsg.h@{ErrMsg.h}}
+\doxysubsubsection{\texorpdfstring{\_MAXCHARS}{\_MAXCHARS}}
+{\footnotesize\ttfamily \label{_err_msg_8h_a7c649c9dfa8267f55c87f7d5ff89bdb1} 
+\#define \+\_\+\+MAXCHARS~85}
+
+
+
+Maximum number of characters that can be displayed in each line. 
+
+This is set small enough to ensure there is no line wrapping. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_err_msg_8h_ab3b76bc3a85b50c66cc734f6736e33e7}\index{ErrMsg.h@{ErrMsg.h}!ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$@{ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$}}
+\index{ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$@{ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$}!ErrMsg.h@{ErrMsg.h}}
+\doxysubsubsection{\texorpdfstring{ErrMsg::operator$<$$<$$<$ ErrMsg::EndlToken $>$()}{ErrMsg::operator<<< ErrMsg::EndlToken >()}}
+{\footnotesize\ttfamily \label{_err_msg_8h_ab3b76bc3a85b50c66cc734f6736e33e7} 
+template$<$$>$ \\
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& Err\+Msg\+::operator$<$$<$$<$ \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Err\+Msg\+::\+Endl\+Token}} $>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Err\+Msg\+::\+Endl\+Token}}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Specialization of the operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} method for adding a newline to the error message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & The value to be added to the error message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_err_msg_8h_aba17f9ec5e9b5441ed60d8bb1dfe3889}\index{ErrMsg.h@{ErrMsg.h}!errMsg@{errMsg}}
+\index{errMsg@{errMsg}!ErrMsg.h@{ErrMsg.h}}
+\doxysubsubsection{\texorpdfstring{errMsg}{errMsg}}
+{\footnotesize\ttfamily \label{_err_msg_8h_aba17f9ec5e9b5441ed60d8bb1dfe3889} 
+\mbox{\hyperlink{class_err_msg}{Err\+Msg}}\& err\+Msg\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Global instance of \doxylink{class_err_msg}{Err\+Msg}. 
+

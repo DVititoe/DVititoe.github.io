@@ -1,0 +1,182 @@
+\doxysection{Sensor.\+h}
+\hypertarget{_sensor_8h_source}{}\label{_sensor_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Sensor.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Sensor.h}}
+\mbox{\hyperlink{_sensor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Sensor.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @brief\ Defines\ a\ class\ for\ managing\ Sensor\ data}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SENSOR\_INCLUDED}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SENSOR\_INCLUDED}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00012\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00013\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ Sensor\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00014\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00015\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ @brief\ Abstract\ class\ that\ acts\ as\ an\ interface\ for\ all\ sensor\ classes.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ This\ class\ also\ provides\ a\ basic\ simulation\ capability\ that\ can\ be\ used\ when}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ the\ real\ sensors\ are\ not\ available.\ The\ simulation\ varies\ the\ sensor\ value}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ in\ a\ saw-\/tooth\ pattern\ between\ @p\ minVal\ and\ @p\ maxVal.}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}}}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ =\ float;\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Simulation\ parameters}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ MAXVAL;\ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ MINVAL;\ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ SIM\_DELTA;\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ \_currentDelta;\ \ \ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ \mbox{\hyperlink{class_sensor_a199a36e84706b7183a00683d19a8f4d4}{\_value}};\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}}(\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ initialValue,\ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ maxVal,\ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ minVal,\ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ simDelta)}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ :\ MAXVAL\{maxVal\},\ MINVAL\{minVal\},\ SIM\_DELTA\{abs(simDelta)\},}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \_currentDelta\{SIM\_DELTA\},\ \mbox{\hyperlink{class_sensor_a199a36e84706b7183a00683d19a8f4d4}{\_value}}\{initialValue\}\ \{\};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_sensor_a2561088ed8350df5d5d53a079b57a113}{\string~Sensor}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_a9b1b27cb1d329785e97615375c1ddd10}{begin}}(\textcolor{keywordtype}{void})\ =\ 0;}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_ada1cfc26f4598d27bdfd50664a0e56c1}{read}}(\textcolor{keywordtype}{void})\ =\ 0;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sensor_a9414cf75cbc6f4810d254cfba2b14110}{simulate}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensorVal\_t}}\ \mbox{\hyperlink{class_sensor_a7dd38d6781f8ccc6da81b76dd4b9422d}{value}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_sensor_a199a36e84706b7183a00683d19a8f4d4}{\_value}};\ \};}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00087\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00088\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ KettleTempSensor\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00089\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00090\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00091\ \textcolor{comment}{\ *\ @brief\ Manages\ the\ Kettle\ temperature\ probe}}
+\DoxyCodeLine{00092\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00093\ \textcolor{comment}{\ *\ @details\ This\ is\ a\ Singleton\ class.\ It\ reads\ values\ from\ the\ Kettle}}
+\DoxyCodeLine{00094\ \textcolor{comment}{\ *\ temperature\ probe,\ making\ it\ available\ for\ use\ by\ others.}}
+\DoxyCodeLine{00095\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00096\ \textcolor{keyword}{class\ }KettleTempSensor\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}}}
+\DoxyCodeLine{00097\ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{comment}{//\ Instance\ of\ the\ singleton}}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{static}\ KettleTempSensor\ *\_instance;}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//\ Private\ Constructor}}
+\DoxyCodeLine{00102\ \ \ \ \ KettleTempSensor(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}}\{150.0,\ 160.0,\ 145.0,\ 0.9\}\ \{\};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{comment}{//\ Private\ Destructor}}
+\DoxyCodeLine{00106\ \ \ \ \ \string~KettleTempSensor(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{static}\ KettleTempSensor\ \&\mbox{\hyperlink{class_kettle_temp_sensor_a189280bb970abceade7eff38b15fa869}{getInstance}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00115\ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_instance)}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \_instance\ =\ \textcolor{keyword}{new}\ KettleTempSensor();}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00119\ \ \ \ \ \};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{class_kettle_temp_sensor}{KettleTempSensor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_kettle_temp_sensor}{KettleTempSensor}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00125\ \ \ \ \ \mbox{\hyperlink{class_kettle_temp_sensor}{KettleTempSensor}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_kettle_temp_sensor}{KettleTempSensor}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kettle_temp_sensor_a272a1c6a853a8e547d9d26002f591fde}{begin}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kettle_temp_sensor_aa170d48687f39327c048e40d67b54b9b}{read}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00143\ \};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_kettle_temp_sensor}{KettleTempSensor}}\ *\mbox{\hyperlink{_sensor_8cpp_a1eb67bc9cbb286a843adcd2c2663c252}{kettleTemp}};\ }
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00148\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00149\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ ChillerTempSensor\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00150\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00151\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00152\ \textcolor{comment}{\ *\ @brief\ Manages\ the\ Chiller\ temperature\ probe}}
+\DoxyCodeLine{00153\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00154\ \textcolor{comment}{\ *\ @details\ This\ is\ a\ Singleton\ class.\ It\ reads\ values\ from\ the\ Chiller}}
+\DoxyCodeLine{00155\ \textcolor{comment}{\ *\ temperature\ probe,\ making\ it\ available\ for\ use\ by\ others.}}
+\DoxyCodeLine{00156\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00157\ \textcolor{keyword}{class\ }ChillerTempSensor\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}}}
+\DoxyCodeLine{00158\ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{comment}{//\ Instance\ of\ the\ singleton}}
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keyword}{static}\ ChillerTempSensor\ *\_instance;}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{comment}{//\ Private\ Constructor}}
+\DoxyCodeLine{00163\ \ \ \ \ ChillerTempSensor(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}}\{40.0,\ 45.0,\ 35.0,\ 0.5\}\ \{\};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{comment}{//\ Private\ Destructor}}
+\DoxyCodeLine{00167\ \ \ \ \ \string~ChillerTempSensor(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keyword}{static}\ ChillerTempSensor\ \&\mbox{\hyperlink{class_chiller_temp_sensor_afff404c609afec2cee8e3be8e822ca20}{getInstance}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00176\ \ \ \ \ \{}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_instance)}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \_instance\ =\ \textcolor{keyword}{new}\ ChillerTempSensor();}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00180\ \ \ \ \ \};}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{class_chiller_temp_sensor}{ChillerTempSensor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_chiller_temp_sensor}{ChillerTempSensor}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00186\ \ \ \ \ \mbox{\hyperlink{class_chiller_temp_sensor}{ChillerTempSensor}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_chiller_temp_sensor}{ChillerTempSensor}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chiller_temp_sensor_a07be0830956e221cf7ee5b69306953be}{begin}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chiller_temp_sensor_abf30349d02251cec56e7eb0fd568a60d}{read}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00204\ \};}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_chiller_temp_sensor}{ChillerTempSensor}}\ *\mbox{\hyperlink{_sensor_8cpp_a245147231420f404797142da48f998ab}{chillerTemp}};\ }
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00209\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00210\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ KettleVolSensor\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00211\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00212\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00213\ \textcolor{comment}{\ *\ @brief\ Manages\ the\ Kettle\ Volume\ sensor}}
+\DoxyCodeLine{00214\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00215\ \textcolor{comment}{\ *\ @details\ This\ is\ a\ Singleton\ class.\ It\ reads\ values\ from\ the\ volume\ sensor,}}
+\DoxyCodeLine{00216\ \textcolor{comment}{\ *\ making\ it\ available\ for\ use\ by\ others.}}
+\DoxyCodeLine{00217\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00218\ \textcolor{keyword}{class\ }KettleVolSensor\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}}}
+\DoxyCodeLine{00219\ \{}
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{comment}{//\ Instance\ of\ the\ singleton}}
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keyword}{static}\ KettleVolSensor\ *\_instance;}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{comment}{//\ Private\ Constructor}}
+\DoxyCodeLine{00224\ \ \ \ \ KettleVolSensor(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}}\{8.0,\ 9.0,\ 7.0,\ 0.2\}\ \{\};}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{comment}{//\ Private\ Destructor}}
+\DoxyCodeLine{00228\ \ \ \ \ \string~KettleVolSensor(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keyword}{static}\ KettleVolSensor\ \&\mbox{\hyperlink{class_kettle_vol_sensor_a1efa4e96c5f33f491a53d76f325e4b8b}{getInstance}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00237\ \ \ \ \ \{}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_instance)}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \_instance\ =\ \textcolor{keyword}{new}\ KettleVolSensor();}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00241\ \ \ \ \ \};}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00244\ \ \ \ \ \mbox{\hyperlink{class_kettle_vol_sensor}{KettleVolSensor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_kettle_vol_sensor}{KettleVolSensor}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00247\ \ \ \ \ \mbox{\hyperlink{class_kettle_vol_sensor}{KettleVolSensor}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_kettle_vol_sensor}{KettleVolSensor}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kettle_vol_sensor_aba55f4fb05eb7c72b9e50ee16fc6f10f}{begin}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00257\ }
+\DoxyCodeLine{00264\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_kettle_vol_sensor_a8838fb9771f407777fce08f7542ff438}{read}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00265\ \};}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_kettle_vol_sensor}{KettleVolSensor}}\ *\mbox{\hyperlink{_sensor_8cpp_adc201cebde92ea3147906d820b126e9e}{kettleVolume}};\ }
+\DoxyCodeLine{00268\ }
+\DoxyCodeLine{00269\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

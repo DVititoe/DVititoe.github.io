@@ -1,0 +1,199 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Menu.h File Reference}
+\hypertarget{_menu_8h}{}\label{_menu_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Menu.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Menu.h}}
+{\ttfamily \#include "{}Canvas.\+h"{}}\newline
+{\ttfamily \#include "{}Button.\+h"{}}\newline
+{\ttfamily \#include "{}Sensor.\+h"{}}\newline
+{\ttfamily \#include "{}Text\+Box.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_solo_menu}{Solo\+Menu}}
+\item 
+class \mbox{\hyperlink{class_main_menu}{Main\+Menu}}
+\begin{DoxyCompactList}\small\item\em Main menu for the Solo\+Controller application. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_setup_vol_menu}{Setup\+Vol\+Menu}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} menu for the Solo\+Controller application. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_setup_temp_menu}{Setup\+Temp\+Menu}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} menu for the Solo\+Controller application. Note that the callback functions used by \doxylink{class_setup_temp_menu}{Setup\+Temp\+Menu} are contained within the \href{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p.html}{\texttt{ CB\+:\+::\+SETUP\+::\+TEMP}} namespace. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_setup_p_i_d___menu}{Setup\+PID\+\_\+\+Menu}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} menu for the Solo\+Controller application. Note that the callback functions used by \doxylink{class_setup_temp_menu}{Setup\+Temp\+Menu} are contained within the \href{namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d.html}{\texttt{ CB\+:\+::\+SETUP\+::\+PID}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_c_b}{CB}}
+\begin{DoxyCompactList}\small\item\em Primary namespace for \doxylink{class_solo_menu}{Solo\+Menu} callback functions. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n}{CB\+::\+MAIN}}
+\begin{DoxyCompactList}\small\item\em Callback functions used by the \doxylink{class_main_menu}{Main\+Menu} class. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p}{CB\+::\+SETUP}}
+\begin{DoxyCompactList}\small\item\em Callback functions used by the \doxylink{namespace_setup}{Setup} Menus. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l}{CB\+::\+SETUP\+::\+VOL}}
+\begin{DoxyCompactList}\small\item\em Callback functions that are specific to the \doxylink{class_setup_vol_menu}{Setup\+Vol\+Menu} class. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p}{CB\+::\+SETUP\+::\+TEMP}}
+\begin{DoxyCompactList}\small\item\em Callback functions that are specific to the \doxylink{class_setup_temp_menu}{Setup\+Temp\+Menu} class. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d}{CB\+::\+SETUP\+::\+PID}}
+\begin{DoxyCompactList}\small\item\em Callback functions that are specific to the \doxylink{class_setup_p_i_d___menu}{Setup\+PID\+\_\+\+Menu} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_menu_8h_aaf863b665fd9b9e1ea7aa723f553abfc}{NUM\+\_\+\+MAINMENU\+\_\+\+BUTTONS}}~0
+\begin{DoxyCompactList}\small\item\em Number of buttons managed by the \doxylink{class_main_menu}{Main\+Menu}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_menu_8h_a3206ce01db32abe074fa8aa852722605}{NUM\+\_\+\+SETUPVOLMENU\+\_\+\+BUTTONS}}~0
+\item 
+\#define \mbox{\hyperlink{_menu_8h_ae3448608d37aed734bc22df980f27326}{NUM\+\_\+\+SETUPTEMPMENU\+\_\+\+BUTTONS}}~0
+\item 
+\#define \mbox{\hyperlink{_menu_8h_a5ae563bb5fac391b0683750693740437}{NUM\+\_\+\+SETUPPIDMENU\+\_\+\+BUTTONS}}~0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} = \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{Sensor\+::sensor\+Val\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l_a1bce2762cbe991b2c09f821d4ebbbe36}{CB\+::\+SETUP\+::\+VOL\+::cal\+Point1}} (void)
+\begin{DoxyCompactList}\small\item\em Set Calibration Point 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l_a84096b33198ff9449b0515c3b31fc7e6}{CB\+::\+SETUP\+::\+VOL\+::cal\+Point2}} (void)
+\begin{DoxyCompactList}\small\item\em Set Calibration Point 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p_a228da78b7221668e376f1ed77fb49b68}{CB\+::\+SETUP\+::\+TEMP\+::kettle\+Probe}} (void)
+\begin{DoxyCompactList}\small\item\em Calibrate Kettle Probe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p_ade44eda2599e5c34c02eb55ad0ac049f}{CB\+::\+SETUP\+::\+TEMP\+::chiller\+Probe}} (void)
+\begin{DoxyCompactList}\small\item\em Calibrate Chiller Probe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d_a36219e8a8a7fc85b4d348ed05ed51ffa}{CB\+::\+SETUP\+::\+PID\+::auto\+Tune}} (void)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Button Callbacks}\par
+{\em These callback methods implement button behavior for \doxylink{class_main_menu}{Main\+Menu}
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a29d69dbc9afe3c87d96d949d36b3736d}{CB\+::\+MAIN\+::kettle\+Temp\+Alarm\+On}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a9b526214ac91782b6b2844ddc9d5a6bc}{CB\+::\+MAIN\+::kettle\+Temp\+Alarm\+Off}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a8220dafdc3fa7fdf863494b7d3fbf12d}{CB\+::\+MAIN\+::kettle\+Vol\+Alarm\+On}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a7ed64d9f220d01d7c576c853f77f0352}{CB\+::\+MAIN\+::kettle\+Vol\+Alarm\+Off}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_abd3dc07f4f370f84dfeaaf3596011465}{CB\+::\+MAIN\+::chiller\+Temp\+Alarm\+On}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a3d5d872c2864e86364f53f30a5d7cee7}{CB\+::\+MAIN\+::chiller\+Temp\+Alarm\+Off}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ac77110627d22441004593cd8adb841ed}{CB\+::\+MAIN\+::element\+On}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_aa2964d6ce2eb21dd7d3f5d6e9682e9f9}{CB\+::\+MAIN\+::element\+Off}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a6645fd547e60bf19d50bb14dc5990a59}{CB\+::\+MAIN\+::boil\+Mode\+On}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a401ec07c0573cae594d1b58434048916}{CB\+::\+MAIN\+::mash\+Mode\+On}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a695697f1837a320e37232dd6d4f145f7}{CB\+::\+MAIN\+::pump\+On}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ab32d3b918b42443c8984612dbe5b42de}{CB\+::\+MAIN\+::pump\+Off}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a6ef53673488891549fd90673f9895217}{CB\+::\+MAIN\+::aux\+On}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_acc81f53ab278bce0f8e34a1cc19d4008}{CB\+::\+MAIN\+::aux\+Off}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ae7aac278ed28334d189c676f71f3132c}{CB\+::\+MAIN\+::setup\+Button\+Pressed}} (void)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Label Callbacks}\par
+{\em These callback methods are called whenever one of the labels is "{}pressed"{} }\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ac31d6543bff35fdd23cf61983b051267}{CB\+::\+MAIN\+::set\+Boil\+Rate}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} boil\+Rate)
+\begin{DoxyCompactList}\small\item\em Initiate Data Entry for Boil Rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a1bf4922786562494769803ab3ea3fc61}{CB\+::\+MAIN\+::set\+Mash\+Temp}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} mash\+Temp)
+\begin{DoxyCompactList}\small\item\em Initiate Data Entry for Mash Temp. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a9afd156f2b3da8aaea453105d7c7d183}{CB\+::\+MAIN\+::set\+Kettle\+Temp\+SV}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} kettle\+Temp\+SV)
+\begin{DoxyCompactList}\small\item\em Initiate Data Entry for Kettle Temp Set Value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a88789ef1b87302f7201a2e65dfcaec12}{CB\+::\+MAIN\+::set\+Kettle\+Vol\+SV}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} kettle\+Vol\+SV)
+\begin{DoxyCompactList}\small\item\em Initiate Data Entry for Kettle Volume Set Value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_abc3a89dc6be50de77f0e20076c501dba}{CB\+::\+MAIN\+::set\+Chiller\+Temp\+SV}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} chiller\+Temp\+SV)
+\begin{DoxyCompactList}\small\item\em Initiate Data Entry for Chiller Temp Set Value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Common Setup Button Callbacks.}\par
+{\em These methods switch between setup menus and submenus. }\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_a8e0da5e9f4b6752ed7237ce611e3bddb}{CB\+::\+SETUP\+::vol\+Setup}} (void)
+\begin{DoxyCompactList}\small\item\em Switch to Volume \doxylink{namespace_setup}{Setup} Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_a8013590abead1bb0bbbbb511670aaf9c}{CB\+::\+SETUP\+::temp\+Setup}} (void)
+\begin{DoxyCompactList}\small\item\em Switch to Temperature \doxylink{namespace_setup}{Setup} Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_a37e665b17a24032829b846ef461b8860}{CB\+::\+SETUP\+::\+PID\+\_\+\+Setup}} (void)
+\begin{DoxyCompactList}\small\item\em Switch to \doxylink{namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d}{PID} \doxylink{namespace_setup}{Setup} Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_aacfd09d6a249b54d9515b96ca3180042}{CB\+::\+SETUP\+::return\+To\+Main\+Menu}} (void)
+\begin{DoxyCompactList}\small\item\em Return to the Main Menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solo_menu}{Solo\+Menu}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_menu_8h_a5c4bbb8c5b4a3a9589b95285395756d8}{menu}}
+\begin{DoxyCompactList}\small\item\em Pointer to the current, active menu used by the application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_solo_menu}{Solo\+Menu}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_menu_8h_a8fae6703f1c71627af514109c9119e1e}{setup\+Menu}}
+\begin{DoxyCompactList}\small\item\em Pointer to the current setup menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_menu_8h_aaf863b665fd9b9e1ea7aa723f553abfc}\index{Menu.h@{Menu.h}!NUM\_MAINMENU\_BUTTONS@{NUM\_MAINMENU\_BUTTONS}}
+\index{NUM\_MAINMENU\_BUTTONS@{NUM\_MAINMENU\_BUTTONS}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_MAINMENU\_BUTTONS}{NUM\_MAINMENU\_BUTTONS}}
+{\footnotesize\ttfamily \label{_menu_8h_aaf863b665fd9b9e1ea7aa723f553abfc} 
+\#define NUM\+\_\+\+MAINMENU\+\_\+\+BUTTONS~0}
+
+
+
+Number of buttons managed by the \doxylink{class_main_menu}{Main\+Menu}. 
+
+\Hypertarget{_menu_8h_a5ae563bb5fac391b0683750693740437}\index{Menu.h@{Menu.h}!NUM\_SETUPPIDMENU\_BUTTONS@{NUM\_SETUPPIDMENU\_BUTTONS}}
+\index{NUM\_SETUPPIDMENU\_BUTTONS@{NUM\_SETUPPIDMENU\_BUTTONS}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_SETUPPIDMENU\_BUTTONS}{NUM\_SETUPPIDMENU\_BUTTONS}}
+{\footnotesize\ttfamily \label{_menu_8h_a5ae563bb5fac391b0683750693740437} 
+\#define NUM\+\_\+\+SETUPPIDMENU\+\_\+\+BUTTONS~0}
+
+\Hypertarget{_menu_8h_ae3448608d37aed734bc22df980f27326}\index{Menu.h@{Menu.h}!NUM\_SETUPTEMPMENU\_BUTTONS@{NUM\_SETUPTEMPMENU\_BUTTONS}}
+\index{NUM\_SETUPTEMPMENU\_BUTTONS@{NUM\_SETUPTEMPMENU\_BUTTONS}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_SETUPTEMPMENU\_BUTTONS}{NUM\_SETUPTEMPMENU\_BUTTONS}}
+{\footnotesize\ttfamily \label{_menu_8h_ae3448608d37aed734bc22df980f27326} 
+\#define NUM\+\_\+\+SETUPTEMPMENU\+\_\+\+BUTTONS~0}
+
+\Hypertarget{_menu_8h_a3206ce01db32abe074fa8aa852722605}\index{Menu.h@{Menu.h}!NUM\_SETUPVOLMENU\_BUTTONS@{NUM\_SETUPVOLMENU\_BUTTONS}}
+\index{NUM\_SETUPVOLMENU\_BUTTONS@{NUM\_SETUPVOLMENU\_BUTTONS}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_SETUPVOLMENU\_BUTTONS}{NUM\_SETUPVOLMENU\_BUTTONS}}
+{\footnotesize\ttfamily \label{_menu_8h_a3206ce01db32abe074fa8aa852722605} 
+\#define NUM\+\_\+\+SETUPVOLMENU\+\_\+\+BUTTONS~0}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_menu_8h_a385ac6529964259d8d5b226207e4065b}\index{Menu.h@{Menu.h}!sensorVal\_t@{sensorVal\_t}}
+\index{sensorVal\_t@{sensorVal\_t}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{sensorVal\_t}{sensorVal\_t}}
+{\footnotesize\ttfamily \label{_menu_8h_a385ac6529964259d8d5b226207e4065b} 
+using \mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} = \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{Sensor\+::sensor\+Val\+\_\+t}}}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_menu_8h_a5c4bbb8c5b4a3a9589b95285395756d8}\index{Menu.h@{Menu.h}!menu@{menu}}
+\index{menu@{menu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \label{_menu_8h_a5c4bbb8c5b4a3a9589b95285395756d8} 
+\mbox{\hyperlink{class_solo_menu}{Solo\+Menu}}\texorpdfstring{$\ast$}{*} menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Pointer to the current, active menu used by the application. 
+
+Initially, {\ttfamily menu} points to a \doxylink{class_main_menu}{Main\+Menu} object. Later, the application may elect to point {\ttfamily menu} at another menu, such as a Setup\+Menu object. \Hypertarget{_menu_8h_a8fae6703f1c71627af514109c9119e1e}\index{Menu.h@{Menu.h}!setupMenu@{setupMenu}}
+\index{setupMenu@{setupMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{setupMenu}{setupMenu}}
+{\footnotesize\ttfamily \label{_menu_8h_a8fae6703f1c71627af514109c9119e1e} 
+\mbox{\hyperlink{class_solo_menu}{Solo\+Menu}}\texorpdfstring{$\ast$}{*} setup\+Menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Pointer to the current setup menu. 
+
+Initially, {\ttfamily setup\+Menu} points to the volume setup menu. Later on, this will be updated to keep track of which setup menu has been last selected by the user. 

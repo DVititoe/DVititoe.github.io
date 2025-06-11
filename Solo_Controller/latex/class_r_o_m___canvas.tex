@@ -1,0 +1,162 @@
+\doxysection{ROM\+\_\+\+Canvas Class Reference}
+\hypertarget{class_r_o_m___canvas}{}\label{class_r_o_m___canvas}\index{ROM\_Canvas@{ROM\_Canvas}}
+
+
+{\ttfamily \#include $<$Canvas.\+h$>$}
+
+Inheritance diagram for ROM\+\_\+\+Canvas\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_o_m___canvas}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_o_m___canvas_abb38a5b1fc4f05921a6af8712a7c93a7}{ROM\+\_\+\+Canvas}} (\mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} image)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_o_m___canvas_a12f9d19af9b2175a768475b348197e26}{\texorpdfstring{$\sim$}{\string~}\+ROM\+\_\+\+Canvas}} (void)=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_o_m___canvas_a1f1ae96e9079bbf9764be06d27b02468}{load\+Image}} (void) const override
+\begin{DoxyCompactList}\small\item\em Loads the image from Flash ROM onto this \doxylink{class_canvas}{Canvas}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_canvas}{Canvas}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_canvas_a3b3a7c17161f72d4f2332021d6e866e9}{Canvas}} (void)
+\begin{DoxyCompactList}\small\item\em Default constructor sets canvass to the full size of the display. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_canvas_a3935a33755dde3ea695c06bcec40e5ba}{Canvas}} (bool temporary)
+\begin{DoxyCompactList}\small\item\em Constructor sets canvass to the full size of the display. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_canvas_aa4da0978f85bce794a7d794bf041cf98}{Canvas}} (uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}, bool temporary=false)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_canvas_a11136afee83f7bfa3d8f16d51abe9a70}{\texorpdfstring{$\sim$}{\string~}\+Canvas}} (void)=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_a2032800681a54cffc50320c96029fa8c}{set\+Active}} (void) const
+\begin{DoxyCompactList}\small\item\em Sets this canvas as both the active canvas and active window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a2dec4d913273dbb043f74b75b42e88a7}{set\+Main\+Window}} (void) const
+\begin{DoxyCompactList}\small\item\em Sets this canvas as the Main Window, displaying it in the TFT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}} (void) const
+\begin{DoxyCompactList}\small\item\em Accessor method providing the canvas width. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}} (void) const
+\begin{DoxyCompactList}\small\item\em Accessor method providing the canvas height. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_canvas_add0700f4da6206e04fdf90eecd1b8423}{address}} (void) const
+\begin{DoxyCompactList}\small\item\em Accessor method providing the canvas\textquotesingle{} starting address in DRAM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_ab30fd9e99385a46d9d22b39407f68265}{BTE\+\_\+\+Copy\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source) const
+\begin{DoxyCompactList}\small\item\em Uses BTE engine to copy entire image from {\ttfamily source} canvas to this one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a42cc4c287b1eca4526db4cacc00f2137}{BTE\+\_\+\+Copy\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0) const
+\begin{DoxyCompactList}\small\item\em Uses BTE engine to copy imagery from {\ttfamily source} canvas to this one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a16cdf83603b2b6cbcba0bc34cb78d808}{BTE\+\_\+\+ROP}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&S0, uint16\+\_\+t S0\+\_\+x0, uint16\+\_\+t S0\+\_\+y0, const \mbox{\hyperlink{class_canvas}{Canvas}} \&S1, uint16\+\_\+t S1\+\_\+x0, uint16\+\_\+t S1\+\_\+y0, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0, uint16\+\_\+t DT\+\_\+width, uint16\+\_\+t DT\+\_\+height, uint8\+\_\+t ROP, bool S1\+\_\+\+Opacity\+On=false) const
+\begin{DoxyCompactList}\small\item\em Gneralized ROP operation. This assumes that object calling this method is the destimation DT canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a8ca049655ab1b5f0626421db9833e405}{BTE\+\_\+\+Copy\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source, uint16\+\_\+t Src\+\_\+x0, uint16\+\_\+t Src\+\_\+y0, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}) const
+\begin{DoxyCompactList}\small\item\em Uses BTE engine to copy imagery from {\ttfamily source} canvas to this one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a75344e1c4f131b8731f539dbf1446dde}{BTE\+\_\+\+Add\+Image\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source, uint16\+\_\+t Src\+\_\+x0, uint16\+\_\+t Src\+\_\+y0, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}) const
+\begin{DoxyCompactList}\small\item\em Adds an opacity encoded image from {\ttfamily source} to the image on this canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a753719f9ab04411f55d82e02a67980e7}{BTE\+\_\+\+Add\+Transparant\+Image\+From}} (const \mbox{\hyperlink{class_canvas}{Canvas}} \&source, uint16\+\_\+t Src\+\_\+x0, uint16\+\_\+t Src\+\_\+y0, uint16\+\_\+t DT\+\_\+x0, uint16\+\_\+t DT\+\_\+y0, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}) const
+\begin{DoxyCompactList}\small\item\em Adds an opacity encoded image from {\ttfamily source} to the image on this canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_a1c43364b79f580b9b0909c121457cad1}{clear}} (void)
+\begin{DoxyCompactList}\small\item\em Erases the canvas, setting all pixels to Black. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_a1278c73446069dd02831af31ef1bccff}{clear}} (uint16\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Erases the canvas, setting all pixels to the specified color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_ac53c6ad3166d739861891682a131fc4d}{solid\+Fill}} (uint16\+\_\+t x0, uint16\+\_\+t y0, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a70192ede48d06854ca683baee970b809}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_canvas_a8518cf311272b0d4effe0fe1f89a5091}{height}}, uint16\+\_\+t color) const
+\begin{DoxyCompactList}\small\item\em Draws a filled square onto the canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_aebdea765412fef5c829765f1ac93fb74}{text}} (uint16\+\_\+t x0, uint16\+\_\+t y0, uint16\+\_\+t f\+Color, uint16\+\_\+t b\+Color, const char \texorpdfstring{$\ast$}{*}text, bool small=false) const
+\begin{DoxyCompactList}\small\item\em Draws text onto the canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_aab06a8c9dd5b8b146077268cf729f2cd}{draw\+Square}} (unsigned short x0, unsigned short y0, unsigned short x1, unsigned short y1, unsigned short color) const
+\begin{DoxyCompactList}\small\item\em Draws an unfilled square. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_canvas}{Canvas}}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_canvas_aebf18fd93df0ab969325943a765366f3}{BL\+\_\+\+ON}} (void)
+\begin{DoxyCompactList}\small\item\em Turns the TFT backlight on. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_canvas_a2edb82c8c8a1a129182c68a8360616b3}{BL\+\_\+\+OFF}} (void)
+\begin{DoxyCompactList}\small\item\em Turns the TFT backlight off. \end{DoxyCompactList}\item 
+static uint32\+\_\+t \mbox{\hyperlink{class_canvas_a6db455aef96b2f06acddc9ef19a18572}{next\+Address}} (void)
+\begin{DoxyCompactList}\small\item\em Location in DRAM whether the next image \doxylink{class_canvas}{Canvas} will be placed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_canvas_a10f6299f7633b793fe345840b3600678}{draw\+Line}} (uint16\+\_\+t x0, uint16\+\_\+t y0, uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a line onto the display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_canvas}{Canvas}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_canvas_ac2b95e9a6a3b6a9b468c06343715ace5}{\+\_\+validate}} (void) const
+\begin{DoxyCompactList}\small\item\em Protected method used to validate that the images used to create this canvas are appropriately size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a675e1fc94421dae7abb76ff09f1ef8f3}{BTE\+\_\+\+Set\+As\+S0}} (uint16\+\_\+t x0, uint16\+\_\+t y0) const
+\begin{DoxyCompactList}\small\item\em Sets the location of the S0 source image for the BTE engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_ab25386401851e7135748e0302533b6f2}{BTE\+\_\+\+Set\+As\+S1}} (uint16\+\_\+t x0, uint16\+\_\+t y0) const
+\begin{DoxyCompactList}\small\item\em Sets the location of the S1 source image for the BTE engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_canvas_a636cd8199477d4d8875d26092ff25d3e}{BTE\+\_\+\+Set\+As\+DT}} (uint16\+\_\+t x0, uint16\+\_\+t y0) const
+\begin{DoxyCompactList}\small\item\em Sets the location of the destination (DT) image for the BTE engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_r_o_m___canvas_abb38a5b1fc4f05921a6af8712a7c93a7}\index{ROM\_Canvas@{ROM\_Canvas}!ROM\_Canvas@{ROM\_Canvas}}
+\index{ROM\_Canvas@{ROM\_Canvas}!ROM\_Canvas@{ROM\_Canvas}}
+\doxysubsubsection{\texorpdfstring{ROM\_Canvas()}{ROM\_Canvas()}}
+{\footnotesize\ttfamily \label{class_r_o_m___canvas_abb38a5b1fc4f05921a6af8712a7c93a7} 
+ROM\+\_\+\+Canvas\+::\+ROM\+\_\+\+Canvas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}}}]{image}{}\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em image} & The image in Flash ROM \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_r_o_m___canvas_a12f9d19af9b2175a768475b348197e26}\index{ROM\_Canvas@{ROM\_Canvas}!````~ROM\_Canvas@{\texorpdfstring{$\sim$}{\string~}ROM\_Canvas}}
+\index{````~ROM\_Canvas@{\texorpdfstring{$\sim$}{\string~}ROM\_Canvas}!ROM\_Canvas@{ROM\_Canvas}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ROM\_Canvas()}{\string~ROM\_Canvas()}}
+{\footnotesize\ttfamily \label{class_r_o_m___canvas_a12f9d19af9b2175a768475b348197e26} 
+ROM\+\_\+\+Canvas\+::\texorpdfstring{$\sim$}{\string~}\+ROM\+\_\+\+Canvas (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_r_o_m___canvas_a1f1ae96e9079bbf9764be06d27b02468}\index{ROM\_Canvas@{ROM\_Canvas}!loadImage@{loadImage}}
+\index{loadImage@{loadImage}!ROM\_Canvas@{ROM\_Canvas}}
+\doxysubsubsection{\texorpdfstring{loadImage()}{loadImage()}}
+{\footnotesize\ttfamily \label{class_r_o_m___canvas_a1f1ae96e9079bbf9764be06d27b02468} 
+void ROM\+\_\+\+Canvas\+::load\+Image (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Loads the image from Flash ROM onto this \doxylink{class_canvas}{Canvas}. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Reimplemented from \mbox{\hyperlink{class_canvas_ae60defbed8de286ab7891d56ef9467dc}{Canvas}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_canvas_8h}{Canvas.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_canvas_8cpp}{Canvas.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,41 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Tasks.cpp File Reference}
+\hypertarget{_tasks_8cpp}{}\label{_tasks_8cpp}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Tasks.cpp@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Tasks.cpp}}
+{\ttfamily \#include "{}Tasks.\+h"{}}\newline
+{\ttfamily \#include "{}Menu.\+h"{}}\newline
+{\ttfamily \#include "{}Text\+Box.\+h"{}}\newline
+{\ttfamily \#include "{}Sensor.\+h"{}}\newline
+{\ttfamily \#include "{}Alarm\+Mgr.\+h"{}}\newline
+{\ttfamily \#include $<$Task\+Manager\+IO.\+h$>$}\newline
+{\ttfamily \#include "{}ROM\+\_\+\+Images.\+h"{}}\newline
+{\ttfamily \#include $<$Wire.\+h$>$}\newline
+{\ttfamily \#include "{}Err\+Msg.\+h"{}}\newline
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_canvas}{Canvas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_tasks_8cpp_a6b7dfc1c36cae24994e138b9dcdb5ffc}{load\+Screen}} = new \mbox{\hyperlink{class_r_o_m___canvas}{ROM\+\_\+\+Canvas}}(\mbox{\hyperlink{_r_o_m___images_8h_a5b57ad2b318fe430e31807a2a1f04f95}{LOAD\+\_\+\+SCREEN}})
+\begin{DoxyCompactList}\small\item\em Initial loading screen, showing the Florida Man graphic. \end{DoxyCompactList}\item 
+taskid\+\_\+t \mbox{\hyperlink{_tasks_8cpp_acea62c364e5e811234c0363fb434d6ce}{err\+Msg\+Task\+Id}} = 0
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_task}{Task} ID for the error message task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_tasks_8cpp_acea62c364e5e811234c0363fb434d6ce}\index{Tasks.cpp@{Tasks.cpp}!errMsgTaskId@{errMsgTaskId}}
+\index{errMsgTaskId@{errMsgTaskId}!Tasks.cpp@{Tasks.cpp}}
+\doxysubsubsection{\texorpdfstring{errMsgTaskId}{errMsgTaskId}}
+{\footnotesize\ttfamily \label{_tasks_8cpp_acea62c364e5e811234c0363fb434d6ce} 
+taskid\+\_\+t err\+Msg\+Task\+Id = 0}
+
+
+
+\doxylink{namespace_task}{Task} ID for the error message task. 
+
+\Hypertarget{_tasks_8cpp_a6b7dfc1c36cae24994e138b9dcdb5ffc}\index{Tasks.cpp@{Tasks.cpp}!loadScreen@{loadScreen}}
+\index{loadScreen@{loadScreen}!Tasks.cpp@{Tasks.cpp}}
+\doxysubsubsection{\texorpdfstring{loadScreen}{loadScreen}}
+{\footnotesize\ttfamily \label{_tasks_8cpp_a6b7dfc1c36cae24994e138b9dcdb5ffc} 
+\mbox{\hyperlink{class_canvas}{Canvas}}\texorpdfstring{$\ast$}{*} load\+Screen = new \mbox{\hyperlink{class_r_o_m___canvas}{ROM\+\_\+\+Canvas}}(\mbox{\hyperlink{_r_o_m___images_8h_a5b57ad2b318fe430e31807a2a1f04f95}{LOAD\+\_\+\+SCREEN}})}
+
+
+
+Initial loading screen, showing the Florida Man graphic. 
+

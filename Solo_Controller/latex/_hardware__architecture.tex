@@ -1,0 +1,55 @@
+\doxysection{Hardware Architecture}
+\hypertarget{_hardware__architecture}{}\label{_hardware__architecture}\index{Hardware Architecture@{Hardware Architecture}}
+\label{_hardware__architecture_md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_hardware___architecture}%
+\Hypertarget{_hardware__architecture_md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2docs_2_hardware___architecture}%
+\hypertarget{_hardware__architecture_autotoc_md29}{}\doxysubsection{\texorpdfstring{Big Picture}{Big Picture}}\label{_hardware__architecture_autotoc_md29}
+\hypertarget{_hardware__architecture_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{Sub-\/pages}{Sub-\/pages}}\label{_hardware__architecture_autotoc_md30}
+
+\begin{DoxyItemize}
+\item \doxylink{Electronics_Design}{Electronics Design}
+\item \doxylink{Controller_Interface_Board}{Controller Interface Board}
+\item \doxylink{Hardware_Parts_List}{Hardware Parts List}
+\end{DoxyItemize}\hypertarget{_hardware__architecture_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{Controller Layout}{Controller Layout}}\label{_hardware__architecture_autotoc_md31}
+This controller is designed so that the controller can be separated into two separate controllers, as shown in the following figure. The advantage to this approach is that the restively small (and lightweight) Display Box can be mounted on a swivel mount bracket, similar to how a small TV would be mounted. This makes it easy position the display on brew day where it is most convenient. The \doxylink{class_sensor}{Sensor} Breakout box is mounted in an out of the way location near the brew rig. The various cables (Power Input, Element Power, Pump and Aux Power, Temperature probes, and volume sensor probe) all connect to the \doxylink{class_sensor}{Sensor} Breakout Box. A single, custom cable connects the Display and \doxylink{class_sensor}{Sensor} Box. This design also puts physical separation between the low and high power circuits, which helps to minimize EMI contamination.
+
+Note that the hardware could just as easily be mounted in a single, larger enclosure. The only reason I chose not to do this was to (1) minimize the size of the Display Box, and (2) minimize the number of cables coming off the Display Box.
+
+{\itshape {\bfseries{Mention the element enable switch}}}
+
+{\itshape {\bfseries{Power on is located on \doxylink{class_sensor}{Sensor} Breakout Box, controls the main contactor}}}
+
+\begin{center}\end{center} \hypertarget{_hardware__architecture_autotoc_md32}{}\doxysubsubsection{\texorpdfstring{Display Box Microcontroller Circuit}{Display Box Microcontroller Circuit}}\label{_hardware__architecture_autotoc_md32}
+Discuss features of the Controller Circuit.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{1}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ \begin{center}\end{center}     }\\\cline{1-1}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ \begin{center}\end{center}     }\\\cline{1-1}
+\endhead
+\begin{center}{\itshape Stuff here}\end{center}    \\\cline{1-1}
+\end{longtabu}
+\hypertarget{_hardware__architecture_autotoc_md33}{}\doxysubsubsection{\texorpdfstring{High Voltage Sensor Breakout Box}{High Voltage Sensor Breakout Box}}\label{_hardware__architecture_autotoc_md33}
+Discuss features of the Controller Circuit.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{1}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ \begin{center}\end{center}     }\\\cline{1-1}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ \begin{center}\end{center}     }\\\cline{1-1}
+\endhead
+\begin{center}{\itshape Stuff here}\end{center}    \\\cline{1-1}
+\end{longtabu}
+
+
+Discuss features of the Controller Circuit. \input{_electronics__design}
+\input{_controller__interface__board}
+\input{_hardware__parts__list}

@@ -1,0 +1,127 @@
+\doxysection{Config\+List\+\_\+t Struct Reference}
+\hypertarget{struct_config_list__t}{}\label{struct_config_list__t}\index{ConfigList\_t@{ConfigList\_t}}
+
+
+Data structure defining all \doxylink{class_text_box}{Text\+Box} used by all menus.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Box\+\_\+\+Definitions.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_list__t_a889cfb8998a10a316f699934453fe9dc}{kettleTemp}}\\
+\>\>{\em TexBoxUnits config for Kettle Temperature in Fahrenheit. }\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_list__t_a517caa701ec101ed9596d941aea72df5}{setTemp}}\\
+\>\>{\em TexBoxUnits config for Set Temperature for PID. }\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_list__t_ab32a80bf64373bee0d55748a7d5dc217}{elemOut}}\\
+\>\>{\em TexBoxUnits config for Output power of kettle element as a percentage. }\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_list__t_a52d11f2946ec0f209f05587e3ddf3855}{volume}}\\
+\>\>{\em TexBoxUnits config for Volume of the kettle in gallons. }\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_list__t_af121b71ae32a7a3f79a8fc7a7520efbd}{minVolume}}\\
+\>\>{\em TexBoxUnits config for Minimum volume allowed before alarm fires. }\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_list__t_a03340f6320bfc4098999c6a1755ab190}{chillerTemp}}\\
+\>\>{\em TexBoxUnits config for Temperature of the chiller output. }\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_list__t_ad321cbe26e7f5a2051b05819b8ab22ab}{minChillerTemp}}\\
+\>\>{\em TexBoxUnits config for Minimum chiller temperature allowed before alarm fires. }\\
+\} \mbox{\hyperlink{struct_config_list__t_a95465a25a94f98db4ce96eb5a063a941}{main}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Text box configuration for \doxylink{class_main_menu}{Main\+Menu}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Data structure defining all \doxylink{class_text_box}{Text\+Box} used by all menus. 
+
+The static method \doxylink{class_dynamic_text_aebf272bd8cd47b9870574ecfc4004720}{Dynamic\+Text\+::initialize\+Fonts()} is used to initialize this data structure. This method must be called before intantiating any \doxylink{class_dynamic_text}{Dynamic\+Text} objects. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_config_list__t_a03340f6320bfc4098999c6a1755ab190}\index{ConfigList\_t@{ConfigList\_t}!chillerTemp@{chillerTemp}}
+\index{chillerTemp@{chillerTemp}!ConfigList\_t@{ConfigList\_t}}
+\doxysubsubsection{\texorpdfstring{chillerTemp}{chillerTemp}}
+{\footnotesize\ttfamily \label{struct_config_list__t_a03340f6320bfc4098999c6a1755ab190} 
+\mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}}\texorpdfstring{$\ast$}{*} Config\+List\+\_\+t\+::chiller\+Temp}
+
+
+
+Tex\+Box\+Units config for Temperature of the chiller output. 
+
+\Hypertarget{struct_config_list__t_ab32a80bf64373bee0d55748a7d5dc217}\index{ConfigList\_t@{ConfigList\_t}!elemOut@{elemOut}}
+\index{elemOut@{elemOut}!ConfigList\_t@{ConfigList\_t}}
+\doxysubsubsection{\texorpdfstring{elemOut}{elemOut}}
+{\footnotesize\ttfamily \label{struct_config_list__t_ab32a80bf64373bee0d55748a7d5dc217} 
+\mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}}\texorpdfstring{$\ast$}{*} Config\+List\+\_\+t\+::elem\+Out}
+
+
+
+Tex\+Box\+Units config for Output power of kettle element as a percentage. 
+
+\Hypertarget{struct_config_list__t_a889cfb8998a10a316f699934453fe9dc}\index{ConfigList\_t@{ConfigList\_t}!kettleTemp@{kettleTemp}}
+\index{kettleTemp@{kettleTemp}!ConfigList\_t@{ConfigList\_t}}
+\doxysubsubsection{\texorpdfstring{kettleTemp}{kettleTemp}}
+{\footnotesize\ttfamily \label{struct_config_list__t_a889cfb8998a10a316f699934453fe9dc} 
+\mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}}\texorpdfstring{$\ast$}{*} Config\+List\+\_\+t\+::kettle\+Temp}
+
+
+
+Tex\+Box\+Units config for Kettle Temperature in Fahrenheit. 
+
+\Hypertarget{struct_config_list__t_a95465a25a94f98db4ce96eb5a063a941}\index{ConfigList\_t@{ConfigList\_t}!main@{main}}
+\index{main@{main}!ConfigList\_t@{ConfigList\_t}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{struct_config_list__t_a95465a25a94f98db4ce96eb5a063a941} 
+struct  \{ ... \}  Config\+List\+\_\+t\+::main}
+
+
+
+Text box configuration for \doxylink{class_main_menu}{Main\+Menu}. 
+
+\Hypertarget{struct_config_list__t_ad321cbe26e7f5a2051b05819b8ab22ab}\index{ConfigList\_t@{ConfigList\_t}!minChillerTemp@{minChillerTemp}}
+\index{minChillerTemp@{minChillerTemp}!ConfigList\_t@{ConfigList\_t}}
+\doxysubsubsection{\texorpdfstring{minChillerTemp}{minChillerTemp}}
+{\footnotesize\ttfamily \label{struct_config_list__t_ad321cbe26e7f5a2051b05819b8ab22ab} 
+\mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}}\texorpdfstring{$\ast$}{*} Config\+List\+\_\+t\+::min\+Chiller\+Temp}
+
+
+
+Tex\+Box\+Units config for Minimum chiller temperature allowed before alarm fires. 
+
+\Hypertarget{struct_config_list__t_af121b71ae32a7a3f79a8fc7a7520efbd}\index{ConfigList\_t@{ConfigList\_t}!minVolume@{minVolume}}
+\index{minVolume@{minVolume}!ConfigList\_t@{ConfigList\_t}}
+\doxysubsubsection{\texorpdfstring{minVolume}{minVolume}}
+{\footnotesize\ttfamily \label{struct_config_list__t_af121b71ae32a7a3f79a8fc7a7520efbd} 
+\mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}}\texorpdfstring{$\ast$}{*} Config\+List\+\_\+t\+::min\+Volume}
+
+
+
+Tex\+Box\+Units config for Minimum volume allowed before alarm fires. 
+
+\Hypertarget{struct_config_list__t_a517caa701ec101ed9596d941aea72df5}\index{ConfigList\_t@{ConfigList\_t}!setTemp@{setTemp}}
+\index{setTemp@{setTemp}!ConfigList\_t@{ConfigList\_t}}
+\doxysubsubsection{\texorpdfstring{setTemp}{setTemp}}
+{\footnotesize\ttfamily \label{struct_config_list__t_a517caa701ec101ed9596d941aea72df5} 
+\mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}}\texorpdfstring{$\ast$}{*} Config\+List\+\_\+t\+::set\+Temp}
+
+
+
+Tex\+Box\+Units config for Set Temperature for PID. 
+
+\Hypertarget{struct_config_list__t_a52d11f2946ec0f209f05587e3ddf3855}\index{ConfigList\_t@{ConfigList\_t}!volume@{volume}}
+\index{volume@{volume}!ConfigList\_t@{ConfigList\_t}}
+\doxysubsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily \label{struct_config_list__t_a52d11f2946ec0f209f05587e3ddf3855} 
+\mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}}\texorpdfstring{$\ast$}{*} Config\+List\+\_\+t\+::volume}
+
+
+
+Tex\+Box\+Units config for Volume of the kettle in gallons. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/\mbox{\hyperlink{_text_box___definitions_8h}{Text\+Box\+\_\+\+Definitions.\+h}}\end{DoxyCompactItemize}

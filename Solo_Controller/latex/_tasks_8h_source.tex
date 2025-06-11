@@ -1,0 +1,54 @@
+\doxysection{Tasks.\+h}
+\hypertarget{_tasks_8h_source}{}\label{_tasks_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Tasks.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Tasks.h}}
+\mbox{\hyperlink{_tasks_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Tasks.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ Defines\ the\ tasks\ used\ by\ SoloController.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ @details}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ The\ functions\ interact\ with\ the\ global\ taskManager\ object.\ Each\ function}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ \ \ \ places\ a\ new\ task\ onto\ the\ taskManager\ queue.}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ TASKS\_HEADER}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ TASKS\_HEADER}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_setup}{Setup}}}
+\DoxyCodeLine{00017\ \{\ \ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_setup_a5686fb83fd9eea3e8c16226863de3598}{pinConfig}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_setup_ad6e12570a013a041d84c999009fe413f}{TFT}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00042\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_setup_ac52d05a0d4da6955007cb1098828ee40}{menuSystem}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_setup_ad0060655176e56dcd4755c61a2556792}{tasks}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00052\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_task}{Task}}}
+\DoxyCodeLine{00058\ \{}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_task_1_1_menu}{Menu}}}
+\DoxyCodeLine{00064\ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_task_1_1_error}{Error}}}
+\DoxyCodeLine{00072\ \ \ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_task_1_1_error_aaecf6f7bda594cf871665ec8907efd18}{testIfUserFinishedWithErrMsg}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_task_1_1_error_adc4ee077b4fa2f212df9cf2dd310ba23}{finishedWithErrMsg}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00086\ \ \ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_task_1_1_sensor}{Sensor}}}
+\DoxyCodeLine{00092\ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_task_1_1_sensor_a37d7818bc85f3438c920e2dafd13c463}{setup\_simulateSensorData}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00099\ \ \ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00104\ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_task_1_1_alarm}{Alarm}}}
+\DoxyCodeLine{00105\ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \}}
+\DoxyCodeLine{00107\ \}}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

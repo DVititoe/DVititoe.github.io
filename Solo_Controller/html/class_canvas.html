@@ -18,6 +18,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -27,9 +32,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Solo Controller
+   <div id="projectname">Solo Controller<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Documentation for the Solo Controller</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -46,17 +64,6 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search',true);
-  $(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -104,18 +111,15 @@ $(function(){initNavTree('class_canvas.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Provides higher level TFT graphic functionality used by the menu system.  
- <a href="#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="_canvas_8h_source.html">C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Canvas.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_canvas_8h_source.html">Canvas.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Canvas:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_canvas.png" usemap="#Canvas_map" alt=""/>
   <map id="Canvas_map" name="Canvas_map">
-<area href="class_d_r_a_m___canvas.html" title="Variation of the Canvas class that can copy imagery from another canvas." alt="DRAM_Canvas" shape="rect" coords="0,56,99,80"/>
-<area href="class_r_o_m___canvas.html" title="A variation of the Canvas class that can load imagery from Flash ROM." alt="ROM_Canvas" shape="rect" coords="109,56,208,80"/>
+<area href="class_d_r_a_m___canvas.html" alt="DRAM_Canvas" shape="rect" coords="0,56,99,80"/>
+<area href="class_r_o_m___canvas.html" alt="ROM_Canvas" shape="rect" coords="109,56,208,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -183,7 +187,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2edb82c8c8a1a129182c68a8360616b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight off.  <br /></td></tr>
 <tr class="separator:a2edb82c8c8a1a129182c68a8360616b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6db455aef96b2f06acddc9ef19a18572" id="r_a6db455aef96b2f06acddc9ef19a18572"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6db455aef96b2f06acddc9ef19a18572">nextAddress</a> (void)</td></tr>
-<tr class="memdesc:a6db455aef96b2f06acddc9ef19a18572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location in DRAM whether the next image <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> will be placed.  <br /></td></tr>
+<tr class="memdesc:a6db455aef96b2f06acddc9ef19a18572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location in DRAM whether the next image <a class="el" href="class_canvas.html">Canvas</a> will be placed.  <br /></td></tr>
 <tr class="separator:a6db455aef96b2f06acddc9ef19a18572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -221,10 +225,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a10f6299f7633b793fe345840b3600678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a line onto the display.  <br /></td></tr>
 <tr class="separator:a10f6299f7633b793fe345840b3600678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides higher level TFT graphic functionality used by the menu system. </p>
-<p>The LT7683 chip can create multiple canvass for holding graphics. Callers can place graphics onto the canvass and they can use the graphics engine of the LT7683 chip to draw geometric shapes. When ready, the caller can then signify which canvas is to be diplayed within the TFT window. The <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> class provides a higher level interface to the LT7683 chip, providing methods for creating, managing, and using these canvass. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b3a7c17161f72d4f2332021d6e866e9" name="a3b3a7c17161f72d4f2332021d6e866e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b3a7c17161f72d4f2332021d6e866e9">&#9670;&#160;</a></span>Canvas() <span class="overload">[1/3]</span></h2>
 
@@ -793,10 +794,10 @@ Protected Member Functions</h2></td></tr>
 <p>Gneralized ROP operation. This assumes that object calling this method is the destimation DT canvas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">S0</td><td><a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> containg the S0 source imagery </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S0</td><td><a class="el" href="class_canvas.html">Canvas</a> containg the S0 source imagery </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">S0_x0</td><td>Upper left x-coordinate of image block within <code class="param">S0</code> to be processed by BTE </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">S0_y0</td><td>Upper left y-coodrinate of image block within <code class="param">S0</code> to be processed by BTE </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">S1</td><td><a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> containg the S1 source imagery </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S1</td><td><a class="el" href="class_canvas.html">Canvas</a> containg the S1 source imagery </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">S1_x0</td><td>Upper left x-coordinate of image block within <code class="param">S1</code> to be processed by BTE </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">S1_y0</td><td>Upper left y-coodrinate of image block within <code class="param">S1</code> to be processed by BTE </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">DT_x0</td><td>Upper left x-coordinate where the final image is to placed within this canvas </td></tr>
@@ -1173,7 +1174,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Location in DRAM whether the next image <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> will be placed. </p>
+<p>Location in DRAM whether the next image <a class="el" href="class_canvas.html">Canvas</a> will be placed. </p>
 <dl class="section user"><dt>Parameters</dt><dd>None. </dd></dl>
 
 </div>
@@ -1350,8 +1351,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_canvas_8h_source.html">Canvas.h</a></li>
-<li><a class="el" href="_canvas_8cpp.html">Canvas.cpp</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_canvas_8h_source.html">Canvas.h</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_canvas_8cpp.html">Canvas.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

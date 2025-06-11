@@ -1,0 +1,264 @@
+\doxysection{Button Class Reference}
+\hypertarget{class_button}{}\label{class_button}\index{Button@{Button}}
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+Inheritance diagram for Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_button}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_button_a089d424b1d16508c8d77b9c552699522}{callback\+\_\+function}}) (void)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_a1f9384894fcc23ebf34b86de8b0eac1f}{Button}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&Dest\+Canvas, const \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} \&Dest\+Loc, const \mbox{\hyperlink{class_d_r_a_m___canvas}{DRAM\+\_\+\+Canvas}} \texorpdfstring{$\ast$}{*}Imgs, uint8\+\_\+t max\+Num\+States)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \doxylink{class_button}{Button}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_button_aec43891dc8ff8f87e0eff95f8315f09f}{\texorpdfstring{$\sim$}{\string~}\+Button}} (void)=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ General Methods}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_button_a073c0529b7bfdff34981366d5895fed2}{begin}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the button. This method should be called before first use. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_button_a9a4b0bb6bb5745dd9341ae6d49de9bd1}{press}} (\mbox{\hyperlink{struct_f_t5316_1_1_touch_location}{FT5316\+::\+Touch\+Location}} loc)
+\begin{DoxyCompactList}\small\item\em Presses the button if {\ttfamily loc} is within the bounds of the button. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_aaffb603c435d21a9477154f18ac70986}{release}} (void)
+\begin{DoxyCompactList}\small\item\em Releases the button if it has been pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_a8d0bdd0a384deeba962e237315bcd94e}{enable}} (void)
+\begin{DoxyCompactList}\small\item\em Enables the button, makking it accept button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_a5bfcdefa670e1d723da7007b447d349b}{disable}} (void)
+\begin{DoxyCompactList}\small\item\em Disables the button, so that it ignores button presses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Accesor Methods}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_button_ad754e299e21b35c04f58ea3ed192fd70}{is\+Enabled}} (void) const
+\begin{DoxyCompactList}\small\item\em Indicates whether the \doxylink{class_button}{Button} is enabled. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_a474cae0b010fff9730e9193f5c7084bb}{width}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the width of the button in pixels. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_a236ad6351d483848fb0d17c5cdc48471}{height}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the height of the button in pixels. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_button_a0afeb14dffa44f7e9e50151fbb6218e4}{state}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the current state of the button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_button_a36fef3a46a7334d7a889b55db90fe560}{\+\_\+reset\+To\+State0}} (void)
+\begin{DoxyCompactList}\small\item\em Internal method for resetting the button to state 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{class_button_a089d424b1d16508c8d77b9c552699522}\index{Button@{Button}!callback\_function@{callback\_function}}
+\index{callback\_function@{callback\_function}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{callback\_function}{callback\_function}}
+{\footnotesize\ttfamily \label{class_button_a089d424b1d16508c8d77b9c552699522} 
+typedef void(\texorpdfstring{$\ast$}{*} Button\+::callback\+\_\+function) (void)}
+
+Defines the form of the callback functions expected by the \doxylink{class_button}{Button} class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_button_a1f9384894fcc23ebf34b86de8b0eac1f}\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily \label{class_button_a1f9384894fcc23ebf34b86de8b0eac1f} 
+Button\+::\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{Dest\+Canvas}{, }\item[{const \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} \&}]{Dest\+Loc}{, }\item[{const \mbox{\hyperlink{class_d_r_a_m___canvas}{DRAM\+\_\+\+Canvas}} \texorpdfstring{$\ast$}{*}}]{Imgs}{, }\item[{uint8\+\_\+t}]{max\+Num\+States}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for creating a \doxylink{class_button}{Button}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Dest\+Canvas} & Destination canvas where the current button image is copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em Dest\+Loc} & UL x-\/y coordinate within {\ttfamily Dest\+Canvas} where the button is to be copied \\
+\hline
+\mbox{\texttt{ in}}  & {\em Imgs} & Array of locations, pointing to button images. One image per state \\
+\hline
+\mbox{\texttt{ in}}  & {\em max\+Num\+States} & Number of button states\\
+\hline
+\end{DoxyParams}
+This button will toggle between the number of states specified by {\ttfamily max\+Num\+States}. When the button is pressed, this class will increase the state by one. If the state exceeds {\ttfamily max\+Num\+States}, the state is reset to 0. The button imagery is copied from the {\ttfamily Imgs} array onto the {\ttfamily Dest\+Canvas}. \Hypertarget{class_button_aec43891dc8ff8f87e0eff95f8315f09f}\index{Button@{Button}!````~Button@{\texorpdfstring{$\sim$}{\string~}Button}}
+\index{````~Button@{\texorpdfstring{$\sim$}{\string~}Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Button()}{\string~Button()}}
+{\footnotesize\ttfamily \label{class_button_aec43891dc8ff8f87e0eff95f8315f09f} 
+Button\+::\texorpdfstring{$\sim$}{\string~}\+Button (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_button_a36fef3a46a7334d7a889b55db90fe560}\index{Button@{Button}!\_resetToState0@{\_resetToState0}}
+\index{\_resetToState0@{\_resetToState0}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{\_resetToState0()}{\_resetToState0()}}
+{\footnotesize\ttfamily \label{class_button_a36fef3a46a7334d7a889b55db90fe560} 
+void Button\+::\+\_\+reset\+To\+State0 (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Internal method for resetting the button to state 0. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_button_a073c0529b7bfdff34981366d5895fed2}\index{Button@{Button}!begin@{begin}}
+\index{begin@{begin}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_button_a073c0529b7bfdff34981366d5895fed2} 
+void Button\+::begin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the button. This method should be called before first use. 
+
+\begin{DoxyParagraph}{Parameters}
+None.
+\end{DoxyParagraph}
+This method loads the button imagery from the source canvas, making the imagery available for use. \Hypertarget{class_button_a5bfcdefa670e1d723da7007b447d349b}\index{Button@{Button}!disable@{disable}}
+\index{disable@{disable}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily \label{class_button_a5bfcdefa670e1d723da7007b447d349b} 
+void Button\+::disable (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disables the button, so that it ignores button presses. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_button_a8d0bdd0a384deeba962e237315bcd94e}\index{Button@{Button}!enable@{enable}}
+\index{enable@{enable}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily \label{class_button_a8d0bdd0a384deeba962e237315bcd94e} 
+void Button\+::enable (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enables the button, makking it accept button presses. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_button_a236ad6351d483848fb0d17c5cdc48471}\index{Button@{Button}!height@{height}}
+\index{height@{height}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \label{class_button_a236ad6351d483848fb0d17c5cdc48471} 
+uint16\+\_\+t Button\+::height (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the height of the button in pixels. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Height of \doxylink{class_button}{Button} 
+\end{DoxyReturn}
+\Hypertarget{class_button_ad754e299e21b35c04f58ea3ed192fd70}\index{Button@{Button}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily \label{class_button_ad754e299e21b35c04f58ea3ed192fd70} 
+bool Button\+::is\+Enabled (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether the \doxylink{class_button}{Button} is enabled. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+True if enabled, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_button_a9a4b0bb6bb5745dd9341ae6d49de9bd1}\index{Button@{Button}!press@{press}}
+\index{press@{press}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{press()}{press()}}
+{\footnotesize\ttfamily \label{class_button_a9a4b0bb6bb5745dd9341ae6d49de9bd1} 
+bool Button\+::press (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_f_t5316_1_1_touch_location}{FT5316\+::\+Touch\+Location}}}]{loc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Presses the button if {\ttfamily loc} is within the bounds of the button. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loc} & x-\/y coordinate where the TFT screen has been touched\\
+\hline
+\end{DoxyParams}
+If the {\ttfamily loc} check is successful, this method updates the button imagery. 
+
+Reimplemented in \mbox{\hyperlink{class_immediate_button_a88520eaf3b60c634a8e752eba0e0c735}{Immediate\+Button}}, and \mbox{\hyperlink{class_toggle_button_a2e4cd4d71e704175aa9c92858bddd66b}{Toggle\+Button}}.
+
+\Hypertarget{class_button_aaffb603c435d21a9477154f18ac70986}\index{Button@{Button}!release@{release}}
+\index{release@{release}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_button_aaffb603c435d21a9477154f18ac70986} 
+virtual void Button\+::release (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Releases the button if it has been pressed. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Reimplemented in \mbox{\hyperlink{class_momentary_button_aa415b69e5c860bffb2ae5736b990a699}{Momentary\+Button}}.
+
+\Hypertarget{class_button_a0afeb14dffa44f7e9e50151fbb6218e4}\index{Button@{Button}!state@{state}}
+\index{state@{state}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily \label{class_button_a0afeb14dffa44f7e9e50151fbb6218e4} 
+uint8\+\_\+t Button\+::state (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the current state of the button. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+State of the button 
+\end{DoxyReturn}
+\Hypertarget{class_button_a474cae0b010fff9730e9193f5c7084bb}\index{Button@{Button}!width@{width}}
+\index{width@{width}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily \label{class_button_a474cae0b010fff9730e9193f5c7084bb} 
+uint16\+\_\+t Button\+::width (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the width of the button in pixels. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\begin{DoxyReturn}{Returns}
+Width of \doxylink{class_button}{Button} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_button_8h}{Button.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_button_8cpp}{Button.\+cpp}}\end{DoxyCompactItemize}

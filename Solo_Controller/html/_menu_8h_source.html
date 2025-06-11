@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solo Controller: Menu.h Source File</title>
+<title>Solo Controller: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Menu.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,6 +18,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -27,9 +32,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Solo Controller
+   <div id="projectname">Solo Controller<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Documentation for the Solo Controller</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -46,17 +64,6 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search',true);
-  $(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -99,7 +106,10 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Menu.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_menu_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<a href="_menu_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*******************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file Menu.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @brief Defines the menu classes used by the SoloController app</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MENU_INCLUDED</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define MENU_INCLUDED</span></div>
@@ -112,11 +122,21 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_menu_8h.html#a385ac6529964259d8d5b226207e4065b">   14</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_menu_8h.html#a385ac6529964259d8d5b226207e4065b">sensorVal_t</a> = <a class="code hl_typedef" href="class_sensor.html#afb25f6c4205dbb77fb35f0850a9cf0ef">Sensor::sensorVal_t</a>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>std;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/***                    Class Definition: SoloMenu                          ***/</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/******************************************************************************</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * @brief Base class used by all menus.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * This menu provides the core functionality for the menu system. Each menu</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * displayed on the TFT will derive from this class. The primary responsibility</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * for this class is to manage all Button, Labels, and Submenus, ensuring</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * that requests to update graphics or handle presses to the TFT touch screen</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * are handled properly. All menus are intended to be Singleton objects.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * Each object uses significant DRAM resources.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_solo_menu.html">   32</a></span><span class="keyword">class </span><a class="code hl_function" href="class_solo_menu.html#a1e1447c429a629f2d4f790358a6c7eb2">SoloMenu</a></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
@@ -216,11 +236,11 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">extern</span> <a class="code hl_class" href="class_solo_menu.html">SoloMenu</a> *<a class="code hl_variable" href="_menu_8cpp.html#a5c4bbb8c5b4a3a9589b95285395756d8">menu</a>; </div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">/***                    Class Definition: MainMenu                          ***/</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="_menu_8h.html#aaf863b665fd9b9e1ea7aa723f553abfc">  231</a></span><span class="preprocessor">#define NUM_MAINMENU_BUTTONS 0 </span><span class="preprocessor"></span></div>
 <div class="foldopen" id="foldopen00242" data-start="{" data-end="};">
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="class_main_menu.html">  242</a></span><span class="keyword">class </span>MainMenu : <span class="keyword">public</span> <a class="code hl_function" href="class_solo_menu.html#a1e1447c429a629f2d4f790358a6c7eb2">SoloMenu</a></div>
@@ -280,11 +300,11 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="keyword">extern</span> <a class="code hl_class" href="class_solo_menu.html">SoloMenu</a> *<a class="code hl_variable" href="_menu_8cpp.html#a8fae6703f1c71627af514109c9119e1e">setupMenu</a>; </div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span></div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span></div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">/***                 Class Definition: SetupVolMenu                         ***/</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="_menu_8h.html#a3206ce01db32abe074fa8aa852722605">  332</a></span><span class="preprocessor">#define NUM_SETUPVOLMENU_BUTTONS 0</span><span class="preprocessor"></span></div>
 <div class="foldopen" id="foldopen00340" data-start="{" data-end="};">
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="class_setup_vol_menu.html">  340</a></span><span class="keyword">class </span>SetupVolMenu : <span class="keyword">public</span> <a class="code hl_function" href="class_solo_menu.html#a1e1447c429a629f2d4f790358a6c7eb2">SoloMenu</a></div>
@@ -338,11 +358,11 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>};</div>
 </div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span></div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span></div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span></div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span></div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="comment">/***                 Class Definition: SetupTempMenu                        ***/</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno"><a class="line" href="_menu_8h.html#ae3448608d37aed734bc22df980f27326">  424</a></span><span class="preprocessor">#define NUM_SETUPTEMPMENU_BUTTONS 0</span><span class="preprocessor"></span></div>
 <div class="foldopen" id="foldopen00430" data-start="{" data-end="};">
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno"><a class="line" href="class_setup_temp_menu.html">  430</a></span><span class="keyword">class </span>SetupTempMenu : <span class="keyword">public</span> <a class="code hl_function" href="class_solo_menu.html#a1e1447c429a629f2d4f790358a6c7eb2">SoloMenu</a></div>
@@ -396,11 +416,11 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>};</div>
 </div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span> </div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span></div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span></div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span></div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span></div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span></div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="comment">/***                 Class Definition: SetupPID_Menu                        ***/</span></div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno"><a class="line" href="_menu_8h.html#a5ae563bb5fac391b0683750693740437">  514</a></span><span class="preprocessor">#define NUM_SETUPPIDMENU_BUTTONS 0</span><span class="preprocessor"></span></div>
 <div class="foldopen" id="foldopen00520" data-start="{" data-end="};">
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno"><a class="line" href="class_setup_p_i_d___menu.html">  520</a></span><span class="keyword">class </span>SetupPID_Menu : <span class="keyword">public</span> <a class="code hl_function" href="class_solo_menu.html#a1e1447c429a629f2d4f790358a6c7eb2">SoloMenu</a></div>
@@ -453,11 +473,11 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>};</div>
 </div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span></div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span></div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span></div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span></div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span></div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment">/***                         Callback Functions                             ***/</span></div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="comment">/***                                                                        ***/</span></div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span></div>
 <div class="foldopen" id="foldopen00606" data-start="{" data-end="}">
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno"><a class="line" href="namespace_c_b.html">  606</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_c_b.html">CB</a></div>
@@ -528,8 +548,8 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
 <div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_button_8h_html"><div class="ttname"><a href="_button_8h.html">Button.h</a></div><div class="ttdoc">Defines the Button classes used by the Menu system.</div></div>
-<div class="ttc" id="a_canvas_8h_html"><div class="ttname"><a href="_canvas_8h.html">Canvas.h</a></div><div class="ttdoc">Defines higher level TFT graphics functionality.</div></div>
+<div class="ttc" id="a_button_8h_html"><div class="ttname"><a href="_button_8h.html">Button.h</a></div></div>
+<div class="ttc" id="a_canvas_8h_html"><div class="ttname"><a href="_canvas_8h.html">Canvas.h</a></div></div>
 <div class="ttc" id="a_menu_8cpp_html_a5c4bbb8c5b4a3a9589b95285395756d8"><div class="ttname"><a href="_menu_8cpp.html#a5c4bbb8c5b4a3a9589b95285395756d8">menu</a></div><div class="ttdeci">SoloMenu * menu</div><div class="ttdoc">Pointer to the current, active menu used by the application.</div><div class="ttdef"><b>Definition</b> Menu.cpp:28</div></div>
 <div class="ttc" id="a_menu_8cpp_html_a8fae6703f1c71627af514109c9119e1e"><div class="ttname"><a href="_menu_8cpp.html#a8fae6703f1c71627af514109c9119e1e">setupMenu</a></div><div class="ttdeci">SoloMenu * setupMenu</div><div class="ttdoc">Pointer to the current setup menu.</div><div class="ttdef"><b>Definition</b> Menu.cpp:36</div></div>
 <div class="ttc" id="a_menu_8h_html_a3206ce01db32abe074fa8aa852722605"><div class="ttname"><a href="_menu_8h.html#a3206ce01db32abe074fa8aa852722605">NUM_SETUPVOLMENU_BUTTONS</a></div><div class="ttdeci">#define NUM_SETUPVOLMENU_BUTTONS</div><div class="ttdef"><b>Definition</b> Menu.h:332</div></div>
@@ -538,18 +558,18 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="a_menu_8h_html_a5c4bbb8c5b4a3a9589b95285395756d8"><div class="ttname"><a href="_menu_8h.html#a5c4bbb8c5b4a3a9589b95285395756d8">menu</a></div><div class="ttdeci">SoloMenu * menu</div><div class="ttdoc">Pointer to the current, active menu used by the application.</div><div class="ttdef"><b>Definition</b> Menu.cpp:28</div></div>
 <div class="ttc" id="a_menu_8h_html_a8fae6703f1c71627af514109c9119e1e"><div class="ttname"><a href="_menu_8h.html#a8fae6703f1c71627af514109c9119e1e">setupMenu</a></div><div class="ttdeci">SoloMenu * setupMenu</div><div class="ttdoc">Pointer to the current setup menu.</div><div class="ttdef"><b>Definition</b> Menu.cpp:36</div></div>
 <div class="ttc" id="a_menu_8h_html_aaf863b665fd9b9e1ea7aa723f553abfc"><div class="ttname"><a href="_menu_8h.html#aaf863b665fd9b9e1ea7aa723f553abfc">NUM_MAINMENU_BUTTONS</a></div><div class="ttdeci">#define NUM_MAINMENU_BUTTONS</div><div class="ttdoc">Number of buttons managed by the MainMenu.</div><div class="ttdef"><b>Definition</b> Menu.h:231</div></div>
-<div class="ttc" id="a_sensor_8h_html"><div class="ttname"><a href="_sensor_8h.html">Sensor.h</a></div><div class="ttdoc">Defines a class for managing Sensor data.</div></div>
+<div class="ttc" id="a_sensor_8h_html"><div class="ttname"><a href="_sensor_8h.html">Sensor.h</a></div></div>
 <div class="ttc" id="a_t_f_t_m070_a1_8h_html_abb4ac17205068db1ba4713e440634256"><div class="ttname"><a href="_t_f_t_m070_a1_8h.html#abb4ac17205068db1ba4713e440634256">LCD_YSIZE_TFT</a></div><div class="ttdeci">#define LCD_YSIZE_TFT</div><div class="ttdef"><b>Definition</b> TFTM070A1.h:25</div></div>
 <div class="ttc" id="a_t_f_t_m070_a1_8h_html_aca997fe22ad5e98dad56aaed32118c20"><div class="ttname"><a href="_t_f_t_m070_a1_8h.html#aca997fe22ad5e98dad56aaed32118c20">LCD_XSIZE_TFT</a></div><div class="ttdeci">#define LCD_XSIZE_TFT</div><div class="ttdef"><b>Definition</b> TFTM070A1.h:24</div></div>
-<div class="ttc" id="a_text_box_8h_html"><div class="ttname"><a href="_text_box_8h.html">TextBox.h</a></div><div class="ttdoc">Defines TextBox and TextBox which are used to display dynamic text within a canvas.</div></div>
-<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdoc">Provides buttons for the menu system.</div><div class="ttdef"><b>Definition</b> Button.h:24</div></div>
-<div class="ttc" id="aclass_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdoc">Provides higher level TFT graphic functionality used by the menu system.</div><div class="ttdef"><b>Definition</b> Canvas.h:33</div></div>
+<div class="ttc" id="a_text_box_8h_html"><div class="ttname"><a href="_text_box_8h.html">TextBox.h</a></div></div>
+<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdef"><b>Definition</b> Button.h:24</div></div>
+<div class="ttc" id="aclass_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition</b> Canvas.h:33</div></div>
 <div class="ttc" id="aclass_main_menu_html"><div class="ttname"><a href="class_main_menu.html">MainMenu</a></div><div class="ttdoc">Main menu for the SoloController application.</div><div class="ttdef"><b>Definition</b> Menu.h:243</div></div>
 <div class="ttc" id="aclass_main_menu_html_a77f8a17fbc57720ea448a6873db36d54"><div class="ttname"><a href="class_main_menu.html#a77f8a17fbc57720ea448a6873db36d54">MainMenu::begin</a></div><div class="ttdeci">void begin(void) override</div><div class="ttdoc">Initializes the MainMenu object. Should be called before first use.</div><div class="ttdef"><b>Definition</b> Menu.cpp:246</div></div>
 <div class="ttc" id="aclass_main_menu_html_ab045cc677286506297e51b6cf3f20cdd"><div class="ttname"><a href="class_main_menu.html#ab045cc677286506297e51b6cf3f20cdd">MainMenu::show</a></div><div class="ttdeci">void show(void) override</div><div class="ttdoc">Shows the menu in the TFT.</div><div class="ttdef"><b>Definition</b> Menu.h:317</div></div>
 <div class="ttc" id="aclass_main_menu_html_afc6427a223d2915f240700994b7b7518"><div class="ttname"><a href="class_main_menu.html#afc6427a223d2915f240700994b7b7518">MainMenu::update</a></div><div class="ttdeci">void update(void) override</div><div class="ttdoc">Updates the values and graphics displayed in the menu.</div><div class="ttdef"><b>Definition</b> Menu.cpp:265</div></div>
 <div class="ttc" id="aclass_main_menu_html_afea55aadf44178178df52efbcef382c1"><div class="ttname"><a href="class_main_menu.html#afea55aadf44178178df52efbcef382c1">MainMenu::getInstance</a></div><div class="ttdeci">static MainMenu &amp; getInstance(void)</div><div class="ttdoc">Returns reference to the ErrMsg object.</div><div class="ttdef"><b>Definition</b> Menu.h:285</div></div>
-<div class="ttc" id="aclass_r_o_m___canvas_html"><div class="ttname"><a href="class_r_o_m___canvas.html">ROM_Canvas</a></div><div class="ttdoc">A variation of the Canvas class that can load imagery from Flash ROM.</div><div class="ttdef"><b>Definition</b> Canvas.h:373</div></div>
+<div class="ttc" id="aclass_r_o_m___canvas_html"><div class="ttname"><a href="class_r_o_m___canvas.html">ROM_Canvas</a></div><div class="ttdef"><b>Definition</b> Canvas.h:373</div></div>
 <div class="ttc" id="aclass_sensor_html_afb25f6c4205dbb77fb35f0850a9cf0ef"><div class="ttname"><a href="class_sensor.html#afb25f6c4205dbb77fb35f0850a9cf0ef">Sensor::sensorVal_t</a></div><div class="ttdeci">float sensorVal_t</div><div class="ttdoc">Type definition used by Sensor class.</div><div class="ttdef"><b>Definition</b> Sensor.h:25</div></div>
 <div class="ttc" id="aclass_setup_p_i_d___menu_html"><div class="ttname"><a href="class_setup_p_i_d___menu.html">SetupPID_Menu</a></div><div class="ttdoc">Setup menu for the SoloController application. Note that the callback functions used by SetupTempMenu...</div><div class="ttdef"><b>Definition</b> Menu.h:521</div></div>
 <div class="ttc" id="aclass_setup_p_i_d___menu_html_a117c3fb652ba71de81c650a7176dd0a3"><div class="ttname"><a href="class_setup_p_i_d___menu.html#a117c3fb652ba71de81c650a7176dd0a3">SetupPID_Menu::update</a></div><div class="ttdeci">void update(void) override</div><div class="ttdoc">Updates the values and graphics displayed in the menu.</div><div class="ttdef"><b>Definition</b> Menu.cpp:642</div></div>
@@ -566,7 +586,7 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="aclass_setup_vol_menu_html_a7e3a4c0d1a74ca5147b816a17a85228e"><div class="ttname"><a href="class_setup_vol_menu.html#a7e3a4c0d1a74ca5147b816a17a85228e">SetupVolMenu::update</a></div><div class="ttdeci">void update(void) override</div><div class="ttdoc">Updates the values and graphics displayed in the menu.</div><div class="ttdef"><b>Definition</b> Menu.cpp:452</div></div>
 <div class="ttc" id="aclass_setup_vol_menu_html_aeae51946124120c28083d1b44e2168a9"><div class="ttname"><a href="class_setup_vol_menu.html#aeae51946124120c28083d1b44e2168a9">SetupVolMenu::begin</a></div><div class="ttdeci">void begin(void) override</div><div class="ttdoc">Initializes the SetupMenu object. Should be called before first use.</div><div class="ttdef"><b>Definition</b> Menu.cpp:441</div></div>
 <div class="ttc" id="aclass_setup_vol_menu_html_aef01ad592f2d8228a2a0f83ec9b006b4"><div class="ttname"><a href="class_setup_vol_menu.html#aef01ad592f2d8228a2a0f83ec9b006b4">SetupVolMenu::getInstance</a></div><div class="ttdeci">static SetupVolMenu &amp; getInstance(void)</div><div class="ttdoc">Returns reference to the ErrMsg object.</div><div class="ttdef"><b>Definition</b> Menu.h:378</div></div>
-<div class="ttc" id="aclass_solo_menu_html"><div class="ttname"><a href="class_solo_menu.html">SoloMenu</a></div><div class="ttdoc">Base class used by all menus.</div><div class="ttdef"><b>Definition</b> Menu.h:33</div></div>
+<div class="ttc" id="aclass_solo_menu_html"><div class="ttname"><a href="class_solo_menu.html">SoloMenu</a></div><div class="ttdef"><b>Definition</b> Menu.h:33</div></div>
 <div class="ttc" id="aclass_solo_menu_html_a050ae3a9e42c1b647b0a699acc18c428"><div class="ttname"><a href="class_solo_menu.html#a050ae3a9e42c1b647b0a699acc18c428">SoloMenu::update</a></div><div class="ttdeci">virtual void update(void)</div><div class="ttdoc">Updates the Button, Menu, and Label objects managed by this class.</div><div class="ttdef"><b>Definition</b> Menu.cpp:61</div></div>
 <div class="ttc" id="aclass_solo_menu_html_a0765e6a7168259e2b37856c71399a670"><div class="ttname"><a href="class_solo_menu.html#a0765e6a7168259e2b37856c71399a670">SoloMenu::show</a></div><div class="ttdeci">virtual void show(void)=0</div><div class="ttdoc">Shows the menu in the TFT. Derived classes will provide specific functionality.</div></div>
 <div class="ttc" id="aclass_solo_menu_html_a1303f286bd0f1073039c252d3cdbe637"><div class="ttname"><a href="class_solo_menu.html#a1303f286bd0f1073039c252d3cdbe637">SoloMenu::~SoloMenu</a></div><div class="ttdeci">~SoloMenu(void)=default</div><div class="ttdoc">Default Destructor.</div></div>

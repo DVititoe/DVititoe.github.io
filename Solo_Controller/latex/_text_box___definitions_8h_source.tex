@@ -1,0 +1,63 @@
+\doxysection{Text\+Box\+\_\+\+Definitions.\+h}
+\hypertarget{_text_box___definitions_8h_source}{}\label{_text_box___definitions_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/TextBox\_Definitions.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/TextBox\_Definitions.h}}
+\mbox{\hyperlink{_text_box___definitions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TEXTBOXDEF\_DEFINED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TEXTBOXDEF\_DEFINED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gr_font_8h}{GrFont.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_font___list__t}{Font\_List\_t}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *\mbox{\hyperlink{struct_font___list__t_ab652261933e7b7789d0216f802025552}{Red180}};}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *\mbox{\hyperlink{struct_font___list__t_afed733782e5646ce027aaa6be8610d0f}{Blue64}};}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *\mbox{\hyperlink{struct_font___list__t_a88183a3fa4734122e97ead8fd39eb812}{Red64}};}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *\mbox{\hyperlink{struct_font___list__t_a84e434adb8ccd2b80fab661cbc98580e}{Green20}};}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_shape__t}{Shape\_t}}}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_shape__t_a0e318b8994bb72dc53469b3ad1d90b66}{unitsWidth}};\ }
+\DoxyCodeLine{00034\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_shape__t_a707f7fb7d60b577c7352bccc3a471137}{height}};\ \ \ \ \ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00043\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_shape__t_a1fac939468f54f2d1433a586d3d70d77}{baseline}};}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ Define\ configuration\ parameters\ that\ defined\ by\ the\ sizes\ of\ the\ fonts\ being\ used.}}
+\DoxyCodeLine{00047\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_shape_list__t}{ShapeList\_t}}}
+\DoxyCodeLine{00048\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ *\mbox{\hyperlink{struct_shape_list__t_a48e73748b2ea4a26abee1337c77fd5dd}{WorkSan\_180\_64\_Config}};}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ *\mbox{\hyperlink{struct_shape_list__t_a97742bfe39e8b80950a4dfc626ff9d40}{WorkSan\_90\_32\_Config}};}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ *\mbox{\hyperlink{struct_shape_list__t_a4896bf5ef13d58a89b92b4f0955daa70}{WorkSan\_64\_20\_Config}};}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}}
+\DoxyCodeLine{00058\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_config_text_box__t_abf23789044909a086aa683dbf876965e}{x}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_config_text_box__t_a345d769e05da1c47cb621803235939c7}{y}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_config_text_box__t_a699a85281f94db03641df64d549b32c6}{textWidth}};\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ *\mbox{\hyperlink{struct_config_text_box__t_a509c9e2d4da41e5080c6bbcfceade98e}{shape}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *\mbox{\hyperlink{struct_config_text_box__t_ac296ef6992da72ae5b095f0d141d688d}{TextFont}};\ \ }
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *\mbox{\hyperlink{struct_config_text_box__t_ad35ffe92136cce30f0e39f529babb6b5}{UnitsFont}};\ }
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_config_list__t}{ConfigList\_t}}}
+\DoxyCodeLine{00084\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00089\ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_a889cfb8998a10a316f699934453fe9dc}{kettleTemp}};\ \ \ \ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_a517caa701ec101ed9596d941aea72df5}{setTemp}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_ab32a80bf64373bee0d55748a7d5dc217}{elemOut}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_a52d11f2946ec0f209f05587e3ddf3855}{volume}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_af121b71ae32a7a3f79a8fc7a7520efbd}{minVolume}};\ \ \ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_a03340f6320bfc4098999c6a1755ab190}{chillerTemp}};\ \ \ \ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_ad321cbe26e7f5a2051b05819b8ab22ab}{minChillerTemp}};\ }
+\DoxyCodeLine{00097\ \ \ \ \ \}\ \mbox{\hyperlink{struct_config_list__t_a95465a25a94f98db4ce96eb5a063a941}{main}};}
+\DoxyCodeLine{00098\ \};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

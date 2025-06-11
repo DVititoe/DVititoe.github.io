@@ -1,0 +1,129 @@
+\doxysection{ROM\+\_\+\+Images.\+h}
+\hypertarget{_r_o_m___images_8h_source}{}\label{_r_o_m___images_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/ROM\_Images.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/ROM\_Images.h}}
+\mbox{\hyperlink{_r_o_m___images_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ROM\_IMAGES\_DEFINED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ROM\_IMAGES\_DEFINED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ @file\ Flash\_Images.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ @brief\ Defines\ the\ images\ stored\ on\ FlashROM}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_r_o_m___config_8h}{ROM\_Config.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a5b57ad2b318fe430e31807a2a1f04f95}{LOAD\_SCREEN}}\ =\ \{\mbox{\hyperlink{_r_o_m___config_8h_a5e9683498ec30e0772c91c8ef9ccf976}{LOADSCREEN\_ADDRESS}},\ \mbox{\hyperlink{_r_o_m___config_8h_aa1bcc579473a84de0a742e2b325985e2}{LOADSCREEN\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___config_8h_ac40df0d7d7b35aa93bf9c203c102da3d}{LOADSCREEN\_HEIGHT}}\};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{//*\ @brief\ Solo\ Controller\ main\ menu\ under\ normal\ operating\ conditions\ */}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\_BUTTON\_WIDTH}}\ \ =\ 164;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\_BUTTON\_HEIGHT}}\ =\ 114;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\_BUTTON\_WIDTH}}\ \ =\ 80;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\_BUTTON\_HEIGHT}}\ =\ 73;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_a27c91509479bc1f0bba77e1dbae1dbf5}{SETUP\_BUTTON\_WIDTH}}\ \ =\ 140;}
+\DoxyCodeLine{00021\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_a2d61c53a4212c59f0a8e31d6d390c29c}{SETUP\_BUTTON\_HEIGHT}}\ =\ 114;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{const}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00023\ \ \ }
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ \ \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}}\ =\ \{\mbox{\hyperlink{_r_o_m___config_8h_a2f86dd0bf65954567a712cc4cb527998}{SOLOMAIN\_ADDRESS}},\ \mbox{\hyperlink{_r_o_m___config_8h_a8f3e27a57ed27121b7b6a81ad9c6b912}{SOLOMAIN\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___config_8h_a9a940e54ea2be9280123eb06dd9b892c}{SOLOMAIN\_HEIGHT}}\};}
+\DoxyCodeLine{00025\ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ x,\ \ \ y,\ \ \ width,\ height}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ae8238ea80d803368bb4844bb8e680ff1}{temp\_panel}}\ \ \ \ \ \ \ \ \ \ \ =\ \{0,\ \ \ 0,\ \ \ 512,\ \ \ 400\};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ad922560d1eff2e9cd3e343185fc00c9a}{temp\_alarm\_button}}\ \ \ \ =\ \{390,\ 259,\ \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a31ea7ea60be54d5fb6ae77a7d9bb181c}{vol\_panel}}\ \ \ \ \ \ \ \ \ \ \ \ =\ \{512,\ 0,\ \ \ 512,\ \ \ 202\};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a16d8bd4b401bb2f42cc0852d4ed22c8a}{vol\_alarm\_button}}\ \ \ \ \ =\ \{922,\ 59,\ \ \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_af2eb87f0d30067ec19313a011124ebe2}{chiller\_panel}}\ \ \ \ \ \ \ \ =\ \{512,\ 201,\ 512,\ \ \ 200\};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a3e4943a2886cf0625aa6de28724564fc}{chiller\_alarm\_button}}\ =\ \{921,\ 259,\ \mbox{\hyperlink{_r_o_m___images_8h_af5dd89f72ee88d2beb67ab70eb1d2728}{SM\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a75cede58436081868c12abea2bb66d34}{SM\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a11a90f4d255b59b0ee1f3ca4fdf1962c}{Button\_panel}}\ \ \ \ \ \ \ \ \ =\ \{0,\ \ \ 400,\ 1024,\ \ 200\};}
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a7ac4237826f895066fba2aeeedec0539}{Button\_Mode}}\ \ \ \ \ \ \ \ \ \ =\ \{58,\ \ 466,\ \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00035\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a98933c5a9a88ea67c42c70c8840236dc}{Button\_Pump}}\ \ \ \ \ \ \ \ \ \ =\ \{313,\ 466,\ \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a1a20bf6ff88d9758c8035fcdcd082c5b}{Button\_Aux}}\ \ \ \ \ \ \ \ \ \ \ =\ \{569,\ 466,\ \mbox{\hyperlink{_r_o_m___images_8h_a21c16ea20e850cef42c27d73bcbadd26}{LG\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a1c59584392e79638098232a6436adf1c}{LG\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a48a075f0c24fa994c96cab0a0edf3e17}{Button\_Setup}}\ \ \ \ \ \ \ \ \ =\ \{826,\ 465,\ \mbox{\hyperlink{_r_o_m___images_8h_a27c91509479bc1f0bba77e1dbae1dbf5}{SETUP\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a2d61c53a4212c59f0a8e31d6d390c29c}{SETUP\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00038\ \ \ }
+\DoxyCodeLine{00039\ \}\ \mbox{\hyperlink{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}{SOLO\_MAIN}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{const}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00044\ \ \ }
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}}\ =\ \{\mbox{\hyperlink{_r_o_m___config_8h_a69ab8b03ece2115516f90bc50b395443}{SOLOALARM\_ADDRESS}},\ \mbox{\hyperlink{_r_o_m___config_8h_a2f1fdf9878195b231af1a6539951e3db}{SOLOALARM\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___config_8h_ac18713af7b4888ba885fff902a97acb7}{SOLOALARM\_HEIGHT}}\};}
+\DoxyCodeLine{00046\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \textcolor{comment}{//\ The\ position\ of\ the\ panels\ and\ buttons\ is\ the\ same\ as\ SOLO\_MAIN}}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ae8238ea80d803368bb4844bb8e680ff1}{temp\_panel}}\ \ \ \ \ \ \ \ \ \ \ =\ \mbox{\hyperlink{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}{SOLO\_MAIN}}.temp\_panel;}
+\DoxyCodeLine{00049\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ad922560d1eff2e9cd3e343185fc00c9a}{temp\_alarm\_button}}\ \ \ \ =\ \mbox{\hyperlink{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}{SOLO\_MAIN}}.temp\_alarm\_button;}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a31ea7ea60be54d5fb6ae77a7d9bb181c}{vol\_panel}}\ \ \ \ \ \ \ \ \ \ \ \ =\ \mbox{\hyperlink{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}{SOLO\_MAIN}}.vol\_panel;}
+\DoxyCodeLine{00051\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a16d8bd4b401bb2f42cc0852d4ed22c8a}{vol\_alarm\_button}}\ \ \ \ \ =\ \mbox{\hyperlink{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}{SOLO\_MAIN}}.vol\_alarm\_button;}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_af2eb87f0d30067ec19313a011124ebe2}{chiller\_panel}}\ \ \ \ \ \ \ \ =\ \mbox{\hyperlink{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}{SOLO\_MAIN}}.chiller\_panel;}
+\DoxyCodeLine{00053\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a3e4943a2886cf0625aa6de28724564fc}{chiller\_alarm\_button}}\ =\ \mbox{\hyperlink{_r_o_m___images_8h_a4dc97fbdaa226420bf6a106892b1fe6b}{SOLO\_MAIN}}.chiller\_alarm\_button;}
+\DoxyCodeLine{00054\ \ \ }
+\DoxyCodeLine{00055\ \}\ \mbox{\hyperlink{_r_o_m___images_8h_aa431bf1819dca1d3e44343bf0cdd8973}{SOLO\_ALARMED}};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}}\ \ =\ 232;}
+\DoxyCodeLine{00060\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\ =\ 66;}
+\DoxyCodeLine{00061\ \textcolor{keyword}{const}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}}\ =\ \{\mbox{\hyperlink{_r_o_m___config_8h_adb4110c434ff9f172e1c1528eeae934f}{SETUPVOLUME\_ADDRESS}},\ \mbox{\hyperlink{_r_o_m___config_8h_a84b3400e8faabd6ff5d1b169f8003540}{SETUPVOLUME\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___config_8h_a0821dbd9bb85e7b2558400846467b02d}{SETUPVOLUME\_HEIGHT}}\};}
+\DoxyCodeLine{00064\ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ x,\ \ \ y,\ \ \ width,\ \ \ \ \ \ \ \ \ \ \ \ height}}
+\DoxyCodeLine{00066\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_aabdecbf3b4d651eab2764063b2a7281e}{gray\_cal1\_button}}\ =\ \{411,\ 106,\ \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00067\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a0fa0b28f1027a22e6250d7e18afc5795}{gray\_cal2\_button}}\ =\ \{718,\ 106,\ \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00068\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a81cb3494cd481f39101f8ab34fec5503}{blue\_cal1\_button}}\ =\ \{0,\ \ \ 601,\ \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00069\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a0264ad954653b4eb7f1aa663116be147}{blue\_cal2\_button}}\ =\ \{420,\ 601,\ \mbox{\hyperlink{_r_o_m___images_8h_ad9d4cd202f70ec4c362963cba8a47e15}{VOL\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a58ead25c5c68c10613a73c14536ace99}{VOL\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00070\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a53a2b072b7750bcded9e06fc9231af9b}{cal1\_label}}\ \ \ \ \ \ \ =\ \{814,\ 322,\ 144,\ \ \ 32\};}
+\DoxyCodeLine{00071\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a20dda0e58c763fde48a09e0de9eeee71}{cal2\_label}}\ \ \ \ \ \ \ =\ \{239,\ 608,\ 144,\ \ \ 32\};}
+\DoxyCodeLine{00072\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_abd1ca649cfae0a30d841cb3133d183a3}{gray\_done\_button}}\ =\ \{27,\ \ 488,\ 280,\ \ \ 69\};}
+\DoxyCodeLine{00073\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ab8339a109f3794029fa6170dc51f3d64}{blue\_done\_button}}\ =\ \{653,\ 601,\ 280,\ \ \ 69\};}
+\DoxyCodeLine{00074\ \ \ \ \ }
+\DoxyCodeLine{00075\ \}\ \mbox{\hyperlink{_r_o_m___images_8h_aa71a31ae4a84bc3116ad8c482c37605d}{VOL\_SETUP}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}}\ \ =\ 252;}
+\DoxyCodeLine{00080\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\ =\ 68;}
+\DoxyCodeLine{00081\ \textcolor{keyword}{const}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00082\ \ \ }
+\DoxyCodeLine{00083\ \ \ \mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}}\ =\ \{\mbox{\hyperlink{_r_o_m___config_8h_ab426c1403dda0475e6b7364bc21ff2ac}{SETUPTEMP\_ADDRESS}},\ \mbox{\hyperlink{_r_o_m___config_8h_a4d12a0df525720b97cd8a87167a9d097}{SETUPTEMP\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___config_8h_ac1309ecc0b5e3e70c827d31dbae5f880}{SETUPTEMP\_HEIGHT}}\};}
+\DoxyCodeLine{00084\ \ \ \ \ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ x,\ \ \ y,\ \ \ width,\ \ \ \ \ \ \ \ \ \ \ \ \ height}}
+\DoxyCodeLine{00086\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a87c0c213ed1b3fe67d609f034e8845aa}{gray\_kettle\_button}}\ \ =\ \{406,\ 117,\ \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00087\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a451731fd78c3aab8acb83af292e7072a}{gray\_chiller\_button}}\ =\ \{684,\ 117,\ \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00088\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_aa7d64fd0b41f92b7013caa4863fdbc13}{blue\_kettle\_button}}\ \ =\ \{0,\ \ \ 601,\ \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00089\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_af348c7b1efee29139525d8f695dc2416}{blue\_chiller\_button}}\ =\ \{253,\ 601,\ \mbox{\hyperlink{_r_o_m___images_8h_ad23bc694538b19b80dcca7560c8479be}{TEMP\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a607b8dcc9037bc115681db25f4db5a0b}{TEMP\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00090\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_abd1ca649cfae0a30d841cb3133d183a3}{gray\_done\_button}}\ \ \ \ =\ \{27,\ \ 488,\ 280,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 69\};}
+\DoxyCodeLine{00091\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ab8339a109f3794029fa6170dc51f3d64}{blue\_done\_button}}\ \ \ \ =\ \{506,\ 601,\ 280,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 69\};}
+\DoxyCodeLine{00092\ \ \ \ \ }
+\DoxyCodeLine{00093\ \}\ \mbox{\hyperlink{_r_o_m___images_8h_a0d649676b42ea84596a14709f240a92e}{TEMP\_SETUP}};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00097\ \textcolor{keyword}{const}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00098\ \ \ }
+\DoxyCodeLine{00099\ \ \ \mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}\ \ \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}}\ =\ \{\mbox{\hyperlink{_r_o_m___config_8h_a6fca12694638bdde2c191c90c001769d}{SETUPPID\_ADDRESS}},\ \mbox{\hyperlink{_r_o_m___config_8h_a445cb9de5b9a12419e74604dc5dcb289}{SETUPPID\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___config_8h_afcafb5d1b85217a86f189146776c55db}{SETUPPID\_HEIGHT}}\};}
+\DoxyCodeLine{00100\ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ x,\ \ \ y,\ \ \ width,\ height}}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a0d6b812dec75b4f6e3acd28dca58d158}{gray\_button}}\ \ \ \ \ \ =\ \{527,\ 101,\ 308,\ \ \ 75\};}
+\DoxyCodeLine{00103\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ad9091f6dc0477242f15d1d414a5307df}{blue\_button}}\ \ \ \ \ \ =\ \{0,\ \ \ 601,\ 308,\ \ \ 75\};}
+\DoxyCodeLine{00104\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_abd1ca649cfae0a30d841cb3133d183a3}{gray\_done\_button}}\ =\ \{27,\ \ 488,\ 280,\ \ \ 69\};}
+\DoxyCodeLine{00105\ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ab8339a109f3794029fa6170dc51f3d64}{blue\_done\_button}}\ =\ \{309,\ 601,\ 280,\ \ \ 69\};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \}\ \mbox{\hyperlink{_r_o_m___images_8h_a5bfdb5966a0596bbfd7fbacdc0f28d9c}{PID\_SETUP}};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00111\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}}\ \ =\ 80;}
+\DoxyCodeLine{00112\ \textcolor{keyword}{const}\ uint16\_t\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\ =\ 80;}
+\DoxyCodeLine{00113\ \textcolor{keyword}{const}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a90c27ec059b58bab8255e0261d340f65}{button1}}\ \ \ =\ \{19,\ \ 91,\ \ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_af5c8df36370c2091fc7389736e9221b7}{button2}}\ \ \ =\ \{102,\ 91,\ \ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_ac1994931cba8626ed7e2c172417b3d94}{button3}}\ \ \ =\ \{185,\ 91,\ \ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00117\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a74d4286c4076ac23c37ff8fbd0aed7de}{button4}}\ \ \ =\ \{19,\ \ 174,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00118\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a26d655629da2312e6108cb4a730e3fa4}{button5}}\ \ \ =\ \{102,\ 174,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a02f21a22f21b1565160c6aca91415381}{button6}}\ \ \ =\ \{185,\ 174,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a5de8d6963388d1bc0b7aa97832d38e5a}{button7}}\ \ \ =\ \{19,\ \ 257,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a98d55932569d061bf73b52355e840937}{button8}}\ \ \ =\ \{102,\ 257,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a8f5a101d1e8e30967fe85b3df179fc73}{button9}}\ \ \ =\ \{185,\ 257,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00123\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a3a67e04c38f996756f1f69b70054e788}{buttonDel}}\ =\ \{19,\ \ 340,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a87a6a4473d71ad0ec621c768ca4807a3}{button0}}\ \ \ =\ \{102,\ 340,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00125\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a09c32243aa89795f94b250a03ef5e1a4}{buttonOK}}\ \ =\ \{185,\ 340,\ \mbox{\hyperlink{_r_o_m___images_8h_aa406a7a3b2078336916bfc9cebad9be1}{DATA\_ENTRY\_BUTTON\_WIDTH}},\ \mbox{\hyperlink{_r_o_m___images_8h_a5830b20cd808ecd61691d7d9fd925b9f}{DATA\_ENTRY\_BUTTON\_HEIGHT}}\};}
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{struct_block___image}{Block\_Image}}\ \mbox{\hyperlink{_r_o_m___images_8h_a403dd564a4c846f6b6dc8a796fc18c52}{values}}\ \ \ \ =\ \{18,\ \ 15,\ \ 248,\ 70\};}
+\DoxyCodeLine{00127\ \}\ \mbox{\hyperlink{_r_o_m___images_8h_acfd281848ae87e45fb244b4b2aea5fb1}{DATA\_ENTRY}};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

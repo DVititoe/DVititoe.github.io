@@ -1,0 +1,150 @@
+\doxysection{Setup\+Temp\+Menu Class Reference}
+\hypertarget{class_setup_temp_menu}{}\label{class_setup_temp_menu}\index{SetupTempMenu@{SetupTempMenu}}
+
+
+\doxylink{namespace_setup}{Setup} menu for the Solo\+Controller application. Note that the callback functions used by \doxylink{class_setup_temp_menu}{Setup\+Temp\+Menu} are contained within the \href{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p.html}{\texttt{ CB\+:\+::\+SETUP\+::\+TEMP}} namespace.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+Inheritance diagram for Setup\+Temp\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_setup_temp_menu}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_setup_temp_menu_a9646eed23962010e17c660efef7b468f}{begin}} (void) override
+\begin{DoxyCompactList}\small\item\em Initializes the Setup\+Menu object. Should be called before first use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_setup_temp_menu_aa07a500bd60d980cf89bad76b040aa7f}{update}} (void) override
+\begin{DoxyCompactList}\small\item\em Updates the values and graphics displayed in the menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_setup_temp_menu_ab9b7ab05d283af441351f6ac5e0f41ab}{show}} (void) override
+\begin{DoxyCompactList}\small\item\em Shows the menu in the TFT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_solo_menu}{Solo\+Menu}}}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a77ffbce263cfa3113024311011bc9f1e}{x}} (void) const
+\begin{DoxyCompactList}\small\item\em Upper-\/left x-\/coordinate for menu. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_ac3b845da79d124db51bd189273947d92}{y}} (void) const
+\begin{DoxyCompactList}\small\item\em Upper-\/left y-\/coordinate for menu. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa}{width}} (void) const
+\begin{DoxyCompactList}\small\item\em Width of the menu. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687}{height}} (void) const
+\begin{DoxyCompactList}\small\item\em Height of the menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_solo_menu_a4b2fd78342c643a0093b25aba291d334}{load\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em Loads configuration data from EEPROM, placing it into RAM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_solo_menu_ac3deac55637ec34313c073fec8b11f5d}{check\+Buttons}} (void)
+\begin{DoxyCompactList}\small\item\em Check to see if one of the menu\textquotesingle{}s buttons has been pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_solo_menu_a6226da8342c00ac614eeb79455e40091}{release\+Button}} (void)
+\begin{DoxyCompactList}\small\item\em Releases the currently pressed button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_setup_temp_menu}{Setup\+Temp\+Menu}} \& \mbox{\hyperlink{class_setup_temp_menu_aac15e432add818b69d3075081080df82}{get\+Instance}} (void)
+\begin{DoxyCompactList}\small\item\em Returns reference to the \doxylink{class_err_msg}{Err\+Msg} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_solo_menu_a5854d5e873fdcdcdb94b89fdd55f6985}{has\+Screen\+Been\+Touched}} (void)
+\begin{DoxyCompactList}\small\item\em Determines if the TFT screen has been touched. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_solo_menu}{Solo\+Menu}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{Solo\+Menu}} (void)
+\begin{DoxyCompactList}\small\item\em Creates a full size menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_solo_menu_ae3a68d205add4e7be8936ea0a4ebff73}{Solo\+Menu}} (uint16\+\_\+t x0, uint16\+\_\+t y0, uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687}{height}})
+\begin{DoxyCompactList}\small\item\em Creates a menu of the specified size and location. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_solo_menu_a1303f286bd0f1073039c252d3cdbe637}{\texorpdfstring{$\sim$}{\string~}\+Solo\+Menu}} (void)=default
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \mbox{\hyperlink{class_solo_menu_a4d9576f9fd58454b343ee96bda45662f}{\+\_\+press\+Button\+If\+Touched}} (void)
+\begin{DoxyCompactList}\small\item\em Protected method checks to see if one of the buttons has been "{}touched."{} If so, this method "{}presses"{} the button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_solo_menu_a76b36ab71a84accab83e949bf64dc1c9}{\+\_\+register}} (\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}button\+Ptr\+Array, uint8\+\_\+t n\+Buttons)
+\begin{DoxyCompactList}\small\item\em Registers an array of buttons with this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_setup}{Setup} menu for the Solo\+Controller application. Note that the callback functions used by \doxylink{class_setup_temp_menu}{Setup\+Temp\+Menu} are contained within the \href{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p.html}{\texttt{ CB\+:\+::\+SETUP\+::\+TEMP}} namespace. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_setup_temp_menu_a9646eed23962010e17c660efef7b468f}\index{SetupTempMenu@{SetupTempMenu}!begin@{begin}}
+\index{begin@{begin}!SetupTempMenu@{SetupTempMenu}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_setup_temp_menu_a9646eed23962010e17c660efef7b468f} 
+void Setup\+Temp\+Menu\+::begin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the Setup\+Menu object. Should be called before first use. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Reimplemented from \mbox{\hyperlink{class_solo_menu_a97a20d95646751b87a09cf61e38fb2c4}{Solo\+Menu}}.
+
+\Hypertarget{class_setup_temp_menu_aac15e432add818b69d3075081080df82}\index{SetupTempMenu@{SetupTempMenu}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!SetupTempMenu@{SetupTempMenu}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_setup_temp_menu_aac15e432add818b69d3075081080df82} 
+static \mbox{\hyperlink{class_setup_temp_menu}{Setup\+Temp\+Menu}} \& Setup\+Temp\+Menu\+::get\+Instance (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns reference to the \doxylink{class_err_msg}{Err\+Msg} object. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the \doxylink{class_err_msg}{Err\+Msg} object 
+\end{DoxyReturn}
+\Hypertarget{class_setup_temp_menu_ab9b7ab05d283af441351f6ac5e0f41ab}\index{SetupTempMenu@{SetupTempMenu}!show@{show}}
+\index{show@{show}!SetupTempMenu@{SetupTempMenu}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_setup_temp_menu_ab9b7ab05d283af441351f6ac5e0f41ab} 
+void Setup\+Temp\+Menu\+::show (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shows the menu in the TFT. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Implements \mbox{\hyperlink{class_solo_menu_a0765e6a7168259e2b37856c71399a670}{Solo\+Menu}}.
+
+\Hypertarget{class_setup_temp_menu_aa07a500bd60d980cf89bad76b040aa7f}\index{SetupTempMenu@{SetupTempMenu}!update@{update}}
+\index{update@{update}!SetupTempMenu@{SetupTempMenu}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_setup_temp_menu_aa07a500bd60d980cf89bad76b040aa7f} 
+void Setup\+Temp\+Menu\+::update (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the values and graphics displayed in the menu. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Reimplemented from \mbox{\hyperlink{class_solo_menu_a050ae3a9e42c1b647b0a699acc18c428}{Solo\+Menu}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\end{DoxyCompactItemize}

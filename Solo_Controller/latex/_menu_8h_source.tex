@@ -1,0 +1,396 @@
+\doxysection{Menu.\+h}
+\hypertarget{_menu_8h_source}{}\label{_menu_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Menu.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Menu.h}}
+\mbox{\hyperlink{_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Menu.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @brief\ Defines\ the\ menu\ classes\ used\ by\ the\ SoloController\ app}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ MENU\_INCLUDED}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ MENU\_INCLUDED}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_canvas_8h}{Canvas.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_button_8h}{Button.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sensor_8h}{Sensor.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_text_box_8h}{TextBox.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensorVal\_t}}\ =\ \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{Sensor::sensorVal\_t}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00018\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00019\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ SoloMenu\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00020\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00021\ \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ @brief\ Base\ class\ used\ by\ all\ menus.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ @details}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ This\ menu\ provides\ the\ core\ functionality\ for\ the\ menu\ system.\ Each\ menu}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ displayed\ on\ the\ TFT\ will\ derive\ from\ this\ class.\ The\ primary\ responsibility}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ for\ this\ class\ is\ to\ manage\ all\ Button,\ Labels,\ and\ Submenus,\ ensuring}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ that\ requests\ to\ update\ graphics\ or\ handle\ presses\ to\ the\ TFT\ touch\ screen}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ are\ handled\ properly.\ All\ menus\ are\ intended\ to\ be\ Singleton\ objects.}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ Each\ object\ uses\ significant\ DRAM\ resources.}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_x0;\ \ \ \ \ \textcolor{comment}{//\ Upper\ left\ x-\/coordinate\ for\ the\ menu\ in\ the\ TFT\ display}}
+\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_y0;\ \ \ \ \ \textcolor{comment}{//\ Upper\ left\ y-\/coordinate\ for\ the\ menu\ in\ the\ TFT\ display}}
+\DoxyCodeLine{00037\ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_width;\ \ \textcolor{comment}{//\ Width\ of\ the\ menu}}
+\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{const}\ uint16\_t\ \_height;\ \textcolor{comment}{//\ Height\ of\ the\ menu}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{comment}{//\ Tracks\ the\ ID\ of\ the\ button\ currently\ pressed}}
+\DoxyCodeLine{00041\ \ \ int8\_t\ \_buttonID\ =\ -\/1;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \textcolor{comment}{/*\ Pointers\ to\ various\ arrays\ managed\ by\ this\ class}}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ \ \ */}}
+\DoxyCodeLine{00045\ \ \ uint8\_t\ \_numButtons\ =\ 0;}
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{class_button}{Button}}\ **\_buttonArr;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ :\ \_x0\{0\},\ \_y0\{0\},\ \_width\{\mbox{\hyperlink{_t_f_t_m070_a1_8h_aca997fe22ad5e98dad56aaed32118c20}{LCD\_XSIZE\_TFT}}\},\ \_height\{\mbox{\hyperlink{_t_f_t_m070_a1_8h_abb4ac17205068db1ba4713e440634256}{LCD\_YSIZE\_TFT}}\}\ \{\};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00069\ \ \ \mbox{\hyperlink{class_solo_menu_ae3a68d205add4e7be8936ea0a4ebff73}{SoloMenu}}(uint16\_t\ x0,\ uint16\_t\ y0,\ uint16\_t\ \mbox{\hyperlink{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa}{width}},\ uint16\_t\ \mbox{\hyperlink{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687}{height}})}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ :\ \_x0\{x0\},\ \_y0\{y0\},\ \_width\{\mbox{\hyperlink{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa}{width}}\},\ \_height\{\mbox{\hyperlink{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687}{height}}\}\ \{\};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \mbox{\hyperlink{class_solo_menu_a1303f286bd0f1073039c252d3cdbe637}{\string~SoloMenu}}(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00083\ \ \ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00086\ \ \ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00097\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_solo_menu_a97a20d95646751b87a09cf61e38fb2c4}{begin}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00104\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_solo_menu_a050ae3a9e42c1b647b0a699acc18c428}{update}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00111\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_solo_menu_a0765e6a7168259e2b37856c71399a670}{show}}(\textcolor{keywordtype}{void})\ =\ 0;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00118\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_solo_menu_a4b2fd78342c643a0093b25aba291d334}{loadConfig}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00119\ \ \ \{}
+\DoxyCodeLine{00120\ \ \ \ \ Serial.println(\textcolor{stringliteral}{"{}SoloMenu-\/>loadConfig()\ called"{}});}
+\DoxyCodeLine{00121\ \ \ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00128\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_solo_menu_ac3deac55637ec34313c073fec8b11f5d}{checkButtons}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00135\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_solo_menu_a6226da8342c00ac614eeb79455e40091}{releaseButton}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00143\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_solo_menu_a5854d5e873fdcdcdb94b89fdd55f6985}{hasScreenBeenTouched}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00157\ \ \ \textcolor{keyword}{inline}\ uint16\_t\ \mbox{\hyperlink{class_solo_menu_a77ffbce263cfa3113024311011bc9f1e}{x}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00158\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordflow}{return}\ \_x0;}
+\DoxyCodeLine{00160\ \ \ \};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00168\ \ \ \textcolor{keyword}{inline}\ uint16\_t\ \mbox{\hyperlink{class_solo_menu_ac3b845da79d124db51bd189273947d92}{y}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00169\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordflow}{return}\ \_y0;}
+\DoxyCodeLine{00171\ \ \ \};}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00179\ \ \ \textcolor{keyword}{inline}\ uint16\_t\ \mbox{\hyperlink{class_solo_menu_a36edf7cb0b2b654cb73fc51de3c93daa}{width}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00180\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordflow}{return}\ \_width;}
+\DoxyCodeLine{00182\ \ \ \};}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00190\ \ \ \textcolor{keyword}{inline}\ uint16\_t\ \mbox{\hyperlink{class_solo_menu_a5629e452833fbd6e277e5d3a3db61687}{height}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00191\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordflow}{return}\ \_height;}
+\DoxyCodeLine{00193\ \ \ \};}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00209\ \ \ int8\_t\ \mbox{\hyperlink{class_solo_menu_a4d9576f9fd58454b343ee96bda45662f}{\_pressButtonIfTouched}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00218\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_solo_menu_a76b36ab71a84accab83e949bf64dc1c9}{\_register}}(\mbox{\hyperlink{class_button}{Button}}\ **buttonPtrArray,\ uint8\_t\ nButtons);}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00221\ \};}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_solo_menu}{SoloMenu}}\ *\mbox{\hyperlink{_menu_8cpp_a5c4bbb8c5b4a3a9589b95285395756d8}{menu}};\ }
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00226\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00227\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ MainMenu\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00228\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00229\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00231\ \textcolor{preprocessor}{\#define\ NUM\_MAINMENU\_BUTTONS\ 0\ }\textcolor{preprocessor}{}}
+\DoxyCodeLine{00242\ \textcolor{keyword}{class\ }MainMenu\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}}
+\DoxyCodeLine{00243\ \{}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ \ \ \mbox{\hyperlink{class_canvas}{Canvas}}\ \_PrimaryCanvas;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Primary\ Canvas\ is\ the\ one\ displayed\ in\ the\ TFT}}
+\DoxyCodeLine{00246\ \textcolor{comment}{/*\ \ ROM\_Canvas\ \_SecondaryNormalCvs;\ //\ Canvas\ that\ holds\ a\ 2nd\ image\ of\ the\ Main\ Menu}}
+\DoxyCodeLine{00247\ \textcolor{comment}{\ \ ROM\_Canvas\ \_SecondaryAlarmCvs;\ \ //\ Canvas\ that\ holds\ an\ image\ of\ an\ alarmed\ Main\ Menu}}
+\DoxyCodeLine{00248\ \textcolor{comment}{\ \ ROM\_Canvas\ \_ButtonCanvas;\ \ \ \ \ \ \ //\ Canvas\ containing\ button\ images\ used\ by\ the\ menu}}
+\DoxyCodeLine{00249\ \textcolor{comment}{}}
+\DoxyCodeLine{00250\ \textcolor{comment}{\ \ //\ The\ various\ buttons\ used\ by\ the\ menu}}
+\DoxyCodeLine{00251\ \textcolor{comment}{\ \ ToggleButton\ \_KettleTempAlarmButton;}}
+\DoxyCodeLine{00252\ \textcolor{comment}{\ \ ToggleButton\ \_KettleVolAlamButton;}}
+\DoxyCodeLine{00253\ \textcolor{comment}{\ \ ToggleButton\ \_ChillerTempAlarmButton;}}
+\DoxyCodeLine{00254\ \textcolor{comment}{\ \ ToggleButton\ \_ModeButton;}}
+\DoxyCodeLine{00255\ \textcolor{comment}{\ \ ToggleButton\ \_PumpButton;}}
+\DoxyCodeLine{00256\ \textcolor{comment}{\ \ ToggleButton\ \_AuxButton;}}
+\DoxyCodeLine{00257\ \textcolor{comment}{\ \ MomentaryButton\ \_SetupButton;\ */}}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \ \ \textcolor{comment}{//\ Button\ array\ contains\ pointers\ to\ (above)\ buttons}}
+\DoxyCodeLine{00260\ \ \ \mbox{\hyperlink{class_button}{Button}}\ *\_buttonArr[\mbox{\hyperlink{_menu_8h_aaf863b665fd9b9e1ea7aa723f553abfc}{NUM\_MAINMENU\_BUTTONS}}];}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00262\ \ \ \textcolor{comment}{//\ Instance\ of\ the\ singleton}}
+\DoxyCodeLine{00263\ \ \ \textcolor{keyword}{static}\ MainMenu\ *\_instance;}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00270\ \ \ MainMenu(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00277\ \ \ \string~MainMenu(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00278\ }
+\DoxyCodeLine{00279\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00285\ \ \ \textcolor{keyword}{static}\ MainMenu\ \&\mbox{\hyperlink{class_main_menu_afea55aadf44178178df52efbcef382c1}{getInstance}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00286\ \ \ \{}
+\DoxyCodeLine{00287\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_instance)}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \_instance\ =\ \textcolor{keyword}{new}\ MainMenu();}
+\DoxyCodeLine{00289\ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00290\ \ \ \};}
+\DoxyCodeLine{00291\ }
+\DoxyCodeLine{00293\ \ \ \mbox{\hyperlink{class_main_menu}{MainMenu}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_main_menu}{MainMenu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00296\ \ \ \mbox{\hyperlink{class_main_menu}{MainMenu}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_main_menu}{MainMenu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00303\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_menu_a77f8a17fbc57720ea448a6873db36d54}{begin}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00304\ }
+\DoxyCodeLine{00310\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_menu_afc6427a223d2915f240700994b7b7518}{update}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00317\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_menu_ab045cc677286506297e51b6cf3f20cdd}{show}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00318\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00319\ \ \ \ \ \mbox{\hyperlink{_menu_8h_a5c4bbb8c5b4a3a9589b95285395756d8}{menu}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00320\ \ \ \ \ \_PrimaryCanvas.setMainWindow();}
+\DoxyCodeLine{00321\ \ \ \}}
+\DoxyCodeLine{00322\ \};}
+\DoxyCodeLine{00323\ }
+\DoxyCodeLine{00324\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_solo_menu}{SoloMenu}}\ *\mbox{\hyperlink{_menu_8cpp_a8fae6703f1c71627af514109c9119e1e}{setupMenu}};\ }
+\DoxyCodeLine{00325\ }
+\DoxyCodeLine{00326\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00327\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00328\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ SetupVolMenu\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00329\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00330\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00332\ \textcolor{preprocessor}{\#define\ NUM\_SETUPVOLMENU\_BUTTONS\ 0}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00340\ \textcolor{keyword}{class\ }SetupVolMenu\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}}
+\DoxyCodeLine{00341\ \{}
+\DoxyCodeLine{00342\ }
+\DoxyCodeLine{00343\ \ \ \mbox{\hyperlink{class_r_o_m___canvas}{ROM\_Canvas}}\ \_PrimaryCanvas;\ \textcolor{comment}{//\ Primary\ Canvas\ displayed\ on\ the\ TFT}}
+\DoxyCodeLine{00344\ }
+\DoxyCodeLine{00345\ \ \ \textcolor{comment}{//\ The\ various\ buttons\ used\ by\ the\ menu}}
+\DoxyCodeLine{00346\ \textcolor{comment}{/*\ \ ImmediateButton\ \_TempSetup;}}
+\DoxyCodeLine{00347\ \textcolor{comment}{\ \ ImmediateButton\ \_PID\_Setup;}}
+\DoxyCodeLine{00348\ \textcolor{comment}{\ \ MomentaryButton\ \_DoneButton;}}
+\DoxyCodeLine{00349\ \textcolor{comment}{\ \ ToggleButton\ \_CalPoint1;}}
+\DoxyCodeLine{00350\ \textcolor{comment}{\ \ ToggleButton\ \_CalPoint2;\ */}}
+\DoxyCodeLine{00351\ }
+\DoxyCodeLine{00352\ \ \ \textcolor{comment}{//\ Button\ array\ contains\ pointers\ to\ (above)\ buttons}}
+\DoxyCodeLine{00353\ \ \ \mbox{\hyperlink{class_button}{Button}}\ *\_buttonArr[\mbox{\hyperlink{_menu_8h_a3206ce01db32abe074fa8aa852722605}{NUM\_SETUPVOLMENU\_BUTTONS}}];}
+\DoxyCodeLine{00354\ }
+\DoxyCodeLine{00355\ \ \ \textcolor{comment}{//\ Singleton\ instance\ of\ the\ SetupVolMenu\ menu}}
+\DoxyCodeLine{00356\ \ \ \textcolor{keyword}{static}\ SetupVolMenu\ *\_instance;}
+\DoxyCodeLine{00357\ }
+\DoxyCodeLine{00363\ \ \ SetupVolMenu(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00364\ }
+\DoxyCodeLine{00370\ \ \ \string~SetupVolMenu(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00371\ }
+\DoxyCodeLine{00372\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00378\ \ \ \textcolor{keyword}{static}\ SetupVolMenu\ \&\mbox{\hyperlink{class_setup_vol_menu_aef01ad592f2d8228a2a0f83ec9b006b4}{getInstance}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00379\ \ \ \{}
+\DoxyCodeLine{00380\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_instance)}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \_instance\ =\ \textcolor{keyword}{new}\ SetupVolMenu();}
+\DoxyCodeLine{00382\ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00383\ \ \ \};}
+\DoxyCodeLine{00384\ }
+\DoxyCodeLine{00386\ \ \ \mbox{\hyperlink{class_setup_vol_menu}{SetupVolMenu}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_setup_vol_menu}{SetupVolMenu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00387\ }
+\DoxyCodeLine{00389\ \ \ \mbox{\hyperlink{class_setup_vol_menu}{SetupVolMenu}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_setup_vol_menu}{SetupVolMenu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00390\ }
+\DoxyCodeLine{00396\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_vol_menu_aeae51946124120c28083d1b44e2168a9}{begin}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00397\ }
+\DoxyCodeLine{00403\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_vol_menu_a7e3a4c0d1a74ca5147b816a17a85228e}{update}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00404\ }
+\DoxyCodeLine{00410\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_vol_menu_a52af601cd1a1120689f06d16261126cf}{show}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00411\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00412\ \ \ \ \ \mbox{\hyperlink{_menu_8h_a5c4bbb8c5b4a3a9589b95285395756d8}{menu}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00413\ \ \ \ \ \mbox{\hyperlink{_menu_8h_a8fae6703f1c71627af514109c9119e1e}{setupMenu}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00414\ \ \ \ \ \_PrimaryCanvas.setMainWindow();}
+\DoxyCodeLine{00415\ \ \ \}}
+\DoxyCodeLine{00416\ \};}
+\DoxyCodeLine{00417\ }
+\DoxyCodeLine{00418\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00419\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00420\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ SetupTempMenu\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00421\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00422\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00424\ \textcolor{preprocessor}{\#define\ NUM\_SETUPTEMPMENU\_BUTTONS\ 0}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00430\ \textcolor{keyword}{class\ }SetupTempMenu\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}}
+\DoxyCodeLine{00431\ \{}
+\DoxyCodeLine{00432\ }
+\DoxyCodeLine{00433\ \ \ \mbox{\hyperlink{class_r_o_m___canvas}{ROM\_Canvas}}\ \_PrimaryCanvas;\ \textcolor{comment}{//\ Primary\ Canvas\ displayed\ on\ the\ TFT}}
+\DoxyCodeLine{00434\ }
+\DoxyCodeLine{00435\ \ \ \textcolor{comment}{//\ The\ various\ buttons\ used\ by\ the\ menu}}
+\DoxyCodeLine{00436\ \textcolor{comment}{/*\ \ ImmediateButton\ \_VolSetup;}}
+\DoxyCodeLine{00437\ \textcolor{comment}{\ \ ImmediateButton\ \_PID\_Setup;}}
+\DoxyCodeLine{00438\ \textcolor{comment}{\ \ MomentaryButton\ \_DoneButton;}}
+\DoxyCodeLine{00439\ \textcolor{comment}{\ \ ToggleButton\ \_KettleProbe;}}
+\DoxyCodeLine{00440\ \textcolor{comment}{\ \ ToggleButton\ \_ChillerProbe;}}
+\DoxyCodeLine{00441\ \textcolor{comment}{}}
+\DoxyCodeLine{00442\ \textcolor{comment}{\ \ //\ Button\ array\ contains\ pointers\ to\ (above)\ buttons}}
+\DoxyCodeLine{00443\ \textcolor{comment}{\ \ Button\ *\_buttonArr[NUM\_SETUPTEMPMENU\_BUTTONS];\ */}}
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00445\ \ \ \textcolor{comment}{//\ Singleton\ instance\ of\ SetupTempMenu}}
+\DoxyCodeLine{00446\ \ \ \textcolor{keyword}{static}\ SetupTempMenu\ *\_instance;}
+\DoxyCodeLine{00447\ }
+\DoxyCodeLine{00453\ \ \ SetupTempMenu(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00454\ }
+\DoxyCodeLine{00460\ \ \ \string~SetupTempMenu(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00461\ }
+\DoxyCodeLine{00462\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00468\ \ \ \textcolor{keyword}{static}\ SetupTempMenu\ \&\mbox{\hyperlink{class_setup_temp_menu_aac15e432add818b69d3075081080df82}{getInstance}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00469\ \ \ \{}
+\DoxyCodeLine{00470\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_instance)}
+\DoxyCodeLine{00471\ \ \ \ \ \ \ \_instance\ =\ \textcolor{keyword}{new}\ SetupTempMenu();}
+\DoxyCodeLine{00472\ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00473\ \ \ \};}
+\DoxyCodeLine{00474\ }
+\DoxyCodeLine{00476\ \ \ \mbox{\hyperlink{class_setup_temp_menu}{SetupTempMenu}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_setup_temp_menu}{SetupTempMenu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00477\ }
+\DoxyCodeLine{00479\ \ \ \mbox{\hyperlink{class_setup_temp_menu}{SetupTempMenu}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_setup_temp_menu}{SetupTempMenu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00480\ }
+\DoxyCodeLine{00486\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_temp_menu_a9646eed23962010e17c660efef7b468f}{begin}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00487\ }
+\DoxyCodeLine{00493\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_temp_menu_aa07a500bd60d980cf89bad76b040aa7f}{update}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00494\ }
+\DoxyCodeLine{00500\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_temp_menu_ab9b7ab05d283af441351f6ac5e0f41ab}{show}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00501\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00502\ \ \ \ \ \mbox{\hyperlink{_menu_8h_a5c4bbb8c5b4a3a9589b95285395756d8}{menu}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00503\ \ \ \ \ \mbox{\hyperlink{_menu_8h_a8fae6703f1c71627af514109c9119e1e}{setupMenu}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00504\ \ \ \ \ \_PrimaryCanvas.setMainWindow();}
+\DoxyCodeLine{00505\ \ \ \}}
+\DoxyCodeLine{00506\ \};}
+\DoxyCodeLine{00507\ }
+\DoxyCodeLine{00508\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00509\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00510\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ SetupPID\_Menu\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00511\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00512\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00514\ \textcolor{preprocessor}{\#define\ NUM\_SETUPPIDMENU\_BUTTONS\ 0}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00520\ \textcolor{keyword}{class\ }SetupPID\_Menu\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}{SoloMenu}}}
+\DoxyCodeLine{00521\ \{}
+\DoxyCodeLine{00522\ }
+\DoxyCodeLine{00523\ \ \ \mbox{\hyperlink{class_r_o_m___canvas}{ROM\_Canvas}}\ \_PrimaryCanvas;\ \textcolor{comment}{//\ Primary\ Canvas\ displayed\ on\ the\ TFT}}
+\DoxyCodeLine{00524\ }
+\DoxyCodeLine{00525\ \textcolor{comment}{/*\ \ //\ The\ various\ buttons\ used\ by\ the\ menu}}
+\DoxyCodeLine{00526\ \textcolor{comment}{\ \ ImmediateButton\ \_VolSetup;}}
+\DoxyCodeLine{00527\ \textcolor{comment}{\ \ ImmediateButton\ \_TempSetup;}}
+\DoxyCodeLine{00528\ \textcolor{comment}{\ \ MomentaryButton\ \_DoneButton;}}
+\DoxyCodeLine{00529\ \textcolor{comment}{\ \ ToggleButton\ \_AutoTune;\ */}}
+\DoxyCodeLine{00530\ }
+\DoxyCodeLine{00531\ \ \ \textcolor{comment}{//\ Button\ array\ contains\ pointers\ to\ (above)\ buttons}}
+\DoxyCodeLine{00532\ \ \ \mbox{\hyperlink{class_button}{Button}}\ *\_buttonArr[\mbox{\hyperlink{_menu_8h_a5ae563bb5fac391b0683750693740437}{NUM\_SETUPPIDMENU\_BUTTONS}}];}
+\DoxyCodeLine{00533\ }
+\DoxyCodeLine{00534\ \ \ \textcolor{comment}{//\ Singleton\ instance\ of\ SetupPID\_Menu}}
+\DoxyCodeLine{00535\ \ \ \textcolor{keyword}{static}\ SetupPID\_Menu\ *\_instance;}
+\DoxyCodeLine{00536\ }
+\DoxyCodeLine{00542\ \ \ SetupPID\_Menu(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00543\ }
+\DoxyCodeLine{00549\ \ \ \string~SetupPID\_Menu(\textcolor{keywordtype}{void})\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00550\ }
+\DoxyCodeLine{00551\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00557\ \ \ \textcolor{keyword}{static}\ SetupPID\_Menu\ \&\mbox{\hyperlink{class_setup_p_i_d___menu_ae32ff32ba75d428e7ac8f66630dd0fb7}{getInstance}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00558\ \ \ \{}
+\DoxyCodeLine{00559\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_instance)}
+\DoxyCodeLine{00560\ \ \ \ \ \ \ \_instance\ =\ \textcolor{keyword}{new}\ SetupPID\_Menu();}
+\DoxyCodeLine{00561\ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00562\ \ \ \};}
+\DoxyCodeLine{00563\ }
+\DoxyCodeLine{00565\ \ \ \mbox{\hyperlink{class_setup_p_i_d___menu}{SetupPID\_Menu}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_setup_p_i_d___menu}{SetupPID\_Menu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00566\ }
+\DoxyCodeLine{00568\ \ \ \mbox{\hyperlink{class_setup_p_i_d___menu}{SetupPID\_Menu}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_setup_p_i_d___menu}{SetupPID\_Menu}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00569\ }
+\DoxyCodeLine{00575\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_p_i_d___menu_a3d82e4ac92edf893ef9231ad3b682d87}{begin}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00576\ }
+\DoxyCodeLine{00582\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_p_i_d___menu_a117c3fb652ba71de81c650a7176dd0a3}{update}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00583\ }
+\DoxyCodeLine{00589\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_setup_p_i_d___menu_aefdfc08a80449d08018d6dfdce66962e}{show}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00590\ \textcolor{keyword}{\ \ }\{}
+\DoxyCodeLine{00591\ \ \ \ \ \mbox{\hyperlink{_menu_8h_a5c4bbb8c5b4a3a9589b95285395756d8}{menu}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00592\ \ \ \ \ \mbox{\hyperlink{_menu_8h_a8fae6703f1c71627af514109c9119e1e}{setupMenu}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00593\ \ \ \ \ \_PrimaryCanvas.setMainWindow();}
+\DoxyCodeLine{00594\ \ \ \}}
+\DoxyCodeLine{00595\ \};}
+\DoxyCodeLine{00596\ }
+\DoxyCodeLine{00597\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00598\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00599\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Callback\ Functions\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00600\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00601\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00602\ }
+\DoxyCodeLine{00606\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_b}{CB}}}
+\DoxyCodeLine{00607\ \{}
+\DoxyCodeLine{00608\ }
+\DoxyCodeLine{00612\ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n}{MAIN}}}
+\DoxyCodeLine{00613\ \ \ \{}
+\DoxyCodeLine{00614\ }
+\DoxyCodeLine{00621\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a29d69dbc9afe3c87d96d949d36b3736d}{kettleTempAlarmOn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00622\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a9b526214ac91782b6b2844ddc9d5a6bc}{kettleTempAlarmOff}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00623\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a8220dafdc3fa7fdf863494b7d3fbf12d}{kettleVolAlarmOn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00624\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a7ed64d9f220d01d7c576c853f77f0352}{kettleVolAlarmOff}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00625\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_abd3dc07f4f370f84dfeaaf3596011465}{chillerTempAlarmOn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00626\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a3d5d872c2864e86364f53f30a5d7cee7}{chillerTempAlarmOff}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00627\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ac77110627d22441004593cd8adb841ed}{elementOn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00628\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_aa2964d6ce2eb21dd7d3f5d6e9682e9f9}{elementOff}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00629\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a6645fd547e60bf19d50bb14dc5990a59}{boilModeOn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00630\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a401ec07c0573cae594d1b58434048916}{mashModeOn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00631\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a695697f1837a320e37232dd6d4f145f7}{pumpOn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00632\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ab32d3b918b42443c8984612dbe5b42de}{pumpOff}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00633\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a6ef53673488891549fd90673f9895217}{auxOn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00634\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_acc81f53ab278bce0f8e34a1cc19d4008}{auxOff}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00635\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ae7aac278ed28334d189c676f71f3132c}{setupButtonPressed}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00636\ }
+\DoxyCodeLine{00642\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ac31d6543bff35fdd23cf61983b051267}{setBoilRate}}(\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensorVal\_t}}\ boilRate);\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00643\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a1bf4922786562494769803ab3ea3fc61}{setMashTemp}}(\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensorVal\_t}}\ mashTemp);\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00644\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a9afd156f2b3da8aaea453105d7c7d183}{setKettleTempSV}}(\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensorVal\_t}}\ kettleTempSV);\ \ \ }
+\DoxyCodeLine{00645\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a88789ef1b87302f7201a2e65dfcaec12}{setKettleVolSV}}(\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensorVal\_t}}\ kettleVolSV);\ \ \ \ \ }
+\DoxyCodeLine{00646\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_abc3a89dc6be50de77f0e20076c501dba}{setChillerTempSV}}(\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensorVal\_t}}\ chillerTempSV);\ }
+\DoxyCodeLine{00647\ }
+\DoxyCodeLine{00649\ \ \ \}}
+\DoxyCodeLine{00650\ }
+\DoxyCodeLine{00654\ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p}{SETUP}}}
+\DoxyCodeLine{00655\ \ \ \{}
+\DoxyCodeLine{00660\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_a8e0da5e9f4b6752ed7237ce611e3bddb}{volSetup}}(\textcolor{keywordtype}{void});\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00661\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_a8013590abead1bb0bbbbb511670aaf9c}{tempSetup}}(\textcolor{keywordtype}{void});\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00662\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_a37e665b17a24032829b846ef461b8860}{PID\_Setup}}(\textcolor{keywordtype}{void});\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00663\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_aacfd09d6a249b54d9515b96ca3180042}{returnToMainMenu}}(\textcolor{keywordtype}{void});\ }
+\DoxyCodeLine{00664\ }
+\DoxyCodeLine{00668\ \ \ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l}{VOL}}}
+\DoxyCodeLine{00669\ \ \ \ \ \{}
+\DoxyCodeLine{00670\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l_a1bce2762cbe991b2c09f821d4ebbbe36}{calPoint1}}(\textcolor{keywordtype}{void});\ }
+\DoxyCodeLine{00671\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_v_o_l_a84096b33198ff9449b0515c3b31fc7e6}{calPoint2}}(\textcolor{keywordtype}{void});\ }
+\DoxyCodeLine{00673\ \ \ \ \ \}}
+\DoxyCodeLine{00674\ }
+\DoxyCodeLine{00678\ \ \ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p}{TEMP}}}
+\DoxyCodeLine{00679\ \ \ \ \ \{}
+\DoxyCodeLine{00680\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p_a228da78b7221668e376f1ed77fb49b68}{kettleProbe}}(\textcolor{keywordtype}{void});\ \ }
+\DoxyCodeLine{00681\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_t_e_m_p_ade44eda2599e5c34c02eb55ad0ac049f}{chillerProbe}}(\textcolor{keywordtype}{void});\ }
+\DoxyCodeLine{00682\ \ \ \ \ \}}
+\DoxyCodeLine{00683\ }
+\DoxyCodeLine{00687\ \ \ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d}{PID}}}
+\DoxyCodeLine{00688\ \ \ \ \ \{}
+\DoxyCodeLine{00689\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d_a36219e8a8a7fc85b4d348ed05ed51ffa}{autoTune}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00690\ \ \ \ \ \}}
+\DoxyCodeLine{00691\ \ \ \}}
+\DoxyCodeLine{00692\ \}}
+\DoxyCodeLine{00693\ }
+\DoxyCodeLine{00694\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

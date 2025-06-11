@@ -1,0 +1,63 @@
+\doxysection{Shape\+\_\+t Struct Reference}
+\hypertarget{struct_shape__t}{}\label{struct_shape__t}\index{Shape\_t@{Shape\_t}}
+
+
+Structure defining basic geometric characteristics of fonts.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Box\+\_\+\+Definitions.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_shape__t_a0e318b8994bb72dc53469b3ad1d90b66}{units\+Width}}
+\begin{DoxyCompactList}\small\item\em Width in pixels of the \doxylink{class_dynamic_text}{Dynamic\+Text} used to write the \textquotesingle{}units\textquotesingle{} text to the screen. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_shape__t_a707f7fb7d60b577c7352bccc3a471137}{height}}
+\begin{DoxyCompactList}\small\item\em Overall height of the \doxylink{class_dynamic_text}{Dynamic\+Text}. This height is selected to accomodate the height of the selected fonts. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_shape__t_a1fac939468f54f2d1433a586d3d70d77}{baseline}}
+\begin{DoxyCompactList}\small\item\em Location within \doxylink{class_dynamic_text}{Dynamic\+Text} where the font baseline is to be placed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure defining basic geometric characteristics of fonts. 
+
+\doxylink{class_text_box}{Text\+Box} uses a pair of fonts (primary font and units font). This structure captures basic geometric configuration information for these fonts. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_shape__t_a1fac939468f54f2d1433a586d3d70d77}\index{Shape\_t@{Shape\_t}!baseline@{baseline}}
+\index{baseline@{baseline}!Shape\_t@{Shape\_t}}
+\doxysubsubsection{\texorpdfstring{baseline}{baseline}}
+{\footnotesize\ttfamily \label{struct_shape__t_a1fac939468f54f2d1433a586d3d70d77} 
+uint16\+\_\+t Shape\+\_\+t\+::baseline}
+
+
+
+Location within \doxylink{class_dynamic_text}{Dynamic\+Text} where the font baseline is to be placed. 
+
+Baseline is measured with respect to the top of the box. So, a box of height 100 with a baseline of 50 will place the baseline of the font centered verticaly within the \doxylink{class_dynamic_text}{Dynamic\+Text}. \Hypertarget{struct_shape__t_a707f7fb7d60b577c7352bccc3a471137}\index{Shape\_t@{Shape\_t}!height@{height}}
+\index{height@{height}!Shape\_t@{Shape\_t}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily \label{struct_shape__t_a707f7fb7d60b577c7352bccc3a471137} 
+uint16\+\_\+t Shape\+\_\+t\+::height}
+
+
+
+Overall height of the \doxylink{class_dynamic_text}{Dynamic\+Text}. This height is selected to accomodate the height of the selected fonts. 
+
+\Hypertarget{struct_shape__t_a0e318b8994bb72dc53469b3ad1d90b66}\index{Shape\_t@{Shape\_t}!unitsWidth@{unitsWidth}}
+\index{unitsWidth@{unitsWidth}!Shape\_t@{Shape\_t}}
+\doxysubsubsection{\texorpdfstring{unitsWidth}{unitsWidth}}
+{\footnotesize\ttfamily \label{struct_shape__t_a0e318b8994bb72dc53469b3ad1d90b66} 
+uint16\+\_\+t Shape\+\_\+t\+::units\+Width}
+
+
+
+Width in pixels of the \doxylink{class_dynamic_text}{Dynamic\+Text} used to write the \textquotesingle{}units\textquotesingle{} text to the screen. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/\mbox{\hyperlink{_text_box___definitions_8h}{Text\+Box\+\_\+\+Definitions.\+h}}\end{DoxyCompactItemize}

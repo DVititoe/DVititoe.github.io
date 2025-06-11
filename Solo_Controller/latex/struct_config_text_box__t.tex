@@ -1,0 +1,97 @@
+\doxysection{Config\+Text\+Box\+\_\+t Struct Reference}
+\hypertarget{struct_config_text_box__t}{}\label{struct_config_text_box__t}\index{ConfigTextBox\_t@{ConfigTextBox\_t}}
+
+
+Configuration information for a \doxylink{class_text_box}{Text\+Box} object.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Box\+\_\+\+Definitions.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_config_text_box__t_abf23789044909a086aa683dbf876965e}{x}}
+\begin{DoxyCompactList}\small\item\em UL x-\/position of \doxylink{class_text_box}{Text\+Box} in the \doxylink{class_canvas}{Canvas}. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_config_text_box__t_a345d769e05da1c47cb621803235939c7}{y}}
+\begin{DoxyCompactList}\small\item\em UL y-\/position of \doxylink{class_text_box}{Text\+Box} in the \doxylink{class_canvas}{Canvas}. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_config_text_box__t_a699a85281f94db03641df64d549b32c6}{text\+Width}}
+\begin{DoxyCompactList}\small\item\em Width in pixels of the \doxylink{class_dynamic_text}{Dynamic\+Text} holding the main text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_shape__t}{Shape\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_text_box__t_a509c9e2d4da41e5080c6bbcfceade98e}{shape}}
+\begin{DoxyCompactList}\small\item\em Geometric configuration information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_text_box__t_ac296ef6992da72ae5b095f0d141d688d}{Text\+Font}}
+\begin{DoxyCompactList}\small\item\em Font object used to render the primary text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_config_text_box__t_ad35ffe92136cce30f0e39f529babb6b5}{Units\+Font}}
+\begin{DoxyCompactList}\small\item\em Font object used to render units text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configuration information for a \doxylink{class_text_box}{Text\+Box} object. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_config_text_box__t_a509c9e2d4da41e5080c6bbcfceade98e}\index{ConfigTextBox\_t@{ConfigTextBox\_t}!shape@{shape}}
+\index{shape@{shape}!ConfigTextBox\_t@{ConfigTextBox\_t}}
+\doxysubsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily \label{struct_config_text_box__t_a509c9e2d4da41e5080c6bbcfceade98e} 
+\mbox{\hyperlink{struct_shape__t}{Shape\+\_\+t}}\texorpdfstring{$\ast$}{*} Config\+Text\+Box\+\_\+t\+::shape}
+
+
+
+Geometric configuration information. 
+
+The information in this structure define certain geometric characteristics of \doxylink{class_text_box}{Text\+Box}. These characteristics depend upon the fonts being used. So, the shape information provided must be appropriate for the selected Text\+Font and Units\+Font. \Hypertarget{struct_config_text_box__t_ac296ef6992da72ae5b095f0d141d688d}\index{ConfigTextBox\_t@{ConfigTextBox\_t}!TextFont@{TextFont}}
+\index{TextFont@{TextFont}!ConfigTextBox\_t@{ConfigTextBox\_t}}
+\doxysubsubsection{\texorpdfstring{TextFont}{TextFont}}
+{\footnotesize\ttfamily \label{struct_config_text_box__t_ac296ef6992da72ae5b095f0d141d688d} 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}}\texorpdfstring{$\ast$}{*} Config\+Text\+Box\+\_\+t\+::\+Text\+Font}
+
+
+
+Font object used to render the primary text. 
+
+\Hypertarget{struct_config_text_box__t_a699a85281f94db03641df64d549b32c6}\index{ConfigTextBox\_t@{ConfigTextBox\_t}!textWidth@{textWidth}}
+\index{textWidth@{textWidth}!ConfigTextBox\_t@{ConfigTextBox\_t}}
+\doxysubsubsection{\texorpdfstring{textWidth}{textWidth}}
+{\footnotesize\ttfamily \label{struct_config_text_box__t_a699a85281f94db03641df64d549b32c6} 
+uint16\+\_\+t Config\+Text\+Box\+\_\+t\+::text\+Width}
+
+
+
+Width in pixels of the \doxylink{class_dynamic_text}{Dynamic\+Text} holding the main text. 
+
+\Hypertarget{struct_config_text_box__t_ad35ffe92136cce30f0e39f529babb6b5}\index{ConfigTextBox\_t@{ConfigTextBox\_t}!UnitsFont@{UnitsFont}}
+\index{UnitsFont@{UnitsFont}!ConfigTextBox\_t@{ConfigTextBox\_t}}
+\doxysubsubsection{\texorpdfstring{UnitsFont}{UnitsFont}}
+{\footnotesize\ttfamily \label{struct_config_text_box__t_ad35ffe92136cce30f0e39f529babb6b5} 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}}\texorpdfstring{$\ast$}{*} Config\+Text\+Box\+\_\+t\+::\+Units\+Font}
+
+
+
+Font object used to render units text. 
+
+\Hypertarget{struct_config_text_box__t_abf23789044909a086aa683dbf876965e}\index{ConfigTextBox\_t@{ConfigTextBox\_t}!x@{x}}
+\index{x@{x}!ConfigTextBox\_t@{ConfigTextBox\_t}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{struct_config_text_box__t_abf23789044909a086aa683dbf876965e} 
+uint16\+\_\+t Config\+Text\+Box\+\_\+t\+::x}
+
+
+
+UL x-\/position of \doxylink{class_text_box}{Text\+Box} in the \doxylink{class_canvas}{Canvas}. 
+
+\Hypertarget{struct_config_text_box__t_a345d769e05da1c47cb621803235939c7}\index{ConfigTextBox\_t@{ConfigTextBox\_t}!y@{y}}
+\index{y@{y}!ConfigTextBox\_t@{ConfigTextBox\_t}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{struct_config_text_box__t_a345d769e05da1c47cb621803235939c7} 
+uint16\+\_\+t Config\+Text\+Box\+\_\+t\+::y}
+
+
+
+UL y-\/position of \doxylink{class_text_box}{Text\+Box} in the \doxylink{class_canvas}{Canvas}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/\mbox{\hyperlink{_text_box___definitions_8h}{Text\+Box\+\_\+\+Definitions.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,295 @@
+\doxysection{Gr\+Font Class Reference}
+\hypertarget{class_gr_font}{}\label{class_gr_font}\index{GrFont@{GrFont}}
+
+
+{\ttfamily \#include $<$Gr\+Font.\+h$>$}
+
+Inheritance diagram for Gr\+Font\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.174004cm]{class_gr_font}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gr_font_a3b3ad83ff8c19d708804f962c86f618a}{Gr\+Font}} (\mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} \mbox{\hyperlink{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}{img\+Loc}}, uint16\+\_\+t line\+Height, uint16\+\_\+t \mbox{\hyperlink{_r_o_m___images_8h_aeab12638e8e925718db3fb7314dad284}{base}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_gr_font}{Gr\+Font} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gr_font_afafca44ad2132b9a4ef6d6024940f28e}{begin}} (uint16\+\_\+t color16\+Bit)
+\begin{DoxyCompactList}\small\item\em Initializes the font and sets the font\textquotesingle{}s foreground color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gr_font_adfa5155f67223d7ec6c99b86a7baf38f}{begin}} (uint8\+\_\+t red, uint8\+\_\+t green, uint8\+\_\+t blue)
+\begin{DoxyCompactList}\small\item\em Initializes the font and sets the font\textquotesingle{}s foreground color. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_gr_font_a60718c0e9030b3ca20acb3f123b10284}{char\+Def}} (char cc, \mbox{\hyperlink{struct_char_def__t}{Char\+Def\+\_\+t}} \&results) const =0
+\begin{DoxyCompactList}\small\item\em Abstract function, used to define the characteristics of each character. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{class_gr_font_a2fb854b4db5acd71b78df4ca4824fcfb}{kerning}} (uint8\+\_\+t first, uint8\+\_\+t second) const
+\begin{DoxyCompactList}\small\item\em Finds the amount of kerning that should be used between two characters. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_gr_font_a55a07e7170b193fc56c623ce06e7899d}{place\+Text}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&canvas, char cc, uint16\+\_\+t x, uint16\+\_\+t y) const
+\begin{DoxyCompactList}\small\item\em Places a character onto the {\ttfamily canvas}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_gr_font_a379bdeb296da78380a840090140c2c96}{place\+Text}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&canvas, const char \texorpdfstring{$\ast$}{*}const text, uint16\+\_\+t buff\+Size, uint16\+\_\+t x, uint16\+\_\+t y) const
+\begin{DoxyCompactList}\small\item\em Places a string onto the {\ttfamily canvas}. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a2c5119c7540a24ee77db21bd7a516d32}{text\+Width}} (const char cc) const
+\begin{DoxyCompactList}\small\item\em Determines the with of character, {\ttfamily cc}, in screen pixels. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_gr_font_ae91cbab138f2d40805784656f00f19e3}{text\+Width}} (const char \texorpdfstring{$\ast$}{*}const text, uint16\+\_\+t buff\+Size) const
+\begin{DoxyCompactList}\small\item\em Determines the with of string in the character array, {\ttfamily text}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} \mbox{\hyperlink{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}{img\+Loc}}
+\begin{DoxyCompactList}\small\item\em Location of the font in Flash ROM. \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a7414adc97893dfadc75180ae9b3fbc74}{LINE\+\_\+\+HEIGHT}}
+\begin{DoxyCompactList}\small\item\em Recommended vertical spacing between lines of text. \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a9fbba36d28aa54bde93ceb716236d5e7}{BASE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int8\+\_\+t \mbox{\hyperlink{class_gr_font_a4f09eb5d3beb8bb3942903cc1191f60d}{kerning}} (uint16\+\_\+t ID) const =0
+\begin{DoxyCompactList}\small\item\em Finds the amount of kerning that should be used between two characters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_gr_font_a3b3ad83ff8c19d708804f962c86f618a}\index{GrFont@{GrFont}!GrFont@{GrFont}}
+\index{GrFont@{GrFont}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{GrFont()}{GrFont()}}
+{\footnotesize\ttfamily \label{class_gr_font_a3b3ad83ff8c19d708804f962c86f618a} 
+Gr\+Font\+::\+Gr\+Font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}}}]{img\+Loc}{, }\item[{uint16\+\_\+t}]{line\+Height}{, }\item[{uint16\+\_\+t}]{base}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new \doxylink{class_gr_font}{Gr\+Font} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em img\+Loc} & Location of the font imagery in ROM \\
+\hline
+\mbox{\texttt{ in}}  & {\em line\+Height} & ??????? \\
+\hline
+\mbox{\texttt{ in}}  & {\em base} & ??????? \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gr_font_afafca44ad2132b9a4ef6d6024940f28e}\index{GrFont@{GrFont}!begin@{begin}}
+\index{begin@{begin}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_gr_font_afafca44ad2132b9a4ef6d6024940f28e} 
+void Gr\+Font\+::begin (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color16\+Bit}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the font and sets the font\textquotesingle{}s foreground color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em color16\+Bit} & 16-\/bit color (5\+:6\+:5 encoding) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gr_font_adfa5155f67223d7ec6c99b86a7baf38f}\index{GrFont@{GrFont}!begin@{begin}}
+\index{begin@{begin}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_gr_font_adfa5155f67223d7ec6c99b86a7baf38f} 
+void Gr\+Font\+::begin (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{red}{, }\item[{uint8\+\_\+t}]{green}{, }\item[{uint8\+\_\+t}]{blue}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the font and sets the font\textquotesingle{}s foreground color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em red} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em green} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em blue} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gr_font_a60718c0e9030b3ca20acb3f123b10284}\index{GrFont@{GrFont}!charDef@{charDef}}
+\index{charDef@{charDef}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{charDef()}{charDef()}}
+{\footnotesize\ttfamily \label{class_gr_font_a60718c0e9030b3ca20acb3f123b10284} 
+virtual bool Gr\+Font\+::char\+Def (\begin{DoxyParamCaption}\item[{char}]{cc}{, }\item[{\mbox{\hyperlink{struct_char_def__t}{Char\+Def\+\_\+t}} \&}]{results}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract function, used to define the characteristics of each character. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cc} & Character to look up \\
+\hline
+\mbox{\texttt{ out}}  & {\em results} & \doxylink{struct_char_def__t}{Char\+Def\+\_\+t} struction containing information on character, {\ttfamily cc} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if {\ttfamily cc} was found. Returns false if not 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{struct_monofonto___regular__140_a7f9dd5667822d61231d10091ce2b4bbc}{Monofonto\+\_\+\+Regular\+\_\+140}}, \mbox{\hyperlink{struct_monofonto___regular__180_a9f377c1e396e36dc1680cc26b6b51bed}{Monofonto\+\_\+\+Regular\+\_\+180}}, \mbox{\hyperlink{struct_monofonto___regular__20_a1d3539ae31f6b8121f698e56bdbf1503}{Monofonto\+\_\+\+Regular\+\_\+20}}, \mbox{\hyperlink{struct_monofonto___regular__32_ab577ea38303eaaa49021c0c22a152561}{Monofonto\+\_\+\+Regular\+\_\+32}}, \mbox{\hyperlink{struct_monofonto___regular__64_a128abdb2cc66e2afcf9bac422e89c28d}{Monofonto\+\_\+\+Regular\+\_\+64}}, and \mbox{\hyperlink{struct_monofonto___regular__90_a2f4c6747e22f6557ab57d2c5dd969e61}{Monofonto\+\_\+\+Regular\+\_\+90}}.
+
+\Hypertarget{class_gr_font_a4f09eb5d3beb8bb3942903cc1191f60d}\index{GrFont@{GrFont}!kerning@{kerning}}
+\index{kerning@{kerning}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{kerning()}{kerning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_gr_font_a4f09eb5d3beb8bb3942903cc1191f60d} 
+virtual int8\+\_\+t Gr\+Font\+::kerning (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{ID}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Finds the amount of kerning that should be used between two characters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ID} & 16-\/bit encoded value representing the 2 characters (CHAR1\+:CHAR2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the amount of kerning in screen pixels 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{struct_monofonto___regular__140_aa6a4995b1423587925da9a396bf5a86c}{Monofonto\+\_\+\+Regular\+\_\+140}}, \mbox{\hyperlink{struct_monofonto___regular__180_a27f426e131acce5276c6d6e55175c271}{Monofonto\+\_\+\+Regular\+\_\+180}}, \mbox{\hyperlink{struct_monofonto___regular__20_a5f6c1c6c0825cc0211b4cb2e78d32ef8}{Monofonto\+\_\+\+Regular\+\_\+20}}, \mbox{\hyperlink{struct_monofonto___regular__32_ab80c9d95ac66f55c39d938c6a1d4fbad}{Monofonto\+\_\+\+Regular\+\_\+32}}, \mbox{\hyperlink{struct_monofonto___regular__64_aefeaca68f9ce84f4643224f0057daa2a}{Monofonto\+\_\+\+Regular\+\_\+64}}, and \mbox{\hyperlink{struct_monofonto___regular__90_a40896d0e17fa866206fe15fa89f0d8a4}{Monofonto\+\_\+\+Regular\+\_\+90}}.
+
+\Hypertarget{class_gr_font_a2fb854b4db5acd71b78df4ca4824fcfb}\index{GrFont@{GrFont}!kerning@{kerning}}
+\index{kerning@{kerning}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{kerning()}{kerning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_gr_font_a2fb854b4db5acd71b78df4ca4824fcfb} 
+int8\+\_\+t Gr\+Font\+::kerning (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{first}{, }\item[{uint8\+\_\+t}]{second}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds the amount of kerning that should be used between two characters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em first} & First character \\
+\hline
+\mbox{\texttt{ in}}  & {\em second} & Second character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Amount of kerning in screen pixels 
+\end{DoxyReturn}
+\Hypertarget{class_gr_font_a55a07e7170b193fc56c623ce06e7899d}\index{GrFont@{GrFont}!placeText@{placeText}}
+\index{placeText@{placeText}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{placeText()}{placeText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_gr_font_a55a07e7170b193fc56c623ce06e7899d} 
+uint8\+\_\+t Gr\+Font\+::place\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{canvas}{, }\item[{char}]{cc}{, }\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption}) const}
+
+
+
+Places a character onto the {\ttfamily canvas}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em canvas} & \doxylink{class_canvas}{Canvas} where the character is placed \\
+\hline
+\mbox{\texttt{ in}}  & {\em cc} & The character to be placed \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & x-\/position within {\ttfamily canvas} where the character is to be placed \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & y-\/position within {\ttfamily canvas} where the character is to be placed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the width of the character in screen pixels
+\end{DoxyReturn}
+The base of the characters will be aligned with the vertical position, {\ttfamily y}. \Hypertarget{class_gr_font_a379bdeb296da78380a840090140c2c96}\index{GrFont@{GrFont}!placeText@{placeText}}
+\index{placeText@{placeText}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{placeText()}{placeText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_gr_font_a379bdeb296da78380a840090140c2c96} 
+uint8\+\_\+t Gr\+Font\+::place\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{canvas}{, }\item[{const char \texorpdfstring{$\ast$}{*}const}]{text}{, }\item[{uint16\+\_\+t}]{buff\+Size}{, }\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption}) const}
+
+
+
+Places a string onto the {\ttfamily canvas}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em canvas} & \doxylink{class_canvas}{Canvas} where the character is placed \\
+\hline
+\mbox{\texttt{ in}}  & {\em text} & Character buffer containing the null-\/terminated string to be placed \\
+\hline
+\mbox{\texttt{ in}}  & {\em buff\+Size} & The size of the character buffer, {\ttfamily text} \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & x-\/position within {\ttfamily canvas} where the character is to be placed \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & y-\/position within {\ttfamily canvas} where the character is to be placed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the width of the character in screen pixels
+\end{DoxyReturn}
+This method applies character kerning to the displayed characters. The base of the characters will be aligned with the vertical position, {\ttfamily y}. \Hypertarget{class_gr_font_ae91cbab138f2d40805784656f00f19e3}\index{GrFont@{GrFont}!textWidth@{textWidth}}
+\index{textWidth@{textWidth}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{textWidth()}{textWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_gr_font_ae91cbab138f2d40805784656f00f19e3} 
+uint16\+\_\+t Gr\+Font\+::text\+Width (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}const}]{text}{, }\item[{uint16\+\_\+t}]{buff\+Size}{}\end{DoxyParamCaption}) const}
+
+
+
+Determines the with of string in the character array, {\ttfamily text}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em text} & Character buffer containing the null-\/terminated string to be examined \\
+\hline
+\mbox{\texttt{ in}}  & {\em buff\+Size} & The size of the character buffer, {\ttfamily text} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Width of the string in screen pixels
+\end{DoxyReturn}
+This method applies accounts for character kerning when calculating the total width of the string. \Hypertarget{class_gr_font_a2c5119c7540a24ee77db21bd7a516d32}\index{GrFont@{GrFont}!textWidth@{textWidth}}
+\index{textWidth@{textWidth}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{textWidth()}{textWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_gr_font_a2c5119c7540a24ee77db21bd7a516d32} 
+uint16\+\_\+t Gr\+Font\+::text\+Width (\begin{DoxyParamCaption}\item[{const char}]{cc}{}\end{DoxyParamCaption}) const}
+
+
+
+Determines the with of character, {\ttfamily cc}, in screen pixels. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cc} & The character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Width of the character in screen pixels 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_gr_font_a9fbba36d28aa54bde93ceb716236d5e7}\index{GrFont@{GrFont}!BASE@{BASE}}
+\index{BASE@{BASE}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{BASE}{BASE}}
+{\footnotesize\ttfamily \label{class_gr_font_a9fbba36d28aa54bde93ceb716236d5e7} 
+const uint16\+\_\+t Gr\+Font\+::\+BASE}
+
+\Hypertarget{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}\index{GrFont@{GrFont}!imgLoc@{imgLoc}}
+\index{imgLoc@{imgLoc}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{imgLoc}{imgLoc}}
+{\footnotesize\ttfamily \label{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0} 
+const \mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} Gr\+Font\+::img\+Loc}
+
+
+
+Location of the font in Flash ROM. 
+
+\Hypertarget{class_gr_font_a7414adc97893dfadc75180ae9b3fbc74}\index{GrFont@{GrFont}!LINE\_HEIGHT@{LINE\_HEIGHT}}
+\index{LINE\_HEIGHT@{LINE\_HEIGHT}!GrFont@{GrFont}}
+\doxysubsubsection{\texorpdfstring{LINE\_HEIGHT}{LINE\_HEIGHT}}
+{\footnotesize\ttfamily \label{class_gr_font_a7414adc97893dfadc75180ae9b3fbc74} 
+const uint16\+\_\+t Gr\+Font\+::\+LINE\+\_\+\+HEIGHT}
+
+
+
+Recommended vertical spacing between lines of text. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_gr_font_8h}{Gr\+Font.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_gr_font_8cpp}{Gr\+Font.\+cpp}}\end{DoxyCompactItemize}

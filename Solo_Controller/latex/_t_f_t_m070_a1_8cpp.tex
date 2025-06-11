@@ -1,0 +1,75 @@
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+TFTM070\+A1.cpp File Reference}
+\hypertarget{_t_f_t_m070_a1_8cpp}{}\label{_t_f_t_m070_a1_8cpp}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TFTM070A1.cpp@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TFTM070A1.cpp}}
+{\ttfamily \#include "{}Arduino.\+h"{}}\newline
+{\ttfamily \#include "{}TFTM070\+A1.\+h"{}}\newline
+{\ttfamily \#include $<$SPI.\+h$>$}\newline
+{\ttfamily \#include $<$Wire.\+h$>$}\newline
+{\ttfamily \#include "{}Alarm\+Mgr.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8cpp_a597d93b1f461dfdcdc2a6110bcf83b43}{LCD\+\_\+\+RESET}}~9
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8cpp_a71d24cab0e16b054de228f29139f1b79}{LCD\+\_\+\+CS}}~10
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8cpp_a91ed25b07bdff25ce25e42c2fb36f655}{OSC\+\_\+\+FREQ}}~10
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8cpp_a04ddbd460976186f89e5d16e65d3afc2}{DRAM\+\_\+\+FREQ}}~100
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8cpp_aa7e9f2defa6e9c093fc9fb85db75c903}{CORE\+\_\+\+FREQ}}~100
+\item 
+\#define \mbox{\hyperlink{_t_f_t_m070_a1_8cpp_a8127170b687c1f67a968886c128e76e4}{SCAN\+\_\+\+FREQ}}~50
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_t_f_t_m070_a1_8cpp_a74813198926c5869a92bb0a968afdb2f}{FT5316\+\_\+\+ADDR}} = 0x38
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_t_f_t_m070_a1_8cpp_aa7e9f2defa6e9c093fc9fb85db75c903}\index{TFTM070A1.cpp@{TFTM070A1.cpp}!CORE\_FREQ@{CORE\_FREQ}}
+\index{CORE\_FREQ@{CORE\_FREQ}!TFTM070A1.cpp@{TFTM070A1.cpp}}
+\doxysubsubsection{\texorpdfstring{CORE\_FREQ}{CORE\_FREQ}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8cpp_aa7e9f2defa6e9c093fc9fb85db75c903} 
+\#define CORE\+\_\+\+FREQ~100}
+
+\Hypertarget{_t_f_t_m070_a1_8cpp_a04ddbd460976186f89e5d16e65d3afc2}\index{TFTM070A1.cpp@{TFTM070A1.cpp}!DRAM\_FREQ@{DRAM\_FREQ}}
+\index{DRAM\_FREQ@{DRAM\_FREQ}!TFTM070A1.cpp@{TFTM070A1.cpp}}
+\doxysubsubsection{\texorpdfstring{DRAM\_FREQ}{DRAM\_FREQ}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8cpp_a04ddbd460976186f89e5d16e65d3afc2} 
+\#define DRAM\+\_\+\+FREQ~100}
+
+\Hypertarget{_t_f_t_m070_a1_8cpp_a71d24cab0e16b054de228f29139f1b79}\index{TFTM070A1.cpp@{TFTM070A1.cpp}!LCD\_CS@{LCD\_CS}}
+\index{LCD\_CS@{LCD\_CS}!TFTM070A1.cpp@{TFTM070A1.cpp}}
+\doxysubsubsection{\texorpdfstring{LCD\_CS}{LCD\_CS}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8cpp_a71d24cab0e16b054de228f29139f1b79} 
+\#define LCD\+\_\+\+CS~10}
+
+\Hypertarget{_t_f_t_m070_a1_8cpp_a597d93b1f461dfdcdc2a6110bcf83b43}\index{TFTM070A1.cpp@{TFTM070A1.cpp}!LCD\_RESET@{LCD\_RESET}}
+\index{LCD\_RESET@{LCD\_RESET}!TFTM070A1.cpp@{TFTM070A1.cpp}}
+\doxysubsubsection{\texorpdfstring{LCD\_RESET}{LCD\_RESET}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8cpp_a597d93b1f461dfdcdc2a6110bcf83b43} 
+\#define LCD\+\_\+\+RESET~9}
+
+\Hypertarget{_t_f_t_m070_a1_8cpp_a91ed25b07bdff25ce25e42c2fb36f655}\index{TFTM070A1.cpp@{TFTM070A1.cpp}!OSC\_FREQ@{OSC\_FREQ}}
+\index{OSC\_FREQ@{OSC\_FREQ}!TFTM070A1.cpp@{TFTM070A1.cpp}}
+\doxysubsubsection{\texorpdfstring{OSC\_FREQ}{OSC\_FREQ}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8cpp_a91ed25b07bdff25ce25e42c2fb36f655} 
+\#define OSC\+\_\+\+FREQ~10}
+
+\Hypertarget{_t_f_t_m070_a1_8cpp_a8127170b687c1f67a968886c128e76e4}\index{TFTM070A1.cpp@{TFTM070A1.cpp}!SCAN\_FREQ@{SCAN\_FREQ}}
+\index{SCAN\_FREQ@{SCAN\_FREQ}!TFTM070A1.cpp@{TFTM070A1.cpp}}
+\doxysubsubsection{\texorpdfstring{SCAN\_FREQ}{SCAN\_FREQ}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8cpp_a8127170b687c1f67a968886c128e76e4} 
+\#define SCAN\+\_\+\+FREQ~50}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_t_f_t_m070_a1_8cpp_a74813198926c5869a92bb0a968afdb2f}\index{TFTM070A1.cpp@{TFTM070A1.cpp}!FT5316\_ADDR@{FT5316\_ADDR}}
+\index{FT5316\_ADDR@{FT5316\_ADDR}!TFTM070A1.cpp@{TFTM070A1.cpp}}
+\doxysubsubsection{\texorpdfstring{FT5316\_ADDR}{FT5316\_ADDR}}
+{\footnotesize\ttfamily \label{_t_f_t_m070_a1_8cpp_a74813198926c5869a92bb0a968afdb2f} 
+uint8\+\_\+t FT5316\+\_\+\+ADDR = 0x38}
+

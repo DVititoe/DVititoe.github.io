@@ -1,0 +1,105 @@
+\doxysection{Kettle\+Vol\+Sensor Class Reference}
+\hypertarget{class_kettle_vol_sensor}{}\label{class_kettle_vol_sensor}\index{KettleVolSensor@{KettleVolSensor}}
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+Inheritance diagram for Kettle\+Vol\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_kettle_vol_sensor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_kettle_vol_sensor_aba55f4fb05eb7c72b9e50ee16fc6f10f}{begin}} (void) override
+\begin{DoxyCompactList}\small\item\em Initializes the sensors used by this object. Not needed if only using simulated sensor values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kettle_vol_sensor_a8838fb9771f407777fce08f7542ff438}{read}} (void) override
+\begin{DoxyCompactList}\small\item\em Reads the sensor and updates the value stored within this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sensor}{Sensor}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sensor_a9414cf75cbc6f4810d254cfba2b14110}{simulate}} (void)
+\begin{DoxyCompactList}\small\item\em Simulates a new sensor value, storing the results in this object. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} \mbox{\hyperlink{class_sensor_a7dd38d6781f8ccc6da81b76dd4b9422d}{value}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the sensor value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kettle_vol_sensor}{Kettle\+Vol\+Sensor}} \& \mbox{\hyperlink{class_kettle_vol_sensor_a1efa4e96c5f33f491a53d76f325e4b8b}{get\+Instance}} (void)
+\begin{DoxyCompactList}\small\item\em Returns reference to the single instance of the \doxylink{class_kettle_vol_sensor}{Kettle\+Vol\+Sensor} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_sensor}{Sensor}}}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} = float
+\begin{DoxyCompactList}\small\item\em Type definition used by \doxylink{class_sensor}{Sensor} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_sensor}{Sensor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_ade0a79b60a2ec6820c7114448b062b67}{Sensor}} (\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} initial\+Value, \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} max\+Val, \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} min\+Val, \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} sim\+Delta)
+\begin{DoxyCompactList}\small\item\em Protected constructor for \doxylink{class_sensor}{Sensor}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sensor_a2561088ed8350df5d5d53a079b57a113}{\texorpdfstring{$\sim$}{\string~}\+Sensor}} (void)=default
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_sensor}{Sensor} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_sensor}{Sensor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{sensor\+Val\+\_\+t}} \mbox{\hyperlink{class_sensor_a199a36e84706b7183a00683d19a8f4d4}{\+\_\+value}}
+\begin{DoxyCompactList}\small\item\em Most recent sensor reading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kettle_vol_sensor_aba55f4fb05eb7c72b9e50ee16fc6f10f}\index{KettleVolSensor@{KettleVolSensor}!begin@{begin}}
+\index{begin@{begin}!KettleVolSensor@{KettleVolSensor}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_kettle_vol_sensor_aba55f4fb05eb7c72b9e50ee16fc6f10f} 
+void Kettle\+Vol\+Sensor\+::begin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the sensors used by this object. Not needed if only using simulated sensor values. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Implements \mbox{\hyperlink{class_sensor_a9b1b27cb1d329785e97615375c1ddd10}{Sensor}}.
+
+\Hypertarget{class_kettle_vol_sensor_a1efa4e96c5f33f491a53d76f325e4b8b}\index{KettleVolSensor@{KettleVolSensor}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!KettleVolSensor@{KettleVolSensor}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_kettle_vol_sensor_a1efa4e96c5f33f491a53d76f325e4b8b} 
+static \mbox{\hyperlink{class_kettle_vol_sensor}{Kettle\+Vol\+Sensor}} \& Kettle\+Vol\+Sensor\+::get\+Instance (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns reference to the single instance of the \doxylink{class_kettle_vol_sensor}{Kettle\+Vol\+Sensor} class. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the \doxylink{class_kettle_vol_sensor}{Kettle\+Vol\+Sensor} object 
+\end{DoxyReturn}
+\Hypertarget{class_kettle_vol_sensor_a8838fb9771f407777fce08f7542ff438}\index{KettleVolSensor@{KettleVolSensor}!read@{read}}
+\index{read@{read}!KettleVolSensor@{KettleVolSensor}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_kettle_vol_sensor_a8838fb9771f407777fce08f7542ff438} 
+void Kettle\+Vol\+Sensor\+::read (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reads the sensor and updates the value stored within this object. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Implements \mbox{\hyperlink{class_sensor_ada1cfc26f4598d27bdfd50664a0e56c1}{Sensor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_sensor_8h}{Sensor.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_sensor_8cpp}{Sensor.\+cpp}}\end{DoxyCompactItemize}

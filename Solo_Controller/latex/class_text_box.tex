@@ -1,0 +1,195 @@
+\doxysection{Text\+Box Class Reference}
+\hypertarget{class_text_box}{}\label{class_text_box}\index{TextBox@{TextBox}}
+
+
+{\ttfamily \#include $<$Text\+Box.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_box_a8d6b22749bfd375277972729b7ddb550}{Text\+Box}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&Dest\+Canvas, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t text\+Width, uint16\+\_\+t units\+Width, uint16\+\_\+t height, uint16\+\_\+t baseline, \mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*}Text\+Font, \mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*}Units\+Font)
+\begin{DoxyCompactList}\small\item\em Generic Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_box_a25e3440017d0af69630be6f941e52ad3}{Text\+Box}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&Dest\+Canvas, const \mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}})
+\begin{DoxyCompactList}\small\item\em Simplified construct that accepts one of the pre-\/defined configuration structures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_box_ae0783ad0165ef96277643025449b09b7}{begin}} (void)
+\begin{DoxyCompactList}\small\item\em Initiatizes a specific Tect\+Box\+Units instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_text_box_a1c8508a8728df6881dc46c8406e01c0b}{initialize\+Fonts}} (void)
+\begin{DoxyCompactList}\small\item\em Iniitlizes the fonts and configuration data used by \doxylink{class_text_box}{Text\+Box}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dynamic_text}{Dynamic\+Text}} \mbox{\hyperlink{class_text_box_a5241024ca7ac8d7d34876586ccaf149e}{Value}}
+\begin{DoxyCompactList}\small\item\em Text box containing the value to be displayed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dynamic_text}{Dynamic\+Text}} \mbox{\hyperlink{class_text_box_a46428da36035957950e6d93a242c2929}{Units}}
+\begin{DoxyCompactList}\small\item\em Text box containing the units to be displayed. \end{DoxyCompactList}\item 
+const uint16\+\_\+t \mbox{\hyperlink{class_text_box_a4416c8251089e852449c838d2f54771c}{X}}
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{class_text_box_a1e9f67853cf1a1dcec36f4663fa4c025}{Y}}
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{class_text_box_acbb5c398144ee830c6f88772a00f2538}{WIDTH}}
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{class_text_box_addeeda7443449833bd224fe0977dab59}{HEIGHT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_config_list__t}{Config\+List\+\_\+t}} \mbox{\hyperlink{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}{config}}
+\begin{DoxyCompactList}\small\item\em Data structure containing a collection of \doxylink{class_text_box}{Text\+Box} configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_text_box_a8d6b22749bfd375277972729b7ddb550}\index{TextBox@{TextBox}!TextBox@{TextBox}}
+\index{TextBox@{TextBox}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{TextBox()}{TextBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_text_box_a8d6b22749bfd375277972729b7ddb550} 
+Text\+Box\+::\+Text\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{Dest\+Canvas}{, }\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint16\+\_\+t}]{text\+Width}{, }\item[{uint16\+\_\+t}]{units\+Width}{, }\item[{uint16\+\_\+t}]{height}{, }\item[{uint16\+\_\+t}]{baseline}{, }\item[{\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*}}]{Text\+Font}{, }\item[{\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*}}]{Units\+Font}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generic Constructor. 
+
+\begin{DoxyNote}{Note}
+A call to \doxylink{class_text_box_ae0783ad0165ef96277643025449b09b7}{Text\+Box\+::begin()} must be completed after this object is instantiated 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Dest\+Canvas} & \doxylink{class_canvas}{Canvas} that will \textquotesingle{}display\textquotesingle{} the \doxylink{class_text_box}{Text\+Box} \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & UL x-\/position of the \doxylink{class_text_box}{Text\+Box} within \doxylink{class_canvas}{Canvas} \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & UL y-\/position of the \doxylink{class_text_box}{Text\+Box} within \doxylink{class_canvas}{Canvas} \\
+\hline
+\mbox{\texttt{ in}}  & {\em text\+Width} & Width of the "{}\+Value"{} \doxylink{class_text_box}{Text\+Box} in pixels \\
+\hline
+\mbox{\texttt{ in}}  & {\em units\+Width} & Width of Text Box holding the "{}\+Units"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & Height of the \doxylink{class_text_box}{Text\+Box} in pixels \\
+\hline
+\mbox{\texttt{ in}}  & {\em baseline} & Position of the font\textquotesingle{}s baseline within the \doxylink{class_text_box}{Text\+Box} \\
+\hline
+\mbox{\texttt{ in}}  & {\em Text\+Font} & \doxylink{class_gr_font}{Gr\+Font} object for "{}\+Value"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em Units\+Font} & \doxylink{class_gr_font}{Gr\+Font} object for "{}\+Units"{} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_text_box_a25e3440017d0af69630be6f941e52ad3}\index{TextBox@{TextBox}!TextBox@{TextBox}}
+\index{TextBox@{TextBox}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{TextBox()}{TextBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_text_box_a25e3440017d0af69630be6f941e52ad3} 
+Text\+Box\+::\+Text\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{Dest\+Canvas}{, }\item[{const \mbox{\hyperlink{struct_config_text_box__t}{Config\+Text\+Box\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Simplified construct that accepts one of the pre-\/defined configuration structures. 
+
+\begin{DoxyNote}{Note}
+A call to \doxylink{class_text_box_ae0783ad0165ef96277643025449b09b7}{Text\+Box\+::begin()} must be completed after this object is instantiated 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Dest\+Canvas} & \doxylink{class_canvas}{Canvas} that will \textquotesingle{}display\textquotesingle{} the \doxylink{class_text_box}{Text\+Box} \\
+\hline
+\mbox{\texttt{ in}}  & {\em config} & Configuration information \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_text_box_ae0783ad0165ef96277643025449b09b7}\index{TextBox@{TextBox}!begin@{begin}}
+\index{begin@{begin}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_text_box_ae0783ad0165ef96277643025449b09b7} 
+void Text\+Box\+::begin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initiatizes a specific Tect\+Box\+Units instance. 
+
+\begin{DoxyNote}{Note}
+This medhod should be called immediately after an object is instantiated. This method configures the internal data structures used by this object. 
+\end{DoxyNote}
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_text_box_a1c8508a8728df6881dc46c8406e01c0b}\index{TextBox@{TextBox}!initializeFonts@{initializeFonts}}
+\index{initializeFonts@{initializeFonts}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{initializeFonts()}{initializeFonts()}}
+{\footnotesize\ttfamily \label{class_text_box_a1c8508a8728df6881dc46c8406e01c0b} 
+void Text\+Box\+::initialize\+Fonts (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Iniitlizes the fonts and configuration data used by \doxylink{class_text_box}{Text\+Box}. 
+
+\begin{DoxyNote}{Note}
+This method must be called before instantiating any \doxylink{class_text_box}{Text\+Box} objects 
+\end{DoxyNote}
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21}\index{TextBox@{TextBox}!config@{config}}
+\index{config@{config}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \label{class_text_box_a8c4c0e1030a76a1cfcdc65400a73ed21} 
+\mbox{\hyperlink{struct_config_list__t}{Config\+List\+\_\+t}} Text\+Box\+::config\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Data structure containing a collection of \doxylink{class_text_box}{Text\+Box} configuration. 
+
+\Hypertarget{class_text_box_addeeda7443449833bd224fe0977dab59}\index{TextBox@{TextBox}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily \label{class_text_box_addeeda7443449833bd224fe0977dab59} 
+const uint16\+\_\+t Text\+Box\+::\+HEIGHT}
+
+\Hypertarget{class_text_box_a46428da36035957950e6d93a242c2929}\index{TextBox@{TextBox}!Units@{Units}}
+\index{Units@{Units}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{Units}{Units}}
+{\footnotesize\ttfamily \label{class_text_box_a46428da36035957950e6d93a242c2929} 
+\mbox{\hyperlink{class_dynamic_text}{Dynamic\+Text}} Text\+Box\+::\+Units}
+
+
+
+Text box containing the units to be displayed. 
+
+\Hypertarget{class_text_box_a5241024ca7ac8d7d34876586ccaf149e}\index{TextBox@{TextBox}!Value@{Value}}
+\index{Value@{Value}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily \label{class_text_box_a5241024ca7ac8d7d34876586ccaf149e} 
+\mbox{\hyperlink{class_dynamic_text}{Dynamic\+Text}} Text\+Box\+::\+Value}
+
+
+
+Text box containing the value to be displayed. 
+
+\Hypertarget{class_text_box_acbb5c398144ee830c6f88772a00f2538}\index{TextBox@{TextBox}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily \label{class_text_box_acbb5c398144ee830c6f88772a00f2538} 
+const uint16\+\_\+t Text\+Box\+::\+WIDTH}
+
+\Hypertarget{class_text_box_a4416c8251089e852449c838d2f54771c}\index{TextBox@{TextBox}!X@{X}}
+\index{X@{X}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily \label{class_text_box_a4416c8251089e852449c838d2f54771c} 
+const uint16\+\_\+t Text\+Box\+::X}
+
+\Hypertarget{class_text_box_a1e9f67853cf1a1dcec36f4663fa4c025}\index{TextBox@{TextBox}!Y@{Y}}
+\index{Y@{Y}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily \label{class_text_box_a1e9f67853cf1a1dcec36f4663fa4c025} 
+const uint16\+\_\+t Text\+Box\+::Y}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_text_box_8h}{Text\+Box.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/\mbox{\hyperlink{_text_box___config_8h}{Text\+Box\+\_\+\+Config.\+h}}\end{DoxyCompactItemize}
