@@ -168,14 +168,15 @@ var searchData=
   ['start_5fsquare_5ffill_165',['Start_Square_Fill',['../namespace_t_f_t_m070_a1.html#a038a0ebc16b6038f46559b59c0f260c6',1,'TFTM070A1']]],
   ['start_5ftriangle_166',['Start_Triangle',['../namespace_t_f_t_m070_a1.html#aba2c58f334ffb2463fc9011e68a18964',1,'TFTM070A1']]],
   ['start_5ftriangle_5ffill_167',['Start_Triangle_Fill',['../namespace_t_f_t_m070_a1.html#a80cdd482f45f4619119e473f68c03da5',1,'TFTM070A1']]],
-  ['started_168',['Started',['../_getting__started.html',1,'Getting Started'],['../index.html#autotoc_md62',1,'Getting Started']]],
+  ['started_168',['Started',['../_getting__started.html',1,'Getting Started'],['../index.html#autotoc_md63',1,'Getting Started']]],
   ['started_169',['Minimum hardware needed to get started',['../_getting__started.html#autotoc_md20',1,'']]],
   ['state_170',['state',['../class_button.html#a0afeb14dffa44f7e9e50151fbb6218e4',1,'Button']]],
   ['steps_171',['Next Steps',['../_getting__started.html#autotoc_md25',1,'']]],
   ['stop_5fpwm0_172',['Stop_PWM0',['../namespace_t_f_t_m070_a1.html#a97c3e790545fa2a55beba79dac105e08',1,'TFTM070A1']]],
   ['stop_5fpwm1_173',['Stop_PWM1',['../namespace_t_f_t_m070_a1.html#af463fd0de5657a76e38863281627d686',1,'TFTM070A1']]],
   ['stored_20and_20how_20used_174',['Where the data is stored and how used',['../_electronics__design.html#autotoc_md18',1,'']]],
-  ['sub_20pages_175',['Sub-pages',['../_hardware__architecture.html#autotoc_md30',1,'']]],
-  ['symbol_20footprint_20library_20for_20arduino_20modules_176',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md38',1,'']]],
-  ['system_5fcheck_5ftemp_177',['System_Check_Temp',['../namespace_t_f_t_m070_a1.html#a69c9b7a831d1871d910df65c639c8da0',1,'TFTM070A1']]]
+  ['sub_20pages_175',['Sub-Pages',['../index.html#autotoc_md58',1,'']]],
+  ['sub_20pages_176',['Sub-pages',['../_hardware__architecture.html#autotoc_md30',1,'']]],
+  ['symbol_20footprint_20library_20for_20arduino_20modules_177',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md38',1,'']]],
+  ['system_5fcheck_5ftemp_178',['System_Check_Temp',['../namespace_t_f_t_m070_a1.html#a69c9b7a831d1871d910df65c639c8da0',1,'TFTM070A1']]]
 ];
