@@ -11,7 +11,7 @@ var searchData=
   ['mask_5fspi_5fmaster_5finterrupt_5fflag_8',['Mask_SPI_Master_Interrupt_Flag',['../namespace_t_f_t_m070_a1.html#a800b8ad63a4014ec9f77f6e76e219402',1,'TFTM070A1']]],
   ['maximizing_20use_20of_20graphics_20chip_9',['Maximizing use of graphics chip',['../_electronics__design.html#autotoc_md19',1,'']]],
   ['mcu_5frst_5ftft_10',['MCU_RST_TFT',['../_common_8h.html#a460d13e3e4087292a56b46cf7e49fc9f',1,'Common.h']]],
-  ['mean_11',['What does the license exception in the License &amp; Legal section mean?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md53',1,'']]],
+  ['mean_11',['What does the license exception in the License &amp; Legal section mean?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md51',1,'']]],
   ['mega_202560_20rev_203_20microcontroller_12',['Mega 2560, Rev 3 Microcontroller',['../_electronics__design.html#autotoc_md12',1,'']]],
   ['memory_5f16bpp_5fmode_13',['Memory_16bpp_Mode',['../namespace_t_f_t_m070_a1.html#a089af68014279fcec6d6ba47d8f11c19',1,'TFTM070A1']]],
   ['memory_5f24bpp_5fmode_14',['Memory_24bpp_Mode',['../namespace_t_f_t_m070_a1.html#aa8583a8dc439c7382111b2bd5c778cd1',1,'TFTM070A1']]],
@@ -30,7 +30,7 @@ var searchData=
   ['minvolume_27',['minVolume',['../struct_config_list__t.html#af121b71ae32a7a3f79a8fc7a7520efbd',1,'ConfigList_t']]],
   ['miso_28',['MISO',['../_common_8h.html#a7334c540878c8c4d801fd75ed9fd8063',1,'Common.h']]],
   ['module_29',['7 inch 1024x600 TFT Touch Display Module',['../_electronics__design.html#autotoc_md13',1,'']]],
-  ['modules_30',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md40',1,'']]],
+  ['modules_30',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md38',1,'']]],
   ['momentarybutton_31',['MomentaryButton',['../class_momentary_button.html',1,'MomentaryButton'],['../class_momentary_button.html#a16e8fdaccd4933748a340bbe652d28e8',1,'MomentaryButton::MomentaryButton()']]],
   ['monofonto_2dregular_2d140_2eh_32',['Monofonto-Regular-140.h',['../_monofonto-_regular-140_8h.html',1,'']]],
   ['monofonto_2dregular_2d180_2eh_33',['Monofonto-Regular-180.h',['../_monofonto-_regular-180_8h.html',1,'']]],
@@ -45,5 +45,5 @@ var searchData=
   ['monofonto_5fregular_5f64_42',['Monofonto_Regular_64',['../struct_monofonto___regular__64.html',1,'Monofonto_Regular_64'],['../struct_monofonto___regular__64.html#aed3f06e29e31609e64bc690c1827ab53',1,'Monofonto_Regular_64::Monofonto_Regular_64()']]],
   ['monofonto_5fregular_5f90_43',['Monofonto_Regular_90',['../struct_monofonto___regular__90.html',1,'Monofonto_Regular_90'],['../struct_monofonto___regular__90.html#a040292a760555030d15cdf63adcd7793',1,'Monofonto_Regular_90::Monofonto_Regular_90()']]],
   ['mosi_44',['MOSI',['../_common_8h.html#a5d3f11f2fdf8a7e27b975291e0c2c8cc',1,'Common.h']]],
-  ['my_20components_20where_20i_20need_20to_45',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md56',1,'']]]
+  ['my_20components_20where_20i_20need_20to_45',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md54',1,'']]]
 ];

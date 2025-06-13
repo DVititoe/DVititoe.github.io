@@ -1,12 +1,12 @@
-var index =
+var md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page =
 [
-    [ "Sub-Pages", "index.html#autotoc_md35", null ],
+    [ "Sub-Pages", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page.html#autotoc_md57", null ],
     [ "Hardware Architecture", "_hardware__architecture.html", "_hardware__architecture" ],
     [ "Software Architecture", "_software__architecture.html", [
-      [ "Key Software Components", "_software__architecture.html#autotoc_md36", null ],
-      [ "User Interface Classes", "_software__architecture.html#autotoc_md37", null ],
-      [ "Font Classes", "_software__architecture.html#autotoc_md38", null ],
-      [ "Software Dependencies", "_software__architecture.html#autotoc_md39", null ]
+      [ "Key Software Components", "_software__architecture.html#autotoc_md34", null ],
+      [ "User Interface Classes", "_software__architecture.html#autotoc_md35", null ],
+      [ "Font Classes", "_software__architecture.html#autotoc_md36", null ],
+      [ "Software Dependencies", "_software__architecture.html#autotoc_md37", null ]
     ] ],
     [ "Getting Started", "_getting__started.html", [
       [ "Minimum hardware needed to get started", "_getting__started.html#autotoc_md20", null ],

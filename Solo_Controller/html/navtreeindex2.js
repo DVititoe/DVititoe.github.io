@@ -1,8 +1,8 @@
 var NAVTREEINDEX2 =
 {
-"main_8cpp.html#a92711f2817afd9590e7998633fae08a8":[3,0,4,10,1],
-"main_8cpp.html#ad1ab75e5581d1a9417c6ae05066e857a":[3,0,4,10,6],
 "main_8cpp.html#ad288b770a6467f99b6a4fab45d892a16":[3,0,4,10,4],
+"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page.html":[0],
+"md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page.html#autotoc_md57":[0,0],
 "namespace_buzzer.html":[1,0,0],
 "namespace_buzzer.html#a1ae277f16fe5970192959a62ae46d9f9":[1,0,0,2],
 "namespace_buzzer.html#aa71b12b497d947710756b9047693708a":[1,0,0,1],

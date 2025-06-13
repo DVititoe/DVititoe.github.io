@@ -13,10 +13,10 @@ var searchData=
   ['kettlevolume_10',['kettleVolume',['../_sensor_8cpp.html#adc201cebde92ea3147906d820b126e9e',1,'kettleVolume:&#160;Sensor.cpp'],['../_sensor_8h.html#adc201cebde92ea3147906d820b126e9e',1,'kettleVolume:&#160;Sensor.cpp']]],
   ['key_20design_20features_11',['Key Design Features',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md60',1,'']]],
   ['key_20features_12',['Key Features',['../_controller__interface__board.html#autotoc_md3',1,'']]],
-  ['key_20software_20components_13',['Key Software Components',['../_software__architecture.html#autotoc_md36',1,'']]],
-  ['kicad_206_14',['KiCad 6',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md45',1,'']]],
-  ['kicad_207_15',['KiCad 7',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md44',1,'']]],
-  ['kicad_20library_20for_20arduino_20banner_20icon_16',['&quot;KiCad Library for Arduino&quot; Banner &amp; Icon',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md48',1,'']]],
-  ['kicad_20symbol_20footprint_20library_20for_20arduino_20modules_17',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md40',1,'']]],
-  ['kicad_20version_20compatibility_18',['KiCad Version Compatibility',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md41',1,'']]]
+  ['key_20software_20components_13',['Key Software Components',['../_software__architecture.html#autotoc_md34',1,'']]],
+  ['kicad_206_14',['KiCad 6',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md43',1,'']]],
+  ['kicad_207_15',['KiCad 7',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md42',1,'']]],
+  ['kicad_20library_20for_20arduino_20banner_20icon_16',['&quot;KiCad Library for Arduino&quot; Banner &amp; Icon',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md46',1,'']]],
+  ['kicad_20symbol_20footprint_20library_20for_20arduino_20modules_17',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md38',1,'']]],
+  ['kicad_20version_20compatibility_18',['KiCad Version Compatibility',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md39',1,'']]]
 ];
