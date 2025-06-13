@@ -12,7 +12,7 @@ var searchData=
   ['release_9',['release',['../class_button.html#aaffb603c435d21a9477154f18ac70986',1,'Button::release()'],['../class_momentary_button.html#aa415b69e5c860bffb2ae5736b990a699',1,'MomentaryButton::release()']]],
   ['releasebutton_10',['releaseButton',['../class_solo_menu.html#a6226da8342c00ac614eeb79455e40091',1,'SoloMenu']]],
   ['replace_5fstring_5fin_5ffile_11',['replace_string_in_file',['../namespacerun_doxygen.html#ae1499d03247a804f5fd97410157d5e02',1,'runDoxygen']]],
-  ['requests_20bugs_20contributions_12',['Comments, Requests, Bugs &amp; Contributions',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md40',1,'']]],
+  ['requests_20bugs_20contributions_12',['Comments, Requests, Bugs &amp; Contributions',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md42',1,'']]],
   ['reset_20circuit_13',['CTP Reset Circuit',['../_controller__interface__board.html#autotoc_md6',1,'']]],
   ['reset_5fcpha_14',['Reset_CPHA',['../namespace_t_f_t_m070_a1.html#aaaf1bec8f9c4df4fbe438649c94ec9a3',1,'TFTM070A1']]],
   ['reset_5fcpol_15',['Reset_CPOL',['../namespace_t_f_t_m070_a1.html#ac2f95a10dada62d0503f9f52af501028',1,'TFTM070A1']]],
