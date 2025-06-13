@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pages_0',['Sub-Pages',['../md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page.html#autotoc_md57',1,'']]],
+  ['pages_0',['Sub-Pages',['../index.html#autotoc_md57',1,'']]],
   ['pages_1',['Sub-pages',['../_hardware__architecture.html#autotoc_md30',1,'']]],
   ['parallel_5finit_2',['Parallel_Init',['../namespace_t_f_t_m070_a1.html#a6c1e8c08298b8ecc85c2acaed8be64bf',1,'TFTM070A1']]],
   ['parse_5ffont_5fxml_3',['parse_font_xml',['../namespaceparse__font__xml.html',1,'']]],

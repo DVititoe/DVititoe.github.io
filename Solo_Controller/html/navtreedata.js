@@ -24,8 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "Solo Controller", "index.html", [
-    [ "Solo Controller Documentation", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page.html", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page" ],
+  [ "Solo Controller Documentation", "index.html", [
+    [ "Controller Design", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -64,8 +64,8 @@ var NAVTREEINDEX =
 [
 "_alarm_mgr_8cpp.html",
 "_t_f_t_m070_a1_8h.html#ac0ba049460582d2e87436e2c38b4a493",
-"main_8cpp.html#ad288b770a6467f99b6a4fab45d892a16",
-"namespace_t_f_t_m070_a1.html#ac5ad4b0555ce200130cb183e6d1ab64d"
+"main_8cpp.html#a1b0a3e05aece8334bc9966b2cf30bd92",
+"namespace_t_f_t_m070_a1.html#ac2f95a10dada62d0503f9f52af501028"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

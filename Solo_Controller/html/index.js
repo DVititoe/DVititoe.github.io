@@ -1,6 +1,11 @@
-var md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page =
+var index =
 [
-    [ "Sub-Pages", "md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo_2_main___page.html#autotoc_md57", null ],
+    [ "Sub-Pages", "index.html#autotoc_md57", null ],
+    [ "Overview", "index.html#autotoc_md58", [
+      [ "User Interface Concept", "index.html#autotoc_md59", null ],
+      [ "Key Design Features", "index.html#autotoc_md60", null ],
+      [ "Use of this Design", "index.html#autotoc_md61", null ]
+    ] ],
     [ "Hardware Architecture", "_hardware__architecture.html", "_hardware__architecture" ],
     [ "Software Architecture", "_software__architecture.html", [
       [ "Key Software Components", "_software__architecture.html#autotoc_md34", null ],
