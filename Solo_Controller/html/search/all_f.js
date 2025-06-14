@@ -6,7 +6,7 @@ var searchData=
   ['layer4_5fstart_5faddr_3',['layer4_start_addr',['../_t_f_t_m070_a1_8h.html#a0f57bf3fb1221d0d9d6469643912b0e5',1,'TFTM070A1.h']]],
   ['layer5_5fstart_5faddr_4',['layer5_start_addr',['../_t_f_t_m070_a1_8h.html#a7ccea3ba98277968ce9249cc4b388ca7',1,'TFTM070A1.h']]],
   ['layer6_5fstart_5faddr_5',['layer6_start_addr',['../_t_f_t_m070_a1_8h.html#ab507a3124752c224602e17749cf4cbcc',1,'TFTM070A1.h']]],
-  ['layout_6',['Layout',['../_controller__interface__board.html#autotoc_md8',1,'Circuit Board Layout'],['../_hardware__architecture.html#autotoc_md32',1,'Controller Layout']]],
+  ['layout_6',['Layout',['../_controller__interface__board.html#autotoc_md8',1,'Circuit Board Layout'],['../_hardware__architecture.html#autotoc_md31',1,'Controller Layout']]],
   ['layout_20of_20electronics_7',['Physical Layout of Electronics',['../_electronics__design.html#autotoc_md17',1,'']]],
   ['lcd_5fcmdwrite_8',['LCD_CmdWrite',['../namespace_t_f_t_m070_a1.html#a4bfa0bee1859582728421b9f7e4de2a6',1,'TFTM070A1']]],
   ['lcd_5fcs_9',['LCD_CS',['../_t_f_t_m070_a1_8cpp.html#a71d24cab0e16b054de228f29139f1b79',1,'TFTM070A1.cpp']]],

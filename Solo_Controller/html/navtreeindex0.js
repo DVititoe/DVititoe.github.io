@@ -85,7 +85,6 @@ var NAVTREEINDEX0 =
 "_hardware__architecture.html#autotoc_md31":[0,2,0,0],
 "_hardware__architecture.html#autotoc_md32":[0,2,0,1],
 "_hardware__architecture.html#autotoc_md33":[0,2,0,2],
-"_hardware__architecture.html#autotoc_md34":[0,2,0,3],
 "_hardware__parts__list.html":[0,2,2],
 "_menu_8cpp.html":[3,0,3,11],
 "_menu_8cpp.html#a041b2d1de854a195c5f280ab967c1797":[3,0,3,11,1],
@@ -208,10 +207,10 @@ var NAVTREEINDEX0 =
 "_sensor_8h.html#adc201cebde92ea3147906d820b126e9e":[3,0,3,14,6],
 "_sensor_8h_source.html":[3,0,3,14],
 "_software__architecture.html":[0,3],
-"_software__architecture.html#autotoc_md35":[0,3,0],
-"_software__architecture.html#autotoc_md36":[0,3,1],
-"_software__architecture.html#autotoc_md37":[0,3,2],
-"_software__architecture.html#autotoc_md38":[0,3,3],
+"_software__architecture.html#autotoc_md34":[0,3,0],
+"_software__architecture.html#autotoc_md35":[0,3,1],
+"_software__architecture.html#autotoc_md36":[0,3,2],
+"_software__architecture.html#autotoc_md37":[0,3,3],
 "_t_f_t_m070_a1_8cpp.html":[3,0,3,21],
 "_t_f_t_m070_a1_8cpp.html#a04ddbd460976186f89e5d16e65d3afc2":[3,0,3,21,1],
 "_t_f_t_m070_a1_8cpp.html#a597d93b1f461dfdcdc2a6110bcf83b43":[3,0,3,21,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "_t_f_t_m070_a1_8h.html#aa429cd977709122166b6e31fa10903d1":[3,0,3,22,21],
 "_t_f_t_m070_a1_8h.html#aa73bd29a1411be844cb615e85d82c172":[3,0,3,22,14],
 "_t_f_t_m070_a1_8h.html#ab507a3124752c224602e17749cf4cbcc":[3,0,3,22,27],
-"_t_f_t_m070_a1_8h.html#abb4ac17205068db1ba4713e440634256":[3,0,3,22,39]
+"_t_f_t_m070_a1_8h.html#abb4ac17205068db1ba4713e440634256":[3,0,3,22,39],
+"_t_f_t_m070_a1_8h.html#abc53554ca000cc5f186f087ac7b2b00d":[3,0,3,22,29]
 };

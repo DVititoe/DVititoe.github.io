@@ -1,10 +1,10 @@
 var searchData=
 [
   ['f_20pcb_0',['Creation of Control I/F PCB',['../_getting__started.html#autotoc_md27',1,'']]],
-  ['features_1',['Features',['../index.html#autotoc_md44',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md49',1,'Key Design Features'],['../_controller__interface__board.html#autotoc_md3',1,'Key Features']]],
+  ['features_1',['Features',['../index.html#autotoc_md43',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md48',1,'Key Design Features'],['../_controller__interface__board.html#autotoc_md3',1,'Key Features']]],
   ['final_20software_20configuration_2',['Final Software Configuration',['../_getting__started.html#autotoc_md29',1,'']]],
   ['finishedwitherrmsg_3',['finishedWithErrMsg',['../namespace_task_1_1_error.html#adc4ee077b4fa2f212df9cf2dd310ba23',1,'Task::Error']]],
-  ['font_20classes_4',['Font Classes',['../_software__architecture.html#autotoc_md37',1,'']]],
+  ['font_20classes_4',['Font Classes',['../_software__architecture.html#autotoc_md36',1,'']]],
   ['font_5f0_5fdegree_5',['Font_0_degree',['../namespace_t_f_t_m070_a1.html#a01705098c7d930bc443c8c4f2cd54e38',1,'TFTM070A1']]],
   ['font_5f90_5fdegree_6',['Font_90_degree',['../namespace_t_f_t_m070_a1.html#a6a4737b21449462c9a1a47b10dbed6c9',1,'TFTM070A1']]],
   ['font_5fbackground_5fselect_5fcolor_7',['Font_Background_select_Color',['../namespace_t_f_t_m070_a1.html#a272c6af1dcafe2267712390f7fc16f10',1,'TFTM070A1']]],
@@ -25,7 +25,7 @@ var searchData=
   ['font_5fwidth_5fx2_22',['Font_Width_X2',['../namespace_t_f_t_m070_a1.html#ac5678507d69f6375e8ba0ff861bcd052',1,'TFTM070A1']]],
   ['font_5fwidth_5fx3_23',['Font_Width_X3',['../namespace_t_f_t_m070_a1.html#a977b15d9d4679989adfe093091aec9d5',1,'TFTM070A1']]],
   ['font_5fwidth_5fx4_24',['Font_Width_X4',['../namespace_t_f_t_m070_a1.html#a1dae0c6fb7e117de619d171b17c62555',1,'TFTM070A1']]],
-  ['fonts_25',['Fonts',['../_u_i__graphics.html#autotoc_md39',1,'']]],
+  ['fonts_25',['Fonts',['../_u_i__graphics.html#autotoc_md38',1,'']]],
   ['for_20use_20by_20application_26',['Preparing for use by application',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md2',1,'']]],
   ['foreground_5fcolor_5f65k_27',['Foreground_color_65k',['../namespace_t_f_t_m070_a1.html#a8ca651e65d7a8ffc1494df8934db4c05',1,'TFTM070A1']]],
   ['front_20of_20pcb_28',['Front of PCB',['../_controller__interface__board.html#autotoc_md9',1,'']]],
