@@ -8,13 +8,13 @@ Related sub-\/pages include\+:
 \item Page \doxylink{Software_Architecture}{Software Architecture}
 \item Page \doxylink{UI_Graphics}{User Interface Graphics}
 \item Page \doxylink{Getting_Started}{Getting Started}
-\end{DoxyItemize}\hypertarget{index_autotoc_md41}{}\doxysection{\texorpdfstring{Overview}{Overview}}\label{index_autotoc_md41}
+\end{DoxyItemize}\hypertarget{index_autotoc_md40}{}\doxysection{\texorpdfstring{Overview}{Overview}}\label{index_autotoc_md40}
 This \href{https://github.com/DVititoe/Solo_Controller}{\texttt{ Git\+Hub repository}} contains the design and specifications for a new touch screen controller, designed to operate an 240V electric Brew in a Bag (BIAB) system. I specifically designed this controller for use with a customized \href{https://spikebrewing.com/products/spike-solo-system-1?var=43233939259628}{\texttt{ Spike Solo Brew System}}, but this this controller can be used with any compatible 240v Electric Brew Kettle. Additional documentation can be found at \href{https://dvititoe.github.io/Solo_Controller/html/index.html}{\texttt{ Solo Controller Github Pages site}}.
 
-Note\+: This project is not in any way affiliated with Spike Homebrewing.\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\hypertarget{index_autotoc_md42}{}\doxysubsection{\texorpdfstring{User Interface Concept}{User Interface Concept}}\label{index_autotoc_md42}
+Note\+: This project is not in any way affiliated with Spike Homebrewing.\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\hypertarget{index_autotoc_md41}{}\doxysubsection{\texorpdfstring{User Interface Concept}{User Interface Concept}}\label{index_autotoc_md41}
 The Solo controller is divided into two separate enclosures. The Display enclosure has a touch screen display that controllers the brew system functions. The Display enclosure is envisioned as a light weight box that can be mounted on a swivel arm. This makes it possible for the brewer to move the touch screen display into a convenient location. The sensor breakout box is mount on (or near) the brew rig. This puts most of the cables closer to the brew equipment, keeping the number of cables hanging off the Display enclosure to a minimum.
 
-\begin{center}\end{center} \hypertarget{index_autotoc_md43}{}\doxysubsection{\texorpdfstring{Key Design Features}{Key Design Features}}\label{index_autotoc_md43}
+\begin{center}\end{center} \hypertarget{index_autotoc_md42}{}\doxysubsection{\texorpdfstring{Key Design Features}{Key Design Features}}\label{index_autotoc_md42}
 Why design a new controller?\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} After all, there are a number of BIAB controllers already out there, ready to to purchased and used right out of the box. None of these controllers had all of the features that I wanted for my brew system. So, I decided to build my own. Some of the key design features that differentiate this controller from others include\+:
 
 
@@ -25,7 +25,7 @@ Why design a new controller?\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}
 \item {\itshape {\bfseries{Proportional Temperature Control in the Kettle}}}\+: Most controllers use a standard SSR relay to control the heating element within the kettle. These relays alternate between fully turning on (or off) the heating element. This design uses a proportional SSR relay to control the kettle heating element. Proportional relays allow the controller to apply just enough power to maintain kettle temperature. In my particular case, I was interested in experimenting with longer temperature controlled hop stands. The proportional relay makes it possible to control kettle temperature while minimizing the risk of hops isomerization.
 \item {\itshape {\bfseries{Physical Element Disable Switch}}}\+: Most touch screen controllers rely solely upon signals from it\textquotesingle{}s microcontroller to enable or disable the heating element. I prefer a physical switch, that will electrically disable the element when needed. This guarantees that a microcontroller or software glitch won\textquotesingle{}t prevent you from disabling the element.
 \item {\itshape {\bfseries{Loud Ass Alarm}}}\+: Most controllers have fairly weak alarms. This design uses a 12v DC alarm from \href{https://www.auberins.com/index.php?main_page=product_info&cPath=7_33&products_id=218}{\texttt{ Auber Instruments}} to generate 85 decibels. There is no chance of missing this bad boy!
-\end{DoxyItemize}\hypertarget{index_autotoc_md44}{}\doxysubsection{\texorpdfstring{Additional Information}{Additional Information}}\label{index_autotoc_md44}
+\end{DoxyItemize}\hypertarget{index_autotoc_md43}{}\doxysubsection{\texorpdfstring{Additional Information}{Additional Information}}\label{index_autotoc_md43}
 Additional information on the Solo Controller Design can be found here\+:
 
 
@@ -49,7 +49,7 @@ Building a Solo Controller requires an understanding of\+:
 \item Knowledge of C/\+C++
 \end{DoxyItemize}
 
-If this doesn\textquotesingle{}t scare you away then hop on over to the \href{https://dvititoe.github.io/Solo_Controller/html/_getting__started.html}{\texttt{ Getting Started}} guide for more information\hypertarget{index_autotoc_md45}{}\doxysection{\texorpdfstring{Use of this Design}{Use of this Design}}\label{index_autotoc_md45}
+If this doesn\textquotesingle{}t scare you away then hop on over to the \href{https://dvititoe.github.io/Solo_Controller/html/_getting__started.html}{\texttt{ Getting Started}} guide for more information\hypertarget{index_autotoc_md44}{}\doxysection{\texorpdfstring{Use of this Design}{Use of this Design}}\label{index_autotoc_md44}
 All of the design specifications provided within this repository are freely available for others to use. Please keep in mind, though, that I make no warranties regarding the quality of the electrical design nor the quality of the software provided here. I\textquotesingle{}m always willing a answer questions, but for the most part, you\textquotesingle{}re on your own should you attempt to build one yourself\input{_hardware__architecture}
 \input{_software__architecture}
 \input{_u_i__graphics}

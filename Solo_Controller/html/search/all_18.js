@@ -10,7 +10,7 @@ var searchData=
   ['vol_5fsensor_7',['VOL_SENSOR',['../_common_8h.html#ac735ae65b04d7f1745e912d60a576668',1,'Common.h']]],
   ['vol_5fsetup_8',['VOL_SETUP',['../_r_o_m___images_8h.html#aa71a31ae4a84bc3116ad8c482c37605d',1,'ROM_Images.h']]],
   ['volsetup_9',['volSetup',['../namespace_c_b_1_1_s_e_t_u_p.html#a8e0da5e9f4b6752ed7237ce611e3bddb',1,'CB::SETUP']]],
-  ['voltage_20sensor_20breakout_20box_10',['High Voltage Sensor Breakout Box',['../_hardware__architecture.html#autotoc_md33',1,'']]],
+  ['voltage_20sensor_20breakout_20box_10',['High Voltage Sensor Breakout Box',['../_hardware__architecture.html#autotoc_md32',1,'']]],
   ['volume_11',['volume',['../struct_config_list__t.html#a52d11f2946ec0f209f05587e3ddf3855',1,'ConfigList_t']]],
   ['vscan_5ft_5fto_5fb_12',['VSCAN_T_to_B',['../namespace_t_f_t_m070_a1.html#addf20d50d4ac2e716306a5511cd772de',1,'TFTM070A1']]],
   ['vscode_20and_20platformio_13',['Installing VSCode and PlatformIO',['../_getting__started.html#autotoc_md22',1,'']]],
