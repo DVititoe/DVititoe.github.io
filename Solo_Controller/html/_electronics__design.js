@@ -1,6 +1,6 @@
 var _electronics__design =
 [
-    [ "Overview", "_electronics__design.html#autotoc_md11", null ],
+    [ "Electronics Overview", "_electronics__design.html#autotoc_md11", null ],
     [ "Electronics Components", "_electronics__design.html#autotoc_md12", [
       [ "Mega 2560, Rev 3 Microcontroller", "_electronics__design.html#autotoc_md13", null ],
       [ "7 inch 1024x600 TFT Touch Display Module", "_electronics__design.html#autotoc_md14", null ],

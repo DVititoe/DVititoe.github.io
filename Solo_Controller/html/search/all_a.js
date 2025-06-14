@@ -1,7 +1,7 @@
 var searchData=
 [
   ['f_20pcb_0',['Creation of Control I/F PCB',['../_getting__started.html#autotoc_md27',1,'']]],
-  ['features_1',['Features',['../index.html#autotoc_md42',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md47',1,'Key Design Features'],['../_controller__interface__board.html#autotoc_md3',1,'Key Features']]],
+  ['features_1',['Features',['../index.html#autotoc_md46',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md51',1,'Key Design Features'],['../_controller__interface__board.html#autotoc_md3',1,'Key Features']]],
   ['final_20software_20configuration_2',['Final Software Configuration',['../_getting__started.html#autotoc_md29',1,'']]],
   ['finishedwitherrmsg_3',['finishedWithErrMsg',['../namespace_task_1_1_error.html#adc4ee077b4fa2f212df9cf2dd310ba23',1,'Task::Error']]],
   ['font_20classes_4',['Font Classes',['../_software__architecture.html#autotoc_md37',1,'']]],
@@ -25,10 +25,11 @@ var searchData=
   ['font_5fwidth_5fx2_22',['Font_Width_X2',['../namespace_t_f_t_m070_a1.html#ac5678507d69f6375e8ba0ff861bcd052',1,'TFTM070A1']]],
   ['font_5fwidth_5fx3_23',['Font_Width_X3',['../namespace_t_f_t_m070_a1.html#a977b15d9d4679989adfe093091aec9d5',1,'TFTM070A1']]],
   ['font_5fwidth_5fx4_24',['Font_Width_X4',['../namespace_t_f_t_m070_a1.html#a1dae0c6fb7e117de619d171b17c62555',1,'TFTM070A1']]],
-  ['for_20use_20by_20application_25',['Preparing for use by application',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md2',1,'']]],
-  ['foreground_5fcolor_5f65k_26',['Foreground_color_65k',['../namespace_t_f_t_m070_a1.html#a8ca651e65d7a8ffc1494df8934db4c05',1,'TFTM070A1']]],
-  ['front_20of_20pcb_27',['Front of PCB',['../_controller__interface__board.html#autotoc_md9',1,'']]],
-  ['ft5316_28',['FT5316',['../namespace_f_t5316.html',1,'']]],
-  ['ft5316_5faddr_29',['FT5316_ADDR',['../_t_f_t_m070_a1_8cpp.html#a74813198926c5869a92bb0a968afdb2f',1,'TFTM070A1.cpp']]],
-  ['functionality_30',['Compiling and Testing basic Functionality',['../_getting__started.html#autotoc_md25',1,'']]]
+  ['fonts_25',['Fonts',['../_u_i__graphics.html#autotoc_md40',1,'']]],
+  ['for_20use_20by_20application_26',['Preparing for use by application',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md2',1,'']]],
+  ['foreground_5fcolor_5f65k_27',['Foreground_color_65k',['../namespace_t_f_t_m070_a1.html#a8ca651e65d7a8ffc1494df8934db4c05',1,'TFTM070A1']]],
+  ['front_20of_20pcb_28',['Front of PCB',['../_controller__interface__board.html#autotoc_md9',1,'']]],
+  ['ft5316_29',['FT5316',['../namespace_f_t5316.html',1,'']]],
+  ['ft5316_5faddr_30',['FT5316_ADDR',['../_t_f_t_m070_a1_8cpp.html#a74813198926c5869a92bb0a968afdb2f',1,'TFTM070A1.cpp']]],
+  ['functionality_31',['Compiling and Testing basic Functionality',['../_getting__started.html#autotoc_md25',1,'']]]
 ];

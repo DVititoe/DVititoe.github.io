@@ -11,7 +11,7 @@ var searchData=
   ['kettlevolalarmon_8',['kettleVolAlarmOn',['../namespace_c_b_1_1_m_a_i_n.html#a8220dafdc3fa7fdf863494b7d3fbf12d',1,'CB::MAIN']]],
   ['kettlevolsensor_9',['KettleVolSensor',['../class_kettle_vol_sensor.html',1,'']]],
   ['kettlevolume_10',['kettleVolume',['../_sensor_8cpp.html#adc201cebde92ea3147906d820b126e9e',1,'kettleVolume:&#160;Sensor.cpp'],['../_sensor_8h.html#adc201cebde92ea3147906d820b126e9e',1,'kettleVolume:&#160;Sensor.cpp']]],
-  ['key_20design_20features_11',['Key Design Features',['../index.html#autotoc_md42',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md47',1,'Key Design Features']]],
+  ['key_20design_20features_11',['Key Design Features',['../index.html#autotoc_md46',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md51',1,'Key Design Features']]],
   ['key_20features_12',['Key Features',['../_controller__interface__board.html#autotoc_md3',1,'']]],
   ['key_20software_20components_13',['Key Software Components',['../_software__architecture.html#autotoc_md35',1,'']]]
 ];
