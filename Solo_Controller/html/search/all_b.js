@@ -3,7 +3,7 @@ var searchData=
   ['f_20courtyard_20tt_20or_20tt_20b_20courtyard_20tt_20outline_20i_20can_20t_20place_20my_20components_20where_20i_20need_20to_0',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md54',1,'']]],
   ['f_20pcb_1',['Creation of Control I/F PCB',['../_getting__started.html#autotoc_md26',1,'']]],
   ['faq_2',['FAQ',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md49',1,'']]],
-  ['features_3',['Features',['../index.html#autotoc_md60',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md64',1,'Key Design Features'],['../_controller__interface__board.html#autotoc_md3',1,'Key Features']]],
+  ['features_3',['Features',['../index.html#autotoc_md59',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md64',1,'Key Design Features'],['../_controller__interface__board.html#autotoc_md3',1,'Key Features']]],
   ['final_20software_20configuration_4',['Final Software Configuration',['../_getting__started.html#autotoc_md28',1,'']]],
   ['finishedwitherrmsg_5',['finishedWithErrMsg',['../namespace_task_1_1_error.html#adc4ee077b4fa2f212df9cf2dd310ba23',1,'Task::Error']]],
   ['font_20classes_6',['Font Classes',['../_software__architecture.html#autotoc_md36',1,'']]],

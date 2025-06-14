@@ -1,13 +1,12 @@
 var index =
 [
-    [ "Controller Design", "index.html#autotoc_md56", [
-      [ "Sub-Pages", "index.html#autotoc_md57", null ],
-      [ "Overview", "index.html#autotoc_md58", [
-        [ "User Interface Concept", "index.html#autotoc_md59", null ],
-        [ "Key Design Features", "index.html#autotoc_md60", null ]
-      ] ],
-      [ "Use of this Design", "index.html#autotoc_md61", null ]
+    [ "Related Sub-Pages", "index.html#autotoc_md56", null ],
+    [ "Overview", "index.html#autotoc_md57", [
+      [ "User Interface Concept", "index.html#autotoc_md58", null ],
+      [ "Key Design Features", "index.html#autotoc_md59", null ],
+      [ "Additional Information", "index.html#autotoc_md60", null ]
     ] ],
+    [ "Use of this Design", "index.html#autotoc_md61", null ],
     [ "Hardware Architecture", "_hardware__architecture.html", "_hardware__architecture" ],
     [ "Software Architecture", "_software__architecture.html", [
       [ "Key Software Components", "_software__architecture.html#autotoc_md34", null ],

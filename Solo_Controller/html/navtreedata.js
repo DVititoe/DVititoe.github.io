@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Solo Controller Documentation", "index.html", [
-    [ "My Library Manual", "index.html", "index" ],
+    [ "Design Documents", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
