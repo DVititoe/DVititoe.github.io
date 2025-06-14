@@ -25,7 +25,26 @@
 var NAVTREE =
 [
   [ "Solo Controller Documentation", "index.html", [
-    [ "Controller Design", "index.html", "index" ],
+    [ "My Library Manual", "index.html", "index" ],
+    [ "Getting Started", "_getting__started.html", [
+      [ "Minimum hardware needed to get started", "_getting__started.html#autotoc_md20", null ],
+      [ "Installing VSCode and PlatformIO", "_getting__started.html#autotoc_md21", null ],
+      [ "Updating the Display ROM", "_getting__started.html#autotoc_md22", null ],
+      [ "Software Configuration", "_getting__started.html#autotoc_md23", null ],
+      [ "Compiling and Testing basic Functionality", "_getting__started.html#autotoc_md24", null ],
+      [ "Next Steps", "_getting__started.html#autotoc_md25", [
+        [ "Creation of Control I/F PCB", "_getting__started.html#autotoc_md26", null ],
+        [ "Build out the HW", "_getting__started.html#autotoc_md27", null ],
+        [ "Final Software Configuration", "_getting__started.html#autotoc_md28", null ]
+      ] ]
+    ] ],
+    [ "Hardware Architecture", "_hardware__architecture.html", "_hardware__architecture" ],
+    [ "Software Architecture", "_software__architecture.html", [
+      [ "Key Software Components", "_software__architecture.html#autotoc_md34", null ],
+      [ "User Interface Classes", "_software__architecture.html#autotoc_md35", null ],
+      [ "Font Classes", "_software__architecture.html#autotoc_md36", null ],
+      [ "Software Dependencies", "_software__architecture.html#autotoc_md37", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -64,8 +83,8 @@ var NAVTREEINDEX =
 [
 "_alarm_mgr_8cpp.html",
 "_t_f_t_m070_a1_8h.html#ac0ba049460582d2e87436e2c38b4a493",
-"main_8cpp.html#a1b0a3e05aece8334bc9966b2cf30bd92",
-"namespace_t_f_t_m070_a1.html#ac2f95a10dada62d0503f9f52af501028"
+"main_8cpp.html#a92711f2817afd9590e7998633fae08a8",
+"namespace_t_f_t_m070_a1.html#ac5ad4b0555ce200130cb183e6d1ab64d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

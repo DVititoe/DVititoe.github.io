@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['design_0',['Design',['../index.html',1,'Controller Design'],['../_electronics__design.html',1,'Electronics Design']]]
+  ['design_0',['Electronics Design',['../_electronics__design.html',1,'Hardware_Architecture']]]
 ];

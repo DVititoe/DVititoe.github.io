@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['software_20architecture_0',['Software Architecture',['../_software__architecture.html',1,'index']]],
-  ['started_1',['Getting Started',['../_getting__started.html',1,'index']]]
+  ['parts_20list_0',['Hardware Parts List',['../_hardware__parts__list.html',1,'Hardware_Architecture']]]
 ];
