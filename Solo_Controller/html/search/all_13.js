@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pages_0',['Related Sub-Pages',['../index.html#autotoc_md43',1,'']]],
+  ['pages_0',['Related Sub-Pages',['../index.html#autotoc_md42',1,'']]],
   ['pages_1',['Sub-pages',['../_hardware__architecture.html#autotoc_md31',1,'']]],
   ['parallel_5finit_2',['Parallel_Init',['../namespace_t_f_t_m070_a1.html#a6c1e8c08298b8ecc85c2acaed8be64bf',1,'TFTM070A1']]],
   ['parse_5ffont_5fxml_3',['parse_font_xml',['../namespaceparse__font__xml.html',1,'']]],
@@ -22,7 +22,7 @@ var searchData=
   ['platformio_19',['Installing VSCode and PlatformIO',['../_getting__started.html#autotoc_md22',1,'']]],
   ['pll_5finitial_20',['PLL_Initial',['../namespace_t_f_t_m070_a1.html#ac9ee5e4883ac330825de8f2661a87731',1,'TFTM070A1']]],
   ['pos_21',['pos',['../namespacecreate___r_o_m__image.html#a03df083145a58b735749d248246d1de5',1,'create_ROM_image']]],
-  ['pre_20generated_20menu_20graphics_22',['Pre-Generated Menu Graphics',['../_u_i__graphics.html#autotoc_md41',1,'']]],
+  ['pre_20generated_20menu_20graphics_22',['Pre-Generated Menu Graphics',['../_u_i__graphics.html#autotoc_md40',1,'']]],
   ['preparing_20for_20use_20by_20application_23',['Preparing for use by application',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md2',1,'']]],
   ['press_24',['press',['../class_button.html#a9a4b0bb6bb5745dd9341ae6d49de9bd1',1,'Button::press()'],['../class_toggle_button.html#a2e4cd4d71e704175aa9c92858bddd66b',1,'ToggleButton::press()'],['../class_immediate_button.html#a88520eaf3b60c634a8e752eba0e0c735',1,'ImmediateButton::press()']]],
   ['pump_5fout_25',['PUMP_OUT',['../_common_8h.html#a09960734adb9d9bfe1a59c1a22f4a75f',1,'Common.h']]],

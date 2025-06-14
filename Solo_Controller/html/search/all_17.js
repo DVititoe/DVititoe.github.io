@@ -8,9 +8,9 @@ var searchData=
   ['updating_20the_20display_20rom_5',['Updating the Display ROM',['../_getting__started.html#autotoc_md23',1,'']]],
   ['use_20by_20application_6',['Preparing for use by application',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md2',1,'']]],
   ['use_20of_20graphics_20chip_7',['Maximizing use of graphics chip',['../_electronics__design.html#autotoc_md20',1,'']]],
-  ['use_20of_20this_20design_8',['Use of this Design',['../index.html#autotoc_md48',1,'Use of this Design'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md53',1,'Use of this Design']]],
+  ['use_20of_20this_20design_8',['Use of this Design',['../index.html#autotoc_md47',1,'Use of this Design'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md52',1,'Use of this Design']]],
   ['used_9',['Where the data is stored and how used',['../_electronics__design.html#autotoc_md19',1,'']]],
   ['user_20interface_20classes_10',['User Interface Classes',['../_software__architecture.html#autotoc_md36',1,'']]],
-  ['user_20interface_20concept_11',['User Interface Concept',['../index.html#autotoc_md45',1,'User Interface Concept'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md50',1,'User Interface Concept']]],
+  ['user_20interface_20concept_11',['User Interface Concept',['../index.html#autotoc_md44',1,'User Interface Concept'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md49',1,'User Interface Concept']]],
   ['user_20interface_20graphics_12',['User Interface Graphics',['../_u_i__graphics.html',1,'index']]]
 ];

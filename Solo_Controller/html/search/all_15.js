@@ -6,7 +6,7 @@ var searchData=
   ['s1_5fconstant_5fcolor_5f65k_3',['S1_Constant_color_65k',['../namespace_t_f_t_m070_a1.html#a73008355e456848711e8c05ba54733e1',1,'TFTM070A1']]],
   ['scan_5ffreq_4',['SCAN_FREQ',['../_t_f_t_m070_a1_8cpp.html#a8127170b687c1f67a968886c128e76e4',1,'TFTM070A1.cpp']]],
   ['sck_5',['SCK',['../_common_8h.html#a2dd443a4430713d325ab86895a4a45eb',1,'Common.h']]],
-  ['scripts_6',['Supporting Scripts',['../_u_i__graphics.html#autotoc_md42',1,'']]],
+  ['scripts_6',['Supporting Scripts',['../_u_i__graphics.html#autotoc_md41',1,'']]],
   ['sdram_5finitail_7',['SDRAM_initail',['../namespace_t_f_t_m070_a1.html#ab8428149a90d7303bac31b804cb616ff',1,'TFTM070A1']]],
   ['search_5fand_5freplace_5fin_5fdirectory_8',['search_and_replace_in_directory',['../namespacerun_doxygen.html#a758003410960918efa579c9ea5c14652',1,'runDoxygen']]],
   ['select_5fmain_5fwindow_5f16bpp_9',['Select_Main_Window_16bpp',['../namespace_t_f_t_m070_a1.html#a8ddf8ec69fdb5c15ebc7e6bd438d24fd',1,'TFTM070A1']]],
@@ -173,8 +173,8 @@ var searchData=
   ['stop_5fpwm0_170',['Stop_PWM0',['../namespace_t_f_t_m070_a1.html#a97c3e790545fa2a55beba79dac105e08',1,'TFTM070A1']]],
   ['stop_5fpwm1_171',['Stop_PWM1',['../namespace_t_f_t_m070_a1.html#af463fd0de5657a76e38863281627d686',1,'TFTM070A1']]],
   ['stored_20and_20how_20used_172',['Where the data is stored and how used',['../_electronics__design.html#autotoc_md19',1,'']]],
-  ['sub_20pages_173',['Related Sub-Pages',['../index.html#autotoc_md43',1,'']]],
+  ['sub_20pages_173',['Related Sub-Pages',['../index.html#autotoc_md42',1,'']]],
   ['sub_20pages_174',['Sub-pages',['../_hardware__architecture.html#autotoc_md31',1,'']]],
-  ['supporting_20scripts_175',['Supporting Scripts',['../_u_i__graphics.html#autotoc_md42',1,'']]],
+  ['supporting_20scripts_175',['Supporting Scripts',['../_u_i__graphics.html#autotoc_md41',1,'']]],
   ['system_5fcheck_5ftemp_176',['System_Check_Temp',['../namespace_t_f_t_m070_a1.html#a69c9b7a831d1871d910df65c639c8da0',1,'TFTM070A1']]]
 ];
