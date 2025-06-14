@@ -5,7 +5,7 @@ var searchData=
   ['of_20graphics_20chip_2',['Maximizing use of graphics chip',['../_electronics__design.html#autotoc_md19',1,'']]],
   ['of_20it_3',['Why is this Power Pin set to Power Input/Power Output/Unconnected? I get DRC errors because of it!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md55',1,'']]],
   ['of_20pcb_4',['of PCB',['../_controller__interface__board.html#autotoc_md10',1,'Back of PCB'],['../_controller__interface__board.html#autotoc_md9',1,'Front of PCB']]],
-  ['of_20this_20design_5',['Use of this Design',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md63',1,'']]],
+  ['of_20this_20design_5',['of this Design',['../index.html#autotoc_md61',1,'Use of this Design'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md65',1,'Use of this Design']]],
   ['old_5fstring_6',['old_string',['../namespacerun_doxygen.html#a51653e3f0281fa5e4299c07d77ddc22a',1,'runDoxygen']]],
   ['one_5fshot_5fpwm0_7',['One_Shot_PWM0',['../namespace_t_f_t_m070_a1.html#af48dc67cb9369a12b0595db3a6f5cd4b',1,'TFTM070A1']]],
   ['one_5fshot_5fpwm1_8',['One_Shot_PWM1',['../namespace_t_f_t_m070_a1.html#acc90b8bd4ff582e93f8fafd6b9a34ebc',1,'TFTM070A1']]],
@@ -18,7 +18,7 @@ var searchData=
   ['outline_20i_20can_20t_20place_20my_20components_20where_20i_20need_20to_15',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md54',1,'']]],
   ['output_20unconnected_20i_20get_20drc_20errors_20because_20of_20it_16',['Why is this Power Pin set to Power Input/Power Output/Unconnected? I get DRC errors because of it!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md55',1,'']]],
   ['outs_17',['Why do the Nicla Vision and Nicla Voice tile footprints have cut-outs?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md53',1,'']]],
-  ['overview_18',['Overview',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md60',1,'']]],
+  ['overview_18',['Overview',['../index.html#autotoc_md58',1,'']]],
   ['ovfi_5fflag_19',['OVFI_Flag',['../namespace_t_f_t_m070_a1.html#a63f9677912209a332f87a54791cd8694',1,'TFTM070A1']]],
   ['ovfirqen_5fenable_20',['OVFIRQEN_Enable',['../namespace_t_f_t_m070_a1.html#aee8ea68c4a162270ee53a9f9553d1714',1,'TFTM070A1']]]
 ];

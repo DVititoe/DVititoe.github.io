@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pages_0',['Pages',['../index.html#autotoc_md57',1,'Sub-Pages'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md59',1,'Sub-Pages']]],
+  ['pages_0',['Sub-Pages',['../index.html#autotoc_md57',1,'']]],
   ['pages_1',['Sub-pages',['../_hardware__architecture.html#autotoc_md30',1,'']]],
   ['parallel_5finit_2',['Parallel_Init',['../namespace_t_f_t_m070_a1.html#a6c1e8c08298b8ecc85c2acaed8be64bf',1,'TFTM070A1']]],
   ['parse_5ffont_5fxml_3',['parse_font_xml',['../namespaceparse__font__xml.html',1,'']]],

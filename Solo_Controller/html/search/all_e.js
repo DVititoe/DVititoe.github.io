@@ -28,7 +28,7 @@ var searchData=
   ['interface_20board_25',['Interface Board',['../_controller__interface__board.html',1,'Controller Interface Board'],['../_electronics__design.html#autotoc_md15',1,'Solo Controller Interface Board']]],
   ['interface_20card_26',['RA8875 Display Interface Card',['../_electronics__design.html#autotoc_md14',1,'']]],
   ['interface_20classes_27',['User Interface Classes',['../_software__architecture.html#autotoc_md35',1,'']]],
-  ['interface_20concept_28',['User Interface Concept',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md61',1,'']]],
+  ['interface_20concept_28',['Interface Concept',['../index.html#autotoc_md59',1,'User Interface Concept'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md63',1,'User Interface Concept']]],
   ['interlock_20circuit_29',['Element Interlock Circuit',['../_controller__interface__board.html#autotoc_md7',1,'']]],
   ['interlock_5fstatus_30',['INTERLOCK_STATUS',['../_common_8h.html#a5c2bd79a5774ca490eccbdecf5771628',1,'Common.h']]],
   ['internal_5fcgrom_5fselect_5fisoiec8859_5f1_31',['Internal_CGROM_Select_ISOIEC8859_1',['../namespace_t_f_t_m070_a1.html#a8bdebfd6daae642371a4a589c95d9058',1,'TFTM070A1']]],

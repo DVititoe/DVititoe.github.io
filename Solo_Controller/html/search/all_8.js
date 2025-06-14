@@ -69,7 +69,7 @@ var searchData=
   ['compiling_20and_20testing_20basic_20functionality_66',['Compiling and Testing basic Functionality',['../_getting__started.html#autotoc_md24',1,'']]],
   ['components_67',['Components',['../_electronics__design.html#autotoc_md11',1,'Electronics Components'],['../_software__architecture.html#autotoc_md34',1,'Key Software Components']]],
   ['components_20where_20i_20need_20to_68',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md54',1,'']]],
-  ['concept_69',['User Interface Concept',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md61',1,'']]],
+  ['concept_69',['Concept',['../index.html#autotoc_md59',1,'User Interface Concept'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md63',1,'User Interface Concept']]],
   ['config_70',['config',['../class_text_box.html#a8c4c0e1030a76a1cfcdc65400a73ed21',1,'TextBox']]],
   ['configlist_5ft_71',['ConfigList_t',['../struct_config_list__t.html',1,'']]],
   ['configtextbox_5ft_72',['ConfigTextBox_t',['../struct_config_text_box__t.html',1,'']]],

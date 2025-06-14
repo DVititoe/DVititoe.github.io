@@ -174,7 +174,7 @@ var searchData=
   ['stop_5fpwm0_171',['Stop_PWM0',['../namespace_t_f_t_m070_a1.html#a97c3e790545fa2a55beba79dac105e08',1,'TFTM070A1']]],
   ['stop_5fpwm1_172',['Stop_PWM1',['../namespace_t_f_t_m070_a1.html#af463fd0de5657a76e38863281627d686',1,'TFTM070A1']]],
   ['stored_20and_20how_20used_173',['Where the data is stored and how used',['../_electronics__design.html#autotoc_md18',1,'']]],
-  ['sub_20pages_174',['Sub Pages',['../index.html#autotoc_md57',1,'Sub-Pages'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md59',1,'Sub-Pages']]],
+  ['sub_20pages_174',['Sub-Pages',['../index.html#autotoc_md57',1,'']]],
   ['sub_20pages_175',['Sub-pages',['../_hardware__architecture.html#autotoc_md30',1,'']]],
   ['symbol_20footprint_20library_20for_20arduino_20modules_176',['KiCad Symbol &amp; Footprint Library for Arduino Modules',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md38',1,'']]],
   ['system_5fcheck_5ftemp_177',['System_Check_Temp',['../namespace_t_f_t_m070_a1.html#a69c9b7a831d1871d910df65c639c8da0',1,'TFTM070A1']]]
