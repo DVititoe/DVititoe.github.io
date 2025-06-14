@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['6_0',['KiCad 6',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md43',1,'']]]
+  ['7_20inch_201024x600_20tft_20touch_20display_20module_0',['7 inch 1024x600 TFT Touch Display Module',['../_electronics__design.html#autotoc_md14',1,'']]]
 ];

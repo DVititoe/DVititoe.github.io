@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['unconnected_20i_20get_20drc_20errors_20because_20of_20it_0',['Why is this Power Pin set to Power Input/Power Output/Unconnected? I get DRC errors because of it!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md55',1,'']]],
-  ['units_1',['Units',['../class_text_box.html#a46428da36035957950e6d93a242c2929',1,'TextBox']]],
-  ['unitsfont_2',['UnitsFont',['../struct_config_text_box__t.html#ad35ffe92136cce30f0e39f529babb6b5',1,'ConfigTextBox_t']]],
-  ['unitswidth_3',['unitsWidth',['../struct_shape__t.html#a0e318b8994bb72dc53469b3ad1d90b66',1,'Shape_t']]],
-  ['update_4',['update',['../class_solo_menu.html#a050ae3a9e42c1b647b0a699acc18c428',1,'SoloMenu::update()'],['../class_main_menu.html#afc6427a223d2915f240700994b7b7518',1,'MainMenu::update()'],['../class_setup_vol_menu.html#a7e3a4c0d1a74ca5147b816a17a85228e',1,'SetupVolMenu::update()'],['../class_setup_temp_menu.html#aa07a500bd60d980cf89bad76b040aa7f',1,'SetupTempMenu::update()'],['../class_setup_p_i_d___menu.html#a117c3fb652ba71de81c650a7176dd0a3',1,'SetupPID_Menu::update()'],['../class_dynamic_text.html#a8c39c7c6701a91b144a6d532e0a7ddcf',1,'DynamicText::update(const char *text, uint16_t textBuffSize)'],['../class_dynamic_text.html#a6b02ae4ae17cd3b34d280c241b4da85c',1,'DynamicText::update(int value)']]],
-  ['updating_20the_20display_20rom_5',['Updating the Display ROM',['../_getting__started.html#autotoc_md22',1,'']]],
-  ['use_20by_20application_6',['Preparing for use by application',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md2',1,'']]],
-  ['use_20of_20graphics_20chip_7',['Maximizing use of graphics chip',['../_electronics__design.html#autotoc_md19',1,'']]],
-  ['use_20of_20this_20design_8',['Use of this Design',['../index.html#autotoc_md61',1,'Use of this Design'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md66',1,'Use of this Design']]],
-  ['used_9',['Where the data is stored and how used',['../_electronics__design.html#autotoc_md18',1,'']]],
-  ['user_20interface_20classes_10',['User Interface Classes',['../_software__architecture.html#autotoc_md35',1,'']]],
-  ['user_20interface_20concept_11',['User Interface Concept',['../index.html#autotoc_md58',1,'User Interface Concept'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md63',1,'User Interface Concept']]]
+  ['value_0',['Value',['../class_text_box.html#a5241024ca7ac8d7d34876586ccaf149e',1,'TextBox']]],
+  ['value_1',['value',['../class_sensor.html#a7dd38d6781f8ccc6da81b76dd4b9422d',1,'Sensor']]],
+  ['values_2',['values',['../_r_o_m___images_8h.html#a403dd564a4c846f6b6dc8a796fc18c52',1,'ROM_Images.h']]],
+  ['vol_5falarm_5fbutton_3',['vol_alarm_button',['../_r_o_m___images_8h.html#a16d8bd4b401bb2f42cc0852d4ed22c8a',1,'ROM_Images.h']]],
+  ['vol_5fbutton_5fheight_4',['VOL_BUTTON_HEIGHT',['../_r_o_m___images_8h.html#a58ead25c5c68c10613a73c14536ace99',1,'ROM_Images.h']]],
+  ['vol_5fbutton_5fwidth_5',['VOL_BUTTON_WIDTH',['../_r_o_m___images_8h.html#ad9d4cd202f70ec4c362963cba8a47e15',1,'ROM_Images.h']]],
+  ['vol_5fpanel_6',['vol_panel',['../_r_o_m___images_8h.html#a31ea7ea60be54d5fb6ae77a7d9bb181c',1,'ROM_Images.h']]],
+  ['vol_5fsensor_7',['VOL_SENSOR',['../_common_8h.html#ac735ae65b04d7f1745e912d60a576668',1,'Common.h']]],
+  ['vol_5fsetup_8',['VOL_SETUP',['../_r_o_m___images_8h.html#aa71a31ae4a84bc3116ad8c482c37605d',1,'ROM_Images.h']]],
+  ['volsetup_9',['volSetup',['../namespace_c_b_1_1_s_e_t_u_p.html#a8e0da5e9f4b6752ed7237ce611e3bddb',1,'CB::SETUP']]],
+  ['voltage_20sensor_20breakout_20box_10',['High Voltage Sensor Breakout Box',['../_hardware__architecture.html#autotoc_md34',1,'']]],
+  ['volume_11',['volume',['../struct_config_list__t.html#a52d11f2946ec0f209f05587e3ddf3855',1,'ConfigList_t']]],
+  ['vscan_5ft_5fto_5fb_12',['VSCAN_T_to_B',['../namespace_t_f_t_m070_a1.html#addf20d50d4ac2e716306a5511cd772de',1,'TFTM070A1']]],
+  ['vscode_20and_20platformio_13',['Installing VSCode and PlatformIO',['../_getting__started.html#autotoc_md22',1,'']]],
+  ['vsync_5fhigh_5factive_14',['VSYNC_High_Active',['../namespace_t_f_t_m070_a1.html#ac25f7a1e3339a9bd54b08ec2cd1bebdc',1,'TFTM070A1']]],
+  ['vsync_5flow_5factive_15',['VSYNC_Low_Active',['../namespace_t_f_t_m070_a1.html#a3cbfccff6856bfbc865b7afce4a7e307',1,'TFTM070A1']]]
 ];

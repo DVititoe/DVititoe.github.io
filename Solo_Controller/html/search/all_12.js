@@ -1,17 +1,18 @@
 var searchData=
 [
-  ['need_20to_0',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md54',1,'']]],
-  ['needed_20to_20get_20started_1',['Minimum hardware needed to get started',['../_getting__started.html#autotoc_md20',1,'']]],
-  ['new_5fstring_2',['new_string',['../namespacerun_doxygen.html#a95db0383b88f56d45afa2ed79ed80b04',1,'runDoxygen']]],
-  ['next_20steps_3',['Next Steps',['../_getting__started.html#autotoc_md25',1,'']]],
-  ['nextaddress_4',['nextAddress',['../class_canvas.html#a6db455aef96b2f06acddc9ef19a18572',1,'Canvas']]],
-  ['nicla_20vision_20and_20nicla_20voice_20tile_20footprints_20have_20cut_20outs_5',['Why do the Nicla Vision and Nicla Voice tile footprints have cut-outs?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md53',1,'']]],
-  ['nicla_20voice_20tile_20footprints_20have_20cut_20outs_6',['Why do the Nicla Vision and Nicla Voice tile footprints have cut-outs?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md53',1,'']]],
-  ['not_20have_20an_20tt_20edge_20cuts_20tt_20outline_7',['Why do the footprints not have an &lt;tt&gt;Edge.Cuts&lt;/tt&gt; outline?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md52',1,'']]],
-  ['nss_5factive_8',['nSS_Active',['../namespace_t_f_t_m070_a1.html#ab36e716edfaa53381ca16c3844fa1056',1,'TFTM070A1']]],
-  ['nss_5finactive_9',['nSS_Inactive',['../namespace_t_f_t_m070_a1.html#a1ed77f78fdcefdfc908aac30f76a57b1',1,'TFTM070A1']]],
-  ['num_5fmainmenu_5fbuttons_10',['NUM_MAINMENU_BUTTONS',['../_menu_8h.html#aaf863b665fd9b9e1ea7aa723f553abfc',1,'Menu.h']]],
-  ['num_5fsetuppidmenu_5fbuttons_11',['NUM_SETUPPIDMENU_BUTTONS',['../_menu_8h.html#a5ae563bb5fac391b0683750693740437',1,'Menu.h']]],
-  ['num_5fsetuptempmenu_5fbuttons_12',['NUM_SETUPTEMPMENU_BUTTONS',['../_menu_8h.html#ae3448608d37aed734bc22df980f27326',1,'Menu.h']]],
-  ['num_5fsetupvolmenu_5fbuttons_13',['NUM_SETUPVOLMENU_BUTTONS',['../_menu_8h.html#a3206ce01db32abe074fa8aa852722605',1,'Menu.h']]]
+  ['of_20control_20i_20f_20pcb_0',['Creation of Control I/F PCB',['../_getting__started.html#autotoc_md27',1,'']]],
+  ['of_20electronics_1',['Physical Layout of Electronics',['../_electronics__design.html#autotoc_md17',1,'']]],
+  ['of_20graphics_20chip_2',['Maximizing use of graphics chip',['../_electronics__design.html#autotoc_md20',1,'']]],
+  ['of_20pcb_3',['of PCB',['../_controller__interface__board.html#autotoc_md10',1,'Back of PCB'],['../_controller__interface__board.html#autotoc_md9',1,'Front of PCB']]],
+  ['of_20this_20design_4',['of this Design',['../index.html#autotoc_md44',1,'Use of this Design'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md49',1,'Use of this Design']]],
+  ['old_5fstring_5',['old_string',['../namespacerun_doxygen.html#a51653e3f0281fa5e4299c07d77ddc22a',1,'runDoxygen']]],
+  ['one_5fshot_5fpwm0_6',['One_Shot_PWM0',['../namespace_t_f_t_m070_a1.html#af48dc67cb9369a12b0595db3a6f5cd4b',1,'TFTM070A1']]],
+  ['one_5fshot_5fpwm1_7',['One_Shot_PWM1',['../namespace_t_f_t_m070_a1.html#acc90b8bd4ff582e93f8fafd6b9a34ebc',1,'TFTM070A1']]],
+  ['operational_8',['OPERATIONAL',['../main_8cpp.html#a8b2f85cb5b8343cb682b4f27808434d6',1,'main.cpp']]],
+  ['operator_3c_3c_9',['operator&lt;&lt;',['../class_err_msg.html#ad5010302edc4ff8ef3b6efa0e1283d34',1,'ErrMsg']]],
+  ['osc_5ffreq_10',['OSC_FREQ',['../_t_f_t_m070_a1_8cpp.html#a91ed25b07bdff25ce25e42c2fb36f655',1,'TFTM070A1.cpp']]],
+  ['out_20the_20hw_11',['Build out the HW',['../_getting__started.html#autotoc_md28',1,'']]],
+  ['overview_12',['Overview',['../_electronics__design.html#autotoc_md11',1,'Overview'],['../index.html#autotoc_md40',1,'Overview']]],
+  ['ovfi_5fflag_13',['OVFI_Flag',['../namespace_t_f_t_m070_a1.html#a63f9677912209a332f87a54791cd8694',1,'TFTM070A1']]],
+  ['ovfirqen_5fenable_14',['OVFIRQEN_Enable',['../namespace_t_f_t_m070_a1.html#aee8ea68c4a162270ee53a9f9553d1714',1,'TFTM070A1']]]
 ];

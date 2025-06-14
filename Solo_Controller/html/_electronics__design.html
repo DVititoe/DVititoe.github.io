@@ -107,24 +107,27 @@ $(function(){initNavTree('_electronics__design.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__electronics___design"></a></p>
+<p>Related sub-page: <a class="el" href="_controller__interface__board.html">Controller Interface Board</a></p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Overview</h1>
 <p>The electrical components of the Solo BIAB Controller are split between two enclosures: Display and <a class="el" href="class_sensor.html">Sensor</a> Breakout Enclosure. The 1024x600 pixel touch screen and associated control electronics are all contained within the Display Enclosure. There are four primary components to the control electronics that interface as shown in the following figure.</p>
 <center><img src="Microcontroller_Design.png" alt="Microcontroller Architecture" width="90%" class="inline"/></center><p>This section focuses on the design of the control electronics. Circuit diagrams showing the full wiring of the Display enclosure can be found <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repoce64a9c6d48faf017579aaf4a589827a.html"><em><b>here</b></em></a>.</p>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 Electronics Components</h1>
 <p>The four components that make up the control electronics are as follows:</p>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 Mega 2560, Rev 3 Microcontroller</h2>
 <p>The Arduino Mega 2560, Rev 3 microcontroller is the "brains" for the control electronics. The software loaded onto the microcontroller is <a href="https://dvititoe.github.io/Solo_Controller/html/hierarchy.html">here</a>. Documentation describing the software architecture is <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html">here</a>.</p>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 7 inch 1024x600 TFT Touch Display Module</h2>
 <p>The Solo Controller uses a 7 inch, 1024x600 pixel TFT display from <a href="https://www.buydisplay.com/">BuyDisplay.com</a>. Model <a href="https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf">ER-TFT070A2-6-5633</a> was selected. This display has built in Capacitance Touch Panel (CTP) capability. Information about the CTP capability can be found in the <a href="https://dvititoe.github.io/Solo_Controller/html/docs/FT5316.pdf">CTP Datasheet</a> and the <a href="https://dvititoe.github.io/Solo_Controller/html/docs/FT5x16_registers.pdf">CTP Data Register</a> documentation.</p>
 <center><img src="TFT_Display.png" alt="TFT Display" width="90%" class="inline"/></center><p>The display has a built in MicroSD Card Interface, which is not used by the Solo Controller. It can also be upgraded, by soldering a 128M bit (SOP8) ROM chip to the board. This gives more than enough non-volatile storage capacity to hold the imagery used by the Solo Controller software. Finally, the display includes a <a href="https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf">LT7683</a> graphics chip. the LT7683 has 128Mb of built in RAM. This chip provides the graphics engine that drives the Solo Controller user interface.</p>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 RA8875 Display Interface Card</h2>
 <p>We use the ER-AS-RA8875 display adapter from <a href="https://www.buydisplay.com/">BuyDisplay.com</a> to drive the TFT. The ER-AS-RA8875 has the same pin configuration as the Mega 2560 microcontroller. So, it is designed to plug in to the mega as a Top-hat card. The microcontroller communicates with the TFT display via a 4-pin SPI interface. The SPI signals are sent to the ER-AS-RA8875 via the Mega pins. The interface card then translates this into the format required by the TFT, communicating via a 40-pin ribbon cable.</p>
 <center><img src="ER-AS_RA8875_Interface_Board.png" alt="RA8875 Display Interface Board" width="90%" class="inline"/></center><p>It is important to note that the TFT requires about 1A of current at 5V. The power regulator on the Mega 2560 doesn't have enough capacity to provide this. Therefore, external power must be provided to the ER-AS-RA8875. The interface board used for this project has a 3.5x1.35mm DC barrel connector. The 5W of power that is needed is provided by the Solo Controller Interface Board, described below. A short cable is run from the JST power connector on the Solo Controller Interface Board to the DC connector on the ER-AS-RA8875.</p>
 <p>Further documentation on the ER-AS-RA8875 can be found <a href="https://dvititoe.github.io/Solo_Controller/html/docs/ER-AS-RA8875_Datasheet.pdf">here</a> and <a href="https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf">here</a>.</p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 Solo Controller Interface Board</h2>
 <p>The Solo Controller Interface Board is a custom board, created for the Solo Controller. This board serves a number of roles:</p>
 <ul>
@@ -134,18 +137,18 @@ Solo Controller Interface Board</h2>
 <li>Startup circuit that manages the graceful power on of the TFT and ER-AS-RA8875 display interface board.</li>
 </ul>
 <center><img src="Controller_Board_Render-Front.png" alt="Solo Controller Interface Board" width="90%" class="inline"/></center><p>Detailed information can be found on the <a href="https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repof324f8aea4f8d2fafe41560af30afc02.html">Controller Interlace Board</a> page.</p>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Physical Layout of Electronics</h1>
-<p>The following pictures show the physical layout of the electronics components: </p><center><img src="Electronics_Physical_Layout.png" alt="Solo Controller Interface Board" width="90%" class="inline"/></center><h1><a class="anchor" id="autotoc_md17"></a>
+<p>The following pictures show the physical layout of the electronics components: </p><center><img src="Electronics_Physical_Layout.png" alt="Solo Controller Interface Board" width="90%" class="inline"/></center><h1><a class="anchor" id="autotoc_md18"></a>
 Design Considerations</h1>
 <p>The SPI interface between the Mega 2560 and the LT7683 graphics chip on the TFT is very slow. It can take as much as 5 seconds to transfer a 12-bit color, 1024x600 pixel image from the microcontroller to the LT7683. This is far too slow to be useful for the Solo Controller User Interface. Therefore, the microcontroller is only used to send commands to the LT7683. Images are not sent across this interface.</p>
 <p>Instead, we use one of the following two methods to display imagery on the TFT</p>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Where the data is stored and how used</h2>
 <p><em>Coming soon... Discuss how images are pre-loaded into the ROM on the TFT. Commands sent to the LT7683 can transfer the images from ROM into RAM. Once in RAM, the images can either be displayed or manipulated via the Bit Transfer Engine provided by the LT7683.</em></p>
 <p><em>Talk about where menu images are stored. 12-bit format</em></p>
 <p><em>Talk about where fonts are stored. talk about format. provide link to more information about font handling.</em></p>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Maximizing use of graphics chip</h2>
 <p><em>Coming soon... Talk about the use of native graphics capabilities of the LT7683. This can be used to quickly draw lines, rectangles, ellipses, etc. Describe how this is used in conjunction with the menu graphics.</em> </p>
 </div></div><!-- contents -->

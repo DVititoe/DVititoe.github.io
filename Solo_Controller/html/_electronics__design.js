@@ -1,0 +1,27 @@
+var _electronics__design =
+[
+    [ "Overview", "_electronics__design.html#autotoc_md11", null ],
+    [ "Electronics Components", "_electronics__design.html#autotoc_md12", [
+      [ "Mega 2560, Rev 3 Microcontroller", "_electronics__design.html#autotoc_md13", null ],
+      [ "7 inch 1024x600 TFT Touch Display Module", "_electronics__design.html#autotoc_md14", null ],
+      [ "RA8875 Display Interface Card", "_electronics__design.html#autotoc_md15", null ],
+      [ "Solo Controller Interface Board", "_electronics__design.html#autotoc_md16", null ]
+    ] ],
+    [ "Physical Layout of Electronics", "_electronics__design.html#autotoc_md17", null ],
+    [ "Design Considerations", "_electronics__design.html#autotoc_md18", [
+      [ "Where the data is stored and how used", "_electronics__design.html#autotoc_md19", null ],
+      [ "Maximizing use of graphics chip", "_electronics__design.html#autotoc_md20", null ]
+    ] ],
+    [ "Controller Interface Board", "_controller__interface__board.html", [
+      [ "Key Features", "_controller__interface__board.html#autotoc_md3", null ],
+      [ "Board Pinout", "_controller__interface__board.html#autotoc_md4", null ],
+      [ "Circuit Diagram", "_controller__interface__board.html#autotoc_md5", [
+        [ "CTP Reset Circuit", "_controller__interface__board.html#autotoc_md6", null ],
+        [ "Element Interlock Circuit", "_controller__interface__board.html#autotoc_md7", null ]
+      ] ],
+      [ "Circuit Board Layout", "_controller__interface__board.html#autotoc_md8", [
+        [ "Front of PCB", "_controller__interface__board.html#autotoc_md9", null ],
+        [ "Back of PCB", "_controller__interface__board.html#autotoc_md10", null ]
+      ] ]
+    ] ]
+];
