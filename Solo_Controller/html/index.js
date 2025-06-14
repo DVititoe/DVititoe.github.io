@@ -1,12 +1,11 @@
 var index =
 [
-    [ "Related Sub-Pages", "index.html#autotoc_md42", null ],
-    [ "Overview", "index.html#autotoc_md43", [
-      [ "User Interface Concept", "index.html#autotoc_md44", null ],
-      [ "Key Design Features", "index.html#autotoc_md45", null ],
-      [ "Additional Information", "index.html#autotoc_md46", null ]
+    [ "Overview", "index.html#autotoc_md42", [
+      [ "User Interface Concept", "index.html#autotoc_md43", null ],
+      [ "Key Design Features", "index.html#autotoc_md44", null ],
+      [ "Additional Information", "index.html#autotoc_md45", null ]
     ] ],
-    [ "Use of this Design", "index.html#autotoc_md47", null ],
+    [ "Use of this Design", "index.html#autotoc_md46", null ],
     [ "Hardware Architecture", "_hardware__architecture.html", "_hardware__architecture" ],
     [ "Software Architecture", "_software__architecture.html", [
       [ "Key Software Components", "_software__architecture.html#autotoc_md35", null ],

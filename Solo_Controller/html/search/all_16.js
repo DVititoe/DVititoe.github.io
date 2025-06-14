@@ -53,7 +53,7 @@ var searchData=
   ['the_20data_20is_20stored_20and_20how_20used_50',['Where the data is stored and how used',['../_electronics__design.html#autotoc_md19',1,'']]],
   ['the_20display_20rom_51',['Updating the Display ROM',['../_getting__started.html#autotoc_md23',1,'']]],
   ['the_20hw_52',['Build out the HW',['../_getting__started.html#autotoc_md28',1,'']]],
-  ['this_20design_53',['this Design',['../index.html#autotoc_md47',1,'Use of this Design'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md52',1,'Use of this Design']]],
+  ['this_20design_53',['this Design',['../index.html#autotoc_md46',1,'Use of this Design'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md51',1,'Use of this Design']]],
   ['to_54',['How to',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/data/Fonts/README.md#autotoc_md1',1,'']]],
   ['to_20get_20started_55',['Minimum hardware needed to get started',['../_getting__started.html#autotoc_md21',1,'']]],
   ['togglebutton_56',['ToggleButton',['../class_toggle_button.html',1,'ToggleButton'],['../class_toggle_button.html#a7f2e189066794114b9c9707123ac3293',1,'ToggleButton::ToggleButton()']]],

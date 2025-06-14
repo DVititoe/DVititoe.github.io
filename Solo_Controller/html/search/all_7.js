@@ -65,7 +65,7 @@ var searchData=
   ['common_2eh_62',['Common.h',['../_common_8h.html',1,'']]],
   ['compiling_20and_20testing_20basic_20functionality_63',['Compiling and Testing basic Functionality',['../_getting__started.html#autotoc_md25',1,'']]],
   ['components_64',['Components',['../_electronics__design.html#autotoc_md12',1,'Electronics Components'],['../_software__architecture.html#autotoc_md35',1,'Key Software Components']]],
-  ['concept_65',['Concept',['../index.html#autotoc_md44',1,'User Interface Concept'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md49',1,'User Interface Concept']]],
+  ['concept_65',['Concept',['../index.html#autotoc_md43',1,'User Interface Concept'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md48',1,'User Interface Concept']]],
   ['config_66',['config',['../class_text_box.html#a8c4c0e1030a76a1cfcdc65400a73ed21',1,'TextBox']]],
   ['configlist_5ft_67',['ConfigList_t',['../struct_config_list__t.html',1,'']]],
   ['configtextbox_5ft_68',['ConfigTextBox_t',['../struct_config_text_box__t.html',1,'']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['f_20pcb_0',['Creation of Control I/F PCB',['../_getting__started.html#autotoc_md27',1,'']]],
-  ['features_1',['Features',['../index.html#autotoc_md45',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md50',1,'Key Design Features'],['../_controller__interface__board.html#autotoc_md3',1,'Key Features']]],
+  ['features_1',['Features',['../index.html#autotoc_md44',1,'Key Design Features'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md49',1,'Key Design Features'],['../_controller__interface__board.html#autotoc_md3',1,'Key Features']]],
   ['final_20software_20configuration_2',['Final Software Configuration',['../_getting__started.html#autotoc_md29',1,'']]],
   ['finishedwitherrmsg_3',['finishedWithErrMsg',['../namespace_task_1_1_error.html#adc4ee077b4fa2f212df9cf2dd310ba23',1,'Task::Error']]],
   ['font_20classes_4',['Font Classes',['../_software__architecture.html#autotoc_md37',1,'']]],

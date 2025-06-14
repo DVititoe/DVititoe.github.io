@@ -3,7 +3,7 @@ var searchData=
   ['active_5fwindow_5fwh_0',['Active_Window_WH',['../namespace_t_f_t_m070_a1.html#a51e1ac2b5c3da4515bfadec232a4c6b0',1,'TFTM070A1']]],
   ['active_5fwindow_5fxy_1',['Active_Window_XY',['../namespace_t_f_t_m070_a1.html#a6a70519665a19e0042c7a81fc0469811',1,'TFTM070A1']]],
   ['adddebugborder_2',['addDebugBorder',['../_text_box_8cpp.html#aabe3ee8d86b64d13cffef36317317eab',1,'TextBox.cpp']]],
-  ['additional_20information_3',['Additional Information',['../index.html#autotoc_md46',1,'Additional Information'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md51',1,'Additional Information']]],
+  ['additional_20information_3',['Additional Information',['../index.html#autotoc_md45',1,'Additional Information'],['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/README.md#autotoc_md50',1,'Additional Information']]],
   ['address_4',['address',['../struct_r_o_m___image.html#a3e2d56ab7c30ed9e9f929da1ab200f72',1,'ROM_Image::address'],['../class_canvas.html#add0700f4da6206e04fdf90eecd1b8423',1,'Canvas::address()']]],
   ['alarm_5',['ALARM',['../_common_8h.html#a9e27e49f40e7acbb55bb085f15dabd99',1,'Common.h']]],
   ['alarmmgr_2ecpp_6',['AlarmMgr.cpp',['../_alarm_mgr_8cpp.html',1,'']]],

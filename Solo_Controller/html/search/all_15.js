@@ -173,8 +173,7 @@ var searchData=
   ['stop_5fpwm0_170',['Stop_PWM0',['../namespace_t_f_t_m070_a1.html#a97c3e790545fa2a55beba79dac105e08',1,'TFTM070A1']]],
   ['stop_5fpwm1_171',['Stop_PWM1',['../namespace_t_f_t_m070_a1.html#af463fd0de5657a76e38863281627d686',1,'TFTM070A1']]],
   ['stored_20and_20how_20used_172',['Where the data is stored and how used',['../_electronics__design.html#autotoc_md19',1,'']]],
-  ['sub_20pages_173',['Related Sub-Pages',['../index.html#autotoc_md42',1,'']]],
-  ['sub_20pages_174',['Sub-pages',['../_hardware__architecture.html#autotoc_md31',1,'']]],
-  ['supporting_20scripts_175',['Supporting Scripts',['../_u_i__graphics.html#autotoc_md41',1,'']]],
-  ['system_5fcheck_5ftemp_176',['System_Check_Temp',['../namespace_t_f_t_m070_a1.html#a69c9b7a831d1871d910df65c639c8da0',1,'TFTM070A1']]]
+  ['sub_20pages_173',['Sub-pages',['../_hardware__architecture.html#autotoc_md31',1,'']]],
+  ['supporting_20scripts_174',['Supporting Scripts',['../_u_i__graphics.html#autotoc_md41',1,'']]],
+  ['system_5fcheck_5ftemp_175',['System_Check_Temp',['../namespace_t_f_t_m070_a1.html#a69c9b7a831d1871d910df65c639c8da0',1,'TFTM070A1']]]
 ];
