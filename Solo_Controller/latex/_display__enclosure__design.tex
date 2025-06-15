@@ -1,0 +1,54 @@
+\doxysubsection{Display Enclosure Design}
+\hypertarget{_display__enclosure__design}{}\label{_display__enclosure__design}\index{Display Enclosure Design@{Display Enclosure Design}}
+\label{_display__enclosure__design_md_2_82_01_display_01_enclosure_01_design}%
+\Hypertarget{_display__enclosure__design_md_2_82_01_display_01_enclosure_01_design}%
+
+
+Related sub-\/pages include\+:
+
+
+\begin{DoxyItemize}
+\item \doxylink{Controller_Interface_Board}{Controller Interface Board}
+\item \doxylink{Display_Parts_List}{Display Enclosure Hardware Parts List}
+\end{DoxyItemize}\hypertarget{_display__enclosure__design_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Display Box Circuit Diagram}{Display Box Circuit Diagram}}\label{_display__enclosure__design_autotoc_md10}
+Discuss features of the Controller Circuit.
+
+\begin{center}\end{center} \hypertarget{_display__enclosure__design_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{Electronics Components}{Electronics Components}}\label{_display__enclosure__design_autotoc_md11}
+The four components that make up the control electronics are as follows\+:\hypertarget{_display__enclosure__design_autotoc_md12}{}\doxysubsubsubsection{\texorpdfstring{Mega 2560, Rev 3 Microcontroller}{Mega 2560, Rev 3 Microcontroller}}\label{_display__enclosure__design_autotoc_md12}
+The Arduino Mega 2560, Rev 3 microcontroller is the "{}brains"{} for the control electronics. The software loaded onto the microcontroller is \href{https://dvititoe.github.io/Solo_Controller/html/hierarchy.html}{\texttt{ here}}. Documentation describing the software architecture is \href{https://dvititoe.github.io/Solo_Controller/html/md__c_1_2_users_2david_2_documents_2_platform_i_o_2_solo___controller_2_solo___controller___repo924c0276cea6a76d1a32c52e45cff1ce.html}{\texttt{ here}}.\hypertarget{_display__enclosure__design_autotoc_md13}{}\doxysubsubsubsection{\texorpdfstring{7 inch 1024x600 TFT Touch Display Module}{7 inch 1024x600 TFT Touch Display Module}}\label{_display__enclosure__design_autotoc_md13}
+The Solo Controller uses a 7 inch, 1024x600 pixel TFT display from \href{https://www.buydisplay.com/}{\texttt{ Buy\+Display.\+com}}. Model \href{https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf}{\texttt{ ER-\/\+TFT070\+A2-\/6-\/5633}} was selected. This display has built in Capacitance Touch Panel (CTP) capability. Information about the CTP capability can be found in the \href{https://dvititoe.github.io/Solo_Controller/html/docs/FT5316.pdf}{\texttt{ CTP Datasheet}} and the \href{https://dvititoe.github.io/Solo_Controller/html/docs/FT5x16_registers.pdf}{\texttt{ CTP Data Register}} documentation.
+
+\begin{center}\end{center} 
+
+The display has a built in Micro\+SD Card Interface, which is not used by the Solo Controller. It can also be upgraded, by soldering a 128M bit (SOP8) ROM chip to the board. This gives more than enough non-\/volatile storage capacity to hold the imagery used by the Solo Controller software. Finally, the display includes a \href{https://dvititoe.github.io/Solo_Controller/html/docs/LT7683.pdf}{\texttt{ LT7683}} graphics chip. the LT7683 has 128Mb of built in RAM. This chip provides the graphics engine that drives the Solo Controller user interface.\hypertarget{_display__enclosure__design_autotoc_md14}{}\doxysubsubsubsection{\texorpdfstring{RA8875 Display Interface Card}{RA8875 Display Interface Card}}\label{_display__enclosure__design_autotoc_md14}
+We use the ER-\/\+AS-\/\+RA8875 display adapter from \href{https://www.buydisplay.com/}{\texttt{ Buy\+Display.\+com}} to drive the TFT. The ER-\/\+AS-\/\+RA8875 has the same pin configuration as the Mega 2560 microcontroller. So, it is designed to plug in to the mega as a Top-\/hat card. The microcontroller communicates with the TFT display via a 4-\/pin SPI interface. The SPI signals are sent to the ER-\/\+AS-\/\+RA8875 via the Mega pins. The interface card then translates this into the format required by the TFT, communicating via a 40-\/pin ribbon cable.
+
+\begin{center}\end{center} 
+
+It is important to note that the TFT requires about 1A of current at 5V. The power regulator on the Mega 2560 doesn\textquotesingle{}t have enough capacity to provide this. Therefore, external power must be provided to the ER-\/\+AS-\/\+RA8875. The interface board used for this project has a 3.\+5x1.\+35mm DC barrel connector. The 5W of power that is needed is provided by the Solo Controller Interface Board, described below. A short cable is run from the JST power connector on the Solo Controller Interface Board to the DC connector on the ER-\/\+AS-\/\+RA8875.
+
+Further documentation on the ER-\/\+AS-\/\+RA8875 can be found \href{https://dvititoe.github.io/Solo_Controller/html/docs/ER-AS-RA8875_Datasheet.pdf}{\texttt{ here}} and \href{https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf}{\texttt{ here}}.\hypertarget{_display__enclosure__design_autotoc_md15}{}\doxysubsubsubsection{\texorpdfstring{Solo Controller Interface Board}{Solo Controller Interface Board}}\label{_display__enclosure__design_autotoc_md15}
+The Solo Controller Interface Board is a custom board, created for the Solo Controller. This board serves a number of roles\+:
+
+
+\begin{DoxyItemize}
+\item Converts 24v power to the 5V needed by the electronics.
+\item Provides screw terminals that give easy access to the microcontroller pins that control the pump, element, alarm, etc.
+\item Interlock circuit to ensure the element is placed in the "{}off"{} position before enabling the heating element. This ensures their is positive control of the heating element during system boot up.
+\item Startup circuit that manages the graceful power on of the TFT and ER-\/\+AS-\/\+RA8875 display interface board.
+\end{DoxyItemize}
+
+\begin{center}\end{center} 
+
+Detailed information can be found on the \href{https://dvititoe.github.io/Solo_Controller/html/_controller__interface__board.html}{\texttt{ Controller Interlace Board}} page.\hypertarget{_display__enclosure__design_autotoc_md16}{}\doxysubsubsection{\texorpdfstring{Physical Layout of Electronics}{Physical Layout of Electronics}}\label{_display__enclosure__design_autotoc_md16}
+The following pictures show the physical layout of the electronics components\+: \begin{center}\end{center} \hypertarget{_display__enclosure__design_autotoc_md17}{}\doxysubsubsection{\texorpdfstring{Design Considerations}{Design Considerations}}\label{_display__enclosure__design_autotoc_md17}
+The SPI interface between the Mega 2560 and the LT7683 graphics chip on the TFT is very slow. It can take as much as 5 seconds to transfer a 12-\/bit color, 1024x600 pixel image from the microcontroller to the LT7683. This is far too slow to be useful for the Solo Controller User Interface. Therefore, the microcontroller is only used to send commands to the LT7683. Images are not sent across this interface.
+
+Instead, we use one of the following two methods to display imagery on the TFT\hypertarget{_display__enclosure__design_autotoc_md18}{}\doxysubsubsubsection{\texorpdfstring{Where the data is stored and how used}{Where the data is stored and how used}}\label{_display__enclosure__design_autotoc_md18}
+{\itshape Coming soon... Discuss how images are pre-\/loaded into the ROM on the TFT. Commands sent to the LT7683 can transfer the images from ROM into RAM. Once in RAM, the images can either be displayed or manipulated via the Bit Transfer Engine provided by the LT7683.}
+
+{\itshape Talk about where menu images are stored. 12-\/bit format}
+
+{\itshape Talk about where fonts are stored. talk about format. provide link to more information about font handling.}\hypertarget{_display__enclosure__design_autotoc_md19}{}\doxysubsubsubsection{\texorpdfstring{Maximizing use of graphics chip}{Maximizing use of graphics chip}}\label{_display__enclosure__design_autotoc_md19}
+{\itshape Coming soon... Talk about the use of native graphics capabilities of the LT7683. This can be used to quickly draw lines, rectangles, ellipses, etc. Describe how this is used in conjunction with the menu graphics.} \input{_controller__interface__board}
+\input{_display__parts__list}

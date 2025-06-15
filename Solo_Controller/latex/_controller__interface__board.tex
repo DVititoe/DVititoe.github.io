@@ -1,14 +1,14 @@
 \doxysubsubsection{Controller Interface Board}
 \hypertarget{_controller__interface__board}{}\label{_controller__interface__board}\index{Controller Interface Board@{Controller Interface Board}}
-\label{_controller__interface__board_md__controller___interface___board}%
-\Hypertarget{_controller__interface__board_md__controller___interface___board}%
+\label{_controller__interface__board_md_2_82_82_01_controller___interface___board}%
+\Hypertarget{_controller__interface__board_md_2_82_82_01_controller___interface___board}%
 
 
 The Controller Interface board acts as an interface between the Mega 2560 microcontroller and the RA8875 Display Interface card, providing the custom features needed to implement Solo Controller functionality.
 
 The Controller Interface Board was designed in Ki\+Cad 9.\+0. The circuit diagram and PCB layout can be found in the \href{https://github.com/DVititoe/Solo_Controller/tree/main/Kicad/Controller_Board}{\texttt{ Solo Controller Github}} repository. An interactive BOM, showing the layout of PCB components can be found \href{https://dvititoe.github.io/Solo_Controller/html/BOM/Controller_Board_BOM.html}{\texttt{ here}}.
 
-\begin{center} \end{center} \hypertarget{_controller__interface__board_autotoc_md3}{}\doxysubsubsubsection{\texorpdfstring{Key Features}{Key Features}}\label{_controller__interface__board_autotoc_md3}
+\begin{center} \end{center} \hypertarget{_controller__interface__board_autotoc_md20}{}\doxysubsubsubsection{\texorpdfstring{Key Features}{Key Features}}\label{_controller__interface__board_autotoc_md20}
 Some of the key features of the card include\+:
 
 
@@ -32,23 +32,23 @@ Since this card is intended as a prototype card, a number of additional features
 \item Access to available Mega 2560 pins/.
 \end{DoxyItemize}
 
-Future, production version of this board may remove these additional features.\hypertarget{_controller__interface__board_autotoc_md4}{}\doxysubsubsubsection{\texorpdfstring{Board Pinout}{Board Pinout}}\label{_controller__interface__board_autotoc_md4}
-\hypertarget{_controller__interface__board_autotoc_md5}{}\doxysubsubsubsection{\texorpdfstring{Circuit Diagram}{Circuit Diagram}}\label{_controller__interface__board_autotoc_md5}
+Future, production version of this board may remove these additional features.\hypertarget{_controller__interface__board_autotoc_md21}{}\doxysubsubsubsection{\texorpdfstring{Board Pinout}{Board Pinout}}\label{_controller__interface__board_autotoc_md21}
+\hypertarget{_controller__interface__board_autotoc_md22}{}\doxysubsubsubsection{\texorpdfstring{Circuit Diagram}{Circuit Diagram}}\label{_controller__interface__board_autotoc_md22}
 The following is the primary circuit diagram for the Solo Controller Interface Board. Note that there are two sub-\/diagrams shown here\+: CTP Reset Circuit and the Power Interlock circuit. Diagrams for these circuits are below.
 
-\begin{center}\end{center} \hypertarget{_controller__interface__board_autotoc_md6}{}\doxysubsubsubsubsection{\texorpdfstring{CTP Reset Circuit}{CTP Reset Circuit}}\label{_controller__interface__board_autotoc_md6}
+\begin{center}\end{center} \hypertarget{_controller__interface__board_autotoc_md23}{}\doxysubsubsubsubsection{\texorpdfstring{CTP Reset Circuit}{CTP Reset Circuit}}\label{_controller__interface__board_autotoc_md23}
 The \href{https://dvititoe.github.io/Solo_Controller/html/docs/FT5316.pdf}{\texttt{ Capacitance Touch Panel}} (CTP) circuit provided by the \href{https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf}{\texttt{ ER-\/\+TFT070\+A2-\/6-\/5633}} display, has specific power on requirements. In particular, the TFT reset pin must remain grounded during power up. Once the power is stable, the reset pin can be allowed to float, which returns it to 5v. This enables the TFT, making it ready for successful operation. Failure to do this will can place the CTP module into a bad state.
 
 The CTP Reset Circuit uses a 555 timing chip to ground the reset pin during system power up. ONce the microcontroller has completed it\textquotesingle{}s startup, it briefly pulses the A0 pin high (5v) before returning it to ground. This triggers the 555 timing chip, latching the CTP in the enabled state.
 
 The reset pin in this circuit is tied to a momentary button in the Display Enclosure. If this button is pressed, reset is grounded. When this happens, the microcontroller reboots and the CTP Reset Circuit disables (grounds) the CTP reset. As described above, once the microcontroller completes its boot sequence, the TFT is enabled.
 
-\begin{center}\end{center} \hypertarget{_controller__interface__board_autotoc_md7}{}\doxysubsubsubsubsection{\texorpdfstring{Element Interlock Circuit}{Element Interlock Circuit}}\label{_controller__interface__board_autotoc_md7}
+\begin{center}\end{center} \hypertarget{_controller__interface__board_autotoc_md24}{}\doxysubsubsubsubsection{\texorpdfstring{Element Interlock Circuit}{Element Interlock Circuit}}\label{_controller__interface__board_autotoc_md24}
 The Solo Controller has an Element Enable switch designed to enable/disable the heating element within the kettle. The Element Interlock circuit ensures there we always have full control of the heating element during system startup. Should the Element Enable switch be \textquotesingle{}on\textquotesingle{} during system power up, the \textquotesingle{}input\textquotesingle{} pin in the Element Interlock circuit will be set to 24v. This sets \textquotesingle{}Interlock\+\_\+\+Status\textquotesingle{} to 0v, disabling the element. Should this happen, the buzzer will turn on, giving the users an audible indication of the error condition.
 
 Placing the Element Enable switch into the \textquotesingle{}off\textquotesingle{} position, forces \textquotesingle{}input\textquotesingle{} to be 0v. This action latches \textquotesingle{}Interlock\+\_\+\+Status\textquotesingle{} at 5v, which enables the contactor for the element.
 
-\begin{center}\end{center} \hypertarget{_controller__interface__board_autotoc_md8}{}\doxysubsubsubsection{\texorpdfstring{Circuit Board Layout}{Circuit Board Layout}}\label{_controller__interface__board_autotoc_md8}
-The circuit board layout is provided here for completeness. For additional information, place refer to the \href{https://github.com/DVititoe/Solo_Controller/tree/main/Kicad/Controller_Board}{\texttt{ Ki\+Cad model}}.\hypertarget{_controller__interface__board_autotoc_md9}{}\doxysubsubsubsubsection{\texorpdfstring{Front of PCB}{Front of PCB}}\label{_controller__interface__board_autotoc_md9}
-\begin{center}\end{center} \hypertarget{_controller__interface__board_autotoc_md10}{}\doxysubsubsubsubsection{\texorpdfstring{Back of PCB}{Back of PCB}}\label{_controller__interface__board_autotoc_md10}
+\begin{center}\end{center} \hypertarget{_controller__interface__board_autotoc_md25}{}\doxysubsubsubsection{\texorpdfstring{Circuit Board Layout}{Circuit Board Layout}}\label{_controller__interface__board_autotoc_md25}
+The circuit board layout is provided here for completeness. For additional information, place refer to the \href{https://github.com/DVititoe/Solo_Controller/tree/main/Kicad/Controller_Board}{\texttt{ Ki\+Cad model}}.\hypertarget{_controller__interface__board_autotoc_md26}{}\doxysubsubsubsubsection{\texorpdfstring{Front of PCB}{Front of PCB}}\label{_controller__interface__board_autotoc_md26}
+\begin{center}\end{center} \hypertarget{_controller__interface__board_autotoc_md27}{}\doxysubsubsubsubsection{\texorpdfstring{Back of PCB}{Back of PCB}}\label{_controller__interface__board_autotoc_md27}
 \begin{center}\end{center}  

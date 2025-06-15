@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['list_0',['Hardware Parts List',['../_hardware__parts__list.html',1,'Hardware_Architecture']]]
+  ['list_0',['Display Enclosure Hardware Parts List',['../_display__parts__list.html',1,'Display_Enclosure_Design']]]
 ];
