@@ -14,11 +14,11 @@ Inheritance diagram for Monofonto\+\_\+\+Regular\+\_\+140\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{struct_monofonto___regular__140_ae2b7637da183a74976be271bdf16b38d}{Monofonto\+\_\+\+Regular\+\_\+140}} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a new font object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{struct_monofonto___regular__140_a7f9dd5667822d61231d10091ce2b4bbc}{char\+Def}} (char cc, \mbox{\hyperlink{struct_char_def__t}{Char\+Def\+\_\+t}} \&results) const
-\begin{DoxyCompactList}\small\item\em Abstract function, used to define the characteristics of each character. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Defines the properties of each character. \end{DoxyCompactList}\item 
 int8\+\_\+t \mbox{\hyperlink{struct_monofonto___regular__140_aa6a4995b1423587925da9a396bf5a86c}{kerning}} (uint16\+\_\+t ID) const
-\begin{DoxyCompactList}\small\item\em Finds the amount of kerning that should be used between two characters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the amount of kerning that should be used between two characters. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_gr_font}{Gr\+Font}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,16 +29,20 @@ void \mbox{\hyperlink{class_gr_font_afafca44ad2132b9a4ef6d6024940f28e}{begin}} (
 void \mbox{\hyperlink{class_gr_font_adfa5155f67223d7ec6c99b86a7baf38f}{begin}} (uint8\+\_\+t red, uint8\+\_\+t green, uint8\+\_\+t blue)
 \begin{DoxyCompactList}\small\item\em Initializes the font and sets the font\textquotesingle{}s foreground color. \end{DoxyCompactList}\item 
 int8\+\_\+t \mbox{\hyperlink{class_gr_font_a2fb854b4db5acd71b78df4ca4824fcfb}{kerning}} (uint8\+\_\+t first, uint8\+\_\+t second) const
-\begin{DoxyCompactList}\small\item\em Finds the amount of kerning that should be used between two characters. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the amount of kerning that should be used between two characters. \end{DoxyCompactList}\item 
 uint8\+\_\+t \mbox{\hyperlink{class_gr_font_a55a07e7170b193fc56c623ce06e7899d}{place\+Text}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&canvas, char cc, uint16\+\_\+t x, uint16\+\_\+t y) const
 \begin{DoxyCompactList}\small\item\em Places a character onto the {\ttfamily canvas}. \end{DoxyCompactList}\item 
 uint8\+\_\+t \mbox{\hyperlink{class_gr_font_a379bdeb296da78380a840090140c2c96}{place\+Text}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&canvas, const char \texorpdfstring{$\ast$}{*}const text, uint16\+\_\+t buff\+Size, uint16\+\_\+t x, uint16\+\_\+t y) const
 \begin{DoxyCompactList}\small\item\em Places a string onto the {\ttfamily canvas}. \end{DoxyCompactList}\item 
 uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a2c5119c7540a24ee77db21bd7a516d32}{text\+Width}} (const char cc) const
-\begin{DoxyCompactList}\small\item\em Determines the with of character, {\ttfamily cc}, in screen pixels. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Determines the width of character, {\ttfamily cc}, in screen pixels. \end{DoxyCompactList}\item 
 uint16\+\_\+t \mbox{\hyperlink{class_gr_font_ae91cbab138f2d40805784656f00f19e3}{text\+Width}} (const char \texorpdfstring{$\ast$}{*}const text, uint16\+\_\+t buff\+Size) const
-\begin{DoxyCompactList}\small\item\em Determines the with of string in the character array, {\ttfamily text}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Additional Inherited Members}
+\begin{DoxyCompactList}\small\item\em Determines the width of string in screen pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{struct_monofonto___regular__140_a8bfd6a04005420950b5a7acc449bc6ea}{char\+Def\+Ndx\+Offset}} = 32
+\begin{DoxyCompactList}\small\item\em Offset to the first character in the index. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_gr_font}{Gr\+Font}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,7 +51,14 @@ const \mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} \mbox{\hyperlink
 const uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a7414adc97893dfadc75180ae9b3fbc74}{LINE\+\_\+\+HEIGHT}}
 \begin{DoxyCompactList}\small\item\em Recommended vertical spacing between lines of text. \end{DoxyCompactList}\item 
 const uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a9fbba36d28aa54bde93ceb716236d5e7}{BASE}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Distance between the top of the pixel and its base. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int8\+\_\+t char\+Def\+Ndx\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_monofonto___regular__140_a78e83ab1ba779ab4b683ea5c77b6b6ad}{PROGMEM}}
+\begin{DoxyCompactList}\small\item\em Index mapping characters to entries in the char\+Def\+Data table. \end{DoxyCompactList}\item 
+static const int16\+\_\+t char\+Def\+Data\mbox{[}69\mbox{]}\mbox{[}7\mbox{]} \mbox{\hyperlink{struct_monofonto___regular__140_ad5630a9d4f964b78a1707f89caee9bcf}{PROGMEM}}
+\begin{DoxyCompactList}\small\item\em Table defining the characteristics of each character. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -56,6 +67,10 @@ const uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a9fbba36d28aa54bde93ceb716236
 \doxysubsubsection{\texorpdfstring{Monofonto\_Regular\_140()}{Monofonto\_Regular\_140()}}
 {\footnotesize\ttfamily \label{struct_monofonto___regular__140_ae2b7637da183a74976be271bdf16b38d} 
 Monofonto\+\_\+\+Regular\+\_\+140\+::\+Monofonto\+\_\+\+Regular\+\_\+140 (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new font object. 
 
 
 
@@ -68,13 +83,13 @@ bool Monofonto\+\_\+\+Regular\+\_\+140\+::char\+Def (\begin{DoxyParamCaption}\it
 
 
 
-Abstract function, used to define the characteristics of each character. 
+Defines the properties of each character. 
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em cc} & Character to look up \\
 \hline
-\mbox{\texttt{ out}}  & {\em results} & \doxylink{struct_char_def__t}{Char\+Def\+\_\+t} struction containing information on character, {\ttfamily cc} \\
+\mbox{\texttt{ out}}  & {\em results} & \doxylink{struct_char_def__t}{Char\+Def\+\_\+t} structure containing information on character, {\ttfamily cc} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -92,15 +107,15 @@ int8\+\_\+t Monofonto\+\_\+\+Regular\+\_\+140\+::kerning (\begin{DoxyParamCaptio
 
 
 
-Finds the amount of kerning that should be used between two characters. 
+Returns the amount of kerning that should be used between two characters. 
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em ID} & 16-\/bit encoded value representing the 2 characters (CHAR1\+:CHAR2) \\
+\mbox{\texttt{ in}}  & {\em ID} & Identifier formed by combining two characters \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns the amount of kerning in screen pixels 
+Amount of kerning in screen pixels 
 \end{DoxyReturn}
 
 
@@ -108,6 +123,39 @@ Implements \mbox{\hyperlink{class_gr_font_a4f09eb5d3beb8bb3942903cc1191f60d}{Gr\
 
 
 
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_monofonto___regular__140_a8bfd6a04005420950b5a7acc449bc6ea}\index{Monofonto\_Regular\_140@{Monofonto\_Regular\_140}!charDefNdxOffset@{charDefNdxOffset}}
+\index{charDefNdxOffset@{charDefNdxOffset}!Monofonto\_Regular\_140@{Monofonto\_Regular\_140}}
+\doxysubsubsection{\texorpdfstring{charDefNdxOffset}{charDefNdxOffset}}
+{\footnotesize\ttfamily \label{struct_monofonto___regular__140_a8bfd6a04005420950b5a7acc449bc6ea} 
+const uint8\+\_\+t Monofonto\+\_\+\+Regular\+\_\+140\+::char\+Def\+Ndx\+Offset = 32}
+
+
+
+Offset to the first character in the index. 
+
+\Hypertarget{struct_monofonto___regular__140_a78e83ab1ba779ab4b683ea5c77b6b6ad}\index{Monofonto\_Regular\_140@{Monofonto\_Regular\_140}!PROGMEM@{PROGMEM}}
+\index{PROGMEM@{PROGMEM}!Monofonto\_Regular\_140@{Monofonto\_Regular\_140}}
+\doxysubsubsection{\texorpdfstring{PROGMEM}{PROGMEM}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{struct_monofonto___regular__140_a78e83ab1ba779ab4b683ea5c77b6b6ad} 
+const int8\+\_\+t char\+Def\+Ndx \mbox{[}$\,$\mbox{]} Monofonto\+\_\+\+Regular\+\_\+140\+::\+PROGMEM\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Index mapping characters to entries in the char\+Def\+Data table. 
+
+\Hypertarget{struct_monofonto___regular__140_ad5630a9d4f964b78a1707f89caee9bcf}\index{Monofonto\_Regular\_140@{Monofonto\_Regular\_140}!PROGMEM@{PROGMEM}}
+\index{PROGMEM@{PROGMEM}!Monofonto\_Regular\_140@{Monofonto\_Regular\_140}}
+\doxysubsubsection{\texorpdfstring{PROGMEM}{PROGMEM}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{struct_monofonto___regular__140_ad5630a9d4f964b78a1707f89caee9bcf} 
+const int16\+\_\+t char\+Def\+Data \mbox{[}69\mbox{]}\mbox{[}7\mbox{]} Monofonto\+\_\+\+Regular\+\_\+140\+::\+PROGMEM\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Table defining the characteristics of each character. 
+
+
+
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/fonts/\mbox{\hyperlink{_monofonto-_regular-140_8h}{Monofonto-\/\+Regular-\/140.\+h}}\end{DoxyCompactItemize}
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/fonts/\mbox{\hyperlink{_monofonto-_regular-140_8h}{Monofonto-\/\+Regular-\/140.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\doxysection{Definitions.\+h}
+\hypertarget{_definitions_8h_source}{}\label{_definitions_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/include/Definitions.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/include/Definitions.h}}
+\mbox{\hyperlink{_definitions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \#ifndef\ TEXTBOXDEF\_DEFINED}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ TEXTBOXDEF\_DEFINED}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_font_list_8h}{FontList.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_shape__t}{Shape\_t}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_shape__t_a0e318b8994bb72dc53469b3ad1d90b66}{unitsWidth}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_shape__t_a707f7fb7d60b577c7352bccc3a471137}{height}};\ \ \ \ \ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00030\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_shape__t_a1fac939468f54f2d1433a586d3d70d77}{baseline}};}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_config_text_box__t_abf23789044909a086aa683dbf876965e}{x}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_config_text_box__t_a345d769e05da1c47cb621803235939c7}{y}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_config_text_box__t_a699a85281f94db03641df64d549b32c6}{textWidth}};\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ \mbox{\hyperlink{struct_config_text_box__t_a1fc25fc0ea28c3184daf955c5f7bbdf6}{shape}};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{FontList::FontID}}\ \mbox{\hyperlink{struct_config_text_box__t_a51065fc3e12dcb804c1e533868d1fff5}{TextFont}};\ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{FontList::FontID}}\ \mbox{\hyperlink{struct_config_text_box__t_a19947f4574e72765165de1878f56ef10}{UnitsFont}};\ }
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_config_list__t}{ConfigList\_t}}}
+\DoxyCodeLine{00064\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00069\ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_a889cfb8998a10a316f699934453fe9dc}{kettleTemp}};\ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_a517caa701ec101ed9596d941aea72df5}{setTemp}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_ab32a80bf64373bee0d55748a7d5dc217}{elemOut}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_a52d11f2946ec0f209f05587e3ddf3855}{volume}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_af121b71ae32a7a3f79a8fc7a7520efbd}{minVolume}};\ \ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_a03340f6320bfc4098999c6a1755ab190}{chillerTemp}};\ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ *\mbox{\hyperlink{struct_config_list__t_ad321cbe26e7f5a2051b05819b8ab22ab}{minChillerTemp}};\ }
+\DoxyCodeLine{00077\ \ \ \ \ \}\ \mbox{\hyperlink{struct_config_list__t_a7eadc104f208b418f965ab4b7df583da}{main}};}
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['need_20to_0',['Why does the whole footprint have an &lt;tt&gt;F.Courtyard&lt;/tt&gt; or &lt;tt&gt;B.Courtyard&lt;/tt&gt; outline? I can&apos;t place my components where I need to!',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md63',1,'']]],
-  ['needed_20to_20get_20started_1',['Minimum hardware needed to get started',['../_getting__started.html#autotoc_md37',1,'']]],
-  ['new_5fstring_2',['new_string',['../namespacerun_doxygen.html#a95db0383b88f56d45afa2ed79ed80b04',1,'runDoxygen']]],
-  ['next_20steps_3',['Next Steps',['../_getting__started.html#autotoc_md42',1,'']]],
-  ['nextaddress_4',['nextAddress',['../class_canvas.html#a6db455aef96b2f06acddc9ef19a18572',1,'Canvas']]],
-  ['nicla_20vision_20and_20nicla_20voice_20tile_20footprints_20have_20cut_20outs_5',['Why do the Nicla Vision and Nicla Voice tile footprints have cut-outs?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md62',1,'']]],
-  ['nicla_20voice_20tile_20footprints_20have_20cut_20outs_6',['Why do the Nicla Vision and Nicla Voice tile footprints have cut-outs?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md62',1,'']]],
-  ['not_20have_20an_20tt_20edge_20cuts_20tt_20outline_7',['Why do the footprints not have an &lt;tt&gt;Edge.Cuts&lt;/tt&gt; outline?',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md61',1,'']]],
-  ['nss_5factive_8',['nSS_Active',['../namespace_t_f_t_m070_a1.html#ab36e716edfaa53381ca16c3844fa1056',1,'TFTM070A1']]],
-  ['nss_5finactive_9',['nSS_Inactive',['../namespace_t_f_t_m070_a1.html#a1ed77f78fdcefdfc908aac30f76a57b1',1,'TFTM070A1']]],
-  ['num_5fmainmenu_5fbuttons_10',['NUM_MAINMENU_BUTTONS',['../_menu_8h.html#aaf863b665fd9b9e1ea7aa723f553abfc',1,'Menu.h']]],
-  ['num_5fsetuppidmenu_5fbuttons_11',['NUM_SETUPPIDMENU_BUTTONS',['../_menu_8h.html#a5ae563bb5fac391b0683750693740437',1,'Menu.h']]],
-  ['num_5fsetuptempmenu_5fbuttons_12',['NUM_SETUPTEMPMENU_BUTTONS',['../_menu_8h.html#ae3448608d37aed734bc22df980f27326',1,'Menu.h']]],
-  ['num_5fsetupvolmenu_5fbuttons_13',['NUM_SETUPVOLMENU_BUTTONS',['../_menu_8h.html#a3206ce01db32abe074fa8aa852722605',1,'Menu.h']]]
+  ['value_0',['Value',['../class_text_box.html#a5241024ca7ac8d7d34876586ccaf149e',1,'TextBox']]],
+  ['value_1',['value',['../class_sensor.html#a7dd38d6781f8ccc6da81b76dd4b9422d',1,'Sensor']]],
+  ['values_2',['values',['../_r_o_m___images_8h.html#a403dd564a4c846f6b6dc8a796fc18c52',1,'ROM_Images.h']]],
+  ['vol_5falarm_5fbutton_3',['vol_alarm_button',['../_r_o_m___images_8h.html#a16d8bd4b401bb2f42cc0852d4ed22c8a',1,'ROM_Images.h']]],
+  ['vol_5fbutton_5fheight_4',['VOL_BUTTON_HEIGHT',['../_r_o_m___images_8h.html#a58ead25c5c68c10613a73c14536ace99',1,'ROM_Images.h']]],
+  ['vol_5fbutton_5fwidth_5',['VOL_BUTTON_WIDTH',['../_r_o_m___images_8h.html#ad9d4cd202f70ec4c362963cba8a47e15',1,'ROM_Images.h']]],
+  ['vol_5fpanel_6',['vol_panel',['../_r_o_m___images_8h.html#a31ea7ea60be54d5fb6ae77a7d9bb181c',1,'ROM_Images.h']]],
+  ['vol_5fsensor_7',['VOL_SENSOR',['../_common_8h.html#ac735ae65b04d7f1745e912d60a576668',1,'Common.h']]],
+  ['vol_5fsetup_8',['VOL_SETUP',['../_r_o_m___images_8h.html#a9430ca273dd03e7b5d281ad501745fc5',1,'ROM_Images.h']]],
+  ['volsetup_9',['volSetup',['../namespace_c_b_1_1_s_e_t_u_p.html#a8e0da5e9f4b6752ed7237ce611e3bddb',1,'CB::SETUP']]],
+  ['volume_10',['volume',['../struct_config_list__t.html#a52d11f2946ec0f209f05587e3ddf3855',1,'ConfigList_t::volume'],['../namespace_text_box_config.html#a963eef2619d902eab8ebd21cc0d09fec',1,'TextBoxConfig::volume']]],
+  ['vscan_5ft_5fto_5fb_11',['VSCAN_T_to_B',['../namespace_t_f_t_m070_a1.html#addf20d50d4ac2e716306a5511cd772de',1,'TFTM070A1']]],
+  ['vsync_5fhigh_5factive_12',['VSYNC_High_Active',['../namespace_t_f_t_m070_a1.html#ac25f7a1e3339a9bd54b08ec2cd1bebdc',1,'TFTM070A1']]],
+  ['vsync_5flow_5factive_13',['VSYNC_Low_Active',['../namespace_t_f_t_m070_a1.html#a3cbfccff6856bfbc865b7afce4a7e307',1,'TFTM070A1']]]
 ];

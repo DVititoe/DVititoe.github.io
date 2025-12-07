@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['value_0',['Value',['../class_text_box.html#a5241024ca7ac8d7d34876586ccaf149e',1,'TextBox']]],
-  ['values_1',['values',['../_r_o_m___images_8h.html#a403dd564a4c846f6b6dc8a796fc18c52',1,'ROM_Images.h']]],
-  ['vol_5falarm_5fbutton_2',['vol_alarm_button',['../_r_o_m___images_8h.html#a16d8bd4b401bb2f42cc0852d4ed22c8a',1,'ROM_Images.h']]],
-  ['vol_5fbutton_5fheight_3',['VOL_BUTTON_HEIGHT',['../_r_o_m___images_8h.html#a58ead25c5c68c10613a73c14536ace99',1,'ROM_Images.h']]],
-  ['vol_5fbutton_5fwidth_4',['VOL_BUTTON_WIDTH',['../_r_o_m___images_8h.html#ad9d4cd202f70ec4c362963cba8a47e15',1,'ROM_Images.h']]],
-  ['vol_5fpanel_5',['vol_panel',['../_r_o_m___images_8h.html#a31ea7ea60be54d5fb6ae77a7d9bb181c',1,'ROM_Images.h']]],
-  ['vol_5fsetup_6',['VOL_SETUP',['../_r_o_m___images_8h.html#aa71a31ae4a84bc3116ad8c482c37605d',1,'ROM_Images.h']]],
-  ['volume_7',['volume',['../struct_config_list__t.html#a52d11f2946ec0f209f05587e3ddf3855',1,'ConfigList_t']]]
+  ['y_0',['Y',['../class_dynamic_text.html#a0dc1d506cdf6572dd285e2493855007c',1,'DynamicText::Y'],['../class_text_box.html#a1e9f67853cf1a1dcec36f4663fa4c025',1,'TextBox::Y']]],
+  ['y_1',['y',['../struct_char_def__t.html#a52bba2a5621bb4d25b92c66d8eb223c3',1,'CharDef_t::y'],['../struct_config_text_box__t.html#a345d769e05da1c47cb621803235939c7',1,'ConfigTextBox_t::y'],['../struct_block___image.html#a66541f503644aac5586a3b01fb1675c5',1,'Block_Image::y'],['../struct_f_t5316_1_1_touch_location.html#acfc5ab14d900f4feb23f70e44e749778',1,'FT5316::TouchLocation::y']]],
+  ['yoffset_2',['yoffset',['../struct_char_def__t.html#a48121f073c14880cedb2e15d8d88ac6e',1,'CharDef_t']]]
 ];

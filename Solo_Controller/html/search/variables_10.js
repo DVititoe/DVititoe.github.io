@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['red180_0',['Red180',['../struct_font___list__t.html#ab652261933e7b7789d0216f802025552',1,'Font_List_t']]],
-  ['red64_1',['Red64',['../struct_font___list__t.html#a88183a3fa4734122e97ead8fd39eb812',1,'Font_List_t']]],
-  ['rom_5ffile_2',['ROM_file',['../namespacecreate___r_o_m__image.html#a6bf0b3b17700a1830bfba0d462746dc3',1,'create_ROM_image']]],
-  ['rom_5fout_3',['ROM_out',['../namespacecreate___r_o_m__image.html#a865209db506dceb7d902c99c799c92df',1,'create_ROM_image']]],
-  ['root_5fdir_4',['ROOT_DIR',['../namespacerun_doxygen.html#a902043a92c110dd60ce7a2e44c8f357b',1,'runDoxygen']]]
+  ['units_0',['Units',['../class_text_box.html#a46428da36035957950e6d93a242c2929',1,'TextBox']]],
+  ['unitsfont_1',['UnitsFont',['../struct_config_text_box__t.html#a19947f4574e72765165de1878f56ef10',1,'ConfigTextBox_t']]],
+  ['unitswidth_2',['unitsWidth',['../struct_shape__t.html#a0e318b8994bb72dc53469b3ad1d90b66',1,'Shape_t']]]
 ];

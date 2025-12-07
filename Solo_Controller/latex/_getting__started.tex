@@ -4,7 +4,7 @@
 \Hypertarget{_getting__started_md_5_80_01_getting___started}%
 
 
-Building this Controller requires an understanding of\+:
+Building Solo Controller requires an understanding of\+:
 
 
 \begin{DoxyItemize}
@@ -12,13 +12,40 @@ Building this Controller requires an understanding of\+:
 \item Construction of Printed Circuit Boards (PCBs)
 \item Understanding of Mega 2560 microcontroller
 \item Knowledge of C/\+C++
-\end{DoxyItemize}\hypertarget{_getting__started_autotoc_md37}{}\doxysubsection{\texorpdfstring{Minimum hardware needed to get started}{Minimum hardware needed to get started}}\label{_getting__started_autotoc_md37}
-Coming soon...\hypertarget{_getting__started_autotoc_md38}{}\doxysubsection{\texorpdfstring{Installing VSCode and Platform\+IO}{Installing VSCode and Platform\+IO}}\label{_getting__started_autotoc_md38}
-Coming soon...\hypertarget{_getting__started_autotoc_md39}{}\doxysubsection{\texorpdfstring{Updating the Display ROM}{Updating the Display ROM}}\label{_getting__started_autotoc_md39}
-Coming soon...\hypertarget{_getting__started_autotoc_md40}{}\doxysubsection{\texorpdfstring{Software Configuration}{Software Configuration}}\label{_getting__started_autotoc_md40}
-Describe software setup needed to work with the minimal hardware configuration\hypertarget{_getting__started_autotoc_md41}{}\doxysubsection{\texorpdfstring{Compiling and Testing basic Functionality}{Compiling and Testing basic Functionality}}\label{_getting__started_autotoc_md41}
-Coming soon...\hypertarget{_getting__started_autotoc_md42}{}\doxysubsection{\texorpdfstring{Next Steps}{Next Steps}}\label{_getting__started_autotoc_md42}
-Coming soon...\hypertarget{_getting__started_autotoc_md43}{}\doxysubsubsection{\texorpdfstring{Creation of Control I/F PCB}{Creation of Control I/F PCB}}\label{_getting__started_autotoc_md43}
-Coming soon...\hypertarget{_getting__started_autotoc_md44}{}\doxysubsubsection{\texorpdfstring{Build out the HW}{Build out the HW}}\label{_getting__started_autotoc_md44}
-Coming soon...\hypertarget{_getting__started_autotoc_md45}{}\doxysubsubsection{\texorpdfstring{Final Software Configuration}{Final Software Configuration}}\label{_getting__started_autotoc_md45}
+\end{DoxyItemize}\hypertarget{_getting__started_autotoc_md37}{}\doxysubsection{\texorpdfstring{Required Software}{Required Software}}\label{_getting__started_autotoc_md37}
+\hypertarget{_getting__started_autotoc_md38}{}\doxysubsubsection{\texorpdfstring{Platform\+IO}{Platform\+IO}}\label{_getting__started_autotoc_md38}
+The controller software uses the Platform\+IO build environment for its control software. There are a number of ways to use Platform\+IO, but we recommend using is with Microsoft\textquotesingle{}s Visual Studio Code (VSCode). VSCode is an open source tool that provides a large number of tools supporting the development of robust software.
+
+Installation instructions for VSCode can be found \href{https://code.visualstudio.com/download}{\texttt{ here}}. Instructions for installing Platform\+IO as an extension within VSCode can be found \href{https://platformio.org/install/ide?install=vscode}{\texttt{ here}}.\hypertarget{_getting__started_autotoc_md39}{}\doxysubsubsection{\texorpdfstring{Ki\+Cad}{Ki\+Cad}}\label{_getting__started_autotoc_md39}
+Ki\+Cad is an open source Electronics Design Automation tool for creating printed circuit boards (PCB). Ki\+Cad provides a circuit diagram editor, a PCB Layout tool, and a 3D viewer for inspecting the PCB design. Download instructions for Ki\+Cad can be found at \href{https://www.kicad.org/}{\texttt{ Ki\+Cad.\+org}}.\hypertarget{_getting__started_autotoc_md40}{}\doxysubsection{\texorpdfstring{Minimum hardware needed to get started}{Minimum hardware needed to get started}}\label{_getting__started_autotoc_md40}
+The control software includes simple "{}\+Hello World"{} test routines that demonstrate some of the basic functionality of the Solo Controller software. To run this software you will need.
+
+
+\begin{DoxyItemize}
+\item Mega 2560, Rev 3 Microcontroller
+\item TFT screen with the following capabilities. This project used the \href{https://dvititoe.github.io/Solo_Controller/html/docs/ER-TFT070A2-6-5633_Datasheet.pdf}{\texttt{ ER-\/\+TFT070\+A2-\/6-\/5633}} from \href{https://www.buydisplay.com/}{\texttt{ www.\+buydisplay.\+com}}\+:
+\begin{DoxyItemize}
+\item 1024x600 pixel resolution
+\item Capacitance Touch Panel (CTP)
+\item Built in LT7683 graphics chip
+\item Ability to add a 128M bit ROM chip
+\item Available pins for accessing/programming the ROM chip
+\end{DoxyItemize}
+\item Display adapter card that interfaces the Mega controller with the TFT. This project used the \href{https://dvititoe.github.io/Solo_Controller/html/docs/ER-AS-RA8875_Datasheet.pdf}{\texttt{ ER-\/\+AS-\/\+RA8875}} from \href{https://www.buydisplay.com/}{\texttt{ www.\+buydisplay.\+com}}
+\end{DoxyItemize}
+
+{\bfseries{Key Components of the ER-\/\+TFT070\+A2-\/6-\/5633 TFT\+:}}
+
+\begin{center}\end{center} 
+
+{\bfseries{The three components used in the "{}\+Hello World"{} configuration.}}
+
+\begin{center}\end{center} 
+
+{\bfseries{The three components in its assembled configuration}} \begin{center}\end{center} \hypertarget{_getting__started_autotoc_md41}{}\doxysubsubsection{\texorpdfstring{Updating the TFT ROM}{Updating the TFT ROM}}\label{_getting__started_autotoc_md41}
+Coming soon...\hypertarget{_getting__started_autotoc_md42}{}\doxysubsubsection{\texorpdfstring{Setting up the software}{Setting up the software}}\label{_getting__started_autotoc_md42}
+Describe software setup needed to work with the minimal hardware configuration\hypertarget{_getting__started_autotoc_md43}{}\doxysubsubsection{\texorpdfstring{Next Steps}{Next Steps}}\label{_getting__started_autotoc_md43}
+Coming soon...\hypertarget{_getting__started_autotoc_md44}{}\doxysubsubsubsection{\texorpdfstring{Creation of Control I/F PCB}{Creation of Control I/F PCB}}\label{_getting__started_autotoc_md44}
+Coming soon...\hypertarget{_getting__started_autotoc_md45}{}\doxysubsubsubsection{\texorpdfstring{Build out the HW}{Build out the HW}}\label{_getting__started_autotoc_md45}
+Coming soon...\hypertarget{_getting__started_autotoc_md46}{}\doxysubsubsubsection{\texorpdfstring{Final Software Configuration}{Final Software Configuration}}\label{_getting__started_autotoc_md46}
 Coming soon... 

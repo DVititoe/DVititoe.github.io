@@ -1,5 +1,10 @@
-\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Tasks.h File Reference}
-\hypertarget{_tasks_8h}{}\label{_tasks_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Tasks.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Tasks.h}}
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\+Tasks.h File Reference}
+\hypertarget{_tasks_8h}{}\label{_tasks_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/Tasks.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/Tasks.h}}
+
+
+Defines the tasks used by Solo\+Controller.  
+
+
 \doxysubsubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -21,14 +26,20 @@ namespace \mbox{\hyperlink{namespace_task_1_1_alarm}{Task\+::\+Alarm}}
 void \mbox{\hyperlink{namespace_setup_a5686fb83fd9eea3e8c16226863de3598}{Setup\+::pin\+Config}} (void)
 \begin{DoxyCompactList}\small\item\em Sets up the Arduino pins for the application. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespace_setup_ad6e12570a013a041d84c999009fe413f}{Setup\+::\+TFT}} (void)
-\begin{DoxyCompactList}\small\item\em Initilizes the TFT display. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Initializes the TFT display. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespace_setup_ac52d05a0d4da6955007cb1098828ee40}{Setup\+::menu\+System}} (void)
 \begin{DoxyCompactList}\small\item\em Initilizes the menu system. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespace_setup_ad0060655176e56dcd4755c61a2556792}{Setup\+::tasks}} (void)
-\begin{DoxyCompactList}\small\item\em Initilizes baseline set of tasks that operate the application. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Initializes baseline set of tasks that operate the application. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespace_task_1_1_error_aaecf6f7bda594cf871665ec8907efd18}{Task\+::\+Error\+::test\+If\+User\+Finished\+With\+Err\+Msg}} (void)
 \begin{DoxyCompactList}\small\item\em Creates a task to check for user input to a displayed error message. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespace_task_1_1_error_adc4ee077b4fa2f212df9cf2dd310ba23}{Task\+::\+Error\+::finished\+With\+Err\+Msg}} (void)
 \begin{DoxyCompactList}\small\item\em Deletes the task that checks for user input to a displayed error message. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespace_task_1_1_sensor_a37d7818bc85f3438c920e2dafd13c463}{Task\+::\+Sensor\+::setup\+\_\+simulate\+Sensor\+Data}} (void)
 \begin{DoxyCompactList}\small\item\em Generates simulated temperature and volume data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the tasks used by Solo\+Controller. 
+
+The functions interact with the global task\+Manager object. Each function places a new task onto the task\+Manager queue. 

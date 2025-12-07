@@ -2,6 +2,11 @@
 \hypertarget{class_solo_menu}{}\label{class_solo_menu}\index{SoloMenu@{SoloMenu}}
 
 
+Base class used by all menus.  
+
+
+
+
 {\ttfamily \#include $<$Menu.\+h$>$}
 
 Inheritance diagram for Solo\+Menu\+:\begin{figure}[H]
@@ -47,7 +52,7 @@ void \mbox{\hyperlink{class_solo_menu_a76b36ab71a84accab83e949bf64dc1c9}{\+\_\+r
 \item 
 virtual void \mbox{\hyperlink{class_solo_menu_a97a20d95646751b87a09cf61e38fb2c4}{begin}} (void)
 \begin{DoxyCompactList}\small\item\em Initializes the Menu object. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_solo_menu_a050ae3a9e42c1b647b0a699acc18c428}{update}} (void)
+virtual void \mbox{\hyperlink{class_solo_menu_aad1b02475ab8911b3c0093b6e0a5e20d}{update}} (void)
 \begin{DoxyCompactList}\small\item\em Updates the {\ttfamily \doxylink{class_button}{Button}}, {\ttfamily Menu}, and {\ttfamily Label} objects managed by this class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_solo_menu_a0765e6a7168259e2b37856c71399a670}{show}} (void)=0
 \begin{DoxyCompactList}\small\item\em Shows the menu in the TFT. Derived classes will provide specific functionality. \end{DoxyCompactList}\item 
@@ -60,6 +65,11 @@ virtual void \mbox{\hyperlink{class_solo_menu_a6226da8342c00ac614eeb79455e40091}
 static bool \mbox{\hyperlink{class_solo_menu_a5854d5e873fdcdcdb94b89fdd55f6985}{has\+Screen\+Been\+Touched}} (void)
 \begin{DoxyCompactList}\small\item\em Determines if the TFT screen has been touched. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Base class used by all menus. 
+
+This menu provides the core functionality for the menu system. Each menu displayed on the TFT will derive from this class. The primary responsibility for this class is to manage all \doxylink{class_button}{Button}, Labels, and Submenus, ensuring that requests to update graphics or handle presses to the TFT touch screen are handled properly. All menus are intended to be Singleton objects. Each object uses significant DRAM resources. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_solo_menu_a1e1447c429a629f2d4f790358a6c7eb2}\index{SoloMenu@{SoloMenu}!SoloMenu@{SoloMenu}}
@@ -256,11 +266,11 @@ None.
 
 Implemented in \mbox{\hyperlink{class_main_menu_ab045cc677286506297e51b6cf3f20cdd}{Main\+Menu}}, \mbox{\hyperlink{class_setup_p_i_d___menu_aefdfc08a80449d08018d6dfdce66962e}{Setup\+PID\+\_\+\+Menu}}, \mbox{\hyperlink{class_setup_temp_menu_ab9b7ab05d283af441351f6ac5e0f41ab}{Setup\+Temp\+Menu}}, and \mbox{\hyperlink{class_setup_vol_menu_a52af601cd1a1120689f06d16261126cf}{Setup\+Vol\+Menu}}.
 
-\Hypertarget{class_solo_menu_a050ae3a9e42c1b647b0a699acc18c428}\index{SoloMenu@{SoloMenu}!update@{update}}
+\Hypertarget{class_solo_menu_aad1b02475ab8911b3c0093b6e0a5e20d}\index{SoloMenu@{SoloMenu}!update@{update}}
 \index{update@{update}!SoloMenu@{SoloMenu}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{class_solo_menu_a050ae3a9e42c1b647b0a699acc18c428} 
-void Solo\+Menu\+::update (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_solo_menu_aad1b02475ab8911b3c0093b6e0a5e20d} 
+virtual void Solo\+Menu\+::update (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -325,5 +335,5 @@ UL y-\/coordinate for the menu in the TFT display
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\end{DoxyCompactItemize}

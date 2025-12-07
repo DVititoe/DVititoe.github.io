@@ -1,0 +1,118 @@
+\doxysection{Font\+List Class Reference}
+\hypertarget{class_font_list}{}\label{class_font_list}\index{FontList@{FontList}}
+
+
+Defines the \doxylink{class_font_list}{Font\+List} class that manages all fonts used by the application.  
+
+
+
+
+{\ttfamily \#include $<$Font\+List.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{Font\+ID}} \{ \newline
+\mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca0f03c52023388c5ec8ec57d87f8c87be}{Red180}}
+, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca4145d8644c5c13a0a704e89fcfca488e}{White90}}
+, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafaccaf888f47cba94e2db56415c8548f66a5e}{Red64}}
+, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{Blue64}}
+, \newline
+\mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca7f77e453ba74640930b5a81c726d4e05}{White64}}
+, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{White32}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration listing available fonts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_font_list_a16af554f238a6759f10d688dddb846f2}{get}} (\mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{Font\+ID}} id)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the requested graphical font. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_font_list}{Font\+List}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_font_list_af836525be0814d719856aa4f48942348}{get\+Instance}} (void)
+\begin{DoxyCompactList}\small\item\em Returns pointer to the single \doxylink{class_font_list}{Font\+List} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the \doxylink{class_font_list}{Font\+List} class that manages all fonts used by the application. 
+
+Each instantiation of a graphical fonts, requires a fair amount of DRAM. To avoid creating fonts multiple times (unnecessarily using DRAM resources), this class was created to instantiate and provide access to the font data. Note that this is a Singleton class. Therefore, only one instance of this class can be created. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}\index{FontList@{FontList}!FontID@{FontID}}
+\index{FontID@{FontID}!FontList@{FontList}}
+\doxysubsubsection{\texorpdfstring{FontID}{FontID}}
+{\footnotesize\ttfamily \label{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc} 
+enum \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{Font\+List\+::\+Font\+ID}}}
+
+
+
+Enumeration listing available fonts. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Red180@{Red180}!FontList@{FontList}}\index{FontList@{FontList}!Red180@{Red180}}}\Hypertarget{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca0f03c52023388c5ec8ec57d87f8c87be}\label{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca0f03c52023388c5ec8ec57d87f8c87be} 
+Red180&Red monospace font of size 180. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{White90@{White90}!FontList@{FontList}}\index{FontList@{FontList}!White90@{White90}}}\Hypertarget{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca4145d8644c5c13a0a704e89fcfca488e}\label{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca4145d8644c5c13a0a704e89fcfca488e} 
+White90&White monospace font of size 90. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Red64@{Red64}!FontList@{FontList}}\index{FontList@{FontList}!Red64@{Red64}}}\Hypertarget{class_font_list_abeb5fda67e28f9f04c0f897d43aafaccaf888f47cba94e2db56415c8548f66a5e}\label{class_font_list_abeb5fda67e28f9f04c0f897d43aafaccaf888f47cba94e2db56415c8548f66a5e} 
+Red64&Red monospace font of size 64. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Blue64@{Blue64}!FontList@{FontList}}\index{FontList@{FontList}!Blue64@{Blue64}}}\Hypertarget{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}\label{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66} 
+Blue64&Blue monospace font of size 64. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{White64@{White64}!FontList@{FontList}}\index{FontList@{FontList}!White64@{White64}}}\Hypertarget{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca7f77e453ba74640930b5a81c726d4e05}\label{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca7f77e453ba74640930b5a81c726d4e05} 
+White64&White monospace font of size 64. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{White32@{White32}!FontList@{FontList}}\index{FontList@{FontList}!White32@{White32}}}\Hypertarget{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}\label{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e} 
+White32&White monospace font of size 32. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_font_list_a16af554f238a6759f10d688dddb846f2}\index{FontList@{FontList}!get@{get}}
+\index{get@{get}!FontList@{FontList}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_font_list_a16af554f238a6759f10d688dddb846f2} 
+\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*} Font\+List\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{Font\+ID}}}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a pointer to the requested graphical font. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em id} & Identifier of the requested font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the requested graphical font. 
+\end{DoxyReturn}
+\Hypertarget{class_font_list_af836525be0814d719856aa4f48942348}\index{FontList@{FontList}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!FontList@{FontList}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_font_list_af836525be0814d719856aa4f48942348} 
+\mbox{\hyperlink{class_font_list}{Font\+List}} \texorpdfstring{$\ast$}{*} Font\+List\+::get\+Instance (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns pointer to the single \doxylink{class_font_list}{Font\+List} object. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{class_font_list}{Font\+List} object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/fonts/\mbox{\hyperlink{_font_list_8h}{Font\+List.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/fonts/\mbox{\hyperlink{_font_list_8cpp}{Font\+List.\+cpp}}\end{DoxyCompactItemize}

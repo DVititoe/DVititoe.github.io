@@ -1,4 +1,30 @@
 var searchData=
 [
-  ['6_0',['KiCad 6',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md52',1,'']]]
+  ['elem_5fcntrl_0',['ELEM_CNTRL',['../_common_8h.html#ab3b7cba602225c494917f733fa079cfe',1,'Common.h']]],
+  ['elem_5fswitch_5fled_1',['ELEM_SWITCH_LED',['../_common_8h.html#a156875687edb737b52ac4cde4476fe48',1,'Common.h']]],
+  ['elementoff_2',['elementOff',['../namespace_c_b_1_1_m_a_i_n.html#aa2964d6ce2eb21dd7d3f5d6e9682e9f9',1,'CB::MAIN']]],
+  ['elementon_3',['elementOn',['../namespace_c_b_1_1_m_a_i_n.html#ac77110627d22441004593cd8adb841ed',1,'CB::MAIN']]],
+  ['elemout_4',['elemOut',['../struct_config_list__t.html#ab32a80bf64373bee0d55748a7d5dc217',1,'ConfigList_t::elemOut'],['../namespace_text_box_config.html#a87c1083616f86d415ea2a282ffcb5d17',1,'TextBoxConfig::elemOut']]],
+  ['ellipse_5fcenter_5fxy_5',['Ellipse_Center_XY',['../namespace_t_f_t_m070_a1.html#afd7fca245020ab04505c454bcca3f1d2',1,'TFTM070A1']]],
+  ['ellipse_5fradius_5frxry_6',['Ellipse_Radius_RxRy',['../namespace_t_f_t_m070_a1.html#abf00f26479acf8045c25caa8b1606a76',1,'TFTM070A1']]],
+  ['emti_5fflag_7',['EMTI_Flag',['../namespace_t_f_t_m070_a1.html#aa024ccf27b4dde38b64a391a7860926b',1,'TFTM070A1']]],
+  ['emtirqen_5fenable_8',['EMTIRQEN_Enable',['../namespace_t_f_t_m070_a1.html#af232db45694a5381b589d6abef0c90d2',1,'TFTM070A1']]],
+  ['enable_9',['enable',['../class_button.html#a8d0bdd0a384deeba962e237315bcd94e',1,'Button']]],
+  ['enable_5ffont_5falignment_10',['Enable_Font_Alignment',['../namespace_t_f_t_m070_a1.html#a8adf6d646815e9652359281834a12cad',1,'TFTM070A1']]],
+  ['enable_5fpwm0_5fdead_5fzone_11',['Enable_PWM0_Dead_Zone',['../namespace_t_f_t_m070_a1.html#a44dcca91eac176041eb06be220c0a95a',1,'TFTM070A1']]],
+  ['enable_5fpwm0_5finverter_12',['Enable_PWM0_Inverter',['../namespace_t_f_t_m070_a1.html#abd930dad65339ce3ca44b2de46f8d84a',1,'TFTM070A1']]],
+  ['enable_5fpwm1_5finverter_13',['Enable_PWM1_Inverter',['../namespace_t_f_t_m070_a1.html#a148f1310c30a928b175557eeead1e3c7',1,'TFTM070A1']]],
+  ['enable_5fsflash_5fspi_14',['Enable_SFlash_SPI',['../namespace_t_f_t_m070_a1.html#aea231b6700c1a3ef8377c8ed366ef5f1',1,'TFTM070A1']]],
+  ['endl_15',['endl',['../class_err_msg.html#a78afc654669bd47ac90612fa9838b59b',1,'ErrMsg']]],
+  ['endltoken_16',['EndlToken',['../struct_err_msg_1_1_endl_token.html',1,'ErrMsg']]],
+  ['errmsg_17',['ErrMsg',['../class_err_msg.html',1,'']]],
+  ['errmsg_18',['errMsg',['../_err_msg_8cpp.html#aba17f9ec5e9b5441ed60d8bb1dfe3889',1,'errMsg:&#160;ErrMsg.cpp'],['../_err_msg_8h.html#aba17f9ec5e9b5441ed60d8bb1dfe3889',1,'errMsg:&#160;ErrMsg.cpp']]],
+  ['errmsg_2ecpp_19',['ErrMsg.cpp',['../_err_msg_8cpp.html',1,'']]],
+  ['errmsg_2eh_20',['ErrMsg.h',['../_err_msg_8h.html',1,'']]],
+  ['errmsg_3a_3aoperator_3c_3c_3c_20errmsg_3a_3aendltoken_20_3e_21',['ErrMsg::operator&lt;&lt;&lt; ErrMsg::EndlToken &gt;',['../_err_msg_8cpp.html#ab3b76bc3a85b50c66cc734f6736e33e7',1,'operator&lt;&lt;&lt; ErrMsg::EndlToken &gt;(const ErrMsg::EndlToken value):&#160;ErrMsg.cpp'],['../_err_msg_8h.html#ab3b76bc3a85b50c66cc734f6736e33e7',1,'operator&lt;&lt;&lt; ErrMsg::EndlToken &gt;(const ErrMsg::EndlToken value):&#160;ErrMsg.cpp']]],
+  ['errmsgtaskid_22',['errMsgTaskId',['../_tasks_8cpp.html#acea62c364e5e811234c0363fb434d6ce',1,'Tasks.cpp']]],
+  ['error_23',['error',['../class_err_msg.html#aada2535b49111bce5c4302cd18da0edf',1,'ErrMsg']]],
+  ['error_5fmsg_24',['ERROR_MSG',['../_err_msg_8cpp.html#ace92548be104966c0591df950ef0ec68',1,'ErrMsg.cpp']]],
+  ['errormessage_5floop_25',['errorMessage_loop',['../namespace_test.html#a85365569ac53e849f50ec41442c8bb63',1,'Test']]],
+  ['errormessage_5fsetup_26',['errorMessage_setup',['../namespace_test.html#a409d479b04d8bb34cfa3f7d448f4c69d',1,'Test']]]
 ];

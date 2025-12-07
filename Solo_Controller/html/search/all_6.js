@@ -1,5 +1,31 @@
 var searchData=
 [
-  ['7_0',['KiCad 7',['../C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/Kicad/library/arduino-kicad-library-master/README.md#autotoc_md51',1,'']]],
-  ['7_20inch_201024x600_20tft_20touch_20display_20module_1',['7 inch 1024x600 TFT Touch Display Module',['../_display__enclosure__design.html#autotoc_md13',1,'']]]
+  ['file_5fstem_0',['file_stem',['../structfile__stem.html',1,'']]],
+  ['finishedwitherrmsg_1',['finishedWithErrMsg',['../namespace_task_1_1_error.html#adc4ee077b4fa2f212df9cf2dd310ba23',1,'Task::Error']]],
+  ['font_5f0_5fdegree_2',['Font_0_degree',['../namespace_t_f_t_m070_a1.html#a01705098c7d930bc443c8c4f2cd54e38',1,'TFTM070A1']]],
+  ['font_5f90_5fdegree_3',['Font_90_degree',['../namespace_t_f_t_m070_a1.html#a6a4737b21449462c9a1a47b10dbed6c9',1,'TFTM070A1']]],
+  ['font_5fbackground_5fselect_5fcolor_4',['Font_Background_select_Color',['../namespace_t_f_t_m070_a1.html#a272c6af1dcafe2267712390f7fc16f10',1,'TFTM070A1']]],
+  ['font_5fbackground_5fselect_5ftransparency_5',['Font_Background_select_Transparency',['../namespace_t_f_t_m070_a1.html#a24a96c93720adf30ca13ada83e00f7e8',1,'TFTM070A1']]],
+  ['font_5fheight_5fx1_6',['Font_Height_X1',['../namespace_t_f_t_m070_a1.html#ad4adb6ac19d199869ca374d7c4af9cc6',1,'TFTM070A1']]],
+  ['font_5fheight_5fx2_7',['Font_Height_X2',['../namespace_t_f_t_m070_a1.html#a19a0c6cba3a2526305a29f356c413518',1,'TFTM070A1']]],
+  ['font_5fheight_5fx3_8',['Font_Height_X3',['../namespace_t_f_t_m070_a1.html#a7920dfd34453ece06040114506614c87',1,'TFTM070A1']]],
+  ['font_5fheight_5fx4_9',['Font_Height_X4',['../namespace_t_f_t_m070_a1.html#a2ee4c0e6872d8e3b07a8d1af70a79ce8',1,'TFTM070A1']]],
+  ['font_5fline_5fdistance_10',['Font_Line_Distance',['../namespace_t_f_t_m070_a1.html#abef37d85f437efc18da5b7e204950e0e',1,'TFTM070A1']]],
+  ['font_5floop_11',['font_loop',['../namespace_test.html#a48ff85526cd0fa40ff54a7c85e7ada2b',1,'Test']]],
+  ['font_5fselect_5f12x24_5f24x24_12',['Font_Select_12x24_24x24',['../namespace_t_f_t_m070_a1.html#ad1800010a0081f44d4bb93306570dd6e',1,'TFTM070A1']]],
+  ['font_5fselect_5f16x32_5f32x32_13',['Font_Select_16x32_32x32',['../namespace_t_f_t_m070_a1.html#a0bbf8412d22ba61c0e4f5fc84b92f79f',1,'TFTM070A1']]],
+  ['font_5fselect_5f8x16_5f16x16_14',['Font_Select_8x16_16x16',['../namespace_t_f_t_m070_a1.html#acb900e0aca425f3416ab9a6847cc8453',1,'TFTM070A1']]],
+  ['font_5fselect_5fuserdefine_5fmode_15',['Font_Select_UserDefine_Mode',['../namespace_t_f_t_m070_a1.html#a8de6b2b1a24cfaf7a0055fba49848397',1,'TFTM070A1']]],
+  ['font_5fsetup_16',['font_setup',['../namespace_test.html#a7e1b0d69e05e1adadae5a6a5ff449ac4',1,'Test']]],
+  ['font_5fwidth_5fx1_17',['Font_Width_X1',['../namespace_t_f_t_m070_a1.html#a4cb1c8442d9caa25de2921120cef3142',1,'TFTM070A1']]],
+  ['font_5fwidth_5fx2_18',['Font_Width_X2',['../namespace_t_f_t_m070_a1.html#ac5678507d69f6375e8ba0ff861bcd052',1,'TFTM070A1']]],
+  ['font_5fwidth_5fx3_19',['Font_Width_X3',['../namespace_t_f_t_m070_a1.html#a977b15d9d4679989adfe093091aec9d5',1,'TFTM070A1']]],
+  ['font_5fwidth_5fx4_20',['Font_Width_X4',['../namespace_t_f_t_m070_a1.html#a1dae0c6fb7e117de619d171b17c62555',1,'TFTM070A1']]],
+  ['fontid_21',['FontID',['../class_font_list.html#abeb5fda67e28f9f04c0f897d43aafacc',1,'FontList']]],
+  ['fontlist_22',['FontList',['../class_font_list.html',1,'']]],
+  ['fontlist_2ecpp_23',['FontList.cpp',['../_font_list_8cpp.html',1,'']]],
+  ['fontlist_2eh_24',['FontList.h',['../_font_list_8h.html',1,'']]],
+  ['foreground_5fcolor_5f65k_25',['Foreground_color_65k',['../namespace_t_f_t_m070_a1.html#a8ca651e65d7a8ffc1494df8934db4c05',1,'TFTM070A1']]],
+  ['ft5316_26',['FT5316',['../namespace_f_t5316.html',1,'']]],
+  ['ft5316_5faddr_27',['FT5316_ADDR',['../_t_f_t_m070_a1_8cpp.html#a74813198926c5869a92bb0a968afdb2f',1,'TFTM070A1.cpp']]]
 ];

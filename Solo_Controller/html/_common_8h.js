@@ -1,7 +1,6 @@
 var _common_8h =
 [
-    [ "ROM_Image", "struct_r_o_m___image.html", "struct_r_o_m___image" ],
-    [ "Block_Image", "struct_block___image.html", "struct_block___image" ],
+    [ "TextBoxConfig::TextBox_Config", "struct_text_box_config_1_1_text_box___config.html", "struct_text_box_config_1_1_text_box___config" ],
     [ "ALARM", "_common_8h.html#a9e27e49f40e7acbb55bb085f15dabd99", null ],
     [ "AUX_OUT", "_common_8h.html#a4e9e3f3ee9e8d7161ef5a895d990fd7b", null ],
     [ "BUZZER", "_common_8h.html#a145103118f6d9d1129aa4509cf214a13", null ],
@@ -25,5 +24,14 @@ var _common_8h =
     [ "TFT_RESET", "_common_8h.html#af81ec4b4eb708da6c9c39a6c5aa1aa4b", null ],
     [ "TFT_SD_CS", "_common_8h.html#a0c02554e768e3ca4b84fbd07f1f1097b", null ],
     [ "TFT_WAIT", "_common_8h.html#a74cce026420775a3190fbf1ecb783b35", null ],
-    [ "VOL_SENSOR", "_common_8h.html#ac735ae65b04d7f1745e912d60a576668", null ]
+    [ "VOL_SENSOR", "_common_8h.html#ac735ae65b04d7f1745e912d60a576668", null ],
+    [ "TextBoxConfig::chillerTemp", "namespace_text_box_config.html#ab3f7a7862d002d3da8817b7417020899", null ],
+    [ "TextBoxConfig::elemOut", "namespace_text_box_config.html#a87c1083616f86d415ea2a282ffcb5d17", null ],
+    [ "TextBoxConfig::kettleTemp", "namespace_text_box_config.html#a35083d86b18a43f2c24af249f5f65ebb", null ],
+    [ "TextBoxConfig::MAIN", "namespace_text_box_config.html#ac69867d6ef0e9856865a16a9d9257a92", null ],
+    [ "TextBoxConfig::minChillerTemp", "namespace_text_box_config.html#ab951e12d64739db48a9daae3b54658e5", null ],
+    [ "TextBoxConfig::minVolume", "namespace_text_box_config.html#a056841c188e67a356812f0b18b63a79f", null ],
+    [ "TextBoxConfig::setTemp", "namespace_text_box_config.html#a72cf7ad5495b09754c1f13d45bd3664c", null ],
+    [ "TextBoxConfig::TEXTBOX_SHAPE", "namespace_text_box_config.html#a737a63c1f37979b99e94580300564cd9", null ],
+    [ "TextBoxConfig::volume", "namespace_text_box_config.html#a963eef2619d902eab8ebd21cc0d09fec", null ]
 ];

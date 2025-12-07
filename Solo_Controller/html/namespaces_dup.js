@@ -6,42 +6,7 @@ var namespaces_dup =
       [ "shortChirpError", "namespace_buzzer.html#a1ae277f16fe5970192959a62ae46d9f9", null ]
     ] ],
     [ "CB", "namespace_c_b.html", "namespace_c_b" ],
-    [ "create_ROM_image", "namespacecreate___r_o_m__image.html", [
-      [ "write_bmp", "namespacecreate___r_o_m__image.html#a5c73fda21c93e3742452220a6e8c19c6", null ],
-      [ "write_font", "namespacecreate___r_o_m__image.html#aad3a9c16c4c6e7aa73fb889992ad7e34", null ],
-      [ "write_h_preamble", "namespacecreate___r_o_m__image.html#adff637b7f6a559907e897d56c41de068", null ],
-      [ "write_RBG", "namespacecreate___r_o_m__image.html#a9a42d252dc0cb004de612a495cd8c8bd", null ],
-      [ "write_RGBA", "namespacecreate___r_o_m__image.html#abca48c5ea5f0b947dfcb2c2c2af6c6cc", null ],
-      [ "h_file", "namespacecreate___r_o_m__image.html#a4673918c6a1407ec140794f70260459e", null ],
-      [ "h_out", "namespacecreate___r_o_m__image.html#a195b3926d04c3555e36ee5e2bd9708dd", null ],
-      [ "inPath", "namespacecreate___r_o_m__image.html#ac794e9e41ebeb89da19da5303902f0b4", null ],
-      [ "pos", "namespacecreate___r_o_m__image.html#a03df083145a58b735749d248246d1de5", null ],
-      [ "ROM_file", "namespacecreate___r_o_m__image.html#a6bf0b3b17700a1830bfba0d462746dc3", null ],
-      [ "ROM_out", "namespacecreate___r_o_m__image.html#a865209db506dceb7d902c99c799c92df", null ]
-    ] ],
     [ "FT5316", "namespace_f_t5316.html", "namespace_f_t5316" ],
-    [ "parse_font_xml", "namespaceparse__font__xml.html", [
-      [ "convert_xml", "namespaceparse__font__xml.html#a22df17fdfe19df939493fe85d7a23118", null ],
-      [ "extractCharDefs", "namespaceparse__font__xml.html#a6b5ad7dca71223e5d57db716ca2f29b6", null ],
-      [ "extractKernings", "namespaceparse__font__xml.html#ab7a4e1b7f2c0ecd95f067fdf8999e590", null ]
-    ] ],
-    [ "runDoxygen", "namespacerun_doxygen.html", [
-      [ "replace_string_in_file", "namespacerun_doxygen.html#ae1499d03247a804f5fd97410157d5e02", null ],
-      [ "search_and_replace_in_directory", "namespacerun_doxygen.html#a758003410960918efa579c9ea5c14652", null ],
-      [ "bom_file", "namespacerun_doxygen.html#a5592c04106537bd09ee7a384b07d5661", null ],
-      [ "d", "namespacerun_doxygen.html#aafe6864018c27b0de54400e899cd08d5", null ],
-      [ "dest_dir", "namespacerun_doxygen.html#a516f597c9b1665e6b8dafdda74b6b7fb", null ],
-      [ "dest_file", "namespacerun_doxygen.html#ab6bc8ad3ce61f95c2e36b6a8b6bfd5bc", null ],
-      [ "directory_to_search", "namespacerun_doxygen.html#a8aaa59ba5afc4f1b6960355143dfcfa0", null ],
-      [ "doc_dir", "namespacerun_doxygen.html#a5a699bc75e9510f7764b03ec3013a321", null ],
-      [ "extension", "namespacerun_doxygen.html#aefb7cd0ffe03008420f4dac35e664c10", null ],
-      [ "HTML_DIR", "namespacerun_doxygen.html#a54551cd1b541206f42f319e42e9a630e", null ],
-      [ "images_dir", "namespacerun_doxygen.html#a216bcff733f64336ffd21c998fad9bbe", null ],
-      [ "new_string", "namespacerun_doxygen.html#a95db0383b88f56d45afa2ed79ed80b04", null ],
-      [ "old_string", "namespacerun_doxygen.html#a51653e3f0281fa5e4299c07d77ddc22a", null ],
-      [ "ROOT_DIR", "namespacerun_doxygen.html#a902043a92c110dd60ce7a2e44c8f357b", null ],
-      [ "s", "namespacerun_doxygen.html#a211944ede15bc7bc90ee1e2c03a72dd1", null ]
-    ] ],
     [ "Setup", "namespace_setup.html", [
       [ "menuSystem", "namespace_setup.html#ac52d05a0d4da6955007cb1098828ee40", null ],
       [ "pinConfig", "namespace_setup.html#a5686fb83fd9eea3e8c16226863de3598", null ],
@@ -50,8 +15,12 @@ var namespaces_dup =
     ] ],
     [ "Task", "namespace_task.html", "namespace_task" ],
     [ "Test", "namespace_test.html", [
+      [ "buttonGfx_loop", "namespace_test.html#a82a1b9318f300059944ad37b5884527e", null ],
+      [ "buttonGfx_setup", "namespace_test.html#aceab5a0ad0c7ec900bb9a1329bebbe10", null ],
       [ "canvas_loop", "namespace_test.html#ae3f92ec5e8cc16d9b898f3f5f7c1ea59", null ],
       [ "canvas_setup", "namespace_test.html#a0c8f09c30f883576d589d099a44f1714", null ],
+      [ "controller_loop", "namespace_test.html#af234dadc6e6c1c60bafd30a72183edf2", null ],
+      [ "controller_setup", "namespace_test.html#ab22e7cf36f772dd8e672a907ccf093d3", null ],
       [ "DMA_BlockTransfer_loop", "namespace_test.html#af7aa9903ca4f2b39e34e2f9337f029e4", null ],
       [ "DMA_BlockTransfer_setup", "namespace_test.html#ac8c93b0e00a27b6aebb95153e5c6a19d", null ],
       [ "errorMessage_loop", "namespace_test.html#a85365569ac53e849f50ec41442c8bb63", null ],
@@ -63,6 +32,7 @@ var namespaces_dup =
       [ "touch_loop", "namespace_test.html#a82bc1b16371bb1fcb6d152514dd69989", null ],
       [ "touch_setup", "namespace_test.html#a57c899123132f30d276a35a52f7a4899", null ]
     ] ],
+    [ "TextBoxConfig", "namespace_text_box_config.html", "namespace_text_box_config" ],
     [ "TFTM070A1", "namespace_t_f_t_m070_a1.html", [
       [ "Active_Window_WH", "namespace_t_f_t_m070_a1.html#a51e1ac2b5c3da4515bfadec232a4c6b0", null ],
       [ "Active_Window_XY", "namespace_t_f_t_m070_a1.html#a6a70519665a19e0042c7a81fc0469811", null ],
@@ -125,7 +95,7 @@ var namespaces_dup =
       [ "DMA_Transfer_Image_Block", "namespace_t_f_t_m070_a1.html#a53bea86b2c9868065c4698046fdbe644", null ],
       [ "DrawCircle_Fill", "namespace_t_f_t_m070_a1.html#a83d5425930b1bfd19b1f80bf58e79c01", null ],
       [ "DrawPixel", "namespace_t_f_t_m070_a1.html#a91df555c2ae3b837c68dc87f6b2639a5", null ],
-      [ "DrawSquare_Fill", "namespace_t_f_t_m070_a1.html#a5e2098f9cb2e3c5b0ea20b77b13a8fbd", null ],
+      [ "drawRect_Fill", "namespace_t_f_t_m070_a1.html#a9a5739b19f18895f0ad1b5a4e7630eab", null ],
       [ "Ellipse_Center_XY", "namespace_t_f_t_m070_a1.html#afd7fca245020ab04505c454bcca3f1d2", null ],
       [ "Ellipse_Radius_RxRy", "namespace_t_f_t_m070_a1.html#abf00f26479acf8045c25caa8b1606a76", null ],
       [ "EMTI_Flag", "namespace_t_f_t_m070_a1.html#aa024ccf27b4dde38b64a391a7860926b", null ],
@@ -315,7 +285,7 @@ var namespaces_dup =
       [ "Start_Triangle_Fill", "namespace_t_f_t_m070_a1.html#a80cdd482f45f4619119e473f68c03da5", null ],
       [ "Stop_PWM0", "namespace_t_f_t_m070_a1.html#a97c3e790545fa2a55beba79dac105e08", null ],
       [ "Stop_PWM1", "namespace_t_f_t_m070_a1.html#af463fd0de5657a76e38863281627d686", null ],
-      [ "System_Check_Temp", "namespace_t_f_t_m070_a1.html#a69c9b7a831d1871d910df65c639c8da0", null ],
+      [ "System_Check_Temp", "namespace_t_f_t_m070_a1.html#a275c2f83d798e0e11787e63eafe69a41", null ],
       [ "Text_Mode", "namespace_t_f_t_m070_a1.html#ad81b177546b6d208a0454ab7ca91a74c", null ],
       [ "TFT_16bit", "namespace_t_f_t_m070_a1.html#af06fbecfb8a54c6d49a1c1f5eb09db7c", null ],
       [ "Triangle_Point1_XY", "namespace_t_f_t_m070_a1.html#acdd45655a44b7b8fb8155c861b78ee60", null ],

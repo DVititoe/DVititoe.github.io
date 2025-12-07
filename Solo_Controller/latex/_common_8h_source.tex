@@ -1,17 +1,14 @@
 \doxysection{Common.\+h}
-\hypertarget{_common_8h_source}{}\label{_common_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/Common.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/Common.h}}
+\hypertarget{_common_8h_source}{}\label{_common_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/include/Common.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/include/Common.h}}
 \mbox{\hyperlink{_common_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
-\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Common.h}}
-\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @brief\ Common\ definitions\ used\ throughout\ the\ SoloContoller\ app.}}
-\DoxyCodeLine{00004\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00001\ \textcolor{comment}{/******************************************************************************/}}
 \DoxyCodeLine{00005\ }
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ COMMON\_HEADER}}
 \DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ COMMON\_HEADER}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_f_t_m070_a1_8h}{TFTM070A1.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_f_t_m070_a1_8h}{TFTM070A1.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_definitions_8h}{Definitions.h}}"{}}}
 \DoxyCodeLine{00011\ }
 \DoxyCodeLine{00012\ \textcolor{comment}{//\ Display\ and\ Touch\ Controller}}
 \DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ CTP\_INT\ 2\ \ \ }}
@@ -30,33 +27,46 @@
 \DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ MOSI\ 51\ }}
 \DoxyCodeLine{00027\ }
 \DoxyCodeLine{00028\ \textcolor{comment}{//\ Controller\ pins}}
-\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ MCU\_RST\_TFT\ A0\ }}
-\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ ALARM\ A1\ \ \ \ \ \ \ }}
-\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ VOL\_SENSOR\ A15\ }}
-\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ ELEM\_CNTRL\ 23\ }}
-\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ INTERLOCK\_STATUS\ 25\ }}
-\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ AUX\_OUT\ 31\ }}
-\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ PUMP\_OUT\ 33\ }}
-\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ CONTACTOR\_STATUS\ 37\ }}
-\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ELEM\_SWITCH\_LED\ 39\ }}
-\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ BUZZER\ 41\ }}
-\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ KETTLE\_CS\ 47\ }}
-\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ CHILLER\_CS\ 49\ }}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ MCU\_RST\_TFT\ A0\ \ \ \ \ \ }}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ ALARM\ A1\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ VOL\_SENSOR\ A15\ \ \ \ \ \ }}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ ELEM\_CNTRL\ 39\ \ \ \ \ \ \ }}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ INTERLOCK\_STATUS\ A2\ }}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ AUX\_OUT\ 35\ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ PUMP\_OUT\ 37\ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ CONTACTOR\_STATUS\ A3\ }}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ELEM\_SWITCH\_LED\ 39\ \ }}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ BUZZER\ 41\ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ KETTLE\_CS\ 47\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ CHILLER\_CS\ 49\ \ \ \ \ \ \ }}
 \DoxyCodeLine{00041\ }
-\DoxyCodeLine{00043\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_r_o_m___image}{ROM\_Image}}}
-\DoxyCodeLine{00044\ \{}
-\DoxyCodeLine{00045\ \ \ uint32\_t\ \mbox{\hyperlink{struct_r_o_m___image_a3e2d56ab7c30ed9e9f929da1ab200f72}{address}};}
-\DoxyCodeLine{00046\ \ \ uint16\_t\ \mbox{\hyperlink{struct_r_o_m___image_a2abf17e4c0362f2488ffa5ee0749791b}{width}};}
-\DoxyCodeLine{00047\ \ \ uint16\_t\ \mbox{\hyperlink{struct_r_o_m___image_a537025ded8b244a33250bcc71806fe15}{height}};}
-\DoxyCodeLine{00048\ \};}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00051\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_block___image}{Block\_Image}}}
-\DoxyCodeLine{00052\ \{}
-\DoxyCodeLine{00053\ \ \ uint16\_t\ \mbox{\hyperlink{struct_block___image_a135650607f7dda30546a44b26ebf18df}{x}};}
-\DoxyCodeLine{00054\ \ \ uint16\_t\ \mbox{\hyperlink{struct_block___image_a66541f503644aac5586a3b01fb1675c5}{y}};}
-\DoxyCodeLine{00055\ \ \ uint16\_t\ \mbox{\hyperlink{struct_block___image_a9005baa7a8eb752cacfbff8209a627d5}{width}};}
-\DoxyCodeLine{00056\ \ \ uint16\_t\ \mbox{\hyperlink{struct_block___image_a99408a133b4e40af0b4a46058f113b68}{height}};}
-\DoxyCodeLine{00057\ \};}
-\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00045\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_text_box_config}{TextBoxConfig}}}
+\DoxyCodeLine{00046\ \{}
+\DoxyCodeLine{00047\ \textcolor{comment}{\ \ /******************************************************************************/}}
+\DoxyCodeLine{00051\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_text_box_config_1_1_text_box___config}{TextBox\_Config}}}
+\DoxyCodeLine{00052\ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unitsWidth,\ height,\ baseline}}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ \mbox{\hyperlink{struct_text_box_config_1_1_text_box___config_a8716631f63a3e859de7416e5a6f60dc4}{MonoFonto\_180\_90\_Config}}\ =\ \{60,\ 155,\ 145\};}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ \mbox{\hyperlink{struct_text_box_config_1_1_text_box___config_ae504a3ec574367ca7d8c29576fc74d0a}{MonoFonto\_180\_64\_Config}}\ =\ \{50,\ 155,\ 145\};}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ \mbox{\hyperlink{struct_text_box_config_1_1_text_box___config_a6461e2e0da54938ce8db6e085d84269c}{MonoFonto\_90\_32\_Config}}\ =\ \{35,\ 75,\ 68\};}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ \mbox{\hyperlink{struct_text_box_config_1_1_text_box___config_a1baed8745f0783c9869ea46778df9342}{MonoFonto\_64\_20\_Config}}\ =\ \{25,\ 60,\ 50\};}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ \mbox{\hyperlink{struct_text_box_config_1_1_text_box___config_a95246aac433862ddb799c10411a9ff10}{MonoFonto\_64\_32\_Config}}\ =\ \{50,\ 60,\ 50\};}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{struct_shape__t}{Shape\_t}}\ \mbox{\hyperlink{struct_text_box_config_1_1_text_box___config_abec99e0ed9fa174229303dd081f934a4}{MonoFonto\_64\_32sm\_Config}}\ =\ \{25,\ 60,\ 50\};\ \textcolor{comment}{//\ Smaller\ Units\ width}}
+\DoxyCodeLine{00060\ \ \ \}\ \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{TEXTBOX\_SHAPE}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00063\ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x,\ \ y,\ textWidth,\ shape,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TextFont,\ \ \ \ UnitsFont}}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ \mbox{\hyperlink{namespace_text_box_config_a35083d86b18a43f2c24af249f5f65ebb}{kettleTemp}}\ =\ \{52,\ 70,\ 319,\ \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{TEXTBOX\_SHAPE}}.MonoFonto\_180\_90\_Config,\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca0f03c52023388c5ec8ec57d87f8c87be}{FontList::FontID::Red180}},\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca4145d8644c5c13a0a704e89fcfca488e}{FontList::FontID::White90}}\};}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ \mbox{\hyperlink{namespace_text_box_config_a72cf7ad5495b09754c1f13d45bd3664c}{setTemp}}\ =\ \{198,\ 242,\ 156,\ \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{TEXTBOX\_SHAPE}}.MonoFonto\_64\_32sm\_Config,\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafaccaf888f47cba94e2db56415c8548f66a5e}{FontList::FontID::Red64}},\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\};}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ \mbox{\hyperlink{namespace_text_box_config_a87c1083616f86d415ea2a282ffcb5d17}{elemOut}}\ =\ \{198,\ 317,\ 156,\ \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{TEXTBOX\_SHAPE}}.MonoFonto\_64\_32sm\_Config,\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafaccaf888f47cba94e2db56415c8548f66a5e}{FontList::FontID::Red64}},\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\};}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ \mbox{\hyperlink{namespace_text_box_config_a963eef2619d902eab8ebd21cc0d09fec}{volume}}\ =\ \{710,\ 40,\ 145,\ \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{TEXTBOX\_SHAPE}}.MonoFonto\_64\_32\_Config,\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{FontList::FontID::Blue64}},\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\};}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ \mbox{\hyperlink{namespace_text_box_config_a056841c188e67a356812f0b18b63a79f}{minVolume}}\ =\ \{710,\ 118,\ 145,\ \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{TEXTBOX\_SHAPE}}.MonoFonto\_64\_32\_Config,\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{FontList::FontID::Blue64}},\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\};}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ \mbox{\hyperlink{namespace_text_box_config_ab3f7a7862d002d3da8817b7417020899}{chillerTemp}}\ =\ \{710,\ 240,\ 145,\ \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{TEXTBOX\_SHAPE}}.MonoFonto\_64\_32\_Config,\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{FontList::FontID::Blue64}},\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\};}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}}\ \mbox{\hyperlink{namespace_text_box_config_ab951e12d64739db48a9daae3b54658e5}{minChillerTemp}}\ =\ \{710,\ 318,\ 145,\ \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{TEXTBOX\_SHAPE}}.MonoFonto\_64\_32\_Config,\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{FontList::FontID::Blue64}},\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\};}
+\DoxyCodeLine{00072\ \ \ \}\ \mbox{\hyperlink{namespace_text_box_config_ac69867d6ef0e9856865a16a9d9257a92}{MAIN}};\ }
+\DoxyCodeLine{00073\ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

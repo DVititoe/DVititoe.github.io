@@ -1,9 +1,17 @@
 var searchData=
 [
-  ['2_2e0_20hardware_5farchitecture_2emd_0',['2.0 Hardware_Architecture.md',['../2_80_01_hardware___architecture_8md.html',1,'']]],
-  ['2_2e2_20display_20enclosure_20design_2emd_1',['2.2 Display Enclosure Design.md',['../2_82_01_display_01_enclosure_01_design_8md.html',1,'']]],
-  ['2_2e2_2e2_20controller_5finterface_5fboard_2emd_2',['2.2.2 Controller_Interface_Board.md',['../2_82_82_01_controller___interface___board_8md.html',1,'']]],
-  ['2_2e2_2e4_20display_20enclosure_20parts_20list_2emd_3',['2.2.4 Display Enclosure Parts List.md',['../2_82_84_01_display_01_enclosure_01_parts_01_list_8md.html',1,'']]],
-  ['2_2e3_20sensor_20breakout_20enclosure_20design_2emd_4',['2.3 Sensor Breakout Enclosure Design.md',['../2_83_01_sensor_01_breakout_01_enclosure_01_design_8md.html',1,'']]],
-  ['2560_20rev_203_20microcontroller_5',['Mega 2560, Rev 3 Microcontroller',['../_display__enclosure__design.html#autotoc_md12',1,'']]]
+  ['active_5fwindow_5fwh_0',['Active_Window_WH',['../namespace_t_f_t_m070_a1.html#a51e1ac2b5c3da4515bfadec232a4c6b0',1,'TFTM070A1']]],
+  ['active_5fwindow_5fxy_1',['Active_Window_XY',['../namespace_t_f_t_m070_a1.html#a6a70519665a19e0042c7a81fc0469811',1,'TFTM070A1']]],
+  ['address_2',['address',['../struct_r_o_m___image.html#a3e2d56ab7c30ed9e9f929da1ab200f72',1,'ROM_Image::address'],['../class_canvas.html#add0700f4da6206e04fdf90eecd1b8423',1,'Canvas::address()']]],
+  ['alarm_3',['ALARM',['../_common_8h.html#a9e27e49f40e7acbb55bb085f15dabd99',1,'Common.h']]],
+  ['alarmmgr_2ecpp_4',['AlarmMgr.cpp',['../_alarm_mgr_8cpp.html',1,'']]],
+  ['alarmmgr_2eh_5',['AlarmMgr.h',['../_alarm_mgr_8h.html',1,'']]],
+  ['align_6',['align',['../class_dynamic_text.html#adffaa1d1407dc438644857cea8f4a528',1,'DynamicText']]],
+  ['arduino_5fspi_7',['Arduino_SPI',['../_t_f_t_m070_a1_8h.html#a3f3dd4c46ad2b95cce5f10e0ef0afa12',1,'TFTM070A1.h']]],
+  ['auto_5freload_5fpwm0_8',['Auto_Reload_PWM0',['../namespace_t_f_t_m070_a1.html#adfaf3773080e8111b6a9afcfb4148652',1,'TFTM070A1']]],
+  ['auto_5freload_5fpwm1_9',['Auto_Reload_PWM1',['../namespace_t_f_t_m070_a1.html#a80330148455d8396a7f0596c238f089e',1,'TFTM070A1']]],
+  ['autotune_10',['autoTune',['../namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d.html#a36219e8a8a7fc85b4d348ed05ed51ffa',1,'CB::SETUP::PID']]],
+  ['aux_5fout_11',['AUX_OUT',['../_common_8h.html#a4e9e3f3ee9e8d7161ef5a895d990fd7b',1,'Common.h']]],
+  ['auxoff_12',['auxOff',['../namespace_c_b_1_1_m_a_i_n.html#acc81f53ab278bce0f8e34a1cc19d4008',1,'CB::MAIN']]],
+  ['auxon_13',['auxOn',['../namespace_c_b_1_1_m_a_i_n.html#a6ef53673488891549fd90673f9895217',1,'CB::MAIN']]]
 ];

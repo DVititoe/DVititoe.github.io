@@ -111,6 +111,9 @@ $(function(){initNavTree('class_canvas.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Provides higher level TFT graphic functionality used by the menu system.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_canvas_8h_source.html">Canvas.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Canvas:</div>
@@ -118,8 +121,8 @@ Inheritance diagram for Canvas:</div>
  <div class="center">
   <img src="class_canvas.png" usemap="#Canvas_map" alt=""/>
   <map id="Canvas_map" name="Canvas_map">
-<area href="class_d_r_a_m___canvas.html" alt="DRAM_Canvas" shape="rect" coords="0,56,99,80"/>
-<area href="class_r_o_m___canvas.html" alt="ROM_Canvas" shape="rect" coords="109,56,208,80"/>
+<area href="class_d_r_a_m___canvas.html" title="Variation of the Canvas class that can copy imagery from another canvas." alt="DRAM_Canvas" shape="rect" coords="0,56,99,80"/>
+<area href="class_r_o_m___canvas.html" title="A variation of the Canvas class that can load imagery from Flash ROM." alt="ROM_Canvas" shape="rect" coords="109,56,208,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -171,23 +174,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ca049655ab1b5f0626421db9833e405" id="r_a8ca049655ab1b5f0626421db9833e405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ca049655ab1b5f0626421db9833e405">BTE_CopyFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;source, uint16_t Src_x0, uint16_t Src_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="#a8518cf311272b0d4effe0fe1f89a5091">height</a>) const</td></tr>
 <tr class="memdesc:a8ca049655ab1b5f0626421db9833e405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses BTE engine to copy imagery from <code class="param">source</code> canvas to this one.  <br /></td></tr>
 <tr class="separator:a8ca049655ab1b5f0626421db9833e405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af023822b29932eae59e4cfb829a13e" id="r_a1af023822b29932eae59e4cfb829a13e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1af023822b29932eae59e4cfb829a13e">BTE_AddImageFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;S0, uint16_t S0_x0, uint16_t S0_y0, const <a class="el" href="class_canvas.html">Canvas</a> &amp;S1, uint16_t S1_x0, uint16_t S1_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="#a8518cf311272b0d4effe0fe1f89a5091">height</a>, bool S1OpacityOn=false) const</td></tr>
+<tr class="memdesc:a1af023822b29932eae59e4cfb829a13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
+<tr class="separator:a1af023822b29932eae59e4cfb829a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75344e1c4f131b8731f539dbf1446dde" id="r_a75344e1c4f131b8731f539dbf1446dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75344e1c4f131b8731f539dbf1446dde">BTE_AddImageFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;source, uint16_t Src_x0, uint16_t Src_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="#a8518cf311272b0d4effe0fe1f89a5091">height</a>) const</td></tr>
-<tr class="memdesc:a75344e1c4f131b8731f539dbf1446dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an opacity encoded image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
+<tr class="memdesc:a75344e1c4f131b8731f539dbf1446dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
 <tr class="separator:a75344e1c4f131b8731f539dbf1446dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a753719f9ab04411f55d82e02a67980e7" id="r_a753719f9ab04411f55d82e02a67980e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a753719f9ab04411f55d82e02a67980e7">BTE_AddTransparantImageFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;source, uint16_t Src_x0, uint16_t Src_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="#a8518cf311272b0d4effe0fe1f89a5091">height</a>) const</td></tr>
-<tr class="memdesc:a753719f9ab04411f55d82e02a67980e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an opacity encoded image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
-<tr class="separator:a753719f9ab04411f55d82e02a67980e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ffbd334abdbee8a491091f07d9ac3b" id="r_a49ffbd334abdbee8a491091f07d9ac3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49ffbd334abdbee8a491091f07d9ac3b">BTE_AddTransparentImageFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;source, uint16_t Src_x0, uint16_t Src_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="#a8518cf311272b0d4effe0fe1f89a5091">height</a>) const</td></tr>
+<tr class="memdesc:a49ffbd334abdbee8a491091f07d9ac3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an opacity encoded image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
+<tr class="separator:a49ffbd334abdbee8a491091f07d9ac3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aebf18fd93df0ab969325943a765366f3" id="r_aebf18fd93df0ab969325943a765366f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebf18fd93df0ab969325943a765366f3">BL_ON</a> (void)</td></tr>
-<tr class="memdesc:aebf18fd93df0ab969325943a765366f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight on.  <br /></td></tr>
-<tr class="separator:aebf18fd93df0ab969325943a765366f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2edb82c8c8a1a129182c68a8360616b3" id="r_a2edb82c8c8a1a129182c68a8360616b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2edb82c8c8a1a129182c68a8360616b3">BL_OFF</a> (void)</td></tr>
-<tr class="memdesc:a2edb82c8c8a1a129182c68a8360616b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight off.  <br /></td></tr>
-<tr class="separator:a2edb82c8c8a1a129182c68a8360616b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbb71b47ce9fecce4bbc254f813989d" id="r_a4dbb71b47ce9fecce4bbc254f813989d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dbb71b47ce9fecce4bbc254f813989d">BL_ON</a> (void)</td></tr>
+<tr class="memdesc:a4dbb71b47ce9fecce4bbc254f813989d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight on.  <br /></td></tr>
+<tr class="separator:a4dbb71b47ce9fecce4bbc254f813989d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213caea00700614848fc998ead6db9f0" id="r_a213caea00700614848fc998ead6db9f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a213caea00700614848fc998ead6db9f0">BL_OFF</a> (void)</td></tr>
+<tr class="memdesc:a213caea00700614848fc998ead6db9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight off.  <br /></td></tr>
+<tr class="separator:a213caea00700614848fc998ead6db9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6db455aef96b2f06acddc9ef19a18572" id="r_a6db455aef96b2f06acddc9ef19a18572"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6db455aef96b2f06acddc9ef19a18572">nextAddress</a> (void)</td></tr>
-<tr class="memdesc:a6db455aef96b2f06acddc9ef19a18572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location in DRAM whether the next image <a class="el" href="class_canvas.html">Canvas</a> will be placed.  <br /></td></tr>
+<tr class="memdesc:a6db455aef96b2f06acddc9ef19a18572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location in DRAM whether the next image <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> will be placed.  <br /></td></tr>
 <tr class="separator:a6db455aef96b2f06acddc9ef19a18572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -218,14 +224,20 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aebdea765412fef5c829765f1ac93fb74" id="r_aebdea765412fef5c829765f1ac93fb74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebdea765412fef5c829765f1ac93fb74">text</a> (uint16_t x0, uint16_t y0, uint16_t fColor, uint16_t bColor, const char *text, bool small=false) const</td></tr>
 <tr class="memdesc:aebdea765412fef5c829765f1ac93fb74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws text onto the canvas.  <br /></td></tr>
 <tr class="separator:aebdea765412fef5c829765f1ac93fb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab06a8c9dd5b8b146077268cf729f2cd" id="r_aab06a8c9dd5b8b146077268cf729f2cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab06a8c9dd5b8b146077268cf729f2cd">drawSquare</a> (unsigned short x0, unsigned short y0, unsigned short x1, unsigned short y1, unsigned short color) const</td></tr>
-<tr class="memdesc:aab06a8c9dd5b8b146077268cf729f2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an unfilled square.  <br /></td></tr>
-<tr class="separator:aab06a8c9dd5b8b146077268cf729f2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a505e90108d0338e708ff7e41715eb" id="r_ad8a505e90108d0338e708ff7e41715eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8a505e90108d0338e708ff7e41715eb">drawRect</a> (unsigned short x0, unsigned short y0, unsigned short x1, unsigned short y1, unsigned short color) const</td></tr>
+<tr class="memdesc:ad8a505e90108d0338e708ff7e41715eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an unfilled square.  <br /></td></tr>
+<tr class="separator:ad8a505e90108d0338e708ff7e41715eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ba1d59a50063f0bf5936fc675b4bd4" id="r_a04ba1d59a50063f0bf5936fc675b4bd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04ba1d59a50063f0bf5936fc675b4bd4">drawRoundedRect</a> (unsigned short x0, unsigned short y0, unsigned short x1, unsigned short y1, unsigned short color, unsigned short radius, bool fill=false) const</td></tr>
+<tr class="memdesc:a04ba1d59a50063f0bf5936fc675b4bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an unfilled rounded square.  <br /></td></tr>
+<tr class="separator:a04ba1d59a50063f0bf5936fc675b4bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f6299f7633b793fe345840b3600678" id="r_a10f6299f7633b793fe345840b3600678"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10f6299f7633b793fe345840b3600678">drawLine</a> (uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color)</td></tr>
 <tr class="memdesc:a10f6299f7633b793fe345840b3600678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a line onto the display.  <br /></td></tr>
 <tr class="separator:a10f6299f7633b793fe345840b3600678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provides higher level TFT graphic functionality used by the menu system. </p>
+<p>The LT7683 chip can create multiple canvass for holding graphics. Callers can place graphics onto the canvass and they can use the graphics engine of the LT7683 chip to draw geometric shapes. When ready, the caller can then signify which canvas is to be displayed within the TFT window. The <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> class provides a higher level interface to the LT7683 chip, providing methods for creating, managing, and using these canvass. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b3a7c17161f72d4f2332021d6e866e9" name="a3b3a7c17161f72d4f2332021d6e866e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b3a7c17161f72d4f2332021d6e866e9">&#9670;&#160;</a></span>Canvas() <span class="overload">[1/3]</span></h2>
 
@@ -401,8 +413,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2edb82c8c8a1a129182c68a8360616b3" name="a2edb82c8c8a1a129182c68a8360616b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2edb82c8c8a1a129182c68a8360616b3">&#9670;&#160;</a></span>BL_OFF()</h2>
+<a id="a213caea00700614848fc998ead6db9f0" name="a213caea00700614848fc998ead6db9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213caea00700614848fc998ead6db9f0">&#9670;&#160;</a></span>BL_OFF()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -411,7 +423,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Canvas::BL_OFF </td>
+          <td class="memname">void Canvas::BL_OFF </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -419,7 +431,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -429,8 +441,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aebf18fd93df0ab969325943a765366f3" name="aebf18fd93df0ab969325943a765366f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebf18fd93df0ab969325943a765366f3">&#9670;&#160;</a></span>BL_ON()</h2>
+<a id="a4dbb71b47ce9fecce4bbc254f813989d" name="a4dbb71b47ce9fecce4bbc254f813989d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbb71b47ce9fecce4bbc254f813989d">&#9670;&#160;</a></span>BL_ON()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,7 +451,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Canvas::BL_ON </td>
+          <td class="memname">void Canvas::BL_ON </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -447,7 +459,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -457,8 +469,100 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1af023822b29932eae59e4cfb829a13e" name="a1af023822b29932eae59e4cfb829a13e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af023822b29932eae59e4cfb829a13e">&#9670;&#160;</a></span>BTE_AddImageFrom() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::BTE_AddImageFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_canvas.html">Canvas</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>S0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>S0_x0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>S0_y0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_canvas.html">Canvas</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>S1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>S1_x0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>S1_y0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>DT_x0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>DT_y0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>S1OpacityOn</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds image from <code class="param">source</code> to the image on this canvas. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">S0</td><td><a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> containing the S0 source imagery </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S0_x0</td><td>Upper left x-coordinate of the S0 image block within <code class="param">source</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S0_y0</td><td>Upper left y-coordinate of the S0 image block within <code class="param">source</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S1</td><td><a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> containing the S1 source imagery </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S1_x0</td><td>Upper left x-coordinate of the S1 image block within <code class="param">source</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S1_y0</td><td>Upper left y-coordinate of the S1 image block within <code class="param">source</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">DT_x0</td><td>Upper left x-coordinate in this canvas where image block is to be copied </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">DT_y0</td><td>Upper left y-coordinate in this canvas where image block is to be copied </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Width of the image block to be transferred </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Height of the image block to be transferred </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S1OpacityOn</td><td>If true, S1 image is treated as a 16bpp image with encoded opacity. If false, S1 is a standard 16bpp image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a75344e1c4f131b8731f539dbf1446dde" name="a75344e1c4f131b8731f539dbf1446dde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75344e1c4f131b8731f539dbf1446dde">&#9670;&#160;</a></span>BTE_AddImageFrom()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75344e1c4f131b8731f539dbf1446dde">&#9670;&#160;</a></span>BTE_AddImageFrom() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,7 +613,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adds an opacity encoded image from <code class="param">source</code> to the image on this canvas. </p>
+<p>Adds image from <code class="param">source</code> to the image on this canvas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>canvas containg the source imagery </td></tr>
@@ -525,8 +629,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a753719f9ab04411f55d82e02a67980e7" name="a753719f9ab04411f55d82e02a67980e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a753719f9ab04411f55d82e02a67980e7">&#9670;&#160;</a></span>BTE_AddTransparantImageFrom()</h2>
+<a id="a49ffbd334abdbee8a491091f07d9ac3b" name="a49ffbd334abdbee8a491091f07d9ac3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ffbd334abdbee8a491091f07d9ac3b">&#9670;&#160;</a></span>BTE_AddTransparentImageFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,7 +639,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Canvas::BTE_AddTransparantImageFrom </td>
+          <td class="memname">void Canvas::BTE_AddTransparentImageFrom </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_canvas.html">Canvas</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
         </tr>
@@ -794,10 +898,10 @@ Protected Member Functions</h2></td></tr>
 <p>Gneralized ROP operation. This assumes that object calling this method is the destimation DT canvas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">S0</td><td><a class="el" href="class_canvas.html">Canvas</a> containg the S0 source imagery </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S0</td><td><a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> containg the S0 source imagery </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">S0_x0</td><td>Upper left x-coordinate of image block within <code class="param">S0</code> to be processed by BTE </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">S0_y0</td><td>Upper left y-coodrinate of image block within <code class="param">S0</code> to be processed by BTE </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">S1</td><td><a class="el" href="class_canvas.html">Canvas</a> containg the S1 source imagery </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">S1</td><td><a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> containg the S1 source imagery </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">S1_x0</td><td>Upper left x-coordinate of image block within <code class="param">S1</code> to be processed by BTE </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">S1_y0</td><td>Upper left y-coodrinate of image block within <code class="param">S1</code> to be processed by BTE </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">DT_x0</td><td>Upper left x-coordinate where the final image is to placed within this canvas </td></tr>
@@ -1043,14 +1147,14 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aab06a8c9dd5b8b146077268cf729f2cd" name="aab06a8c9dd5b8b146077268cf729f2cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab06a8c9dd5b8b146077268cf729f2cd">&#9670;&#160;</a></span>drawSquare()</h2>
+<a id="ad8a505e90108d0338e708ff7e41715eb" name="ad8a505e90108d0338e708ff7e41715eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a505e90108d0338e708ff7e41715eb">&#9670;&#160;</a></span>drawRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Canvas::drawSquare </td>
+          <td class="memname">void Canvas::drawRect </td>
           <td>(</td>
           <td class="paramtype">unsigned short</td>          <td class="paramname"><span class="paramname"><em>x0</em></span>, </td>
         </tr>
@@ -1085,6 +1189,66 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x1</td><td>LR x-coordinate </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y1</td><td>LR y-coordinate </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>16-bit color </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04ba1d59a50063f0bf5936fc675b4bd4" name="a04ba1d59a50063f0bf5936fc675b4bd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ba1d59a50063f0bf5936fc675b4bd4">&#9670;&#160;</a></span>drawRoundedRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawRoundedRect </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short</td>          <td class="paramname"><span class="paramname"><em>x0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short</td>          <td class="paramname"><span class="paramname"><em>y0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short</td>          <td class="paramname"><span class="paramname"><em>radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fill</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws an unfilled rounded square. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x0</td><td>UL x-coordinate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y0</td><td>UL y-coordinate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x1</td><td>LR x-coordinate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y1</td><td>LR y-coordinate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>16-bit color </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>Radius of the rounded corners </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fill</td><td>(Optional) If true, the rounded rectangle is filled </td></tr>
   </table>
   </dd>
 </dl>
@@ -1174,7 +1338,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Location in DRAM whether the next image <a class="el" href="class_canvas.html">Canvas</a> will be placed. </p>
+<p>Location in DRAM whether the next image <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> will be placed. </p>
 <dl class="section user"><dt>Parameters</dt><dd>None. </dd></dl>
 
 </div>
@@ -1351,8 +1515,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_canvas_8h_source.html">Canvas.h</a></li>
-<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_canvas_8cpp.html">Canvas.cpp</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/<a class="el" href="_canvas_8h_source.html">Canvas.h</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/<a class="el" href="_canvas_8cpp.html">Canvas.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

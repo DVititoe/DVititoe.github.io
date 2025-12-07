@@ -5,7 +5,7 @@
 \item 
 \mbox{\hyperlink{namespacecreate___r_o_m__image_a9a42d252dc0cb004de612a495cd8c8bd}{write\+\_\+\+RBG}} (img, \mbox{\hyperlink{namespacecreate___r_o_m__image_a865209db506dceb7d902c99c799c92df}{ROM\+\_\+out}}, \mbox{\hyperlink{namespacecreate___r_o_m__image_a03df083145a58b735749d248246d1de5}{pos}})
 \item 
-\mbox{\hyperlink{namespacecreate___r_o_m__image_abca48c5ea5f0b947dfcb2c2c2af6c6cc}{write\+\_\+\+RGBA}} (img, \mbox{\hyperlink{namespacecreate___r_o_m__image_a865209db506dceb7d902c99c799c92df}{ROM\+\_\+out}}, padding, \mbox{\hyperlink{namespacecreate___r_o_m__image_a03df083145a58b735749d248246d1de5}{pos}})
+\mbox{\hyperlink{namespacecreate___r_o_m__image_a3bed87850034f1c6ffd1b6e744a146f5}{write\+\_\+\+Alpha}} (img, \mbox{\hyperlink{namespacecreate___r_o_m__image_a865209db506dceb7d902c99c799c92df}{ROM\+\_\+out}}, padding, \mbox{\hyperlink{namespacecreate___r_o_m__image_a03df083145a58b735749d248246d1de5}{pos}})
 \item 
 \mbox{\hyperlink{namespacecreate___r_o_m__image_a5c73fda21c93e3742452220a6e8c19c6}{write\+\_\+bmp}} (infile, \mbox{\hyperlink{namespacecreate___r_o_m__image_a865209db506dceb7d902c99c799c92df}{ROM\+\_\+out}}, \mbox{\hyperlink{namespacecreate___r_o_m__image_a195b3926d04c3555e36ee5e2bd9708dd}{h\+\_\+out}}, \mbox{\hyperlink{namespacecreate___r_o_m__image_a03df083145a58b735749d248246d1de5}{pos}})
 \item 
@@ -20,7 +20,7 @@ str \mbox{\hyperlink{namespacecreate___r_o_m__image_a6bf0b3b17700a1830bfba0d4627
 \item 
 \mbox{\hyperlink{namespacecreate___r_o_m__image_a865209db506dceb7d902c99c799c92df}{ROM\+\_\+out}} = open(\mbox{\hyperlink{namespacecreate___r_o_m__image_a6bf0b3b17700a1830bfba0d462746dc3}{ROM\+\_\+file}}, "{}wb"{})
 \item 
-str \mbox{\hyperlink{namespacecreate___r_o_m__image_a4673918c6a1407ec140794f70260459e}{h\+\_\+file}} = \textquotesingle{}..\textbackslash{}\textbackslash{}include\textbackslash{}\textbackslash{}\+ROM\+\_\+\+Config.\+h\textquotesingle{}
+str \mbox{\hyperlink{namespacecreate___r_o_m__image_a4673918c6a1407ec140794f70260459e}{h\+\_\+file}} = \textquotesingle{}..\textbackslash{}\textbackslash{}src\textbackslash{}\textbackslash{}\+Display\textbackslash{}\textbackslash{}include\textbackslash{}\textbackslash{}\+ROM\+\_\+\+Config.\+h\textquotesingle{}
 \item 
 \mbox{\hyperlink{namespacecreate___r_o_m__image_a195b3926d04c3555e36ee5e2bd9708dd}{h\+\_\+out}} = open(\mbox{\hyperlink{namespacecreate___r_o_m__image_a4673918c6a1407ec140794f70260459e}{h\+\_\+file}}, "{}w"{})
 \item 
@@ -31,6 +31,12 @@ str \mbox{\hyperlink{namespacecreate___r_o_m__image_ac794e9e41ebeb89da19da530390
 
 
 \doxysubsection{Function Documentation}
+\Hypertarget{namespacecreate___r_o_m__image_a3bed87850034f1c6ffd1b6e744a146f5}\index{create\_ROM\_image@{create\_ROM\_image}!write\_Alpha@{write\_Alpha}}
+\index{write\_Alpha@{write\_Alpha}!create\_ROM\_image@{create\_ROM\_image}}
+\doxysubsubsection{\texorpdfstring{write\_Alpha()}{write\_Alpha()}}
+{\footnotesize\ttfamily \label{namespacecreate___r_o_m__image_a3bed87850034f1c6ffd1b6e744a146f5} 
+create\+\_\+\+ROM\+\_\+image.\+write\+\_\+\+Alpha (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{ROM\+\_\+out}{, }\item[{}]{padding}{, }\item[{}]{pos}{}\end{DoxyParamCaption})}
+
 \Hypertarget{namespacecreate___r_o_m__image_a5c73fda21c93e3742452220a6e8c19c6}\index{create\_ROM\_image@{create\_ROM\_image}!write\_bmp@{write\_bmp}}
 \index{write\_bmp@{write\_bmp}!create\_ROM\_image@{create\_ROM\_image}}
 \doxysubsubsection{\texorpdfstring{write\_bmp()}{write\_bmp()}}
@@ -55,12 +61,6 @@ create\+\_\+\+ROM\+\_\+image.\+write\+\_\+h\+\_\+preamble (\begin{DoxyParamCapti
 {\footnotesize\ttfamily \label{namespacecreate___r_o_m__image_a9a42d252dc0cb004de612a495cd8c8bd} 
 create\+\_\+\+ROM\+\_\+image.\+write\+\_\+\+RBG (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{ROM\+\_\+out}{, }\item[{}]{pos}{}\end{DoxyParamCaption})}
 
-\Hypertarget{namespacecreate___r_o_m__image_abca48c5ea5f0b947dfcb2c2c2af6c6cc}\index{create\_ROM\_image@{create\_ROM\_image}!write\_RGBA@{write\_RGBA}}
-\index{write\_RGBA@{write\_RGBA}!create\_ROM\_image@{create\_ROM\_image}}
-\doxysubsubsection{\texorpdfstring{write\_RGBA()}{write\_RGBA()}}
-{\footnotesize\ttfamily \label{namespacecreate___r_o_m__image_abca48c5ea5f0b947dfcb2c2c2af6c6cc} 
-create\+\_\+\+ROM\+\_\+image.\+write\+\_\+\+RGBA (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{ROM\+\_\+out}{, }\item[{}]{padding}{, }\item[{}]{pos}{}\end{DoxyParamCaption})}
-
 
 
 \doxysubsection{Variable Documentation}
@@ -68,7 +68,7 @@ create\+\_\+\+ROM\+\_\+image.\+write\+\_\+\+RGBA (\begin{DoxyParamCaption}\item[
 \index{h\_file@{h\_file}!create\_ROM\_image@{create\_ROM\_image}}
 \doxysubsubsection{\texorpdfstring{h\_file}{h\_file}}
 {\footnotesize\ttfamily \label{namespacecreate___r_o_m__image_a4673918c6a1407ec140794f70260459e} 
-str create\+\_\+\+ROM\+\_\+image.\+h\+\_\+file = \textquotesingle{}..\textbackslash{}\textbackslash{}include\textbackslash{}\textbackslash{}\+ROM\+\_\+\+Config.\+h\textquotesingle{}}
+str create\+\_\+\+ROM\+\_\+image.\+h\+\_\+file = \textquotesingle{}..\textbackslash{}\textbackslash{}src\textbackslash{}\textbackslash{}\+Display\textbackslash{}\textbackslash{}include\textbackslash{}\textbackslash{}\+ROM\+\_\+\+Config.\+h\textquotesingle{}}
 
 \Hypertarget{namespacecreate___r_o_m__image_a195b3926d04c3555e36ee5e2bd9708dd}\index{create\_ROM\_image@{create\_ROM\_image}!h\_out@{h\_out}}
 \index{h\_out@{h\_out}!create\_ROM\_image@{create\_ROM\_image}}

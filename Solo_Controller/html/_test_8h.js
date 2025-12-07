@@ -1,7 +1,11 @@
 var _test_8h =
 [
+    [ "Test::buttonGfx_loop", "namespace_test.html#a82a1b9318f300059944ad37b5884527e", null ],
+    [ "Test::buttonGfx_setup", "namespace_test.html#aceab5a0ad0c7ec900bb9a1329bebbe10", null ],
     [ "Test::canvas_loop", "namespace_test.html#ae3f92ec5e8cc16d9b898f3f5f7c1ea59", null ],
     [ "Test::canvas_setup", "namespace_test.html#a0c8f09c30f883576d589d099a44f1714", null ],
+    [ "Test::controller_loop", "namespace_test.html#af234dadc6e6c1c60bafd30a72183edf2", null ],
+    [ "Test::controller_setup", "namespace_test.html#ab22e7cf36f772dd8e672a907ccf093d3", null ],
     [ "Test::DMA_BlockTransfer_loop", "namespace_test.html#af7aa9903ca4f2b39e34e2f9337f029e4", null ],
     [ "Test::DMA_BlockTransfer_setup", "namespace_test.html#ac8c93b0e00a27b6aebb95153e5c6a19d", null ],
     [ "Test::errorMessage_loop", "namespace_test.html#a85365569ac53e849f50ec41442c8bb63", null ],

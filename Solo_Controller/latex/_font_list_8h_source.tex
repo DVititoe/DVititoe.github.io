@@ -1,0 +1,57 @@
+\doxysection{Font\+List.\+h}
+\hypertarget{_font_list_8h_source}{}\label{_font_list_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/fonts/FontList.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/fonts/FontList.h}}
+\mbox{\hyperlink{_font_list_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ FONTLIST\_DEFINED}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ FONTLIST\_DEFINED}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gr_font_8h}{GrFont.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_colors_8h}{Colors.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00015\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Class\ Definition:\ Button\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00017\ \textcolor{comment}{/***\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ***/}}
+\DoxyCodeLine{00018\ \textcolor{comment}{/******************************************************************************/}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }FontList}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{FontID}}}
+\DoxyCodeLine{00035\ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca0f03c52023388c5ec8ec57d87f8c87be}{Red180}},\ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca4145d8644c5c13a0a704e89fcfca488e}{White90}},\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafaccaf888f47cba94e2db56415c8548f66a5e}{Red64}},\ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{Blue64}},\ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca7f77e453ba74640930b5a81c726d4e05}{White64}},\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{White32}}\ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *fonts[6]\ =\ \{\textcolor{keyword}{nullptr},\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ This\ is\ a\ singleton\ class.\ Constructor\ and\ destructor\ are\ private.}}
+\DoxyCodeLine{00048\ \ \ \ \ FontList()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00049\ \ \ \ \ \string~FontList()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ Instance\ of\ the\ singleton}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ FontList\ *\_instance;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ Method\ that\ instantiates\ all\ fonts.\ This\ method\ will\ automatically\ be}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ called\ upon\ first\ use\ of\ this\ class.}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \_begin();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ FontList\ *\mbox{\hyperlink{class_font_list_af836525be0814d719856aa4f48942348}{getInstance}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00067\ \ \ \ \ FontList(\textcolor{keyword}{const}\ FontList\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00070\ \ \ \ \ FontList\ \&operator=(\textcolor{keyword}{const}\ FontList\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_gr_font}{GrFont}}\ *\mbox{\hyperlink{class_font_list_a16af554f238a6759f10d688dddb846f2}{get}}(\mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{FontID}}\ \textcolor{keywordtype}{id})\ \{\ \textcolor{keywordflow}{return}\ fonts[id];\ \};}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FONTLIST\_DEFINED}}
+
+\end{DoxyCode}

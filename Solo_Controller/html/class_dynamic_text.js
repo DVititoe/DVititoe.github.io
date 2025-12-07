@@ -5,7 +5,7 @@ var class_dynamic_text =
       [ "CENTER", "class_dynamic_text.html#af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63", null ],
       [ "RIGHT", "class_dynamic_text.html#af5579996825b5a408cab8ed56b20b548a063df17be72e91275b484b474914393e", null ]
     ] ],
-    [ "DynamicText", "class_dynamic_text.html#aa9da32ab4596565234074d938c71cb25", null ],
+    [ "DynamicText", "class_dynamic_text.html#aae8ca4d84fec2807e882856c0fdf7d57", null ],
     [ "align", "class_dynamic_text.html#adffaa1d1407dc438644857cea8f4a528", null ],
     [ "begin", "class_dynamic_text.html#a6640a88db553f0c519522c84d2159e29", null ],
     [ "update", "class_dynamic_text.html#a8c39c7c6701a91b144a6d532e0a7ddcf", null ],

@@ -1,14 +1,22 @@
-\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/include/\+Common.h File Reference}
-\hypertarget{_common_8h}{}\label{_common_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/Common.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/include/Common.h}}
-{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/include/\+Common.h File Reference}
+\hypertarget{_common_8h}{}\label{_common_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/include/Common.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/include/Common.h}}
+
+
+Common definitions used throughout the Solo\+Controller app.  
+
+
 {\ttfamily \#include "{}TFTM070\+A1.\+h"{}}\newline
+{\ttfamily \#include "{}Definitions.\+h"{}}\newline
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}}
-\begin{DoxyCompactList}\small\item\em Structure to define the size and location of an image in Flash. \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}}
-\begin{DoxyCompactList}\small\item\em Structure to define sub-\/images. Generally associated with a \doxylink{struct_r_o_m___image}{ROM\+\_\+\+Image}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+struct \mbox{\hyperlink{struct_text_box_config_1_1_text_box___config}{Text\+Box\+Config\+::\+Text\+Box\+\_\+\+Config}}
+\begin{DoxyCompactList}\small\item\em Defines \doxylink{class_text_box}{Text\+Box} shape information based upon the sizes of the fonts being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_text_box_config}{Text\+Box\+Config}}
+\begin{DoxyCompactList}\small\item\em Namespace containing configuration information for Text\+Boxes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -21,7 +29,7 @@ struct \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}}
 \#define \mbox{\hyperlink{_common_8h_a0c02554e768e3ca4b84fbd07f1f1097b}{TFT\+\_\+\+SD\+\_\+\+CS}}~5
 \begin{DoxyCompactList}\small\item\em CS pin for SD card reader on display. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_common_8h_a31b88f12495dde0561e26d07adc1b2c9}{CTP\+\_\+\+WAKE}}~6
-\begin{DoxyCompactList}\small\item\em Interrupt signal for the host to change CTP from hibernate to active mocde. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Interrupt signal for the host to change CTP from hibernate to active mode. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_common_8h_ad71165520316c6da57812d688e62dede}{CTP\+\_\+\+NOTIF}}~7
 \begin{DoxyCompactList}\small\item\em Notifies host processor that CTP data is ready to read. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_common_8h_a541b5fc642dbcc81f373d4b866c88f80}{TFT\+\_\+\+BL}}~8
@@ -42,15 +50,15 @@ struct \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}}
 \begin{DoxyCompactList}\small\item\em Pin that triggers the alarm. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_common_8h_ac735ae65b04d7f1745e912d60a576668}{VOL\+\_\+\+SENSOR}}~A15
 \begin{DoxyCompactList}\small\item\em Analog kettle volume sensor. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{_common_8h_ab3b7cba602225c494917f733fa079cfe}{ELEM\+\_\+\+CNTRL}}~23
+\#define \mbox{\hyperlink{_common_8h_ab3b7cba602225c494917f733fa079cfe}{ELEM\+\_\+\+CNTRL}}~39
 \begin{DoxyCompactList}\small\item\em Pin that controls the kettle element. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{_common_8h_a5c2bd79a5774ca490eccbdecf5771628}{INTERLOCK\+\_\+\+STATUS}}~25
+\#define \mbox{\hyperlink{_common_8h_a5c2bd79a5774ca490eccbdecf5771628}{INTERLOCK\+\_\+\+STATUS}}~A2
 \begin{DoxyCompactList}\small\item\em Pin that indicates the interlock status. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{_common_8h_a4e9e3f3ee9e8d7161ef5a895d990fd7b}{AUX\+\_\+\+OUT}}~31
+\#define \mbox{\hyperlink{_common_8h_a4e9e3f3ee9e8d7161ef5a895d990fd7b}{AUX\+\_\+\+OUT}}~35
 \begin{DoxyCompactList}\small\item\em Pin that controls the 120VAC auxiliary output. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{_common_8h_a09960734adb9d9bfe1a59c1a22f4a75f}{PUMP\+\_\+\+OUT}}~33
+\#define \mbox{\hyperlink{_common_8h_a09960734adb9d9bfe1a59c1a22f4a75f}{PUMP\+\_\+\+OUT}}~37
 \begin{DoxyCompactList}\small\item\em Pin that controls the 120VAC pump output. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{_common_8h_a14d35a0dadb53d3217edb683b8376339}{CONTACTOR\+\_\+\+STATUS}}~37
+\#define \mbox{\hyperlink{_common_8h_a14d35a0dadb53d3217edb683b8376339}{CONTACTOR\+\_\+\+STATUS}}~A3
 \begin{DoxyCompactList}\small\item\em Pin that indicates the contactor status. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_common_8h_a156875687edb737b52ac4cde4476fe48}{ELEM\+\_\+\+SWITCH\+\_\+\+LED}}~39
 \begin{DoxyCompactList}\small\item\em Pin that controls the LED for the kettle element switch. \end{DoxyCompactList}\item 
@@ -60,6 +68,29 @@ struct \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}}
 \begin{DoxyCompactList}\small\item\em Pin that controls the kettle RTD temperature sensor. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_common_8h_a4be9f598dafce7335784e0569544fa9c}{CHILLER\+\_\+\+CS}}~49
 \begin{DoxyCompactList}\small\item\em Pin that controls the chiller RTD temperature sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const struct \mbox{\hyperlink{struct_text_box_config_1_1_text_box___config}{Text\+Box\+Config\+::\+Text\+Box\+\_\+\+Config}} \mbox{\hyperlink{namespace_text_box_config_a737a63c1f37979b99e94580300564cd9}{Text\+Box\+Config\+::\+TEXTBOX\+\_\+\+SHAPE}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \mbox{\hyperlink{namespace_text_box_config_a35083d86b18a43f2c24af249f5f65ebb}{TextBoxConfig::kettleTemp}} = \{52, 70, 319, TEXTBOX\_SHAPE.MonoFonto\_180\_90\_Config, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca0f03c52023388c5ec8ec57d87f8c87be}{FontList::FontID::Red180}}, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca4145d8644c5c13a0a704e89fcfca488e}{FontList::FontID::White90}}\}\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \mbox{\hyperlink{namespace_text_box_config_a72cf7ad5495b09754c1f13d45bd3664c}{TextBoxConfig::setTemp}} = \{198, 242, 156, TEXTBOX\_SHAPE.MonoFonto\_64\_32sm\_Config, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafaccaf888f47cba94e2db56415c8548f66a5e}{FontList::FontID::Red64}}, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\}\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \mbox{\hyperlink{namespace_text_box_config_a87c1083616f86d415ea2a282ffcb5d17}{TextBoxConfig::elemOut}} = \{198, 317, 156, TEXTBOX\_SHAPE.MonoFonto\_64\_32sm\_Config, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafaccaf888f47cba94e2db56415c8548f66a5e}{FontList::FontID::Red64}}, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\}\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \mbox{\hyperlink{namespace_text_box_config_a963eef2619d902eab8ebd21cc0d09fec}{TextBoxConfig::volume}} = \{710, 40, 145, TEXTBOX\_SHAPE.MonoFonto\_64\_32\_Config, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{FontList::FontID::Blue64}}, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\}\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \mbox{\hyperlink{namespace_text_box_config_a056841c188e67a356812f0b18b63a79f}{TextBoxConfig::minVolume}} = \{710, 118, 145, TEXTBOX\_SHAPE.MonoFonto\_64\_32\_Config, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{FontList::FontID::Blue64}}, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\}\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \mbox{\hyperlink{namespace_text_box_config_ab3f7a7862d002d3da8817b7417020899}{TextBoxConfig::chillerTemp}} = \{710, 240, 145, TEXTBOX\_SHAPE.MonoFonto\_64\_32\_Config, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{FontList::FontID::Blue64}}, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\}\\
+\>\mbox{\hyperlink{struct_config_text_box__t}{ConfigTextBox\_t}} \mbox{\hyperlink{namespace_text_box_config_ab951e12d64739db48a9daae3b54658e5}{TextBoxConfig::minChillerTemp}} = \{710, 318, 145, TEXTBOX\_SHAPE.MonoFonto\_64\_32\_Config, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66}{FontList::FontID::Blue64}}, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacca50d0651714b4e6cd356e4a376a4eb92e}{FontList::FontID::White32}}\}\\
+\} \mbox{\hyperlink{namespace_text_box_config_ac69867d6ef0e9856865a16a9d9257a92}{TextBoxConfig::MAIN}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Defines the location and configuration of Text\+Boxes used by the main menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Common definitions used throughout the Solo\+Controller app. 
+
 
 
 \doxysubsection{Macro Definition Documentation}
@@ -77,7 +108,7 @@ Pin that triggers the alarm.
 \index{AUX\_OUT@{AUX\_OUT}!Common.h@{Common.h}}
 \doxysubsubsection{\texorpdfstring{AUX\_OUT}{AUX\_OUT}}
 {\footnotesize\ttfamily \label{_common_8h_a4e9e3f3ee9e8d7161ef5a895d990fd7b} 
-\#define AUX\+\_\+\+OUT~31}
+\#define AUX\+\_\+\+OUT~35}
 
 
 
@@ -107,7 +138,7 @@ Pin that controls the chiller RTD temperature sensor.
 \index{CONTACTOR\_STATUS@{CONTACTOR\_STATUS}!Common.h@{Common.h}}
 \doxysubsubsection{\texorpdfstring{CONTACTOR\_STATUS}{CONTACTOR\_STATUS}}
 {\footnotesize\ttfamily \label{_common_8h_a14d35a0dadb53d3217edb683b8376339} 
-\#define CONTACTOR\+\_\+\+STATUS~37}
+\#define CONTACTOR\+\_\+\+STATUS~A3}
 
 
 
@@ -141,13 +172,13 @@ Notifies host processor that CTP data is ready to read.
 
 
 
-Interrupt signal for the host to change CTP from hibernate to active mocde. 
+Interrupt signal for the host to change CTP from hibernate to active mode. 
 
 \Hypertarget{_common_8h_ab3b7cba602225c494917f733fa079cfe}\index{Common.h@{Common.h}!ELEM\_CNTRL@{ELEM\_CNTRL}}
 \index{ELEM\_CNTRL@{ELEM\_CNTRL}!Common.h@{Common.h}}
 \doxysubsubsection{\texorpdfstring{ELEM\_CNTRL}{ELEM\_CNTRL}}
 {\footnotesize\ttfamily \label{_common_8h_ab3b7cba602225c494917f733fa079cfe} 
-\#define ELEM\+\_\+\+CNTRL~23}
+\#define ELEM\+\_\+\+CNTRL~39}
 
 
 
@@ -167,7 +198,7 @@ Pin that controls the LED for the kettle element switch.
 \index{INTERLOCK\_STATUS@{INTERLOCK\_STATUS}!Common.h@{Common.h}}
 \doxysubsubsection{\texorpdfstring{INTERLOCK\_STATUS}{INTERLOCK\_STATUS}}
 {\footnotesize\ttfamily \label{_common_8h_a5c2bd79a5774ca490eccbdecf5771628} 
-\#define INTERLOCK\+\_\+\+STATUS~25}
+\#define INTERLOCK\+\_\+\+STATUS~A2}
 
 
 
@@ -217,7 +248,7 @@ MOSI for the primary SPI bus.
 \index{PUMP\_OUT@{PUMP\_OUT}!Common.h@{Common.h}}
 \doxysubsubsection{\texorpdfstring{PUMP\_OUT}{PUMP\_OUT}}
 {\footnotesize\ttfamily \label{_common_8h_a09960734adb9d9bfe1a59c1a22f4a75f} 
-\#define PUMP\+\_\+\+OUT~33}
+\#define PUMP\+\_\+\+OUT~37}
 
 
 

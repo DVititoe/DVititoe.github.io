@@ -56,15 +56,15 @@ The base \doxylink{class_button}{Button} class handle core functionality such as
 \begin{DoxyItemize}
 \item {\bfseries{\doxylink{class_toggle_button}{Toggle\+Button}}}\+: Has two States\+: on/off. Each state has it\textquotesingle{}s own callback function. The callback functions are called whenever the button is {\itshape pressed}. Examples\+: Pump on/off button and Alarm on/off button
 \item {\bfseries{\doxylink{class_momentary_button}{Momentary\+Button}}}\+: Has two States\+: on/off. Each state has it\textquotesingle{}s own callback function. The "{}on"{} callback function is called whenever the button is {\itshape pressed}. The "{}off"{} callback function is called whenever the button is {\itshape released}. Examples\+: \doxylink{namespace_setup}{Setup} button on the main menu (\doxylink{namespace_setup}{Setup} menu appears after user releases the button).
-\item {\bfseries{\doxylink{class_immediate_button}{Immediate\+Button}}}\+: Has a single state and a single callback function. The callback function is called whenever the button is {\itshape pressed}. Examples\+: Buttons that switch between setup menus
-\item {\bfseries{\doxylink{class_text_box}{Text\+Box}}}\+: Dynamic text that is also an \doxylink{class_immediate_button}{Immediate\+Button}. When the button is pressed, the Data\+Entry dialog appears, giving users the ability to update/change numerical values. Example\+: Kettle set temperature.
+\item {\bfseries{Immediate\+Button}}\+: Has a single state and a single callback function. The callback function is called whenever the button is {\itshape pressed}. Examples\+: Buttons that switch between setup menus
+\item {\bfseries{\doxylink{class_text_box}{Text\+Box}}}\+: Dynamic text that is also an Immediate\+Button. When the button is pressed, the Data\+Entry dialog appears, giving users the ability to update/change numerical values. Example\+: Kettle set temperature.
 \end{DoxyItemize}\hypertarget{_software__architecture_autotoc_md32}{}\doxysubsection{\texorpdfstring{Font Classes}{Font Classes}}\label{_software__architecture_autotoc_md32}
 {\itshape {\bfseries{Future Section....}}}\hypertarget{_software__architecture_autotoc_md33}{}\doxysubsection{\texorpdfstring{Software Dependencies}{Software Dependencies}}\label{_software__architecture_autotoc_md33}
 The following diagram shows the dependencies between the major c++ header and cpp files in the project. The goal with this analysis was to avoid circular dependencies and, where possible, eliminate unnecessary dependencies between files.
 
 \begin{center}\end{center} 
 
-Note that \doxylink{main_8cpp}{main.\+cpp} only uses {\itshape Task\+Manager\+IO.\+h} and {\itshape \doxylink{_tasks_8h}{Tasks.\+h}}. This means that \doxylink{main_8cpp}{Main.\+cpp} does not have access to the alarms, sensors, menus, and canvases used by the application. It only needs to understand how to schedule tasks with the Task\+Manager. The file that implements the Tasks, {\itshape \doxylink{_tasks_8cpp}{Tasks.\+cpp}}, is responsible for interacting with the alarms, sensors, and menu objects used by the app.
+Note that main.\+cpp only uses {\itshape Task\+Manager\+IO.\+h} and {\itshape \doxylink{_tasks_8h}{Tasks.\+h}}. This means that Main.\+cpp does not have access to the alarms, sensors, menus, and canvases used by the application. It only needs to understand how to schedule tasks with the Task\+Manager. The file that implements the Tasks, {\itshape \doxylink{_tasks_8cpp}{Tasks.\+cpp}}, is responsible for interacting with the alarms, sensors, and menu objects used by the app.
 
 Common parameters, such as Arduino pin definitions, are contained within \doxylink{_common_8h}{Common.\+h}
 

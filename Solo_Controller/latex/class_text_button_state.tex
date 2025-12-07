@@ -1,0 +1,148 @@
+\doxysection{Text\+Button\+State Class Reference}
+\hypertarget{class_text_button_state}{}\label{class_text_button_state}\index{TextButtonState@{TextButtonState}}
+
+
+\doxylink{class_button}{Button} State for a button that displays text in the button.  
+
+
+
+
+{\ttfamily \#include $<$Button\+State.\+h$>$}
+
+Inheritance diagram for Text\+Button\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_text_button_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_text_button_state_a0523311bc7b712e5c4682560738cccd3}{begin}} (void) override
+\begin{DoxyCompactList}\small\item\em Initializes the button state object. This method should be called before first use of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Constructors and Destructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_button_state_afc37a02c93272dc7c66e584b5aa54aa6}{Text\+Button\+State}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&Destination, const \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} \&Dest\+Loc, const char \texorpdfstring{$\ast$}{*}\+\_\+button\+Text, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{Font\+List\+::\+Font\+ID}} Font, \mbox{\hyperlink{class_button_state_ae7934b502a82f94d620a15187f448e20}{Button\+State\+::button\+Callback\+Function}} \mbox{\hyperlink{class_button_state_a83975fb23a76b4571fdb84175d6de31d}{callback}}, uint16\+\_\+t baseline, unsigned short corner\+Radius, uint16\+\_\+t border\+Width, uint16\+\_\+t border\+Color16, uint16\+\_\+t fill\+Color16)
+\begin{DoxyCompactList}\small\item\em Construct a new Text \doxylink{class_button}{Button} State object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_button_state_aa6d1bbbff2b21a3394f69356e8c19937}{\texorpdfstring{$\sim$}{\string~}\+Text\+Button\+State}} (void)=default
+\begin{DoxyCompactList}\small\item\em Destroys the Text \doxylink{class_button}{Button} State object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_button_state}{Button\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_state_a7ef2dc7590311cc975fece52560df804}{Button\+State}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&dest\+Canvas, uint16\+\_\+t \mbox{\hyperlink{class_button_state_a4758458de5f970e6a08abe5907305f81}{x}}, uint16\+\_\+t \mbox{\hyperlink{class_button_state_a6e6d4199b2629842858a8c50254b73ff}{y}}, uint16\+\_\+t \mbox{\hyperlink{class_button_state_a64ff0b381ad8267f2523ad7bd239cd96}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_button_state_a7da93deaf68570f247a5530a495c9ea3}{height}}, \mbox{\hyperlink{class_button_state_ae7934b502a82f94d620a15187f448e20}{button\+Callback\+Function}} \mbox{\hyperlink{class_button_state_a83975fb23a76b4571fdb84175d6de31d}{callback}}, unsigned short corner\+Radius, uint8\+\_\+t border\+Width, uint16\+\_\+t border\+Color, uint16\+\_\+t fill\+Color16)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_button}{Button} State object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_button_state_aa22984fa40b60756f83843f6def078a8}{\texorpdfstring{$\sim$}{\string~}\+Button\+State}} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_button_state_ac6b9b2d503e6e0ef48b4bda9b118c9e4}{update\+Background}} (void)
+\begin{DoxyCompactList}\small\item\em Update the button background graphics. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_state_aceb5e1f744f0e61f052cc3cdb822cf9c}{draw}} (void)
+\begin{DoxyCompactList}\small\item\em Draw the button assuming images have transparent background. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_state_a4dd52b63f6c6dabb7c42c933a748305b}{draw\+Opaque}} (void)
+\begin{DoxyCompactList}\small\item\em Draw the button assuming images have an opaque background. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_state_af251a82f8bda2d5664b5b42fc0676486}{draw}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&new\+Canvas, bool Transparent\+On=true)
+\begin{DoxyCompactList}\small\item\em Draw the button onto the specified canvas at the specified location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_state_a83975fb23a76b4571fdb84175d6de31d}{callback}} (void) const
+\begin{DoxyCompactList}\small\item\em Calls the callback function associated with this button state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_state_a64ff0b381ad8267f2523ad7bd239cd96}{width}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the width of the button state. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_state_a7da93deaf68570f247a5530a495c9ea3}{height}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the height of the button state. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_state_a4758458de5f970e6a08abe5907305f81}{x}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the X location of the button state on the destination canvas. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_state_a6e6d4199b2629842858a8c50254b73ff}{y}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the Y location of the button state on the destination canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_button_state}{Button\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_button_state_ae7934b502a82f94d620a15187f448e20}{button\+Callback\+Function}}) (void)
+\begin{DoxyCompactList}\small\item\em Defines the form of the callback functions expected by the \doxylink{class_button}{Button} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_button_state}{Button\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_canvas}{Canvas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_button_state_a8cd7095c110c4c0439d11fa163c072ee}{\+\_\+\+Button\+Gfx\+Canvas}} = nullptr
+\begin{DoxyCompactList}\small\item\em \doxylink{class_canvas}{Canvas} that holds the colorized button graphics. Derived classes will define this canvas as appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_button}{Button} State for a button that displays text in the button. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_text_button_state_afc37a02c93272dc7c66e584b5aa54aa6}\index{TextButtonState@{TextButtonState}!TextButtonState@{TextButtonState}}
+\index{TextButtonState@{TextButtonState}!TextButtonState@{TextButtonState}}
+\doxysubsubsection{\texorpdfstring{TextButtonState()}{TextButtonState()}}
+{\footnotesize\ttfamily \label{class_text_button_state_afc37a02c93272dc7c66e584b5aa54aa6} 
+Text\+Button\+State\+::\+Text\+Button\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{Destination}{, }\item[{const \mbox{\hyperlink{struct_block___image}{Block\+\_\+\+Image}} \&}]{Dest\+Loc}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+button\+Text}{, }\item[{\mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{Font\+List\+::\+Font\+ID}}}]{Font}{, }\item[{\mbox{\hyperlink{class_button_state_ae7934b502a82f94d620a15187f448e20}{Button\+State\+::button\+Callback\+Function}}}]{callback}{, }\item[{uint16\+\_\+t}]{baseline}{, }\item[{unsigned short}]{corner\+Radius}{, }\item[{uint16\+\_\+t}]{border\+Width}{, }\item[{uint16\+\_\+t}]{border\+Color16}{, }\item[{uint16\+\_\+t}]{fill\+Color16}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new Text \doxylink{class_button}{Button} State object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Destination} & \mbox{[}in\mbox{]} \doxylink{class_canvas}{Canvas} where the final button will be drawn \\
+\hline
+{\em Dest\+Loc} & \mbox{[}in\mbox{]} X-\/Y location and size of the button within the destination canvas \\
+\hline
+{\em \+\_\+button\+Text} & \mbox{[}in\mbox{]} Text to be displayed on the button \\
+\hline
+{\em Font} & \mbox{[}in\mbox{]} Font to be used to display the button text \\
+\hline
+{\em callback} & \mbox{[}in\mbox{]} Callback function associated with this button state \\
+\hline
+{\em baseline} & \mbox{[}in\mbox{]} Baseline position for the characters within the button \\
+\hline
+{\em corner\+Radius} & \mbox{[}in\mbox{]} Corner radius for the button \\
+\hline
+{\em border\+Width} & \mbox{[}in\mbox{]} Border width in pixels of the button border \\
+\hline
+{\em border\+Color16} & \mbox{[}in\mbox{]} Border color in 16-\/bit RGB format \\
+\hline
+{\em fill\+Color16} & \mbox{[}in\mbox{]} Fill color in 16-\/bit RGB format \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_text_button_state_aa6d1bbbff2b21a3394f69356e8c19937}\index{TextButtonState@{TextButtonState}!````~TextButtonState@{\texorpdfstring{$\sim$}{\string~}TextButtonState}}
+\index{````~TextButtonState@{\texorpdfstring{$\sim$}{\string~}TextButtonState}!TextButtonState@{TextButtonState}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TextButtonState()}{\string~TextButtonState()}}
+{\footnotesize\ttfamily \label{class_text_button_state_aa6d1bbbff2b21a3394f69356e8c19937} 
+Text\+Button\+State\+::\texorpdfstring{$\sim$}{\string~}\+Text\+Button\+State (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destroys the Text \doxylink{class_button}{Button} State object. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_text_button_state_a0523311bc7b712e5c4682560738cccd3}\index{TextButtonState@{TextButtonState}!begin@{begin}}
+\index{begin@{begin}!TextButtonState@{TextButtonState}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_text_button_state_a0523311bc7b712e5c4682560738cccd3} 
+void Text\+Button\+State\+::begin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the button state object. This method should be called before first use of the object. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Reimplemented from \mbox{\hyperlink{class_button_state_a1bbe099814545ed14419c0cb65709bf2}{Button\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_button_state_8h}{Button\+State.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_button_state_8cpp}{Button\+State.\+cpp}}\end{DoxyCompactItemize}

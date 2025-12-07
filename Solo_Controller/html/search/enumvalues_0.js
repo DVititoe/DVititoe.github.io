@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['center_0',['CENTER',['../class_dynamic_text.html#af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63',1,'DynamicText']]]
+  ['blue64_0',['Blue64',['../class_font_list.html#abeb5fda67e28f9f04c0f897d43aafacca41e3b7d2ac81ae2ca7d8e729c51c2f66',1,'FontList']]]
 ];

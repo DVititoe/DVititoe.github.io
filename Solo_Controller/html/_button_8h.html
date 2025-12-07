@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solo Controller Documentation: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Button.h File Reference</title>
+<title>Solo Controller Documentation: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/Button.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,31 +104,97 @@ $(function(){initNavTree('_button_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Button.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_canvas_8h_source.html">Canvas.h</a>&quot;</code><br />
+
+<p>Defines the <a class="el" href="class_button.html" title="Abstract class that provides basic button functionality.">Button</a> classes used by the Menu system.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_button_state_8h_source.html">ButtonState.h</a>&quot;</code><br />
 </div>
 <p><a href="_button_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button_config__t.html">ButtonConfig_t&lt; NUM &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic data structure used to store graphical configuration of buttons.  <a href="struct_button_config__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html">Button</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class that provides basic button functionality.  <a href="class_button.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_toggle_button.html">ToggleButton</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a button that toggles between two states.  <a href="class_toggle_button.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_momentary_button.html">MomentaryButton</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a momentary buttons with 2 states. Upon release, the button automatically returns to state 0.  <a href="class_momentary_button.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_immediate_button.html">ImmediateButton</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_box_button.html">TextBoxButton</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a single state button containing text with both a value and units component.  <a href="class_text_box_button.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a695238f216827c306930c3f5be490568" id="r_a695238f216827c306930c3f5be490568"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_button_config__t.html">ButtonConfig_t</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a695238f216827c306930c3f5be490568">DEFAULT_BUTTON_CONFIG</a></td></tr>
+<tr class="memdesc:a695238f216827c306930c3f5be490568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the configuration parameters for a standard button.  <br /></td></tr>
+<tr class="separator:a695238f216827c306930c3f5be490568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb6fd929087509940cfbd932fffde39" id="r_a8fb6fd929087509940cfbd932fffde39"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_button_config__t.html">ButtonConfig_t</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fb6fd929087509940cfbd932fffde39">DEFAULT_SM_BUTTON_CONFIG</a></td></tr>
+<tr class="memdesc:a8fb6fd929087509940cfbd932fffde39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the configuration parameters for a small button.  <br /></td></tr>
+<tr class="separator:a8fb6fd929087509940cfbd932fffde39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines the <a class="el" href="class_button.html" title="Abstract class that provides basic button functionality.">Button</a> classes used by the Menu system. </p>
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a id="a695238f216827c306930c3f5be490568" name="a695238f216827c306930c3f5be490568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695238f216827c306930c3f5be490568">&#9670;&#160;</a></span>DEFAULT_BUTTON_CONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_button_config__t.html">ButtonConfig_t</a>&lt;2&gt; DEFAULT_BUTTON_CONFIG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    3,            </div>
+<div class="line">    <a class="code hl_variable" href="_colors_8h.html#aaeac5e269b4936f83888b3bf8f78015d">COLORS</a>.WHITE, </div>
+<div class="line">    25            </div>
+<div class="line">}</div>
+<div class="ttc" id="a_colors_8h_html_aaeac5e269b4936f83888b3bf8f78015d"><div class="ttname"><a href="_colors_8h.html#aaeac5e269b4936f83888b3bf8f78015d">COLORS</a></div><div class="ttdeci">const struct @335246042156366161160006341037173214026114026241 COLORS</div><div class="ttdoc">Colors used by the application.</div></div>
+</div><!-- fragment -->
+<p>Defines the configuration parameters for a standard button. </p>
+
+</div>
+</div>
+<a id="a8fb6fd929087509940cfbd932fffde39" name="a8fb6fd929087509940cfbd932fffde39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb6fd929087509940cfbd932fffde39">&#9670;&#160;</a></span>DEFAULT_SM_BUTTON_CONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_button_config__t.html">ButtonConfig_t</a>&lt;2&gt; DEFAULT_SM_BUTTON_CONFIG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    2,            </div>
+<div class="line">    <a class="code hl_variable" href="_colors_8h.html#aaeac5e269b4936f83888b3bf8f78015d">COLORS</a>.WHITE, </div>
+<div class="line">    15            </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Defines the configuration parameters for a small button. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_button_8h.html">Button.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8b29354ea792f14f229ba6ab36888b3c.html">Display</a></li><li class="navelem"><a class="el" href="_button_8h.html">Button.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

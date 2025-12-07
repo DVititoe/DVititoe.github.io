@@ -127,7 +127,7 @@ void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac84170c3a9dadb14fe345325888b87be}
 \item 
 void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab5bfff252e90a8bf0401f853744ace00}{HW\+\_\+\+Reset}} (void)
 \item 
-void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a69c9b7a831d1871d910df65c639c8da0}{System\+\_\+\+Check\+\_\+\+Temp}} (void)
+bool \mbox{\hyperlink{namespace_t_f_t_m070_a1_a275c2f83d798e0e11787e63eafe69a41}{System\+\_\+\+Check\+\_\+\+Temp}} (void)
 \item 
 void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac9ee5e4883ac330825de8f2661a87731}{PLL\+\_\+\+Initial}} (void)
 \item 
@@ -169,7 +169,7 @@ void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2b076b44df2b73dc5874494b7d4c4b9f}
 \item 
 void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a47200d1ed02b1f70a1a87692eb5fdb79}{Check\+\_\+\+Mem\+\_\+\+RD\+\_\+\+FIFO\+\_\+not\+\_\+\+Empty}} (void)
 \item 
-void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5e2098f9cb2e3c5b0ea20b77b13a8fbd}{Draw\+Square\+\_\+\+Fill}} (unsigned short X1, unsigned short Y1, unsigned short X2, unsigned short Y2, unsigned long Foreground\+Color)
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9a5739b19f18895f0ad1b5a4e7630eab}{draw\+Rect\+\_\+\+Fill}} (unsigned short X1, unsigned short Y1, unsigned short X2, unsigned short Y2, unsigned long Foreground\+Color)
 \item 
 void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a83d5425930b1bfd19b1f80bf58e79c01}{Draw\+Circle\+\_\+\+Fill}} (unsigned short X1, unsigned short Y1, unsigned short R, unsigned long Foreground\+Color)
 \item 
@@ -896,11 +896,11 @@ void TFTM070\+A1\+::\+Draw\+Circle\+\_\+\+Fill (\begin{DoxyParamCaption}\item[{u
 {\footnotesize\ttfamily \label{namespace_t_f_t_m070_a1_a91df555c2ae3b837c68dc87f6b2639a5} 
 void TFTM070\+A1\+::\+Draw\+Pixel (\begin{DoxyParamCaption}\item[{unsigned short}]{x}{, }\item[{unsigned short}]{y}{, }\item[{unsigned short}]{color}{}\end{DoxyParamCaption})}
 
-\Hypertarget{namespace_t_f_t_m070_a1_a5e2098f9cb2e3c5b0ea20b77b13a8fbd}\index{TFTM070A1@{TFTM070A1}!DrawSquare\_Fill@{DrawSquare\_Fill}}
-\index{DrawSquare\_Fill@{DrawSquare\_Fill}!TFTM070A1@{TFTM070A1}}
-\doxysubsubsection{\texorpdfstring{DrawSquare\_Fill()}{DrawSquare\_Fill()}}
-{\footnotesize\ttfamily \label{namespace_t_f_t_m070_a1_a5e2098f9cb2e3c5b0ea20b77b13a8fbd} 
-void TFTM070\+A1\+::\+Draw\+Square\+\_\+\+Fill (\begin{DoxyParamCaption}\item[{unsigned short}]{X1}{, }\item[{unsigned short}]{Y1}{, }\item[{unsigned short}]{X2}{, }\item[{unsigned short}]{Y2}{, }\item[{unsigned long}]{Foreground\+Color}{}\end{DoxyParamCaption})}
+\Hypertarget{namespace_t_f_t_m070_a1_a9a5739b19f18895f0ad1b5a4e7630eab}\index{TFTM070A1@{TFTM070A1}!drawRect\_Fill@{drawRect\_Fill}}
+\index{drawRect\_Fill@{drawRect\_Fill}!TFTM070A1@{TFTM070A1}}
+\doxysubsubsection{\texorpdfstring{drawRect\_Fill()}{drawRect\_Fill()}}
+{\footnotesize\ttfamily \label{namespace_t_f_t_m070_a1_a9a5739b19f18895f0ad1b5a4e7630eab} 
+void TFTM070\+A1\+::draw\+Rect\+\_\+\+Fill (\begin{DoxyParamCaption}\item[{unsigned short}]{X1}{, }\item[{unsigned short}]{Y1}{, }\item[{unsigned short}]{X2}{, }\item[{unsigned short}]{Y2}{, }\item[{unsigned long}]{Foreground\+Color}{}\end{DoxyParamCaption})}
 
 \Hypertarget{namespace_t_f_t_m070_a1_afd7fca245020ab04505c454bcca3f1d2}\index{TFTM070A1@{TFTM070A1}!Ellipse\_Center\_XY@{Ellipse\_Center\_XY}}
 \index{Ellipse\_Center\_XY@{Ellipse\_Center\_XY}!TFTM070A1@{TFTM070A1}}
@@ -2036,11 +2036,11 @@ void TFTM070\+A1\+::\+Stop\+\_\+\+PWM0 (\begin{DoxyParamCaption}\item[{void}]{}{
 {\footnotesize\ttfamily \label{namespace_t_f_t_m070_a1_af463fd0de5657a76e38863281627d686} 
 void TFTM070\+A1\+::\+Stop\+\_\+\+PWM1 (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
-\Hypertarget{namespace_t_f_t_m070_a1_a69c9b7a831d1871d910df65c639c8da0}\index{TFTM070A1@{TFTM070A1}!System\_Check\_Temp@{System\_Check\_Temp}}
+\Hypertarget{namespace_t_f_t_m070_a1_a275c2f83d798e0e11787e63eafe69a41}\index{TFTM070A1@{TFTM070A1}!System\_Check\_Temp@{System\_Check\_Temp}}
 \index{System\_Check\_Temp@{System\_Check\_Temp}!TFTM070A1@{TFTM070A1}}
 \doxysubsubsection{\texorpdfstring{System\_Check\_Temp()}{System\_Check\_Temp()}}
-{\footnotesize\ttfamily \label{namespace_t_f_t_m070_a1_a69c9b7a831d1871d910df65c639c8da0} 
-void TFTM070\+A1\+::\+System\+\_\+\+Check\+\_\+\+Temp (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespace_t_f_t_m070_a1_a275c2f83d798e0e11787e63eafe69a41} 
+bool TFTM070\+A1\+::\+System\+\_\+\+Check\+\_\+\+Temp (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
 \Hypertarget{namespace_t_f_t_m070_a1_ad81b177546b6d208a0454ab7ca91a74c}\index{TFTM070A1@{TFTM070A1}!Text\_Mode@{Text\_Mode}}
 \index{Text\_Mode@{Text\_Mode}!TFTM070A1@{TFTM070A1}}

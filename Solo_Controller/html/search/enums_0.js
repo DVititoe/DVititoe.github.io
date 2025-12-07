@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['textalign_0',['TextAlign',['../class_dynamic_text.html#af5579996825b5a408cab8ed56b20b548',1,'DynamicText']]]
+  ['callback_5ftype_0',['callback_type',['../class_button.html#a1f6924fd1592da074ab403466301b341',1,'Button']]]
 ];

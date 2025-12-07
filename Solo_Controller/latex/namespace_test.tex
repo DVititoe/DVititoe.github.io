@@ -31,13 +31,47 @@ void \mbox{\hyperlink{namespace_test_a85365569ac53e849f50ec41442c8bb63}{error\+M
 void \mbox{\hyperlink{namespace_test_a54715e5d45ae1ce7d85a99c5a1d943a2}{text\+Box\+\_\+setup}} (void)
 \begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} \doxylink{class_text_box}{Text\+Box} display tests. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespace_test_a2a0139384341492401e4e8219faadcfb}{text\+Box\+\_\+loop}} (void)
-\begin{DoxyCompactList}\small\item\em \doxylink{class_text_box}{Text\+Box} display test loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_text_box}{Text\+Box} display test loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_test_ab22e7cf36f772dd8e672a907ccf093d3}{controller\+\_\+setup}} (void)
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} Display Controller board tests. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_test_af234dadc6e6c1c60bafd30a72183edf2}{controller\+\_\+loop}} (void)
+\begin{DoxyCompactList}\small\item\em Display Controller board test loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_test_aceab5a0ad0c7ec900bb9a1329bebbe10}{button\+Gfx\+\_\+setup}} (void)
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_setup}{Setup} \doxylink{class_button}{Button} Graphics tests. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_test_a82a1b9318f300059944ad37b5884527e}{button\+Gfx\+\_\+loop}} (void)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_button}{Button} Graphics test loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Namespace containing test functions for the Solo Controller app. 
 
 \doxysubsection{Function Documentation}
+\Hypertarget{namespace_test_a82a1b9318f300059944ad37b5884527e}\index{Test@{Test}!buttonGfx\_loop@{buttonGfx\_loop}}
+\index{buttonGfx\_loop@{buttonGfx\_loop}!Test@{Test}}
+\doxysubsubsection{\texorpdfstring{buttonGfx\_loop()}{buttonGfx\_loop()}}
+{\footnotesize\ttfamily \label{namespace_test_a82a1b9318f300059944ad37b5884527e} 
+void Test\+::button\+Gfx\+\_\+loop (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_button}{Button} Graphics test loop. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{namespace_test_aceab5a0ad0c7ec900bb9a1329bebbe10}\index{Test@{Test}!buttonGfx\_setup@{buttonGfx\_setup}}
+\index{buttonGfx\_setup@{buttonGfx\_setup}!Test@{Test}}
+\doxysubsubsection{\texorpdfstring{buttonGfx\_setup()}{buttonGfx\_setup()}}
+{\footnotesize\ttfamily \label{namespace_test_aceab5a0ad0c7ec900bb9a1329bebbe10} 
+void Test\+::button\+Gfx\+\_\+setup (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{namespace_setup}{Setup} \doxylink{class_button}{Button} Graphics tests. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
 \Hypertarget{namespace_test_ae3f92ec5e8cc16d9b898f3f5f7c1ea59}\index{Test@{Test}!canvas\_loop@{canvas\_loop}}
 \index{canvas\_loop@{canvas\_loop}!Test@{Test}}
 \doxysubsubsection{\texorpdfstring{canvas\_loop()}{canvas\_loop()}}
@@ -64,7 +98,71 @@ void Test\+::canvas\+\_\+setup (\begin{DoxyParamCaption}\item[{void}]{}{}\end{Do
 \begin{DoxyParagraph}{Parameters}
 None. 
 \end{DoxyParagraph}
-\Hypertarget{namespace_test_af7aa9903ca4f2b39e34e2f9337f029e4}\index{Test@{Test}!DMA\_BlockTransfer\_loop@{DMA\_BlockTransfer\_loop}}
+\Hypertarget{namespace_test_af234dadc6e6c1c60bafd30a72183edf2}\index{Test@{Test}!controller\_loop@{controller\_loop}}
+\index{controller\_loop@{controller\_loop}!Test@{Test}}
+\doxysubsubsection{\texorpdfstring{controller\_loop()}{controller\_loop()}}
+{\footnotesize\ttfamily \label{namespace_test_af234dadc6e6c1c60bafd30a72183edf2} 
+void Test\+::controller\+\_\+loop (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Display Controller board test loop. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{namespace_test_ab22e7cf36f772dd8e672a907ccf093d3}\index{Test@{Test}!controller\_setup@{controller\_setup}}
+\index{controller\_setup@{controller\_setup}!Test@{Test}}
+\doxysubsubsection{\texorpdfstring{controller\_setup()}{controller\_setup()}}
+{\footnotesize\ttfamily \label{namespace_test_ab22e7cf36f772dd8e672a907ccf093d3} 
+void Test\+::controller\+\_\+setup (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{namespace_setup}{Setup} Display Controller board tests. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\texorpdfstring{$<$}{<} Pin that controls the TFT reset
+
+\texorpdfstring{$<$}{<} Pin that controls the alarm
+
+\texorpdfstring{$<$}{<} Pin that reads the volume sensor (analog)
+
+\texorpdfstring{$<$}{<} Pin that controls the kettle element (120VAC)
+
+\texorpdfstring{$<$}{<} Pin that indicates the interlock status
+
+\texorpdfstring{$<$}{<} Pin that controls the auxiliary output (120VAC)
+
+\texorpdfstring{$<$}{<} Pin that controls the pump output (120VAC)
+
+\texorpdfstring{$<$}{<} Pin that indicates the contactor status
+
+\texorpdfstring{$<$}{<} Pin that controls the element switch LED
+
+\texorpdfstring{$<$}{<} Pin that controls the buzzer
+
+\texorpdfstring{$<$}{<} Pin that controls the kettle chip select for temp probe (SPI)
+
+\texorpdfstring{$<$}{<} Pin that controls the chiller chip select for temp probe (SPI)
+
+\texorpdfstring{$<$}{<} Turn off the alarm
+
+\texorpdfstring{$<$}{<} Turn off the kettle element
+
+\texorpdfstring{$<$}{<} Turn off the auxiliary output
+
+\texorpdfstring{$<$}{<} Turn off the pump output
+
+\texorpdfstring{$<$}{<} Turn off the element switch LED
+
+\texorpdfstring{$<$}{<} Turn off the buzzer
+
+\texorpdfstring{$<$}{<} Set kettle chip select to HIGH (inactive)
+
+\texorpdfstring{$<$}{<} Set chiller chip select to HIGH (inactive)\Hypertarget{namespace_test_af7aa9903ca4f2b39e34e2f9337f029e4}\index{Test@{Test}!DMA\_BlockTransfer\_loop@{DMA\_BlockTransfer\_loop}}
 \index{DMA\_BlockTransfer\_loop@{DMA\_BlockTransfer\_loop}!Test@{Test}}
 \doxysubsubsection{\texorpdfstring{DMA\_BlockTransfer\_loop()}{DMA\_BlockTransfer\_loop()}}
 {\footnotesize\ttfamily \label{namespace_test_af7aa9903ca4f2b39e34e2f9337f029e4} 

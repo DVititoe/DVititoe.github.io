@@ -25,7 +25,6 @@
 var NAVTREE =
 [
   [ "Solo Controller Documentation", "index.html", [
-    [ "Design Documents", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -50,7 +49,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -63,9 +62,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alarm_mgr_8cpp.html",
-"_t_f_t_m070_a1_8h.html#ac0ba049460582d2e87436e2c38b4a493",
-"index.html#autotoc_md8",
-"namespace_t_f_t_m070_a1.html#abeabc372003cd8bcead3867b93282888"
+"_t_f_t_m070_a1_8h.html#a82a8a689788551a1b4e4552e5ddeae40",
+"class_text_box_button.html#a4fcd777d173b8c07604f0a00572e48f6",
+"namespace_t_f_t_m070_a1.html#a7811c1b5c3d567bfd721490aa8b33f74",
+"struct_config_list__t.html#ab32a80bf64373bee0d55748a7d5dc217"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

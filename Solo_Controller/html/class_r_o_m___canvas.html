@@ -110,6 +110,9 @@ $(function(){initNavTree('class_r_o_m___canvas.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 
+<p>A variation of the <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> class that can load imagery from Flash ROM.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_canvas_8h_source.html">Canvas.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ROM_Canvas:</div>
@@ -117,20 +120,20 @@ Inheritance diagram for ROM_Canvas:</div>
  <div class="center">
   <img src="class_r_o_m___canvas.png" usemap="#ROM_5FCanvas_map" alt=""/>
   <map id="ROM_5FCanvas_map" name="ROM_5FCanvas_map">
-<area href="class_canvas.html" alt="Canvas" shape="rect" coords="0,0,91,24"/>
+<area href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system." alt="Canvas" shape="rect" coords="0,0,91,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abb38a5b1fc4f05921a6af8712a7c93a7" id="r_abb38a5b1fc4f05921a6af8712a7c93a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb38a5b1fc4f05921a6af8712a7c93a7">ROM_Canvas</a> (<a class="el" href="struct_r_o_m___image.html">ROM_Image</a> image)</td></tr>
-<tr class="memdesc:abb38a5b1fc4f05921a6af8712a7c93a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:abb38a5b1fc4f05921a6af8712a7c93a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac891f3f3c631b636717488fa9bdaaf18" id="r_ac891f3f3c631b636717488fa9bdaaf18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac891f3f3c631b636717488fa9bdaaf18">ROM_Canvas</a> (<a class="el" href="struct_r_o_m___image.html">ROM_Image</a> image, bool temporary=false)</td></tr>
+<tr class="memdesc:ac891f3f3c631b636717488fa9bdaaf18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:ac891f3f3c631b636717488fa9bdaaf18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12f9d19af9b2175a768475b348197e26" id="r_a12f9d19af9b2175a768475b348197e26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12f9d19af9b2175a768475b348197e26">~ROM_Canvas</a> (void)=default</td></tr>
 <tr class="memdesc:a12f9d19af9b2175a768475b348197e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
 <tr class="separator:a12f9d19af9b2175a768475b348197e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1ae96e9079bbf9764be06d27b02468" id="r_a1f1ae96e9079bbf9764be06d27b02468"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f1ae96e9079bbf9764be06d27b02468">loadImage</a> (void) const override</td></tr>
-<tr class="memdesc:a1f1ae96e9079bbf9764be06d27b02468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the image from Flash ROM onto this <a class="el" href="class_canvas.html">Canvas</a>.  <br /></td></tr>
+<tr class="memdesc:a1f1ae96e9079bbf9764be06d27b02468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the image from Flash ROM onto this <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a>.  <br /></td></tr>
 <tr class="separator:a1f1ae96e9079bbf9764be06d27b02468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_canvas"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_canvas')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_canvas.html">Canvas</a></td></tr>
 <tr class="memitem:a3b3a7c17161f72d4f2332021d6e866e9 inherit pub_methods_class_canvas" id="r_a3b3a7c17161f72d4f2332021d6e866e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a3b3a7c17161f72d4f2332021d6e866e9">Canvas</a> (void)</td></tr>
@@ -172,12 +175,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ca049655ab1b5f0626421db9833e405 inherit pub_methods_class_canvas" id="r_a8ca049655ab1b5f0626421db9833e405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a8ca049655ab1b5f0626421db9833e405">BTE_CopyFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;source, uint16_t Src_x0, uint16_t Src_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="class_canvas.html#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="class_canvas.html#a8518cf311272b0d4effe0fe1f89a5091">height</a>) const</td></tr>
 <tr class="memdesc:a8ca049655ab1b5f0626421db9833e405 inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses BTE engine to copy imagery from <code class="param">source</code> canvas to this one.  <br /></td></tr>
 <tr class="separator:a8ca049655ab1b5f0626421db9833e405 inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af023822b29932eae59e4cfb829a13e inherit pub_methods_class_canvas" id="r_a1af023822b29932eae59e4cfb829a13e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a1af023822b29932eae59e4cfb829a13e">BTE_AddImageFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;S0, uint16_t S0_x0, uint16_t S0_y0, const <a class="el" href="class_canvas.html">Canvas</a> &amp;S1, uint16_t S1_x0, uint16_t S1_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="class_canvas.html#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="class_canvas.html#a8518cf311272b0d4effe0fe1f89a5091">height</a>, bool S1OpacityOn=false) const</td></tr>
+<tr class="memdesc:a1af023822b29932eae59e4cfb829a13e inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
+<tr class="separator:a1af023822b29932eae59e4cfb829a13e inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75344e1c4f131b8731f539dbf1446dde inherit pub_methods_class_canvas" id="r_a75344e1c4f131b8731f539dbf1446dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a75344e1c4f131b8731f539dbf1446dde">BTE_AddImageFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;source, uint16_t Src_x0, uint16_t Src_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="class_canvas.html#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="class_canvas.html#a8518cf311272b0d4effe0fe1f89a5091">height</a>) const</td></tr>
-<tr class="memdesc:a75344e1c4f131b8731f539dbf1446dde inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an opacity encoded image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
+<tr class="memdesc:a75344e1c4f131b8731f539dbf1446dde inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
 <tr class="separator:a75344e1c4f131b8731f539dbf1446dde inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a753719f9ab04411f55d82e02a67980e7 inherit pub_methods_class_canvas" id="r_a753719f9ab04411f55d82e02a67980e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a753719f9ab04411f55d82e02a67980e7">BTE_AddTransparantImageFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;source, uint16_t Src_x0, uint16_t Src_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="class_canvas.html#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="class_canvas.html#a8518cf311272b0d4effe0fe1f89a5091">height</a>) const</td></tr>
-<tr class="memdesc:a753719f9ab04411f55d82e02a67980e7 inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an opacity encoded image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
-<tr class="separator:a753719f9ab04411f55d82e02a67980e7 inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ffbd334abdbee8a491091f07d9ac3b inherit pub_methods_class_canvas" id="r_a49ffbd334abdbee8a491091f07d9ac3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a49ffbd334abdbee8a491091f07d9ac3b">BTE_AddTransparentImageFrom</a> (const <a class="el" href="class_canvas.html">Canvas</a> &amp;source, uint16_t Src_x0, uint16_t Src_y0, uint16_t DT_x0, uint16_t DT_y0, uint16_t <a class="el" href="class_canvas.html#a70192ede48d06854ca683baee970b809">width</a>, uint16_t <a class="el" href="class_canvas.html#a8518cf311272b0d4effe0fe1f89a5091">height</a>) const</td></tr>
+<tr class="memdesc:a49ffbd334abdbee8a491091f07d9ac3b inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an opacity encoded image from <code class="param">source</code> to the image on this canvas.  <br /></td></tr>
+<tr class="separator:a49ffbd334abdbee8a491091f07d9ac3b inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c43364b79f580b9b0909c121457cad1 inherit pub_methods_class_canvas" id="r_a1c43364b79f580b9b0909c121457cad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a1c43364b79f580b9b0909c121457cad1">clear</a> (void)</td></tr>
 <tr class="memdesc:a1c43364b79f580b9b0909c121457cad1 inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases the canvas, setting all pixels to Black.  <br /></td></tr>
 <tr class="separator:a1c43364b79f580b9b0909c121457cad1 inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,21 +196,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aebdea765412fef5c829765f1ac93fb74 inherit pub_methods_class_canvas" id="r_aebdea765412fef5c829765f1ac93fb74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#aebdea765412fef5c829765f1ac93fb74">text</a> (uint16_t x0, uint16_t y0, uint16_t fColor, uint16_t bColor, const char *text, bool small=false) const</td></tr>
 <tr class="memdesc:aebdea765412fef5c829765f1ac93fb74 inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws text onto the canvas.  <br /></td></tr>
 <tr class="separator:aebdea765412fef5c829765f1ac93fb74 inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab06a8c9dd5b8b146077268cf729f2cd inherit pub_methods_class_canvas" id="r_aab06a8c9dd5b8b146077268cf729f2cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#aab06a8c9dd5b8b146077268cf729f2cd">drawSquare</a> (unsigned short x0, unsigned short y0, unsigned short x1, unsigned short y1, unsigned short color) const</td></tr>
-<tr class="memdesc:aab06a8c9dd5b8b146077268cf729f2cd inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an unfilled square.  <br /></td></tr>
-<tr class="separator:aab06a8c9dd5b8b146077268cf729f2cd inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a505e90108d0338e708ff7e41715eb inherit pub_methods_class_canvas" id="r_ad8a505e90108d0338e708ff7e41715eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#ad8a505e90108d0338e708ff7e41715eb">drawRect</a> (unsigned short x0, unsigned short y0, unsigned short x1, unsigned short y1, unsigned short color) const</td></tr>
+<tr class="memdesc:ad8a505e90108d0338e708ff7e41715eb inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an unfilled square.  <br /></td></tr>
+<tr class="separator:ad8a505e90108d0338e708ff7e41715eb inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ba1d59a50063f0bf5936fc675b4bd4 inherit pub_methods_class_canvas" id="r_a04ba1d59a50063f0bf5936fc675b4bd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a04ba1d59a50063f0bf5936fc675b4bd4">drawRoundedRect</a> (unsigned short x0, unsigned short y0, unsigned short x1, unsigned short y1, unsigned short color, unsigned short radius, bool fill=false) const</td></tr>
+<tr class="memdesc:a04ba1d59a50063f0bf5936fc675b4bd4 inherit pub_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an unfilled rounded square.  <br /></td></tr>
+<tr class="separator:a04ba1d59a50063f0bf5936fc675b4bd4 inherit pub_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_canvas"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_canvas')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_canvas.html">Canvas</a></td></tr>
-<tr class="memitem:aebf18fd93df0ab969325943a765366f3 inherit pub_static_methods_class_canvas" id="r_aebf18fd93df0ab969325943a765366f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#aebf18fd93df0ab969325943a765366f3">BL_ON</a> (void)</td></tr>
-<tr class="memdesc:aebf18fd93df0ab969325943a765366f3 inherit pub_static_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight on.  <br /></td></tr>
-<tr class="separator:aebf18fd93df0ab969325943a765366f3 inherit pub_static_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2edb82c8c8a1a129182c68a8360616b3 inherit pub_static_methods_class_canvas" id="r_a2edb82c8c8a1a129182c68a8360616b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a2edb82c8c8a1a129182c68a8360616b3">BL_OFF</a> (void)</td></tr>
-<tr class="memdesc:a2edb82c8c8a1a129182c68a8360616b3 inherit pub_static_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight off.  <br /></td></tr>
-<tr class="separator:a2edb82c8c8a1a129182c68a8360616b3 inherit pub_static_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbb71b47ce9fecce4bbc254f813989d inherit pub_static_methods_class_canvas" id="r_a4dbb71b47ce9fecce4bbc254f813989d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a4dbb71b47ce9fecce4bbc254f813989d">BL_ON</a> (void)</td></tr>
+<tr class="memdesc:a4dbb71b47ce9fecce4bbc254f813989d inherit pub_static_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight on.  <br /></td></tr>
+<tr class="separator:a4dbb71b47ce9fecce4bbc254f813989d inherit pub_static_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213caea00700614848fc998ead6db9f0 inherit pub_static_methods_class_canvas" id="r_a213caea00700614848fc998ead6db9f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a213caea00700614848fc998ead6db9f0">BL_OFF</a> (void)</td></tr>
+<tr class="memdesc:a213caea00700614848fc998ead6db9f0 inherit pub_static_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the TFT backlight off.  <br /></td></tr>
+<tr class="separator:a213caea00700614848fc998ead6db9f0 inherit pub_static_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6db455aef96b2f06acddc9ef19a18572 inherit pub_static_methods_class_canvas" id="r_a6db455aef96b2f06acddc9ef19a18572"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a6db455aef96b2f06acddc9ef19a18572">nextAddress</a> (void)</td></tr>
-<tr class="memdesc:a6db455aef96b2f06acddc9ef19a18572 inherit pub_static_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location in DRAM whether the next image <a class="el" href="class_canvas.html">Canvas</a> will be placed.  <br /></td></tr>
+<tr class="memdesc:a6db455aef96b2f06acddc9ef19a18572 inherit pub_static_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location in DRAM whether the next image <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> will be placed.  <br /></td></tr>
 <tr class="separator:a6db455aef96b2f06acddc9ef19a18572 inherit pub_static_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f6299f7633b793fe345840b3600678 inherit pub_static_methods_class_canvas" id="r_a10f6299f7633b793fe345840b3600678"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a10f6299f7633b793fe345840b3600678">drawLine</a> (uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color)</td></tr>
 <tr class="memdesc:a10f6299f7633b793fe345840b3600678 inherit pub_static_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a line onto the display.  <br /></td></tr>
@@ -223,9 +232,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a636cd8199477d4d8875d26092ff25d3e inherit pro_methods_class_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the location of the destination (DT) image for the BTE engine.  <br /></td></tr>
 <tr class="separator:a636cd8199477d4d8875d26092ff25d3e inherit pro_methods_class_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="abb38a5b1fc4f05921a6af8712a7c93a7" name="abb38a5b1fc4f05921a6af8712a7c93a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb38a5b1fc4f05921a6af8712a7c93a7">&#9670;&#160;</a></span>ROM_Canvas()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A variation of the <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> class that can load imagery from Flash ROM. </p>
+<p>Note that this class assumes that the imagery in Flash ROM is in 16 bpp color format. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac891f3f3c631b636717488fa9bdaaf18" name="ac891f3f3c631b636717488fa9bdaaf18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac891f3f3c631b636717488fa9bdaaf18">&#9670;&#160;</a></span>ROM_Canvas()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,8 +245,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">ROM_Canvas::ROM_Canvas </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_r_o_m___image.html">ROM_Image</a></td>          <td class="paramname"><span class="paramname"><em>image</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_r_o_m___image.html">ROM_Image</a></td>          <td class="paramname"><span class="paramname"><em>image</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>temporary</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -301,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Loads the image from Flash ROM onto this <a class="el" href="class_canvas.html">Canvas</a>. </p>
+<p>Loads the image from Flash ROM onto this <a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a>. </p>
 <dl class="section user"><dt>Parameters</dt><dd>None. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_canvas.html#ae60defbed8de286ab7891d56ef9467dc">Canvas</a>.</p>
@@ -309,8 +325,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_canvas_8h_source.html">Canvas.h</a></li>
-<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_canvas_8cpp.html">Canvas.cpp</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/<a class="el" href="_canvas_8h_source.html">Canvas.h</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/<a class="el" href="_canvas_8cpp.html">Canvas.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

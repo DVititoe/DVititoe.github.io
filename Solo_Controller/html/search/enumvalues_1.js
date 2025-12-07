@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['left_0',['LEFT',['../class_dynamic_text.html#af5579996825b5a408cab8ed56b20b548ad728e67e2b1809da51f1e9b1e40262e2',1,'DynamicText']]]
+  ['center_0',['CENTER',['../class_dynamic_text.html#af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63',1,'DynamicText']]]
 ];

@@ -14,7 +14,7 @@ var searchData=
   ['setupvolume_5faddress_11',['SETUPVOLUME_ADDRESS',['../_r_o_m___config_8h.html#adb4110c434ff9f172e1c1528eeae934f',1,'ROM_Config.h']]],
   ['setupvolume_5fheight_12',['SETUPVOLUME_HEIGHT',['../_r_o_m___config_8h.html#a0821dbd9bb85e7b2558400846467b02d',1,'ROM_Config.h']]],
   ['setupvolume_5fwidth_13',['SETUPVOLUME_WIDTH',['../_r_o_m___config_8h.html#a84b3400e8faabd6ff5d1b169f8003540',1,'ROM_Config.h']]],
-  ['simulate_5fsensors_14',['SIMULATE_SENSORS',['../main_8cpp.html#a92711f2817afd9590e7998633fae08a8',1,'main.cpp']]],
+  ['simulate_5fsensors_14',['SIMULATE_SENSORS',['../_display_2main_8cpp.html#a92711f2817afd9590e7998633fae08a8',1,'main.cpp']]],
   ['soloalarm_5faddress_15',['SOLOALARM_ADDRESS',['../_r_o_m___config_8h.html#a69ab8b03ece2115516f90bc50b395443',1,'ROM_Config.h']]],
   ['soloalarm_5fheight_16',['SOLOALARM_HEIGHT',['../_r_o_m___config_8h.html#ac18713af7b4888ba885fff902a97acb7',1,'ROM_Config.h']]],
   ['soloalarm_5fwidth_17',['SOLOALARM_WIDTH',['../_r_o_m___config_8h.html#a2f1fdf9878195b231af1a6539951e3db',1,'ROM_Config.h']]],

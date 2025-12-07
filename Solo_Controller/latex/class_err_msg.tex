@@ -2,6 +2,11 @@
 \hypertarget{class_err_msg}{}\label{class_err_msg}\index{ErrMsg@{ErrMsg}}
 
 
+Provides a mechnism for displaying error and warning messages on the TFT display.  
+
+
+
+
 {\ttfamily \#include $<$Err\+Msg.\+h$>$}
 
 \doxysubsubsection*{Classes}
@@ -32,6 +37,26 @@ static \mbox{\hyperlink{class_err_msg}{Err\+Msg}} \& \mbox{\hyperlink{class_err_
 \item 
 static \mbox{\hyperlink{struct_err_msg_1_1_endl_token}{Endl\+Token}} \mbox{\hyperlink{class_err_msg_a78afc654669bd47ac90612fa9838b59b}{endl}}
 \begin{DoxyCompactList}\small\item\em End of line token used by the operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides a mechnism for displaying error and warning messages on the TFT display. 
+
+This is a Singleton class. Use \doxylink{class_err_msg_a6e3c7d68a9335359558c3af720cb28d8}{Err\+Msg\+::get\+Instance()} to obtain a reference to the \doxylink{class_err_msg}{Err\+Msg} instance. Warning messages give users the abiliy to acknowledge the message and continue. Error messages halt the program altogether. The following is an example of how to use the \doxylink{class_err_msg}{Err\+Msg} class\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_err_msg_8h_aba17f9ec5e9b5441ed60d8bb1dfe3889}{errMsg}}.\mbox{\hyperlink{class_err_msg_a2aedd0a05d94766914cfba46ee909879}{warning}}()}
+\DoxyCodeLine{\ \ <<\ \textcolor{stringliteral}{"{}This\ is\ a\ test\ warning\ message."{}}\ <<\ \mbox{\hyperlink{class_err_msg_a78afc654669bd47ac90612fa9838b59b}{ErrMsg::endl}}}
+\DoxyCodeLine{\ \ <<\ \textcolor{stringliteral}{"{}Value\ too\ high:\ "{}}\ <<\ value\ <<\ \mbox{\hyperlink{class_err_msg_a78afc654669bd47ac90612fa9838b59b}{ErrMsg::endl}};}
+\DoxyCodeLine{\mbox{\hyperlink{_err_msg_8h_aba17f9ec5e9b5441ed60d8bb1dfe3889}{errMsg}}.\mbox{\hyperlink{class_err_msg_a478acd57879924ba9357c9d1daec1220}{send}}();}
+
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+It is recommended that their only be one instance of \doxylink{class_err_msg}{Err\+Msg} for a given application. 
+\end{DoxyNote}
 
 
 \doxysubsection{Member Function Documentation}
@@ -147,5 +172,5 @@ End of line token used by the operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_err_msg_8h}{Err\+Msg.\+h}}\item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_err_msg_8cpp}{Err\+Msg.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_err_msg_8h}{Err\+Msg.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_err_msg_8cpp}{Err\+Msg.\+cpp}}\end{DoxyCompactItemize}

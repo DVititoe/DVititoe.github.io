@@ -15,7 +15,5 @@ var searchData=
   ['errmsg_3a_3aoperator_3c_3c_3c_20errmsg_3a_3aendltoken_20_3e_12',['ErrMsg::operator&lt;&lt;&lt; ErrMsg::EndlToken &gt;',['../_err_msg_8cpp.html#ab3b76bc3a85b50c66cc734f6736e33e7',1,'operator&lt;&lt;&lt; ErrMsg::EndlToken &gt;(const ErrMsg::EndlToken value):&#160;ErrMsg.cpp'],['../_err_msg_8h.html#ab3b76bc3a85b50c66cc734f6736e33e7',1,'operator&lt;&lt;&lt; ErrMsg::EndlToken &gt;(const ErrMsg::EndlToken value):&#160;ErrMsg.cpp']]],
   ['error_13',['error',['../class_err_msg.html#aada2535b49111bce5c4302cd18da0edf',1,'ErrMsg']]],
   ['errormessage_5floop_14',['errorMessage_loop',['../namespace_test.html#a85365569ac53e849f50ec41442c8bb63',1,'Test']]],
-  ['errormessage_5fsetup_15',['errorMessage_setup',['../namespace_test.html#a409d479b04d8bb34cfa3f7d448f4c69d',1,'Test']]],
-  ['extractchardefs_16',['extractCharDefs',['../namespaceparse__font__xml.html#a6b5ad7dca71223e5d57db716ca2f29b6',1,'parse_font_xml']]],
-  ['extractkernings_17',['extractKernings',['../namespaceparse__font__xml.html#ab7a4e1b7f2c0ecd95f067fdf8999e590',1,'parse_font_xml']]]
+  ['errormessage_5fsetup_15',['errorMessage_setup',['../namespace_test.html#a409d479b04d8bb34cfa3f7d448f4c69d',1,'Test']]]
 ];

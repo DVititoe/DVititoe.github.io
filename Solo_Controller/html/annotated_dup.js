@@ -3,8 +3,13 @@ var annotated_dup =
     [ "FT5316", "namespace_f_t5316.html", [
       [ "TouchLocation", "struct_f_t5316_1_1_touch_location.html", "struct_f_t5316_1_1_touch_location" ]
     ] ],
+    [ "TextBoxConfig", "namespace_text_box_config.html", [
+      [ "TextBox_Config", "struct_text_box_config_1_1_text_box___config.html", "struct_text_box_config_1_1_text_box___config" ]
+    ] ],
     [ "Block_Image", "struct_block___image.html", "struct_block___image" ],
     [ "Button", "class_button.html", "class_button" ],
+    [ "ButtonConfig_t", "struct_button_config__t.html", "struct_button_config__t" ],
+    [ "ButtonState", "class_button_state.html", "class_button_state" ],
     [ "Canvas", "class_canvas.html", "class_canvas" ],
     [ "CharDef_t", "struct_char_def__t.html", "struct_char_def__t" ],
     [ "ChillerTempSensor", "class_chiller_temp_sensor.html", "class_chiller_temp_sensor" ],
@@ -13,9 +18,11 @@ var annotated_dup =
     [ "DRAM_Canvas", "class_d_r_a_m___canvas.html", "class_d_r_a_m___canvas" ],
     [ "DynamicText", "class_dynamic_text.html", "class_dynamic_text" ],
     [ "ErrMsg", "class_err_msg.html", "class_err_msg" ],
-    [ "Font_List_t", "struct_font___list__t.html", "struct_font___list__t" ],
+    [ "file_stem", "structfile__stem.html", null ],
+    [ "FontList", "class_font_list.html", "class_font_list" ],
     [ "GrFont", "class_gr_font.html", "class_gr_font" ],
-    [ "ImmediateButton", "class_immediate_button.html", "class_immediate_button" ],
+    [ "ImageButtonState", "class_image_button_state.html", "class_image_button_state" ],
+    [ "ImmediateButton", "class_immediate_button.html", null ],
     [ "KettleTempSensor", "class_kettle_temp_sensor.html", "class_kettle_temp_sensor" ],
     [ "KettleVolSensor", "class_kettle_vol_sensor.html", "class_kettle_vol_sensor" ],
     [ "MainMenu", "class_main_menu.html", "class_main_menu" ],
@@ -33,8 +40,10 @@ var annotated_dup =
     [ "SetupTempMenu", "class_setup_temp_menu.html", "class_setup_temp_menu" ],
     [ "SetupVolMenu", "class_setup_vol_menu.html", "class_setup_vol_menu" ],
     [ "Shape_t", "struct_shape__t.html", "struct_shape__t" ],
-    [ "ShapeList_t", "struct_shape_list__t.html", "struct_shape_list__t" ],
     [ "SoloMenu", "class_solo_menu.html", "class_solo_menu" ],
     [ "TextBox", "class_text_box.html", "class_text_box" ],
+    [ "TextBoxButton", "class_text_box_button.html", "class_text_box_button" ],
+    [ "TextBoxButtonState", "class_text_box_button_state.html", "class_text_box_button_state" ],
+    [ "TextButtonState", "class_text_button_state.html", "class_text_button_state" ],
     [ "ToggleButton", "class_toggle_button.html", "class_toggle_button" ]
 ];

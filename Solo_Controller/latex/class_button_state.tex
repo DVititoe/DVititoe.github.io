@@ -1,0 +1,295 @@
+\doxysection{Button\+State Class Reference}
+\hypertarget{class_button_state}{}\label{class_button_state}\index{ButtonState@{ButtonState}}
+
+
+Base class used by all derived \doxylink{class_button}{Button} State classes.  
+
+
+
+
+{\ttfamily \#include $<$Button\+State.\+h$>$}
+
+Inheritance diagram for Button\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_button_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_button_state_ae7934b502a82f94d620a15187f448e20}{button\+Callback\+Function}}) (void)
+\begin{DoxyCompactList}\small\item\em Defines the form of the callback functions expected by the \doxylink{class_button}{Button} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_state_a7ef2dc7590311cc975fece52560df804}{Button\+State}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&dest\+Canvas, uint16\+\_\+t \mbox{\hyperlink{class_button_state_a4758458de5f970e6a08abe5907305f81}{x}}, uint16\+\_\+t \mbox{\hyperlink{class_button_state_a6e6d4199b2629842858a8c50254b73ff}{y}}, uint16\+\_\+t \mbox{\hyperlink{class_button_state_a64ff0b381ad8267f2523ad7bd239cd96}{width}}, uint16\+\_\+t \mbox{\hyperlink{class_button_state_a7da93deaf68570f247a5530a495c9ea3}{height}}, \mbox{\hyperlink{class_button_state_ae7934b502a82f94d620a15187f448e20}{button\+Callback\+Function}} \mbox{\hyperlink{class_button_state_a83975fb23a76b4571fdb84175d6de31d}{callback}}, unsigned short corner\+Radius, uint8\+\_\+t border\+Width, uint16\+\_\+t border\+Color, uint16\+\_\+t fill\+Color16)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_button}{Button} State object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_button_state_aa22984fa40b60756f83843f6def078a8}{\texorpdfstring{$\sim$}{\string~}\+Button\+State}} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ General Methods}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_button_state_ac6b9b2d503e6e0ef48b4bda9b118c9e4}{update\+Background}} (void)
+\begin{DoxyCompactList}\small\item\em Update the button background graphics. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_state_aceb5e1f744f0e61f052cc3cdb822cf9c}{draw}} (void)
+\begin{DoxyCompactList}\small\item\em Draw the button assuming images have transparent background. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_state_a4dd52b63f6c6dabb7c42c933a748305b}{draw\+Opaque}} (void)
+\begin{DoxyCompactList}\small\item\em Draw the button assuming images have an opaque background. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_state_af251a82f8bda2d5664b5b42fc0676486}{draw}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&new\+Canvas, bool Transparent\+On=true)
+\begin{DoxyCompactList}\small\item\em Draw the button onto the specified canvas at the specified location. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_button_state_a1bbe099814545ed14419c0cb65709bf2}{begin}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the button state object. This method should be called before first use of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_state_a83975fb23a76b4571fdb84175d6de31d}{callback}} (void) const
+\begin{DoxyCompactList}\small\item\em Calls the callback function associated with this button state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Accessor Methods}\par
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_state_a64ff0b381ad8267f2523ad7bd239cd96}{width}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the width of the button state. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_state_a7da93deaf68570f247a5530a495c9ea3}{height}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the height of the button state. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_state_a4758458de5f970e6a08abe5907305f81}{x}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the X location of the button state on the destination canvas. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_button_state_a6e6d4199b2629842858a8c50254b73ff}{y}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the Y location of the button state on the destination canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_canvas}{Canvas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_button_state_a8cd7095c110c4c0439d11fa163c072ee}{\+\_\+\+Button\+Gfx\+Canvas}} = nullptr
+\begin{DoxyCompactList}\small\item\em \doxylink{class_canvas}{Canvas} that holds the colorized button graphics. Derived classes will define this canvas as appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class used by all derived \doxylink{class_button}{Button} State classes. 
+
+This class is used internally by the \doxylink{class_button}{Button} class and its derivatives. 
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{class_button_state_ae7934b502a82f94d620a15187f448e20}\index{ButtonState@{ButtonState}!buttonCallbackFunction@{buttonCallbackFunction}}
+\index{buttonCallbackFunction@{buttonCallbackFunction}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{buttonCallbackFunction}{buttonCallbackFunction}}
+{\footnotesize\ttfamily \label{class_button_state_ae7934b502a82f94d620a15187f448e20} 
+typedef void(\texorpdfstring{$\ast$}{*} Button\+State\+::button\+Callback\+Function) (void)}
+
+
+
+Defines the form of the callback functions expected by the \doxylink{class_button}{Button} class. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_button_state_a7ef2dc7590311cc975fece52560df804}\index{ButtonState@{ButtonState}!ButtonState@{ButtonState}}
+\index{ButtonState@{ButtonState}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{ButtonState()}{ButtonState()}}
+{\footnotesize\ttfamily \label{class_button_state_a7ef2dc7590311cc975fece52560df804} 
+Button\+State\+::\+Button\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{dest\+Canvas}{, }\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{, }\item[{\mbox{\hyperlink{class_button_state_ae7934b502a82f94d620a15187f448e20}{button\+Callback\+Function}}}]{callback}{, }\item[{unsigned short}]{corner\+Radius}{, }\item[{uint8\+\_\+t}]{border\+Width}{, }\item[{uint16\+\_\+t}]{border\+Color}{, }\item[{uint16\+\_\+t}]{fill\+Color16}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \doxylink{class_button}{Button} State object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dest\+Canvas} & \doxylink{class_canvas}{Canvas} where the button will be drawn \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & X location of the image in the destination canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Y location of the image in the destination canvas \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & Width of the image \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & Height of the image \\
+\hline
+\mbox{\texttt{ in}}  & {\em callback} & Callback function associated with this button state \\
+\hline
+\mbox{\texttt{ in}}  & {\em corner\+Radius} & Corner radius for the button \\
+\hline
+\mbox{\texttt{ in}}  & {\em border\+Width} & Border width in pixels of the button border \\
+\hline
+\mbox{\texttt{ in}}  & {\em border\+Color} & Border color in 16-\/bit RGB format \\
+\hline
+\mbox{\texttt{ in}}  & {\em fill\+Color16} & Fill color in 16-\/bit RGB format \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_button_state_aa22984fa40b60756f83843f6def078a8}\index{ButtonState@{ButtonState}!````~ButtonState@{\texorpdfstring{$\sim$}{\string~}ButtonState}}
+\index{````~ButtonState@{\texorpdfstring{$\sim$}{\string~}ButtonState}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ButtonState()}{\string~ButtonState()}}
+{\footnotesize\ttfamily \label{class_button_state_aa22984fa40b60756f83843f6def078a8} 
+virtual Button\+State\+::\texorpdfstring{$\sim$}{\string~}\+Button\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_button_state_a1bbe099814545ed14419c0cb65709bf2}\index{ButtonState@{ButtonState}!begin@{begin}}
+\index{begin@{begin}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_button_state_a1bbe099814545ed14419c0cb65709bf2} 
+virtual void Button\+State\+::begin (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the button state object. This method should be called before first use of the object. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Reimplemented in \mbox{\hyperlink{class_image_button_state_a17134a82ecc065c05baa7b772888fa84}{Image\+Button\+State}}, \mbox{\hyperlink{class_text_box_button_state_afd802fb5a1e553a11a90afc3b7926659}{Text\+Box\+Button\+State}}, and \mbox{\hyperlink{class_text_button_state_a0523311bc7b712e5c4682560738cccd3}{Text\+Button\+State}}.
+
+\Hypertarget{class_button_state_a83975fb23a76b4571fdb84175d6de31d}\index{ButtonState@{ButtonState}!callback@{callback}}
+\index{callback@{callback}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily \label{class_button_state_a83975fb23a76b4571fdb84175d6de31d} 
+void Button\+State\+::callback (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calls the callback function associated with this button state. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_button_state_af251a82f8bda2d5664b5b42fc0676486}\index{ButtonState@{ButtonState}!draw@{draw}}
+\index{draw@{draw}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_button_state_af251a82f8bda2d5664b5b42fc0676486} 
+void Button\+State\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{new\+Canvas}{, }\item[{bool}]{Transparent\+On}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw the button onto the specified canvas at the specified location. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+Canvas} & \doxylink{class_canvas}{Canvas} where the button will be drawn \\
+\hline
+\mbox{\texttt{ in}}  & {\em Transparent\+On} & If true, the button graphics will be drawn with transparency \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_button_state_aceb5e1f744f0e61f052cc3cdb822cf9c}\index{ButtonState@{ButtonState}!draw@{draw}}
+\index{draw@{draw}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_button_state_aceb5e1f744f0e61f052cc3cdb822cf9c} 
+void Button\+State\+::draw (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw the button assuming images have transparent background. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+
+
+Reimplemented in \mbox{\hyperlink{class_text_box_button_state_aa382acea95d32a1ac8fb7ee41aaaf095}{Text\+Box\+Button\+State}}.
+
+\Hypertarget{class_button_state_a4dd52b63f6c6dabb7c42c933a748305b}\index{ButtonState@{ButtonState}!drawOpaque@{drawOpaque}}
+\index{drawOpaque@{drawOpaque}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{drawOpaque()}{drawOpaque()}}
+{\footnotesize\ttfamily \label{class_button_state_a4dd52b63f6c6dabb7c42c933a748305b} 
+void Button\+State\+::draw\+Opaque (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw the button assuming images have an opaque background. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_button_state_a7da93deaf68570f247a5530a495c9ea3}\index{ButtonState@{ButtonState}!height@{height}}
+\index{height@{height}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \label{class_button_state_a7da93deaf68570f247a5530a495c9ea3} 
+uint16\+\_\+t Button\+State\+::height (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the height of the button state. 
+
+\begin{DoxyReturn}{Returns}
+height of the button state in pixels 
+\end{DoxyReturn}
+\Hypertarget{class_button_state_ac6b9b2d503e6e0ef48b4bda9b118c9e4}\index{ButtonState@{ButtonState}!updateBackground@{updateBackground}}
+\index{updateBackground@{updateBackground}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{updateBackground()}{updateBackground()}}
+{\footnotesize\ttfamily \label{class_button_state_ac6b9b2d503e6e0ef48b4bda9b118c9e4} 
+void Button\+State\+::update\+Background (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the button background graphics. 
+
+\begin{DoxyParagraph}{Parameters}
+None. 
+\end{DoxyParagraph}
+\Hypertarget{class_button_state_a64ff0b381ad8267f2523ad7bd239cd96}\index{ButtonState@{ButtonState}!width@{width}}
+\index{width@{width}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily \label{class_button_state_a64ff0b381ad8267f2523ad7bd239cd96} 
+uint16\+\_\+t Button\+State\+::width (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the width of the button state. 
+
+\begin{DoxyReturn}{Returns}
+width of the button state in pixels 
+\end{DoxyReturn}
+\Hypertarget{class_button_state_a4758458de5f970e6a08abe5907305f81}\index{ButtonState@{ButtonState}!x@{x}}
+\index{x@{x}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{x()}{x()}}
+{\footnotesize\ttfamily \label{class_button_state_a4758458de5f970e6a08abe5907305f81} 
+uint16\+\_\+t Button\+State\+::x (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the X location of the button state on the destination canvas. 
+
+\begin{DoxyReturn}{Returns}
+UL X location of the button state in pixels 
+\end{DoxyReturn}
+\Hypertarget{class_button_state_a6e6d4199b2629842858a8c50254b73ff}\index{ButtonState@{ButtonState}!y@{y}}
+\index{y@{y}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{y()}{y()}}
+{\footnotesize\ttfamily \label{class_button_state_a6e6d4199b2629842858a8c50254b73ff} 
+uint16\+\_\+t Button\+State\+::y (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the Y location of the button state on the destination canvas. 
+
+\begin{DoxyReturn}{Returns}
+UL Y location of the button state in pixels 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_button_state_a8cd7095c110c4c0439d11fa163c072ee}\index{ButtonState@{ButtonState}!\_ButtonGfxCanvas@{\_ButtonGfxCanvas}}
+\index{\_ButtonGfxCanvas@{\_ButtonGfxCanvas}!ButtonState@{ButtonState}}
+\doxysubsubsection{\texorpdfstring{\_ButtonGfxCanvas}{\_ButtonGfxCanvas}}
+{\footnotesize\ttfamily \label{class_button_state_a8cd7095c110c4c0439d11fa163c072ee} 
+\mbox{\hyperlink{class_canvas}{Canvas}}\texorpdfstring{$\ast$}{*} Button\+State\+::\+\_\+\+Button\+Gfx\+Canvas = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxylink{class_canvas}{Canvas} that holds the colorized button graphics. Derived classes will define this canvas as appropriate. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_button_state_8h}{Button\+State.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_button_state_8cpp}{Button\+State.\+cpp}}\end{DoxyCompactItemize}

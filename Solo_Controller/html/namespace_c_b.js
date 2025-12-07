@@ -6,6 +6,7 @@ var namespace_c_b =
       [ "boilModeOn", "namespace_c_b_1_1_m_a_i_n.html#a6645fd547e60bf19d50bb14dc5990a59", null ],
       [ "chillerTempAlarmOff", "namespace_c_b_1_1_m_a_i_n.html#a3d5d872c2864e86364f53f30a5d7cee7", null ],
       [ "chillerTempAlarmOn", "namespace_c_b_1_1_m_a_i_n.html#abd3dc07f4f370f84dfeaaf3596011465", null ],
+      [ "dataEntry", "namespace_c_b_1_1_m_a_i_n.html#af9cdbaf980a66960908fa5aedbe382e5", null ],
       [ "elementOff", "namespace_c_b_1_1_m_a_i_n.html#aa2964d6ce2eb21dd7d3f5d6e9682e9f9", null ],
       [ "elementOn", "namespace_c_b_1_1_m_a_i_n.html#ac77110627d22441004593cd8adb841ed", null ],
       [ "kettleTempAlarmOff", "namespace_c_b_1_1_m_a_i_n.html#a9b526214ac91782b6b2844ddc9d5a6bc", null ],

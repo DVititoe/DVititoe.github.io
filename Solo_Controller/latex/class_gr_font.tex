@@ -2,6 +2,11 @@
 \hypertarget{class_gr_font}{}\label{class_gr_font}\index{GrFont@{GrFont}}
 
 
+Base class used by all Graphical Fonts.  
+
+
+
+
 {\ttfamily \#include $<$Gr\+Font.\+h$>$}
 
 Inheritance diagram for Gr\+Font\+:\begin{figure}[H]
@@ -20,17 +25,17 @@ void \mbox{\hyperlink{class_gr_font_afafca44ad2132b9a4ef6d6024940f28e}{begin}} (
 void \mbox{\hyperlink{class_gr_font_adfa5155f67223d7ec6c99b86a7baf38f}{begin}} (uint8\+\_\+t red, uint8\+\_\+t green, uint8\+\_\+t blue)
 \begin{DoxyCompactList}\small\item\em Initializes the font and sets the font\textquotesingle{}s foreground color. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{class_gr_font_a60718c0e9030b3ca20acb3f123b10284}{char\+Def}} (char cc, \mbox{\hyperlink{struct_char_def__t}{Char\+Def\+\_\+t}} \&results) const =0
-\begin{DoxyCompactList}\small\item\em Abstract function, used to define the characteristics of each character. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Abstract function. Used by derived classes to define the characteristics of each character. \end{DoxyCompactList}\item 
 int8\+\_\+t \mbox{\hyperlink{class_gr_font_a2fb854b4db5acd71b78df4ca4824fcfb}{kerning}} (uint8\+\_\+t first, uint8\+\_\+t second) const
-\begin{DoxyCompactList}\small\item\em Finds the amount of kerning that should be used between two characters. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the amount of kerning that should be used between two characters. \end{DoxyCompactList}\item 
 uint8\+\_\+t \mbox{\hyperlink{class_gr_font_a55a07e7170b193fc56c623ce06e7899d}{place\+Text}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&canvas, char cc, uint16\+\_\+t x, uint16\+\_\+t y) const
 \begin{DoxyCompactList}\small\item\em Places a character onto the {\ttfamily canvas}. \end{DoxyCompactList}\item 
 uint8\+\_\+t \mbox{\hyperlink{class_gr_font_a379bdeb296da78380a840090140c2c96}{place\+Text}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&canvas, const char \texorpdfstring{$\ast$}{*}const text, uint16\+\_\+t buff\+Size, uint16\+\_\+t x, uint16\+\_\+t y) const
 \begin{DoxyCompactList}\small\item\em Places a string onto the {\ttfamily canvas}. \end{DoxyCompactList}\item 
 uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a2c5119c7540a24ee77db21bd7a516d32}{text\+Width}} (const char cc) const
-\begin{DoxyCompactList}\small\item\em Determines the with of character, {\ttfamily cc}, in screen pixels. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Determines the width of character, {\ttfamily cc}, in screen pixels. \end{DoxyCompactList}\item 
 uint16\+\_\+t \mbox{\hyperlink{class_gr_font_ae91cbab138f2d40805784656f00f19e3}{text\+Width}} (const char \texorpdfstring{$\ast$}{*}const text, uint16\+\_\+t buff\+Size) const
-\begin{DoxyCompactList}\small\item\em Determines the with of string in the character array, {\ttfamily text}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Determines the width of string in screen pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,13 +44,16 @@ const \mbox{\hyperlink{struct_r_o_m___image}{ROM\+\_\+\+Image}} \mbox{\hyperlink
 const uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a7414adc97893dfadc75180ae9b3fbc74}{LINE\+\_\+\+HEIGHT}}
 \begin{DoxyCompactList}\small\item\em Recommended vertical spacing between lines of text. \end{DoxyCompactList}\item 
 const uint16\+\_\+t \mbox{\hyperlink{class_gr_font_a9fbba36d28aa54bde93ceb716236d5e7}{BASE}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Distance between the top of the pixel and its base. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual int8\+\_\+t \mbox{\hyperlink{class_gr_font_a4f09eb5d3beb8bb3942903cc1191f60d}{kerning}} (uint16\+\_\+t ID) const =0
 \begin{DoxyCompactList}\small\item\em Finds the amount of kerning that should be used between two characters. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Base class used by all Graphical Fonts. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_gr_font_a3b3ad83ff8c19d708804f962c86f618a}\index{GrFont@{GrFont}!GrFont@{GrFont}}
@@ -62,9 +70,9 @@ Constructs a new \doxylink{class_gr_font}{Gr\+Font} object.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em img\+Loc} & Location of the font imagery in ROM \\
 \hline
-\mbox{\texttt{ in}}  & {\em line\+Height} & ??????? \\
+\mbox{\texttt{ in}}  & {\em line\+Height} & Recommended vertical spacing between lines of text \\
 \hline
-\mbox{\texttt{ in}}  & {\em base} & ??????? \\
+\mbox{\texttt{ in}}  & {\em base} & Distance between the top of the pixel and its base \\
 \hline
 \end{DoxyParams}
 
@@ -112,13 +120,13 @@ virtual bool Gr\+Font\+::char\+Def (\begin{DoxyParamCaption}\item[{char}]{cc}{, 
 
 
 
-Abstract function, used to define the characteristics of each character. 
+Abstract function. Used by derived classes to define the characteristics of each character. 
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em cc} & Character to look up \\
 \hline
-\mbox{\texttt{ out}}  & {\em results} & \doxylink{struct_char_def__t}{Char\+Def\+\_\+t} struction containing information on character, {\ttfamily cc} \\
+\mbox{\texttt{ out}}  & {\em results} & \doxylink{struct_char_def__t}{Char\+Def\+\_\+t} structure containing information on character, {\ttfamily cc} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -158,7 +166,7 @@ int8\+\_\+t Gr\+Font\+::kerning (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{f
 
 
 
-Finds the amount of kerning that should be used between two characters. 
+Returns the amount of kerning that should be used between two characters. 
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -228,7 +236,7 @@ uint16\+\_\+t Gr\+Font\+::text\+Width (\begin{DoxyParamCaption}\item[{const char
 
 
 
-Determines the with of string in the character array, {\ttfamily text}. 
+Determines the width of string in screen pixels. 
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -248,7 +256,7 @@ uint16\+\_\+t Gr\+Font\+::text\+Width (\begin{DoxyParamCaption}\item[{const char
 
 
 
-Determines the with of character, {\ttfamily cc}, in screen pixels. 
+Determines the width of character, {\ttfamily cc}, in screen pixels. 
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -266,6 +274,10 @@ Width of the character in screen pixels
 \doxysubsubsection{\texorpdfstring{BASE}{BASE}}
 {\footnotesize\ttfamily \label{class_gr_font_a9fbba36d28aa54bde93ceb716236d5e7} 
 const uint16\+\_\+t Gr\+Font\+::\+BASE}
+
+
+
+Distance between the top of the pixel and its base. 
 
 \Hypertarget{class_gr_font_a91e5ee5a9991c69d229dc5f8b286a3d0}\index{GrFont@{GrFont}!imgLoc@{imgLoc}}
 \index{imgLoc@{imgLoc}!GrFont@{GrFont}}
@@ -291,5 +303,5 @@ Recommended vertical spacing between lines of text.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_gr_font_8h}{Gr\+Font.\+h}}\item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_gr_font_8cpp}{Gr\+Font.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/fonts/\mbox{\hyperlink{_gr_font_8h}{Gr\+Font.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/fonts/\mbox{\hyperlink{_gr_font_8cpp}{Gr\+Font.\+cpp}}\end{DoxyCompactItemize}

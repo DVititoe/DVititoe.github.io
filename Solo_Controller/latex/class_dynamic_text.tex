@@ -2,6 +2,11 @@
 \hypertarget{class_dynamic_text}{}\label{class_dynamic_text}\index{DynamicText@{DynamicText}}
 
 
+Defines a simple text box for displaying dynamic text onto a \doxylink{class_canvas}{Canvas}.  
+
+
+
+
 {\ttfamily \#include $<$Text\+Box.\+h$>$}
 
 \doxysubsubsection*{Public Types}
@@ -15,7 +20,7 @@ enum \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{Text
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_dynamic_text_aa9da32ab4596565234074d938c71cb25}{Dynamic\+Text}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&Dest\+Canvas, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint16\+\_\+t baseline, \mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*}Font, \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{Text\+Align}} \mbox{\hyperlink{class_dynamic_text_adffaa1d1407dc438644857cea8f4a528}{align}}=\mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63}{CENTER}})
+\mbox{\hyperlink{class_dynamic_text_aae8ca4d84fec2807e882856c0fdf7d57}{Dynamic\+Text}} (\mbox{\hyperlink{class_canvas}{Canvas}} \&Dest\+Canvas, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint16\+\_\+t baseline, \mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{Font\+List\+::\+Font\+ID}} Font, \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{Text\+Align}} \mbox{\hyperlink{class_dynamic_text_adffaa1d1407dc438644857cea8f4a528}{align}}=\mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63}{CENTER}})
 \begin{DoxyCompactList}\small\item\em \doxylink{class_dynamic_text}{Dynamic\+Text} Constructor. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_dynamic_text_a6640a88db553f0c519522c84d2159e29}{begin}} (void)
 \begin{DoxyCompactList}\small\item\em Initializes the \doxylink{class_dynamic_text}{Dynamic\+Text}. This method must be called before using calling \doxylink{class_dynamic_text_a8c39c7c6701a91b144a6d532e0a7ddcf}{Dynamic\+Text\+::update()} \end{DoxyCompactList}\item 
@@ -25,11 +30,6 @@ void \mbox{\hyperlink{class_dynamic_text_a8c39c7c6701a91b144a6d532e0a7ddcf}{upda
 \begin{DoxyCompactList}\small\item\em Updates the text inside a \doxylink{class_dynamic_text}{Dynamic\+Text}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_dynamic_text_a6b02ae4ae17cd3b34d280c241b4da85c}{update}} (int value)
 \begin{DoxyCompactList}\small\item\em Updates the numerical value (int) inside a \doxylink{class_dynamic_text}{Dynamic\+Text}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static void \mbox{\hyperlink{class_dynamic_text_aebf272bd8cd47b9870574ecfc4004720}{initialize\+Fonts}} (void)
-\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,6 +42,26 @@ const uint16\+\_\+t \mbox{\hyperlink{class_dynamic_text_a1531e1131707c5d0d55d29a
 const uint16\+\_\+t \mbox{\hyperlink{class_dynamic_text_a6848f73ca2a1f52ba3c4e4e76b152720}{HEIGHT}}
 \begin{DoxyCompactList}\small\item\em Height of the text box within \+\_\+\+Dest\+Canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Defines a simple text box for displaying dynamic text onto a \doxylink{class_canvas}{Canvas}. 
+
+Before attempting to use this class, the caller must do two things. First the caller must fully initialize the font object provided to the \doxylink{class_dynamic_text}{Dynamic\+Text} constructor. This means instantiating the \doxylink{class_gr_font}{Gr\+Font} object followed by a call to the \doxylink{class_gr_font_afafca44ad2132b9a4ef6d6024940f28e}{Gr\+Font\+::begin()}, which loads and colorizes the fonts. Second, the caller must call the \doxylink{class_dynamic_text_a6640a88db553f0c519522c84d2159e29}{Dynamic\+Text\+::begin()} method after object instantiation.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Create\ Font}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_monofonto-_regular-180_8h}{fonts/Monofonto-\/Regular-\/180.h}}"{}}}
+\DoxyCodeLine{\textcolor{keyword}{auto}\ font\ =\ WorkSans\_SemiBold\_180();}
+\DoxyCodeLine{font.begin(\mbox{\hyperlink{_t_f_t_m070_a1_8h_ae8e246fd7335d7e27ab04150cbc418ba}{Red}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//Create\ and\ use\ DynamicText}}
+\DoxyCodeLine{\textcolor{keyword}{auto}\ myDynamicText\ =\ \mbox{\hyperlink{class_dynamic_text_aae8ca4d84fec2807e882856c0fdf7d57}{DynamicText}}(myCanvas,\ x0,\ y0,\ width,\ height,\ baseline,\ font);}
+\DoxyCodeLine{myDynamicText.begin();}
+\DoxyCodeLine{myDynamicText.update(value);}
+
+\end{DoxyCode}
+ 
 
 \doxysubsection{Member Enumeration Documentation}
 \Hypertarget{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}\index{DynamicText@{DynamicText}!TextAlign@{TextAlign}}
@@ -71,11 +91,11 @@ RIGHT&\\
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_dynamic_text_aa9da32ab4596565234074d938c71cb25}\index{DynamicText@{DynamicText}!DynamicText@{DynamicText}}
+\Hypertarget{class_dynamic_text_aae8ca4d84fec2807e882856c0fdf7d57}\index{DynamicText@{DynamicText}!DynamicText@{DynamicText}}
 \index{DynamicText@{DynamicText}!DynamicText@{DynamicText}}
 \doxysubsubsection{\texorpdfstring{DynamicText()}{DynamicText()}}
-{\footnotesize\ttfamily \label{class_dynamic_text_aa9da32ab4596565234074d938c71cb25} 
-Dynamic\+Text\+::\+Dynamic\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{Dest\+Canvas}{, }\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{, }\item[{uint16\+\_\+t}]{baseline}{, }\item[{\mbox{\hyperlink{class_gr_font}{Gr\+Font}} \texorpdfstring{$\ast$}{*}}]{Font}{, }\item[{\mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{Text\+Align}}}]{align}{ = {\ttfamily \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63}{CENTER}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \label{class_dynamic_text_aae8ca4d84fec2807e882856c0fdf7d57} 
+Dynamic\+Text\+::\+Dynamic\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_canvas}{Canvas}} \&}]{Dest\+Canvas}{, }\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{, }\item[{uint16\+\_\+t}]{baseline}{, }\item[{\mbox{\hyperlink{class_font_list_abeb5fda67e28f9f04c0f897d43aafacc}{Font\+List\+::\+Font\+ID}}}]{Font}{, }\item[{\mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548}{Text\+Align}}}]{align}{ = {\ttfamily \mbox{\hyperlink{class_dynamic_text_af5579996825b5a408cab8ed56b20b548a67c9d113850ba902136a74d3e8b4bc63}{CENTER}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -131,12 +151,6 @@ Initializes the \doxylink{class_dynamic_text}{Dynamic\+Text}. This method must b
 \begin{DoxyParagraph}{Parameters}
 None. 
 \end{DoxyParagraph}
-\Hypertarget{class_dynamic_text_aebf272bd8cd47b9870574ecfc4004720}\index{DynamicText@{DynamicText}!initializeFonts@{initializeFonts}}
-\index{initializeFonts@{initializeFonts}!DynamicText@{DynamicText}}
-\doxysubsubsection{\texorpdfstring{initializeFonts()}{initializeFonts()}}
-{\footnotesize\ttfamily \label{class_dynamic_text_aebf272bd8cd47b9870574ecfc4004720} 
-static void Dynamic\+Text\+::initialize\+Fonts (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
 \Hypertarget{class_dynamic_text_a8c39c7c6701a91b144a6d532e0a7ddcf}\index{DynamicText@{DynamicText}!update@{update}}
 \index{update@{update}!DynamicText@{DynamicText}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -216,5 +230,5 @@ UL y position of the text box within \+\_\+\+Dest\+Canvas.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_text_box_8h}{Text\+Box.\+h}}\item 
-C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\mbox{\hyperlink{_text_box_8cpp}{Text\+Box.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_text_box_8h}{Text\+Box.\+h}}\item 
+C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\mbox{\hyperlink{_text_box_8cpp}{Text\+Box.\+cpp}}\end{DoxyCompactItemize}

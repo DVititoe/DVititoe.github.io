@@ -1,5 +1,10 @@
-\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+TFTM070\+A1.h File Reference}
-\hypertarget{_t_f_t_m070_a1_8h}{}\label{_t_f_t_m070_a1_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TFTM070A1.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TFTM070A1.h}}
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\+TFTM070\+A1.h File Reference}
+\hypertarget{_t_f_t_m070_a1_8h}{}\label{_t_f_t_m070_a1_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/TFTM070A1.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/TFTM070A1.h}}
+
+
+Low level device driver for the TFT.  
+
+
 {\ttfamily \#include "{}Arduino.\+h"{}}\newline
 {\ttfamily \#include $<$avr/pgmspace.\+h$>$}\newline
 {\ttfamily \#include $<$SPI.\+h$>$}\newline
@@ -231,7 +236,7 @@ void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac84170c3a9dadb14fe345325888b87be}
 \item 
 void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab5bfff252e90a8bf0401f853744ace00}{TFTM070\+A1\+::\+HW\+\_\+\+Reset}} (void)
 \item 
-void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a69c9b7a831d1871d910df65c639c8da0}{TFTM070\+A1\+::\+System\+\_\+\+Check\+\_\+\+Temp}} (void)
+bool \mbox{\hyperlink{namespace_t_f_t_m070_a1_a275c2f83d798e0e11787e63eafe69a41}{TFTM070\+A1\+::\+System\+\_\+\+Check\+\_\+\+Temp}} (void)
 \item 
 void \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac9ee5e4883ac330825de8f2661a87731}{TFTM070\+A1\+::\+PLL\+\_\+\+Initial}} (void)
 \item 
@@ -273,7 +278,7 @@ void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2b076b44df2b73dc5874494b7d4c4b9f}
 \item 
 void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a47200d1ed02b1f70a1a87692eb5fdb79}{TFTM070\+A1\+::\+Check\+\_\+\+Mem\+\_\+\+RD\+\_\+\+FIFO\+\_\+not\+\_\+\+Empty}} (void)
 \item 
-void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5e2098f9cb2e3c5b0ea20b77b13a8fbd}{TFTM070\+A1\+::\+Draw\+Square\+\_\+\+Fill}} (unsigned short X1, unsigned short Y1, unsigned short X2, unsigned short Y2, unsigned long Foreground\+Color)
+void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9a5739b19f18895f0ad1b5a4e7630eab}{TFTM070\+A1\+::draw\+Rect\+\_\+\+Fill}} (unsigned short X1, unsigned short Y1, unsigned short X2, unsigned short Y2, unsigned long Foreground\+Color)
 \item 
 void \mbox{\hyperlink{namespace_t_f_t_m070_a1_a83d5425930b1bfd19b1f80bf58e79c01}{TFTM070\+A1\+::\+Draw\+Circle\+\_\+\+Fill}} (unsigned short X1, unsigned short Y1, unsigned short R, unsigned long Foreground\+Color)
 \item 
@@ -638,6 +643,11 @@ uint8\+\_\+t \mbox{\hyperlink{namespace_f_t5316_a95039ca16e2b5fedc3aebbb7aae1df5
 uint8\+\_\+t \mbox{\hyperlink{namespace_f_t5316_add235c5e13dbaecf8f18ec4d2aafd589}{FT5316\+::read\+Touch\+Register}} (uint8\+\_\+t reg)
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Low level device driver for the TFT. 
+
+This is a device driver for the \doxylink{namespace_t_f_t_m070_a1}{TFTM070\+A1} display from Buy\+Display.\+com. Small modifications have been made from the original code from Buy\+Display. 
 
 \doxysubsection{Macro Definition Documentation}
 \Hypertarget{_t_f_t_m070_a1_8h_a3f3dd4c46ad2b95cce5f10e0ef0afa12}\index{TFTM070A1.h@{TFTM070A1.h}!Arduino\_SPI@{Arduino\_SPI}}

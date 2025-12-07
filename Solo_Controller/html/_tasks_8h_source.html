@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solo Controller Documentation: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Tasks.h Source File</title>
+<title>Solo Controller Documentation: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/Tasks.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,14 +106,7 @@ $(function(){initNavTree('_tasks_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Tasks.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_tasks_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*******************************************************************************</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file Tasks.h</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief Defines the tasks used by SoloController.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @details</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *    The functions interact with the global taskManager object. Each function</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *    places a new task onto the taskManager queue.</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> ******************************************************************************/</span></div>
+<a href="_tasks_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef TASKS_HEADER</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define TASKS_HEADER</span></div>
@@ -167,10 +160,10 @@ $(function(){initNavTree('_tasks_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="anamespace_setup_html"><div class="ttname"><a href="namespace_setup.html">Setup</a></div><div class="ttdoc">Contains setup functions for the Solo Controller application.</div><div class="ttdef"><b>Definition</b> Tasks.h:17</div></div>
-<div class="ttc" id="anamespace_setup_html_a5686fb83fd9eea3e8c16226863de3598"><div class="ttname"><a href="namespace_setup.html#a5686fb83fd9eea3e8c16226863de3598">Setup::pinConfig</a></div><div class="ttdeci">void pinConfig(void)</div><div class="ttdoc">Sets up the Arduino pins for the application.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:32</div></div>
-<div class="ttc" id="anamespace_setup_html_ac52d05a0d4da6955007cb1098828ee40"><div class="ttname"><a href="namespace_setup.html#ac52d05a0d4da6955007cb1098828ee40">Setup::menuSystem</a></div><div class="ttdeci">void menuSystem(void)</div><div class="ttdoc">Initilizes the menu system.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:104</div></div>
-<div class="ttc" id="anamespace_setup_html_ad0060655176e56dcd4755c61a2556792"><div class="ttname"><a href="namespace_setup.html#ad0060655176e56dcd4755c61a2556792">Setup::tasks</a></div><div class="ttdeci">void tasks(void)</div><div class="ttdoc">Initilizes baseline set of tasks that operate the application.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:121</div></div>
-<div class="ttc" id="anamespace_setup_html_ad6e12570a013a041d84c999009fe413f"><div class="ttname"><a href="namespace_setup.html#ad6e12570a013a041d84c999009fe413f">Setup::TFT</a></div><div class="ttdeci">void TFT(void)</div><div class="ttdoc">Initilizes the TFT display.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:78</div></div>
+<div class="ttc" id="anamespace_setup_html_a5686fb83fd9eea3e8c16226863de3598"><div class="ttname"><a href="namespace_setup.html#a5686fb83fd9eea3e8c16226863de3598">Setup::pinConfig</a></div><div class="ttdeci">void pinConfig(void)</div><div class="ttdoc">Sets up the Arduino pins for the application.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:28</div></div>
+<div class="ttc" id="anamespace_setup_html_ac52d05a0d4da6955007cb1098828ee40"><div class="ttname"><a href="namespace_setup.html#ac52d05a0d4da6955007cb1098828ee40">Setup::menuSystem</a></div><div class="ttdeci">void menuSystem(void)</div><div class="ttdoc">Initilizes the menu system.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:106</div></div>
+<div class="ttc" id="anamespace_setup_html_ad0060655176e56dcd4755c61a2556792"><div class="ttname"><a href="namespace_setup.html#ad0060655176e56dcd4755c61a2556792">Setup::tasks</a></div><div class="ttdeci">void tasks(void)</div><div class="ttdoc">Initializes baseline set of tasks that operate the application.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:121</div></div>
+<div class="ttc" id="anamespace_setup_html_ad6e12570a013a041d84c999009fe413f"><div class="ttname"><a href="namespace_setup.html#ad6e12570a013a041d84c999009fe413f">Setup::TFT</a></div><div class="ttdeci">void TFT(void)</div><div class="ttdoc">Initializes the TFT display.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:74</div></div>
 <div class="ttc" id="anamespace_task_1_1_alarm_html"><div class="ttname"><a href="namespace_task_1_1_alarm.html">Task::Alarm</a></div><div class="ttdoc">Alarm specific tasks.</div><div class="ttdef"><b>Definition</b> Tasks.h:105</div></div>
 <div class="ttc" id="anamespace_task_1_1_error_html"><div class="ttname"><a href="namespace_task_1_1_error.html">Task::Error</a></div><div class="ttdoc">Tasks relating to the ErrMsg class.</div><div class="ttdef"><b>Definition</b> Tasks.h:72</div></div>
 <div class="ttc" id="anamespace_task_1_1_error_html_aaecf6f7bda594cf871665ec8907efd18"><div class="ttname"><a href="namespace_task_1_1_error.html#aaecf6f7bda594cf871665ec8907efd18">Task::Error::testIfUserFinishedWithErrMsg</a></div><div class="ttdeci">void testIfUserFinishedWithErrMsg(void)</div><div class="ttdoc">Creates a task to check for user input to a displayed error message.</div><div class="ttdef"><b>Definition</b> Tasks.cpp:140</div></div>
@@ -184,7 +177,7 @@ $(function(){initNavTree('_tasks_8h_source.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_tasks_8h.html">Tasks.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8b29354ea792f14f229ba6ab36888b3c.html">Display</a></li><li class="navelem"><a class="el" href="_tasks_8h.html">Tasks.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

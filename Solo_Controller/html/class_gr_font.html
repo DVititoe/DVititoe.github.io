@@ -112,6 +112,9 @@ $(function(){initNavTree('class_gr_font.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Base class used by all Graphical Fonts.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_gr_font_8h_source.html">GrFont.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GrFont:</div>
@@ -131,7 +134,7 @@ Inheritance diagram for GrFont:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b3ad83ff8c19d708804f962c86f618a" id="r_a3b3ad83ff8c19d708804f962c86f618a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b3ad83ff8c19d708804f962c86f618a">GrFont</a> (<a class="el" href="struct_r_o_m___image.html">ROM_Image</a> <a class="el" href="#a91e5ee5a9991c69d229dc5f8b286a3d0">imgLoc</a>, uint16_t lineHeight, uint16_t <a class="el" href="_r_o_m___images_8h.html#aeab12638e8e925718db3fb7314dad284">base</a>)</td></tr>
-<tr class="memdesc:a3b3ad83ff8c19d708804f962c86f618a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_gr_font.html">GrFont</a> object.  <br /></td></tr>
+<tr class="memdesc:a3b3ad83ff8c19d708804f962c86f618a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_gr_font.html" title="Base class used by all Graphical Fonts.">GrFont</a> object.  <br /></td></tr>
 <tr class="separator:a3b3ad83ff8c19d708804f962c86f618a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afafca44ad2132b9a4ef6d6024940f28e" id="r_afafca44ad2132b9a4ef6d6024940f28e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afafca44ad2132b9a4ef6d6024940f28e">begin</a> (uint16_t color16Bit)</td></tr>
 <tr class="memdesc:afafca44ad2132b9a4ef6d6024940f28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the font and sets the font's foreground color.  <br /></td></tr>
@@ -140,10 +143,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adfa5155f67223d7ec6c99b86a7baf38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the font and sets the font's foreground color.  <br /></td></tr>
 <tr class="separator:adfa5155f67223d7ec6c99b86a7baf38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60718c0e9030b3ca20acb3f123b10284" id="r_a60718c0e9030b3ca20acb3f123b10284"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60718c0e9030b3ca20acb3f123b10284">charDef</a> (char cc, <a class="el" href="struct_char_def__t.html">CharDef_t</a> &amp;results) const =0</td></tr>
-<tr class="memdesc:a60718c0e9030b3ca20acb3f123b10284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract function, used to define the characteristics of each character.  <br /></td></tr>
+<tr class="memdesc:a60718c0e9030b3ca20acb3f123b10284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract function. Used by derived classes to define the characteristics of each character.  <br /></td></tr>
 <tr class="separator:a60718c0e9030b3ca20acb3f123b10284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fb854b4db5acd71b78df4ca4824fcfb" id="r_a2fb854b4db5acd71b78df4ca4824fcfb"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fb854b4db5acd71b78df4ca4824fcfb">kerning</a> (uint8_t first, uint8_t second) const</td></tr>
-<tr class="memdesc:a2fb854b4db5acd71b78df4ca4824fcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the amount of kerning that should be used between two characters.  <br /></td></tr>
+<tr class="memdesc:a2fb854b4db5acd71b78df4ca4824fcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of kerning that should be used between two characters.  <br /></td></tr>
 <tr class="separator:a2fb854b4db5acd71b78df4ca4824fcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a07e7170b193fc56c623ce06e7899d" id="r_a55a07e7170b193fc56c623ce06e7899d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55a07e7170b193fc56c623ce06e7899d">placeText</a> (<a class="el" href="class_canvas.html">Canvas</a> &amp;canvas, char cc, uint16_t x, uint16_t y) const</td></tr>
 <tr class="memdesc:a55a07e7170b193fc56c623ce06e7899d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places a character onto the <code class="param">canvas</code>.  <br /></td></tr>
@@ -152,10 +155,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a379bdeb296da78380a840090140c2c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places a string onto the <code class="param">canvas</code>.  <br /></td></tr>
 <tr class="separator:a379bdeb296da78380a840090140c2c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c5119c7540a24ee77db21bd7a516d32" id="r_a2c5119c7540a24ee77db21bd7a516d32"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c5119c7540a24ee77db21bd7a516d32">textWidth</a> (const char cc) const</td></tr>
-<tr class="memdesc:a2c5119c7540a24ee77db21bd7a516d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the with of character, <code class="param">cc</code>, in screen pixels.  <br /></td></tr>
+<tr class="memdesc:a2c5119c7540a24ee77db21bd7a516d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the width of character, <code class="param">cc</code>, in screen pixels.  <br /></td></tr>
 <tr class="separator:a2c5119c7540a24ee77db21bd7a516d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91cbab138f2d40805784656f00f19e3" id="r_ae91cbab138f2d40805784656f00f19e3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae91cbab138f2d40805784656f00f19e3">textWidth</a> (const char *const text, uint16_t buffSize) const</td></tr>
-<tr class="memdesc:ae91cbab138f2d40805784656f00f19e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the with of string in the character array, <code class="param">text</code>.  <br /></td></tr>
+<tr class="memdesc:ae91cbab138f2d40805784656f00f19e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the width of string in screen pixels.  <br /></td></tr>
 <tr class="separator:ae91cbab138f2d40805784656f00f19e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -167,6 +170,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a7414adc97893dfadc75180ae9b3fbc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recommended vertical spacing between lines of text.  <br /></td></tr>
 <tr class="separator:a7414adc97893dfadc75180ae9b3fbc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fbba36d28aa54bde93ceb716236d5e7" id="r_a9fbba36d28aa54bde93ceb716236d5e7"><td class="memItemLeft" align="right" valign="top">const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fbba36d28aa54bde93ceb716236d5e7">BASE</a></td></tr>
+<tr class="memdesc:a9fbba36d28aa54bde93ceb716236d5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance between the top of the pixel and its base.  <br /></td></tr>
 <tr class="separator:a9fbba36d28aa54bde93ceb716236d5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -175,7 +179,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a4f09eb5d3beb8bb3942903cc1191f60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the amount of kerning that should be used between two characters.  <br /></td></tr>
 <tr class="separator:a4f09eb5d3beb8bb3942903cc1191f60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class used by all Graphical Fonts. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b3ad83ff8c19d708804f962c86f618a" name="a3b3ad83ff8c19d708804f962c86f618a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b3ad83ff8c19d708804f962c86f618a">&#9670;&#160;</a></span>GrFont()</h2>
 
@@ -208,12 +214,12 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a new <a class="el" href="class_gr_font.html">GrFont</a> object. </p>
+<p>Constructs a new <a class="el" href="class_gr_font.html" title="Base class used by all Graphical Fonts.">GrFont</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">imgLoc</td><td>Location of the font imagery in ROM </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lineHeight</td><td>??????? </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>??????? </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lineHeight</td><td>Recommended vertical spacing between lines of text </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>Distance between the top of the pixel and its base </td></tr>
   </table>
   </dd>
 </dl>
@@ -309,11 +315,11 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Abstract function, used to define the characteristics of each character. </p>
+<p>Abstract function. Used by derived classes to define the characteristics of each character. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cc</td><td>Character to look up </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td><a class="el" href="struct_char_def__t.html" title="Data Structure that defines an individual character.">CharDef_t</a> struction containing information on character, <code class="param">cc</code> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td><a class="el" href="struct_char_def__t.html" title="Data Structure that defines an individual character.">CharDef_t</a> structure containing information on character, <code class="param">cc</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -386,7 +392,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Finds the amount of kerning that should be used between two characters. </p>
+<p>Returns the amount of kerning that should be used between two characters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">first</td><td>First character </td></tr>
@@ -430,7 +436,7 @@ Protected Member Functions</h2></td></tr>
 <p>Places a character onto the <code class="param">canvas</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">canvas</td><td><a class="el" href="class_canvas.html">Canvas</a> where the character is placed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">canvas</td><td><a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> where the character is placed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cc</td><td>The character to be placed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>x-position within <code class="param">canvas</code> where the character is to be placed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>y-position within <code class="param">canvas</code> where the character is to be placed </td></tr>
@@ -479,7 +485,7 @@ Protected Member Functions</h2></td></tr>
 <p>Places a string onto the <code class="param">canvas</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">canvas</td><td><a class="el" href="class_canvas.html">Canvas</a> where the character is placed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">canvas</td><td><a class="el" href="class_canvas.html" title="Provides higher level TFT graphic functionality used by the menu system.">Canvas</a> where the character is placed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Character buffer containing the null-terminated string to be placed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buffSize</td><td>The size of the character buffer, <code class="param">text</code> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>x-position within <code class="param">canvas</code> where the character is to be placed </td></tr>
@@ -511,7 +517,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Determines the with of string in the character array, <code class="param">text</code>. </p>
+<p>Determines the width of string in screen pixels. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Character buffer containing the null-terminated string to be examined </td></tr>
@@ -539,7 +545,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Determines the with of character, <code class="param">cc</code>, in screen pixels. </p>
+<p>Determines the width of character, <code class="param">cc</code>, in screen pixels. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cc</td><td>The character </td></tr>
@@ -562,6 +568,8 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Distance between the top of the pixel and its base. </p>
 
 </div>
 </div>
@@ -598,8 +606,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_gr_font_8h_source.html">GrFont.h</a></li>
-<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_gr_font_8cpp.html">GrFont.cpp</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/fonts/<a class="el" href="_gr_font_8h_source.html">GrFont.h</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/fonts/<a class="el" href="_gr_font_8cpp.html">GrFont.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

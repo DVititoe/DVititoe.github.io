@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solo Controller Documentation: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Tasks.h File Reference</title>
+<title>Solo Controller Documentation: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/Tasks.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -110,6 +110,9 @@ $(function(){initNavTree('_tasks_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Defines the tasks used by SoloController.  
+<a href="#details">More...</a></p>
+
 <p><a href="_tasks_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -121,10 +124,10 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace containing functions that initiate TaskManagerIO tasks. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_task_1_1_menu.html">Task::Menu</a></td></tr>
-<tr class="memdesc:namespace_task_1_1_menu"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tasks relating to <a class="el" href="class_solo_menu.html">SoloMenu</a> classes. <br /></td></tr>
+<tr class="memdesc:namespace_task_1_1_menu"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tasks relating to <a class="el" href="class_solo_menu.html" title="Base class used by all menus.">SoloMenu</a> classes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_task_1_1_error.html">Task::Error</a></td></tr>
-<tr class="memdesc:namespace_task_1_1_error"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tasks relating to the <a class="el" href="class_err_msg.html">ErrMsg</a> class. <br /></td></tr>
+<tr class="memdesc:namespace_task_1_1_error"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tasks relating to the <a class="el" href="class_err_msg.html" title="Provides a mechnism for displaying error and warning messages on the TFT display.">ErrMsg</a> class. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_task_1_1_sensor.html">Task::Sensor</a></td></tr>
 <tr class="memdesc:namespace_task_1_1_sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_task_1_1_sensor.html" title="Sensor specific tasks.">Sensor</a> specific tasks. <br /></td></tr>
@@ -139,13 +142,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:a5686fb83fd9eea3e8c16226863de3598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the Arduino pins for the application.  <br /></td></tr>
 <tr class="separator:a5686fb83fd9eea3e8c16226863de3598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6e12570a013a041d84c999009fe413f" id="r_ad6e12570a013a041d84c999009fe413f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_setup.html#ad6e12570a013a041d84c999009fe413f">Setup::TFT</a> (void)</td></tr>
-<tr class="memdesc:ad6e12570a013a041d84c999009fe413f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initilizes the TFT display.  <br /></td></tr>
+<tr class="memdesc:ad6e12570a013a041d84c999009fe413f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the TFT display.  <br /></td></tr>
 <tr class="separator:ad6e12570a013a041d84c999009fe413f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac52d05a0d4da6955007cb1098828ee40" id="r_ac52d05a0d4da6955007cb1098828ee40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_setup.html#ac52d05a0d4da6955007cb1098828ee40">Setup::menuSystem</a> (void)</td></tr>
 <tr class="memdesc:ac52d05a0d4da6955007cb1098828ee40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initilizes the menu system.  <br /></td></tr>
 <tr class="separator:ac52d05a0d4da6955007cb1098828ee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0060655176e56dcd4755c61a2556792" id="r_ad0060655176e56dcd4755c61a2556792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_setup.html#ad0060655176e56dcd4755c61a2556792">Setup::tasks</a> (void)</td></tr>
-<tr class="memdesc:ad0060655176e56dcd4755c61a2556792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initilizes baseline set of tasks that operate the application.  <br /></td></tr>
+<tr class="memdesc:ad0060655176e56dcd4755c61a2556792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes baseline set of tasks that operate the application.  <br /></td></tr>
 <tr class="separator:ad0060655176e56dcd4755c61a2556792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaecf6f7bda594cf871665ec8907efd18" id="r_aaecf6f7bda594cf871665ec8907efd18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_task_1_1_error.html#aaecf6f7bda594cf871665ec8907efd18">Task::Error::testIfUserFinishedWithErrMsg</a> (void)</td></tr>
 <tr class="memdesc:aaecf6f7bda594cf871665ec8907efd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a task to check for user input to a displayed error message.  <br /></td></tr>
@@ -157,12 +160,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a37d7818bc85f3438c920e2dafd13c463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates simulated temperature and volume data.  <br /></td></tr>
 <tr class="separator:a37d7818bc85f3438c920e2dafd13c463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines the tasks used by SoloController. </p>
+<p>The functions interact with the global taskManager object. Each function places a new task onto the taskManager queue. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_tasks_8h.html">Tasks.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8b29354ea792f14f229ba6ab36888b3c.html">Display</a></li><li class="navelem"><a class="el" href="_tasks_8h.html">Tasks.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Solo Controller Documentation: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/TFTM070A1.h File Reference</title>
+<title>Solo Controller Documentation: C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/TFTM070A1.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -111,6 +111,9 @@ $(function(){initNavTree('_t_f_t_m070_a1_8h.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">TFTM070A1.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Low level device driver for the TFT.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;Arduino.h&quot;</code><br />
 <code>#include &lt;avr/pgmspace.h&gt;</code><br />
 <code>#include &lt;SPI.h&gt;</code><br />
@@ -344,8 +347,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac84170c3a9dadb14fe345325888b87be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5bfff252e90a8bf0401f853744ace00" id="r_ab5bfff252e90a8bf0401f853744ace00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#ab5bfff252e90a8bf0401f853744ace00">TFTM070A1::HW_Reset</a> (void)</td></tr>
 <tr class="separator:ab5bfff252e90a8bf0401f853744ace00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c9b7a831d1871d910df65c639c8da0" id="r_a69c9b7a831d1871d910df65c639c8da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#a69c9b7a831d1871d910df65c639c8da0">TFTM070A1::System_Check_Temp</a> (void)</td></tr>
-<tr class="separator:a69c9b7a831d1871d910df65c639c8da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275c2f83d798e0e11787e63eafe69a41" id="r_a275c2f83d798e0e11787e63eafe69a41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#a275c2f83d798e0e11787e63eafe69a41">TFTM070A1::System_Check_Temp</a> (void)</td></tr>
+<tr class="separator:a275c2f83d798e0e11787e63eafe69a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9ee5e4883ac330825de8f2661a87731" id="r_ac9ee5e4883ac330825de8f2661a87731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#ac9ee5e4883ac330825de8f2661a87731">TFTM070A1::PLL_Initial</a> (void)</td></tr>
 <tr class="separator:ac9ee5e4883ac330825de8f2661a87731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8428149a90d7303bac31b804cb616ff" id="r_ab8428149a90d7303bac31b804cb616ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#ab8428149a90d7303bac31b804cb616ff">TFTM070A1::SDRAM_initail</a> (void)</td></tr>
@@ -386,8 +389,8 @@ Functions</h2></td></tr>
 <tr class="separator:a2b076b44df2b73dc5874494b7d4c4b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47200d1ed02b1f70a1a87692eb5fdb79" id="r_a47200d1ed02b1f70a1a87692eb5fdb79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#a47200d1ed02b1f70a1a87692eb5fdb79">TFTM070A1::Check_Mem_RD_FIFO_not_Empty</a> (void)</td></tr>
 <tr class="separator:a47200d1ed02b1f70a1a87692eb5fdb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2098f9cb2e3c5b0ea20b77b13a8fbd" id="r_a5e2098f9cb2e3c5b0ea20b77b13a8fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#a5e2098f9cb2e3c5b0ea20b77b13a8fbd">TFTM070A1::DrawSquare_Fill</a> (unsigned short X1, unsigned short Y1, unsigned short X2, unsigned short Y2, unsigned long ForegroundColor)</td></tr>
-<tr class="separator:a5e2098f9cb2e3c5b0ea20b77b13a8fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5739b19f18895f0ad1b5a4e7630eab" id="r_a9a5739b19f18895f0ad1b5a4e7630eab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#a9a5739b19f18895f0ad1b5a4e7630eab">TFTM070A1::drawRect_Fill</a> (unsigned short X1, unsigned short Y1, unsigned short X2, unsigned short Y2, unsigned long ForegroundColor)</td></tr>
+<tr class="separator:a9a5739b19f18895f0ad1b5a4e7630eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d5425930b1bfd19b1f80bf58e79c01" id="r_a83d5425930b1bfd19b1f80bf58e79c01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#a83d5425930b1bfd19b1f80bf58e79c01">TFTM070A1::DrawCircle_Fill</a> (unsigned short X1, unsigned short Y1, unsigned short R, unsigned long ForegroundColor)</td></tr>
 <tr class="separator:a83d5425930b1bfd19b1f80bf58e79c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea231b6700c1a3ef8377c8ed366ef5f1" id="r_aea231b6700c1a3ef8377c8ed366ef5f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_t_f_t_m070_a1.html#aea231b6700c1a3ef8377c8ed366ef5f1">TFTM070A1::Enable_SFlash_SPI</a> (void)</td></tr>
@@ -751,7 +754,10 @@ Functions</h2></td></tr>
 <tr class="memitem:add235c5e13dbaecf8f18ec4d2aafd589" id="r_add235c5e13dbaecf8f18ec4d2aafd589"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_t5316.html#add235c5e13dbaecf8f18ec4d2aafd589">FT5316::readTouchRegister</a> (uint8_t reg)</td></tr>
 <tr class="separator:add235c5e13dbaecf8f18ec4d2aafd589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Low level device driver for the TFT. </p>
+<p>This is a device driver for the <a class="el" href="namespace_t_f_t_m070_a1.html">TFTM070A1</a> display from BuyDisplay.com. Small modifications have been made from the original code from BuyDisplay. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3f3dd4c46ad2b95cce5f10e0ef0afa12" name="a3f3dd4c46ad2b95cce5f10e0ef0afa12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f3dd4c46ad2b95cce5f10e0ef0afa12">&#9670;&#160;</a></span>Arduino_SPI</h2>
 
@@ -1359,7 +1365,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_t_f_t_m070_a1_8h.html">TFTM070A1.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8b29354ea792f14f229ba6ab36888b3c.html">Display</a></li><li class="navelem"><a class="el" href="_t_f_t_m070_a1_8h.html">TFTM070A1.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

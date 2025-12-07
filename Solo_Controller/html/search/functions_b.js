@@ -18,5 +18,5 @@ var searchData=
   ['line_5fstart_5fxy_15',['Line_Start_XY',['../namespace_t_f_t_m070_a1.html#ae90328bc946b4a90ddbe0e022abfddc5',1,'TFTM070A1']]],
   ['loadconfig_16',['loadConfig',['../class_solo_menu.html#a4b2fd78342c643a0093b25aba291d334',1,'SoloMenu']]],
   ['loadimage_17',['loadImage',['../class_canvas.html#ae60defbed8de286ab7891d56ef9467dc',1,'Canvas::loadImage()'],['../class_r_o_m___canvas.html#a1f1ae96e9079bbf9764be06d27b02468',1,'ROM_Canvas::loadImage()'],['../class_d_r_a_m___canvas.html#a0644b01f2cf598d1c6c527e543d9a0cf',1,'DRAM_Canvas::loadImage()']]],
-  ['loop_18',['loop',['../main_8cpp.html#a0b33edabd7f1c4e4a0bf32c67269be2f',1,'main.cpp']]]
+  ['loop_18',['loop',['../_display_2main_8cpp.html#a0b33edabd7f1c4e4a0bf32c67269be2f',1,'loop(void):&#160;main.cpp'],['../_h_v___controller_2main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;main.cpp']]]
 ];

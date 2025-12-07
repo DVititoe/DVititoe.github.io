@@ -1,14 +1,74 @@
-\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Button.h File Reference}
-\hypertarget{_button_8h}{}\label{_button_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Button.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Button.h}}
-{\ttfamily \#include "{}Canvas.\+h"{}}\newline
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\+Button.h File Reference}
+\hypertarget{_button_8h}{}\label{_button_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/Button.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/Button.h}}
+
+
+Defines the \doxylink{class_button}{Button} classes used by the Menu system.  
+
+
+{\ttfamily \#include "{}Button\+State.\+h"{}}\newline
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+struct \mbox{\hyperlink{struct_button_config__t}{Button\+Config\+\_\+t$<$ NUM $>$}}
+\begin{DoxyCompactList}\small\item\em Generic data structure used to store graphical configuration of buttons. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_button}{Button}}
-\item 
+\begin{DoxyCompactList}\small\item\em Abstract class that provides basic button functionality. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_toggle_button}{Toggle\+Button}}
-\item 
+\begin{DoxyCompactList}\small\item\em Defines a button that toggles between two states. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_momentary_button}{Momentary\+Button}}
+\begin{DoxyCompactList}\small\item\em Defines a momentary buttons with 2 states. Upon release, the button automatically returns to state 0. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_text_box_button}{Text\+Box\+Button}}
+\begin{DoxyCompactList}\small\item\em Defines a single state button containing text with both a value and units component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{class_immediate_button}{Immediate\+Button}}
-\end{DoxyCompactItemize}
+const \mbox{\hyperlink{struct_button_config__t}{Button\+Config\+\_\+t}}$<$ 2 $>$ \mbox{\hyperlink{_button_8h_a695238f216827c306930c3f5be490568}{DEFAULT\+\_\+\+BUTTON\+\_\+\+CONFIG}}
+\begin{DoxyCompactList}\small\item\em Defines the configuration parameters for a standard button. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_button_config__t}{Button\+Config\+\_\+t}}$<$ 2 $>$ \mbox{\hyperlink{_button_8h_a8fb6fd929087509940cfbd932fffde39}{DEFAULT\+\_\+\+SM\+\_\+\+BUTTON\+\_\+\+CONFIG}}
+\begin{DoxyCompactList}\small\item\em Defines the configuration parameters for a small button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the \doxylink{class_button}{Button} classes used by the Menu system. 
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_button_8h_a695238f216827c306930c3f5be490568}\index{Button.h@{Button.h}!DEFAULT\_BUTTON\_CONFIG@{DEFAULT\_BUTTON\_CONFIG}}
+\index{DEFAULT\_BUTTON\_CONFIG@{DEFAULT\_BUTTON\_CONFIG}!Button.h@{Button.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_BUTTON\_CONFIG}{DEFAULT\_BUTTON\_CONFIG}}
+{\footnotesize\ttfamily \label{_button_8h_a695238f216827c306930c3f5be490568} 
+const \mbox{\hyperlink{struct_button_config__t}{Button\+Config\+\_\+t}}$<$2$>$ DEFAULT\+\_\+\+BUTTON\+\_\+\+CONFIG}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ 3,\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_colors_8h_aaeac5e269b4936f83888b3bf8f78015d}{COLORS}}.WHITE,\ }
+\DoxyCodeLine{\ \ \ \ 25\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Defines the configuration parameters for a standard button. 
+
+\Hypertarget{_button_8h_a8fb6fd929087509940cfbd932fffde39}\index{Button.h@{Button.h}!DEFAULT\_SM\_BUTTON\_CONFIG@{DEFAULT\_SM\_BUTTON\_CONFIG}}
+\index{DEFAULT\_SM\_BUTTON\_CONFIG@{DEFAULT\_SM\_BUTTON\_CONFIG}!Button.h@{Button.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SM\_BUTTON\_CONFIG}{DEFAULT\_SM\_BUTTON\_CONFIG}}
+{\footnotesize\ttfamily \label{_button_8h_a8fb6fd929087509940cfbd932fffde39} 
+const \mbox{\hyperlink{struct_button_config__t}{Button\+Config\+\_\+t}}$<$2$>$ DEFAULT\+\_\+\+SM\+\_\+\+BUTTON\+\_\+\+CONFIG}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ 2,\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_colors_8h_aaeac5e269b4936f83888b3bf8f78015d}{COLORS}}.WHITE,\ }
+\DoxyCodeLine{\ \ \ \ 15\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Defines the configuration parameters for a small button. 
+

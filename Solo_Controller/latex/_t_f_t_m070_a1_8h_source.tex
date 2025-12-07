@@ -1,14 +1,8 @@
 \doxysection{TFTM070\+A1.\+h}
-\hypertarget{_t_f_t_m070_a1_8h_source}{}\label{_t_f_t_m070_a1_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TFTM070A1.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/TFTM070A1.h}}
+\hypertarget{_t_f_t_m070_a1_8h_source}{}\label{_t_f_t_m070_a1_8h_source}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/TFTM070A1.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/TFTM070A1.h}}
 \mbox{\hyperlink{_t_f_t_m070_a1_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
-\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ TFTM070A1.h}}
-\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @brief\ Low\ level\ device\ driver\ for\ the\ TFT}}
-\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @details}}
-\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ \ \ This\ is\ a\ device\ driver\ for\ the\ TFTM070A1\ display\ from\ BuyDisplay.com.}}
-\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ Small\ modifications\ have\ been\ made\ from\ the\ original\ code\ from\ BuyDisplay.}}
-\DoxyCodeLine{00007\ \textcolor{comment}{\ ******************************************************************************/}}
+\DoxyCodeLine{00001\ \textcolor{comment}{/******************************************************************************/}}
 \DoxyCodeLine{00008\ }
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ TFTM070A1\_6\_h}}
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ TFTM070A1\_6\_h}}
@@ -131,7 +125,7 @@
 \DoxyCodeLine{00127\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa8583a8dc439c7382111b2bd5c778cd1}{Memory\_24bpp\_Mode}}(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00128\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac84170c3a9dadb14fe345325888b87be}{MemWrite\_Left\_Right\_Top\_Down}}(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00129\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab5bfff252e90a8bf0401f853744ace00}{HW\_Reset}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00130\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a69c9b7a831d1871d910df65c639c8da0}{System\_Check\_Temp}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00130\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a275c2f83d798e0e11787e63eafe69a41}{System\_Check\_Temp}}(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00131\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_ac9ee5e4883ac330825de8f2661a87731}{PLL\_Initial}}(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00132\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_ab8428149a90d7303bac31b804cb616ff}{SDRAM\_initail}}(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00133\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_aa35e084b4bb9679e6b7c0baa8dddafdc}{initial}}(\textcolor{keywordtype}{void});}
@@ -152,7 +146,7 @@
 \DoxyCodeLine{00148\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a36b59577d264b30b1e28de00788fd077}{Check\_Mem\_WR\_FIFO\_Empty}}(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00149\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a2b076b44df2b73dc5874494b7d4c4b9f}{Check\_Mem\_RD\_FIFO\_not\_Full}}(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00150\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a47200d1ed02b1f70a1a87692eb5fdb79}{Check\_Mem\_RD\_FIFO\_not\_Empty}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00151\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a5e2098f9cb2e3c5b0ea20b77b13a8fbd}{DrawSquare\_Fill}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ X1,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ Y1,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ X2,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ Y2,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ForegroundColor);}
+\DoxyCodeLine{00151\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a9a5739b19f18895f0ad1b5a4e7630eab}{drawRect\_Fill}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ X1,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ Y1,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ X2,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ Y2,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ForegroundColor);}
 \DoxyCodeLine{00152\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a83d5425930b1bfd19b1f80bf58e79c01}{DrawCircle\_Fill}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ X1,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ Y1,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ R,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ForegroundColor);}
 \DoxyCodeLine{00153\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_aea231b6700c1a3ef8377c8ed366ef5f1}{Enable\_SFlash\_SPI}}(\textcolor{keywordtype}{void});}
 \DoxyCodeLine{00154\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_t_f_t_m070_a1_a61259180365a9d68f1d9eb7dcf7ceda9}{Goto\_Pixel\_XY}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ WX,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ HY);}

@@ -109,6 +109,9 @@ $(function(){initNavTree('class_toggle_button.html',''); initResizable(true); })
 </div><!--header-->
 <div class="contents">
 
+<p>Defines a button that toggles between two states.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_button_8h_source.html">Button.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ToggleButton:</div>
@@ -116,44 +119,60 @@ Inheritance diagram for ToggleButton:</div>
  <div class="center">
   <img src="class_toggle_button.png" usemap="#ToggleButton_map" alt=""/>
   <map id="ToggleButton_map" name="ToggleButton_map">
-<area href="class_button.html" alt="Button" shape="rect" coords="0,0,85,24"/>
+<area href="class_button.html" title="Abstract class that provides basic button functionality." alt="Button" shape="rect" coords="0,0,110,24"/>
+<area href="class_momentary_button.html" title="Defines a momentary buttons with 2 states. Upon release, the button automatically returns to state 0." alt="MomentaryButton" shape="rect" coords="0,112,110,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors and Destructors</div></td></tr>
-<tr class="memitem:a7f2e189066794114b9c9707123ac3293" id="r_a7f2e189066794114b9c9707123ac3293"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f2e189066794114b9c9707123ac3293">ToggleButton</a> (<a class="el" href="class_canvas.html">Canvas</a> &amp;DestCanvas, const <a class="el" href="struct_block___image.html">Block_Image</a> &amp;DestLoc, <a class="el" href="class_button.html#a089d424b1d16508c8d77b9c552699522">callback_function</a> Img0Callback, <a class="el" href="class_button.html#a089d424b1d16508c8d77b9c552699522">callback_function</a> Img1Callback)</td></tr>
-<tr class="memdesc:a7f2e189066794114b9c9707123ac3293"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_toggle_button.html">ToggleButton</a> Constructor.  <br /></td></tr>
-<tr class="separator:a7f2e189066794114b9c9707123ac3293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bccf773d7c58cba60d573d38f6bbd0" id="r_a93bccf773d7c58cba60d573d38f6bbd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93bccf773d7c58cba60d573d38f6bbd0">ToggleButton</a> (const char *buttonName, <a class="el" href="class_canvas.html">Canvas</a> &amp;Destination, const <a class="el" href="struct_block___image.html">Block_Image</a> &amp;DestLoc, const char *buttonText0, <a class="el" href="class_font_list.html#abeb5fda67e28f9f04c0f897d43aafacc">FontList::FontID</a> Font0, uint16_t fillColor0, <a class="el" href="class_button_state.html#ae7934b502a82f94d620a15187f448e20">ButtonState::buttonCallbackFunction</a> callback0, const char *buttonText1, <a class="el" href="class_font_list.html#abeb5fda67e28f9f04c0f897d43aafacc">FontList::FontID</a> Font1, uint16_t fillColor1, <a class="el" href="class_button_state.html#ae7934b502a82f94d620a15187f448e20">ButtonState::buttonCallbackFunction</a> callback1, uint16_t fontBaseline, const <a class="el" href="struct_button_config__t.html">ButtonConfig_t</a>&lt; 2 &gt; config=<a class="el" href="_button_8h.html#a695238f216827c306930c3f5be490568">DEFAULT_BUTTON_CONFIG</a>)</td></tr>
+<tr class="memdesc:a93bccf773d7c58cba60d573d38f6bbd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a Toggle <a class="el" href="class_button.html" title="Abstract class that provides basic button functionality.">Button</a> that displays text in each state.  <br /></td></tr>
+<tr class="separator:a93bccf773d7c58cba60d573d38f6bbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24afdf47f3c9f435fdbbc50b9f5e185" id="r_aa24afdf47f3c9f435fdbbc50b9f5e185"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa24afdf47f3c9f435fdbbc50b9f5e185">ToggleButton</a> (const char *buttonName, <a class="el" href="class_canvas.html">Canvas</a> &amp;Destination, const <a class="el" href="struct_block___image.html">Block_Image</a> &amp;DestLoc, <a class="el" href="struct_r_o_m___image.html">ROM_Image</a> ButtonImg0, uint16_t ButtonImgColor0, uint16_t ButtonFillColor0, <a class="el" href="class_button_state.html#ae7934b502a82f94d620a15187f448e20">ButtonState::buttonCallbackFunction</a> callback0, <a class="el" href="struct_r_o_m___image.html">ROM_Image</a> ButtonImg1, uint16_t ButtonImgColor1, uint16_t ButtonFillColor1, <a class="el" href="class_button_state.html#ae7934b502a82f94d620a15187f448e20">ButtonState::buttonCallbackFunction</a> callback1, const <a class="el" href="struct_button_config__t.html">ButtonConfig_t</a>&lt; 2 &gt; config=<a class="el" href="_button_8h.html#a695238f216827c306930c3f5be490568">DEFAULT_BUTTON_CONFIG</a>)</td></tr>
+<tr class="memdesc:aa24afdf47f3c9f435fdbbc50b9f5e185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a Toggle <a class="el" href="class_button.html" title="Abstract class that provides basic button functionality.">Button</a> that displays images in each state.  <br /></td></tr>
+<tr class="separator:aa24afdf47f3c9f435fdbbc50b9f5e185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f31eac6d75ced6149139d37a7024170" id="r_a3f31eac6d75ced6149139d37a7024170"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f31eac6d75ced6149139d37a7024170">~ToggleButton</a> (void)=default</td></tr>
 <tr class="memdesc:a3f31eac6d75ced6149139d37a7024170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
 <tr class="separator:a3f31eac6d75ced6149139d37a7024170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">General Methods</div></td></tr>
-<tr class="memitem:a2e4cd4d71e704175aa9c92858bddd66b" id="r_a2e4cd4d71e704175aa9c92858bddd66b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e4cd4d71e704175aa9c92858bddd66b">press</a> (<a class="el" href="struct_f_t5316_1_1_touch_location.html">FT5316::TouchLocation</a> loc) override</td></tr>
-<tr class="memdesc:a2e4cd4d71e704175aa9c92858bddd66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presses the button if <code class="param">loc</code> is within the bounds of the button.  <br /></td></tr>
-<tr class="separator:a2e4cd4d71e704175aa9c92858bddd66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37ce21dafa63878a3ddc8836d262f01" id="r_ab37ce21dafa63878a3ddc8836d262f01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab37ce21dafa63878a3ddc8836d262f01">begin</a> (void) override</td></tr>
+<tr class="memdesc:ab37ce21dafa63878a3ddc8836d262f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the button. This method should be called before first use.  <br /></td></tr>
+<tr class="separator:ab37ce21dafa63878a3ddc8836d262f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_button"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_button')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_button.html">Button</a></td></tr>
-<tr class="memitem:a1f9384894fcc23ebf34b86de8b0eac1f inherit pub_methods_class_button" id="r_a1f9384894fcc23ebf34b86de8b0eac1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a1f9384894fcc23ebf34b86de8b0eac1f">Button</a> (<a class="el" href="class_canvas.html">Canvas</a> &amp;DestCanvas, const <a class="el" href="struct_block___image.html">Block_Image</a> &amp;DestLoc, const <a class="el" href="class_d_r_a_m___canvas.html">DRAM_Canvas</a> *Imgs, uint8_t maxNumStates)</td></tr>
-<tr class="memdesc:a1f9384894fcc23ebf34b86de8b0eac1f inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for creating a <a class="el" href="class_button.html">Button</a>.  <br /></td></tr>
-<tr class="separator:a1f9384894fcc23ebf34b86de8b0eac1f inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec43891dc8ff8f87e0eff95f8315f09f inherit pub_methods_class_button" id="r_aec43891dc8ff8f87e0eff95f8315f09f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#aec43891dc8ff8f87e0eff95f8315f09f">~Button</a> (void)=default</td></tr>
-<tr class="memdesc:aec43891dc8ff8f87e0eff95f8315f09f inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
-<tr class="separator:aec43891dc8ff8f87e0eff95f8315f09f inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073c0529b7bfdff34981366d5895fed2 inherit pub_methods_class_button" id="r_a073c0529b7bfdff34981366d5895fed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a073c0529b7bfdff34981366d5895fed2">begin</a> (void)</td></tr>
-<tr class="memdesc:a073c0529b7bfdff34981366d5895fed2 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the button. This method should be called before first use.  <br /></td></tr>
-<tr class="separator:a073c0529b7bfdff34981366d5895fed2 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaffb603c435d21a9477154f18ac70986 inherit pub_methods_class_button" id="r_aaffb603c435d21a9477154f18ac70986"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#aaffb603c435d21a9477154f18ac70986">release</a> (void)</td></tr>
-<tr class="memdesc:aaffb603c435d21a9477154f18ac70986 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the button if it has been pressed.  <br /></td></tr>
-<tr class="separator:aaffb603c435d21a9477154f18ac70986 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa25400f68fafa01d36417fbfeb3ec0 inherit pub_methods_class_button" id="r_abfa25400f68fafa01d36417fbfeb3ec0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#abfa25400f68fafa01d36417fbfeb3ec0">Button</a> (const char *buttonName, <a class="el" href="class_canvas.html">Canvas</a> &amp;DestCanvas, uint16_t dest_x, uint16_t dest_y, uint16_t <a class="el" href="class_button.html#a474cae0b010fff9730e9193f5c7084bb">width</a>, uint16_t <a class="el" href="class_button.html#a236ad6351d483848fb0d17c5cdc48471">height</a>, <a class="el" href="class_button.html#a1f6924fd1592da074ab403466301b341">callback_type</a> whenCallback)</td></tr>
+<tr class="memdesc:abfa25400f68fafa01d36417fbfeb3ec0 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for creating a <a class="el" href="class_button.html" title="Abstract class that provides basic button functionality.">Button</a> object.  <br /></td></tr>
+<tr class="separator:abfa25400f68fafa01d36417fbfeb3ec0 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489168c4d4d3f309728887be03de2544 inherit pub_methods_class_button" id="r_a489168c4d4d3f309728887be03de2544"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a489168c4d4d3f309728887be03de2544">~Button</a> (void)=default</td></tr>
+<tr class="memdesc:a489168c4d4d3f309728887be03de2544 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
+<tr class="separator:a489168c4d4d3f309728887be03de2544 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4b0bb6bb5745dd9341ae6d49de9bd1 inherit pub_methods_class_button" id="r_a9a4b0bb6bb5745dd9341ae6d49de9bd1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a9a4b0bb6bb5745dd9341ae6d49de9bd1">press</a> (<a class="el" href="struct_f_t5316_1_1_touch_location.html">FT5316::TouchLocation</a> loc)</td></tr>
+<tr class="memdesc:a9a4b0bb6bb5745dd9341ae6d49de9bd1 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presses the button if <code class="param">loc</code> is within the bounds of the button.  <br /></td></tr>
+<tr class="separator:a9a4b0bb6bb5745dd9341ae6d49de9bd1 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267c2fa23fbc99aa8abc6f17efd37700 inherit pub_methods_class_button" id="r_a267c2fa23fbc99aa8abc6f17efd37700"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a267c2fa23fbc99aa8abc6f17efd37700">release</a> (void)</td></tr>
+<tr class="memdesc:a267c2fa23fbc99aa8abc6f17efd37700 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the button is released.  <br /></td></tr>
+<tr class="separator:a267c2fa23fbc99aa8abc6f17efd37700 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d0bdd0a384deeba962e237315bcd94e inherit pub_methods_class_button" id="r_a8d0bdd0a384deeba962e237315bcd94e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a8d0bdd0a384deeba962e237315bcd94e">enable</a> (void)</td></tr>
-<tr class="memdesc:a8d0bdd0a384deeba962e237315bcd94e inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the button, makking it accept button presses.  <br /></td></tr>
+<tr class="memdesc:a8d0bdd0a384deeba962e237315bcd94e inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the button, making it accept button presses.  <br /></td></tr>
 <tr class="separator:a8d0bdd0a384deeba962e237315bcd94e inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bfcdefa670e1d723da7007b447d349b inherit pub_methods_class_button" id="r_a5bfcdefa670e1d723da7007b447d349b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a5bfcdefa670e1d723da7007b447d349b">disable</a> (void)</td></tr>
 <tr class="memdesc:a5bfcdefa670e1d723da7007b447d349b inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables the button, so that it ignores button presses.  <br /></td></tr>
 <tr class="separator:a5bfcdefa670e1d723da7007b447d349b inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bfc506968869960bb9d5f88dd1b919 inherit pub_methods_class_button" id="r_a28bfc506968869960bb9d5f88dd1b919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a28bfc506968869960bb9d5f88dd1b919">setState</a> (uint8_t <a class="el" href="class_button.html#a0afeb14dffa44f7e9e50151fbb6218e4">state</a>)</td></tr>
+<tr class="memdesc:a28bfc506968869960bb9d5f88dd1b919 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the button to the specified state.  <br /></td></tr>
+<tr class="separator:a28bfc506968869960bb9d5f88dd1b919 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6586f451968fbf511d51098f4e2296 inherit pub_methods_class_button" id="r_a1c6586f451968fbf511d51098f4e2296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a1c6586f451968fbf511d51098f4e2296">nextState</a> (void)</td></tr>
+<tr class="memdesc:a1c6586f451968fbf511d51098f4e2296 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the button to the next state.  <br /></td></tr>
+<tr class="separator:a1c6586f451968fbf511d51098f4e2296 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a89819bd61011510944f8e554bff043 inherit pub_methods_class_button" id="r_a6a89819bd61011510944f8e554bff043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a6a89819bd61011510944f8e554bff043">draw</a> (void)</td></tr>
+<tr class="memdesc:a6a89819bd61011510944f8e554bff043 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the image from the current <a class="el" href="class_button_state.html" title="Base class used by all derived Button State classes.">ButtonState</a> onto the destination canvas.  <br /></td></tr>
+<tr class="separator:a6a89819bd61011510944f8e554bff043 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4580c65fa8cd5a29002d31a53f94041d inherit pub_methods_class_button" id="r_a4580c65fa8cd5a29002d31a53f94041d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a4580c65fa8cd5a29002d31a53f94041d">draw</a> (<a class="el" href="class_canvas.html">Canvas</a> &amp;newCanvas)</td></tr>
+<tr class="memdesc:a4580c65fa8cd5a29002d31a53f94041d inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the image from the current <a class="el" href="class_button_state.html" title="Base class used by all derived Button State classes.">ButtonState</a> onto the specified canvas.  <br /></td></tr>
+<tr class="separator:a4580c65fa8cd5a29002d31a53f94041d inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad754e299e21b35c04f58ea3ed192fd70 inherit pub_methods_class_button" id="r_ad754e299e21b35c04f58ea3ed192fd70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ad754e299e21b35c04f58ea3ed192fd70">isEnabled</a> (void) const</td></tr>
-<tr class="memdesc:ad754e299e21b35c04f58ea3ed192fd70 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the <a class="el" href="class_button.html">Button</a> is enabled.  <br /></td></tr>
+<tr class="memdesc:ad754e299e21b35c04f58ea3ed192fd70 inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the <a class="el" href="class_button.html" title="Abstract class that provides basic button functionality.">Button</a> is enabled.  <br /></td></tr>
 <tr class="separator:ad754e299e21b35c04f58ea3ed192fd70 inherit pub_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474cae0b010fff9730e9193f5c7084bb inherit pub_methods_class_button" id="r_a474cae0b010fff9730e9193f5c7084bb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a474cae0b010fff9730e9193f5c7084bb">width</a> (void) const</td></tr>
 <tr class="memdesc:a474cae0b010fff9730e9193f5c7084bb inherit pub_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width of the button in pixels.  <br /></td></tr>
@@ -168,16 +187,28 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_button"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_class_button')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_button.html">Button</a></td></tr>
-<tr class="memitem:a089d424b1d16508c8d77b9c552699522 inherit pub_types_class_button" id="r_a089d424b1d16508c8d77b9c552699522"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a089d424b1d16508c8d77b9c552699522">callback_function</a>) (void)</td></tr>
-<tr class="separator:a089d424b1d16508c8d77b9c552699522 inherit pub_types_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6924fd1592da074ab403466301b341 inherit pub_types_class_button" id="r_a1f6924fd1592da074ab403466301b341"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a1f6924fd1592da074ab403466301b341">callback_type</a> { <a class="el" href="class_button.html#a1f6924fd1592da074ab403466301b341a957bb7d86a68d5037fdbc8fa1df043eb">ON_PRESS</a>
+, <a class="el" href="class_button.html#a1f6924fd1592da074ab403466301b341a6a7e6c703614b3c11f9468ec5c9a775b">ON_RELEASE</a>
+ }</td></tr>
+<tr class="memdesc:a1f6924fd1592da074ab403466301b341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition that defines when the callback function is called relative to button press/release.  <a href="class_button.html#a1f6924fd1592da074ab403466301b341">More...</a><br /></td></tr>
+<tr class="separator:a1f6924fd1592da074ab403466301b341 inherit pub_types_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_button"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_button')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_button.html">Button</a></td></tr>
-<tr class="memitem:a36fef3a46a7334d7a889b55db90fe560 inherit pro_methods_class_button" id="r_a36fef3a46a7334d7a889b55db90fe560"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a36fef3a46a7334d7a889b55db90fe560">_resetToState0</a> (void)</td></tr>
-<tr class="memdesc:a36fef3a46a7334d7a889b55db90fe560 inherit pro_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal method for resetting the button to state 0.  <br /></td></tr>
-<tr class="separator:a36fef3a46a7334d7a889b55db90fe560 inherit pro_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c37c82b7aa6cbfa4c733b1f4179713e inherit pro_methods_class_button" id="r_a0c37c82b7aa6cbfa4c733b1f4179713e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a0c37c82b7aa6cbfa4c733b1f4179713e">_validateObject</a> (void)</td></tr>
+<tr class="memdesc:a0c37c82b7aa6cbfa4c733b1f4179713e inherit pro_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that all <a class="el" href="class_button_state.html" title="Base class used by all derived Button State classes.">ButtonState</a> objects have been defined.  <br /></td></tr>
+<tr class="separator:a0c37c82b7aa6cbfa4c733b1f4179713e inherit pro_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b20de7e4a20afafa2d3bdf4afb5264b inherit pro_methods_class_button" id="r_a0b20de7e4a20afafa2d3bdf4afb5264b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a0b20de7e4a20afafa2d3bdf4afb5264b">_registerButtonStates</a> (<a class="el" href="class_button_state.html">ButtonState</a> **buttonStatePtrArr, uint8_t numStates)</td></tr>
+<tr class="memdesc:a0b20de7e4a20afafa2d3bdf4afb5264b inherit pro_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the <a class="el" href="class_button_state.html" title="Base class used by all derived Button State classes.">ButtonState</a> objects that define this button.  <br /></td></tr>
+<tr class="separator:a0b20de7e4a20afafa2d3bdf4afb5264b inherit pro_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a81d3f8d66655f4bd69be9af78549f1 inherit pro_methods_class_button" id="r_a3a81d3f8d66655f4bd69be9af78549f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a3a81d3f8d66655f4bd69be9af78549f1">_changeCallback</a> (<a class="el" href="class_button.html#a1f6924fd1592da074ab403466301b341">callback_type</a> type)</td></tr>
+<tr class="memdesc:a3a81d3f8d66655f4bd69be9af78549f1 inherit pro_methods_class_button"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method that changes when the callback is called.  <br /></td></tr>
+<tr class="separator:a3a81d3f8d66655f4bd69be9af78549f1 inherit pro_methods_class_button"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7f2e189066794114b9c9707123ac3293" name="a7f2e189066794114b9c9707123ac3293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f2e189066794114b9c9707123ac3293">&#9670;&#160;</a></span>ToggleButton()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines a button that toggles between two states. </p>
+<p>Each state has its own image and callback function. The callback function is called whenever the users releases the button. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a93bccf773d7c58cba60d573d38f6bbd0" name="a93bccf773d7c58cba60d573d38f6bbd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93bccf773d7c58cba60d573d38f6bbd0">&#9670;&#160;</a></span>ToggleButton() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +219,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">ToggleButton::ToggleButton </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_canvas.html">Canvas</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>DestCanvas</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>buttonName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_canvas.html">Canvas</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Destination</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -198,12 +234,52 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_button.html#a089d424b1d16508c8d77b9c552699522">callback_function</a></td>          <td class="paramname"><span class="paramname"><em>Img0Callback</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>buttonText0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_button.html#a089d424b1d16508c8d77b9c552699522">callback_function</a></td>          <td class="paramname"><span class="paramname"><em>Img1Callback</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_font_list.html#abeb5fda67e28f9f04c0f897d43aafacc">FontList::FontID</a></td>          <td class="paramname"><span class="paramname"><em>Font0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>fillColor0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_button_state.html#ae7934b502a82f94d620a15187f448e20">ButtonState::buttonCallbackFunction</a></td>          <td class="paramname"><span class="paramname"><em>callback0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>buttonText1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_font_list.html#abeb5fda67e28f9f04c0f897d43aafacc">FontList::FontID</a></td>          <td class="paramname"><span class="paramname"><em>Font1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>fillColor1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_button_state.html#ae7934b502a82f94d620a15187f448e20">ButtonState::buttonCallbackFunction</a></td>          <td class="paramname"><span class="paramname"><em>callback1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>fontBaseline</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_button_config__t.html">ButtonConfig_t</a>&lt; 2 &gt;</td>          <td class="paramname"><span class="paramname"><em>config</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="_button_8h.html#a695238f216827c306930c3f5be490568">DEFAULT_BUTTON_CONFIG</a></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -213,20 +289,124 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_toggle_button.html">ToggleButton</a> Constructor. </p>
+<p>Constructor for a Toggle <a class="el" href="class_button.html" title="Abstract class that provides basic button functionality.">Button</a> that displays text in each state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">DestCanvas</td><td>Destination canvas to where the current button image is copied </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">DestLoc</td><td>UL x-y coordinate within <code class="param">DestCanvas</code> where the button is to be copied </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">SrcCanvas</td><td>Source <a class="el" href="class_canvas.html">Canvas</a> containing button images </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Img0</td><td>Location within <code class="param">SrcCanvas</code> for button in state 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Img0Callback</td><td>Callback function when the button transitions to state 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Img1</td><td>Location within <code class="param">SrcCanvas</code> for button in state 1 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Img1Callback</td><td>Callback function when the button transitions to state 0</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buttonName</td><td>String containing the name of the button (used for error messages) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Destination</td><td>Destination canvas to where the button is to be drawn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">DestLoc</td><td>UL x-y coordinate within <code class="param">DestCanvas</code> where the button is to be drawn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buttonText0</td><td>Text to be displayed on the button in state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Font0</td><td>Font to be used when the button is in state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fillColor0</td><td>Fill color to be used when the button is in state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback0</td><td>Callback function when the button transitions into state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buttonText1</td><td>Text to be displayed on the button in state 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Font1</td><td>Font to be used when the button is in state 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fillColor1</td><td>Fill color to be used when the button is in state 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback1</td><td>Callback function when the button transitions into state 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fontBaseline</td><td>Baseline to be used when rendering characters (measured fom top of button) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>(Optional) Graphical configuration parameters for the button </td></tr>
   </table>
   </dd>
 </dl>
-<p>This constructor assumes that all button images are located on the same <code class="param">SrcCanvas</code>. The locations, <code class="param">Img0</code> and <code class="param">Img1</code>, point to locations within <code class="param">SrcCanvas</code>. </p>
+
+</div>
+</div>
+<a id="aa24afdf47f3c9f435fdbbc50b9f5e185" name="aa24afdf47f3c9f435fdbbc50b9f5e185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa24afdf47f3c9f435fdbbc50b9f5e185">&#9670;&#160;</a></span>ToggleButton() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ToggleButton::ToggleButton </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>buttonName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_canvas.html">Canvas</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Destination</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_block___image.html">Block_Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>DestLoc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_r_o_m___image.html">ROM_Image</a></td>          <td class="paramname"><span class="paramname"><em>ButtonImg0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>ButtonImgColor0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>ButtonFillColor0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_button_state.html#ae7934b502a82f94d620a15187f448e20">ButtonState::buttonCallbackFunction</a></td>          <td class="paramname"><span class="paramname"><em>callback0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_r_o_m___image.html">ROM_Image</a></td>          <td class="paramname"><span class="paramname"><em>ButtonImg1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>ButtonImgColor1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>ButtonFillColor1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_button_state.html#ae7934b502a82f94d620a15187f448e20">ButtonState::buttonCallbackFunction</a></td>          <td class="paramname"><span class="paramname"><em>callback1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_button_config__t.html">ButtonConfig_t</a>&lt; 2 &gt;</td>          <td class="paramname"><span class="paramname"><em>config</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="_button_8h.html#a695238f216827c306930c3f5be490568">DEFAULT_BUTTON_CONFIG</a></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for a Toggle <a class="el" href="class_button.html" title="Abstract class that provides basic button functionality.">Button</a> that displays images in each state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buttonName</td><td>String containing the name of the button (used for error messages) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Destination</td><td>Destination canvas to where the current button image is drawn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">DestLoc</td><td>UL x-y coordinate within <code class="param">DestCanvas</code> where the button is to be drawn </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ButtonImg0</td><td>Image in Flash ROM for button in state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ButtonImgColor0</td><td>Color in Flash ROM for button in state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ButtonFillColor0</td><td>Fill color for button in state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback0</td><td>Callback function when the button transitions to state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ButtonImg1</td><td>Image in Flash ROM for button in state 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ButtonImgColor1</td><td>Color in Flash ROM for button in state 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ButtonFillColor1</td><td>Fill color for button in state 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback1</td><td>Callback function when the button transitions to state 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>(Optional) Graphical configuration parameters for the button</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The images used by this constructor have transparent backgrounds. They arein the 16-bit color (ARGB format). This object overrides the RGB color of the image with the provided <code class="param">ButtonImgColor</code> value. This color is then overlaid on top of the button fill color to create the final button appearance. </p>
 
 </div>
 </div>
@@ -259,8 +439,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2e4cd4d71e704175aa9c92858bddd66b" name="a2e4cd4d71e704175aa9c92858bddd66b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e4cd4d71e704175aa9c92858bddd66b">&#9670;&#160;</a></span>press()</h2>
+<a id="ab37ce21dafa63878a3ddc8836d262f01" name="ab37ce21dafa63878a3ddc8836d262f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37ce21dafa63878a3ddc8836d262f01">&#9670;&#160;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,9 +449,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool ToggleButton::press </td>
+          <td class="memname">void ToggleButton::begin </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_f_t5316_1_1_touch_location.html">FT5316::TouchLocation</a></td>          <td class="paramname"><span class="paramname"><em>loc</em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -282,21 +462,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Presses the button if <code class="param">loc</code> is within the bounds of the button. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">loc</td><td>x-y coordinate where the TFT screen has been touched </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Initializes the button. This method should be called before first use. </p>
+<dl class="section user"><dt>Parameters</dt><dd>None.</dd></dl>
+<p>This method loads the button imagery from the source canvas, making the imagery available for use. </p>
 
-<p>Reimplemented from <a class="el" href="class_button.html#a9a4b0bb6bb5745dd9341ae6d49de9bd1">Button</a>.</p>
+<p>Reimplemented from <a class="el" href="class_button.html#a073c0529b7bfdff34981366d5895fed2">Button</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_button_8h_source.html">Button.h</a></li>
-<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/<a class="el" href="_button_8cpp.html">Button.cpp</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/<a class="el" href="_button_8h_source.html">Button.h</a></li>
+<li>C:/Users/david/Documents/PlatformIO/Solo_Controller/Solo_Controller_Repo/src/Display/<a class="el" href="_button_8cpp.html">Button.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

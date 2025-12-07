@@ -1,14 +1,17 @@
-\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Menu.h File Reference}
-\hypertarget{_menu_8h}{}\label{_menu_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Menu.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Menu.h}}
-{\ttfamily \#include "{}Canvas.\+h"{}}\newline
+\doxysection{C\+:/\+Users/david/\+Documents/\+Platform\+IO/\+Solo\+\_\+\+Controller/\+Solo\+\_\+\+Controller\+\_\+\+Repo/src/\+Display/\+Menu.h File Reference}
+\hypertarget{_menu_8h}{}\label{_menu_8h}\index{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/Menu.h@{C:/Users/david/Documents/PlatformIO/Solo\_Controller/Solo\_Controller\_Repo/src/Display/Menu.h}}
+
+
+Defines the menu classes used by the Solo\+Controller app.  
+
+
 {\ttfamily \#include "{}Button.\+h"{}}\newline
-{\ttfamily \#include "{}Sensor.\+h"{}}\newline
 {\ttfamily \#include "{}Text\+Box.\+h"{}}\newline
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_solo_menu}{Solo\+Menu}}
-\item 
+\begin{DoxyCompactList}\small\item\em Base class used by all menus. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_main_menu}{Main\+Menu}}
 \begin{DoxyCompactList}\small\item\em Main menu for the Solo\+Controller application. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_setup_vol_menu}{Setup\+Vol\+Menu}}
@@ -35,7 +38,7 @@ namespace \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d}{CB\+::\+SETUP\
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_menu_8h_aaf863b665fd9b9e1ea7aa723f553abfc}{NUM\+\_\+\+MAINMENU\+\_\+\+BUTTONS}}~0
+\#define \mbox{\hyperlink{_menu_8h_aaf863b665fd9b9e1ea7aa723f553abfc}{NUM\+\_\+\+MAINMENU\+\_\+\+BUTTONS}}~14
 \begin{DoxyCompactList}\small\item\em Number of buttons managed by the \doxylink{class_main_menu}{Main\+Menu}. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_menu_8h_a3206ce01db32abe074fa8aa852722605}{NUM\+\_\+\+SETUPVOLMENU\+\_\+\+BUTTONS}}~0
 \item 
@@ -46,7 +49,7 @@ namespace \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_1_1_p_i_d}{CB\+::\+SETUP\
 \doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-using \mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} = \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{Sensor\+::sensor\+Val\+\_\+t}}
+using \mbox{\hyperlink{_menu_8h_a62a7482a156cb294426d59990ea30bc1}{sensor\+Val\+\_\+t}} = uint16\+\_\+t
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -98,20 +101,22 @@ void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a6ef53673488891549fd90673f989521
 void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_acc81f53ab278bce0f8e34a1cc19d4008}{CB\+::\+MAIN\+::aux\+Off}} (void)
 \item 
 void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ae7aac278ed28334d189c676f71f3132c}{CB\+::\+MAIN\+::setup\+Button\+Pressed}} (void)
+\item 
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_af9cdbaf980a66960908fa5aedbe382e5}{CB\+::\+MAIN\+::data\+Entry}} (void)
 \end{DoxyCompactItemize}
 \end{Indent}
 \begin{Indent}\textbf{ Label Callbacks}\par
 {\em These callback methods are called whenever one of the labels is "{}pressed"{} }\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ac31d6543bff35fdd23cf61983b051267}{CB\+::\+MAIN\+::set\+Boil\+Rate}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} boil\+Rate)
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_ac31d6543bff35fdd23cf61983b051267}{CB\+::\+MAIN\+::set\+Boil\+Rate}} (\mbox{\hyperlink{_menu_8h_a62a7482a156cb294426d59990ea30bc1}{sensor\+Val\+\_\+t}} boil\+Rate)
 \begin{DoxyCompactList}\small\item\em Initiate Data Entry for Boil Rate. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a1bf4922786562494769803ab3ea3fc61}{CB\+::\+MAIN\+::set\+Mash\+Temp}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} mash\+Temp)
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a1bf4922786562494769803ab3ea3fc61}{CB\+::\+MAIN\+::set\+Mash\+Temp}} (\mbox{\hyperlink{_menu_8h_a62a7482a156cb294426d59990ea30bc1}{sensor\+Val\+\_\+t}} mash\+Temp)
 \begin{DoxyCompactList}\small\item\em Initiate Data Entry for Mash Temp. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a9afd156f2b3da8aaea453105d7c7d183}{CB\+::\+MAIN\+::set\+Kettle\+Temp\+SV}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} kettle\+Temp\+SV)
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a9afd156f2b3da8aaea453105d7c7d183}{CB\+::\+MAIN\+::set\+Kettle\+Temp\+SV}} (\mbox{\hyperlink{_menu_8h_a62a7482a156cb294426d59990ea30bc1}{sensor\+Val\+\_\+t}} kettle\+Temp\+SV)
 \begin{DoxyCompactList}\small\item\em Initiate Data Entry for Kettle Temp Set Value. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a88789ef1b87302f7201a2e65dfcaec12}{CB\+::\+MAIN\+::set\+Kettle\+Vol\+SV}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} kettle\+Vol\+SV)
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_a88789ef1b87302f7201a2e65dfcaec12}{CB\+::\+MAIN\+::set\+Kettle\+Vol\+SV}} (\mbox{\hyperlink{_menu_8h_a62a7482a156cb294426d59990ea30bc1}{sensor\+Val\+\_\+t}} kettle\+Vol\+SV)
 \begin{DoxyCompactList}\small\item\em Initiate Data Entry for Kettle Volume Set Value. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_abc3a89dc6be50de77f0e20076c501dba}{CB\+::\+MAIN\+::set\+Chiller\+Temp\+SV}} (\mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} chiller\+Temp\+SV)
+void \mbox{\hyperlink{namespace_c_b_1_1_m_a_i_n_abc3a89dc6be50de77f0e20076c501dba}{CB\+::\+MAIN\+::set\+Chiller\+Temp\+SV}} (\mbox{\hyperlink{_menu_8h_a62a7482a156cb294426d59990ea30bc1}{sensor\+Val\+\_\+t}} chiller\+Temp\+SV)
 \begin{DoxyCompactList}\small\item\em Initiate Data Entry for Chiller Temp Set Value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \end{Indent}
 \begin{Indent}\textbf{ Common Setup Button Callbacks.}\par
@@ -135,12 +140,17 @@ void \mbox{\hyperlink{namespace_c_b_1_1_s_e_t_u_p_aacfd09d6a249b54d9515b96ca3180
 \begin{DoxyCompactList}\small\item\em Pointer to the current setup menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Defines the menu classes used by the Solo\+Controller app. 
+
+
+
 \doxysubsection{Macro Definition Documentation}
 \Hypertarget{_menu_8h_aaf863b665fd9b9e1ea7aa723f553abfc}\index{Menu.h@{Menu.h}!NUM\_MAINMENU\_BUTTONS@{NUM\_MAINMENU\_BUTTONS}}
 \index{NUM\_MAINMENU\_BUTTONS@{NUM\_MAINMENU\_BUTTONS}!Menu.h@{Menu.h}}
 \doxysubsubsection{\texorpdfstring{NUM\_MAINMENU\_BUTTONS}{NUM\_MAINMENU\_BUTTONS}}
 {\footnotesize\ttfamily \label{_menu_8h_aaf863b665fd9b9e1ea7aa723f553abfc} 
-\#define NUM\+\_\+\+MAINMENU\+\_\+\+BUTTONS~0}
+\#define NUM\+\_\+\+MAINMENU\+\_\+\+BUTTONS~14}
 
 
 
@@ -167,11 +177,11 @@ Number of buttons managed by the \doxylink{class_main_menu}{Main\+Menu}.
 
 
 \doxysubsection{Typedef Documentation}
-\Hypertarget{_menu_8h_a385ac6529964259d8d5b226207e4065b}\index{Menu.h@{Menu.h}!sensorVal\_t@{sensorVal\_t}}
+\Hypertarget{_menu_8h_a62a7482a156cb294426d59990ea30bc1}\index{Menu.h@{Menu.h}!sensorVal\_t@{sensorVal\_t}}
 \index{sensorVal\_t@{sensorVal\_t}!Menu.h@{Menu.h}}
 \doxysubsubsection{\texorpdfstring{sensorVal\_t}{sensorVal\_t}}
-{\footnotesize\ttfamily \label{_menu_8h_a385ac6529964259d8d5b226207e4065b} 
-using \mbox{\hyperlink{_menu_8h_a385ac6529964259d8d5b226207e4065b}{sensor\+Val\+\_\+t}} = \mbox{\hyperlink{class_sensor_afb25f6c4205dbb77fb35f0850a9cf0ef}{Sensor\+::sensor\+Val\+\_\+t}}}
+{\footnotesize\ttfamily \label{_menu_8h_a62a7482a156cb294426d59990ea30bc1} 
+using \mbox{\hyperlink{_menu_8h_a62a7482a156cb294426d59990ea30bc1}{sensor\+Val\+\_\+t}} = uint16\+\_\+t}
 
 
 
